@@ -1149,8 +1149,16 @@ JS_SUPABASE = r"""
     if(ses&&ses.access_token)h['Authorization']='Bearer '+ses.access_token;
     opts.headers=h;
     return fetch(CFG.url.replace(/\/+$/,'')+caminho,opts).then(function(r){
-      if(r.status===204)return null;
-      return r.json().then(function(j){
+      /* PostgREST com Prefer:return=minimal devolve corpo vazio em varios
+         status (200, 201, 204, conforme o caso) - nao so em 204. Tentar
+         fazer r.json() num corpo vazio derruba a promise com um erro de
+         parse que mascara um sucesso real. */
+      return r.text().then(function(txt){
+        var j=null;
+        if(txt){
+          try{j=JSON.parse(txt)}
+          catch(e){ if(r.ok)return null; }
+        }
         if(!r.ok){
           var e=new Error((j&&(j.msg||j.message||j.error_description||j.error))||('HTTP '+r.status));
           e.status=r.status;

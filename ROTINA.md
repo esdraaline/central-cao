@@ -15,14 +15,17 @@ Entrada sempre às **08h15**. A saída muda por dia:
 Ou seja: chega no domingo, quatro dias de aula e volta na quinta depois das 11h30.
 
 ## Uniforme
-- **Dia a dia do curso**: sapato, calça social, meia-marcha e japona. A **boina fica no QAP** — não usa.
-- **Japona**: estrelas **de metal** e tarjeta no **mesmo tecido da calça**.
-- **Gandola B-3**: levar para missão externa. O colega usou só umas 3 vezes no curso todo.
-- **B-2**: bom ter também.
-- **Agasalho completo de EF**: usa pouco, mas leva.
-- **Brasão**: o certo é usar o brasão do CAES. Não cobraram, mas melhor providenciar.
+Referência oficial: **R-5-PM, 6ª Ed. v.2** (Regulamento de Uniformes). Lista de peças e quantidades em [MALA.md](MALA.md).
+
+- **Dia a dia do curso: P-1** (Art. 45) — camisa de passeio cinza-claro, calça social cinza-bandeirante, cinto de serviço, meias sociais pretas e sapatos pretos, com camiseta de serviço cinza-bandeirante por baixo.
+- **Cobertura**: no curso o **quepe é substituído pela boina cinza-bandeirante** (Art. 45, § 1º, item 2, que trata de trânsito e atividades administrativas). Quepe só em cerimônia. Por isso a boina fica guardada no alojamento e só é usada ao sair para área descoberta.
+- **Instrução e missão externa: B-1** (Art. 23) — gandola e calça operacional cinza-bandeirante, coturnos pretos. Segundo o colega, saiu umas 3 vezes no curso todo.
+- **Agasalho do P-1**: **jaqueta de passeio** (Art. 127), tecido panamá cinza-bandeirante, insígnias de posto em metal nas platinas e tarjeta administrativa. Também valem a blusa de lã (Art. 117) e o capote (Art. 121). A **japona é restrita ao efetivo do TOR** (Art. 124) — o colega chamou a jaqueta de japona.
+- **B-2 e B-3 não se aplicam**: B-2 é da Corregedoria (Art. 24) e B-3 é de patrulha montada (Art. 25).
+- **Distintivo de OPM do CAES**: vai na manga direita, 20 mm abaixo do distintivo da Bandeira de São Paulo (Art. 70, § 1º, item 3). É o "brasão do CAES" do bizu. Não cobraram, mas é o certo.
+- **Camiseta de serviço** (Art. 74): cinza-bandeirante, gola careca, meia manga, tarjeta operacional no peito direito e Logomarca da PMESP no peito esquerdo. Serve tanto para o P-1 quanto para o B-1.
 - Uso obrigatório de cobertura nas áreas descobertas do CAES.
-- TFM: tênis preto e meia branca EF.
+- **EF (T-1)**: camiseta de treinamento branca, calção azul-royal, meias brancas e tênis preto.
 
 ## Estrutura do prédio
 - **Copa anexa ao alojamento**: geladeira e micro-ondas.

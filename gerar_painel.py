@@ -35,6 +35,7 @@ ABAS = [
     ("DUVIDAS.md",   "duvidas",   "Dúvidas",    "help"),
     ("ANOTACOES.md", "anotacoes", "Anotações",  "note"),
     ("MALA.md",      "mala",      "Mala",       "mala"),
+    ("COMPRAS.md",   "compras",   "Compras",    "carrinho"),
     ("VIAGENS.md",   "viagens",   "Viagens",    "map"),
 ]
 
@@ -50,6 +51,7 @@ ICONES = {
     "note":     '<path d="M5 3h9l5 5v13H5z"/><path d="M14 3v5h5"/><path d="M9 13h6M9 17h4"/>',
     "map":      '<path d="M9 4 3 6.5v14L9 18l6 2.5 6-2.5v-14L15 6.5 9 4z"/><path d="M9 4v14M15 6.5v14"/>',
     "mala":     '<rect x="3" y="7" width="18" height="14" rx="2"/><path d="M9 7V4h6v3"/><path d="M3 12h18"/>',
+    "carrinho": '<path d="M3 4h2l2.4 11.2a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.5L21 8H6"/><circle cx="10" cy="20" r="1.2"/><circle cx="18" cy="20" r="1.2"/>',
     "search":   '<circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/>',
     "sun":      '<circle cx="12" cy="12" r="4.5"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4"/>',
     "moon":     '<path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z"/>',

@@ -9,7 +9,7 @@
 <!-- o painel e um arquivo unico que muda a cada geracao; sem isto o navegador
      serve a versao antiga do cache e correcoes nao chegam ate o usuario -->
 <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
-<meta name="gerado-em" content="20260804170104">
+<meta name="gerado-em" content="20260804171131">
 <title>Central do CAO</title>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23c8102e'/%3E%3Ctext x='16' y='22' font-size='15' font-family='Arial' font-weight='bold' fill='white' text-anchor='middle'%3ECAO%3C/text%3E%3C/svg%3E">
 <style>
@@ -189,6 +189,11 @@ ul.tarefas li.parcial .mk-qtd .n{color:var(--al);font-weight:600}
 .mk-topo button:hover{color:var(--tx);border-color:var(--vm)}
 /* estado da sincronizacao, igual ao das Tarefas mas dentro da barra */
 .mk-topo .tf-status{margin-left:0;font-size:12px}
+/* o que ja esta pronto sai da lista; o titulo da secao que ficou sem
+   nenhuma lista visivel sai junto, para nao sobrar cabecalho solto */
+.oculto{display:none!important}
+.mk-topo .mk-ver{color:var(--vm);border-color:transparent}
+.mk-topo .mk-ver:hover{border-color:var(--vm)}
 
 /* ============================ app de tarefas ============================ */
 .tf-topo{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:14px}
@@ -406,7 +411,9 @@ mark{background:rgba(232,161,58,.35);color:inherit;border-radius:3px;padding:0 2
 <pre data-b><code>python gerar_painel.py</code></pre>
 <h3 data-b>Caixinhas ticáveis</h3>
 <p data-b>Nas abas geradas dos .md (Conferir, Compras, Mala, Rotina), <strong>as caixinhas são clicáveis</strong>: clique para marcar, clique de novo para desmarcar.</p>
-<p data-b><strong>Item com quantidade aceita marcação parcial.</strong> Todo item que começa com um número (<code>- [ ] 6 camisetas...</code>) ou termina com <code>— 5</code> ganha sozinho um contador <code>−  3 de 6  +</code>. Clicar no <code>+</code>/<code>−</code> anda de um em um; clicar no corpo da linha vai direto para "tenho tudo" ou "não tenho nada". Enquanto está no meio, o item fica âmbar. A contagem do topo é <strong>por peça</strong>, não por linha: 6 camisetas contam como 6.</p>
+<p data-b><strong>Item com quantidade aceita marcação parcial.</strong> Todo item que começa com um número (<code>- [ ] 6 camisetas...</code>) ou termina com <code>— 5</code> ganha sozinho um contador <code>−  faltam 4  +</code>. Clicar no <code>+</code>/<code>−</code> anda de um em um; clicar no corpo da linha vai direto para "tenho tudo" ou "não tenho nada". Enquanto está no meio, o item fica âmbar. A contagem do topo é <strong>por peça</strong>, não por linha: 6 camisetas contam como 6.</p>
+<p data-b><strong>A lista vai encurtando.</strong> Item completo sai de vista; se a seção inteira ficou pronta, o título dela sai junto. Enquanto ainda faltam peças o item continua na lista, mostrando quantas faltam. O botão</p>
+<p data-b><strong>Mostrar N já prontos</strong> traz tudo de volta (é assim que se desfaz um engano).</p>
 <p data-b>Cada aba mostra no topo quanto já foi marcado e tem um botão "Limpar marcações". O texto continua vindo do .md — se eu editar o texto de um item, aquele item volta a ficar desmarcado.</p>
 <p data-b><strong>Sincronização entre aparelhos: ligada.</strong> As marcações sobem para o Supabase (tabela <code>cao_ticados</code>) junto com as tarefas, valendo sempre a alteração mais recente. Em cada aparelho novo, entrar uma vez em</p>
 <p data-b><strong>Tarefas → Entrar</strong>. Sem internet continua funcionando e sobe quando a conexão voltar.</p>
@@ -762,7 +769,7 @@ mark{background:rgba(232,161,58,.35);color:inherit;border-radius:3px;padding:0 2
 <li>A chave <code>anon</code> fica visível no HTML publicado, e isso é esperado: ela só identifica o projeto.</li>
 </ul>
 <p data-b>Quem protege os dados é o RLS no banco mais o login.</p></div></section>
-<section class="aba" id="ab-conferir" role="tabpanel"><div class="card"><blockquote data-b><strong>Tique o que você JÁ TEM em casa, na quantidade certa.</strong> O que ficar em branco é o que falta comprar — passe para <a href="#compras" class="lnk-aba">COMPRAS.md</a>. Esta lista é para fazer <strong>agora</strong>, de armário aberto. A de arrumar a mala no dia é a <a href="#mala" class="lnk-aba">MALA.md</a>. Quantidades calculadas para chegar domingo e ter aula de segunda a quinta, sem lavanderia.</blockquote>
+<section class="aba" id="ab-conferir" role="tabpanel"><div class="card"><blockquote data-b><strong>Tique o que você JÁ TEM em casa, na quantidade certa.</strong> O que ficar em branco é o que falta comprar — passe para <a href="#compras" class="lnk-aba">COMPRAS.md</a>. Conforme você tica, o item <strong>sai da lista</strong> e ela vai encurtando. Nos itens com quantidade, cada <code>+</code> tira uma peça: "6 camisetas" vira "faltam 5", "faltam 4"... Errou? <strong>Mostrar N já prontos</strong>, no topo, traz tudo de volta. Esta lista é para fazer <strong>agora</strong>, de armário aberto. A de arrumar a mala no dia é a <a href="#mala" class="lnk-aba">MALA.md</a>. Quantidades calculadas para chegar domingo e ter aula de segunda a quinta, sem lavanderia.</blockquote>
 <h2 data-b>Uniforme P-1 (dia a dia do curso)</h2>
 <ul data-b class="tarefas">
 <li class="pend" data-mk="2de055d428" data-qtd="2"><span class="box"></span><span>2 calças sociais cinza-bandeirante</span></li>
@@ -1103,7 +1110,9 @@ window.SUPA_CFG={"url": "https://lmmxaaoqygarwxbwwhlp.supabase.co", "key": "sb_p
   function mkTotal(li){return parseInt(li.getAttribute('data-qtd')||'0',10)||0}
   function mkTenho(li){var v=mkEstado[mkChave(li)];return (v&&v.n)||0}
 
-  /* pinta o item a partir de quantos ja tem */
+  /* pinta o item a partir de quantos ja tem. O contador mostra o que FALTA,
+     que e o que interessa numa lista feita para zerar; so quando o item esta
+     completo ele mostra o total, para fazer sentido ao reexibir os prontos. */
   function mkPinta(li,n){
     var tot=mkTotal(li), cheio=tot?n>=tot:n>0;
     li.classList.toggle('ok',cheio);
@@ -1113,10 +1122,62 @@ window.SUPA_CFG={"url": "https://lmmxaaoqygarwxbwwhlp.supabase.co", "key": "sb_p
     if(tot){
       var q=li.querySelector('.mk-qtd');
       if(q){
-        q.querySelector('.n').textContent=n+' de '+tot;
+        q.querySelector('.n').textContent=cheio?(tot+' de '+tot):('faltam '+(tot-n));
         q.querySelector('.menos').disabled=n<=0;
         q.querySelector('.mais').disabled=n>=tot;
       }
+    }
+  }
+
+  /* ------- esconder o que ja esta pronto, para a lista ir encurtando ------
+     Vale por aba. O item so some quando esta completo: enquanto falta peca
+     ele continua na lista, mostrando quantas faltam.                       */
+  var K_ESC='cao-esconder';
+  var mkEsc={};
+  try{mkEsc=JSON.parse(localStorage.getItem(K_ESC)||'{}')||{}}catch(e){mkEsc={}}
+  function mkEscondendo(sec){return mkEsc[sec.id]!==false} /* padrao: esconde */
+  function mkEscSalva(){try{localStorage.setItem(K_ESC,JSON.stringify(mkEsc))}catch(e){}}
+
+  /* alem do item, some tambem a lista que ficou vazia e o titulo da secao
+     que ficou sem nenhuma lista visivel - senao sobra titulo solto na tela */
+  function mkArruma(sec){
+    var esconder=mkEscondendo(sec), prontos=0;
+    [].forEach.call(sec.querySelectorAll('ul.tarefas li[data-mk]'),function(li){
+      if(li.classList.contains('ok'))prontos++;
+      li.classList.toggle('oculto',esconder&&li.classList.contains('ok'));
+    });
+    [].forEach.call(sec.querySelectorAll('ul.tarefas'),function(ul){
+      var vivo=[].some.call(ul.children,function(li){
+        return !li.classList.contains('oculto');
+      });
+      ul.classList.toggle('oculto',!vivo);
+    });
+    var card=sec.querySelector('.card');
+    if(card){
+      /* varre os blocos de cada titulo ate o proximo titulo do mesmo nivel */
+      var filhos=[].slice.call(card.children), bloco=[], tit=null;
+      var fecha=function(){
+        if(!tit)return;
+        var listas=bloco.filter(function(e){return e.matches('ul.tarefas')});
+        var some=listas.length>0&&listas.every(function(u){
+          return u.classList.contains('oculto');
+        });
+        tit.classList.toggle('oculto',some);
+        bloco.forEach(function(e){
+          if(!e.matches('ul.tarefas'))e.classList.toggle('oculto',some);
+        });
+      };
+      filhos.forEach(function(e){
+        if(/^H[23]$/.test(e.tagName)){fecha();tit=e;bloco=[];}
+        else if(tit)bloco.push(e);
+      });
+      fecha();
+    }
+    var bt=sec.querySelector('.mk-ver');
+    if(bt){
+      bt.style.display=prontos?'':'none';
+      bt.textContent=(esconder?'Mostrar ':'Ocultar ')+prontos+
+        (prontos===1?' já pronto':' já prontos');
     }
   }
   /* grava e repinta. Guarda ate o zero (em vez de apagar a chave), senao a
@@ -1127,7 +1188,7 @@ window.SUPA_CFG={"url": "https://lmmxaaoqygarwxbwwhlp.supabase.co", "key": "sb_p
     mkEstado[mkChave(li)]={n:n,m:mkAgora(),s:false};
     mkPinta(li,n);mkSalva();
     var sec=li.closest('.aba');
-    if(sec)mkConta(sec);
+    if(sec){mkConta(sec);mkArruma(sec);}
     if(window.TICADOS_SYNC)window.TICADOS_SYNC();
   }
   function mkConta(sec){
@@ -1157,15 +1218,20 @@ window.SUPA_CFG={"url": "https://lmmxaaoqygarwxbwwhlp.supabase.co", "key": "sb_p
       '<span class="mk-barra"><i style="width:0"></i></span>'+
       '<span class="tf-status mk-sinc" title="Estado da sincronização">'+
       '<span class="bola"></span><span class="txt">Somente neste aparelho</span></span>'+
-      '<button type="button">Limpar marcações</button>';
+      '<button type="button" class="mk-ver"></button>'+
+      '<button type="button" class="mk-limpar">Limpar marcações</button>';
     card.insertBefore(topo,card.firstChild);
-    topo.querySelector('button').onclick=function(){
+    topo.querySelector('.mk-ver').onclick=function(){
+      mkEsc[sec.id]=!mkEscondendo(sec);
+      mkEscSalva();mkArruma(sec);
+    };
+    topo.querySelector('.mk-limpar').onclick=function(){
       var agora=mkAgora();
       [].forEach.call(itens,function(li){
         mkEstado[mkChave(li)]={n:0,m:agora,s:false};
         mkPinta(li,0);
       });
-      mkSalva();mkConta(sec);
+      mkSalva();mkConta(sec);mkArruma(sec);
       if(window.TICADOS_SYNC)window.TICADOS_SYNC();
     };
     [].forEach.call(itens,function(li){
@@ -1179,7 +1245,7 @@ window.SUPA_CFG={"url": "https://lmmxaaoqygarwxbwwhlp.supabase.co", "key": "sb_p
       }
       mkPinta(li,mkTenho(li));
     });
-    mkConta(sec);
+    mkConta(sec);mkArruma(sec);
   });
 
   document.addEventListener('click',function(e){
@@ -1204,7 +1270,7 @@ window.SUPA_CFG={"url": "https://lmmxaaoqygarwxbwwhlp.supabase.co", "key": "sb_p
       var itens=sec.querySelectorAll('ul.tarefas li[data-mk]');
       if(!itens.length)return;
       [].forEach.call(itens,function(li){mkPinta(li,mkTenho(li))});
-      mkConta(sec);
+      mkConta(sec);mkArruma(sec);
     });
   }
   /* estado da sincronizacao mostrado na barra de cada aba de lista.

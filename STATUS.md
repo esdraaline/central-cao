@@ -38,9 +38,13 @@ Nas abas geradas dos .md (Conferir, Compras, Mala, Rotina), **as caixinhas são 
 marcar, clique de novo para desmarcar.
 
 **Item com quantidade aceita marcação parcial.** Todo item que começa com um número (`- [ ] 6 camisetas...`)
-ou termina com `— 5` ganha sozinho um contador `−  3 de 6  +`. Clicar no `+`/`−` anda de um em um; clicar
+ou termina com `— 5` ganha sozinho um contador `−  faltam 4  +`. Clicar no `+`/`−` anda de um em um; clicar
 no corpo da linha vai direto para "tenho tudo" ou "não tenho nada". Enquanto está no meio, o item fica
 âmbar. A contagem do topo é **por peça**, não por linha: 6 camisetas contam como 6.
+
+**A lista vai encurtando.** Item completo sai de vista; se a seção inteira ficou pronta, o título dela sai
+junto. Enquanto ainda faltam peças o item continua na lista, mostrando quantas faltam. O botão
+**Mostrar N já prontos** traz tudo de volta (é assim que se desfaz um engano).
 
 Cada aba mostra no topo quanto já foi marcado e tem um botão "Limpar marcações". O texto continua
 vindo do .md — se eu editar o texto de um item, aquele item volta a ficar desmarcado.

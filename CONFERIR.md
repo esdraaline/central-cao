@@ -1,6 +1,7 @@
 # CONFERIR — o que já tenho
 
 > **Tique o que você JÁ TEM em casa, na quantidade certa.** O que ficar em branco é o que falta comprar — passe para [COMPRAS.md](COMPRAS.md).
+> Conforme você tica, o item **sai da lista** e ela vai encurtando. Nos itens com quantidade, cada `+` tira uma peça: "6 camisetas" vira "faltam 5", "faltam 4"... Errou? **Mostrar N já prontos**, no topo, traz tudo de volta.
 > Esta lista é para fazer **agora**, de armário aberto. A de arrumar a mala no dia é a [MALA.md](MALA.md).
 > Quantidades calculadas para chegar domingo e ter aula de segunda a quinta, sem lavanderia.
 

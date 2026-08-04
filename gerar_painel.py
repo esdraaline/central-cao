@@ -540,6 +540,11 @@ ul.tarefas li.parcial .mk-qtd .n{color:var(--al);font-weight:600}
 .mk-topo button:hover{color:var(--tx);border-color:var(--vm)}
 /* estado da sincronizacao, igual ao das Tarefas mas dentro da barra */
 .mk-topo .tf-status{margin-left:0;font-size:12px}
+/* o que ja esta pronto sai da lista; o titulo da secao que ficou sem
+   nenhuma lista visivel sai junto, para nao sobrar cabecalho solto */
+.oculto{display:none!important}
+.mk-topo .mk-ver{color:var(--vm);border-color:transparent}
+.mk-topo .mk-ver:hover{border-color:var(--vm)}
 
 /* ============================ app de tarefas ============================ */
 .tf-topo{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:14px}
@@ -1559,7 +1564,9 @@ JS = r"""
   function mkTotal(li){return parseInt(li.getAttribute('data-qtd')||'0',10)||0}
   function mkTenho(li){var v=mkEstado[mkChave(li)];return (v&&v.n)||0}
 
-  /* pinta o item a partir de quantos ja tem */
+  /* pinta o item a partir de quantos ja tem. O contador mostra o que FALTA,
+     que e o que interessa numa lista feita para zerar; so quando o item esta
+     completo ele mostra o total, para fazer sentido ao reexibir os prontos. */
   function mkPinta(li,n){
     var tot=mkTotal(li), cheio=tot?n>=tot:n>0;
     li.classList.toggle('ok',cheio);
@@ -1569,10 +1576,62 @@ JS = r"""
     if(tot){
       var q=li.querySelector('.mk-qtd');
       if(q){
-        q.querySelector('.n').textContent=n+' de '+tot;
+        q.querySelector('.n').textContent=cheio?(tot+' de '+tot):('faltam '+(tot-n));
         q.querySelector('.menos').disabled=n<=0;
         q.querySelector('.mais').disabled=n>=tot;
       }
+    }
+  }
+
+  /* ------- esconder o que ja esta pronto, para a lista ir encurtando ------
+     Vale por aba. O item so some quando esta completo: enquanto falta peca
+     ele continua na lista, mostrando quantas faltam.                       */
+  var K_ESC='cao-esconder';
+  var mkEsc={};
+  try{mkEsc=JSON.parse(localStorage.getItem(K_ESC)||'{}')||{}}catch(e){mkEsc={}}
+  function mkEscondendo(sec){return mkEsc[sec.id]!==false} /* padrao: esconde */
+  function mkEscSalva(){try{localStorage.setItem(K_ESC,JSON.stringify(mkEsc))}catch(e){}}
+
+  /* alem do item, some tambem a lista que ficou vazia e o titulo da secao
+     que ficou sem nenhuma lista visivel - senao sobra titulo solto na tela */
+  function mkArruma(sec){
+    var esconder=mkEscondendo(sec), prontos=0;
+    [].forEach.call(sec.querySelectorAll('ul.tarefas li[data-mk]'),function(li){
+      if(li.classList.contains('ok'))prontos++;
+      li.classList.toggle('oculto',esconder&&li.classList.contains('ok'));
+    });
+    [].forEach.call(sec.querySelectorAll('ul.tarefas'),function(ul){
+      var vivo=[].some.call(ul.children,function(li){
+        return !li.classList.contains('oculto');
+      });
+      ul.classList.toggle('oculto',!vivo);
+    });
+    var card=sec.querySelector('.card');
+    if(card){
+      /* varre os blocos de cada titulo ate o proximo titulo do mesmo nivel */
+      var filhos=[].slice.call(card.children), bloco=[], tit=null;
+      var fecha=function(){
+        if(!tit)return;
+        var listas=bloco.filter(function(e){return e.matches('ul.tarefas')});
+        var some=listas.length>0&&listas.every(function(u){
+          return u.classList.contains('oculto');
+        });
+        tit.classList.toggle('oculto',some);
+        bloco.forEach(function(e){
+          if(!e.matches('ul.tarefas'))e.classList.toggle('oculto',some);
+        });
+      };
+      filhos.forEach(function(e){
+        if(/^H[23]$/.test(e.tagName)){fecha();tit=e;bloco=[];}
+        else if(tit)bloco.push(e);
+      });
+      fecha();
+    }
+    var bt=sec.querySelector('.mk-ver');
+    if(bt){
+      bt.style.display=prontos?'':'none';
+      bt.textContent=(esconder?'Mostrar ':'Ocultar ')+prontos+
+        (prontos===1?' já pronto':' já prontos');
     }
   }
   /* grava e repinta. Guarda ate o zero (em vez de apagar a chave), senao a
@@ -1583,7 +1642,7 @@ JS = r"""
     mkEstado[mkChave(li)]={n:n,m:mkAgora(),s:false};
     mkPinta(li,n);mkSalva();
     var sec=li.closest('.aba');
-    if(sec)mkConta(sec);
+    if(sec){mkConta(sec);mkArruma(sec);}
     if(window.TICADOS_SYNC)window.TICADOS_SYNC();
   }
   function mkConta(sec){
@@ -1613,15 +1672,20 @@ JS = r"""
       '<span class="mk-barra"><i style="width:0"></i></span>'+
       '<span class="tf-status mk-sinc" title="Estado da sincronização">'+
       '<span class="bola"></span><span class="txt">Somente neste aparelho</span></span>'+
-      '<button type="button">Limpar marcações</button>';
+      '<button type="button" class="mk-ver"></button>'+
+      '<button type="button" class="mk-limpar">Limpar marcações</button>';
     card.insertBefore(topo,card.firstChild);
-    topo.querySelector('button').onclick=function(){
+    topo.querySelector('.mk-ver').onclick=function(){
+      mkEsc[sec.id]=!mkEscondendo(sec);
+      mkEscSalva();mkArruma(sec);
+    };
+    topo.querySelector('.mk-limpar').onclick=function(){
       var agora=mkAgora();
       [].forEach.call(itens,function(li){
         mkEstado[mkChave(li)]={n:0,m:agora,s:false};
         mkPinta(li,0);
       });
-      mkSalva();mkConta(sec);
+      mkSalva();mkConta(sec);mkArruma(sec);
       if(window.TICADOS_SYNC)window.TICADOS_SYNC();
     };
     [].forEach.call(itens,function(li){
@@ -1635,7 +1699,7 @@ JS = r"""
       }
       mkPinta(li,mkTenho(li));
     });
-    mkConta(sec);
+    mkConta(sec);mkArruma(sec);
   });
 
   document.addEventListener('click',function(e){
@@ -1660,7 +1724,7 @@ JS = r"""
       var itens=sec.querySelectorAll('ul.tarefas li[data-mk]');
       if(!itens.length)return;
       [].forEach.call(itens,function(li){mkPinta(li,mkTenho(li))});
-      mkConta(sec);
+      mkConta(sec);mkArruma(sec);
     });
   }
   /* estado da sincronizacao mostrado na barra de cada aba de lista.

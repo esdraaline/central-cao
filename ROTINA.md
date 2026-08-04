@@ -1,13 +1,43 @@
 # ROTINA — CAO-II-2026
 
-> Regras do dia a dia no CAES. Fonte: slide de Recepção aos Oficiais-Alunos ([CAO 2026/Curso/SAE - Recepcao dos Discentes CAO II 26.pdf](CAO%202026/Curso/SAE%20-%20Recepcao%20dos%20Discentes%20CAO%20II%2026.pdf)). Ver contatos por assunto em [CONTATOS.md](CONTATOS.md).
+> Regras do dia a dia no CAES. Fonte: slide de Recepção aos Oficiais-Alunos ([CAO 2026/Curso/SAE - Recepcao dos Discentes CAO II 26.pdf](CAO%202026/Curso/SAE%20-%20Recepcao%20dos%20Discentes%20CAO%20II%2026.pdf)) + bizu de colega que já fez o curso. Ver contatos por assunto em [CONTATOS.md](CONTATOS.md) e o que levar em [MALA.md](MALA.md).
+
+## Horário das aulas
+Entrada sempre às **08h15**. A saída muda por dia:
+
+| Dia | Entrada | Saída |
+|---|---|---|
+| Segunda | 08h15 | 16h00 |
+| Terça | 08h15 | 18h00 |
+| Quarta | 08h15 | 18h00 |
+| Quinta | 08h15 | 11h30 |
+
+Ou seja: chega no domingo, quatro dias de aula e volta na quinta depois das 11h30.
 
 ## Uniforme
+- **Dia a dia do curso**: sapato, calça social, meia-marcha e japona. A **boina fica no QAP** — não usa.
+- **Japona**: estrelas **de metal** e tarjeta no **mesmo tecido da calça**.
+- **Gandola B-3**: levar para missão externa. O colega usou só umas 3 vezes no curso todo.
+- **B-2**: bom ter também.
+- **Agasalho completo de EF**: usa pouco, mas leva.
+- **Brasão**: o certo é usar o brasão do CAES. Não cobraram, mas melhor providenciar.
 - Uso obrigatório de cobertura nas áreas descobertas do CAES.
 - TFM: tênis preto e meia branca EF.
 
+## Estrutura do prédio
+- **Copa anexa ao alojamento**: geladeira e micro-ondas.
+- **Frigobar dentro do alojamento**, além de mesas e cadeiras para se alimentar.
+- **Cafeteiras** disponíveis.
+- **Sala de aula tem poucas tomadas** — bizu: levar extensão com várias saídas para o notebook.
+- **Wi-fi da intranet funciona bem** (rede WCorp).
+- **Armário**: provavelmente só 1 folha de armário padrão da PM por aluno. Leve compacto.
+- Bastante matéria e bastante instrutor — levar uns 2 cadernos.
+- Os próprios alunos se organizam para melhorar o ambiente (comes e bebes); isso é acertado no início do curso.
+
 ## Alojamento e estacionamento
 - Alojamento: armários e camas identificados; não usar outras dependências.
+- **Não fornece roupa de cama** — levar lençol, fronha, travesseiro e cobertor.
+- **Levar material de limpeza**: saco de lixo grande e pequeno, pano de chão, balde, Veja, papel higiênico.
 - Estacionamento do CAO: 40 vagas sinalizadas, cartão de estacionamento visível (contatar a AAp se necessário). Motocicletas: espaço coberto atrás do prédio. Viaturas: 20 vagas sinalizadas defronte à OPM.
 
 ## Entregas
@@ -49,6 +79,7 @@
 
 ## Diversos
 - Alimentação é por conta própria — procurar locais compatíveis no entorno do CAES (lista abaixo).
+- Testados pelo colega: **Terraço** (R$ 28,00, come à vontade) e **Padaria Flor da Duque** (faz café, almoço e janta).
 - Conservação de salas de aula e alojamentos: escala criada pelo efetivo de discentes (unidade recém-criada).
 - Wi-fi: rede WCorp. Demandas de TIC: 0800 da DTIC.
 - Subchefes de Turma cuidam de: controle de frequência diária (SAE), QTS (Coord), controle PDM (Coord), coleta/divulgação de materiais dos docentes (Coord), equipamentos de informática (Coord).

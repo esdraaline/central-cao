@@ -10,6 +10,7 @@
 - Projeto de Pesquisa (PP) tem versão final entregue em [CAO 2026/PP/Projeto Pesquisa Cap Josemar Final.doc](CAO%202026/PP/Projeto%20Pesquisa%20Cap%20Josemar%20Final.doc) — tema: integração PM-Prefeituras / governança participativa no 2º BPM/I. Como agora é mestrado profissional, isso deve virar **dissertação** (ver contato de Pesquisa em [CONTATOS.md](CONTATOS.md)).
 - Contatos e organograma do CAES: ver [CONTATOS.md](CONTATOS.md).
 - Regras de rotina, uniforme, SIPA financeiro, formatura: ver [ROTINA.md](ROTINA.md).
+- **Primeira semana: viaja domingo 16/08/2026**, aulas de segunda a quinta (entra 08h15; sai 16h seg, 18h ter e qua, 11h30 qui). O que colocar na mala está em [MALA.md](MALA.md).
 - **Falta preencher**: em qual módulo/disciplina o curso está agora, o que já foi entregue no curso em si (não só na seleção/recepção).
 
 ## Próximo passo
@@ -52,6 +53,7 @@ Central CAO/
 ├── DUVIDAS.md        <- dúvidas em aberto sobre o curso
 ├── TAREFAS.md        <- lista de tarefas correntes
 ├── ANOTACOES.md      <- notas soltas, recados, ideias
+├── MALA.md           <- checklist de enxoval, farda e material da semana no CAES
 ├── VIAGENS.md         <- deslocamentos (módulos presenciais, provas etc.)
 ├── SUPABASE.md       <- como ligar a sincronização das tarefas
 ├── gerar_painel.py   <- gera o painel a partir dos .md acima

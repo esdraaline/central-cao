@@ -1,0 +1,22 @@
+# === Material pesado e pessoal: fica so no PC + Google Drive ===
+# Nada disso vai para o GitHub. Sao PDFs grandes, material de curso pago
+# (direito autoral) e documentos pessoais (ficha de inscricao, comprovante
+# de deposito, RE). O painel em docs/ nao depende deles.
+CAO 2026/
+
+# Obs: supabase.json NAO entra aqui de proposito. Ele guarda a chave "anon",
+# que e publica por natureza e ja vai dentro do docs/index.html de qualquer
+# forma. Versionar mantem a configuracao ao trocar de maquina. O que nunca
+# pode aparecer ali e a chave "service_role" (o gerador recusa e para).
+
+# === Temporarios ===
+__pycache__/
+*.pyc
+~$*
+*.tmp
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Arquivos de trava do Word/Excel
+.~lock.*

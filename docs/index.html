@@ -1,0 +1,1527 @@
+<!DOCTYPE html>
+<html lang="pt-BR" prefix="og: http://ogp.me/ns#">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<meta name="googlebot" content="noindex,nofollow">
+<meta name="theme-color" content="#c8102e">
+<title>Central do CAO</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23c8102e'/%3E%3Ctext x='16' y='22' font-size='15' font-family='Arial' font-weight='bold' fill='white' text-anchor='middle'%3ECAO%3C/text%3E%3C/svg%3E">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --vm:#c8102e; --vm-cl:#e63950;
+  --bg:#f4f5f7; --card:#fff; --card2:#fafbfc;
+  --tx:#1a1d21; --tx2:#5b6470; --tx3:#8a929c;
+  --bd:#e2e5ea; --sh:0 1px 3px rgba(16,24,40,.06),0 1px 2px rgba(16,24,40,.04);
+  --sh2:0 4px 16px rgba(16,24,40,.08);
+  --ok:#0f9d58; --al:#e8a13a; --al-bg:#fef8ec;
+}
+@media (prefers-color-scheme:dark){
+  :root{--bg:#0f1218;--card:#171b23;--card2:#1c212b;--tx:#e6e9ee;--tx2:#9aa4b2;
+        --tx3:#6b7480;--bd:#262c37;--vm-cl:#ff5a72;--al-bg:#2a2415;
+        --sh:0 1px 3px rgba(0,0,0,.4);--sh2:0 4px 20px rgba(0,0,0,.5)}
+}
+:root[data-theme=dark]{--bg:#0f1218;--card:#171b23;--card2:#1c212b;--tx:#e6e9ee;
+  --tx2:#9aa4b2;--tx3:#6b7480;--bd:#262c37;--vm-cl:#ff5a72;--al-bg:#2a2415;
+  --sh:0 1px 3px rgba(0,0,0,.4);--sh2:0 4px 20px rgba(0,0,0,.5)}
+:root[data-theme=light]{--bg:#f4f5f7;--card:#fff;--card2:#fafbfc;--tx:#1a1d21;
+  --tx2:#5b6470;--tx3:#8a929c;--bd:#e2e5ea;--vm-cl:#e63950;--al-bg:#fef8ec;
+  --sh:0 1px 3px rgba(16,24,40,.06);--sh2:0 4px 16px rgba(16,24,40,.08)}
+
+body{background:var(--bg);color:var(--tx);
+  font:15px/1.62 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  -webkit-font-smoothing:antialiased}
+
+/* cabecalho */
+:root{--top1:#8f0a20;--top2:#c8102e;--top3:#a30d26}
+@media (prefers-color-scheme:dark){:root{--top1:#4a0511;--top2:#7d0a1d;--top3:#5c0716}}
+:root[data-theme=dark]{--top1:#4a0511;--top2:#7d0a1d;--top3:#5c0716}
+:root[data-theme=light]{--top1:#8f0a20;--top2:#c8102e;--top3:#a30d26}
+.topo{background:linear-gradient(100deg,var(--top1),var(--top2) 55%,var(--top3));color:#fff;
+  padding:20px 0 0;box-shadow:var(--sh2);position:relative;overflow:hidden}
+.topo::after{content:"";position:absolute;right:-60px;top:-70px;width:260px;height:260px;
+  border-radius:50%;background:rgba(255,255,255,.06)}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px;position:relative;z-index:1}
+.marca{display:flex;align-items:center;gap:13px;flex-wrap:wrap}
+.brasao{width:42px;height:42px;border-radius:9px;background:rgba(255,255,255,.16);
+  display:grid;place-items:center;font-weight:800;font-size:13px;letter-spacing:.5px;flex:none}
+.marca h1{font-size:19px;font-weight:700;letter-spacing:-.2px;line-height:1.25}
+.marca p{font-size:12.5px;opacity:.82;margin-top:1px}
+.acoes{margin-left:auto;display:flex;gap:8px;align-items:center}
+.bt{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.2);color:#fff;
+  border-radius:9px;padding:8px;cursor:pointer;display:grid;place-items:center;
+  transition:background .15s}
+.bt:hover{background:rgba(255,255,255,.26)}
+
+/* busca */
+.busca{position:relative;margin:16px 0 4px;max-width:420px}
+.busca svg{position:absolute;left:11px;top:50%;transform:translateY(-50%);opacity:.6;color:#fff}
+.busca input{width:100%;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.22);
+  border-radius:9px;padding:9px 12px 9px 36px;color:#fff;font-size:14px;font-family:inherit}
+.busca input::placeholder{color:rgba(255,255,255,.62)}
+.busca input:focus{outline:none;background:rgba(255,255,255,.2);border-color:rgba(255,255,255,.45)}
+
+/* abas */
+nav{display:flex;gap:2px;margin-top:14px;overflow-x:auto;scrollbar-width:none}
+nav::-webkit-scrollbar{display:none}
+nav button{background:none;border:0;color:rgba(255,255,255,.72);font:600 13.5px/1 inherit;
+  padding:12px 14px 13px;cursor:pointer;border-bottom:3px solid transparent;white-space:nowrap;
+  display:flex;align-items:center;gap:7px;transition:color .15s}
+nav button:hover{color:#fff}
+nav button[aria-selected=true]{color:#fff;border-bottom-color:#fff}
+nav .pill{background:rgba(255,255,255,.26);border-radius:20px;padding:1px 7px;font-size:11px;font-weight:700}
+nav .pill-b{background:#fff;color:var(--top2)}
+nav.buscando .pill:not(.pill-b){display:none}
+
+/* conteudo */
+main{max-width:1080px;margin:0 auto;padding:24px 20px 64px}
+.aba{display:none;animation:sobe .22s ease}
+.aba.on{display:block}
+@keyframes sobe{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:13px;
+  padding:22px 24px;box-shadow:var(--sh);margin-bottom:16px;overflow-wrap:break-word}
+
+/* home */
+.grade{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:13px;margin-bottom:16px}
+.kpi{background:var(--card);border:1px solid var(--bd);border-radius:13px;padding:17px 19px;box-shadow:var(--sh)}
+.kpi .rot{font-size:11.5px;text-transform:uppercase;letter-spacing:.7px;color:var(--tx3);font-weight:700}
+.kpi .val{font-size:29px;font-weight:750;letter-spacing:-1px;margin:5px 0 1px;line-height:1.1}
+.kpi .sub{font-size:12.5px;color:var(--tx2)}
+.kpi.dest{border-color:var(--vm);border-left-width:4px}
+.barra{height:6px;background:var(--bd);border-radius:4px;overflow:hidden;margin-top:11px}
+.barra i{display:block;height:100%;background:linear-gradient(90deg,var(--vm),var(--vm-cl));border-radius:4px}
+.aviso{background:var(--al-bg);border:1px solid var(--al);border-left-width:4px;
+  border-radius:11px;padding:15px 18px;margin-bottom:16px}
+.aviso h3{font-size:13px;text-transform:uppercase;letter-spacing:.6px;color:var(--al);margin-bottom:9px}
+.aviso ul{list-style:none}
+.aviso li{padding:4px 0 4px 20px;position:relative;font-size:14px}
+.aviso li::before{content:"";position:absolute;left:4px;top:12px;width:6px;height:6px;
+  border-radius:50%;background:var(--al)}
+
+/* tipografia do conteudo */
+.card h2{font-size:17px;font-weight:700;letter-spacing:-.2px;margin:26px 0 11px;
+  padding-bottom:8px;border-bottom:2px solid var(--bd)}
+.card h2:first-child{margin-top:0}
+.card h3{font-size:14.5px;font-weight:700;color:var(--tx);margin:19px 0 8px}
+.card p{margin:9px 0;color:var(--tx2)}
+.card ul,.card ol{margin:9px 0 9px 21px}
+.card li{margin:5px 0;color:var(--tx2)}
+.card li::marker{color:var(--vm-cl);font-weight:600}
+.card li ul,.card li ol{margin:5px 0 5px 18px}
+.card ol{list-style:decimal}
+.card strong{color:var(--tx);font-weight:650}
+.card a{color:var(--vm-cl);text-decoration:none;border-bottom:1px solid transparent}
+.card a:hover{border-bottom-color:currentColor}
+blockquote{border-left:3px solid var(--vm);background:var(--card2);padding:11px 16px;
+  border-radius:0 9px 9px 0;margin:13px 0;font-size:13.5px;color:var(--tx2)}
+code{background:var(--card2);border:1px solid var(--bd);border-radius:5px;padding:1.5px 5px;
+  font:.88em/1.4 ui-monospace,SFMono-Regular,Consolas,monospace;color:var(--vm-cl)}
+pre{background:var(--card2);border:1px solid var(--bd);border-radius:10px;padding:15px 17px;
+  overflow-x:auto;margin:13px 0}
+pre code{background:none;border:0;padding:0;color:var(--tx2);font-size:12.5px;line-height:1.55}
+hr{border:0;border-top:1px solid var(--bd);margin:20px 0}
+.arq{color:var(--tx2);font-size:.95em;border-bottom:1px dotted var(--tx3);cursor:help;
+  overflow-wrap:anywhere}
+.arq svg{flex:none;opacity:.55;vertical-align:-2px;margin-right:3px}
+
+/* tabelas */
+.tab-wrap{overflow-x:auto;margin:13px 0;border:1px solid var(--bd);border-radius:10px}
+table{border-collapse:collapse;width:100%;font-size:13.8px;min-width:400px}
+th{background:var(--card2);text-align:left;padding:10px 14px;font-weight:700;font-size:12px;
+  text-transform:uppercase;letter-spacing:.5px;color:var(--tx3);border-bottom:1px solid var(--bd)}
+td{padding:10px 14px;border-bottom:1px solid var(--bd);color:var(--tx2)}
+tr:last-child td{border-bottom:0}
+tbody tr:hover{background:var(--card2)}
+
+/* tarefas */
+ul.tarefas{list-style:none;margin:11px 0}
+ul.tarefas li{display:flex;gap:10px;align-items:flex-start;padding:9px 12px;margin:5px 0;
+  border:1px solid var(--bd);border-radius:9px;background:var(--card2)}
+ul.tarefas li .box{width:17px;height:17px;border-radius:5px;border:2px solid var(--bd);
+  flex:none;margin-top:2px;display:grid;place-items:center}
+ul.tarefas li.pend{border-left:3px solid var(--al)}
+ul.tarefas li.pend .box{border-color:var(--al)}
+ul.tarefas li.ok{opacity:.6}
+ul.tarefas li.ok .box{background:var(--ok);border-color:var(--ok);color:#fff}
+ul.tarefas li.ok span:last-child{text-decoration:line-through}
+
+/* ============================ app de tarefas ============================ */
+.tf-topo{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:14px}
+.tf-status{margin-left:auto;display:flex;align-items:center;gap:6px;font-size:12.5px;
+  color:var(--tx3);white-space:nowrap}
+.tf-status .bola{width:8px;height:8px;border-radius:50%;background:var(--tx3);flex:none}
+.tf-status.on .bola{background:var(--ok)}
+.tf-status.off .bola{background:var(--al)}
+.tf-status.erro .bola{background:var(--vm)}
+
+/* caixa de entrada */
+.tf-nova{background:var(--card);border:1px solid var(--bd);border-radius:13px;
+  padding:14px 16px;box-shadow:var(--sh);margin-bottom:16px;transition:border-color .15s}
+.tf-nova:focus-within{border-color:var(--vm);box-shadow:0 0 0 3px rgba(200,16,46,.1)}
+.tf-linha{display:flex;gap:10px;align-items:center}
+.tf-linha input[type=text]{flex:1;min-width:0;background:none;border:0;color:var(--tx);
+  font:16px/1.4 inherit;padding:5px 0}
+.tf-linha input[type=text]:focus{outline:none}
+.tf-linha input[type=text]::placeholder{color:var(--tx3)}
+.tf-add{background:var(--vm);border:0;color:#fff;border-radius:9px;width:38px;height:38px;
+  flex:none;display:grid;place-items:center;cursor:pointer;transition:transform .12s,background .15s}
+.tf-add:hover{background:#a80d26}
+.tf-add:active{transform:scale(.93)}
+.tf-add:disabled{opacity:.4;cursor:default;transform:none}
+.tf-opts{display:flex;gap:7px;align-items:center;flex-wrap:wrap;margin-top:11px;
+  padding-top:11px;border-top:1px solid var(--bd)}
+.chip{background:var(--card2);border:1px solid var(--bd);border-radius:20px;padding:5px 12px;
+  font:600 12.5px/1 inherit;color:var(--tx2);cursor:pointer;transition:all .13s;
+  display:inline-flex;align-items:center;gap:5px;white-space:nowrap}
+.chip:hover{border-color:var(--tx3);color:var(--tx)}
+.chip.on{background:var(--vm);border-color:var(--vm);color:#fff}
+.chip .pt{width:8px;height:8px;border-radius:50%;flex:none}
+.tf-data{background:var(--card2);border:1px solid var(--bd);border-radius:20px;padding:4px 10px;
+  color:var(--tx2);font:600 12.5px/1.5 inherit;font-family:inherit}
+.tf-data:focus{outline:none;border-color:var(--vm)}
+.tf-detectada{background:rgba(15,157,88,.12);border-color:var(--ok);color:var(--ok)}
+
+/* lista */
+.tf-grupo{margin-bottom:20px}
+.tf-cab{display:flex;align-items:center;gap:9px;margin:0 0 9px;font-size:12.5px;
+  font-weight:750;text-transform:uppercase;letter-spacing:.7px;color:var(--tx3)}
+.tf-cab .n{background:var(--bd);color:var(--tx2);border-radius:20px;padding:1px 8px;font-size:11px}
+.tf-cab.urgente{color:var(--vm)}
+.tf-cab.urgente .n{background:var(--vm);color:#fff}
+.tf-cab.hoje{color:var(--al)}
+.tf-cab.hoje .n{background:var(--al);color:#fff}
+
+.tf-item{display:flex;gap:11px;align-items:flex-start;padding:11px 13px;margin:6px 0;
+  background:var(--card);border:1px solid var(--bd);border-radius:11px;
+  transition:border-color .15s,transform .12s,opacity .2s;position:relative}
+.tf-item:hover{border-color:var(--tx3)}
+.tf-item.atrasada{border-left:3px solid var(--vm)}
+.tf-item.hoje{border-left:3px solid var(--al)}
+.tf-item.feita{opacity:.5}
+.tf-item.feita .tf-txt{text-decoration:line-through}
+.tf-item.saindo{opacity:0;transform:translateX(14px)}
+.tf-check{width:20px;height:20px;border-radius:6px;border:2px solid var(--bd);flex:none;
+  margin-top:1px;cursor:pointer;display:grid;place-items:center;background:none;
+  color:transparent;transition:all .15s;padding:0}
+.tf-check:hover{border-color:var(--ok)}
+.tf-item.feita .tf-check{background:var(--ok);border-color:var(--ok);color:#fff}
+.tf-corpo{flex:1;min-width:0}
+.tf-txt{font-size:14.5px;color:var(--tx);line-height:1.45;overflow-wrap:anywhere}
+.tf-meta{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:5px}
+.tf-tag{font-size:11.5px;font-weight:650;padding:2px 8px;border-radius:20px;
+  display:inline-flex;align-items:center;gap:5px;white-space:nowrap}
+.tf-tag.dt{background:var(--card2);border:1px solid var(--bd);color:var(--tx2)}
+.tf-tag.dt.venc{background:rgba(200,16,46,.12);border-color:var(--vm);color:var(--vm)}
+.tf-tag.dt.prox{background:rgba(232,161,58,.15);border-color:var(--al);color:var(--al)}
+.tf-tag.cat{color:#fff}
+.tf-acoes{display:flex;gap:3px;flex:none;opacity:0;transition:opacity .15s}
+.tf-item:hover .tf-acoes,.tf-item:focus-within .tf-acoes{opacity:1}
+.tf-ac{background:none;border:0;color:var(--tx3);cursor:pointer;padding:5px;border-radius:6px;
+  display:grid;place-items:center;transition:all .13s}
+.tf-ac:hover{background:var(--card2);color:var(--tx)}
+.tf-ac.del:hover{background:rgba(200,16,46,.12);color:var(--vm)}
+.tf-edit{width:100%;background:var(--card2);border:1px solid var(--vm);border-radius:7px;
+  padding:6px 9px;color:var(--tx);font:14.5px/1.4 inherit}
+.tf-edit:focus{outline:none}
+
+/* estado vazio */
+.tf-vazio{text-align:center;padding:44px 20px;color:var(--tx3)}
+.tf-vazio svg{opacity:.35;margin-bottom:11px}
+.tf-vazio p{font-size:14.5px;margin:0 0 4px;color:var(--tx2)}
+.tf-vazio small{font-size:13px}
+
+/* aviso de nao sincronizado */
+.tf-pend{display:flex;gap:11px;align-items:flex-start;background:var(--al-bg);
+  border:1px solid var(--al);border-left-width:4px;border-radius:11px;padding:13px 16px;
+  margin-bottom:15px;font-size:13.5px;color:var(--tx2)}
+.tf-pend svg{color:var(--al);flex:none;margin-top:1px}
+.tf-pend b{color:var(--tx);display:block;margin-bottom:2px}
+.tf-pend button{margin-top:8px}
+
+/* botoes gerais */
+.btn{background:var(--card);border:1px solid var(--bd);border-radius:9px;padding:8px 14px;
+  font:650 13px/1 inherit;color:var(--tx2);cursor:pointer;display:inline-flex;
+  align-items:center;gap:7px;transition:all .13s}
+.btn:hover{border-color:var(--tx3);color:var(--tx)}
+.btn.pri{background:var(--vm);border-color:var(--vm);color:#fff}
+.btn.pri:hover{background:#a80d26;border-color:#a80d26;color:#fff}
+.btn:disabled{opacity:.45;cursor:not-allowed}
+.btn:disabled:hover{border-color:var(--bd);color:var(--tx2)}
+.btn.pri:disabled:hover{background:var(--vm);border-color:var(--vm);color:#fff}
+
+/* modal */
+.modal{position:fixed;inset:0;background:rgba(10,12,16,.62);display:none;place-items:center;
+  z-index:50;padding:20px;backdrop-filter:blur(3px)}
+.modal.on{display:grid}
+.modal-cx{background:var(--card);border:1px solid var(--bd);border-radius:15px;
+  box-shadow:0 20px 60px rgba(0,0,0,.35);max-width:560px;width:100%;max-height:86vh;
+  display:flex;flex-direction:column;animation:sobe .2s ease}
+.modal-cab{display:flex;align-items:center;gap:11px;padding:18px 20px 14px;
+  border-bottom:1px solid var(--bd)}
+.modal-cab h3{font-size:16px;font-weight:700;flex:1}
+.modal-corpo{padding:18px 20px;overflow-y:auto}
+.modal-corpo p{font-size:13.5px;color:var(--tx2);margin-bottom:12px}
+.modal-corpo textarea{width:100%;min-height:190px;background:var(--card2);border:1px solid var(--bd);
+  border-radius:9px;padding:12px;color:var(--tx);font:12.5px/1.6 ui-monospace,Consolas,monospace;
+  resize:vertical}
+.modal-corpo textarea:focus{outline:none;border-color:var(--vm)}
+.modal-corpo label{display:block;font-size:12.5px;font-weight:650;color:var(--tx2);
+  margin:0 0 6px}
+.modal-corpo input[type=email],.modal-corpo input[type=password]{width:100%;
+  background:var(--card2);border:1px solid var(--bd);border-radius:9px;padding:10px 12px;
+  color:var(--tx);font:14.5px/1.4 inherit;margin-bottom:13px}
+.modal-corpo input:focus{outline:none;border-color:var(--vm)}
+.modal-rod{display:flex;gap:9px;justify-content:flex-end;padding:14px 20px;
+  border-top:1px solid var(--bd);flex-wrap:wrap}
+.modal-erro{background:rgba(200,16,46,.1);border:1px solid var(--vm);color:var(--vm);
+  border-radius:9px;padding:10px 13px;font-size:13px;margin-bottom:13px;display:none}
+.modal-erro.on{display:block}
+.aviso-cx{background:var(--card2);border:1px solid var(--bd);border-radius:9px;
+  padding:11px 13px;font-size:12.5px;color:var(--tx2);margin-bottom:13px;line-height:1.55}
+
+/* busca: destaque e ocultacao */
+mark{background:rgba(232,161,58,.35);color:inherit;border-radius:3px;padding:0 2px}
+.sem-res{text-align:center;color:var(--tx3);padding:40px 20px;font-size:14px}
+.rodape{text-align:center;color:var(--tx3);font-size:12.5px;padding:8px 0 0}
+.rodape code{font-size:11.5px}
+
+@media(max-width:640px){
+  .wrap,main{padding-left:14px;padding-right:14px}
+  .marca h1{font-size:16.5px}
+  .marca p{font-size:11.5px}
+  .brasao{width:36px;height:36px;font-size:11px}
+  .card{padding:18px 16px;border-radius:11px}
+  .kpi .val{font-size:25px}
+  .grade{grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px}
+  nav button{padding:11px 11px 12px;font-size:12.5px}
+  .busca{max-width:none}
+  .tf-acoes{opacity:1}
+  .tf-nova{padding:12px 13px}
+  .tf-opts{gap:6px}
+  .chip{padding:5px 10px;font-size:12px}
+  .modal{padding:12px;align-items:flex-end}
+  .modal-cx{max-height:92vh}
+  .modal-rod{justify-content:stretch}
+  .modal-rod .btn{flex:1;justify-content:center}
+}
+@media print{.topo,nav,.busca,.acoes{display:none}.aba{display:block!important}}
+</style>
+</head>
+<body>
+<header class="topo">
+  <div class="wrap">
+    <div class="marca">
+      <div class="brasao">CAO</div>
+      <div>
+        <h1>Central do CAO</h1>
+        <p>CAO-II / 2026, CAES "Cel Nelson Freire Terra"</p>
+      </div>
+      <div class="acoes">
+        <button class="bt" id="tema" title="Alternar tema"></button>
+      </div>
+    </div>
+    <div class="busca">
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input id="q" type="search" placeholder="Buscar em tudo (Ctrl+K)" autocomplete="off" spellcheck="false">
+    </div>
+    <nav role="tablist"><button data-aba="painel" role="tab" aria-selected="false"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/></svg>Painel<span class="pill pill-b" style="display:none"></span></button><button data-aba="prazos" role="tab" aria-selected="false"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4M16 3v4M3 11h18"/></svg>Prazos<span class="pill pill-b" style="display:none"></span></button><button data-aba="tarefas" role="tab" aria-selected="false"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Tarefas<span class="pill">6</span><span class="pill pill-b" style="display:none"></span></button><button data-aba="rotina" role="tab" aria-selected="false"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Rotina<span class="pill pill-b" style="display:none"></span></button><button data-aba="contatos" role="tab" aria-selected="false"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 20v-1a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v1"/><circle cx="9.5" cy="8" r="3.5"/><path d="M21 20v-1a4 4 0 0 0-3-3.8"/><path d="M16 4.2a3.5 3.5 0 0 1 0 6.8"/></svg>Contatos<span class="pill pill-b" style="display:none"></span></button><button data-aba="duvidas" role="tab" aria-selected="false"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.2 2.4c-.7.2-1.2.9-1.2 1.6v.5"/><path d="M12 17.5h.01"/></svg>Dúvidas<span class="pill pill-b" style="display:none"></span></button><button data-aba="anotacoes" role="tab" aria-selected="false"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3h9l5 5v13H5z"/><path d="M14 3v5h5"/><path d="M9 13h6M9 17h4"/></svg>Anotações<span class="pill pill-b" style="display:none"></span></button><button data-aba="viagens" role="tab" aria-selected="false"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4 3 6.5v14L9 18l6 2.5 6-2.5v-14L15 6.5 9 4z"/><path d="M9 4v14M15 6.5v14"/></svg>Viagens<span class="pill pill-b" style="display:none"></span></button></nav>
+  </div>
+</header>
+<main><section class="aba" id="ab-painel" role="tabpanel"><div class="grade"><div class="kpi dest"><div class="rot">Início do curso</div><div class="val">13</div><div class="sub">dias para 17/08/2026</div><div class="barra"><i style="width:0%"></i></div></div><div class="kpi"><div class="rot">Tarefas pendentes</div><div class="val" id="kpi-tar-val">6</div><div class="sub" id="kpi-tar-sub">3 já concluídas</div></div><div class="kpi"><div class="rot">Turma</div><div class="val">CAO-II</div><div class="sub">2026 / 2027, CAES</div></div><div class="kpi"><div class="rot">Formação</div><div class="val">Mestrado</div><div class="sub">Ciências Policiais</div></div></div><div class="aviso"><h3>Pendente agora</h3><ul id="home-tarefas"><li>Enviar Ofício de Apresentação para a mesa SEI 302090130 e liberar a Rotina 13 do SIPA (código 302090000) [14/08/2026] #admin</li><li>Conferir se a conta do Banco do Brasil não é "Conta Salário" e se o nome não está no CADIN [14/08/2026] #admin</li><li>Decidir opção de desconto SIPA: Alojamento (R$ 30,35) ou Vestiário (R$ 21,52), e cessar o equivalente na OPM de origem [17/08/2026] #admin</li><li>Se aplicável: pedir Ajuda de Custo (oficial de outro município) #admin</li><li>Atualizar STATUS.md e PRAZOS.md com a situação atual do curso (módulo/disciplina em andamento) #curso</li><li>Ficar de olho no Recadastramento Anual + Inspeção de Saúde (IAS) próximo do aniversário #admin</li></ul></div><div class="card"><blockquote data-b>Painel principal. Ler isso primeiro em qualquer sessão nova ("onde paramos?"). Atualizado em: 04/08/2026</blockquote>
+<h2 data-b>Onde estou agora</h2>
+<ul data-b>
+<li>Sou <strong>Oficial-Aluno do CAO/II-2026</strong> (2ª Turma) — <strong>Programa de Mestrado Profissional em Ciências Policiais de Segurança e Ordem Pública</strong>, no <strong>CAES "Cel Nelson Freire Terra"</strong> (região da Barra Funda, São Paulo — Av. Rio Branco / Av. Duque de Caxias).</li>
+<li>Curso roda de <strong>ago/2026 a ago/2027</strong> (conforme edital). Rotina 13 do SIPA liberada de <strong>17/ago/26 a 22/jan/27</strong> (1º bloco financeiro/administrativo).</li>
+<li>Fase de seleção (inscrição, prova escrita, defesa do PP) já concluída — documentos arquivados em <span class="arq" title="Arquivo na pasta local: CAO 2026/Inscrição/"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2h8l4 4v16H6z"/><path d="M14 2v4h4"/></svg>CAO 2026/Inscrição</span>.</li>
+<li>Projeto de Pesquisa (PP) tem versão final entregue em <span class="arq" title="Arquivo na pasta local: CAO 2026/PP/Projeto Pesquisa Cap Josemar Final.doc"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2h8l4 4v16H6z"/><path d="M14 2v4h4"/></svg>CAO 2026/PP/Projeto Pesquisa Cap Josemar Final.doc</span> — tema: integração PM-Prefeituras / governança participativa no 2º BPM/I. Como agora é mestrado profissional, isso deve virar <strong>dissertação</strong> (ver contato de Pesquisa em <a href="#contatos" class="lnk-aba">CONTATOS.md</a>).</li>
+<li>Contatos e organograma do CAES: ver <a href="#contatos" class="lnk-aba">CONTATOS.md</a>.</li>
+<li>Regras de rotina, uniforme, SIPA financeiro, formatura: ver <a href="#rotina" class="lnk-aba">ROTINA.md</a>.</li>
+<li><strong>Falta preencher</strong>: em qual módulo/disciplina o curso está agora, o que já foi entregue no curso em si (não só na seleção/recepção).</li>
+</ul>
+<h2 data-b>Próximo passo</h2>
+<ul data-b class="tarefas">
+<li class="pend"><span class="box"></span><span>Josemar: me contar o que está rolando no curso agora (módulo atual, próxima entrega, próxima aula presencial) pra eu atualizar <a href="#prazos" class="lnk-aba">PRAZOS.md</a> e este painel.</span></li>
+<li class="pend"><span class="box"></span><span>Enviar Ofício de Apresentação pra mesa SEI 302090130 e liberar a Rotina 13 do SIPA (código 302090000), se ainda não fez — matrícula e verbas dependem disso (ver <a href="#rotina" class="lnk-aba">ROTINA.md</a>).</span></li>
+<li class="pend"><span class="box"></span><span>Regularizar conta Banco do Brasil pro Auxílio Financeiro a Estudantes (não pode ser "Conta Salário", nome não pode estar no CADIN).</span></li>
+</ul>
+<h2 data-b>Prazos mais próximos</h2>
+<p data-b>Ver <a href="#prazos" class="lnk-aba">PRAZOS.md</a> para a lista completa.</p>
+<h2 data-b>Painel visual</h2>
+<p data-b>Painel HTML com abas, busca e prazos em destaque: <strong><code>docs/index.html</code></strong> (duplo clique para abrir). Ele é <strong>gerado</strong> a partir destes .md, não editado à mão. Depois de mexer em qualquer .md, rode:</p>
+<pre data-b><code>python gerar_painel.py</code></pre>
+<h3 data-b>Aba Tarefas (cadastro)</h3>
+<p data-b>Dá para cadastrar tarefa direto no painel, escrevendo em linguagem normal: <em>"entregar artigo sexta"</em>,</p>
+<p data-b><em>"prova dia 15"</em>, <em>"enviar ofício amanhã"</em>. Ele entende a data sozinho e agrupa por urgência (atrasadas, hoje, amanhã, próximos 7 dias). Categorias: Curso, Dissertação, Administrativo, Pessoal.</p>
+<p data-b><strong>Sincronização entre aparelhos: ligada.</strong> As tarefas sincronizam pelo Supabase (projeto <code>relatorio-ronda</code>, tabela <code>cao_tarefas</code>). Em cada aparelho novo, entrar uma vez em</p>
+<p data-b><strong>Tarefas → Entrar</strong> com o e-mail e senha de sempre. Detalhes em <span class="arq" title="Arquivo na pasta local: SUPABASE.md"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2h8l4 4v16H6z"/><path d="M14 2v4h4"/></svg>SUPABASE.md</span>.</p>
+<p data-b><strong>Mesmo assim, use o Exportar de vez em quando.</strong> Ele gera o <a href="#tarefas" class="lnk-aba">TAREFAS.md</a> pronto para colar, e é o que coloca as tarefas dentro do repositório para eu enxergar o histórico nas próximas sessões. Sem internet, o painel continua funcionando e sobe as alterações quando a conexão voltar.</p>
+<h2 data-b>Estrutura da pasta</h2>
+<pre data-b><code>Central CAO/
+├── STATUS.md        &lt;- este arquivo (painel)
+├── PRAZOS.md         &lt;- calendário/prazos vivos
+├── CONTATOS.md       &lt;- organograma do CAES e contatos por assunto
+├── ROTINA.md         &lt;- regras do dia a dia (uniforme, SIPA, formatura, facilities)
+├── DUVIDAS.md        &lt;- dúvidas em aberto sobre o curso
+├── TAREFAS.md        &lt;- lista de tarefas correntes
+├── ANOTACOES.md      &lt;- notas soltas, recados, ideias
+├── VIAGENS.md         &lt;- deslocamentos (módulos presenciais, provas etc.)
+├── SUPABASE.md       &lt;- como ligar a sincronização das tarefas
+├── gerar_painel.py   &lt;- gera o painel a partir dos .md acima
+├── docs/index.html   &lt;- o painel (gerado; é o que vai para o GitHub Pages)
+└── CAO 2026/
+    ├── Inscrição/    &lt;- documentos da fase de seleção (arquivo morto)
+    ├── PP/            &lt;- Projeto de Pesquisa / Monografia
+    ├── Curso/         &lt;- material do curso em andamento (avisos SAE, módulos)
+    └── Estudo/
+        ├── Curso Nakaharada CAO 2024/                       &lt;- curso pago, material atual
+        └── Material de Ciclos Anteriores (CAO 2021)/         &lt;- referência de edital anterior</code></pre>
+<h2 data-b>Regras desta pasta</h2>
+<ul data-b>
+<li><strong>Os .md são a fonte de verdade.</strong> O painel HTML é só o visor; nunca edite <code>docs/index.html</code> à mão, porque a próxima geração sobrescreve.</li>
+<li>Documentos pesados (PDF de estudo, edital, PP) ficam só aqui local + Google Drive. A pasta <code>CAO 2026/</code> inteira está no <code>.gitignore</code> e <strong>não vai para o GitHub</strong>.</li>
+<li>O que vira repositório: os .md, o <code>gerar_painel.py</code> e a pasta <code>docs/</code> (o painel publicado).</li>
+</ul></div></section>
+<section class="aba" id="ab-prazos" role="tabpanel"><div class="card"><blockquote data-b>Calendário vivo. Datas já cumpridas ficam marcadas como histórico (não apagar — serve de referência pro próximo ciclo/pra memória do curso).</blockquote>
+<h2 data-b>Curso (CAO-II/26 — 2ª Turma)</h2>
+<ul data-b>
+<li><strong>Duração</strong>: agosto/2026 a agosto/2027, no CAES "Cel Nelson Freire Terra".</li>
+<li><strong>Rotina 13 do SIPA</strong>: liberada de 17/ago/26 a 22/jan/27 (1º bloco financeiro/administrativo — ver <a href="#rotina" class="lnk-aba">ROTINA.md</a>).</li>
+<li>Próxima entrega / próxima aula presencial: <em>(preencher)</em></li>
+<li>Formatura: data/hora/local ainda a ratificar pela turma (ver checklist em <a href="#rotina" class="lnk-aba">ROTINA.md</a>).</li>
+</ul>
+<h2 data-b>Histórico — processo seletivo (já concluído)</h2>
+<p data-b>Fonte: Edital DEC-005/24/25 (CAO/26), Anexo A.</p>
+<div class="tab-wrap" data-b><table><thead><tr><th>Etapa</th><th>Data</th></tr></thead><tbody><tr><td>Inscrição</td><td>18/ago/25 a 01/set/25</td></tr><tr><td>Análise das inscrições</td><td>02 a 05/set/25</td></tr><tr><td>Prova escrita (Etapa II)</td><td>26/set/25</td></tr><tr><td>Resultado da prova</td><td>até 03/out/25</td></tr><tr><td>Defesa do PP (Etapa III)</td><td>20 a 31/out/25</td></tr><tr><td>Resultado da defesa</td><td>até 05/nov/25</td></tr><tr><td>Resultado Final</td><td>até 24/nov/25</td></tr><tr><td>Homologação</td><td>até 12/dez/25</td></tr><tr><td>Publicação da homologação (Bol G PM)</td><td>até 17/dez/25</td></tr><tr><td>Publicidade da Convocação</td><td>até 23/jan/26</td></tr><tr><td>Início do curso — 1ª Turma (CAO-I/26)</td><td>fev/26</td></tr><tr><td><strong>Início do curso — 2ª Turma (CAO-II/26, a minha)</strong></td><td>ago/26</td></tr></tbody></table></div>
+<h2 data-b>Prazos do curso em andamento</h2>
+<p data-b><em>(a preencher conforme Josemar for repassando — entregas de trabalhos, provas, apresentações, viagens para módulos presenciais etc.)</em></p>
+<ul data-b class="tarefas">
+<li class="pend"><span class="box"></span><span>...</span></li>
+</ul></div></section>
+<section class="aba" id="ab-tarefas" role="tabpanel">
+<div class="tf-topo">
+  <button class="btn" id="tf-exportar" title="Gerar o texto para colar no TAREFAS.md"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 11 5 5 5-5"/><path d="M4 20h16"/></svg> Exportar</button>
+  <button class="btn" id="tf-conta"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 20v-1a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v1"/><circle cx="9.5" cy="8" r="3.5"/><path d="M21 20v-1a4 4 0 0 0-3-3.8"/><path d="M16 4.2a3.5 3.5 0 0 1 0 6.8"/></svg> <span id="tf-conta-rot">Entrar</span></button>
+  <div class="tf-status" id="tf-status" title="Estado da sincronização">
+    <span class="bola"></span><span id="tf-status-txt">Somente neste aparelho</span>
+  </div>
+</div>
+
+<div class="tf-pend" id="tf-pend" style="display:none">
+  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 2 20h20z"/><path d="M12 10v4M12 17h.01"/></svg>
+  <div>
+    <b id="tf-pend-n"></b>
+    O painel guarda no navegador deste aparelho. Para não perder e para eu enxergar
+    nas próximas sessões, jogue no arquivo com o botão Exportar.
+    <div><button class="btn" onclick="document.getElementById('tf-exportar').click()">
+      <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 11 5 5 5-5"/><path d="M4 20h16"/></svg> Exportar agora</button></div>
+  </div>
+</div>
+
+<div class="tf-nova">
+  <div class="tf-linha">
+    <input type="text" id="tf-txt" placeholder="O que precisa ser feito? Ex.: entregar artigo sexta"
+           autocomplete="off" spellcheck="false">
+    <button class="tf-add" id="tf-add" title="Adicionar (Enter)" disabled><svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg></button>
+  </div>
+  <div class="tf-opts">
+    <input type="date" class="tf-data" id="tf-dt" title="Data da tarefa">
+    <span id="tf-rapidas" style="display:contents">
+      <button class="chip" data-q="hoje">Hoje</button>
+      <button class="chip" data-q="amanha">Amanhã</button>
+      <button class="chip" data-q="semana">Em 7 dias</button>
+      <button class="chip" data-q="limpar">Sem data</button>
+    </span>
+    <span style="width:1px;height:20px;background:var(--bd)"></span>
+    <span id="tf-cats" style="display:contents"><button class="chip" data-cat="curso"><span class="pt" style="background:#3b7dd8"></span>Curso</button><button class="chip" data-cat="dissertacao"><span class="pt" style="background:#8b5cf6"></span>Dissertação</button><button class="chip" data-cat="admin"><span class="pt" style="background:#e8892b"></span>Administrativo</button><button class="chip" data-cat="pessoal"><span class="pt" style="background:#0f9d58"></span>Pessoal</button></span>
+  </div>
+</div>
+
+<div id="tf-lista"></div>
+
+<div class="modal" id="modal-exp">
+  <div class="modal-cx">
+    <div class="modal-cab"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 11 5 5 5-5"/><path d="M4 20h16"/></svg><h3>Levar para o TAREFAS.md</h3>
+      <button class="tf-ac" data-fechar="modal-exp"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>
+    <div class="modal-corpo">
+      <p>Copie o texto abaixo e substitua o conteúdo do arquivo
+         <code>TAREFAS.md</code>. É assim que as tarefas entram no repositório
+         e ficam disponíveis nas outras máquinas e para mim nas próximas sessões.</p>
+      <textarea id="exp-txt" spellcheck="false"></textarea>
+    </div>
+    <div class="modal-rod">
+      <button class="btn" data-fechar="modal-exp">Fechar</button>
+      <button class="btn pri" id="exp-copiar"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg> Copiar</button>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="modal-conta">
+  <div class="modal-cx">
+    <div class="modal-cab"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 20v-1a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v1"/><circle cx="9.5" cy="8" r="3.5"/><path d="M21 20v-1a4 4 0 0 0-3-3.8"/><path d="M16 4.2a3.5 3.5 0 0 1 0 6.8"/></svg><h3 id="conta-titulo">Entrar na conta</h3>
+      <button class="tf-ac" data-fechar="modal-conta"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>
+    <div class="modal-corpo">
+      <div class="modal-erro" id="conta-erro"></div>
+      <div id="conta-form">
+        <div class="aviso-cx" id="conta-aviso">
+          Entrando, suas tarefas passam a sincronizar entre o computador e o celular.
+          Sem entrar, elas ficam salvas só neste aparelho.
+        </div>
+        <label for="conta-email">E-mail</label>
+        <input type="email" id="conta-email" autocomplete="username" placeholder="seu@email.com">
+        <label for="conta-senha">Senha</label>
+        <input type="password" id="conta-senha" autocomplete="current-password" placeholder="••••••••">
+      </div>
+      <div id="conta-logado" style="display:none">
+        <p>Conectado como <b id="conta-quem"></b>. As tarefas estão sincronizando.</p>
+      </div>
+    </div>
+    <div class="modal-rod">
+      <button class="btn" data-fechar="modal-conta">Fechar</button>
+      <button class="btn" id="conta-sair" style="display:none">Sair da conta</button>
+      <button class="btn pri" id="conta-entrar">Entrar</button>
+    </div>
+  </div>
+</div>
+</section>
+<section class="aba" id="ab-rotina" role="tabpanel"><div class="card"><blockquote data-b>Regras do dia a dia no CAES. Fonte: slide de Recepção aos Oficiais-Alunos (<span class="arq" title="Arquivo na pasta local: CAO 2026/Curso/SAE - Recepcao dos Discentes CAO II 26.pdf"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2h8l4 4v16H6z"/><path d="M14 2v4h4"/></svg>CAO 2026/Curso/SAE - Recepcao dos Discentes CAO II 26.pdf</span>). Ver contatos por assunto em <a href="#contatos" class="lnk-aba">CONTATOS.md</a>.</blockquote>
+<h2 data-b>Uniforme</h2>
+<ul data-b>
+<li>Uso obrigatório de cobertura nas áreas descobertas do CAES.</li>
+<li>TFM: tênis preto e meia branca EF.</li>
+</ul>
+<h2 data-b>Alojamento e estacionamento</h2>
+<ul data-b>
+<li>Alojamento: armários e camas identificados; não usar outras dependências.</li>
+<li>Estacionamento do CAO: 40 vagas sinalizadas, cartão de estacionamento visível (contatar a AAp se necessário). Motocicletas: espaço coberto atrás do prédio. Viaturas: 20 vagas sinalizadas defronte à OPM.</li>
+</ul>
+<h2 data-b>Entregas</h2>
+<ul data-b>
+<li>Aguardar o entregador na entrada externa do prédio. Ex.: "entrega para o Cap PM Fulano de Tal, Oficial-Aluno do Pel X no CAES".</li>
+</ul>
+<h2 data-b>Afastamentos</h2>
+<ul data-b>
+<li>Integral (DS) ou Parcial (planilhas na SAE) — depende de concessão do comando; contam como pontos perdidos.</li>
+<li>Limites: <strong>50% por matéria</strong> / <strong>75% do curso</strong>.</li>
+<li>Todo afastamento (DS, convalescença, licença compulsória, paternidade etc.) precisa de regularização + publicação em Boletim Interno — enviar o comprovante à SAE para publicação.</li>
+</ul>
+<h2 data-b>Demandas</h2>
+<ul data-b>
+<li>Ver ordem de contato em <a href="#contatos" class="lnk-aba">CONTATOS.md</a>: Chefe de Turma → Chefe da Seção responsável.</li>
+</ul>
+<h2 data-b>SIPA — financeiro</h2>
+<ul data-b>
+<li><strong>Não</strong> será sacado o Programa Copa.</li>
+<li>Será sacado <strong>Alojamento (pernoite)</strong> R$ 30,35 <strong>ou Vestiário</strong> R$ 21,52, conforme opção (nunca os dois juntos).</li>
+<li>Será sacado <strong>Fundo Escolar</strong>: R$ 76,84.</li>
+<li>Se precisar, pedir para cessar os descontos de Alojamento/Vestiário/Programa Copa na OPM de origem, pra não cobrar em duplicidade.</li>
+</ul>
+<h2 data-b>Ofício de Apresentação | SIPA</h2>
+<ul data-b>
+<li>Enviar para a mesa <strong>SEI 302090130</strong>.</li>
+<li>Liberar a <strong>Rotina 13 do SIPA de 17/ago/26 a 22/jan/27</strong>, no código <strong>302090000</strong>.</li>
+<li>Obs: matrícula e adição (verbas e auxílios) dependem do envio correto de tudo isso.</li>
+</ul>
+<h2 data-b>Auxílios (Oficiais-Alunos PMESP)</h2>
+<ul data-b>
+<li>Processados via DA; todos os Oficiais-Alunos são adidos ao CAES (função: Oficial-Aluno).</li>
+<li>Oficiais de outro município recebem <strong>Ajuda de Custo</strong> (conforme legislação).</li>
+<li>Todos recebem <strong>Auxílio Financeiro a Estudantes</strong> direto na conta do Banco do Brasil — <strong>a conta não pode ser "Conta Salário"</strong> e o nome <strong>não pode estar no CADIN</strong>.</li>
+<li>Aniversário (Recadastramento Anual e Inspeção de Saúde — IAS): pode ser feita na UIS da CORREG, CPA/M-1, ou na própria UIS do interessado; sem médico na UIS da CORREG, pode ser no CCB ou no CMed.</li>
+</ul>
+<h2 data-b>Formatura (a organizar pela turma)</h2>
+<ul data-b class="tarefas">
+<li class="pend"><span class="box"></span><span>Definir Comissão de Formatura (2 por Pelotão, um deles o Chefe de Turma)</span></li>
+<li class="pend"><span class="box"></span><span>Ratificar data, hora e local</span></li>
+<li class="pend"><span class="box"></span><span>Definir Patrono (nome da turma) e 3 indicações de Paraninfo / Orador / Homenagens</span></li>
+<li class="pend"><span class="box"></span><span>Contratar empresa de evento (buffet, challenge coin, decoração, foto, filmagem, placas, mimos)</span></li>
+<li class="pend"><span class="box"></span><span>Organizar registro de atividades/aulas (fotos e vídeo)</span></li>
+<li class="pend"><span class="box"></span><span>Montar relação de autoridades convidadas</span></li>
+<li class="pend"><span class="box"></span><span>Engajamento de todos os Oficiais-Alunos</span></li>
+</ul>
+<h2 data-b>Diversos</h2>
+<ul data-b>
+<li>Alimentação é por conta própria — procurar locais compatíveis no entorno do CAES (lista abaixo).</li>
+<li>Conservação de salas de aula e alojamentos: escala criada pelo efetivo de discentes (unidade recém-criada).</li>
+<li>Wi-fi: rede WCorp. Demandas de TIC: 0800 da DTIC.</li>
+<li>Subchefes de Turma cuidam de: controle de frequência diária (SAE), QTS (Coord), controle PDM (Coord), coleta/divulgação de materiais dos docentes (Coord), equipamentos de informática (Coord).</li>
+</ul>
+<h2 data-b>Facilities no entorno do CAES</h2>
+<ul data-b>
+<li>Evoque Academia — Av. Rio Branco, 1457 (aceita Gympass)</li>
+<li>Agência Banco do Brasil — Av. Rio Branco, 1437</li>
+<li>Terminal de Ônibus Princesa Isabel — Av. Rio Branco</li>
+<li>Drogaria Nova Duque — Av. Duque de Caxias, 788</li>
+<li>Restaurante Rio Branco — Av. Duque de Caxias x Av. Rio Branco</li>
+<li>Lissandra Cabeleireiros — Av. Duque de Caxias, 830</li>
+<li>Duque Supermercados — Av. Duque de Caxias, 812</li>
+<li>Lotérica Natal — Av. Duque de Caxias, 876</li>
+<li>OXXO — Largo General Osório, 153</li>
+<li>Banco 24Horas (Shop Inter Continental) — Rua Santa Efigênia, 452</li>
+<li>Pronto Socorro Barra Funda — Rua Vitorino Carmilo, 717</li>
+<li>Padaria — Alameda Barão de Limeira, 872</li>
+</ul></div></section>
+<section class="aba" id="ab-contatos" role="tabpanel"><div class="card"><blockquote data-b>Organograma e contatos por assunto. Fonte: slide de Recepção aos Oficiais-Alunos do CAO/II-2026 (<span class="arq" title="Arquivo na pasta local: CAO 2026/Curso/SAE - Recepcao dos Discentes CAO II 26.pdf"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2h8l4 4v16H6z"/><path d="M14 2v4h4"/></svg>CAO 2026/Curso/SAE - Recepcao dos Discentes CAO II 26.pdf</span>).</blockquote>
+<h2 data-b>Local</h2>
+<p data-b>CAES "Cel Nelson Freire Terra" — região da Barra Funda, São Paulo (entorno de Av. Rio Branco / Av. Duque de Caxias / Largo General Osório).</p>
+<h2 data-b>Organograma</h2>
+<ul data-b>
+<li><strong>Comandante</strong>: Cel PM Melo</li>
+<li><strong>Subcomandante</strong>: TCel Eliéverson</li>
+<li><strong>Divisão de Administração Escolar</strong>: Cap Casagrandi
+<ul data-b>
+<li>Seção de Apoio Escolar (SAE): Cap Hiran</li>
+<li>Seção de Avaliação e Concurso: Cap Diego</li>
+<li>Seção de Coordenação: Cap Diego</li>
+</ul>
+</li>
+<li><strong>Divisão de Ensino e Pesquisa</strong>: Maj Ciampone
+<ul data-b>
+<li>Seção de Pesquisa: Cap Gobbo</li>
+<li>Seção de Ética e Compliance: Cap Fernandes</li>
+</ul>
+</li>
+<li><strong>Divisão Administrativa</strong>: Maj Soares
+<ul data-b>
+<li>Setor de Apoio Administrativo: 1º Ten Patrícia</li>
+<li>UGE: Cap Cesário</li>
+<li>PJMD: Cap Fernandes</li>
+</ul>
+</li>
+</ul>
+<h2 data-b>Contatos por assunto</h2>
+<div class="tab-wrap" data-b><table><thead><tr><th>Assunto</th><th>Responsável</th><th>E-mail</th></tr></thead><tbody><tr><td>Coordenação geral do CAO-II/26</td><td>Cap PM Casagrandi (Ch Div Adm Escolar)</td><td>—</td></tr><tr><td>Alunos (SAE)</td><td>Cap PM Hiran</td><td><a href="mailto:caessae@policiamilitar.sp.gov.br">caessae@policiamilitar.sp.gov.br</a></td></tr><tr><td>Aulas e Palestras</td><td>Cap PM Diego Almeida</td><td><a href="mailto:caescoord@policiamilitar.sp.gov.br">caescoord@policiamilitar.sp.gov.br</a></td></tr><tr><td>Avaliações</td><td>Cap PM Diego Almeida</td><td><a href="mailto:caesaval@policiamilitar.sp.gov.br">caesaval@policiamilitar.sp.gov.br</a></td></tr><tr><td>Dissertação, Artigo e JNPC</td><td>Cap PM Gobbo</td><td><a href="mailto:caespesquisa@policiamilitar.sp.gov.br">caespesquisa@policiamilitar.sp.gov.br</a></td></tr><tr><td>Divisão de Ensino e Pesquisa (geral)</td><td>Maj PM Ciampone</td><td>—</td></tr></tbody></table></div>
+<h2 data-b>Ordem para resolver demandas</h2>
+<ol data-b>
+<li>Chefe de Turma</li>
+<li>Chefe da Seção responsável pela demanda (ver tabela acima)</li>
+<li><strong>Nunca</strong> pedir favor direto a terceirizados ou auxiliares do CAES — inconsistências nas instalações/serviços devem ser comunicadas formalmente (com evidências) pelo canal certo.</li>
+</ol></div></section>
+<section class="aba" id="ab-duvidas" role="tabpanel"><div class="card"><blockquote data-b>Perguntas em aberto sobre o curso (regras, rotina, SAE, orientador, colegas de turma) e as respostas já obtidas. Formato: pergunta, contexto, resposta (quando resolvida), data.</blockquote>
+<h2 data-b>Em aberto</h2>
+<ul data-b>
+<li><em>(nenhuma registrada ainda — vá anotando aqui conforme surgir)</em></li>
+</ul>
+<h2 data-b>Resolvidas</h2>
+<ul data-b>
+<li><em>(mover pra cá quando a dúvida for esclarecida, com a resposta e a fonte)</em></li>
+</ul></div></section>
+<section class="aba" id="ab-anotacoes" role="tabpanel"><div class="card"><blockquote data-b>Notas soltas, recados, ideias, coisas que não se encaixam em prazo/tarefa/dúvida.</blockquote>
+<h2 data-b>04/08/2026 — Criação da Central do CAO</h2>
+<ul data-b>
+<li>Pasta organizada e limpa (ver detalhes abaixo).</li>
+<li>Quando for criar o repositório no GitHub: <strong>não subir a pasta <code>CAO 2026/Estudo/</code>, <code>CAO 2026/Inscrição/</code> nem <code>CAO 2026/PP/Trabalhos de Referencia/</code></strong> — são PDFs pesados, material de curso pago (direitos autorais) e documentos pessoais (dados de inscrição, comprovante de depósito). Colocar em <code>.gitignore</code>. Só os <code>.md</code> da raiz (STATUS/PRAZOS/DUVIDAS/TAREFAS/ANOTACOES/VIAGENS) e talvez modelos/templates leves entram no repositório.</li>
+<li>Limpeza feita: removidos duplicados exatos, 2 arquivos <code>.exe</code> (lixo dentro do material antigo) e ~975 MB de áudio/vídeo de aulas antigas do ciclo 2021 (WhatsApp), já que existe cópia completa no Google Drive. Total liberado: ~1 GB (de 1,66 GB para ~640 MB).</li>
+<li>Pasta "CAO 2021" renomeada para "Material de Ciclos Anteriores (CAO 2021)" pra ficar claro que é referência de edital anterior, não do ciclo atual.</li>
+<li>Criada a pasta <code>CAO 2026/Curso/</code> para material do curso em andamento (hoje só tem o aviso de recepção do SAE).</li>
+</ul>
+<h2 data-b>04/08/2026 — Correção de turma + leitura do slide de recepção do SAE</h2>
+<ul data-b>
+<li><strong>Correção</strong>: não sou da 1ª Turma (CAO-I/26, fev/26–fev/27) como eu tinha assumido pelo edital — sou da <strong>2ª Turma (CAO-II/26, ago/26–ago/27)</strong>, no CAES "Cel Nelson Freire Terra".</li>
+<li>O curso agora é um <strong>Programa de Mestrado Profissional em Ciências Policiais de Segurança e Ordem Pública</strong> — o PP da seleção deve virar dissertação (contato: Cap Gobbo, <a href="mailto:caespesquisa@policiamilitar.sp.gov.br">caespesquisa@policiamilitar.sp.gov.br</a>).</li>
+<li>Todo o conteúdo do slide de recepção (organograma, contatos, rotina, SIPA, formatura, facilities) foi extraído para <a href="#contatos" class="lnk-aba">CONTATOS.md</a> e <a href="#rotina" class="lnk-aba">ROTINA.md</a> — o PDF original continua em <span class="arq" title="Arquivo na pasta local: CAO 2026/Curso/"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2h8l4 4v16H6z"/><path d="M14 2v4h4"/></svg>CAO 2026/Curso/</span> como fonte.</li>
+</ul>
+<h2 data-b>04/08/2026 — Painel visual (docs/index.html)</h2>
+<ul data-b>
+<li>Criado o painel HTML com abas, busca global (Ctrl+K), tema claro/escuro e os prazos/tarefas em destaque na abertura.</li>
+<li><strong>Arquitetura</strong>: os .md são a fonte de verdade, o <code>gerar_painel.py</code> lê todos eles e cospe <code>docs/index.html</code>. Editar o HTML direto não adianta, a próxima geração sobrescreve.</li>
+<li>O script é Python puro, sem instalar nada. Funciona em qualquer máquina que tenha Python.</li>
+<li><strong>Decisão sobre publicação</strong>: vai para GitHub Pages público, com a ressalva de que o painel contém organograma do CAES, e-mails funcionais, código SEI e meu RE. Avaliei e segui assim. Mitigações aplicadas: <code>noindex/nofollow</code> (não entra em busca do Google) e o Pages serve <strong>só a pasta <code>docs/</code></strong>, então o resto do repositório nunca vira URL acessível.</li>
+<li>A pasta <code>CAO 2026/</code> está no <code>.gitignore</code> inteira (PDFs pesados, material de curso pago, documentos pessoais).</li>
+</ul>
+<h2 data-b>04/08/2026 — Cadastro de tarefas no painel</h2>
+<ul data-b>
+<li>A aba Tarefas virou um app de verdade: cadastro com data em linguagem normal ("entregar artigo sexta",</li>
+</ul>
+<p data-b>"prova dia 15", "em 3 dias"), agrupamento por urgência, categorias coloridas, editar e excluir.</p>
+<ul data-b>
+<li><strong>Onde os dados ficam</strong>: localStorage do navegador. Isso é por aparelho e por endereço, ou seja,</li>
+</ul>
+<p data-b>o que eu cadastro no PC não aparece no celular, e o arquivo local não compartilha com o Pages. Por isso existe o botão <strong>Exportar</strong>, que devolve o <code>TAREFAS.md</code> pronto: é ele que leva as tarefas para o repositório e me deixa enxergar o histórico nas próximas sessões.</p>
+<ul data-b>
+<li>O formato do TAREFAS.md ganhou data e categoria: <code>- [ ] texto [dd/mm/aaaa] #categoria</code>. É ida e volta:</li>
+</ul>
+<p data-b>o painel lê do arquivo e escreve de volta no mesmo formato.</p>
+<ul data-b>
+<li><strong>Sincronização ligada no mesmo dia</strong>, reaproveitando o projeto Supabase <code>relatorio-ronda</code> em vez de</li>
+</ul>
+<p data-b>criar um novo. Tabela <code>cao_tarefas</code> (nome com prefixo justamente para não colidir com <code>rascunho</code> e <code>relatorios</code>, que já existiam). Antes de ligar, conferi que as duas tabelas antigas têm RLS com política <code>auth.uid() = user_id</code>, e testei que a chave sem login não devolve nada de nenhuma delas.</p>
+<ul data-b>
+<li>O login do Supabase é do projeto inteiro, então o usuário <code>josemardp@gmail.com</code> que já existia serve</li>
+</ul>
+<p data-b>para os dois sistemas. O RLS é que mantém os dados separados.</p>
+<ul data-b>
+<li>O <code>gerar_painel.py</code> recusa gerar se a chave do <code>supabase.json</code> for a <code>service_role</code> (ela ignora o RLS</li>
+</ul>
+<p data-b>e não pode ir para site público). Só aceita a <code>anon</code>.</p>
+<ul data-b>
+<li>A chave <code>anon</code> fica visível no HTML publicado, e isso é esperado: ela só identifica o projeto.</li>
+</ul>
+<p data-b>Quem protege os dados é o RLS no banco mais o login.</p></div></section>
+<section class="aba" id="ab-viagens" role="tabpanel"><div class="card"><blockquote data-b>Deslocamentos ligados ao curso: módulos presenciais, provas, apresentação do PP/monografia etc.</blockquote>
+<h2 data-b>Programadas</h2>
+<ul data-b>
+<li><em>(nenhuma registrada ainda)</em></li>
+</ul>
+<h2 data-b>Realizadas</h2>
+<ul data-b>
+<li><em>(histórico de viagens já feitas, com data e motivo)</em></li>
+</ul></div></section>
+  <p class="rodape">Gerado a partir dos arquivos <code>.md</code> em 04/08/2026. Para atualizar: edite o .md e rode <code>python gerar_painel.py</code>.</p>
+</main>
+<script>
+var SOL='<svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4"/></svg>',LUA='<svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z"/></svg>';
+var CATEGORIAS=[["curso", "Curso", "#3b7dd8"], ["dissertacao", "Dissertação", "#8b5cf6"], ["admin", "Administrativo", "#e8892b"], ["pessoal", "Pessoal", "#0f9d58"]];
+var BASE=[{"t": "Enviar Ofício de Apresentação para a mesa SEI 302090130 e liberar a Rotina 13 do SIPA (código 302090000)", "d": "2026-08-14", "c": "admin", "f": false}, {"t": "Conferir se a conta do Banco do Brasil não é \"Conta Salário\" e se o nome não está no CADIN", "d": "2026-08-14", "c": "admin", "f": false}, {"t": "Decidir opção de desconto SIPA: Alojamento (R$ 30,35) ou Vestiário (R$ 21,52), e cessar o equivalente na OPM de origem", "d": "2026-08-17", "c": "admin", "f": false}, {"t": "Se aplicável: pedir Ajuda de Custo (oficial de outro município)", "d": null, "c": "admin", "f": false}, {"t": "Atualizar STATUS.md e PRAZOS.md com a situação atual do curso (módulo/disciplina em andamento)", "d": null, "c": "curso", "f": false}, {"t": "Ficar de olho no Recadastramento Anual + Inspeção de Saúde (IAS) próximo do aniversário", "d": null, "c": "admin", "f": false}, {"t": "Organizar a pasta Central CAO (limpeza de duplicados, áudio/vídeo antigo, estrutura de pastas)", "d": "2026-08-04", "c": "pessoal", "f": true}, {"t": "Criar o painel visual em docs/index.html, gerado a partir dos .md", "d": "2026-08-04", "c": "pessoal", "f": true}, {"t": "Criar o cadastro de tarefas com data no painel", "d": "2026-08-04", "c": "pessoal", "f": true}];
+var ICO={"check": "<svg viewBox=\"0 0 24 24\" width=\"13\" height=\"13\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M20 6 9 17l-5-5\"/><\/svg>", "lapis": "<svg viewBox=\"0 0 24 24\" width=\"15\" height=\"15\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M4 20h4L20 8a2.8 2.8 0 0 0-4-4L4 16z\"/><\/svg>", "lixo": "<svg viewBox=\"0 0 24 24\" width=\"15\" height=\"15\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M4 7h16M10 11v6M14 11v6\"/><path d=\"M6 7l1 13h10l1-13\"/><path d=\"M9 7V4h6v3\"/><\/svg>", "cal": "<svg viewBox=\"0 0 24 24\" width=\"12\" height=\"12\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"3\" y=\"5\" width=\"18\" height=\"16\" rx=\"2\"/><path d=\"M8 3v4M16 3v4M3 11h18\"/><\/svg>", "vazio": "<svg viewBox=\"0 0 24 24\" width=\"46\" height=\"46\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><path d=\"M8.5 13.5s1.2 1.5 3.5 1.5 3.5-1.5 3.5-1.5\"/><path d=\"M9 9.5h.01M15 9.5h.01\"/><\/svg>", "copiar": "<svg viewBox=\"0 0 24 24\" width=\"15\" height=\"15\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"9\" y=\"9\" width=\"12\" height=\"12\" rx=\"2\"/><path d=\"M5 15V5a2 2 0 0 1 2-2h10\"/><\/svg>"};
+window.SUPA_CFG={"url": "https://lmmxaaoqygarwxbwwhlp.supabase.co", "key": "sb_publishable_8_rZ9ygJvrEoSSlgEJ0IMQ_Qi8mvMT-"};
+
+(function(){
+  var abas=[].slice.call(document.querySelectorAll('nav button'));
+  var pans=[].slice.call(document.querySelectorAll('.aba'));
+
+  function mostra(id,push){
+    abas.forEach(function(b){b.setAttribute('aria-selected',b.dataset.aba===id)});
+    pans.forEach(function(p){p.classList.toggle('on',p.id==='ab-'+id)});
+    if(push!==false&&location.hash!=='#'+id)history.replaceState(null,'','#'+id);
+    window.scrollTo({top:0,behavior:'smooth'});
+  }
+  abas.forEach(function(b){b.onclick=function(){mostra(b.dataset.aba)}});
+  document.addEventListener('click',function(e){
+    var a=e.target.closest('a.lnk-aba');
+    if(a){e.preventDefault();mostra(a.getAttribute('href').slice(1));}
+  });
+  var ini=location.hash.slice(1);
+  mostra(abas.some(function(b){return b.dataset.aba===ini})?ini:'painel',false);
+  window.addEventListener('hashchange',function(){
+    var h=location.hash.slice(1);
+    if(abas.some(function(b){return b.dataset.aba===h}))mostra(h,false);
+  });
+
+  /* tema */
+  var bt=document.getElementById('tema');
+  var salvo=null;
+  try{salvo=localStorage.getItem('cao-tema')}catch(e){}
+  if(salvo)document.documentElement.setAttribute('data-theme',salvo);
+  function pinta(){
+    var esc=document.documentElement.getAttribute('data-theme')==='dark'||
+      (!document.documentElement.getAttribute('data-theme')&&
+       matchMedia('(prefers-color-scheme:dark)').matches);
+    bt.innerHTML=esc?SOL:LUA;
+    bt.title=esc?'Mudar para tema claro':'Mudar para tema escuro';
+  }
+  bt.onclick=function(){
+    var atual=document.documentElement.getAttribute('data-theme');
+    if(!atual)atual=matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light';
+    var novo=atual==='dark'?'light':'dark';
+    document.documentElement.setAttribute('data-theme',novo);
+    try{localStorage.setItem('cao-tema',novo)}catch(e){}
+    pinta();
+  };
+  pinta();
+
+  /* busca */
+  var inp=document.getElementById('q');
+  var alvos=[].slice.call(document.querySelectorAll('.card [data-b]'));
+
+  function limpa(){
+    alvos.forEach(function(el){
+      el.style.display='';
+      if(el.dataset.orig){el.innerHTML=el.dataset.orig;delete el.dataset.orig;}
+    });
+    document.querySelectorAll('.sem-res').forEach(function(n){n.remove()});
+    document.querySelectorAll('.card').forEach(function(c){c.style.display=''});
+  }
+  function realca(el,termo){
+    if(!el.dataset.orig)el.dataset.orig=el.innerHTML;
+    var re=new RegExp('('+termo.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+')','gi');
+    var walk=document.createTreeWalker(el,NodeFilter.SHOW_TEXT,null);
+    var nos=[],n;
+    while(n=walk.nextNode())nos.push(n);
+    nos.forEach(function(no){
+      if(!re.test(no.nodeValue))return;
+      re.lastIndex=0;
+      var span=document.createElement('span');
+      span.innerHTML=no.nodeValue.replace(/[&<>]/g,function(c){
+        return {'&':'&amp;','<':'&lt;','>':'&gt;'}[c]}).replace(re,'<mark>$1</mark>');
+      no.parentNode.replaceChild(span,no);
+    });
+  }
+  var t;
+  inp.oninput=function(){
+    clearTimeout(t);
+    t=setTimeout(function(){
+      var termo=inp.value.trim();
+      var barra=document.querySelector('nav');
+      limpa();
+      if(termo.length<2){
+        barra.classList.remove('buscando');
+        barra.querySelectorAll('.pill-b').forEach(function(b){b.style.display='none'});
+        return;
+      }
+      barra.classList.add('buscando');
+      var alvo=termo.toLowerCase();
+      var achou=0;
+      pans.forEach(function(pan){
+        var n=0;
+        pan.querySelectorAll('.card [data-b]').forEach(function(el){
+          var bate=el.textContent.toLowerCase().indexOf(alvo)>=0;
+          el.style.display=bate?'':'none';
+          if(bate){realca(el,termo);n++;}
+        });
+        pan.querySelectorAll('.card').forEach(function(c){
+          var vis=[].slice.call(c.querySelectorAll('[data-b]')).some(function(e){
+            return e.style.display!=='none'});
+          c.style.display=vis?'':'none';
+        });
+        achou+=n;
+        var b=document.querySelector('nav button[data-aba="'+pan.id.slice(3)+'"] .pill-b');
+        if(b){b.textContent=n||'';b.style.display=n?'':'none';}
+      });
+      if(!achou){
+        pans.forEach(function(pan){
+          var d=document.createElement('div');
+          d.className='sem-res';
+          d.textContent='Nada encontrado para "'+termo+'".';
+          pan.appendChild(d);
+        });
+      }
+    },140);
+  };
+  inp.addEventListener('keydown',function(e){
+    if(e.key==='Escape'){inp.value='';inp.oninput();inp.blur();}
+  });
+  document.addEventListener('keydown',function(e){
+    if((e.ctrlKey||e.metaKey)&&e.key==='k'){e.preventDefault();inp.focus();inp.select();}
+  });
+})();
+
+
+/* =================== app de tarefas: local + Supabase =================== */
+(function(){
+  var CHAVE='cao-tarefas', CHAVE_FILA='cao-fila', CHAVE_SES='cao-sessao';
+  var el=function(s,r){return (r||document).querySelector(s)};
+  var hoje=function(){var d=new Date();d.setHours(0,0,0,0);return d};
+  var iso=function(d){
+    return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+
+           String(d.getDate()).padStart(2,'0');
+  };
+  var deIso=function(s){
+    if(!s)return null;
+    var p=s.split('-'); var d=new Date(+p[0],+p[1]-1,+p[2]); d.setHours(0,0,0,0); return d;
+  };
+  var dias=function(a,b){return Math.round((b-a)/86400000)};
+  var uid=function(){
+    return 't'+Date.now().toString(36)+Math.floor(Math.random()*1e6).toString(36);
+  };
+  var norm=function(s){
+    return (s||'').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'').trim();
+  };
+
+  var CATS={};
+  CATEGORIAS.forEach(function(c){CATS[c[0]]={rot:c[1],cor:c[2]}});
+
+  /* ---------------------------- armazenamento ---------------------------- */
+  var lerLS=function(k,pad){
+    try{var v=localStorage.getItem(k);return v?JSON.parse(v):pad}catch(e){return pad}
+  };
+  var gravarLS=function(k,v){
+    try{localStorage.setItem(k,JSON.stringify(v));return true}catch(e){return false}
+  };
+
+  /* tarefas vindas do TAREFAS.md viram a base; ganham id estavel pelo texto */
+  var idBase=function(t){
+    var s=norm(t), h=0;
+    for(var i=0;i<s.length;i++){h=(h*31+s.charCodeAt(i))|0}
+    return 'md'+Math.abs(h).toString(36);
+  };
+
+  var tarefas=[];
+
+  function carregar(){
+    var locais=lerLS(CHAVE,null);
+    if(locais===null){
+      /* primeira vez: semeia com o que veio do TAREFAS.md */
+      tarefas=BASE.map(function(b){
+        return {id:idBase(b.t),txt:b.t,data:b.d||null,cat:b.c||'',feito:!!b.f,
+                orig:'md',mod:new Date().toISOString(),sinc:true};
+      });
+      gravarLS(CHAVE,tarefas);
+    }else{
+      tarefas=locais;
+      /* traz do .md o que ainda nao existe aqui (ex.: editei o .md na mao) */
+      var vistos={};
+      tarefas.forEach(function(t){vistos[norm(t.txt)]=1});
+      BASE.forEach(function(b){
+        if(!vistos[norm(b.t)]){
+          tarefas.push({id:idBase(b.t),txt:b.t,data:b.d||null,cat:b.c||'',feito:!!b.f,
+                        orig:'md',mod:new Date().toISOString(),sinc:true});
+        }
+      });
+    }
+  }
+
+  function salvar(){gravarLS(CHAVE,tarefas);desenhar();}
+
+  /* ------------------------ datas em portugues -------------------------- */
+  var SEMANA=['domingo','segunda','terca','quarta','quinta','sexta','sabado'];
+  var MESES=['janeiro','fevereiro','marco','abril','maio','junho','julho','agosto',
+             'setembro','outubro','novembro','dezembro'];
+
+  /* le expressoes de data no texto e devolve {data, texto} */
+  function lerData(txt){
+    var h=hoje(), t=txt, achou=null;
+    var tenta=function(re,fn){
+      if(achou)return;
+      var m=t.match(re);
+      if(m){var d=fn(m);if(d){achou=d;t=t.replace(m[0],' ').replace(/\s{2,}/g,' ').trim();}}
+    };
+    var n=function(s){return norm(s)};
+
+    /* dd/mm ou dd/mm/aaaa */
+    tenta(/\b(\d{1,2})[\/.-](\d{1,2})(?:[\/.-](\d{2,4}))?\b/,function(m){
+      var dia=+m[1],mes=+m[2],ano=m[3]?+m[3]:h.getFullYear();
+      if(ano<100)ano+=2000;
+      if(mes<1||mes>12||dia<1||dia>31)return null;
+      var d=new Date(ano,mes-1,dia); d.setHours(0,0,0,0);
+      if(d.getMonth()!==mes-1)return null;
+      /* sem ano informado: se ja passou ha pouco, e tarefa atrasada deste ano;
+         so joga para o ano seguinte se ficou muito para tras */
+      if(!m[3]&&dias(d,h)>60)d.setFullYear(ano+1);
+      return d;
+    });
+    /* "dia 15" */
+    tenta(/\bdia\s+(\d{1,2})\b/i,function(m){
+      var dia=+m[1]; if(dia<1||dia>31)return null;
+      var d=new Date(h.getFullYear(),h.getMonth(),dia); d.setHours(0,0,0,0);
+      if(d.getDate()!==dia)return null;
+      /* dia que ja passou neste mes: assume o mes que vem */
+      if(d<h){d=new Date(h.getFullYear(),h.getMonth()+1,dia);d.setHours(0,0,0,0)}
+      return d;
+    });
+    /* "15 de setembro" */
+    tenta(new RegExp('\\b(\\d{1,2})\\s+de\\s+('+MESES.join('|')+
+                     '|marc\\u00e7o|fev|jan|mar|abr|mai|jun|jul|ago|set|out|nov|dez)\\w*','i'),
+      function(m){
+        var dia=+m[1], alvo=n(m[2]), mes=-1;
+        MESES.forEach(function(nm,i){if(nm.indexOf(alvo)===0||alvo.indexOf(nm.slice(0,3))===0)mes=i});
+        if(mes<0)return null;
+        var d=new Date(h.getFullYear(),mes,dia); d.setHours(0,0,0,0);
+        if(d<h)d.setFullYear(h.getFullYear()+1);
+        return d;
+      });
+    /* hoje / amanha / depois de amanha */
+    tenta(/\bdepois\s+de\s+amanh[aã]\b/i,function(){
+      var d=new Date(h);d.setDate(d.getDate()+2);return d;});
+    tenta(/\bamanh[aã]\b/i,function(){var d=new Date(h);d.setDate(d.getDate()+1);return d;});
+    tenta(/\bhoje\b/i,function(){return new Date(h)});
+    /* "em 3 dias" / "em 2 semanas" */
+    tenta(/\bem\s+(\d{1,3})\s+(dias?|semanas?|m[eê]s(?:es)?)\b/i,function(m){
+      var q=+m[1], u=n(m[2]), d=new Date(h);
+      if(u.indexOf('dia')===0)d.setDate(d.getDate()+q);
+      else if(u.indexOf('semana')===0)d.setDate(d.getDate()+q*7);
+      else d.setMonth(d.getMonth()+q);
+      return d;
+    });
+    /* "semana que vem" */
+    tenta(/\b(?:semana\s+que\s+vem|pr[oó]xima\s+semana)\b/i,function(){
+      var d=new Date(h);d.setDate(d.getDate()+7);return d;});
+    /* dia da semana, opcionalmente com "que vem" */
+    tenta(new RegExp('\\b(?:na\\s+|no\\s+|)(segunda|ter[cç]a|quarta|quinta|sexta|s[aá]bado|domingo)'+
+                     '(?:-feira|\\s+feira)?(\\s+que\\s+vem|\\s+pr[oó]xima?)?\\b','i'),
+      function(m){
+        var alvo=n(m[1]).replace('feira','').trim(), idx=-1;
+        SEMANA.forEach(function(nm,i){if(nm.indexOf(alvo)===0)idx=i});
+        if(idx<0)return null;
+        var d=new Date(h), delta=(idx-d.getDay()+7)%7;
+        if(delta===0)delta=7;
+        d.setDate(d.getDate()+delta);
+        if(m[2])d.setDate(d.getDate()+7);
+        return d;
+      });
+    return {data:achou,texto:t.replace(/\s{2,}/g,' ').trim()};
+  }
+
+  function rotuloData(d){
+    if(!d)return '';
+    var h=hoje(), n=dias(h,d);
+    if(n===0)return 'hoje';
+    if(n===1)return 'amanhã';
+    if(n===-1)return 'ontem';
+    if(n<0)return Math.abs(n)+' dias atrás';
+    if(n<7)return SEMANA[d.getDay()].replace('terca','terça').replace('sabado','sábado');
+    var s=String(d.getDate()).padStart(2,'0')+'/'+String(d.getMonth()+1).padStart(2,'0');
+    if(d.getFullYear()!==h.getFullYear())s+='/'+d.getFullYear();
+    return s;
+  }
+
+  /* ------------------------------ interface ------------------------------ */
+  var inp=el('#tf-txt'), btAdd=el('#tf-add'), inData=el('#tf-dt'), lista=el('#tf-lista');
+  var catSel='';
+
+  function pintaChips(){
+    [].forEach.call(document.querySelectorAll('#tf-cats .chip'),function(c){
+      c.classList.toggle('on',c.dataset.cat===catSel);
+    });
+  }
+
+  /* enquanto digita, mostra a data que foi entendida */
+  function previa(){
+    var r=lerData(inp.value);
+    if(r.data){
+      inData.value=iso(r.data);
+      inData.classList.add('tf-detectada');
+      inData.title='Data entendida do texto: '+rotuloData(r.data);
+    }else{
+      /* limpa so o que veio da deteccao; data escolhida a mao permanece */
+      if(inData.classList.contains('tf-detectada'))inData.value='';
+      inData.classList.remove('tf-detectada');
+      inData.title='';
+    }
+    btAdd.disabled=!inp.value.trim();
+  }
+
+  function adicionar(){
+    var bruto=inp.value.trim();
+    if(!bruto)return;
+    var r=lerData(bruto);
+    var d=inData.value?deIso(inData.value):r.data;
+    var texto=r.data?r.texto:bruto;
+    if(!texto)texto=bruto;
+    var nova={id:uid(),txt:texto,data:d?iso(d):null,cat:catSel,feito:false,
+              orig:'local',mod:new Date().toISOString(),sinc:false};
+    tarefas.unshift(nova);
+    inp.value='';inData.value='';inData.classList.remove('tf-detectada');
+    btAdd.disabled=true;
+    salvar();
+    if(window.SUPA&&SUPA.ativo())SUPA.enviar(nova);
+    inp.focus();
+  }
+
+  function alternar(id){
+    var t=tarefas.filter(function(x){return x.id===id})[0];
+    if(!t)return;
+    t.feito=!t.feito;t.mod=new Date().toISOString();t.sinc=false;
+    salvar();
+    if(window.SUPA&&SUPA.ativo())SUPA.enviar(t);
+  }
+
+  function excluir(id){
+    var i=-1;
+    tarefas.forEach(function(t,k){if(t.id===id)i=k});
+    if(i<0)return;
+    var t=tarefas[i];
+    var no=el('[data-id="'+id+'"]');
+    if(no)no.classList.add('saindo');
+    setTimeout(function(){
+      tarefas.splice(i,1);salvar();
+      if(window.SUPA&&SUPA.ativo())SUPA.apagar(t);
+    },160);
+  }
+
+  function editar(id){
+    var no=el('[data-id="'+id+'"]');
+    var t=tarefas.filter(function(x){return x.id===id})[0];
+    if(!no||!t)return;
+    var corpo=el('.tf-corpo',no);
+    var antigo=corpo.innerHTML;
+    corpo.innerHTML='<input class="tf-edit" type="text">';
+    var campo=el('.tf-edit',corpo);
+    campo.value=t.txt;campo.focus();campo.select();
+    var fim=function(ok){
+      if(ok&&campo.value.trim()){
+        t.txt=campo.value.trim();t.mod=new Date().toISOString();t.sinc=false;
+        salvar();
+        if(window.SUPA&&SUPA.ativo())SUPA.enviar(t);
+      }else{corpo.innerHTML=antigo;}
+    };
+    campo.onblur=function(){fim(true)};
+    campo.onkeydown=function(e){
+      if(e.key==='Enter'){e.preventDefault();campo.onblur=null;fim(true)}
+      if(e.key==='Escape'){campo.onblur=null;fim(false)}
+    };
+  }
+
+  /* agrupa por urgencia */
+  function agrupar(){
+    var h=hoje();
+    var g={atrasadas:[],hoje:[],amanha:[],semana:[],depois:[],semdata:[],feitas:[]};
+    tarefas.forEach(function(t){
+      if(t.feito){g.feitas.push(t);return}
+      if(!t.data){g.semdata.push(t);return}
+      var n=dias(h,deIso(t.data));
+      if(n<0)g.atrasadas.push(t);
+      else if(n===0)g.hoje.push(t);
+      else if(n===1)g.amanha.push(t);
+      else if(n<=7)g.semana.push(t);
+      else g.depois.push(t);
+    });
+    var porData=function(a,b){
+      if(!a.data)return 1; if(!b.data)return -1;
+      return a.data<b.data?-1:a.data>b.data?1:0;
+    };
+    ['atrasadas','hoje','amanha','semana','depois'].forEach(function(k){g[k].sort(porData)});
+    g.feitas.sort(function(a,b){return (b.mod||'')<(a.mod||'')?-1:1});
+    return g;
+  }
+
+  function itemHTML(t){
+    var h=hoje(), d=t.data?deIso(t.data):null, n=d?dias(h,d):null;
+    var cls='tf-item'+(t.feito?' feita':'')+
+            (!t.feito&&n!==null&&n<0?' atrasada':'')+
+            (!t.feito&&n===0?' hoje':'');
+    var meta='';
+    if(d){
+      var dc=(!t.feito&&n<0)?' venc':((!t.feito&&n<=1)?' prox':'');
+      meta+='<span class="tf-tag dt'+dc+'">'+ICO.cal+rotuloData(d)+'</span>';
+    }
+    if(t.cat&&CATS[t.cat]){
+      meta+='<span class="tf-tag cat" style="background:'+CATS[t.cat].cor+'">'+
+            CATS[t.cat].rot+'</span>';
+    }
+    if(!t.sinc&&window.SUPA&&SUPA.ativo()){
+      meta+='<span class="tf-tag dt" title="Ainda não sincronizada">•</span>';
+    }
+    return '<div class="'+cls+'" data-id="'+t.id+'">'+
+      '<button class="tf-check" data-ac="ok" title="Marcar como feita">'+ICO.check+'</button>'+
+      '<div class="tf-corpo"><div class="tf-txt">'+esc(t.txt)+'</div>'+
+      (meta?'<div class="tf-meta">'+meta+'</div>':'')+'</div>'+
+      '<div class="tf-acoes">'+
+        '<button class="tf-ac" data-ac="ed" title="Editar">'+ICO.lapis+'</button>'+
+        '<button class="tf-ac del" data-ac="del" title="Excluir">'+ICO.lixo+'</button>'+
+      '</div></div>';
+  }
+
+  function esc(s){
+    return String(s).replace(/[&<>"]/g,function(c){
+      return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]});
+  }
+
+  function desenhar(){
+    var g=agrupar();
+    var out='';
+    var bloco=function(chave,rot,cls){
+      var arr=g[chave];
+      if(!arr.length)return;
+      out+='<div class="tf-grupo"><div class="tf-cab '+(cls||'')+'">'+rot+
+           '<span class="n">'+arr.length+'</span></div>'+
+           arr.map(itemHTML).join('')+'</div>';
+    };
+    bloco('atrasadas','Atrasadas','urgente');
+    bloco('hoje','Hoje','hoje');
+    bloco('amanha','Amanhã');
+    bloco('semana','Próximos 7 dias');
+    bloco('depois','Mais adiante');
+    bloco('semdata','Sem data');
+    bloco('feitas','Concluídas');
+
+    if(!tarefas.length){
+      out='<div class="tf-vazio">'+ICO.vazio+
+          '<p>Nenhuma tarefa por aqui.</p>'+
+          '<small>Escreva acima, por exemplo: "entregar artigo sexta".</small></div>';
+    }
+    lista.innerHTML=out;
+
+    /* contador de nao sincronizadas */
+    var naoSinc=tarefas.filter(function(t){return !t.sinc}).length;
+    var cx=el('#tf-pend');
+    if(cx){
+      cx.style.display=naoSinc?'flex':'none';
+      var b=el('#tf-pend-n');
+      if(b)b.textContent=naoSinc===1?'1 tarefa ainda não foi para o TAREFAS.md':
+                          naoSinc+' tarefas ainda não foram para o TAREFAS.md';
+    }
+    /* badge da aba */
+    var pend=tarefas.filter(function(t){return !t.feito}).length;
+    var atras=g.atrasadas.length;
+    var badge=el('nav button[data-aba="tarefas"] .pill:not(.pill-b)');
+    if(badge){
+      badge.textContent=pend||'';
+      badge.style.display=pend?'':'none';
+      badge.style.background=atras?'#fff':'';
+      badge.style.color=atras?'var(--vm)':'';
+      badge.title=atras?atras+' atrasada(s)':'';
+    }
+    /* cartao da home */
+    var kv=el('#kpi-tar-val'), ks=el('#kpi-tar-sub');
+    if(kv){
+      kv.textContent=pend;
+      ks.textContent=atras?(atras+(atras===1?' atrasada':' atrasadas')):
+                     (g.hoje.length?(g.hoje.length+' para hoje'):'nenhuma atrasada');
+      ks.style.color=atras?'var(--vm)':'';
+    }
+    var lh=el('#home-tarefas');
+    if(lh){
+      var prox=g.atrasadas.concat(g.hoje,g.amanha,g.semana,g.depois,g.semdata).slice(0,6);
+      lh.innerHTML=prox.length?prox.map(function(t){
+        var d=t.data?deIso(t.data):null;
+        return '<li>'+esc(t.txt)+(d?' <b>('+rotuloData(d)+')</b>':'')+'</li>';
+      }).join(''):'<li>Nada pendente. Tudo em dia.</li>';
+    }
+  }
+
+  /* -------------------------- exportar / importar ------------------------ */
+  function paraMarkdown(){
+    var g=agrupar();
+    var linha=function(t){
+      var s='- ['+(t.feito?'x':' ')+'] '+t.txt;
+      if(t.data){
+        var d=deIso(t.data);
+        s+=' ['+String(d.getDate()).padStart(2,'0')+'/'+
+           String(d.getMonth()+1).padStart(2,'0')+'/'+d.getFullYear()+']';
+      }
+      if(t.cat)s+=' #'+t.cat;
+      return s;
+    };
+    var pend=g.atrasadas.concat(g.hoje,g.amanha,g.semana,g.depois,g.semdata);
+    var txt='# TAREFAS — CAO 2026\n\n'+
+      '> Lista de tarefas correntes do curso. Marcar como feito, não apagar '+
+      '(histórico do que já foi cumprido).\n> Editável aqui ou pelo painel '+
+      '(aba Tarefas). Formato: `- [ ] texto [dd/mm/aaaa] #categoria`.\n\n'+
+      '## Pendentes\n'+(pend.length?pend.map(linha).join('\n'):'- [ ] ...')+'\n\n'+
+      '## Concluídas\n'+(g.feitas.length?g.feitas.map(linha).join('\n'):'')+'\n';
+    return txt;
+  }
+
+  function abrirModal(id){el(id).classList.add('on')}
+  function fecharModal(id){el(id).classList.remove('on')}
+
+  el('#tf-exportar').onclick=function(){
+    el('#exp-txt').value=paraMarkdown();
+    abrirModal('#modal-exp');
+    setTimeout(function(){el('#exp-txt').select()},60);
+  };
+  el('#exp-copiar').onclick=function(){
+    var ta=el('#exp-txt');
+    ta.select();
+    var ok=false;
+    try{ok=document.execCommand('copy')}catch(e){}
+    if(navigator.clipboard&&!ok){navigator.clipboard.writeText(ta.value);ok=true}
+    var b=el('#exp-copiar');
+    b.textContent=ok?'Copiado':'Selecione e copie';
+    setTimeout(function(){b.innerHTML=ICO.copiar+'Copiar';},1800);
+    if(ok){
+      tarefas.forEach(function(t){t.sinc=true});
+      salvar();
+    }
+  };
+  [].forEach.call(document.querySelectorAll('[data-fechar]'),function(b){
+    b.onclick=function(){fecharModal('#'+b.dataset.fechar)};
+  });
+  [].forEach.call(document.querySelectorAll('.modal'),function(m){
+    m.onclick=function(e){if(e.target===m)m.classList.remove('on')};
+  });
+
+  /* ------------------------------- eventos ------------------------------- */
+  inp.oninput=previa;
+  inp.onkeydown=function(e){if(e.key==='Enter'){e.preventDefault();adicionar()}};
+  btAdd.onclick=adicionar;
+  inData.onchange=function(){inData.classList.remove('tf-detectada')};
+
+  el('#tf-cats').onclick=function(e){
+    var c=e.target.closest('.chip');
+    if(!c)return;
+    catSel=(catSel===c.dataset.cat)?'':c.dataset.cat;
+    pintaChips();
+  };
+  [].forEach.call(document.querySelectorAll('#tf-rapidas .chip'),function(c){
+    c.onclick=function(){
+      var h=hoje(), d=new Date(h);
+      var q=c.dataset.q;
+      if(q==='hoje'){}
+      else if(q==='amanha')d.setDate(d.getDate()+1);
+      else if(q==='semana')d.setDate(d.getDate()+7);
+      else{inData.value='';inData.classList.remove('tf-detectada');inp.focus();return}
+      inData.value=iso(d);inData.classList.remove('tf-detectada');inp.focus();
+    };
+  });
+
+  lista.onclick=function(e){
+    var b=e.target.closest('[data-ac]');
+    if(!b)return;
+    var id=b.closest('.tf-item').dataset.id;
+    if(b.dataset.ac==='ok')alternar(id);
+    else if(b.dataset.ac==='del')excluir(id);
+    else if(b.dataset.ac==='ed')editar(id);
+  };
+
+  carregar();
+  desenhar();
+  previa();
+
+  /* exposto para a camada de sincronizacao */
+  window.TAREFAS={
+    todas:function(){return tarefas},
+    definir:function(novas){tarefas=novas;salvar()},
+    redesenhar:desenhar,
+    salvar:function(){gravarLS(CHAVE,tarefas)},
+    modal:{abrir:abrirModal,fechar:fecharModal}
+  };
+})();
+
+
+/* ============ sincronizacao com Supabase (opcional, offline-first) ========
+   O painel funciona 100% sem isto. Se CFG.url estiver vazio, ou se a pessoa
+   nao estiver logada, tudo continua salvo apenas no navegador.
+   A chave usada aqui e a "anon", publica por natureza: quem protege os dados
+   e o RLS no banco (cada linha so e visivel para o dono).                    */
+(function(){
+  var CFG=window.SUPA_CFG||{};
+  var K_SES='cao-sessao', K_DEL='cao-apagadas';
+  var el=function(s){return document.querySelector(s)};
+  var ses=null, sincronizando=false;
+
+  var lerLS=function(k,p){try{var v=localStorage.getItem(k);return v?JSON.parse(v):p}
+                          catch(e){return p}};
+  var gravarLS=function(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}};
+
+  function ativo(){return !!(CFG.url&&CFG.key&&ses&&ses.access_token)}
+  function configurado(){return !!(CFG.url&&CFG.key)}
+
+  /* ------------------------------ interface ------------------------------ */
+  function estado(cls,txt,tit){
+    var s=el('#tf-status');
+    if(!s)return;
+    s.className='tf-status'+(cls?' '+cls:'');
+    el('#tf-status-txt').textContent=txt;
+    s.title=tit||'';
+  }
+  function pintaConta(){
+    var rot=el('#tf-conta-rot');
+    if(!rot)return;
+    if(ativo()){
+      rot.textContent=(ses.email||'Conta').split('@')[0];
+      estado('on','Sincronizado','Suas tarefas estão salvas na nuvem');
+    }else if(configurado()){
+      rot.textContent='Entrar';
+      estado('','Somente neste aparelho','Entre na conta para sincronizar');
+    }else{
+      rot.textContent='Entrar';
+      estado('','Somente neste aparelho',
+             'A sincronização ainda não foi configurada neste painel');
+    }
+  }
+
+  /* ------------------------------- rede ---------------------------------- */
+  function api(caminho,opts){
+    opts=opts||{};
+    var h=opts.headers||{};
+    h['apikey']=CFG.key;
+    h['Content-Type']='application/json';
+    if(ses&&ses.access_token)h['Authorization']='Bearer '+ses.access_token;
+    opts.headers=h;
+    return fetch(CFG.url.replace(/\/+$/,'')+caminho,opts).then(function(r){
+      if(r.status===204)return null;
+      return r.json().then(function(j){
+        if(!r.ok){
+          var e=new Error((j&&(j.msg||j.message||j.error_description||j.error))||('HTTP '+r.status));
+          e.status=r.status;
+          throw e;
+        }
+        return j;
+      });
+    });
+  }
+
+  function entrar(email,senha){
+    return api('/auth/v1/token?grant_type=password',{
+      method:'POST',body:JSON.stringify({email:email,password:senha})
+    }).then(function(j){
+      ses={access_token:j.access_token,refresh_token:j.refresh_token,
+           email:(j.user&&j.user.email)||email,uid:j.user&&j.user.id,
+           exp:Date.now()+((j.expires_in||3600)*1000)};
+      gravarLS(K_SES,ses);
+      pintaConta();
+      return sincronizar();
+    });
+  }
+
+  function renovar(){
+    if(!ses||!ses.refresh_token)return Promise.reject(new Error('sem sessão'));
+    return api('/auth/v1/token?grant_type=refresh_token',{
+      method:'POST',body:JSON.stringify({refresh_token:ses.refresh_token})
+    }).then(function(j){
+      ses.access_token=j.access_token;
+      ses.refresh_token=j.refresh_token||ses.refresh_token;
+      ses.exp=Date.now()+((j.expires_in||3600)*1000);
+      gravarLS(K_SES,ses);
+      return ses;
+    });
+  }
+
+  function garantirSessao(){
+    if(!ses)return Promise.reject(new Error('sem sessão'));
+    if(ses.exp&&Date.now()>ses.exp-60000)return renovar();
+    return Promise.resolve(ses);
+  }
+
+  function sair(){
+    ses=null;
+    try{localStorage.removeItem(K_SES)}catch(e){}
+    pintaConta();
+  }
+
+  /* --------------------------- sincronizacao ----------------------------- */
+  var paraLinha=function(t){
+    return {id:t.id,txt:t.txt,data:t.data||null,cat:t.cat||'',
+            feito:!!t.feito,mod:t.mod||new Date().toISOString()};
+  };
+  var daLinha=function(r){
+    return {id:r.id,txt:r.txt,data:r.data||null,cat:r.cat||'',feito:!!r.feito,
+            orig:'nuvem',mod:r.mod,sinc:true};
+  };
+
+  function enviar(t){
+    if(!ativo())return Promise.resolve();
+    return garantirSessao().then(function(){
+      return api('/rest/v1/cao_tarefas',{
+        method:'POST',
+        headers:{'Prefer':'resolution=merge-duplicates,return=minimal'},
+        body:JSON.stringify([paraLinha(t)])
+      });
+    }).then(function(){
+      t.sinc=true;
+      window.TAREFAS.salvar();
+      window.TAREFAS.redesenhar();
+    }).catch(function(e){
+      estado('off','Sem conexão','Vai sincronizar sozinho quando a rede voltar');
+    });
+  }
+
+  function apagar(t){
+    var mortas=lerLS(K_DEL,[]);
+    if(mortas.indexOf(t.id)<0){mortas.push(t.id);gravarLS(K_DEL,mortas)}
+    if(!ativo())return Promise.resolve();
+    return garantirSessao().then(function(){
+      return api('/rest/v1/cao_tarefas?id=eq.'+encodeURIComponent(t.id),{method:'DELETE'});
+    }).then(function(){
+      var m=lerLS(K_DEL,[]).filter(function(x){return x!==t.id});
+      gravarLS(K_DEL,m);
+    }).catch(function(){});
+  }
+
+  function sincronizar(){
+    if(!ativo()||sincronizando)return Promise.resolve();
+    sincronizando=true;
+    estado('','Sincronizando...');
+    return garantirSessao().then(function(){
+      /* 1. apaga o que ficou pendente de exclusao */
+      var mortas=lerLS(K_DEL,[]);
+      var limpeza=mortas.length
+        ? api('/rest/v1/cao_tarefas?id=in.('+mortas.map(encodeURIComponent).join(',')+')',
+              {method:'DELETE'}).then(function(){gravarLS(K_DEL,[])}).catch(function(){})
+        : Promise.resolve();
+      return limpeza;
+    }).then(function(){
+      return api('/rest/v1/cao_tarefas?select=*');
+    }).then(function(remotas){
+      var locais=window.TAREFAS.todas();
+      var mortas=lerLS(K_DEL,[]);
+      var mapa={};
+      locais.forEach(function(t){mapa[t.id]=t});
+
+      /* 2. traz da nuvem o que for mais novo */
+      (remotas||[]).forEach(function(r){
+        if(mortas.indexOf(r.id)>=0)return;
+        var loc=mapa[r.id];
+        if(!loc){mapa[r.id]=daLinha(r);}
+        else if((r.mod||'')>(loc.mod||'')){
+          var n=daLinha(r);n.orig=loc.orig;mapa[r.id]=n;
+        }
+      });
+
+      var juntas=Object.keys(mapa).map(function(k){return mapa[k]});
+      window.TAREFAS.definir(juntas);
+
+      /* 3. sobe o que ainda nao esta la */
+      var subir=juntas.filter(function(t){return !t.sinc}).map(paraLinha);
+      if(!subir.length)return null;
+      return api('/rest/v1/cao_tarefas',{
+        method:'POST',
+        headers:{'Prefer':'resolution=merge-duplicates,return=minimal'},
+        body:JSON.stringify(subir)
+      }).then(function(){
+        window.TAREFAS.todas().forEach(function(t){t.sinc=true});
+        window.TAREFAS.salvar();
+      });
+    }).then(function(){
+      sincronizando=false;
+      window.TAREFAS.redesenhar();
+      pintaConta();
+    }).catch(function(e){
+      sincronizando=false;
+      if(e&&(e.status===401||e.status===403)){
+        sair();
+        estado('erro','Sessão expirada','Entre na conta de novo');
+      }else{
+        estado('off','Sem conexão','As alterações ficam guardadas aqui até a rede voltar');
+      }
+    });
+  }
+
+  /* ------------------------------- eventos ------------------------------- */
+  var btConta=el('#tf-conta');
+  if(btConta){
+    btConta.onclick=function(){
+      var logado=ativo();
+      el('#conta-form').style.display=logado?'none':'';
+      el('#conta-logado').style.display=logado?'':'none';
+      el('#conta-entrar').style.display=logado?'none':'';
+      el('#conta-sair').style.display=logado?'':'none';
+      el('#conta-titulo').textContent=logado?'Sua conta':'Entrar na conta';
+      el('#conta-erro').classList.remove('on');
+      if(logado)el('#conta-quem').textContent=ses.email||'';
+      if(!configurado()){
+        el('#conta-aviso').innerHTML='A sincronização ainda não foi ligada neste painel. '+
+          'Peça para configurar o Supabase (o passo a passo está no arquivo '+
+          '<code>SUPABASE.md</code>). Por enquanto, as tarefas ficam salvas '+
+          'apenas neste aparelho, e o botão <b>Exportar</b> é o que garante que nada se perca.';
+        el('#conta-entrar').disabled=true;
+      }
+      window.TAREFAS.modal.abrir('#modal-conta');
+      if(!logado&&configurado())setTimeout(function(){el('#conta-email').focus()},80);
+    };
+  }
+  var btEntrar=el('#conta-entrar');
+  if(btEntrar){
+    btEntrar.onclick=function(){
+      var email=el('#conta-email').value.trim(), senha=el('#conta-senha').value;
+      var erro=el('#conta-erro');
+      if(!email||!senha){
+        erro.textContent='Preencha e-mail e senha.';erro.classList.add('on');return;
+      }
+      btEntrar.disabled=true;btEntrar.textContent='Entrando...';
+      entrar(email,senha).then(function(){
+        el('#conta-senha').value='';
+        window.TAREFAS.modal.fechar('#modal-conta');
+      }).catch(function(e){
+        var m=String(e.message||e);
+        if(/invalid|credentials|grant/i.test(m))m='E-mail ou senha não conferem.';
+        else if(/failed to fetch|networkerror/i.test(m))m='Sem conexão com o servidor.';
+        erro.textContent=m;erro.classList.add('on');
+      }).then(function(){
+        btEntrar.disabled=false;btEntrar.textContent='Entrar';
+      });
+    };
+  }
+  var campoSenha=el('#conta-senha');
+  if(campoSenha)campoSenha.onkeydown=function(e){if(e.key==='Enter')btEntrar.click()};
+  var btSair=el('#conta-sair');
+  if(btSair)btSair.onclick=function(){sair();window.TAREFAS.modal.fechar('#modal-conta')};
+
+  window.addEventListener('online',function(){if(ativo())sincronizar()});
+  window.addEventListener('offline',function(){
+    if(ativo())estado('off','Sem conexão','As alterações ficam guardadas aqui');
+  });
+
+  window.SUPA={ativo:ativo,enviar:enviar,apagar:apagar,sincronizar:sincronizar};
+
+  ses=lerLS(K_SES,null);
+  pintaConta();
+  if(ativo())sincronizar();
+})();
+
+</script>
+</body>
+</html>

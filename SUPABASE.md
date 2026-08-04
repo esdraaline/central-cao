@@ -7,6 +7,41 @@
 - **Login**: `josemardp@gmail.com` (usuário que já existia no projeto)
 - **Configuração**: arquivo `supabase.json` na raiz
 
+## ⏳ Falta um passo: sincronizar os itens ticados (04/08/2026)
+
+O painel **já tem o código pronto** para sincronizar o que você tica nas abas Conferir, Compras
+e Mala. Falta só criar a tabela `cao_ticados` — enquanto ela não existir, as marcações continuam
+funcionando normalmente, só que salvas apenas naquele aparelho.
+
+**Por que não fiz sozinho**: o conector Supabase do Claude está autenticado em outra organização
+(só enxerga `financeiroje-ai` e `esdracosmeticos`). O projeto do painel está na `esdraaline's Org`.
+
+**O que fazer**: entre no Supabase → projeto do painel → **SQL Editor** → **New query**, cole o
+bloco abaixo e clique em **Run**. Depois é só abrir o painel em Tarefas → Entrar (se já não estiver).
+
+```sql
+create table if not exists public.cao_ticados (
+  user_id uuid not null default auth.uid() references auth.users(id) on delete cascade,
+  id      text not null,
+  n       integer not null default 0,
+  mod     timestamptz not null default now(),
+  primary key (user_id, id)
+);
+
+alter table public.cao_ticados enable row level security;
+
+drop policy if exists "dono_faz_tudo" on public.cao_ticados;
+create policy "dono_faz_tudo" on public.cao_ticados
+  for all
+  using (auth.uid() = user_id)
+  with check (auth.uid() = user_id);
+```
+
+> **Atenção à chave primária**: aqui ela é `(user_id, id)`, e não só `id` como na `cao_tarefas`.
+> O motivo é que o `id` de um item ticado vem do texto dele (`ab-conferir/2de055d428`), então é
+> **igual em todos os aparelhos e para todas as pessoas**. Sem o `user_id` na chave, duas pessoas
+> usando o mesmo projeto sobrescreveriam a marcação uma da outra.
+
 Conferido na hora de ligar: sem estar logado, a chave não devolve nada, nem de `cao_tarefas`
 nem de `relatorios`. As tabelas do relatório de ronda continuam protegidas.
 

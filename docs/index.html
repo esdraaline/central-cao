@@ -9,7 +9,7 @@
 <!-- o painel e um arquivo unico que muda a cada geracao; sem isto o navegador
      serve a versao antiga do cache e correcoes nao chegam ate o usuario -->
 <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
-<meta name="gerado-em" content="20260804162333">
+<meta name="gerado-em" content="20260804163342">
 <title>Central do CAO</title>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23c8102e'/%3E%3Ctext x='16' y='22' font-size='15' font-family='Arial' font-weight='bold' fill='white' text-anchor='middle'%3ECAO%3C/text%3E%3C/svg%3E">
 <style>
@@ -401,8 +401,8 @@ mark{background:rgba(232,161,58,.35);color:inherit;border-radius:3px;padding:0 2
 <h3 data-b>Caixinhas ticáveis</h3>
 <p data-b>Nas abas geradas dos .md (Conferir, Compras, Mala, Rotina), <strong>as caixinhas são clicáveis</strong>: clique para marcar, clique de novo para desmarcar.</p>
 <p data-b><strong>Item com quantidade aceita marcação parcial.</strong> Todo item que começa com um número (<code>- [ ] 6 camisetas...</code>) ou termina com <code>— 5</code> ganha sozinho um contador <code>−  3 de 6  +</code>. Clicar no <code>+</code>/<code>−</code> anda de um em um; clicar no corpo da linha vai direto para "tenho tudo" ou "não tenho nada". Enquanto está no meio, o item fica âmbar. A contagem do topo é <strong>por peça</strong>, não por linha: 6 camisetas contam como 6.</p>
-<p data-b>Cada aba mostra no topo quanto já foi marcado e tem um botão "Limpar marcações". O que você tica fica salvo</p>
-<p data-b><strong>naquele aparelho</strong> (não sincroniza entre celular e computador, diferente das Tarefas). O texto continua vindo do .md — se eu editar o texto de um item, aquele item volta a ficar desmarcado.</p>
+<p data-b>Cada aba mostra no topo quanto já foi marcado e tem um botão "Limpar marcações". O texto continua vindo do .md — se eu editar o texto de um item, aquele item volta a ficar desmarcado.</p>
+<p data-b><strong>Sincronização entre aparelhos: código pronto, falta criar a tabela.</strong> Está tudo implementado, mas a tabela <code>cao_ticados</code> ainda precisa ser criada no Supabase (SQL pronto para colar em <span class="arq" title="Arquivo na pasta local: SUPABASE.md"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2h8l4 4v16H6z"/><path d="M14 2v4h4"/></svg>SUPABASE.md</span>). Até lá as marcações ficam salvas só no aparelho onde você ticou.</p>
 <h3 data-b>Aba Tarefas (cadastro)</h3>
 <p data-b>Dá para cadastrar tarefa direto no painel, escrevendo em linguagem normal: <em>"entregar artigo sexta"</em>,</p>
 <p data-b><em>"prova dia 15"</em>, <em>"enviar ofício amanhã"</em>. Ele entende a data sozinho e agrupa por urgência (atrasadas, hoje, amanhã, próximos 7 dias). Categorias: Curso, Dissertação, Administrativo, Pessoal.</p>
@@ -1070,7 +1070,19 @@ window.SUPA_CFG={"url": "https://lmmxaaoqygarwxbwwhlp.supabase.co", "key": "sb_p
   var K_MK='cao-ticados';
   var mkEstado={};
   try{mkEstado=JSON.parse(localStorage.getItem(K_MK)||'{}')||{}}catch(e){mkEstado={}}
+  /* Cada item vira {n:quantos, m:quando mudou, s:ja subiu para a nuvem}.
+     A primeira versao guardava so o numero; converte para nao perder o que
+     ja estava ticado neste aparelho.                                        */
+  var mkVelho=false;
+  Object.keys(mkEstado).forEach(function(k){
+    if(typeof mkEstado[k]==='number'){
+      mkEstado[k]={n:mkEstado[k],m:'1970-01-01T00:00:00.000Z',s:false};
+      mkVelho=true;
+    }
+  });
   function mkSalva(){try{localStorage.setItem(K_MK,JSON.stringify(mkEstado))}catch(e){}}
+  if(mkVelho)mkSalva();
+  function mkAgora(){return new Date().toISOString()}
   var CHECK='<svg viewBox="0 0 24 24" width="12" height="12" fill="none" '+
     'stroke="currentColor" stroke-width="1.8" stroke-linecap="round" '+
     'stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>';
@@ -1081,7 +1093,7 @@ window.SUPA_CFG={"url": "https://lmmxaaoqygarwxbwwhlp.supabase.co", "key": "sb_p
   }
   /* total do item: 0 = item simples (sim/nao); N = item com quantidade */
   function mkTotal(li){return parseInt(li.getAttribute('data-qtd')||'0',10)||0}
-  function mkTenho(li){return parseInt(mkEstado[mkChave(li)]||0,10)||0}
+  function mkTenho(li){var v=mkEstado[mkChave(li)];return (v&&v.n)||0}
 
   /* pinta o item a partir de quantos ja tem */
   function mkPinta(li,n){
@@ -1099,14 +1111,16 @@ window.SUPA_CFG={"url": "https://lmmxaaoqygarwxbwwhlp.supabase.co", "key": "sb_p
       }
     }
   }
-  /* grava e repinta */
+  /* grava e repinta. Guarda ate o zero (em vez de apagar a chave), senao a
+     nuvem devolveria na proxima sincronizacao o que voce acabou de desmarcar. */
   function mkPoe(li,n){
     var tot=mkTotal(li);
     n=Math.max(0,Math.min(n,tot||1));
-    if(n>0)mkEstado[mkChave(li)]=n; else delete mkEstado[mkChave(li)];
+    mkEstado[mkChave(li)]={n:n,m:mkAgora(),s:false};
     mkPinta(li,n);mkSalva();
     var sec=li.closest('.aba');
     if(sec)mkConta(sec);
+    if(window.TICADOS_SYNC)window.TICADOS_SYNC();
   }
   function mkConta(sec){
     var itens=sec.querySelectorAll('ul.tarefas li[data-mk]');
@@ -1136,11 +1150,13 @@ window.SUPA_CFG={"url": "https://lmmxaaoqygarwxbwwhlp.supabase.co", "key": "sb_p
       '<button type="button">Limpar marcações</button>';
     card.insertBefore(topo,card.firstChild);
     topo.querySelector('button').onclick=function(){
+      var agora=mkAgora();
       [].forEach.call(itens,function(li){
-        delete mkEstado[mkChave(li)];
+        mkEstado[mkChave(li)]={n:0,m:agora,s:false};
         mkPinta(li,0);
       });
       mkSalva();mkConta(sec);
+      if(window.TICADOS_SYNC)window.TICADOS_SYNC();
     };
     [].forEach.call(itens,function(li){
       if(mkTotal(li)){
@@ -1171,6 +1187,22 @@ window.SUPA_CFG={"url": "https://lmmxaaoqygarwxbwwhlp.supabase.co", "key": "sb_p
     var tot=mkTotal(li)||1;
     mkPoe(li,mkTenho(li)>=tot?0:tot);
   });
+
+  /* usado pela sincronizacao para redesenhar tudo depois de baixar da nuvem */
+  function mkRepintaTudo(){
+    pans.forEach(function(sec){
+      var itens=sec.querySelectorAll('ul.tarefas li[data-mk]');
+      if(!itens.length)return;
+      [].forEach.call(itens,function(li){mkPinta(li,mkTenho(li))});
+      mkConta(sec);
+    });
+  }
+  window.TICADOS={
+    todos:function(){return mkEstado},
+    definir:function(novo){mkEstado=novo;mkSalva();mkRepintaTudo()},
+    salvar:mkSalva,
+    repintar:mkRepintaTudo
+  };
 
   /* tema */
   var bt=document.getElementById('tema');
@@ -1882,6 +1914,46 @@ window.SUPA_CFG={"url": "https://lmmxaaoqygarwxbwwhlp.supabase.co", "key": "sb_p
     }).catch(function(){});
   }
 
+  /* -------- itens ticados das abas Conferir / Compras / Mala -------------
+     Tabela cao_ticados: uma linha por item marcado, chave (user_id, id).
+     O id vem do proprio painel ("ab-conferir/2de055d428"), entao e igual em
+     todo aparelho - por isso a chave primaria precisa incluir o user_id.
+     Vale sempre a alteracao mais recente (campo mod).                       */
+  function sincTicados(){
+    if(!ativo()||!window.TICADOS)return Promise.resolve();
+    var loc=window.TICADOS.todos();
+    return api('/rest/v1/cao_ticados?select=*').then(function(remotas){
+      var mudou=false;
+      (remotas||[]).forEach(function(r){
+        var l=loc[r.id];
+        if(!l||(r.mod||'')>(l.m||'')){
+          loc[r.id]={n:r.n||0,m:r.mod,s:true};mudou=true;
+        }
+      });
+      var subir=Object.keys(loc).filter(function(k){return !loc[k].s})
+        .map(function(k){
+          return {user_id:ses.uid,id:k,n:loc[k].n||0,mod:loc[k].m};
+        });
+      if(mudou)window.TICADOS.definir(loc);
+      if(!subir.length)return null;
+      return api('/rest/v1/cao_ticados?on_conflict=user_id,id',{
+        method:'POST',
+        headers:{'Prefer':'resolution=merge-duplicates,return=minimal'},
+        body:JSON.stringify(subir)
+      }).then(function(){
+        Object.keys(loc).forEach(function(k){loc[k].s=true});
+        window.TICADOS.salvar();
+      });
+    });
+  }
+  /* espera o dedo parar antes de subir, para nao mandar um POST por clique */
+  var tmTic=null;
+  window.TICADOS_SYNC=function(){
+    if(!ativo())return;
+    clearTimeout(tmTic);
+    tmTic=setTimeout(function(){sincTicados().catch(function(){})},1200);
+  };
+
   function sincronizar(){
     if(!ativo()||sincronizando)return Promise.resolve();
     sincronizando=true;
@@ -1926,6 +1998,9 @@ window.SUPA_CFG={"url": "https://lmmxaaoqygarwxbwwhlp.supabase.co", "key": "sb_p
         window.TAREFAS.todas().forEach(function(t){t.sinc=true});
         window.TAREFAS.salvar();
       });
+    }).then(function(){
+      /* 4. e, na mesma passada, os itens ticados das listas */
+      return sincTicados().catch(function(){});
     }).then(function(){
       sincronizando=false;
       window.TAREFAS.redesenhar();

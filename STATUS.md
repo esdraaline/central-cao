@@ -39,9 +39,12 @@ ou termina com `— 5` ganha sozinho um contador `−  3 de 6  +`. Clicar no `+`
 no corpo da linha vai direto para "tenho tudo" ou "não tenho nada". Enquanto está no meio, o item fica
 âmbar. A contagem do topo é **por peça**, não por linha: 6 camisetas contam como 6.
 
-Cada aba mostra no topo quanto já foi marcado e tem um botão "Limpar marcações". O que você tica fica salvo
-**naquele aparelho** (não sincroniza entre celular e computador, diferente das Tarefas). O texto continua
+Cada aba mostra no topo quanto já foi marcado e tem um botão "Limpar marcações". O texto continua
 vindo do .md — se eu editar o texto de um item, aquele item volta a ficar desmarcado.
+
+**Sincronização entre aparelhos: código pronto, falta criar a tabela.** Está tudo implementado, mas a
+tabela `cao_ticados` ainda precisa ser criada no Supabase (SQL pronto para colar em [SUPABASE.md](SUPABASE.md)).
+Até lá as marcações ficam salvas só no aparelho onde você ticou.
 
 ### Aba Tarefas (cadastro)
 Dá para cadastrar tarefa direto no painel, escrevendo em linguagem normal: *"entregar artigo sexta"*,

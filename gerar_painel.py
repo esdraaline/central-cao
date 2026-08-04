@@ -1319,6 +1319,46 @@ JS_SUPABASE = r"""
     }).catch(function(){});
   }
 
+  /* -------- itens ticados das abas Conferir / Compras / Mala -------------
+     Tabela cao_ticados: uma linha por item marcado, chave (user_id, id).
+     O id vem do proprio painel ("ab-conferir/2de055d428"), entao e igual em
+     todo aparelho - por isso a chave primaria precisa incluir o user_id.
+     Vale sempre a alteracao mais recente (campo mod).                       */
+  function sincTicados(){
+    if(!ativo()||!window.TICADOS)return Promise.resolve();
+    var loc=window.TICADOS.todos();
+    return api('/rest/v1/cao_ticados?select=*').then(function(remotas){
+      var mudou=false;
+      (remotas||[]).forEach(function(r){
+        var l=loc[r.id];
+        if(!l||(r.mod||'')>(l.m||'')){
+          loc[r.id]={n:r.n||0,m:r.mod,s:true};mudou=true;
+        }
+      });
+      var subir=Object.keys(loc).filter(function(k){return !loc[k].s})
+        .map(function(k){
+          return {user_id:ses.uid,id:k,n:loc[k].n||0,mod:loc[k].m};
+        });
+      if(mudou)window.TICADOS.definir(loc);
+      if(!subir.length)return null;
+      return api('/rest/v1/cao_ticados?on_conflict=user_id,id',{
+        method:'POST',
+        headers:{'Prefer':'resolution=merge-duplicates,return=minimal'},
+        body:JSON.stringify(subir)
+      }).then(function(){
+        Object.keys(loc).forEach(function(k){loc[k].s=true});
+        window.TICADOS.salvar();
+      });
+    });
+  }
+  /* espera o dedo parar antes de subir, para nao mandar um POST por clique */
+  var tmTic=null;
+  window.TICADOS_SYNC=function(){
+    if(!ativo())return;
+    clearTimeout(tmTic);
+    tmTic=setTimeout(function(){sincTicados().catch(function(){})},1200);
+  };
+
   function sincronizar(){
     if(!ativo()||sincronizando)return Promise.resolve();
     sincronizando=true;
@@ -1363,6 +1403,9 @@ JS_SUPABASE = r"""
         window.TAREFAS.todas().forEach(function(t){t.sinc=true});
         window.TAREFAS.salvar();
       });
+    }).then(function(){
+      /* 4. e, na mesma passada, os itens ticados das listas */
+      return sincTicados().catch(function(){});
     }).then(function(){
       sincronizando=false;
       window.TAREFAS.redesenhar();
@@ -1470,7 +1513,19 @@ JS = r"""
   var K_MK='cao-ticados';
   var mkEstado={};
   try{mkEstado=JSON.parse(localStorage.getItem(K_MK)||'{}')||{}}catch(e){mkEstado={}}
+  /* Cada item vira {n:quantos, m:quando mudou, s:ja subiu para a nuvem}.
+     A primeira versao guardava so o numero; converte para nao perder o que
+     ja estava ticado neste aparelho.                                        */
+  var mkVelho=false;
+  Object.keys(mkEstado).forEach(function(k){
+    if(typeof mkEstado[k]==='number'){
+      mkEstado[k]={n:mkEstado[k],m:'1970-01-01T00:00:00.000Z',s:false};
+      mkVelho=true;
+    }
+  });
   function mkSalva(){try{localStorage.setItem(K_MK,JSON.stringify(mkEstado))}catch(e){}}
+  if(mkVelho)mkSalva();
+  function mkAgora(){return new Date().toISOString()}
   var CHECK='<svg viewBox="0 0 24 24" width="12" height="12" fill="none" '+
     'stroke="currentColor" stroke-width="1.8" stroke-linecap="round" '+
     'stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>';
@@ -1481,7 +1536,7 @@ JS = r"""
   }
   /* total do item: 0 = item simples (sim/nao); N = item com quantidade */
   function mkTotal(li){return parseInt(li.getAttribute('data-qtd')||'0',10)||0}
-  function mkTenho(li){return parseInt(mkEstado[mkChave(li)]||0,10)||0}
+  function mkTenho(li){var v=mkEstado[mkChave(li)];return (v&&v.n)||0}
 
   /* pinta o item a partir de quantos ja tem */
   function mkPinta(li,n){
@@ -1499,14 +1554,16 @@ JS = r"""
       }
     }
   }
-  /* grava e repinta */
+  /* grava e repinta. Guarda ate o zero (em vez de apagar a chave), senao a
+     nuvem devolveria na proxima sincronizacao o que voce acabou de desmarcar. */
   function mkPoe(li,n){
     var tot=mkTotal(li);
     n=Math.max(0,Math.min(n,tot||1));
-    if(n>0)mkEstado[mkChave(li)]=n; else delete mkEstado[mkChave(li)];
+    mkEstado[mkChave(li)]={n:n,m:mkAgora(),s:false};
     mkPinta(li,n);mkSalva();
     var sec=li.closest('.aba');
     if(sec)mkConta(sec);
+    if(window.TICADOS_SYNC)window.TICADOS_SYNC();
   }
   function mkConta(sec){
     var itens=sec.querySelectorAll('ul.tarefas li[data-mk]');
@@ -1536,11 +1593,13 @@ JS = r"""
       '<button type="button">Limpar marcações</button>';
     card.insertBefore(topo,card.firstChild);
     topo.querySelector('button').onclick=function(){
+      var agora=mkAgora();
       [].forEach.call(itens,function(li){
-        delete mkEstado[mkChave(li)];
+        mkEstado[mkChave(li)]={n:0,m:agora,s:false};
         mkPinta(li,0);
       });
       mkSalva();mkConta(sec);
+      if(window.TICADOS_SYNC)window.TICADOS_SYNC();
     };
     [].forEach.call(itens,function(li){
       if(mkTotal(li)){
@@ -1571,6 +1630,22 @@ JS = r"""
     var tot=mkTotal(li)||1;
     mkPoe(li,mkTenho(li)>=tot?0:tot);
   });
+
+  /* usado pela sincronizacao para redesenhar tudo depois de baixar da nuvem */
+  function mkRepintaTudo(){
+    pans.forEach(function(sec){
+      var itens=sec.querySelectorAll('ul.tarefas li[data-mk]');
+      if(!itens.length)return;
+      [].forEach.call(itens,function(li){mkPinta(li,mkTenho(li))});
+      mkConta(sec);
+    });
+  }
+  window.TICADOS={
+    todos:function(){return mkEstado},
+    definir:function(novo){mkEstado=novo;mkSalva();mkRepintaTudo()},
+    salvar:mkSalva,
+    repintar:mkRepintaTudo
+  };
 
   /* tema */
   var bt=document.getElementById('tema');

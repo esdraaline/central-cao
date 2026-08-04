@@ -32,10 +32,16 @@ python gerar_painel.py
 
 ### Caixinhas ticáveis
 Nas abas geradas dos .md (Conferir, Compras, Mala, Rotina), **as caixinhas são clicáveis**: clique para
-marcar, clique de novo para desmarcar. Cada aba mostra no topo quantos itens já foram marcados e tem um
-botão "Limpar marcações". O que você tica fica salvo **naquele aparelho** (não sincroniza entre celular e
-computador, diferente das Tarefas). O texto continua vindo do .md — se eu editar o texto de um item, aquele
-item volta a ficar desmarcado.
+marcar, clique de novo para desmarcar.
+
+**Item com quantidade aceita marcação parcial.** Todo item que começa com um número (`- [ ] 6 camisetas...`)
+ou termina com `— 5` ganha sozinho um contador `−  3 de 6  +`. Clicar no `+`/`−` anda de um em um; clicar
+no corpo da linha vai direto para "tenho tudo" ou "não tenho nada". Enquanto está no meio, o item fica
+âmbar. A contagem do topo é **por peça**, não por linha: 6 camisetas contam como 6.
+
+Cada aba mostra no topo quanto já foi marcado e tem um botão "Limpar marcações". O que você tica fica salvo
+**naquele aparelho** (não sincroniza entre celular e computador, diferente das Tarefas). O texto continua
+vindo do .md — se eu editar o texto de um item, aquele item volta a ficar desmarcado.
 
 ### Aba Tarefas (cadastro)
 Dá para cadastrar tarefa direto no painel, escrevendo em linguagem normal: *"entregar artigo sexta"*,

@@ -120,6 +120,24 @@ def _inline(txt):
     return txt
 
 
+# Itens de checklist que comecam com um numero ("6 camisetas...") ou terminam
+# com "- 5" / "- 2 pares" viram contador, para dar para marcar so uma parte.
+_QTD_INICIO = re.compile(r"^(?:\*\*)?(\d{1,2})\s+[A-Za-zÀ-ÿ]")
+_QTD_FIM = re.compile(r"[—-]\s*(\d{1,2})\s*"
+                      r"(?:conjuntos?|pares?|mudas?|unidades?|un\.?)?\s*$", re.I)
+
+
+def quantidade_do_item(texto):
+    """Devolve a quantidade do item, ou 0 se for item simples (sim/nao)."""
+    for rx in (_QTD_INICIO, _QTD_FIM):
+        m = rx.search(texto.strip())
+        if m:
+            n = int(m.group(1))
+            if 2 <= n <= 30:
+                return n
+    return 0
+
+
 def md_para_html(texto):
     """Converte markdown para HTML. Suporta o subconjunto usado nos docs."""
     linhas = texto.split("\n")
@@ -245,9 +263,11 @@ def md_para_html(texto):
                 # data-mk: chave estavel do item, para o navegador lembrar o que
                 # ja foi ticado. Vem do texto, entao editar o texto zera aquele item.
                 chave = hashlib.md5(mk.group(2).strip().encode("utf-8")).hexdigest()[:10]
-                saida.append('<li class="%s" data-mk="%s"><span class="box">%s</span>'
+                qtd = quantidade_do_item(mk.group(2))
+                saida.append('<li class="%s" data-mk="%s"%s><span class="box">%s</span>'
                              '<span>%s</span></li>' % (
                                  "ok" if feito else "pend", chave,
+                                 ' data-qtd="%d"' % qtd if qtd else "",
                                  svg("check", 12) if feito else "",
                                  _inline(mk.group(2))))
             else:
@@ -480,12 +500,32 @@ ul.tarefas li.pend{border-left:3px solid var(--al)}
 ul.tarefas li.pend .box{border-color:var(--al)}
 ul.tarefas li.ok{opacity:.6}
 ul.tarefas li.ok .box{background:var(--ok);border-color:var(--ok);color:#fff}
-ul.tarefas li.ok span:last-child{text-decoration:line-through}
+/* risca o texto (2o span), nunca o contador que vem depois dele */
+ul.tarefas li.ok>span:nth-child(2){text-decoration:line-through}
 /* itens ticaveis: os das abas geradas dos .md */
 ul.tarefas li[data-mk]{cursor:pointer;user-select:none;
   transition:border-color .12s,background .12s}
 ul.tarefas li[data-mk]:hover{border-color:var(--vm);background:var(--card)}
 ul.tarefas li[data-mk]:active{transform:scale(.995)}
+/* itens com quantidade: da para marcar so uma parte */
+ul.tarefas li[data-qtd]{flex-wrap:wrap;row-gap:6px}
+/* o texto ocupa o resto da 1a linha (junto da caixinha) e quebra dentro de si;
+   quem desce para a linha de baixo, quando falta espaco, e o contador */
+ul.tarefas li[data-qtd]>span:nth-child(2){flex:1 1 0;min-width:0}
+ul.tarefas li.parcial .box{background:var(--al);border-color:var(--al)}
+ul.tarefas li.parcial .box::after{content:"";width:9px;height:2.5px;
+  border-radius:2px;background:#fff}
+.mk-qtd{margin-left:auto;display:flex;align-items:center;gap:4px;flex:none}
+.mk-qtd button{width:26px;height:26px;flex:none;border-radius:7px;
+  border:1px solid var(--bd);background:var(--card);color:var(--tx2);
+  font-size:1rem;line-height:1;cursor:pointer;display:grid;place-items:center;
+  padding:0}
+.mk-qtd button:hover:not(:disabled){border-color:var(--vm);color:var(--tx)}
+.mk-qtd button:disabled{opacity:.35;cursor:default}
+.mk-qtd .n{min-width:44px;text-align:center;font-size:.83rem;
+  font-variant-numeric:tabular-nums;color:var(--tx2)}
+ul.tarefas li.ok .mk-qtd .n{color:var(--ok);font-weight:600}
+ul.tarefas li.parcial .mk-qtd .n{color:var(--al);font-weight:600}
 /* contador de progresso no topo das abas com lista ticavel */
 .mk-topo{display:flex;align-items:center;gap:12px;flex-wrap:wrap;
   margin:0 0 14px;padding:11px 14px;border:1px solid var(--bd);
@@ -640,6 +680,11 @@ mark{background:rgba(232,161,58,.35);color:inherit;border-radius:3px;padding:0 2
 .rodape code{font-size:11.5px}
 
 @media(max-width:640px){
+  /* no celular o contador desce inteiro para a linha de baixo, alinhado a
+     direita, para o texto do item nao ficar espremido numa coluna estreita.
+     O texto mantem o flex-basis 0 da regra base, senao ele proprio quebra
+     de linha e deixa a caixinha sozinha la em cima. */
+  .mk-qtd{flex-basis:100%;justify-content:flex-end;margin-left:0}
   .wrap,main{padding-left:14px;padding-right:14px}
   .marca h1{font-size:16.5px}
   .marca p{font-size:11.5px}
@@ -1434,23 +1479,51 @@ JS = r"""
     var sec=li.closest('.aba');
     return (sec?sec.id:'?')+'/'+li.getAttribute('data-mk');
   }
-  function mkPinta(li,ok){
-    li.classList.toggle('ok',ok);
-    li.classList.toggle('pend',!ok);
-    li.firstChild.innerHTML=ok?CHECK:'';
+  /* total do item: 0 = item simples (sim/nao); N = item com quantidade */
+  function mkTotal(li){return parseInt(li.getAttribute('data-qtd')||'0',10)||0}
+  function mkTenho(li){return parseInt(mkEstado[mkChave(li)]||0,10)||0}
+
+  /* pinta o item a partir de quantos ja tem */
+  function mkPinta(li,n){
+    var tot=mkTotal(li), cheio=tot?n>=tot:n>0;
+    li.classList.toggle('ok',cheio);
+    li.classList.toggle('parcial',!cheio&&n>0);
+    li.classList.toggle('pend',n===0);
+    li.firstChild.innerHTML=cheio?CHECK:'';
+    if(tot){
+      var q=li.querySelector('.mk-qtd');
+      if(q){
+        q.querySelector('.n').textContent=n+' de '+tot;
+        q.querySelector('.menos').disabled=n<=0;
+        q.querySelector('.mais').disabled=n>=tot;
+      }
+    }
+  }
+  /* grava e repinta */
+  function mkPoe(li,n){
+    var tot=mkTotal(li);
+    n=Math.max(0,Math.min(n,tot||1));
+    if(n>0)mkEstado[mkChave(li)]=n; else delete mkEstado[mkChave(li)];
+    mkPinta(li,n);mkSalva();
+    var sec=li.closest('.aba');
+    if(sec)mkConta(sec);
   }
   function mkConta(sec){
     var itens=sec.querySelectorAll('ul.tarefas li[data-mk]');
-    if(!itens.length)return;
-    var ok=sec.querySelectorAll('ul.tarefas li[data-mk].ok').length;
     var topo=sec.querySelector('.mk-topo');
-    if(!topo)return;
-    var pct=itens.length?Math.round(ok*100/itens.length):0;
-    topo.querySelector('.mk-n').textContent=ok+' de '+itens.length;
+    if(!itens.length||!topo)return;
+    /* conta por peca: item com quantidade vale pelo total dele */
+    var tem=0,total=0;
+    [].forEach.call(itens,function(li){
+      var tot=mkTotal(li)||1;
+      total+=tot;tem+=Math.min(mkTenho(li),tot);
+    });
+    var pct=total?Math.round(tem*100/total):0;
+    topo.querySelector('.mk-n').textContent=tem+' de '+total;
     topo.querySelector('.mk-barra i').style.width=pct+'%';
   }
 
-  /* monta o contador no topo de cada aba que tenha item ticavel */
+  /* monta o contador no topo e os steppers dos itens com quantidade */
   pans.forEach(function(sec){
     var itens=sec.querySelectorAll('ul.tarefas li[data-mk]');
     if(!itens.length)return;
@@ -1463,27 +1536,40 @@ JS = r"""
       '<button type="button">Limpar marcações</button>';
     card.insertBefore(topo,card.firstChild);
     topo.querySelector('button').onclick=function(){
-      itens.forEach(function(li){
+      [].forEach.call(itens,function(li){
         delete mkEstado[mkChave(li)];
-        mkPinta(li,false);
+        mkPinta(li,0);
       });
       mkSalva();mkConta(sec);
     };
-    /* aplica o que ja estava salvo */
-    itens.forEach(function(li){
-      if(mkEstado[mkChave(li)])mkPinta(li,true);
+    [].forEach.call(itens,function(li){
+      if(mkTotal(li)){
+        var q=document.createElement('span');
+        q.className='mk-qtd';
+        q.innerHTML='<button type="button" class="menos" aria-label="Tirar um">−</button>'+
+          '<span class="n"></span>'+
+          '<button type="button" class="mais" aria-label="Somar um">+</button>';
+        li.appendChild(q);
+      }
+      mkPinta(li,mkTenho(li));
     });
     mkConta(sec);
   });
 
   document.addEventListener('click',function(e){
+    var bt=e.target.closest('.mk-qtd button');
+    if(bt){
+      /* o +/- mexe de um em um e nao deixa o clique virar toggle da linha */
+      e.stopPropagation();
+      var li=bt.closest('li[data-mk]');
+      mkPoe(li,mkTenho(li)+(bt.classList.contains('mais')?1:-1));
+      return;
+    }
     var li=e.target.closest('ul.tarefas li[data-mk]');
     if(!li)return;
-    var k=mkChave(li), ok=!li.classList.contains('ok');
-    if(ok)mkEstado[k]=1; else delete mkEstado[k];
-    mkPinta(li,ok);mkSalva();
-    var sec=li.closest('.aba');
-    if(sec)mkConta(sec);
+    /* clique na linha: tenho tudo <-> nao tenho nada */
+    var tot=mkTotal(li)||1;
+    mkPoe(li,mkTenho(li)>=tot?0:tot);
   });
 
   /* tema */

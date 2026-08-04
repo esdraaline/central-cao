@@ -10,7 +10,7 @@
 - Projeto de Pesquisa (PP) tem versão final entregue em [CAO 2026/PP/Projeto Pesquisa Cap Josemar Final.doc](CAO%202026/PP/Projeto%20Pesquisa%20Cap%20Josemar%20Final.doc) — tema: integração PM-Prefeituras / governança participativa no 2º BPM/I. Como agora é mestrado profissional, isso deve virar **dissertação** (ver contato de Pesquisa em [CONTATOS.md](CONTATOS.md)).
 - Contatos e organograma do CAES: ver [CONTATOS.md](CONTATOS.md).
 - Regras de rotina, uniforme, SIPA financeiro, formatura: ver [ROTINA.md](ROTINA.md).
-- **Primeira semana: viaja domingo 16/08/2026**, aulas de segunda a quinta (entra 08h15; sai 16h seg, 18h ter e qua, 11h30 qui). O que colocar na mala está em [MALA.md](MALA.md) e o que falta comprar, em [COMPRAS.md](COMPRAS.md).
+- **Primeira semana: viaja domingo 16/08/2026**, aulas de segunda a quinta (entra 08h15; sai 16h seg, 18h ter e qua, 11h30 qui). A preparação é em três etapas: [CONFERIR.md](CONFERIR.md) (tico o que já tenho) → [COMPRAS.md](COMPRAS.md) (o que sobrou) → [MALA.md](MALA.md) (arrumar a mala no dia).
 - **Falta preencher**: em qual módulo/disciplina o curso está agora, o que já foi entregue no curso em si (não só na seleção/recepção).
 
 ## Próximo passo
@@ -29,6 +29,13 @@ Ele é **gerado** a partir destes .md, não editado à mão. Depois de mexer em 
 ```
 python gerar_painel.py
 ```
+
+### Caixinhas ticáveis
+Nas abas geradas dos .md (Conferir, Compras, Mala, Rotina), **as caixinhas são clicáveis**: clique para
+marcar, clique de novo para desmarcar. Cada aba mostra no topo quantos itens já foram marcados e tem um
+botão "Limpar marcações". O que você tica fica salvo **naquele aparelho** (não sincroniza entre celular e
+computador, diferente das Tarefas). O texto continua vindo do .md — se eu editar o texto de um item, aquele
+item volta a ficar desmarcado.
 
 ### Aba Tarefas (cadastro)
 Dá para cadastrar tarefa direto no painel, escrevendo em linguagem normal: *"entregar artigo sexta"*,
@@ -53,8 +60,9 @@ Central CAO/
 ├── DUVIDAS.md        <- dúvidas em aberto sobre o curso
 ├── TAREFAS.md        <- lista de tarefas correntes
 ├── ANOTACOES.md      <- notas soltas, recados, ideias
-├── MALA.md           <- checklist de enxoval, farda e material da semana no CAES
-├── COMPRAS.md        <- o que ainda falta comprar da lista da mala
+├── CONFERIR.md       <- conferência de armário: tico o que já tenho
+├── COMPRAS.md        <- o que sobrou da conferência e precisa comprar
+├── MALA.md           <- lista do dia de arrumar a mala (o que levar)
 ├── VIAGENS.md         <- deslocamentos (módulos presenciais, provas etc.)
 ├── SUPABASE.md       <- como ligar a sincronização das tarefas
 ├── gerar_painel.py   <- gera o painel a partir dos .md acima

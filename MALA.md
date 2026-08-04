@@ -3,7 +3,8 @@
 > Checklist de enxoval, farda e material para a semana de curso. Rotina: **chega domingo, aulas de segunda a quinta, volta quinta depois das 11h30**.
 > **Não tem lavanderia**: as quantidades abaixo cobrem os 4 dias de aula sem lavar nada.
 > Base: bizu de colega que já fez o CAO + [ROTINA.md](ROTINA.md).
-> **O que ainda falta comprar está separado em [COMPRAS.md](COMPRAS.md)** — aqui é a lista completa do que levar.
+>
+> **Esta é a lista do dia de arrumar a mala** — tique conforme for pondo dentro. Antes dela vêm duas outras: [CONFERIR.md](CONFERIR.md) (o que já tenho) e [COMPRAS.md](COMPRAS.md) (o que falta).
 
 ## Antes de sair de casa
 - [ ] Conferir distintivos, insígnias e tarjetas em **cada** peça (ver checagem no fim desta seção)

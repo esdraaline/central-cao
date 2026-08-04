@@ -12,6 +12,7 @@ Uso:
 Sem dependencias externas. Python 3.8+.
 """
 
+import hashlib
 import html
 import os
 import re
@@ -34,8 +35,9 @@ ABAS = [
     ("CONTATOS.md",  "contatos",  "Contatos",   "users"),
     ("DUVIDAS.md",   "duvidas",   "Dúvidas",    "help"),
     ("ANOTACOES.md", "anotacoes", "Anotações",  "note"),
-    ("MALA.md",      "mala",      "Mala",       "mala"),
+    ("CONFERIR.md",  "conferir",  "Conferir",   "prancheta"),
     ("COMPRAS.md",   "compras",   "Compras",    "carrinho"),
+    ("MALA.md",      "mala",      "Mala",       "mala"),
     ("VIAGENS.md",   "viagens",   "Viagens",    "map"),
 ]
 
@@ -52,6 +54,7 @@ ICONES = {
     "map":      '<path d="M9 4 3 6.5v14L9 18l6 2.5 6-2.5v-14L15 6.5 9 4z"/><path d="M9 4v14M15 6.5v14"/>',
     "mala":     '<rect x="3" y="7" width="18" height="14" rx="2"/><path d="M9 7V4h6v3"/><path d="M3 12h18"/>',
     "carrinho": '<path d="M3 4h2l2.4 11.2a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.5L21 8H6"/><circle cx="10" cy="20" r="1.2"/><circle cx="18" cy="20" r="1.2"/>',
+    "prancheta": '<rect x="4" y="4" width="16" height="17" rx="2"/><path d="M9 3h6v3H9z"/><path d="m8.5 13 2 2 4-4"/>',
     "search":   '<circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/>',
     "sun":      '<circle cx="12" cy="12" r="4.5"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4"/>',
     "moon":     '<path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z"/>',
@@ -239,10 +242,14 @@ def md_para_html(texto):
 
             if mk:
                 feito = mk.group(1).lower() == "x"
-                saida.append('<li class="%s"><span class="box">%s</span><span>%s</span></li>' % (
-                    "ok" if feito else "pend",
-                    svg("check", 12) if feito else "",
-                    _inline(mk.group(2))))
+                # data-mk: chave estavel do item, para o navegador lembrar o que
+                # ja foi ticado. Vem do texto, entao editar o texto zera aquele item.
+                chave = hashlib.md5(mk.group(2).strip().encode("utf-8")).hexdigest()[:10]
+                saida.append('<li class="%s" data-mk="%s"><span class="box">%s</span>'
+                             '<span>%s</span></li>' % (
+                                 "ok" if feito else "pend", chave,
+                                 svg("check", 12) if feito else "",
+                                 _inline(mk.group(2))))
             else:
                 saida.append("<li>%s</li>" % _inline(item))
             i += 1
@@ -474,6 +481,23 @@ ul.tarefas li.pend .box{border-color:var(--al)}
 ul.tarefas li.ok{opacity:.6}
 ul.tarefas li.ok .box{background:var(--ok);border-color:var(--ok);color:#fff}
 ul.tarefas li.ok span:last-child{text-decoration:line-through}
+/* itens ticaveis: os das abas geradas dos .md */
+ul.tarefas li[data-mk]{cursor:pointer;user-select:none;
+  transition:border-color .12s,background .12s}
+ul.tarefas li[data-mk]:hover{border-color:var(--vm);background:var(--card)}
+ul.tarefas li[data-mk]:active{transform:scale(.995)}
+/* contador de progresso no topo das abas com lista ticavel */
+.mk-topo{display:flex;align-items:center;gap:12px;flex-wrap:wrap;
+  margin:0 0 14px;padding:11px 14px;border:1px solid var(--bd);
+  border-radius:10px;background:var(--card2)}
+.mk-topo .mk-n{font-weight:700;color:var(--tx)}
+.mk-topo .mk-barra{flex:1;min-width:120px;height:7px;border-radius:99px;
+  background:var(--bd);overflow:hidden}
+.mk-topo .mk-barra i{display:block;height:100%;background:var(--ok);
+  border-radius:99px;transition:width .2s}
+.mk-topo button{background:none;border:1px solid var(--bd);color:var(--tx3);
+  border-radius:8px;padding:5px 11px;font-size:.82rem;cursor:pointer}
+.mk-topo button:hover{color:var(--tx);border-color:var(--vm)}
 
 /* ============================ app de tarefas ============================ */
 .tf-topo{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:14px}
@@ -1393,6 +1417,73 @@ JS = r"""
   window.addEventListener('hashchange',function(){
     var h=location.hash.slice(1);
     if(abas.some(function(b){return b.dataset.aba===h}))mostra(h,false);
+  });
+
+  /* ---- itens ticaveis das abas geradas dos .md (Conferir, Compras, Mala...) --
+     O .md continua sendo a fonte de verdade do TEXTO; o que foi ticado fica
+     salvo no proprio aparelho (localStorage), por aba + item.               */
+  var K_MK='cao-ticados';
+  var mkEstado={};
+  try{mkEstado=JSON.parse(localStorage.getItem(K_MK)||'{}')||{}}catch(e){mkEstado={}}
+  function mkSalva(){try{localStorage.setItem(K_MK,JSON.stringify(mkEstado))}catch(e){}}
+  var CHECK='<svg viewBox="0 0 24 24" width="12" height="12" fill="none" '+
+    'stroke="currentColor" stroke-width="1.8" stroke-linecap="round" '+
+    'stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>';
+
+  function mkChave(li){
+    var sec=li.closest('.aba');
+    return (sec?sec.id:'?')+'/'+li.getAttribute('data-mk');
+  }
+  function mkPinta(li,ok){
+    li.classList.toggle('ok',ok);
+    li.classList.toggle('pend',!ok);
+    li.firstChild.innerHTML=ok?CHECK:'';
+  }
+  function mkConta(sec){
+    var itens=sec.querySelectorAll('ul.tarefas li[data-mk]');
+    if(!itens.length)return;
+    var ok=sec.querySelectorAll('ul.tarefas li[data-mk].ok').length;
+    var topo=sec.querySelector('.mk-topo');
+    if(!topo)return;
+    var pct=itens.length?Math.round(ok*100/itens.length):0;
+    topo.querySelector('.mk-n').textContent=ok+' de '+itens.length;
+    topo.querySelector('.mk-barra i').style.width=pct+'%';
+  }
+
+  /* monta o contador no topo de cada aba que tenha item ticavel */
+  pans.forEach(function(sec){
+    var itens=sec.querySelectorAll('ul.tarefas li[data-mk]');
+    if(!itens.length)return;
+    var card=sec.querySelector('.card');
+    if(!card)return;
+    var topo=document.createElement('div');
+    topo.className='mk-topo';
+    topo.innerHTML='<span class="mk-n"></span>'+
+      '<span class="mk-barra"><i style="width:0"></i></span>'+
+      '<button type="button">Limpar marcações</button>';
+    card.insertBefore(topo,card.firstChild);
+    topo.querySelector('button').onclick=function(){
+      itens.forEach(function(li){
+        delete mkEstado[mkChave(li)];
+        mkPinta(li,false);
+      });
+      mkSalva();mkConta(sec);
+    };
+    /* aplica o que ja estava salvo */
+    itens.forEach(function(li){
+      if(mkEstado[mkChave(li)])mkPinta(li,true);
+    });
+    mkConta(sec);
+  });
+
+  document.addEventListener('click',function(e){
+    var li=e.target.closest('ul.tarefas li[data-mk]');
+    if(!li)return;
+    var k=mkChave(li), ok=!li.classList.contains('ok');
+    if(ok)mkEstado[k]=1; else delete mkEstado[k];
+    mkPinta(li,ok);mkSalva();
+    var sec=li.closest('.aba');
+    if(sec)mkConta(sec);
   });
 
   /* tema */

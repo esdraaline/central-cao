@@ -9,7 +9,7 @@
 <!-- o painel e um arquivo unico que muda a cada geracao; sem isto o navegador
      serve a versao antiga do cache e correcoes nao chegam ate o usuario -->
 <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
-<meta name="gerado-em" content="20260804160415">
+<meta name="gerado-em" content="20260804161337">
 <title>Central do CAO</title>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23c8102e'/%3E%3Ctext x='16' y='22' font-size='15' font-family='Arial' font-weight='bold' fill='white' text-anchor='middle'%3ECAO%3C/text%3E%3C/svg%3E">
 <style>
@@ -150,6 +150,23 @@ ul.tarefas li.pend .box{border-color:var(--al)}
 ul.tarefas li.ok{opacity:.6}
 ul.tarefas li.ok .box{background:var(--ok);border-color:var(--ok);color:#fff}
 ul.tarefas li.ok span:last-child{text-decoration:line-through}
+/* itens ticaveis: os das abas geradas dos .md */
+ul.tarefas li[data-mk]{cursor:pointer;user-select:none;
+  transition:border-color .12s,background .12s}
+ul.tarefas li[data-mk]:hover{border-color:var(--vm);background:var(--card)}
+ul.tarefas li[data-mk]:active{transform:scale(.995)}
+/* contador de progresso no topo das abas com lista ticavel */
+.mk-topo{display:flex;align-items:center;gap:12px;flex-wrap:wrap;
+  margin:0 0 14px;padding:11px 14px;border:1px solid var(--bd);
+  border-radius:10px;background:var(--card2)}
+.mk-topo .mk-n{font-weight:700;color:var(--tx)}
+.mk-topo .mk-barra{flex:1;min-width:120px;height:7px;border-radius:99px;
+  background:var(--bd);overflow:hidden}
+.mk-topo .mk-barra i{display:block;height:100%;background:var(--ok);
+  border-radius:99px;transition:width .2s}
+.mk-topo button{background:none;border:1px solid var(--bd);color:var(--tx3);
+  border-radius:8px;padding:5px 11px;font-size:.82rem;cursor:pointer}
+.mk-topo button:hover{color:var(--tx);border-color:var(--vm)}
 
 /* ============================ app de tarefas ============================ */
 .tf-topo{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:14px}
@@ -330,7 +347,7 @@ mark{background:rgba(232,161,58,.35);color:inherit;border-radius:3px;padding:0 2
       <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
       <input id="q" type="search" placeholder="Buscar em tudo (Ctrl+K)" autocomplete="off" spellcheck="false">
     </div>
-    <nav role="tablist"><button data-aba="painel" role="tab" aria-selected="false"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/></svg>Painel<span class="pill pill-b" style="display:none"></span></button><button data-aba="prazos" role="tab" aria-selected="false"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4M16 3v4M3 11h18"/></svg>Prazos<span class="pill pill-b" style="display:none"></span></button><button data-aba="tarefas" role="tab" aria-selected="false"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Tarefas<span class="pill">6</span><span class="pill pill-b" style="display:none"></span></button><button data-aba="rotina" role="tab" aria-selected="false"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Rotina<span class="pill pill-b" style="display:none"></span></button><button data-aba="contatos" role="tab" aria-selected="false"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 20v-1a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v1"/><circle cx="9.5" cy="8" r="3.5"/><path d="M21 20v-1a4 4 0 0 0-3-3.8"/><path d="M16 4.2a3.5 3.5 0 0 1 0 6.8"/></svg>Contatos<span class="pill pill-b" style="display:none"></span></button><button data-aba="duvidas" role="tab" aria-selected="false"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.2 2.4c-.7.2-1.2.9-1.2 1.6v.5"/><path d="M12 17.5h.01"/></svg>Dúvidas<span class="pill pill-b" style="display:none"></span></button><button data-aba="anotacoes" role="tab" aria-selected="false"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3h9l5 5v13H5z"/><path d="M14 3v5h5"/><path d="M9 13h6M9 17h4"/></svg>Anotações<span class="pill pill-b" style="display:none"></span></button><button data-aba="mala" role="tab" aria-selected="false"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="14" rx="2"/><path d="M9 7V4h6v3"/><path d="M3 12h18"/></svg>Mala<span class="pill pill-b" style="display:none"></span></button><button data-aba="compras" role="tab" aria-selected="false"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4h2l2.4 11.2a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.5L21 8H6"/><circle cx="10" cy="20" r="1.2"/><circle cx="18" cy="20" r="1.2"/></svg>Compras<span class="pill pill-b" style="display:none"></span></button><button data-aba="viagens" role="tab" aria-selected="false"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4 3 6.5v14L9 18l6 2.5 6-2.5v-14L15 6.5 9 4z"/><path d="M9 4v14M15 6.5v14"/></svg>Viagens<span class="pill pill-b" style="display:none"></span></button></nav>
+    <nav role="tablist"><button data-aba="painel" role="tab" aria-selected="false"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/></svg>Painel<span class="pill pill-b" style="display:none"></span></button><button data-aba="prazos" role="tab" aria-selected="false"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4M16 3v4M3 11h18"/></svg>Prazos<span class="pill pill-b" style="display:none"></span></button><button data-aba="tarefas" role="tab" aria-selected="false"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Tarefas<span class="pill">6</span><span class="pill pill-b" style="display:none"></span></button><button data-aba="rotina" role="tab" aria-selected="false"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Rotina<span class="pill pill-b" style="display:none"></span></button><button data-aba="contatos" role="tab" aria-selected="false"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 20v-1a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v1"/><circle cx="9.5" cy="8" r="3.5"/><path d="M21 20v-1a4 4 0 0 0-3-3.8"/><path d="M16 4.2a3.5 3.5 0 0 1 0 6.8"/></svg>Contatos<span class="pill pill-b" style="display:none"></span></button><button data-aba="duvidas" role="tab" aria-selected="false"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.2 2.4c-.7.2-1.2.9-1.2 1.6v.5"/><path d="M12 17.5h.01"/></svg>Dúvidas<span class="pill pill-b" style="display:none"></span></button><button data-aba="anotacoes" role="tab" aria-selected="false"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3h9l5 5v13H5z"/><path d="M14 3v5h5"/><path d="M9 13h6M9 17h4"/></svg>Anotações<span class="pill pill-b" style="display:none"></span></button><button data-aba="conferir" role="tab" aria-selected="false"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="17" rx="2"/><path d="M9 3h6v3H9z"/><path d="m8.5 13 2 2 4-4"/></svg>Conferir<span class="pill pill-b" style="display:none"></span></button><button data-aba="compras" role="tab" aria-selected="false"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4h2l2.4 11.2a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.5L21 8H6"/><circle cx="10" cy="20" r="1.2"/><circle cx="18" cy="20" r="1.2"/></svg>Compras<span class="pill pill-b" style="display:none"></span></button><button data-aba="mala" role="tab" aria-selected="false"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="14" rx="2"/><path d="M9 7V4h6v3"/><path d="M3 12h18"/></svg>Mala<span class="pill pill-b" style="display:none"></span></button><button data-aba="viagens" role="tab" aria-selected="false"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4 3 6.5v14L9 18l6 2.5 6-2.5v-14L15 6.5 9 4z"/><path d="M9 4v14M15 6.5v14"/></svg>Viagens<span class="pill pill-b" style="display:none"></span></button></nav>
   </div>
 </header>
 <main><section class="aba" id="ab-painel" role="tabpanel"><div class="grade"><div class="kpi dest"><div class="rot">Início do curso</div><div class="val">13</div><div class="sub">dias para 17/08/2026</div><div class="barra"><i style="width:0%"></i></div></div><div class="kpi"><div class="rot">Tarefas pendentes</div><div class="val" id="kpi-tar-val">6</div><div class="sub" id="kpi-tar-sub">3 já concluídas</div></div><div class="kpi"><div class="rot">Turma</div><div class="val">CAO-II</div><div class="sub">2026 / 2027, CAES</div></div><div class="kpi"><div class="rot">Formação</div><div class="val">Mestrado</div><div class="sub">Ciências Policiais</div></div></div><div class="aviso"><h3>Pendente agora</h3><ul id="home-tarefas"><li>Enviar Ofício de Apresentação para a mesa SEI 302090130 e liberar a Rotina 13 do SIPA (código 302090000) [14/08/2026] #admin</li><li>Conferir se a conta do Banco do Brasil não é "Conta Salário" e se o nome não está no CADIN [14/08/2026] #admin</li><li>Decidir opção de desconto SIPA: Alojamento (R$ 30,35) ou Vestiário (R$ 21,52), e cessar o equivalente na OPM de origem [17/08/2026] #admin</li><li>Se aplicável: pedir Ajuda de Custo (oficial de outro município) #admin</li><li>Atualizar STATUS.md e PRAZOS.md com a situação atual do curso (módulo/disciplina em andamento) #curso</li><li>Ficar de olho no Recadastramento Anual + Inspeção de Saúde (IAS) próximo do aniversário #admin</li></ul></div><div class="card"><blockquote data-b>Painel principal. Ler isso primeiro em qualquer sessão nova ("onde paramos?"). Atualizado em: 04/08/2026</blockquote>
@@ -342,20 +359,22 @@ mark{background:rgba(232,161,58,.35);color:inherit;border-radius:3px;padding:0 2
 <li>Projeto de Pesquisa (PP) tem versão final entregue em <span class="arq" title="Arquivo na pasta local: CAO 2026/PP/Projeto Pesquisa Cap Josemar Final.doc"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2h8l4 4v16H6z"/><path d="M14 2v4h4"/></svg>CAO 2026/PP/Projeto Pesquisa Cap Josemar Final.doc</span> — tema: integração PM-Prefeituras / governança participativa no 2º BPM/I. Como agora é mestrado profissional, isso deve virar <strong>dissertação</strong> (ver contato de Pesquisa em <a href="#contatos" class="lnk-aba">CONTATOS.md</a>).</li>
 <li>Contatos e organograma do CAES: ver <a href="#contatos" class="lnk-aba">CONTATOS.md</a>.</li>
 <li>Regras de rotina, uniforme, SIPA financeiro, formatura: ver <a href="#rotina" class="lnk-aba">ROTINA.md</a>.</li>
-<li><strong>Primeira semana: viaja domingo 16/08/2026</strong>, aulas de segunda a quinta (entra 08h15; sai 16h seg, 18h ter e qua, 11h30 qui). O que colocar na mala está em <a href="#mala" class="lnk-aba">MALA.md</a> e o que falta comprar, em <a href="#compras" class="lnk-aba">COMPRAS.md</a>.</li>
+<li><strong>Primeira semana: viaja domingo 16/08/2026</strong>, aulas de segunda a quinta (entra 08h15; sai 16h seg, 18h ter e qua, 11h30 qui). A preparação é em três etapas: <a href="#conferir" class="lnk-aba">CONFERIR.md</a> (tico o que já tenho) → <a href="#compras" class="lnk-aba">COMPRAS.md</a> (o que sobrou) → <a href="#mala" class="lnk-aba">MALA.md</a> (arrumar a mala no dia).</li>
 <li><strong>Falta preencher</strong>: em qual módulo/disciplina o curso está agora, o que já foi entregue no curso em si (não só na seleção/recepção).</li>
 </ul>
 <h2 data-b>Próximo passo</h2>
 <ul data-b class="tarefas">
-<li class="pend"><span class="box"></span><span>Josemar: me contar o que está rolando no curso agora (módulo atual, próxima entrega, próxima aula presencial) pra eu atualizar <a href="#prazos" class="lnk-aba">PRAZOS.md</a> e este painel.</span></li>
-<li class="pend"><span class="box"></span><span>Enviar Ofício de Apresentação pra mesa SEI 302090130 e liberar a Rotina 13 do SIPA (código 302090000), se ainda não fez — matrícula e verbas dependem disso (ver <a href="#rotina" class="lnk-aba">ROTINA.md</a>).</span></li>
-<li class="pend"><span class="box"></span><span>Regularizar conta Banco do Brasil pro Auxílio Financeiro a Estudantes (não pode ser "Conta Salário", nome não pode estar no CADIN).</span></li>
+<li class="pend" data-mk="58e41973ba"><span class="box"></span><span>Josemar: me contar o que está rolando no curso agora (módulo atual, próxima entrega, próxima aula presencial) pra eu atualizar <a href="#prazos" class="lnk-aba">PRAZOS.md</a> e este painel.</span></li>
+<li class="pend" data-mk="7970391cbe"><span class="box"></span><span>Enviar Ofício de Apresentação pra mesa SEI 302090130 e liberar a Rotina 13 do SIPA (código 302090000), se ainda não fez — matrícula e verbas dependem disso (ver <a href="#rotina" class="lnk-aba">ROTINA.md</a>).</span></li>
+<li class="pend" data-mk="a53a266b3a"><span class="box"></span><span>Regularizar conta Banco do Brasil pro Auxílio Financeiro a Estudantes (não pode ser "Conta Salário", nome não pode estar no CADIN).</span></li>
 </ul>
 <h2 data-b>Prazos mais próximos</h2>
 <p data-b>Ver <a href="#prazos" class="lnk-aba">PRAZOS.md</a> para a lista completa.</p>
 <h2 data-b>Painel visual</h2>
 <p data-b>No ar em <strong>https://esdraaline.github.io/central-cao</strong> (repositório <code>esdraaline/central-cao</code>). Também abre local com duplo clique em <code>docs/index.html</code>. Ele é <strong>gerado</strong> a partir destes .md, não editado à mão. Depois de mexer em qualquer .md, rode:</p>
 <pre data-b><code>python gerar_painel.py</code></pre>
+<h3 data-b>Caixinhas ticáveis</h3>
+<p data-b>Nas abas geradas dos .md (Conferir, Compras, Mala, Rotina), <strong>as caixinhas são clicáveis</strong>: clique para marcar, clique de novo para desmarcar. Cada aba mostra no topo quantos itens já foram marcados e tem um botão "Limpar marcações". O que você tica fica salvo <strong>naquele aparelho</strong> (não sincroniza entre celular e computador, diferente das Tarefas). O texto continua vindo do .md — se eu editar o texto de um item, aquele item volta a ficar desmarcado.</p>
 <h3 data-b>Aba Tarefas (cadastro)</h3>
 <p data-b>Dá para cadastrar tarefa direto no painel, escrevendo em linguagem normal: <em>"entregar artigo sexta"</em>,</p>
 <p data-b><em>"prova dia 15"</em>, <em>"enviar ofício amanhã"</em>. Ele entende a data sozinho e agrupa por urgência (atrasadas, hoje, amanhã, próximos 7 dias). Categorias: Curso, Dissertação, Administrativo, Pessoal.</p>
@@ -371,8 +390,9 @@ mark{background:rgba(232,161,58,.35);color:inherit;border-radius:3px;padding:0 2
 ├── DUVIDAS.md        &lt;- dúvidas em aberto sobre o curso
 ├── TAREFAS.md        &lt;- lista de tarefas correntes
 ├── ANOTACOES.md      &lt;- notas soltas, recados, ideias
-├── MALA.md           &lt;- checklist de enxoval, farda e material da semana no CAES
-├── COMPRAS.md        &lt;- o que ainda falta comprar da lista da mala
+├── CONFERIR.md       &lt;- conferência de armário: tico o que já tenho
+├── COMPRAS.md        &lt;- o que sobrou da conferência e precisa comprar
+├── MALA.md           &lt;- lista do dia de arrumar a mala (o que levar)
 ├── VIAGENS.md         &lt;- deslocamentos (módulos presenciais, provas etc.)
 ├── SUPABASE.md       &lt;- como ligar a sincronização das tarefas
 ├── gerar_painel.py   &lt;- gera o painel a partir dos .md acima
@@ -404,7 +424,7 @@ mark{background:rgba(232,161,58,.35);color:inherit;border-radius:3px;padding:0 2
 <h2 data-b>Prazos do curso em andamento</h2>
 <p data-b><em>(a preencher conforme Josemar for repassando — entregas de trabalhos, provas, apresentações, viagens para módulos presenciais etc.)</em></p>
 <ul data-b class="tarefas">
-<li class="pend"><span class="box"></span><span>...</span></li>
+<li class="pend" data-mk="2f43b42fd8"><span class="box"></span><span>...</span></li>
 </ul></div></section>
 <section class="aba" id="ab-tarefas" role="tabpanel">
 <div class="tf-topo">
@@ -564,13 +584,13 @@ mark{background:rgba(232,161,58,.35);color:inherit;border-radius:3px;padding:0 2
 </ul>
 <h2 data-b>Formatura (a organizar pela turma)</h2>
 <ul data-b class="tarefas">
-<li class="pend"><span class="box"></span><span>Definir Comissão de Formatura (2 por Pelotão, um deles o Chefe de Turma)</span></li>
-<li class="pend"><span class="box"></span><span>Ratificar data, hora e local</span></li>
-<li class="pend"><span class="box"></span><span>Definir Patrono (nome da turma) e 3 indicações de Paraninfo / Orador / Homenagens</span></li>
-<li class="pend"><span class="box"></span><span>Contratar empresa de evento (buffet, challenge coin, decoração, foto, filmagem, placas, mimos)</span></li>
-<li class="pend"><span class="box"></span><span>Organizar registro de atividades/aulas (fotos e vídeo)</span></li>
-<li class="pend"><span class="box"></span><span>Montar relação de autoridades convidadas</span></li>
-<li class="pend"><span class="box"></span><span>Engajamento de todos os Oficiais-Alunos</span></li>
+<li class="pend" data-mk="e91274c14c"><span class="box"></span><span>Definir Comissão de Formatura (2 por Pelotão, um deles o Chefe de Turma)</span></li>
+<li class="pend" data-mk="f4a344dee5"><span class="box"></span><span>Ratificar data, hora e local</span></li>
+<li class="pend" data-mk="c5e0a5bd87"><span class="box"></span><span>Definir Patrono (nome da turma) e 3 indicações de Paraninfo / Orador / Homenagens</span></li>
+<li class="pend" data-mk="1f5a866a96"><span class="box"></span><span>Contratar empresa de evento (buffet, challenge coin, decoração, foto, filmagem, placas, mimos)</span></li>
+<li class="pend" data-mk="1bae959b2e"><span class="box"></span><span>Organizar registro de atividades/aulas (fotos e vídeo)</span></li>
+<li class="pend" data-mk="9f9b82c279"><span class="box"></span><span>Montar relação de autoridades convidadas</span></li>
+<li class="pend" data-mk="a4d645907c"><span class="box"></span><span>Engajamento de todos os Oficiais-Alunos</span></li>
 </ul>
 <h2 data-b>Diversos</h2>
 <ul data-b>
@@ -706,13 +726,139 @@ mark{background:rgba(232,161,58,.35);color:inherit;border-radius:3px;padding:0 2
 <li>A chave <code>anon</code> fica visível no HTML publicado, e isso é esperado: ela só identifica o projeto.</li>
 </ul>
 <p data-b>Quem protege os dados é o RLS no banco mais o login.</p></div></section>
-<section class="aba" id="ab-mala" role="tabpanel"><div class="card"><blockquote data-b>Checklist de enxoval, farda e material para a semana de curso. Rotina: <strong>chega domingo, aulas de segunda a quinta, volta quinta depois das 11h30</strong>. <strong>Não tem lavanderia</strong>: as quantidades abaixo cobrem os 4 dias de aula sem lavar nada. Base: bizu de colega que já fez o CAO + <a href="#rotina" class="lnk-aba">ROTINA.md</a>. <strong>O que ainda falta comprar está separado em <a href="#compras" class="lnk-aba">COMPRAS.md</a></strong> — aqui é a lista completa do que levar.</blockquote>
+<section class="aba" id="ab-conferir" role="tabpanel"><div class="card"><blockquote data-b><strong>Tique o que você JÁ TEM em casa, na quantidade certa.</strong> O que ficar em branco é o que falta comprar — passe para <a href="#compras" class="lnk-aba">COMPRAS.md</a>. Esta lista é para fazer <strong>agora</strong>, de armário aberto. A de arrumar a mala no dia é a <a href="#mala" class="lnk-aba">MALA.md</a>. Quantidades calculadas para chegar domingo e ter aula de segunda a quinta, sem lavanderia.</blockquote>
+<h2 data-b>Uniforme P-1 (dia a dia do curso)</h2>
+<ul data-b class="tarefas">
+<li class="pend" data-mk="2de055d428"><span class="box"></span><span>2 calças sociais cinza-bandeirante</span></li>
+<li class="pend" data-mk="b1ee752e50"><span class="box"></span><span>3 camisas de passeio cinza-claro</span></li>
+<li class="pend" data-mk="354fca18fc"><span class="box"></span><span>Cinto de serviço cinza-bandeirante</span></li>
+<li class="pend" data-mk="96de921f39"><span class="box"></span><span>Sapatos pretos em condição de uso</span></li>
+<li class="pend" data-mk="148b142607"><span class="box"></span><span>5 pares de meias sociais pretas</span></li>
+<li class="pend" data-mk="709e837c95"><span class="box"></span><span>Boina cinza-bandeirante, com distintivo de cobertura</span></li>
+<li class="pend" data-mk="54acd33b51"><span class="box"></span><span>Quepe cinza-bandeirante <em>(só se houver cerimônia)</em></span></li>
+</ul>
+<h2 data-b>Uniforme B-1 (instrução e missão externa)</h2>
+<ul data-b class="tarefas">
+<li class="pend" data-mk="f63c3b9e59"><span class="box"></span><span>1 gandola cinza-bandeirante</span></li>
+<li class="pend" data-mk="dee2706320"><span class="box"></span><span>1 calça operacional cinza-bandeirante</span></li>
+<li class="pend" data-mk="37533f8d50"><span class="box"></span><span>Coturnos pretos em condição de uso</span></li>
+<li class="pend" data-mk="d65060ea84"><span class="box"></span><span>Cadarço reserva</span></li>
+</ul>
+<h2 data-b>Camiseta de serviço</h2>
+<ul data-b class="tarefas">
+<li class="pend" data-mk="84a60b3f9b"><span class="box"></span><span>6 camisetas de serviço cinza-bandeirante, gola careca, meia manga</span></li>
+<li class="pend" data-mk="cba0bcb75e"><span class="box"></span><span>Todas com tarjeta operacional no peito direito</span></li>
+<li class="pend" data-mk="ad70a633e7"><span class="box"></span><span>Todas com a Logomarca da PMESP no peito esquerdo</span></li>
+</ul>
+<h2 data-b>Agasalho</h2>
+<ul data-b class="tarefas">
+<li class="pend" data-mk="dbb0b61e92"><span class="box"></span><span>Jaqueta de passeio cinza-bandeirante</span></li>
+<li class="pend" data-mk="9de85df17b"><span class="box"></span><span>Insígnias de Capitão <strong>em metal</strong> nas platinas da jaqueta</span></li>
+<li class="pend" data-mk="2b5c4ae764"><span class="box"></span><span>Blusa de lã cinza-bandeirante <em>(opcional)</em></span></li>
+</ul>
+<h2 data-b>Distintivos e tarjetas</h2>
+<ul data-b class="tarefas">
+<li class="pend" data-mk="304004e862"><span class="box"></span><span>4 distintivos de OPM do CAES (3 camisas de passeio + 1 gandola)</span></li>
+<li class="pend" data-mk="2418ef327b"><span class="box"></span><span>Tarjeta administrativa de acrílico (camisa de passeio e jaqueta)</span></li>
+<li class="pend" data-mk="1219d0d881"><span class="box"></span><span>Distintivos de atividade e insígnias de gola das camisas de passeio</span></li>
+<li class="pend" data-mk="9e7abd06a2"><span class="box"></span><span>Distintivos e insígnias da gandola</span></li>
+</ul>
+<h2 data-b>Educação física</h2>
+<ul data-b class="tarefas">
+<li class="pend" data-mk="9bcfacd5cf"><span class="box"></span><span>Camiseta de treinamento branca</span></li>
+<li class="pend" data-mk="efe14abe26"><span class="box"></span><span>Calção de treinamento azul-royal</span></li>
+<li class="pend" data-mk="4dfc2a0de9"><span class="box"></span><span>Agasalho de EF completo (jaqueta + calça)</span></li>
+<li class="pend" data-mk="1f2cfa6220"><span class="box"></span><span>Tênis preto</span></li>
+<li class="pend" data-mk="11b511cee5"><span class="box"></span><span>2 pares de meia branca</span></li>
+</ul>
+<h2 data-b>Roupa pessoal</h2>
+<ul data-b class="tarefas">
+<li class="pend" data-mk="d82f4de9c7"><span class="box"></span><span>2 pijamas / roupa de dormir</span></li>
+<li class="pend" data-mk="fa647eb877"><span class="box"></span><span>5 cuecas</span></li>
+<li class="pend" data-mk="4102135cf9"><span class="box"></span><span>5 camisetas básicas</span></li>
+<li class="pend" data-mk="ef19c3c2d4"><span class="box"></span><span>2 mudas à paisana (deslocamento e folga)</span></li>
+<li class="pend" data-mk="530154c8bb"><span class="box"></span><span>Chinelo</span></li>
+<li class="pend" data-mk="9121098b60"><span class="box"></span><span>Sacola para roupa suja</span></li>
+</ul>
+<h2 data-b>Cama (o alojamento não fornece)</h2>
+<ul data-b class="tarefas">
+<li class="pend" data-mk="1c4217182f"><span class="box"></span><span>Lençol no tamanho da cama do alojamento</span></li>
+<li class="pend" data-mk="1ba6196e73"><span class="box"></span><span>Fronha</span></li>
+<li class="pend" data-mk="0f1a041c2c"><span class="box"></span><span>Travesseiro</span></li>
+<li class="pend" data-mk="de15705ced"><span class="box"></span><span>Cobertor ou manta leve</span></li>
+</ul>
+<h2 data-b>Higiene</h2>
+<ul data-b class="tarefas">
+<li class="pend" data-mk="b5e74f3fff"><span class="box"></span><span>Toalha de banho</span></li>
+<li class="pend" data-mk="d0e0535845"><span class="box"></span><span>Toalha de rosto</span></li>
+<li class="pend" data-mk="0b7b8358b2"><span class="box"></span><span>Sabonete, shampoo, escova e pasta de dente</span></li>
+<li class="pend" data-mk="39ca67e83c"><span class="box"></span><span>Desodorante, barbeador, cortador de unha</span></li>
+<li class="pend" data-mk="fa8fab5194"><span class="box"></span><span>Papel higiênico</span></li>
+<li class="pend" data-mk="93ddc8a027"><span class="box"></span><span>Remédios de uso contínuo + analgésico</span></li>
+<li class="pend" data-mk="bd29a2d4e7"><span class="box"></span><span>Kit de costura (linha, agulha, botão reserva)</span></li>
+</ul>
+<h2 data-b>Limpeza do alojamento</h2>
+<ul data-b class="tarefas">
+<li class="pend" data-mk="361b444526"><span class="box"></span><span>Saco de lixo grande</span></li>
+<li class="pend" data-mk="6b0cef21f1"><span class="box"></span><span>Saco de lixo pequeno</span></li>
+<li class="pend" data-mk="bb7576f8c7"><span class="box"></span><span>Pano de chão</span></li>
+<li class="pend" data-mk="fa8b2b341c"><span class="box"></span><span>Balde</span></li>
+<li class="pend" data-mk="312601375d"><span class="box"></span><span>Veja / desinfetante</span></li>
+<li class="pend" data-mk="21944f3fb7"><span class="box"></span><span>Papel toalha</span></li>
+</ul>
+<h2 data-b>Copa</h2>
+<ul data-b class="tarefas">
+<li class="pend" data-mk="22444797f1"><span class="box"></span><span>Caneca, prato e talheres</span></li>
+<li class="pend" data-mk="41b2a7ad9c"><span class="box"></span><span>Pote/marmita para micro-ondas</span></li>
+<li class="pend" data-mk="5b33992650"><span class="box"></span><span>Detergente, esponja e pano de prato</span></li>
+<li class="pend" data-mk="eb53b79e3e"><span class="box"></span><span>Café, açúcar/adoçante e filtro</span></li>
+<li class="pend" data-mk="8e90241755"><span class="box"></span><span>Garrafa de água</span></li>
+</ul>
+<h2 data-b>Estudo e eletrônicos</h2>
+<ul data-b class="tarefas">
+<li class="pend" data-mk="11e542fabc"><span class="box"></span><span>2 cadernos</span></li>
+<li class="pend" data-mk="67d51162bc"><span class="box"></span><span>Canetas e marca-texto</span></li>
+<li class="pend" data-mk="3c30a9e57c"><span class="box"></span><span>Notebook + carregador</span></li>
+<li class="pend" data-mk="dbe8052f68"><span class="box"></span><span>Extensão com várias saídas</span></li>
+<li class="pend" data-mk="433c840826"><span class="box"></span><span>Celular + carregador</span></li>
+<li class="pend" data-mk="a5c82b4015"><span class="box"></span><span>Fone de ouvido</span></li>
+</ul>
+<h2 data-b>Documentos</h2>
+<ul data-b class="tarefas">
+<li class="pend" data-mk="9bc66c8848"><span class="box"></span><span>Carteira de identidade funcional</span></li>
+<li class="pend" data-mk="84d7bf7fc7"><span class="box"></span><span>Ofício de apresentação / comprovantes da SAE</span></li>
+<li class="pend" data-mk="6c83fab9dd"><span class="box"></span><span>Cartão de estacionamento</span></li>
+</ul></div></section>
+<section class="aba" id="ab-compras" role="tabpanel"><div class="card"><blockquote data-b>Aqui fica só o que <strong>falta</strong>. Para descobrir o que falta, passe antes pela <a href="#conferir" class="lnk-aba">CONFERIR.md</a> de armário aberto: o que não der para ticar lá, você anota aqui. <strong>Prazo: domingo 16/08/2026.</strong></blockquote>
+<h2 data-b>Regra de ouro do prazo</h2>
+<p data-b>Separe o que depende de terceiro do que você resolve sozinho:</p>
+<div class="tab-wrap" data-b><table><thead><tr><th>Tipo</th><th>Quando resolver</th><th>Por quê</th></tr></thead><tbody><tr><td>Costura e aplicação (tarjeta, logomarca, distintivo)</td><td><strong>esta semana</strong></td><td>a loja de fardamento precisa aplicar e devolver</td></tr><tr><td>Peça de fardamento pronta</td><td>até 12/08</td><td>pode não ter seu tamanho e ter que encomendar</td></tr><tr><td>Mercado (limpeza, copa, papelaria)</td><td>sábado 15/08</td><td>não trava nada</td></tr></tbody></table></div>
+<p data-b><strong>Ligue na loja de fardamento antes de qualquer coisa</strong> e pergunte o prazo de aplicação. É isso que define se dá para fazer tudo em uma loja só.</p>
+<h2 data-b>Já sei que falta</h2>
+<ul data-b class="tarefas">
+<li class="pend" data-mk="da4f8e620e"><span class="box"></span><span><strong>6 camisetas de serviço cinza-bandeirante</strong> — gola careca, meia manga com barra. <strong>Não serve camiseta cinza comum.</strong></span></li>
+<li class="pend" data-mk="ba63a013d7"><span class="box"></span><span>Nas 6 camisetas: <strong>tarjeta operacional</strong> no peito direito (retângulo preto 15 × 80 mm, letras brancas de 6 mm, <code>CAP PM JOSEMAR</code>)</span></li>
+<li class="pend" data-mk="2640918ac9"><span class="box"></span><span>Nas 6 camisetas: <strong>distintivo da Logomarca da PMESP</strong> no peito esquerdo, tamanho normal, alinhado com a tarjeta</span></li>
+<li class="pend" data-mk="25398c6743"><span class="box"></span><span><strong>4 distintivos de OPM do CAES</strong> (o "brasão") — 3 para as camisas de passeio + 1 para a gandola. Manga direita, 20 mm abaixo do distintivo da Bandeira de São Paulo.</span></li>
+<li class="pend" data-mk="490c948f45"><span class="box"></span><span><strong>Boina cinza-bandeirante</strong> com distintivo de cobertura — é a cobertura do dia a dia no curso (o quepe só em cerimônia)</span></li>
+</ul>
+<h2 data-b>Descobri na conferência que falta</h2>
+<p data-b><em>(anote aqui o que ficou em branco na <a href="#conferir" class="lnk-aba">CONFERIR.md</a>)</em></p>
+<ul data-b class="tarefas">
+<li class="pend" data-mk="2f43b42fd8"><span class="box"></span><span>...</span></li>
+</ul>
+<h2 data-b>Onde comprar</h2>
+<ul data-b>
+<li><strong>Fardamento, distintivos e aplicação</strong>: loja de fardamento militar / cooperativa. É a que precisa de prazo.</li>
+<li><strong>Mercado</strong>: se quiser, dá para comprar por lá mesmo — Duque Supermercados na Av. Duque de Caxias, 812, e Drogaria Nova Duque no 788 (lista completa em <a href="#rotina" class="lnk-aba">ROTINA.md</a>).</li>
+</ul></div></section>
+<section class="aba" id="ab-mala" role="tabpanel"><div class="card"><blockquote data-b>Checklist de enxoval, farda e material para a semana de curso. Rotina: <strong>chega domingo, aulas de segunda a quinta, volta quinta depois das 11h30</strong>. <strong>Não tem lavanderia</strong>: as quantidades abaixo cobrem os 4 dias de aula sem lavar nada. Base: bizu de colega que já fez o CAO + <a href="#rotina" class="lnk-aba">ROTINA.md</a>.  <strong>Esta é a lista do dia de arrumar a mala</strong> — tique conforme for pondo dentro. Antes dela vêm duas outras: <a href="#conferir" class="lnk-aba">CONFERIR.md</a> (o que já tenho) e <a href="#compras" class="lnk-aba">COMPRAS.md</a> (o que falta).</blockquote>
 <h2 data-b>Antes de sair de casa</h2>
 <ul data-b class="tarefas">
-<li class="pend"><span class="box"></span><span>Conferir distintivos, insígnias e tarjetas em <strong>cada</strong> peça (ver checagem no fim desta seção)</span></li>
-<li class="pend"><span class="box"></span><span>Providenciar o <strong>distintivo de OPM do CAES</strong> — vai na manga direita das camisas de passeio e da gandola. É o "brasão do CAES" do bizu. O colega disse que não cobraram, mas é o certo pelo R-5.</span></li>
-<li class="pend"><span class="box"></span><span>Comprar as camisetas de serviço que faltam (ver quadro abaixo — tem detalhe importante)</span></li>
-<li class="pend"><span class="box"></span><span>Cartão de estacionamento visível, se for de carro (40 vagas sinalizadas)</span></li>
+<li class="pend" data-mk="7b5170874d"><span class="box"></span><span>Conferir distintivos, insígnias e tarjetas em <strong>cada</strong> peça (ver checagem no fim desta seção)</span></li>
+<li class="pend" data-mk="58e1aaa253"><span class="box"></span><span>Providenciar o <strong>distintivo de OPM do CAES</strong> — vai na manga direita das camisas de passeio e da gandola. É o "brasão do CAES" do bizu. O colega disse que não cobraram, mas é o certo pelo R-5.</span></li>
+<li class="pend" data-mk="65f9b92028"><span class="box"></span><span>Comprar as camisetas de serviço que faltam (ver quadro abaixo — tem detalhe importante)</span></li>
+<li class="pend" data-mk="a3a710a61c"><span class="box"></span><span>Cartão de estacionamento visível, se for de carro (40 vagas sinalizadas)</span></li>
 </ul>
 <h2 data-b>Uniforme — o que levar</h2>
 <p data-b>Referência: <strong>R-5-PM, 6ª Ed. v.2</strong> (Regulamento de Uniformes). O do dia a dia é o <strong>P-1 (Passeio 1)</strong>; o <strong>B-1 (Básico Operacional 1)</strong> entra na instrução e nas saídas externas.</p>
@@ -720,22 +866,22 @@ mark{background:rgba(232,161,58,.35);color:inherit;border-radius:3px;padding:0 2
 <p data-b>Composição: quepe, camisa de passeio cinza-claro, camiseta de serviço cinza-bandeirante, calça social cinza-bandeirante, cinto de serviço cinza-bandeirante, meias sociais pretas, sapatos pretos.</p>
 <blockquote data-b><strong>O quepe é substituído pela boina cinza-bandeirante</strong> em trânsito e nas atividades administrativas (Art. 45, § 1º, item 2). No curso é isso que vale — o quepe só se tiver cerimônia. É por isso que a boina fica guardada no alojamento e você só põe ao sair para área descoberta.</blockquote>
 <ul data-b class="tarefas">
-<li class="pend"><span class="box"></span><span>2 calças sociais cinza-bandeirante</span></li>
-<li class="pend"><span class="box"></span><span>3 camisas de passeio cinza-claro <em>(ver nota de quantidade)</em></span></li>
-<li class="pend"><span class="box"></span><span>Cinto de serviço cinza-bandeirante</span></li>
-<li class="pend"><span class="box"></span><span>Sapatos pretos (engraxados)</span></li>
-<li class="pend"><span class="box"></span><span>5 pares de meias sociais pretas</span></li>
-<li class="pend"><span class="box"></span><span>Boina cinza-bandeirante</span></li>
-<li class="pend"><span class="box"></span><span>Quepe cinza-bandeirante <em>(só se houver cerimônia/formatura na semana)</em></span></li>
+<li class="pend" data-mk="2de055d428"><span class="box"></span><span>2 calças sociais cinza-bandeirante</span></li>
+<li class="pend" data-mk="4fb51ade85"><span class="box"></span><span>3 camisas de passeio cinza-claro <em>(ver nota de quantidade)</em></span></li>
+<li class="pend" data-mk="354fca18fc"><span class="box"></span><span>Cinto de serviço cinza-bandeirante</span></li>
+<li class="pend" data-mk="084e9442c7"><span class="box"></span><span>Sapatos pretos (engraxados)</span></li>
+<li class="pend" data-mk="148b142607"><span class="box"></span><span>5 pares de meias sociais pretas</span></li>
+<li class="pend" data-mk="551325eeb9"><span class="box"></span><span>Boina cinza-bandeirante</span></li>
+<li class="pend" data-mk="9365a9139e"><span class="box"></span><span>Quepe cinza-bandeirante <em>(só se houver cerimônia/formatura na semana)</em></span></li>
 </ul>
 <p data-b><strong>Nota de quantidade</strong>: você falou em 2 jogos de P-1. A calça aguenta bem 2 para os 4 dias, mas a camisa é a peça que sofre. Se tiver uma terceira, leve — sai de 2 dias por camisa para 1,3.</p>
 <h3 data-b>B-1 — instrução e missão externa (Art. 23)</h3>
 <p data-b>Composição: boina cinza-bandeirante, gandola cinza-bandeirante, camiseta de serviço cinza-bandeirante, calça operacional cinza-bandeirante, cinto de serviço cinza-bandeirante, meias pretas, coturnos pretos.</p>
 <ul data-b class="tarefas">
-<li class="pend"><span class="box"></span><span>1 gandola cinza-bandeirante</span></li>
-<li class="pend"><span class="box"></span><span>1 calça operacional cinza-bandeirante</span></li>
-<li class="pend"><span class="box"></span><span>Coturnos pretos (+ cadarço reserva)</span></li>
-<li class="pend"><span class="box"></span><span>Boina e cinto de serviço — os mesmos do P-1, não precisa duplicar</span></li>
+<li class="pend" data-mk="f63c3b9e59"><span class="box"></span><span>1 gandola cinza-bandeirante</span></li>
+<li class="pend" data-mk="dee2706320"><span class="box"></span><span>1 calça operacional cinza-bandeirante</span></li>
+<li class="pend" data-mk="0c211598ec"><span class="box"></span><span>Coturnos pretos (+ cadarço reserva)</span></li>
+<li class="pend" data-mk="90b08f6aa6"><span class="box"></span><span>Boina e cinto de serviço — os mesmos do P-1, não precisa duplicar</span></li>
 </ul>
 <h3 data-b>Camiseta de serviço — atenção na hora de comprar (Art. 74)</h3>
 <p data-b>Ela entra <strong>por baixo do P-1 e do B-1</strong>, então é a peça que mais roda. 6 é uma boa conta para a semana.</p>
@@ -746,86 +892,86 @@ mark{background:rgba(232,161,58,.35);color:inherit;border-radius:3px;padding:0 2
 <li><strong>Distintivo da Logomarca da PMESP</strong> no peito esquerdo, tamanho normal, alinhado com a tarjeta</li>
 </ul>
 <ul data-b class="tarefas">
-<li class="pend"><span class="box"></span><span>6 camisetas de serviço cinza-bandeirante, gola careca, já com tarjeta e logomarca</span></li>
+<li class="pend" data-mk="39c2ba6ae4"><span class="box"></span><span>6 camisetas de serviço cinza-bandeirante, gola careca, já com tarjeta e logomarca</span></li>
 </ul>
 <h3 data-b>Agasalho — qual peça é a certa</h3>
 <p data-b>O bizu falou em "japona", mas pelo R-5 a <strong>japona cinza-bandeirante é restrita ao efetivo do TOR</strong> (Art. 124). Para o P-1 as peças previstas são:</p>
 <div class="tab-wrap" data-b><table><thead><tr><th>Peça</th><th>Artigo</th><th>Detalhe</th></tr></thead><tbody><tr><td><strong>Jaqueta de passeio</strong></td><td>Art. 127</td><td>tecido panamá cinza-bandeirante (o mesmo da calça), insígnias de posto <strong>em metal</strong> nas platinas, tarjeta administrativa no peito direito</td></tr><tr><td>Blusa de lã</td><td>Art. 117</td><td>cinza-bandeirante, gola em V, mesmas insígnias de metal nas platinas</td></tr><tr><td>Capote</td><td>Art. 121</td><td>cinza-bandeirante, para frio forte</td></tr></tbody></table></div>
 <p data-b>É a <strong>jaqueta de passeio</strong> que bate com a descrição do colega ("estrelas de metal e tarjeta, mesmo tecido da calça"). Agosto em São Paulo pede pelo menos uma.</p>
 <ul data-b class="tarefas">
-<li class="pend"><span class="box"></span><span>Jaqueta de passeio cinza-bandeirante, com as 3 estrelas de Capitão em metal nas platinas</span></li>
-<li class="pend"><span class="box"></span><span>Blusa de lã cinza-bandeirante <em>(opcional, se o frio apertar)</em></span></li>
+<li class="pend" data-mk="6d5354f478"><span class="box"></span><span>Jaqueta de passeio cinza-bandeirante, com as 3 estrelas de Capitão em metal nas platinas</span></li>
+<li class="pend" data-mk="f10f0a0227"><span class="box"></span><span>Blusa de lã cinza-bandeirante <em>(opcional, se o frio apertar)</em></span></li>
 </ul>
 <h3 data-b>Educação física (T-1)</h3>
 <p data-b>Composição: camiseta de treinamento branca, calção de treinamento azul-royal, meias brancas, tênis preto. Usa pouco, mas leva.</p>
 <ul data-b class="tarefas">
-<li class="pend"><span class="box"></span><span>Camiseta de treinamento branca + calção azul-royal</span></li>
-<li class="pend"><span class="box"></span><span>Agasalho de EF completo (jaqueta + calça)</span></li>
-<li class="pend"><span class="box"></span><span>Tênis preto + 2 pares de meia branca</span></li>
+<li class="pend" data-mk="4db3d53b1b"><span class="box"></span><span>Camiseta de treinamento branca + calção azul-royal</span></li>
+<li class="pend" data-mk="4dfc2a0de9"><span class="box"></span><span>Agasalho de EF completo (jaqueta + calça)</span></li>
+<li class="pend" data-mk="7f5200cab5"><span class="box"></span><span>Tênis preto + 2 pares de meia branca</span></li>
 </ul>
 <h3 data-b>Checagem final das insígnias (por peça)</h3>
 <div class="tab-wrap" data-b><table><thead><tr><th>Peça</th><th>Gola / platina</th><th>Manga direita</th><th>Manga esquerda</th><th>Peito direito</th></tr></thead><tbody><tr><td>Camisa de passeio</td><td>distintivo de atividade (dir.) + insígnia de Cap (esq.)</td><td>Bandeira SP + <strong>distintivo de OPM do CAES</strong> 20 mm abaixo</td><td>Logomarca PMESP</td><td>tarjeta <strong>administrativa</strong> (acrílico) sobre a pestana do bolso</td></tr><tr><td>Gandola B-1</td><td>distintivo de atividade + insígnia de Cap (miniatura PVC)</td><td>Bandeira SP + distintivo de OPM</td><td>Logomarca PMESP</td><td>tarjeta <strong>operacional</strong></td></tr><tr><td>Camiseta de serviço</td><td>—</td><td>—</td><td>—</td><td>tarjeta <strong>operacional</strong> + Logomarca no peito esquerdo</td></tr><tr><td>Jaqueta de passeio</td><td>insígnia de Cap <strong>em metal</strong> nas platinas</td><td>Bandeira SP</td><td>Logomarca PMESP</td><td>tarjeta <strong>administrativa</strong></td></tr></tbody></table></div>
 <blockquote data-b><strong>São dois tipos de tarjeta</strong> (Art. 151): a <strong>operacional</strong> é de tecido/PVC; a <strong>administrativa</strong> é de <strong>acrílico</strong> com pino ou ímã. Confira se você tem as duas.</blockquote>
 <h2 data-b>Roupa pessoal</h2>
 <ul data-b class="tarefas">
-<li class="pend"><span class="box"></span><span>Pijama / roupa de dormir — 2 conjuntos</span></li>
-<li class="pend"><span class="box"></span><span>Cueca — 5</span></li>
-<li class="pend"><span class="box"></span><span>Camiseta básica — 5</span></li>
-<li class="pend"><span class="box"></span><span>Roupa à paisana (deslocamento e folga) — 2 mudas</span></li>
-<li class="pend"><span class="box"></span><span>Chinelo</span></li>
-<li class="pend"><span class="box"></span><span>Sacola separada para roupa suja (volta tudo sujo pra casa)</span></li>
+<li class="pend" data-mk="1cf203844f"><span class="box"></span><span>Pijama / roupa de dormir — 2 conjuntos</span></li>
+<li class="pend" data-mk="88cc50fe77"><span class="box"></span><span>Cueca — 5</span></li>
+<li class="pend" data-mk="dd13c1f7fe"><span class="box"></span><span>Camiseta básica — 5</span></li>
+<li class="pend" data-mk="e169a3befe"><span class="box"></span><span>Roupa à paisana (deslocamento e folga) — 2 mudas</span></li>
+<li class="pend" data-mk="530154c8bb"><span class="box"></span><span>Chinelo</span></li>
+<li class="pend" data-mk="49c54a15bd"><span class="box"></span><span>Sacola separada para roupa suja (volta tudo sujo pra casa)</span></li>
 </ul>
 <h2 data-b>Cama — o alojamento NÃO fornece</h2>
 <ul data-b class="tarefas">
-<li class="pend"><span class="box"></span><span>Lençol (conferir o tamanho da cama do alojamento)</span></li>
-<li class="pend"><span class="box"></span><span>Fronha</span></li>
-<li class="pend"><span class="box"></span><span>Travesseiro</span></li>
-<li class="pend"><span class="box"></span><span>Cobertor ou manta leve</span></li>
+<li class="pend" data-mk="9c4f96d06e"><span class="box"></span><span>Lençol (conferir o tamanho da cama do alojamento)</span></li>
+<li class="pend" data-mk="1ba6196e73"><span class="box"></span><span>Fronha</span></li>
+<li class="pend" data-mk="0f1a041c2c"><span class="box"></span><span>Travesseiro</span></li>
+<li class="pend" data-mk="de15705ced"><span class="box"></span><span>Cobertor ou manta leve</span></li>
 </ul>
 <h2 data-b>Higiene</h2>
 <ul data-b class="tarefas">
-<li class="pend"><span class="box"></span><span>Toalha de banho + toalha de rosto</span></li>
-<li class="pend"><span class="box"></span><span>Sabonete, shampoo, escova e pasta de dente</span></li>
-<li class="pend"><span class="box"></span><span>Desodorante, barbeador, cortador de unha</span></li>
-<li class="pend"><span class="box"></span><span><strong>Papel higiênico</strong> (leva o seu)</span></li>
-<li class="pend"><span class="box"></span><span>Remédios de uso contínuo + analgésico básico</span></li>
-<li class="pend"><span class="box"></span><span>Kit de costura (linha, agulha, botão reserva) — salva farda em emergência</span></li>
+<li class="pend" data-mk="51c7a8bb77"><span class="box"></span><span>Toalha de banho + toalha de rosto</span></li>
+<li class="pend" data-mk="0b7b8358b2"><span class="box"></span><span>Sabonete, shampoo, escova e pasta de dente</span></li>
+<li class="pend" data-mk="39ca67e83c"><span class="box"></span><span>Desodorante, barbeador, cortador de unha</span></li>
+<li class="pend" data-mk="8fd07bbedd"><span class="box"></span><span><strong>Papel higiênico</strong> (leva o seu)</span></li>
+<li class="pend" data-mk="23e3805437"><span class="box"></span><span>Remédios de uso contínuo + analgésico básico</span></li>
+<li class="pend" data-mk="cedecaf5f8"><span class="box"></span><span>Kit de costura (linha, agulha, botão reserva) — salva farda em emergência</span></li>
 </ul>
 <h2 data-b>Limpeza do alojamento — bizu importante</h2>
 <p data-b>A conservação de salas e alojamento é por escala dos próprios alunos. Leve o material, não conte com o que tem lá.</p>
 <ul data-b class="tarefas">
-<li class="pend"><span class="box"></span><span>Saco de lixo grande</span></li>
-<li class="pend"><span class="box"></span><span>Saco de lixo pequeno</span></li>
-<li class="pend"><span class="box"></span><span>Pano de chão</span></li>
-<li class="pend"><span class="box"></span><span>Balde</span></li>
-<li class="pend"><span class="box"></span><span>Veja / desinfetante</span></li>
-<li class="pend"><span class="box"></span><span>Papel toalha</span></li>
+<li class="pend" data-mk="361b444526"><span class="box"></span><span>Saco de lixo grande</span></li>
+<li class="pend" data-mk="6b0cef21f1"><span class="box"></span><span>Saco de lixo pequeno</span></li>
+<li class="pend" data-mk="bb7576f8c7"><span class="box"></span><span>Pano de chão</span></li>
+<li class="pend" data-mk="fa8b2b341c"><span class="box"></span><span>Balde</span></li>
+<li class="pend" data-mk="312601375d"><span class="box"></span><span>Veja / desinfetante</span></li>
+<li class="pend" data-mk="21944f3fb7"><span class="box"></span><span>Papel toalha</span></li>
 </ul>
 <h2 data-b>Copa e alimentação</h2>
 <p data-b>Não tem rancho, mas a estrutura ajuda: <strong>copa com geladeira e micro-ondas anexa ao alojamento</strong>, <strong>frigobar dentro do alojamento</strong>, <strong>mesas e cadeiras para comer</strong> e <strong>cafeteiras</strong>.</p>
 <ul data-b class="tarefas">
-<li class="pend"><span class="box"></span><span>Caneca, prato, talheres</span></li>
-<li class="pend"><span class="box"></span><span>Pote/marmita que possa ir ao micro-ondas</span></li>
-<li class="pend"><span class="box"></span><span>Detergente, esponja e pano de prato</span></li>
-<li class="pend"><span class="box"></span><span>Café, açúcar/adoçante e filtro (se for usar a cafeteira)</span></li>
-<li class="pend"><span class="box"></span><span>Garrafa de água</span></li>
-<li class="pend"><span class="box"></span><span>Lanche não perecível para a primeira noite (domingo)</span></li>
-<li class="pend"><span class="box"></span><span>Dinheiro/cartão para as refeições e para a vaquinha da turma</span></li>
+<li class="pend" data-mk="8636677905"><span class="box"></span><span>Caneca, prato, talheres</span></li>
+<li class="pend" data-mk="c5d9fc9bdc"><span class="box"></span><span>Pote/marmita que possa ir ao micro-ondas</span></li>
+<li class="pend" data-mk="5b33992650"><span class="box"></span><span>Detergente, esponja e pano de prato</span></li>
+<li class="pend" data-mk="9143a87cef"><span class="box"></span><span>Café, açúcar/adoçante e filtro (se for usar a cafeteira)</span></li>
+<li class="pend" data-mk="8e90241755"><span class="box"></span><span>Garrafa de água</span></li>
+<li class="pend" data-mk="b1a75d5430"><span class="box"></span><span>Lanche não perecível para a primeira noite (domingo)</span></li>
+<li class="pend" data-mk="006a1b8014"><span class="box"></span><span>Dinheiro/cartão para as refeições e para a vaquinha da turma</span></li>
 </ul>
 <h2 data-b>Estudo e eletrônicos</h2>
 <ul data-b class="tarefas">
-<li class="pend"><span class="box"></span><span><strong>2 cadernos</strong> — é bastante matéria e bastante instrutor</span></li>
-<li class="pend"><span class="box"></span><span>Canetas, marca-texto, pasta</span></li>
-<li class="pend"><span class="box"></span><span>Notebook + carregador</span></li>
-<li class="pend"><span class="box"></span><span><strong>Extensão com várias saídas</strong> — tem poucas tomadas na sala de aula, esse é o bizu que mais salva</span></li>
-<li class="pend"><span class="box"></span><span>Celular + carregador</span></li>
-<li class="pend"><span class="box"></span><span>Fone de ouvido</span></li>
+<li class="pend" data-mk="117537ba03"><span class="box"></span><span><strong>2 cadernos</strong> — é bastante matéria e bastante instrutor</span></li>
+<li class="pend" data-mk="ad98016e56"><span class="box"></span><span>Canetas, marca-texto, pasta</span></li>
+<li class="pend" data-mk="3c30a9e57c"><span class="box"></span><span>Notebook + carregador</span></li>
+<li class="pend" data-mk="c3089fb8e1"><span class="box"></span><span><strong>Extensão com várias saídas</strong> — tem poucas tomadas na sala de aula, esse é o bizu que mais salva</span></li>
+<li class="pend" data-mk="433c840826"><span class="box"></span><span>Celular + carregador</span></li>
+<li class="pend" data-mk="a5c82b4015"><span class="box"></span><span>Fone de ouvido</span></li>
 </ul>
 <h2 data-b>Documentos</h2>
 <ul data-b class="tarefas">
-<li class="pend"><span class="box"></span><span>Carteira de identidade funcional</span></li>
-<li class="pend"><span class="box"></span><span>Ofício de apresentação / comprovantes que a SAE pedir</span></li>
-<li class="pend"><span class="box"></span><span>Cartão de estacionamento</span></li>
+<li class="pend" data-mk="9bc66c8848"><span class="box"></span><span>Carteira de identidade funcional</span></li>
+<li class="pend" data-mk="ad0647bd33"><span class="box"></span><span>Ofício de apresentação / comprovantes que a SAE pedir</span></li>
+<li class="pend" data-mk="6c83fab9dd"><span class="box"></span><span>Cartão de estacionamento</span></li>
 </ul>
 <h2 data-b>O que NÃO precisa levar</h2>
 <ul data-b>
@@ -848,63 +994,6 @@ mark{background:rgba(232,161,58,.35);color:inherit;border-radius:3px;padding:0 2
 </ul>
 <h2 data-b>Impressão geral de quem já fez</h2>
 <p data-b>Curso tranquilo, o pessoal falou bem.</p></div></section>
-<section class="aba" id="ab-compras" role="tabpanel"><div class="card"><blockquote data-b>O que ainda falta comprar ou mandar fazer para a mala ficar completa. A lista cheia do que levar está em <a href="#mala" class="lnk-aba">MALA.md</a>; as regras de uniforme, em <a href="#rotina" class="lnk-aba">ROTINA.md</a>. <strong>Prazo: domingo 16/08/2026.</strong> Os itens que precisam de costura (tarjeta, logomarca, distintivo) têm que sair primeiro, porque dependem de terceiro.</blockquote>
-<h2 data-b>Prioridade 1 — depende de costura, resolver logo</h2>
-<p data-b>Estes não adianta deixar para a última semana: a loja de fardamento precisa aplicar e devolver.</p>
-<ul data-b class="tarefas">
-<li class="pend"><span class="box"></span><span><strong>6 camisetas de serviço cinza-bandeirante</strong> — gola careca, meia manga com barra. <strong>Não serve camiseta cinza comum.</strong></span></li>
-<li class="pend"><span class="box"></span><span>Nas 6 camisetas: <strong>tarjeta operacional</strong> no peito direito (retângulo preto 15 × 80 mm, letras brancas de 6 mm, <code>CAP PM JOSEMAR</code>)</span></li>
-<li class="pend"><span class="box"></span><span>Nas 6 camisetas: <strong>distintivo da Logomarca da PMESP</strong> no peito esquerdo, tamanho normal, alinhado com a tarjeta</span></li>
-<li class="pend"><span class="box"></span><span><strong>4 distintivos de OPM do CAES</strong> (o "brasão") — 3 para as camisas de passeio + 1 para a gandola. Vão na manga direita, 20 mm abaixo do distintivo da Bandeira de São Paulo.</span></li>
-<li class="pend"><span class="box"></span><span><strong>Boina cinza-bandeirante</strong> — com o distintivo de cobertura. É a cobertura do dia a dia no curso (o quepe só em cerimônia).</span></li>
-</ul>
-<h2 data-b>Prioridade 2 — conferir no armário antes de comprar</h2>
-<p data-b>Pode ser que você já tenha. Vale abrir e olhar peça por peça antes de gastar.</p>
-<ul data-b class="tarefas">
-<li class="pend"><span class="box"></span><span><strong>3ª camisa de passeio cinza-claro</strong> — você falou em 2 jogos de P-1; a terceira camisa tira o aperto dos 4 dias</span></li>
-<li class="pend"><span class="box"></span><span><strong>Jaqueta de passeio cinza-bandeirante</strong> — com as 3 estrelas de Capitão em metal nas platinas e tarjeta administrativa. É o agasalho do P-1 (agosto em São Paulo pede)</span></li>
-<li class="pend"><span class="box"></span><span><strong>Tarjeta administrativa</strong> (acrílico, pino ou ímã) — é diferente da operacional; usa na camisa de passeio e na jaqueta</span></li>
-<li class="pend"><span class="box"></span><span><strong>Meias sociais pretas</strong> — 5 pares</span></li>
-<li class="pend"><span class="box"></span><span><strong>Cadarço reserva</strong> para o coturno</span></li>
-<li class="pend"><span class="box"></span><span>Conferir se o <strong>sapato preto</strong> e o <strong>coturno</strong> estão em condição de uso</span></li>
-</ul>
-<h2 data-b>Prioridade 3 — mercado, resolve na véspera</h2>
-<p data-b>Nada aqui depende de terceiro, dá para comprar no sábado.</p>
-<h3 data-b>Limpeza do alojamento</h3>
-<ul data-b class="tarefas">
-<li class="pend"><span class="box"></span><span>Saco de lixo grande</span></li>
-<li class="pend"><span class="box"></span><span>Saco de lixo pequeno</span></li>
-<li class="pend"><span class="box"></span><span>Pano de chão</span></li>
-<li class="pend"><span class="box"></span><span>Balde</span></li>
-<li class="pend"><span class="box"></span><span>Veja / desinfetante</span></li>
-<li class="pend"><span class="box"></span><span>Papel toalha</span></li>
-<li class="pend"><span class="box"></span><span>Papel higiênico</span></li>
-</ul>
-<h3 data-b>Copa</h3>
-<ul data-b class="tarefas">
-<li class="pend"><span class="box"></span><span>Pote/marmita que possa ir ao micro-ondas</span></li>
-<li class="pend"><span class="box"></span><span>Caneca, prato e talheres (se não tiver sobrando em casa)</span></li>
-<li class="pend"><span class="box"></span><span>Detergente, esponja e pano de prato</span></li>
-<li class="pend"><span class="box"></span><span>Café e açúcar/adoçante + filtro (tem cafeteira lá)</span></li>
-<li class="pend"><span class="box"></span><span>Garrafa de água</span></li>
-</ul>
-<h3 data-b>Papelaria e eletrônicos</h3>
-<ul data-b class="tarefas">
-<li class="pend"><span class="box"></span><span><strong>2 cadernos</strong> — é bastante matéria e bastante instrutor</span></li>
-<li class="pend"><span class="box"></span><span>Canetas e marca-texto</span></li>
-<li class="pend"><span class="box"></span><span><strong>Extensão com várias saídas</strong> — a sala de aula tem poucas tomadas, é o bizu que mais salva</span></li>
-</ul>
-<h3 data-b>Cama e higiene</h3>
-<ul data-b class="tarefas">
-<li class="pend"><span class="box"></span><span>Conferir lençol, fronha, travesseiro e cobertor (o alojamento <strong>não fornece</strong>)</span></li>
-<li class="pend"><span class="box"></span><span>Repor o que faltar da necessaire</span></li>
-<li class="pend"><span class="box"></span><span>Kit de costura (linha, agulha, botão reserva)</span></li>
-</ul>
-<h2 data-b>Onde comprar</h2>
-<ul data-b>
-<li><strong>Fardamento e distintivos</strong>: loja de fardamento militar / cooperativa. É a que precisa de prazo.</li>
-<li><strong>Resto</strong>: mercado comum. Se preferir, dá para comprar por lá mesmo — tem o Duque Supermercados na Av. Duque de Caxias, 812, e a Drogaria Nova Duque no 788 (lista completa em <a href="#rotina" class="lnk-aba">ROTINA.md</a>).</li>
-</ul></div></section>
 <section class="aba" id="ab-viagens" role="tabpanel"><div class="card"><blockquote data-b>Deslocamentos ligados ao curso: módulos presenciais, provas, apresentação do PP/monografia etc.</blockquote>
 <h2 data-b>Rotina semanal do curso</h2>
 <p data-b>Durante o curso a semana é <strong>domingo a quinta</strong>: desloca no domingo, dorme no alojamento do CAES, aulas de segunda a quinta e volta na quinta depois das 11h30. O que levar está em <a href="#mala" class="lnk-aba">MALA.md</a>; os horários, em <a href="#rotina" class="lnk-aba">ROTINA.md</a>.</p>
@@ -945,6 +1034,73 @@ window.SUPA_CFG={"url": "https://lmmxaaoqygarwxbwwhlp.supabase.co", "key": "sb_p
   window.addEventListener('hashchange',function(){
     var h=location.hash.slice(1);
     if(abas.some(function(b){return b.dataset.aba===h}))mostra(h,false);
+  });
+
+  /* ---- itens ticaveis das abas geradas dos .md (Conferir, Compras, Mala...) --
+     O .md continua sendo a fonte de verdade do TEXTO; o que foi ticado fica
+     salvo no proprio aparelho (localStorage), por aba + item.               */
+  var K_MK='cao-ticados';
+  var mkEstado={};
+  try{mkEstado=JSON.parse(localStorage.getItem(K_MK)||'{}')||{}}catch(e){mkEstado={}}
+  function mkSalva(){try{localStorage.setItem(K_MK,JSON.stringify(mkEstado))}catch(e){}}
+  var CHECK='<svg viewBox="0 0 24 24" width="12" height="12" fill="none" '+
+    'stroke="currentColor" stroke-width="1.8" stroke-linecap="round" '+
+    'stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>';
+
+  function mkChave(li){
+    var sec=li.closest('.aba');
+    return (sec?sec.id:'?')+'/'+li.getAttribute('data-mk');
+  }
+  function mkPinta(li,ok){
+    li.classList.toggle('ok',ok);
+    li.classList.toggle('pend',!ok);
+    li.firstChild.innerHTML=ok?CHECK:'';
+  }
+  function mkConta(sec){
+    var itens=sec.querySelectorAll('ul.tarefas li[data-mk]');
+    if(!itens.length)return;
+    var ok=sec.querySelectorAll('ul.tarefas li[data-mk].ok').length;
+    var topo=sec.querySelector('.mk-topo');
+    if(!topo)return;
+    var pct=itens.length?Math.round(ok*100/itens.length):0;
+    topo.querySelector('.mk-n').textContent=ok+' de '+itens.length;
+    topo.querySelector('.mk-barra i').style.width=pct+'%';
+  }
+
+  /* monta o contador no topo de cada aba que tenha item ticavel */
+  pans.forEach(function(sec){
+    var itens=sec.querySelectorAll('ul.tarefas li[data-mk]');
+    if(!itens.length)return;
+    var card=sec.querySelector('.card');
+    if(!card)return;
+    var topo=document.createElement('div');
+    topo.className='mk-topo';
+    topo.innerHTML='<span class="mk-n"></span>'+
+      '<span class="mk-barra"><i style="width:0"></i></span>'+
+      '<button type="button">Limpar marcações</button>';
+    card.insertBefore(topo,card.firstChild);
+    topo.querySelector('button').onclick=function(){
+      itens.forEach(function(li){
+        delete mkEstado[mkChave(li)];
+        mkPinta(li,false);
+      });
+      mkSalva();mkConta(sec);
+    };
+    /* aplica o que ja estava salvo */
+    itens.forEach(function(li){
+      if(mkEstado[mkChave(li)])mkPinta(li,true);
+    });
+    mkConta(sec);
+  });
+
+  document.addEventListener('click',function(e){
+    var li=e.target.closest('ul.tarefas li[data-mk]');
+    if(!li)return;
+    var k=mkChave(li), ok=!li.classList.contains('ok');
+    if(ok)mkEstado[k]=1; else delete mkEstado[k];
+    mkPinta(li,ok);mkSalva();
+    var sec=li.closest('.aba');
+    if(sec)mkConta(sec);
   });
 
   /* tema */

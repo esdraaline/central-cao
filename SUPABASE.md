@@ -14,6 +14,7 @@ O que você tica nas abas **Conferir, Compras e Mala** sobe junto com as tarefas
 - **Tabela**: `public.cao_ticados`, RLS ativo, política `dono_faz_tudo`
 - Conferido na hora de ligar: a tabela responde, as colunas `user_id, id, n, mod` existem, o
   upsert por `(user_id, id)` é aceito e **sem login não devolve nem grava nada**.
+- **Testado de ponta a ponta pelo Josemar em 04/08/2026**: ticou em um aparelho e apareceu no outro.
 - Em cada aparelho novo, entrar uma vez em **Tarefas → Entrar** (o mesmo login das tarefas).
 
 O SQL usado fica abaixo, como referência caso precise refazer.

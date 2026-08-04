@@ -14,6 +14,9 @@
 - **Falta preencher**: em qual módulo/disciplina o curso está agora, o que já foi entregue no curso em si (não só na seleção/recepção).
 
 ## Próximo passo
+- [ ] **Josemar: fazer a conferência de armário na aba [Conferir](CONFERIR.md)** (90 peças). O que sobrar
+      em branco vira a lista de [Compras](COMPRAS.md) — e o que depende de costura na loja de fardamento
+      (tarjeta, logomarca, distintivo do CAES) precisa sair **esta semana**, porque viaja dia 16/08.
 - [ ] Josemar: me contar o que está rolando no curso agora (módulo atual, próxima entrega, próxima aula presencial) pra eu atualizar [PRAZOS.md](PRAZOS.md) e este painel.
 - [ ] Enviar Ofício de Apresentação pra mesa SEI 302090130 e liberar a Rotina 13 do SIPA (código 302090000), se ainda não fez — matrícula e verbas dependem disso (ver [ROTINA.md](ROTINA.md)).
 - [ ] Regularizar conta Banco do Brasil pro Auxílio Financeiro a Estudantes (não pode ser "Conta Salário", nome não pode estar no CADIN).

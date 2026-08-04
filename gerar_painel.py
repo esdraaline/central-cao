@@ -1491,6 +1491,12 @@ JS = r"""
 """
 
 
+def _carimbo_versao():
+    """Identifica esta geracao do painel, para o navegador nao servir cache velho."""
+    import time
+    return time.strftime("%Y%m%d%H%M%S")
+
+
 def _papel_da_chave(key):
     """Le o campo 'role' de um JWT do Supabase. Devolve None se nao der."""
     try:
@@ -1737,6 +1743,10 @@ def build():
 <meta name="robots" content="noindex,nofollow,noarchive">
 <meta name="googlebot" content="noindex,nofollow">
 <meta name="theme-color" content="#c8102e">
+<!-- o painel e um arquivo unico que muda a cada geracao; sem isto o navegador
+     serve a versao antiga do cache e correcoes nao chegam ate o usuario -->
+<meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+<meta name="gerado-em" content="%(carimbo)s">
 <title>Central do CAO</title>
 <link rel="icon" href="data:image/svg+xml,%%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%%3E%%3Crect width='32' height='32' rx='7' fill='%%23c8102e'/%%3E%%3Ctext x='16' y='22' font-size='15' font-family='Arial' font-weight='bold' fill='white' text-anchor='middle'%%3ECAO%%3C/text%%3E%%3C/svg%%3E">
 <style>%(css)s</style>
@@ -1787,6 +1797,7 @@ window.SUPA_CFG=%(supa)s;
         "sol": svg("sun", 17),
         "lua": svg("moon", 17),
         "data": hoje.strftime("%d/%m/%Y"),
+        "carimbo": _carimbo_versao(),
         "cats": escapa_js([[c[0], c[1], c[2]] for c in CATEGORIAS]),
         "base": escapa_js(extrai_tarefas(docs.get("TAREFAS.md", ""))),
         "supa": escapa_js(le_config_supabase()),

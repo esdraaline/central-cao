@@ -21,7 +21,8 @@
 Ver [PRAZOS.md](PRAZOS.md) para a lista completa.
 
 ## Painel visual
-Painel HTML com abas, busca e prazos em destaque: **`docs/index.html`** (duplo clique para abrir).
+No ar em **https://esdraaline.github.io/central-cao** (repositório `esdraaline/central-cao`).
+Também abre local com duplo clique em `docs/index.html`.
 Ele é **gerado** a partir destes .md, não editado à mão. Depois de mexer em qualquer .md, rode:
 
 ```

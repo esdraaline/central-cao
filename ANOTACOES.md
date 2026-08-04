@@ -36,6 +36,18 @@
   política `auth.uid() = user_id`, e testei que a chave sem login não devolve nada de nenhuma delas.
 - O login do Supabase é do projeto inteiro, então o usuário `josemardp@gmail.com` que já existia serve
   para os dois sistemas. O RLS é que mantém os dados separados.
+- Repositório publicado em `github.com/esdraaline/central-cao` (conta esdraaline), painel no ar em
+  `esdraaline.github.io/central-cao`, servido a partir da pasta `docs/`.
+
+## 04/08/2026 — Dois bugs achados no teste da sincronização
+- **Falso "Sem conexão"**: o Supabase responde com corpo vazio e status 200 quando a requisição usa
+  `Prefer: return=minimal`. O código só tratava corpo vazio no status 204 exato; nos demais tentava
+  `r.json()` numa string vazia, o parse quebrava, e uma gravação bem-sucedida aparecia como falha.
+  A tarefa ficava salva no banco mas o painel dizia que não. Corrigido lendo como texto antes.
+- **Cache do navegador servindo versão antiga**: o painel é um arquivo único regerado a cada mudança.
+  Depois de publicar a correção acima, o Chrome continuou servindo a cópia velha, e o bug parecia
+  não ter sido corrigido. Resolvido com cabeçalho de revalidação e um carimbo de versão no `<head>`.
+  **Se um dia uma correção parecer não ter chegado, é o primeiro suspeito**: force com Ctrl+F5.
 - O `gerar_painel.py` recusa gerar se a chave do `supabase.json` for a `service_role` (ela ignora o RLS
   e não pode ir para site público). Só aceita a `anon`.
 - A chave `anon` fica visível no HTML publicado, e isso é esperado: ela só identifica o projeto.

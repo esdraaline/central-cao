@@ -9,7 +9,7 @@
 <!-- o painel e um arquivo unico que muda a cada geracao; sem isto o navegador
      serve a versao antiga do cache e correcoes nao chegam ate o usuario -->
 <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
-<meta name="gerado-em" content="20260804152138">
+<meta name="gerado-em" content="20260804152339">
 <title>Central do CAO</title>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23c8102e'/%3E%3Ctext x='16' y='22' font-size='15' font-family='Arial' font-weight='bold' fill='white' text-anchor='middle'%3ECAO%3C/text%3E%3C/svg%3E">
 <style>
@@ -353,7 +353,7 @@ mark{background:rgba(232,161,58,.35);color:inherit;border-radius:3px;padding:0 2
 <h2 data-b>Prazos mais próximos</h2>
 <p data-b>Ver <a href="#prazos" class="lnk-aba">PRAZOS.md</a> para a lista completa.</p>
 <h2 data-b>Painel visual</h2>
-<p data-b>Painel HTML com abas, busca e prazos em destaque: <strong><code>docs/index.html</code></strong> (duplo clique para abrir). Ele é <strong>gerado</strong> a partir destes .md, não editado à mão. Depois de mexer em qualquer .md, rode:</p>
+<p data-b>No ar em <strong>https://esdraaline.github.io/central-cao</strong> (repositório <code>esdraaline/central-cao</code>). Também abre local com duplo clique em <code>docs/index.html</code>. Ele é <strong>gerado</strong> a partir destes .md, não editado à mão. Depois de mexer em qualquer .md, rode:</p>
 <pre data-b><code>python gerar_painel.py</code></pre>
 <h3 data-b>Aba Tarefas (cadastro)</h3>
 <p data-b>Dá para cadastrar tarefa direto no painel, escrevendo em linguagem normal: <em>"entregar artigo sexta"</em>,</p>
@@ -655,6 +655,20 @@ mark{background:rgba(232,161,58,.35);color:inherit;border-radius:3px;padding:0 2
 <li>O login do Supabase é do projeto inteiro, então o usuário <code>josemardp@gmail.com</code> que já existia serve</li>
 </ul>
 <p data-b>para os dois sistemas. O RLS é que mantém os dados separados.</p>
+<ul data-b>
+<li>Repositório publicado em <code>github.com/esdraaline/central-cao</code> (conta esdraaline), painel no ar em</li>
+</ul>
+<p data-b><code>esdraaline.github.io/central-cao</code>, servido a partir da pasta <code>docs/</code>.</p>
+<h2 data-b>04/08/2026 — Dois bugs achados no teste da sincronização</h2>
+<ul data-b>
+<li><strong>Falso "Sem conexão"</strong>: o Supabase responde com corpo vazio e status 200 quando a requisição usa</li>
+</ul>
+<p data-b><code>Prefer: return=minimal</code>. O código só tratava corpo vazio no status 204 exato; nos demais tentava <code>r.json()</code> numa string vazia, o parse quebrava, e uma gravação bem-sucedida aparecia como falha. A tarefa ficava salva no banco mas o painel dizia que não. Corrigido lendo como texto antes.</p>
+<ul data-b>
+<li><strong>Cache do navegador servindo versão antiga</strong>: o painel é um arquivo único regerado a cada mudança.</li>
+</ul>
+<p data-b>Depois de publicar a correção acima, o Chrome continuou servindo a cópia velha, e o bug parecia não ter sido corrigido. Resolvido com cabeçalho de revalidação e um carimbo de versão no <code>&lt;head&gt;</code>.</p>
+<p data-b><strong>Se um dia uma correção parecer não ter chegado, é o primeiro suspeito</strong>: force com Ctrl+F5.</p>
 <ul data-b>
 <li>O <code>gerar_painel.py</code> recusa gerar se a chave do <code>supabase.json</code> for a <code>service_role</code> (ela ignora o RLS</li>
 </ul>

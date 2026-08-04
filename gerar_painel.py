@@ -538,6 +538,8 @@ ul.tarefas li.parcial .mk-qtd .n{color:var(--al);font-weight:600}
 .mk-topo button{background:none;border:1px solid var(--bd);color:var(--tx3);
   border-radius:8px;padding:5px 11px;font-size:.82rem;cursor:pointer}
 .mk-topo button:hover{color:var(--tx);border-color:var(--vm)}
+/* estado da sincronizacao, igual ao das Tarefas mas dentro da barra */
+.mk-topo .tf-status{margin-left:0;font-size:12px}
 
 /* ============================ app de tarefas ============================ */
 .tf-topo{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:14px}
@@ -1198,19 +1200,22 @@ JS_SUPABASE = r"""
     s.title=tit||'';
   }
   function pintaConta(){
-    var rot=el('#tf-conta-rot');
-    if(!rot)return;
+    /* o mesmo estado vai para a aba Tarefas e para a barra das abas de lista */
     if(ativo()){
-      rot.textContent=(ses.email||'Conta').split('@')[0];
       estado('on','Sincronizado','Suas tarefas estão salvas na nuvem');
+      tic('on','Salvo na nuvem','Suas marcações estão sincronizadas');
     }else if(configurado()){
-      rot.textContent='Entrar';
       estado('','Somente neste aparelho','Entre na conta para sincronizar');
+      tic('','Somente neste aparelho',
+          'Entre na conta, na aba Tarefas, para sincronizar entre aparelhos');
     }else{
-      rot.textContent='Entrar';
       estado('','Somente neste aparelho',
              'A sincronização ainda não foi configurada neste painel');
+      tic('','Somente neste aparelho',
+          'A sincronização ainda não foi configurada neste painel');
     }
+    var rot=el('#tf-conta-rot');
+    if(rot)rot.textContent=ativo()?(ses.email||'Conta').split('@')[0]:'Entrar';
   }
 
   /* ------------------------------- rede ---------------------------------- */
@@ -1324,8 +1329,12 @@ JS_SUPABASE = r"""
      O id vem do proprio painel ("ab-conferir/2de055d428"), entao e igual em
      todo aparelho - por isso a chave primaria precisa incluir o user_id.
      Vale sempre a alteracao mais recente (campo mod).                       */
+  function tic(cls,txt,tit){
+    if(window.TICADOS&&window.TICADOS.estado)window.TICADOS.estado(cls,txt,tit);
+  }
   function sincTicados(){
     if(!ativo()||!window.TICADOS)return Promise.resolve();
+    tic('','Salvando...');
     var loc=window.TICADOS.todos();
     return api('/rest/v1/cao_ticados?select=*').then(function(remotas){
       var mudou=false;
@@ -1349,12 +1358,24 @@ JS_SUPABASE = r"""
         Object.keys(loc).forEach(function(k){loc[k].s=true});
         window.TICADOS.salvar();
       });
+    }).then(function(){
+      tic('on','Salvo na nuvem','Suas marcações estão sincronizadas');
+    }).catch(function(e){
+      if(e&&(e.status===401||e.status===403))
+        tic('erro','Sessão expirada','Entre na conta de novo, na aba Tarefas');
+      else
+        tic('off','Sem conexão','As marcações sobem sozinhas quando a rede voltar');
+      throw e;
     });
   }
   /* espera o dedo parar antes de subir, para nao mandar um POST por clique */
   var tmTic=null;
   window.TICADOS_SYNC=function(){
-    if(!ativo())return;
+    if(!ativo()){
+      tic('','Somente neste aparelho','Entre na conta, na aba Tarefas, para sincronizar');
+      return;
+    }
+    tic('','Salvando...');
     clearTimeout(tmTic);
     tmTic=setTimeout(function(){sincTicados().catch(function(){})},1200);
   };
@@ -1590,6 +1611,8 @@ JS = r"""
     topo.className='mk-topo';
     topo.innerHTML='<span class="mk-n"></span>'+
       '<span class="mk-barra"><i style="width:0"></i></span>'+
+      '<span class="tf-status mk-sinc" title="Estado da sincronização">'+
+      '<span class="bola"></span><span class="txt">Somente neste aparelho</span></span>'+
       '<button type="button">Limpar marcações</button>';
     card.insertBefore(topo,card.firstChild);
     topo.querySelector('button').onclick=function(){
@@ -1640,11 +1663,21 @@ JS = r"""
       mkConta(sec);
     });
   }
+  /* estado da sincronizacao mostrado na barra de cada aba de lista.
+     Quem chama e o bloco do Supabase; sem ele fica no texto inicial.       */
+  function mkEstadoSinc(cls,txt,tit){
+    [].forEach.call(document.querySelectorAll('.mk-sinc'),function(s){
+      s.className='tf-status mk-sinc'+(cls?' '+cls:'');
+      s.querySelector('.txt').textContent=txt;
+      s.title=tit||'';
+    });
+  }
   window.TICADOS={
     todos:function(){return mkEstado},
     definir:function(novo){mkEstado=novo;mkSalva();mkRepintaTudo()},
     salvar:mkSalva,
-    repintar:mkRepintaTudo
+    repintar:mkRepintaTudo,
+    estado:mkEstadoSinc
   };
 
   /* tema */

@@ -46,6 +46,9 @@ vindo do .md — se eu editar o texto de um item, aquele item volta a ficar desm
 junto com as tarefas, valendo sempre a alteração mais recente. Em cada aparelho novo, entrar uma vez em
 **Tarefas → Entrar**. Sem internet continua funcionando e sobe quando a conexão voltar.
 
+A própria barra de progresso mostra o estado: **Salvo na nuvem** (verde), *Salvando...*, **Sem conexão**
+(âmbar), **Sessão expirada** (vermelho) ou **Somente neste aparelho** quando não está logado.
+
 ### Aba Tarefas (cadastro)
 Dá para cadastrar tarefa direto no painel, escrevendo em linguagem normal: *"entregar artigo sexta"*,
 *"prova dia 15"*, *"enviar ofício amanhã"*. Ele entende a data sozinho e agrupa por urgência

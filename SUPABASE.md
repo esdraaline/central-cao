@@ -7,17 +7,16 @@
 - **Login**: `josemardp@gmail.com` (usuário que já existia no projeto)
 - **Configuração**: arquivo `supabase.json` na raiz
 
-## ⏳ Falta um passo: sincronizar os itens ticados (04/08/2026)
+## ✅ Itens ticados também sincronizam (04/08/2026)
 
-O painel **já tem o código pronto** para sincronizar o que você tica nas abas Conferir, Compras
-e Mala. Falta só criar a tabela `cao_ticados` — enquanto ela não existir, as marcações continuam
-funcionando normalmente, só que salvas apenas naquele aparelho.
+O que você tica nas abas **Conferir, Compras e Mala** sobe junto com as tarefas.
 
-**Por que não fiz sozinho**: o conector Supabase do Claude está autenticado em outra organização
-(só enxerga `financeiroje-ai` e `esdracosmeticos`). O projeto do painel está na `esdraaline's Org`.
+- **Tabela**: `public.cao_ticados`, RLS ativo, política `dono_faz_tudo`
+- Conferido na hora de ligar: a tabela responde, as colunas `user_id, id, n, mod` existem, o
+  upsert por `(user_id, id)` é aceito e **sem login não devolve nem grava nada**.
+- Em cada aparelho novo, entrar uma vez em **Tarefas → Entrar** (o mesmo login das tarefas).
 
-**O que fazer**: entre no Supabase → projeto do painel → **SQL Editor** → **New query**, cole o
-bloco abaixo e clique em **Run**. Depois é só abrir o painel em Tarefas → Entrar (se já não estiver).
+O SQL usado fica abaixo, como referência caso precise refazer.
 
 ```sql
 create table if not exists public.cao_ticados (

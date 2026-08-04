@@ -42,9 +42,9 @@ no corpo da linha vai direto para "tenho tudo" ou "não tenho nada". Enquanto es
 Cada aba mostra no topo quanto já foi marcado e tem um botão "Limpar marcações". O texto continua
 vindo do .md — se eu editar o texto de um item, aquele item volta a ficar desmarcado.
 
-**Sincronização entre aparelhos: código pronto, falta criar a tabela.** Está tudo implementado, mas a
-tabela `cao_ticados` ainda precisa ser criada no Supabase (SQL pronto para colar em [SUPABASE.md](SUPABASE.md)).
-Até lá as marcações ficam salvas só no aparelho onde você ticou.
+**Sincronização entre aparelhos: ligada.** As marcações sobem para o Supabase (tabela `cao_ticados`)
+junto com as tarefas, valendo sempre a alteração mais recente. Em cada aparelho novo, entrar uma vez em
+**Tarefas → Entrar**. Sem internet continua funcionando e sobe quando a conexão voltar.
 
 ### Aba Tarefas (cadastro)
 Dá para cadastrar tarefa direto no painel, escrevendo em linguagem normal: *"entregar artigo sexta"*,

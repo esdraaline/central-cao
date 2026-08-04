@@ -9,7 +9,7 @@
 <!-- o painel e um arquivo unico que muda a cada geracao; sem isto o navegador
      serve a versao antiga do cache e correcoes nao chegam ate o usuario -->
 <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
-<meta name="gerado-em" content="20260804163342">
+<meta name="gerado-em" content="20260804165420">
 <title>Central do CAO</title>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23c8102e'/%3E%3Ctext x='16' y='22' font-size='15' font-family='Arial' font-weight='bold' fill='white' text-anchor='middle'%3ECAO%3C/text%3E%3C/svg%3E">
 <style>
@@ -402,7 +402,8 @@ mark{background:rgba(232,161,58,.35);color:inherit;border-radius:3px;padding:0 2
 <p data-b>Nas abas geradas dos .md (Conferir, Compras, Mala, Rotina), <strong>as caixinhas são clicáveis</strong>: clique para marcar, clique de novo para desmarcar.</p>
 <p data-b><strong>Item com quantidade aceita marcação parcial.</strong> Todo item que começa com um número (<code>- [ ] 6 camisetas...</code>) ou termina com <code>— 5</code> ganha sozinho um contador <code>−  3 de 6  +</code>. Clicar no <code>+</code>/<code>−</code> anda de um em um; clicar no corpo da linha vai direto para "tenho tudo" ou "não tenho nada". Enquanto está no meio, o item fica âmbar. A contagem do topo é <strong>por peça</strong>, não por linha: 6 camisetas contam como 6.</p>
 <p data-b>Cada aba mostra no topo quanto já foi marcado e tem um botão "Limpar marcações". O texto continua vindo do .md — se eu editar o texto de um item, aquele item volta a ficar desmarcado.</p>
-<p data-b><strong>Sincronização entre aparelhos: código pronto, falta criar a tabela.</strong> Está tudo implementado, mas a tabela <code>cao_ticados</code> ainda precisa ser criada no Supabase (SQL pronto para colar em <span class="arq" title="Arquivo na pasta local: SUPABASE.md"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2h8l4 4v16H6z"/><path d="M14 2v4h4"/></svg>SUPABASE.md</span>). Até lá as marcações ficam salvas só no aparelho onde você ticou.</p>
+<p data-b><strong>Sincronização entre aparelhos: ligada.</strong> As marcações sobem para o Supabase (tabela <code>cao_ticados</code>) junto com as tarefas, valendo sempre a alteração mais recente. Em cada aparelho novo, entrar uma vez em</p>
+<p data-b><strong>Tarefas → Entrar</strong>. Sem internet continua funcionando e sobe quando a conexão voltar.</p>
 <h3 data-b>Aba Tarefas (cadastro)</h3>
 <p data-b>Dá para cadastrar tarefa direto no painel, escrevendo em linguagem normal: <em>"entregar artigo sexta"</em>,</p>
 <p data-b><em>"prova dia 15"</em>, <em>"enviar ofício amanhã"</em>. Ele entende a data sozinho e agrupa por urgência (atrasadas, hoje, amanhã, próximos 7 dias). Categorias: Curso, Dissertação, Administrativo, Pessoal.</p>

@@ -20,3 +20,9 @@ desktop.ini
 
 # Arquivos de trava do Word/Excel
 .~lock.*
+
+# Manuais e regulamentos (PDF pesado, circulacao interna da corporacao).
+# Este repositorio e PUBLICO porque o GitHub Pages gratuito exige isso, entao
+# nada de documento institucional aqui. Os manuais vivem no Google Drive, em
+# "Arquivos Josemar/Trabalho/Manuais". Ver AGENTS.md.
+Manuais/

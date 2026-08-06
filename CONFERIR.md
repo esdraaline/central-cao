@@ -5,6 +5,29 @@
 > Esta lista é para fazer **agora**, de armário aberto. A de arrumar a mala no dia é a [MALA.md](MALA.md).
 > Quantidades calculadas para chegar domingo e ter aula de segunda a quinta, sem lavanderia.
 
+> ## ⚠️ Confira as duas primeiras seções antes de qualquer outra
+> Elas são as únicas que **dependem da loja de fardamento** aplicar e devolver.
+> Se faltar alguma coisa ali, a loja precisa saber **esta semana**, senão não
+> volta a tempo de 16/08. O resto da lista você resolve sozinho, no sábado se
+> precisar. Confira essas duas, ligue na loja, e só então continue.
+
+## Camiseta de serviço
+- [ ] 6 camisetas de serviço cinza-bandeirante, gola careca, meia manga
+- [ ] Todas com tarjeta operacional no peito direito
+- [ ] Todas com a Logomarca da PMESP no peito esquerdo
+
+## Distintivos e tarjetas
+- [ ] 4 distintivos de OPM do CAES (3 camisas de passeio + 1 gandola)
+- [ ] Tarjeta administrativa de acrílico (camisa de passeio e jaqueta)
+- [ ] Distintivos de atividade e insígnias de gola das camisas de passeio
+- [ ] Distintivos e insígnias da gandola
+
+---
+
+> Daqui para baixo é o que você resolve sozinho: conferir, e o que faltar vira
+> compra de fardamento (até 12/08, porque pode não ter seu tamanho) ou de
+> mercado (sábado 15/08, não trava nada).
+
 ## Uniforme P-1 (dia a dia do curso)
 - [ ] 2 calças sociais cinza-bandeirante
 - [ ] 3 camisas de passeio cinza-claro
@@ -20,21 +43,10 @@
 - [ ] Coturnos pretos em condição de uso
 - [ ] Cadarço reserva
 
-## Camiseta de serviço
-- [ ] 6 camisetas de serviço cinza-bandeirante, gola careca, meia manga
-- [ ] Todas com tarjeta operacional no peito direito
-- [ ] Todas com a Logomarca da PMESP no peito esquerdo
-
 ## Agasalho
 - [ ] Jaqueta de passeio cinza-bandeirante
 - [ ] Insígnias de Capitão **em metal** nas platinas da jaqueta
 - [ ] Blusa de lã cinza-bandeirante *(opcional)*
-
-## Distintivos e tarjetas
-- [ ] 4 distintivos de OPM do CAES (3 camisas de passeio + 1 gandola)
-- [ ] Tarjeta administrativa de acrílico (camisa de passeio e jaqueta)
-- [ ] Distintivos de atividade e insígnias de gola das camisas de passeio
-- [ ] Distintivos e insígnias da gandola
 
 ## Educação física
 - [ ] Camiseta de treinamento branca

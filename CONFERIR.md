@@ -5,11 +5,7 @@
 > Esta lista é para fazer **agora**, de armário aberto. A de arrumar a mala no dia é a [MALA.md](MALA.md).
 > Quantidades calculadas para chegar domingo e ter aula de segunda a quinta, sem lavanderia.
 
-> ## ⚠️ Confira as duas primeiras seções antes de qualquer outra
-> Elas são as únicas que **dependem da loja de fardamento** aplicar e devolver.
-> Se faltar alguma coisa ali, a loja precisa saber **esta semana**, senão não
-> volta a tempo de 16/08. O resto da lista você resolve sozinho, no sábado se
-> precisar. Confira essas duas, ligue na loja, e só então continue.
+> **⚠️ Confira as duas primeiras seções antes de qualquer outra.** Elas são as únicas que **dependem da loja de fardamento** aplicar e devolver. Se faltar alguma coisa ali, a loja precisa saber **esta semana**, senão não volta a tempo de 16/08. O resto da lista você resolve sozinho, no sábado se precisar. Confira essas duas, ligue na loja, e só então continue.
 
 ## Camiseta de serviço
 - [ ] 6 camisetas de serviço cinza-bandeirante, gola careca, meia manga
@@ -24,9 +20,7 @@
 
 ---
 
-> Daqui para baixo é o que você resolve sozinho: conferir, e o que faltar vira
-> compra de fardamento (até 12/08, porque pode não ter seu tamanho) ou de
-> mercado (sábado 15/08, não trava nada).
+> Daqui para baixo é o que você resolve sozinho: conferir, e o que faltar vira compra de fardamento (até 12/08, porque pode não ter seu tamanho) ou de mercado (sábado 15/08, não trava nada).
 
 ## Uniforme P-1 (dia a dia do curso)
 - [ ] 2 calças sociais cinza-bandeirante

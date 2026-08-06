@@ -1,0 +1,15 @@
+# Fim de linha sempre LF, em qualquer maquina.
+#
+# Por que isto existe: o painel (docs/index.html) e um arquivo unico de ~4.400
+# linhas gerado pelo gerar_painel.py. No Windows, o Python escreve CRLF por
+# padrao. Sem esta regra, gerar o painel numa maquina Windows marca o arquivo
+# INTEIRO como modificado, mesmo sem nenhuma mudanca de conteudo, e duas
+# maquinas gerando o painel dao conflito de merge garantido.
+#
+# O repositorio ja nasceu todo em LF, entao esta regra apenas mantem o que ja
+# vale. Nao renormaliza nem altera nenhum arquivo existente.
+* text=auto eol=lf
+
+# Arquivos gerados: nao contam como codigo escrito a mao nas estatisticas do
+# GitHub, e o diff deles quase nunca interessa numa revisao.
+docs/index.html linguist-generated=true

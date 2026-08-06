@@ -2165,7 +2165,10 @@ window.SUPA_CFG=%(supa)s;
     }
 
     os.makedirs(os.path.dirname(SAIDA), exist_ok=True)
-    with open(SAIDA, "w", encoding="utf-8") as f:
+    # newline="\n" e obrigatorio: sem isso o Python no Windows escreve CRLF, o
+    # painel inteiro (~4.400 linhas) aparece como modificado a cada geracao, e
+    # gerar em duas maquinas da conflito de merge. Ver .gitattributes.
+    with open(SAIDA, "w", encoding="utf-8", newline="\n") as f:
         f.write(doc)
 
     # o Pages nao deve processar com Jekyll

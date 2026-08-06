@@ -17,6 +17,9 @@ Separe o que depende de terceiro do que você resolve sozinho:
 ## Já sei que falta
 - [ ] **6 camisetas de serviço cinza-bandeirante** — gola careca, meia manga com barra. **Não serve camiseta cinza comum.**
 - [ ] Nas 6 camisetas: **tarjeta operacional** no peito direito (retângulo preto 15 × 80 mm, letras brancas de 6 mm, `CAP PM JOSEMAR`)
+- [ ] **1 tarjeta de acrílico imantada** — identificação nominal administrativa para o paletó do S-1 (retângulo preto 15 × 80 mm, letras brancas de 6 mm, `CAP PM JOSEMAR`)
+- [ ] **1 camisa social cinza-claro** — manga longa, gola social, sem bolsos, para compor o S-1
+- [ ] **1 gravata cinza-bandeirante** — para compor o S-1
 - [ ] Nas 6 camisetas: **distintivo da Logomarca da PMESP** no peito esquerdo, tamanho normal, alinhado com a tarjeta
 - [ ] **4 distintivos de OPM do CAES** (o "brasão") — 3 para as camisas de passeio + 1 para a gandola. Manga direita, 20 mm abaixo do distintivo da Bandeira de São Paulo.
 - [ ] **Boina cinza-bandeirante** com distintivo de cobertura — é a cobertura do dia a dia no curso (o quepe só em cerimônia)

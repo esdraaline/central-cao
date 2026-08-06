@@ -78,6 +78,15 @@ jobs:
       - name: Publicar
         id: deploy
         uses: actions/deploy-pages@v4
+        with:
+          # O padrao e 10 minutos. Em 06/08/2026 o Pages estava levando mais que
+          # isso para promover o deploy: a Action desistia com "Timeout reached"
+          # enquanto o proprio GitHub ainda dizia "deployment_in_progress", e
+          # minutos depois o site aparecia atualizado. Ou seja, era a Action
+          # desistindo cedo, nao o deploy falhando. 30 minutos cobre a lentidao
+          # sem mascarar problema de verdade, porque o passo seguinte confere o
+          # que esta no ar.
+          timeout: 1800000
 
       # Publicar nao e o mesmo que estar servido. Confere que a pagina no ar ja e
       # a desta rodada antes de dar a Action como verde, senao um deploy que

@@ -1,7 +1,15 @@
 # STATUS — Central do CAO
 
 > Painel principal. Ler isso primeiro em qualquer sessão nova ("onde paramos?").
-> Atualizado em: 04/08/2026
+> Atualizado em: 06/08/2026
+
+## Novidade de 06/08/2026: publicação automática
+
+O painel agora se publica sozinho. Editou um `.md` e deu push (ou editou pela
+web do GitHub, do celular), o painel regenera e vai para o ar sem ninguém rodar
+nada. Rodar `python gerar_painel.py` na mão continua valendo para conferir antes
+de subir. Detalhe e o histórico do build quebrado do Pages estão em
+[ANOTACOES.md](ANOTACOES.md).
 
 ## Onde estou agora
 - Sou **Oficial-Aluno do CAO/II-2026** (2ª Turma) — **Programa de Mestrado Profissional em Ciências Policiais de Segurança e Ordem Pública**, no **CAES "Cel Nelson Freire Terra"** (região da Barra Funda, São Paulo — Av. Rio Branco / Av. Duque de Caxias).
@@ -14,9 +22,11 @@
 - **Falta preencher**: em qual módulo/disciplina o curso está agora, o que já foi entregue no curso em si (não só na seleção/recepção).
 
 ## Próximo passo
-- [ ] **Josemar: fazer a conferência de armário na aba [Conferir](CONFERIR.md)** (90 peças). O que sobrar
-      em branco vira a lista de [Compras](COMPRAS.md) — e o que depende de costura na loja de fardamento
-      (tarjeta, logomarca, distintivo do CAES) precisa sair **esta semana**, porque viaja dia 16/08.
+- [ ] **Josemar: fazer a conferência de armário na aba [Conferir](CONFERIR.md)** (90 peças).
+      **A lista foi reordenada em 06/08:** as duas primeiras seções (Camiseta de serviço e
+      Distintivos e tarjetas) são as únicas que dependem da loja de fardamento aplicar e devolver.
+      Confira essas duas primeiro e ligue na loja **esta semana**, porque viaja dia 16/08. O resto
+      da lista você resolve sozinho e o que faltar vira [Compras](COMPRAS.md).
 - [ ] Josemar: me contar o que está rolando no curso agora (módulo atual, próxima entrega, próxima aula presencial) pra eu atualizar [PRAZOS.md](PRAZOS.md) e este painel.
 - [ ] Enviar Ofício de Apresentação pra mesa SEI 302090130 e liberar a Rotina 13 do SIPA (código 302090000), se ainda não fez — matrícula e verbas dependem disso (ver [ROTINA.md](ROTINA.md)).
 - [ ] Regularizar conta Banco do Brasil pro Auxílio Financeiro a Estudantes (não pode ser "Conta Salário", nome não pode estar no CADIN).

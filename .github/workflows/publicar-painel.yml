@@ -1,0 +1,100 @@
+name: Publicar painel
+
+# Por que este workflow existe:
+#
+# 1. Autonomia. Antes, o painel só era atualizado quando o Josemar lembrava de
+#    rodar `python gerar_painel.py` e commitar. Editar um .md pelo celular ou
+#    pela web do GitHub deixava o painel publicado velho, em silêncio. Agora
+#    qualquer mudança num .md regenera e publica sozinha.
+#
+# 2. O build antigo do Pages parou de funcionar. Em 06/08/2026 o build "legacy"
+#    (servir direto da pasta docs/ do branch) passou a falhar com a mensagem
+#    generica "Page build failed", sem log nenhum, neste repositorio e tambem no
+#    mentor-univesp-com170. Reaplicar a configuracao de source e empurrar commit
+#    novo nao recuperou. O deploy por Action usa outro caminho e nao depende
+#    daquele build.
+
+on:
+  push:
+    branches: [main]
+    # So republica quando muda o que o painel mostra. Push que mexe apenas no
+    # README ou no proprio workflow nao precisa gastar uma publicacao.
+    paths:
+      - "*.md"
+      - "gerar_painel.py"
+      - "supabase.json"
+      - ".github/workflows/publicar-painel.yml"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write   # para commitar o painel regenerado
+  pages: write      # para publicar
+  id-token: write   # exigido pelo actions/deploy-pages
+
+# Duas publicacoes ao mesmo tempo se atropelam e uma sobrescreve a outra.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      # O gerador e Python puro, sem dependencia nenhuma. Se um dia precisar de
+      # biblioteca, e aqui que entra o pip install.
+      - name: Gerar o painel a partir dos .md
+        run: python gerar_painel.py
+
+      # O painel gerado volta para o repositorio para o arquivo versionado nunca
+      # ficar diferente do que esta publicado. Sem isso, o proximo `git pull` numa
+      # maquina do Josemar traria um painel velho e ele geraria por cima.
+      - name: Guardar o painel no repositorio
+        run: |
+          git config user.name "painel-cao-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add docs/
+          if git diff --cached --quiet; then
+            echo "Painel ja estava atualizado, nada a commitar."
+          else
+            git commit -m "Regenera o painel ($(date -u +'%Y-%m-%d %H:%M') UTC)"
+            git push
+          fi
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+
+      - name: Publicar
+        id: deploy
+        uses: actions/deploy-pages@v4
+
+      # Publicar nao e o mesmo que estar servido. Confere que a pagina no ar ja e
+      # a desta rodada antes de dar a Action como verde, senao um deploy que
+      # falhou pela metade passaria despercebido.
+      - name: Conferir que o site no ar e o desta rodada
+        run: |
+          CARIMBO=$(grep -o 'gerado-em" content="[0-9]*"' docs/index.html | grep -o '[0-9]*')
+          echo "Carimbo desta rodada: $CARIMBO"
+          for TENTATIVA in $(seq 1 30); do
+            NO_AR=$(curl -fsS -H "Cache-Control: no-cache" \
+              "${{ steps.deploy.outputs.page_url }}?run=${GITHUB_RUN_ID}-${TENTATIVA}" 2>/dev/null \
+              | grep -o 'gerado-em" content="[0-9]*"' | grep -o '[0-9]*' || true)
+            if [ "$NO_AR" = "$CARIMBO" ]; then
+              echo "Confirmado: o site no ar e o desta rodada."
+              exit 0
+            fi
+            sleep 6
+          done
+          echo "::error::O deploy terminou, mas em 3 minutos o site no ar ainda nao era o desta rodada (esperado $CARIMBO, encontrado $NO_AR)."
+          exit 1

@@ -79,7 +79,7 @@ ficou e está testada.
   criar um novo. Tabela `cao_tarefas` (nome com prefixo justamente para não colidir com `rascunho` e
   `relatorios`, que já existiam). Antes de ligar, conferi que as duas tabelas antigas têm RLS com
   política `auth.uid() = user_id`, e testei que a chave sem login não devolve nada de nenhuma delas.
-- O login do Supabase é do projeto inteiro, então o usuário `josemardp@gmail.com` que já existia serve
+- O login do Supabase é do projeto inteiro, então o usuário que já existia serve
   para os dois sistemas. O RLS é que mantém os dados separados.
 - Repositório publicado em `github.com/esdraaline/central-cao` (conta esdraaline), painel no ar em
   `esdraaline.github.io/central-cao`, servido a partir da pasta `docs/`.

@@ -1890,12 +1890,21 @@ def le_config_supabase():
             papel = "anon"          # formato novo, equivalente a anon
         else:
             papel = _papel_da_chave(key)
-        if papel and papel != "anon":
+        # Lista de permissao, nao lista de proibicao: so passa o que foi
+        # reconhecido como 'anon'. Antes era "if papel and papel != 'anon'", e o
+        # "papel and" tratava chave NAO RECONHECIDA (papel=None) como aprovada.
+        # Passavam um token pessoal sbp_, que da acesso a conta inteira do
+        # Supabase, uma connection string postgresql:// e um JWT sem campo role,
+        # e qualquer um deles seria embutido no docs/index.html publicado.
+        if papel != "anon":
             print("=" * 68)
-            print("PAREI: a chave do supabase.json tem papel '%s'." % papel)
-            print("Essa chave ignora as regras de seguranca do banco e NAO pode")
-            print("ficar num site publico. Troque pela chave 'anon public'")
-            print("(Project Settings > API) e rode de novo.")
+            print("PAREI: nao reconheci a chave do supabase.json como publicavel")
+            print("(papel detectado: %s)." % (papel or "desconhecido"))
+            print("So aceito 'sb_publishable_...' ou um JWT com role 'anon'.")
+            print("Qualquer outra chave (service_role, token pessoal sbp_,")
+            print("connection string) ignora as regras de seguranca do banco e")
+            print("NAO pode ficar num site publico.")
+            print("Pegue a chave em Project Settings > API e rode de novo.")
             print("=" * 68)
             raise SystemExit(1)
         return {"url": url, "key": key}

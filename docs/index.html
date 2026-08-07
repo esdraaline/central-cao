@@ -9,7 +9,7 @@
 <!-- o painel e um arquivo unico que muda a cada geracao; sem isto o navegador
      serve a versao antiga do cache e correcoes nao chegam ate o usuario -->
 <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
-<meta name="gerado-em" content="20260807012559">
+<meta name="gerado-em" content="20260807082437">
 <title>Central do CAO</title>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23c8102e'/%3E%3Ctext x='16' y='22' font-size='15' font-family='Arial' font-weight='bold' fill='white' text-anchor='middle'%3ECAO%3C/text%3E%3C/svg%3E">
 <style>
@@ -752,7 +752,7 @@ mark{background:rgba(232,161,58,.35);color:inherit;border-radius:3px;padding:0 2
 </ul>
 <p data-b>criar um novo. Tabela <code>cao_tarefas</code> (nome com prefixo justamente para não colidir com <code>rascunho</code> e <code>relatorios</code>, que já existiam). Antes de ligar, conferi que as duas tabelas antigas têm RLS com política <code>auth.uid() = user_id</code>, e testei que a chave sem login não devolve nada de nenhuma delas.</p>
 <ul data-b>
-<li>O login do Supabase é do projeto inteiro, então o usuário <code>josemardp@gmail.com</code> que já existia serve</li>
+<li>O login do Supabase é do projeto inteiro, então o usuário que já existia serve</li>
 </ul>
 <p data-b>para os dois sistemas. O RLS é que mantém os dados separados.</p>
 <ul data-b>

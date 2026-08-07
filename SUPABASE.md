@@ -4,7 +4,7 @@
 
 - **Projeto**: `relatorio-ronda` (o mesmo dos relatórios, org `esdraaline's Org`)
 - **Tabela**: `public.cao_tarefas`, com RLS ativo e política `cao_tarefas_owner`
-- **Login**: `josemardp@gmail.com` (usuário que já existia no projeto)
+- **Login**: o e-mail de sempre (o mesmo usuário que já existia no projeto)
 - **Configuração**: arquivo `supabase.json` na raiz
 
 ## ✅ Itens ticados também sincronizam (04/08/2026)

@@ -9,7 +9,7 @@
 
 ## ✅ Itens ticados também sincronizam (04/08/2026)
 
-O que você tica nas abas **Conferir, Compras e Mala** sobe junto com as tarefas.
+O que você tica nas abas **Compras e Mala** sobe junto com as tarefas.
 
 - **Tabela**: `public.cao_ticados`, RLS ativo, política `dono_faz_tudo`
 - Conferido na hora de ligar: a tabela responde, as colunas `user_id, id, n, mod` existem, o
@@ -38,7 +38,7 @@ create policy "dono_faz_tudo" on public.cao_ticados
 ```
 
 > **Atenção à chave primária**: aqui ela é `(user_id, id)`, e não só `id` como na `cao_tarefas`.
-> O motivo é que o `id` de um item ticado vem do texto dele (`ab-conferir/2de055d428`), então é
+> O motivo é que o `id` de um item ticado vem do texto dele (`ab-compras/2de055d428`), então é
 > **igual em todos os aparelhos e para todas as pessoas**. Sem o `user_id` na chave, duas pessoas
 > usando o mesmo projeto sobrescreveriam a marcação uma da outra.
 

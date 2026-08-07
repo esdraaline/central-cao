@@ -35,7 +35,6 @@ ABAS = [
     ("CONTATOS.md",  "contatos",  "Contatos",   "users"),
     ("DUVIDAS.md",   "duvidas",   "Dúvidas",    "help"),
     ("ANOTACOES.md", "anotacoes", "Anotações",  "note"),
-    ("CONFERIR.md",  "conferir",  "Conferir",   "prancheta"),
     ("COMPRAS.md",   "compras",   "Compras",    "carrinho"),
     ("MALA.md",      "mala",      "Mala",       "mala"),
     ("VIAGENS.md",   "viagens",   "Viagens",    "map"),
@@ -1329,9 +1328,9 @@ JS_SUPABASE = r"""
     }).catch(function(){});
   }
 
-  /* -------- itens ticados das abas Conferir / Compras / Mala -------------
+  /* -------- itens ticados das abas Compras / Mala / Rotina ---------------
      Tabela cao_ticados: uma linha por item marcado, chave (user_id, id).
-     O id vem do proprio painel ("ab-conferir/2de055d428"), entao e igual em
+     O id vem do proprio painel ("ab-compras/2de055d428"), entao e igual em
      todo aparelho - por isso a chave primaria precisa incluir o user_id.
      Vale sempre a alteracao mais recente (campo mod).                       */
   function tic(cls,txt,tit){
@@ -1533,7 +1532,7 @@ JS = r"""
     if(abas.some(function(b){return b.dataset.aba===h}))mostra(h,false);
   });
 
-  /* ---- itens ticaveis das abas geradas dos .md (Conferir, Compras, Mala...) --
+  /* ---- itens ticaveis das abas geradas dos .md (Compras, Mala, Rotina...) ----
      O .md continua sendo a fonte de verdade do TEXTO; o que foi ticado fica
      salvo no proprio aparelho (localStorage), por aba + item.               */
   var K_MK='cao-ticados';

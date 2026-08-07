@@ -18,15 +18,15 @@ de subir. Detalhe e o histórico do build quebrado do Pages estão em
 - Projeto de Pesquisa (PP) tem versão final entregue em [CAO 2026/PP/Projeto Pesquisa Cap Josemar Final.doc](CAO%202026/PP/Projeto%20Pesquisa%20Cap%20Josemar%20Final.doc) — tema: integração PM-Prefeituras / governança participativa no 2º BPM/I. Como agora é mestrado profissional, isso deve virar **dissertação** (ver contato de Pesquisa em [CONTATOS.md](CONTATOS.md)).
 - Contatos e organograma do CAES: ver [CONTATOS.md](CONTATOS.md).
 - Regras de rotina, uniforme, SIPA financeiro, formatura: ver [ROTINA.md](ROTINA.md).
-- **Primeira semana: viaja domingo 16/08/2026**, aulas de segunda a quinta (entra 08h15; sai 16h seg, 18h ter e qua, 11h30 qui). A preparação é em três etapas: [CONFERIR.md](CONFERIR.md) (tico o que já tenho) → [COMPRAS.md](COMPRAS.md) (o que sobrou) → [MALA.md](MALA.md) (arrumar a mala no dia).
+- **Primeira semana: viaja domingo 16/08/2026**, aulas de segunda a quinta (entra 08h15; sai 16h seg, 18h ter e qua, 11h30 qui). A conferência de armário está **feita** (06/08, 78 das 90 peças já em casa), então sobraram duas etapas: [COMPRAS.md](COMPRAS.md) (o que falta) → [MALA.md](MALA.md) (arrumar a mala no dia).
 - **Falta preencher**: em qual módulo/disciplina o curso está agora, o que já foi entregue no curso em si (não só na seleção/recepção).
 
 ## Próximo passo
-- [ ] **Josemar: fazer a conferência de armário na aba [Conferir](CONFERIR.md)** (90 peças).
-      **A lista foi reordenada em 06/08:** as duas primeiras seções (Camiseta de serviço e
-      Distintivos e tarjetas) são as únicas que dependem da loja de fardamento aplicar e devolver.
-      Confira essas duas primeiro e ligue na loja **esta semana**, porque viaja dia 16/08. O resto
-      da lista você resolve sozinho e o que faltar vira [Compras](COMPRAS.md).
+- [ ] **Josemar: ligar na loja de fardamento esta semana** e resolver o bloco 1 da aba
+      [Compras](COMPRAS.md). É o único que depende de terceiro: 2 camisas de passeio,
+      2 camisetas de serviço, aplicação de tarjeta e logomarca, 4 distintivos de OPM do CAES e
+      a tarjeta administrativa de acrílico. Se não sair esta semana, não volta a tempo do dia 16/08.
+      O resto (calça social, boina, camisa social e gravata do S-1) é peça pronta, dá até 12/08.
 - [ ] Josemar: me contar o que está rolando no curso agora (módulo atual, próxima entrega, próxima aula presencial) pra eu atualizar [PRAZOS.md](PRAZOS.md) e este painel.
 - [ ] Enviar Ofício de Apresentação pra mesa SEI 302090130 e liberar a Rotina 13 do SIPA (código 302090000), se ainda não fez — matrícula e verbas dependem disso (ver [ROTINA.md](ROTINA.md)).
 - [ ] Regularizar conta Banco do Brasil pro Auxílio Financeiro a Estudantes (não pode ser "Conta Salário", nome não pode estar no CADIN).
@@ -44,7 +44,7 @@ python gerar_painel.py
 ```
 
 ### Caixinhas ticáveis
-Nas abas geradas dos .md (Conferir, Compras, Mala, Rotina), **as caixinhas são clicáveis**: clique para
+Nas abas geradas dos .md (Compras, Mala, Rotina), **as caixinhas são clicáveis**: clique para
 marcar, clique de novo para desmarcar.
 
 **Item com quantidade aceita marcação parcial.** Todo item que começa com um número (`- [ ] 6 camisetas...`)
@@ -89,7 +89,6 @@ Central CAO/
 ├── DUVIDAS.md        <- dúvidas em aberto sobre o curso
 ├── TAREFAS.md        <- lista de tarefas correntes
 ├── ANOTACOES.md      <- notas soltas, recados, ideias
-├── CONFERIR.md       <- conferência de armário: tico o que já tenho
 ├── COMPRAS.md        <- o que sobrou da conferência e precisa comprar
 ├── MALA.md           <- lista do dia de arrumar a mala (o que levar)
 ├── VIAGENS.md         <- deslocamentos (módulos presenciais, provas etc.)

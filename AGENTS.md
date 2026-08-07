@@ -34,8 +34,9 @@ Responda com base no texto do regulamento. Cite o artigo/item ou seção quando
 possível. Se a informação não estiver clara no texto, indique a incerteza antes
 de responder.
 
-**Uso mais frequente hoje:** conferir os itens de uniforme da aba
-[Conferir](CONFERIR.md), que lista as peças a levar para o CAO. As referências
+**Uso mais frequente hoje:** conferir os itens de uniforme das abas
+[Compras](COMPRAS.md) e [Mala](MALA.md), que listam as peças a levar para o CAO
+(a conferência de armário foi concluída em 06/08/2026). As referências
 de artigo já registradas em [ROTINA.md](ROTINA.md) (P-1 no Art. 45, B-1 no
 Art. 23, jaqueta de passeio no Art. 127, camiseta de serviço no Art. 74) vieram
 desse regulamento e podem ser conferidas nele.

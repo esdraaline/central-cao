@@ -4,7 +4,7 @@
 > **Não tem lavanderia**: as quantidades abaixo cobrem os 4 dias de aula sem lavar nada.
 > Base: bizu de colega que já fez o CAO + [ROTINA.md](ROTINA.md).
 >
-> **Esta é a lista do dia de arrumar a mala** — tique conforme for pondo dentro. Antes dela vêm duas outras: [CONFERIR.md](CONFERIR.md) (o que já tenho) e [COMPRAS.md](COMPRAS.md) (o que falta).
+> **Esta é a lista do dia de arrumar a mala** — tique conforme for pondo dentro. Antes dela vem a [COMPRAS.md](COMPRAS.md) (o que ainda falta comprar). A conferência de armário já foi feita em 06/08/2026.
 
 ## Antes de sair de casa
 - [ ] Conferir distintivos, insígnias e tarjetas em **cada** peça (ver checagem no fim desta seção)

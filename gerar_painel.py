@@ -25,6 +25,9 @@ SAIDA = os.path.join(RAIZ, "docs", "index.html")
 # Inicio e fim estimados do curso (CAO-II/26), usados no contador da home.
 CURSO_INICIO = date(2026, 8, 17)
 CURSO_FIM = date(2027, 8, 17)
+# Primeira ida a Sao Paulo. Dai em diante a semana se repete: viaja domingo,
+# aula de segunda a quinta, volta quinta depois das 11h30 (ver ROTINA.md).
+PRIMEIRA_VIAGEM = date(2026, 8, 16)
 
 # Ordem das abas. (arquivo, id, rotulo, icone)
 ABAS = [
@@ -305,11 +308,6 @@ def conta_tarefas(texto):
     return pend, feito
 
 
-def extrai_pendentes(texto, limite=6):
-    itens = re.findall(r"^\s*[-*]\s+\[ \]\s+(.*)$", texto, re.M)
-    return [_inline(x) for x in itens[:limite]]
-
-
 def extrai_tarefas(texto):
     """Le as tarefas do TAREFAS.md em formato estruturado.
 
@@ -453,6 +451,51 @@ main{max-width:1080px;margin:0 auto;padding:24px 20px 64px}
 .aviso li{padding:4px 0 4px 20px;position:relative;font-size:14px}
 .aviso li::before{content:"";position:absolute;left:4px;top:12px;width:6px;height:6px;
   border-radius:50%;background:var(--al)}
+
+/* ===================== guia do dia (abertura do painel) =====================
+   E a primeira coisa que aparece: em que dia estamos, o que fazer hoje, o que
+   vem amanha. Tudo montado no navegador, para nunca envelhecer sozinho.     */
+.guia{background:var(--card);border:1px solid var(--bd);border-radius:14px;
+  box-shadow:var(--sh);margin-bottom:16px;overflow:hidden}
+.guia-topo{display:flex;gap:16px;align-items:center;flex-wrap:wrap;
+  padding:17px 22px;background:linear-gradient(100deg,var(--top1),var(--top2) 60%);color:#fff}
+.guia-ola{font-size:12.5px;text-transform:uppercase;letter-spacing:.8px;opacity:.85;font-weight:700}
+.guia-dia{font-size:20px;font-weight:750;letter-spacing:-.3px;line-height:1.2;margin-top:2px}
+.guia-fase{font-size:13px;opacity:.9;margin-top:3px}
+.guia-conta{margin-left:auto;text-align:right;display:flex;align-items:baseline;gap:9px;
+  background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.2);
+  border-radius:11px;padding:9px 14px}
+.guia-conta b{font-size:27px;font-weight:800;letter-spacing:-1px;line-height:1}
+.guia-conta span{font-size:12px;line-height:1.35;text-align:left;opacity:.92}
+.guia-corpo{padding:6px 22px 18px}
+.guia-bloco{margin-top:15px}
+.guia-cab{display:flex;align-items:center;gap:8px;font-size:12px;font-weight:800;
+  text-transform:uppercase;letter-spacing:.8px;color:var(--tx3);margin-bottom:7px}
+.guia-cab .n{background:var(--bd);color:var(--tx2);border-radius:20px;padding:1px 8px;font-size:11px}
+.guia-bloco.vencido .guia-cab{color:var(--vm)}
+.guia-bloco.vencido .guia-cab .n{background:var(--vm);color:#fff}
+.guia-bloco.agora .guia-cab{color:var(--al)}
+.guia-bloco.agora .guia-cab .n{background:var(--al);color:#fff}
+.guia-lista{list-style:none;margin:0}
+.guia-lista li{display:flex;gap:10px;align-items:flex-start;padding:9px 12px;margin:6px 0;
+  border:1px solid var(--bd);border-left-width:3px;border-radius:9px;background:var(--card2);
+  font-size:14.5px;color:var(--tx)}
+.guia-bloco.vencido .guia-lista li{border-left-color:var(--vm)}
+.guia-bloco.agora .guia-lista li{border-left-color:var(--al)}
+.guia-lista li .pt{width:8px;height:8px;border-radius:50%;flex:none;margin-top:7px;background:var(--tx3)}
+.guia-lista li .qd{color:var(--tx3);font-size:12.5px;white-space:nowrap;margin-left:auto;
+  padding-left:8px;font-variant-numeric:tabular-nums}
+.guia-tudoem{display:flex;gap:9px;align-items:center;color:var(--ok);font-size:14px;
+  padding:13px 0 4px;font-weight:600}
+.guia-nota{font-size:13px;color:var(--tx2);margin-top:13px;padding-top:12px;
+  border-top:1px solid var(--bd)}
+.guia-nota b{color:var(--tx)}
+@media(max-width:560px){
+  .guia-topo{padding:15px 17px}
+  .guia-corpo{padding:4px 17px 16px}
+  .guia-conta{margin-left:0;width:100%;justify-content:flex-start}
+  .guia-dia{font-size:18px}
+}
 
 /* tipografia do conteudo */
 .card h2{font-size:17px;font-weight:700;letter-spacing:-.2px;margin:26px 0 11px;
@@ -1066,14 +1109,8 @@ JS_TAREFAS = r"""
                      (g.hoje.length?(g.hoje.length+' para hoje'):'nenhuma atrasada');
       ks.style.color=atras?'var(--vm)':'';
     }
-    var lh=el('#home-tarefas');
-    if(lh){
-      var prox=g.atrasadas.concat(g.hoje,g.amanha,g.semana,g.depois,g.semdata).slice(0,6);
-      lh.innerHTML=prox.length?prox.map(function(t){
-        var d=t.data?deIso(t.data):null;
-        return '<li>'+esc(t.txt)+(d?' <b>('+rotuloData(d)+')</b>':'')+'</li>';
-      }).join(''):'<li>Nada pendente. Tudo em dia.</li>';
-    }
+    /* guia do dia (cartao de abertura): mesma fonte, outra leitura */
+    if(window.GUIA)GUIA.tarefas(g);
   }
 
   /* -------------------------- exportar / importar ------------------------ */
@@ -1657,6 +1694,8 @@ JS = r"""
     var pct=total?Math.round(tem*100/total):0;
     topo.querySelector('.mk-n').textContent=tem+' de '+total;
     topo.querySelector('.mk-barra i').style.width=pct+'%';
+    /* os cartoes de Compras e Mala da abertura leem daqui */
+    if(window.GUIA)GUIA.listas();
   }
 
   /* monta o contador no topo e os steppers dos itens com quantidade */
@@ -1839,6 +1878,200 @@ JS = r"""
   document.addEventListener('keydown',function(e){
     if((e.ctrlKey||e.metaKey)&&e.key==='k'){e.preventDefault();inp.focus();inp.select();}
   });
+})();
+"""
+
+
+JS_GUIA = r"""
+/* ========================= guia do dia =========================
+   Responde "o que eu faco hoje?" na abertura do painel.
+
+   Regra de ouro: tudo aqui e calculado no navegador, com a data de
+   quem esta olhando. O painel publicado so e regerado quando um .md
+   muda, entao qualquer conta feita na geracao envelhece em silencio
+   (foi o que aconteceu: o cartao ficou dias dizendo "9 dias para o
+   inicio" depois que ja faltavam 6).                             */
+(function(){
+  var C=window.CURSO||{};
+  var SEM=['domingo','segunda-feira','terça-feira','quarta-feira',
+           'quinta-feira','sexta-feira','sábado'];
+  var MES=['janeiro','fevereiro','março','abril','maio','junho','julho',
+           'agosto','setembro','outubro','novembro','dezembro'];
+
+  function dt(iso){var p=String(iso).split('-');
+    return new Date(+p[0],+p[1]-1,+p[2]);}
+  function hoje(){var d=new Date();return new Date(d.getFullYear(),d.getMonth(),d.getDate());}
+  function dias(a,b){return Math.round((b-a)/864e5);}
+  function curto(d){return ('0'+d.getDate()).slice(-2)+'/'+('0'+(d.getMonth()+1)).slice(-2);}
+  function el(s){return document.querySelector(s);}
+
+  var INICIO=C.inicio?dt(C.inicio):null;
+  var FIM=C.fim?dt(C.fim):null;
+  var VIAGEM1=C.viagem?dt(C.viagem):null;
+
+  /* ---- onde estou na semana do curso ----
+     A semana se repete: viaja domingo, aula de segunda a quinta, volta
+     quinta depois das 11h30 (ROTINA.md). Antes da primeira viagem, o
+     marco e ela mesma.                                              */
+  function marco(h){
+    var dow=h.getDay();  /* 0=domingo */
+    if(VIAGEM1&&h<VIAGEM1){
+      var n=dias(h,VIAGEM1);
+      return {n:n,alvo:VIAGEM1,
+        rot:n===0?'hoje é dia de viajar':(n===1?'dia para a viagem':'dias para a viagem'),
+        sub:'primeira ida, '+SEM[VIAGEM1.getDay()]+' '+curto(VIAGEM1),
+        fase:n===0?'Hoje você viaja para São Paulo. Aula amanhã, 08h15.':
+             'Você está em casa. A primeira semana no CAES começa em '+
+             SEM[VIAGEM1.getDay()]+', '+curto(VIAGEM1)+'.'};
+    }
+    if(FIM&&h>FIM)return {n:0,alvo:null,rot:'curso concluído',sub:'agosto de 2027',
+                          fase:'Curso concluído.'};
+    if(dow===0)return {n:0,alvo:h,rot:'hoje é dia de viajar',sub:'aula amanhã, 08h15',
+      fase:'Hoje você desloca para o CAES. A semana vai até quinta, 11h30.'};
+    if(dow>=1&&dow<=4){
+      var qui=new Date(h);qui.setDate(h.getDate()+(4-dow));
+      var n2=dias(h,qui);
+      return {n:n2,alvo:qui,
+        rot:n2===0?'volta hoje, 11h30':(n2===1?'dia para voltar':'dias para voltar'),
+        sub:'quinta, '+curto(qui),
+        fase:'Semana de aula no CAES. '+(dow===4?'Hoje você volta depois das 11h30.':
+             'Você volta na quinta, depois das 11h30.')};
+    }
+    /* sexta ou sabado: proximo domingo */
+    var dom=new Date(h);dom.setDate(h.getDate()+(7-dow));
+    var n3=dias(h,dom);
+    return {n:n3,alvo:dom,rot:n3===1?'dia para a viagem':'dias para a viagem',
+      sub:'domingo, '+curto(dom),
+      fase:'Você está em casa. Próxima ida ao CAES no domingo, '+curto(dom)+'.'};
+  }
+
+  function saudacao(){
+    var h=new Date().getHours();
+    return h<12?'Bom dia, Capitão':(h<18?'Boa tarde, Capitão':'Boa noite, Capitão');
+  }
+
+  function topo(){
+    var h=hoje(), m=marco(h);
+    var od=el('#guia-ola'), dd=el('#guia-dia'), fd=el('#guia-fase'), cd=el('#guia-conta');
+    if(od)od.textContent=saudacao();
+    if(dd)dd.textContent=SEM[h.getDay()].replace(/^./,function(c){return c.toUpperCase()})+
+      ', '+h.getDate()+' de '+MES[h.getMonth()];
+    if(fd)fd.textContent=m.fase;
+    if(cd)cd.innerHTML=m.n>0?('<b>'+m.n+'</b><span>'+m.rot+'<br>'+m.sub+'</span>'):
+      ('<span style="font-size:13.5px;font-weight:700">'+
+       m.rot.replace(/^./,function(c){return c.toUpperCase()})+'<br>'+
+       '<span style="font-weight:400;opacity:.9">'+m.sub+'</span></span>');
+    /* KPI do curso: dias para comecar, ou quanto ja andou */
+    var kr=el('#kpi-curso-rot'),kv=el('#kpi-curso-val'),ks=el('#kpi-curso-sub'),
+        kb=el('#kpi-curso-barra');
+    if(kv&&INICIO&&FIM){
+      if(h<INICIO){
+        var n=dias(h,INICIO);
+        kr.textContent='Início do curso';kv.textContent=n;
+        ks.textContent=(n===1?'dia para ':'dias para ')+curto(INICIO)+'/'+INICIO.getFullYear();
+        kb.style.width='0%';
+      }else if(h>FIM){
+        kr.textContent='Curso';kv.textContent='Concluído';
+        ks.textContent='agosto de 2027';kb.style.width='100%';
+      }else{
+        var pct=Math.round(dias(INICIO,h)*100/dias(INICIO,FIM));
+        kr.textContent='Curso em andamento';kv.textContent=pct+'%';
+        ks.textContent='faltam '+dias(h,FIM)+' dias';kb.style.width=pct+'%';
+      }
+    }
+  }
+
+  /* ---- o que fazer: vem das tarefas com data (TAREFAS.md + as que voce
+     cadastra no painel). Quem chama e o app de tarefas, a cada desenho. */
+  function esc(s){return String(s).replace(/[&<>"]/g,function(c){
+    return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]});}
+
+  /* cor da categoria: o mapa do app de tarefas e privado, entao remonto aqui */
+  var COR={};
+  (window.CATEGORIAS||[]).forEach(function(c){COR[c[0]]=c[2]});
+
+  function linha(t,mostraData){
+    var cor=t.cat?(COR[t.cat]||''):'';
+    var quando='';
+    if(mostraData&&t.data){
+      var d=dt(t.data), n=dias(hoje(),d);
+      quando='<span class="qd">'+SEM[d.getDay()].slice(0,3)+' '+curto(d)+'</span>';
+      if(n<0)quando='<span class="qd">venceu '+curto(d)+'</span>';
+    }
+    return '<li><span class="pt"'+(cor?' style="background:'+cor+'"':'')+'></span>'+
+           '<span>'+esc(t.txt)+'</span>'+quando+'</li>';
+  }
+
+  function tarefas(g){
+    var alvo=el('#guia-corpo');
+    if(!alvo)return;
+    var out='';
+    var bloco=function(arr,rot,cls,comData){
+      if(!arr||!arr.length)return;
+      out+='<div class="guia-bloco '+(cls||'')+'"><div class="guia-cab">'+rot+
+           '<span class="n">'+arr.length+'</span></div><ul class="guia-lista">'+
+           arr.map(function(t){return linha(t,comData)}).join('')+'</ul></div>';
+    };
+    bloco(g.atrasadas,'Atrasado, resolver primeiro','vencido',true);
+    bloco(g.hoje,'Hoje você precisa','agora',false);
+    bloco(g.amanha,'Amanhã','',false);
+    /* "esta semana" e ate o domingo que vem, nao "os proximos 7 dias": o que
+       cai depois disso vira ruido no cartao de abertura e continua na aba
+       Tarefas. Durante o curso, o domingo e justamente o dia de viajar.   */
+    var h=hoje(), fim=new Date(h);
+    fim.setDate(h.getDate()+(h.getDay()===0?0:7-h.getDay()));
+    var perto=[],longe=[];
+    (g.semana||[]).forEach(function(t){
+      (t.data&&dt(t.data)<=fim?perto:longe).push(t);
+    });
+    longe=longe.concat(g.depois||[]);
+    bloco(perto,h.getDay()===0?'Ainda hoje':'Ainda esta semana','',true);
+    if(!out){
+      out='<div class="guia-tudoem">'+(window.ICO&&ICO.check?ICO.check:'')+
+          'Nada com prazo para hoje nem para esta semana.</div>';
+    }
+    /* rodape: o que existe mas nao cabe no foco de hoje */
+    var resto=[];
+    if(longe.length)resto.push('<b>'+longe.length+'</b> '+
+      (longe.length===1?'tarefa mais adiante':'tarefas mais adiante'));
+    if(g.semdata&&g.semdata.length)resto.push('<b>'+g.semdata.length+'</b> '+
+      (g.semdata.length===1?'sem data marcada':'sem data marcada'));
+    if(resto.length)
+      out+='<p class="guia-nota">Também tem '+resto.join(' e ')+
+           '. Estão na aba Tarefas.</p>';
+    alvo.innerHTML=out;
+  }
+
+  /* ---- quanto falta nas listas ticaveis (Compras, Mala) ---- */
+  function listas(){
+    var estado=(window.TICADOS&&TICADOS.todos&&TICADOS.todos())||{};
+    [].forEach.call(document.querySelectorAll('.lista-kpi'),function(k){
+      var sec=document.getElementById(k.getAttribute('data-aba'));
+      if(!sec){k.style.display='none';return;}
+      var itens=sec.querySelectorAll('ul.tarefas li[data-mk]');
+      if(!itens.length){k.style.display='none';return;}
+      var tem=0,total=0;
+      [].forEach.call(itens,function(li){
+        var tot=parseInt(li.getAttribute('data-qtd')||'0',10)||1;
+        var v=estado[sec.id+'/'+li.getAttribute('data-mk')];
+        total+=tot;tem+=Math.min((v&&v.n)||0,tot);
+      });
+      var falta=total-tem, pct=total?Math.round(tem*100/total):0;
+      k.querySelector('.val').textContent=falta?falta:'ok';
+      k.querySelector('.sub').textContent=falta?
+        (falta===1?'item ainda falta':'itens ainda faltam'):
+        ('tudo marcado, '+total+' itens');
+      k.querySelector('.barra i').style.width=pct+'%';
+      k.classList.toggle('dest',falta>0&&k.getAttribute('data-aba')==='ab-compras');
+    });
+  }
+
+  /* marco fica exposto para conferir o texto de cada dia da semana sem
+     precisar esperar o dia chegar: GUIA.marco(new Date(2026,7,19))       */
+  window.GUIA={topo:topo,tarefas:tarefas,listas:listas,marco:marco};
+  topo();listas();
+  /* vira o dia com o painel aberto (celular que fica na tela): refaz o topo */
+  setInterval(topo,10*60*1000);
 })();
 """
 
@@ -2032,21 +2265,6 @@ def build():
 
     hoje = date.today()
     pend, feito = conta_tarefas(docs.get("TAREFAS.md", ""))
-    pendentes = extrai_pendentes(docs.get("TAREFAS.md", ""))
-
-    # contador do curso
-    total = (CURSO_FIM - CURSO_INICIO).days
-    if hoje < CURSO_INICIO:
-        dias = (CURSO_INICIO - hoje).days
-        kpi_rot, kpi_val, kpi_sub, pct = "Início do curso", str(dias), \
-            ("dia para 17/08/2026" if dias == 1 else "dias para 17/08/2026"), 0
-    elif hoje > CURSO_FIM:
-        kpi_rot, kpi_val, kpi_sub, pct = "Curso", "Concluído", "agosto de 2027", 100
-    else:
-        decorrido = (hoje - CURSO_INICIO).days
-        restam = (CURSO_FIM - hoje).days
-        pct = round(decorrido / total * 100)
-        kpi_rot, kpi_val, kpi_sub = "Curso em andamento", "%d%%" % pct, "faltam %d dias" % restam
 
     # navegacao
     nav = []
@@ -2058,25 +2276,41 @@ def build():
                    '<span class="pill pill-b" style="display:none"></span></button>'
                    % (aba_id, svg(ic, 15), rot, extra))
 
-    # cartoes da home
-    home = ['<div class="grade">']
-    home.append('<div class="kpi dest"><div class="rot">%s</div><div class="val">%s</div>'
-                '<div class="sub">%s</div><div class="barra"><i style="width:%d%%"></i></div></div>'
-                % (kpi_rot, kpi_val, kpi_sub, pct))
+    # ------------------------------------------------------------------ guia --
+    # O cartao de abertura ("hoje voce precisa...") e montado pelo navegador, em
+    # JS: ele precisa saber a data de quem esta olhando, nao a data em que o
+    # painel foi gerado. O painel publicado so e regerado quando algum .md muda,
+    # entao qualquer contagem calculada aqui congelaria: em 08/08 o cartao dizia
+    # "9 dias para o inicio" e continuou dizendo isso no dia 11. O que sai daqui
+    # e so o texto inicial, substituido assim que a pagina abre.
+    home = ['<section class="guia">'
+            '<div class="guia-topo"><div>'
+            '<p class="guia-ola" id="guia-ola">Central do CAO</p>'
+            '<h2 class="guia-dia" id="guia-dia">Carregando o dia...</h2>'
+            '<p class="guia-fase" id="guia-fase"></p></div>'
+            '<div class="guia-conta" id="guia-conta"></div></div>'
+            '<div class="guia-corpo" id="guia-corpo"></div>'
+            '</section>']
+
+    home.append('<div class="grade">')
+    home.append('<div class="kpi dest"><div class="rot" id="kpi-curso-rot">Curso</div>'
+                '<div class="val" id="kpi-curso-val">...</div>'
+                '<div class="sub" id="kpi-curso-sub">CAO-II/26</div>'
+                '<div class="barra"><i id="kpi-curso-barra" style="width:0%"></i></div></div>')
     home.append('<div class="kpi"><div class="rot">Tarefas pendentes</div>'
                 '<div class="val" id="kpi-tar-val">%d</div>'
                 '<div class="sub" id="kpi-tar-sub">%s</div></div>'
                 % (pend, "%d já concluída%s" % (feito, "" if feito == 1 else "s")))
-    home.append('<div class="kpi"><div class="rot">Turma</div><div class="val">CAO-II</div>'
-                '<div class="sub">2026 / 2027, CAES</div></div>')
-    home.append('<div class="kpi"><div class="rot">Formação</div><div class="val">Mestrado</div>'
-                '<div class="sub">Ciências Policiais</div></div>')
+    # os dois de baixo leem o que voce ja ticou nas abas Compras e Mala
+    home.append('<div class="kpi lista-kpi" data-aba="ab-compras" data-rot="Compras">'
+                '<div class="rot">Compras</div><div class="val">...</div>'
+                '<div class="sub">antes de viajar</div>'
+                '<div class="barra"><i style="width:0%"></i></div></div>')
+    home.append('<div class="kpi lista-kpi" data-aba="ab-mala" data-rot="Mala">'
+                '<div class="rot">Mala</div><div class="val">...</div>'
+                '<div class="sub">itens separados</div>'
+                '<div class="barra"><i style="width:0%"></i></div></div>')
     home.append("</div>")
-
-    # a lista da home e preenchida pelo app de tarefas (JS), com as datas
-    home.append('<div class="aviso"><h3>Pendente agora</h3><ul id="home-tarefas">')
-    home += ["<li>%s</li>" % p for p in pendentes]
-    home.append('</ul></div>')
 
     # paineis
     paineis = []
@@ -2140,8 +2374,10 @@ var SOL=%(sol)r,LUA=%(lua)r;
 var CATEGORIAS=%(cats)s;
 var BASE=%(base)s;
 var ICO=%(ico)s;
+window.CURSO=%(curso)s;
 window.SUPA_CFG=%(supa)s;
 %(js)s
+%(js_guia)s
 %(js_tarefas)s
 %(js_supabase)s
 </script>
@@ -2150,7 +2386,11 @@ window.SUPA_CFG=%(supa)s;
 """ % {
         "css": CSS,
         "js": JS,
+        "js_guia": JS_GUIA,
         "js_tarefas": JS_TAREFAS,
+        "curso": escapa_js({"inicio": CURSO_INICIO.isoformat(),
+                            "fim": CURSO_FIM.isoformat(),
+                            "viagem": PRIMEIRA_VIAGEM.isoformat()}),
         "js_supabase": JS_SUPABASE,
         "nav": "".join(nav),
         "paineis": "\n".join(paineis),

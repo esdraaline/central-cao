@@ -15,6 +15,30 @@ Ele é **gerado** a partir destes .md, não editado à mão. Depois de mexer em 
 python gerar_painel.py
 ```
 
+### Guia do dia (a abertura)
+A primeira coisa da aba Painel é o cartão que responde "o que eu faço hoje": saudação,
+data por extenso, em que ponto da semana do curso você está e a contagem para o próximo
+marco. Abaixo dele, as tarefas separadas em **Atrasado**, **Hoje você precisa**, **Amanhã**
+e **Ainda esta semana** (esta semana é até o domingo seguinte, não "próximos 7 dias").
+
+A fase da semana é calculada, não escrita: antes de 16/08 o marco é a primeira viagem;
+depois disso a semana se repete sozinha (domingo viaja, segunda a quinta é aula, quinta
+volta às 11h30, sexta e sábado em casa). Vale até agosto de 2027 sem ninguém mexer.
+
+**Tarefa sem data não entra no guia.** Ela continua na aba Tarefas e o guia avisa quantas
+estão assim. Para ser cobrado no dia certo, a tarefa precisa de `[dd/mm/aaaa]` no
+[TAREFAS.md](TAREFAS.md) ou de data no cadastro do painel.
+
+**Todo cálculo de tempo é feito no navegador, de propósito.** O painel publicado só é
+regerado quando algum `.md` muda; contador calculado na hora da geração envelhece em
+silêncio. Foi o que aconteceu entre 08/08 e 11/08, quando o cartão insistia em "9 dias
+para o início" com 6 dias restantes. Se um dia for preciso mexer nisso, o código está no
+bloco `JS_GUIA` do `gerar_painel.py`, e dá para conferir o texto de qualquer dia sem
+esperar a data chegar: abra o console e rode `GUIA.marco(new Date(2026,7,19))`.
+
+Os cartões **Compras** e **Mala** mostram quantos itens ainda faltam, lendo as marcações
+das próprias abas (contando por peça: "6 camisetas" conta 6, não 1).
+
 ### Caixinhas ticáveis
 Nas abas geradas dos .md (Compras, Mala, Rotina), **as caixinhas são clicáveis**: clique para
 marcar, clique de novo para desmarcar.
@@ -54,7 +78,8 @@ sessões. Sem internet, o painel continua funcionando e sobe as alterações qua
 ## Estrutura da pasta
 ```
 Central CAO/
-├── STATUS.md        <- este arquivo (painel)
+├── STATUS.md         <- painel principal, o "onde paramos"
+├── PAINEL.md         <- este arquivo (manual do painel gerado)
 ├── PRAZOS.md         <- calendário/prazos vivos
 ├── CONTATOS.md       <- organograma do CAES e contatos por assunto
 ├── ROTINA.md         <- regras do dia a dia (uniforme, SIPA, formatura, facilities)

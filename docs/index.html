@@ -9,7 +9,7 @@
 <!-- o painel e um arquivo unico que muda a cada geracao; sem isto o navegador
      serve a versao antiga do cache e correcoes nao chegam ate o usuario -->
 <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
-<meta name="gerado-em" content="20260808203544">
+<meta name="gerado-em" content="20260811102303">
 <title>Central do CAO</title>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23c8102e'/%3E%3Ctext x='16' y='22' font-size='15' font-family='Arial' font-weight='bold' fill='white' text-anchor='middle'%3ECAO%3C/text%3E%3C/svg%3E">
 <style>
@@ -103,6 +103,51 @@ main{max-width:1080px;margin:0 auto;padding:24px 20px 64px}
 .aviso li{padding:4px 0 4px 20px;position:relative;font-size:14px}
 .aviso li::before{content:"";position:absolute;left:4px;top:12px;width:6px;height:6px;
   border-radius:50%;background:var(--al)}
+
+/* ===================== guia do dia (abertura do painel) =====================
+   E a primeira coisa que aparece: em que dia estamos, o que fazer hoje, o que
+   vem amanha. Tudo montado no navegador, para nunca envelhecer sozinho.     */
+.guia{background:var(--card);border:1px solid var(--bd);border-radius:14px;
+  box-shadow:var(--sh);margin-bottom:16px;overflow:hidden}
+.guia-topo{display:flex;gap:16px;align-items:center;flex-wrap:wrap;
+  padding:17px 22px;background:linear-gradient(100deg,var(--top1),var(--top2) 60%);color:#fff}
+.guia-ola{font-size:12.5px;text-transform:uppercase;letter-spacing:.8px;opacity:.85;font-weight:700}
+.guia-dia{font-size:20px;font-weight:750;letter-spacing:-.3px;line-height:1.2;margin-top:2px}
+.guia-fase{font-size:13px;opacity:.9;margin-top:3px}
+.guia-conta{margin-left:auto;text-align:right;display:flex;align-items:baseline;gap:9px;
+  background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.2);
+  border-radius:11px;padding:9px 14px}
+.guia-conta b{font-size:27px;font-weight:800;letter-spacing:-1px;line-height:1}
+.guia-conta span{font-size:12px;line-height:1.35;text-align:left;opacity:.92}
+.guia-corpo{padding:6px 22px 18px}
+.guia-bloco{margin-top:15px}
+.guia-cab{display:flex;align-items:center;gap:8px;font-size:12px;font-weight:800;
+  text-transform:uppercase;letter-spacing:.8px;color:var(--tx3);margin-bottom:7px}
+.guia-cab .n{background:var(--bd);color:var(--tx2);border-radius:20px;padding:1px 8px;font-size:11px}
+.guia-bloco.vencido .guia-cab{color:var(--vm)}
+.guia-bloco.vencido .guia-cab .n{background:var(--vm);color:#fff}
+.guia-bloco.agora .guia-cab{color:var(--al)}
+.guia-bloco.agora .guia-cab .n{background:var(--al);color:#fff}
+.guia-lista{list-style:none;margin:0}
+.guia-lista li{display:flex;gap:10px;align-items:flex-start;padding:9px 12px;margin:6px 0;
+  border:1px solid var(--bd);border-left-width:3px;border-radius:9px;background:var(--card2);
+  font-size:14.5px;color:var(--tx)}
+.guia-bloco.vencido .guia-lista li{border-left-color:var(--vm)}
+.guia-bloco.agora .guia-lista li{border-left-color:var(--al)}
+.guia-lista li .pt{width:8px;height:8px;border-radius:50%;flex:none;margin-top:7px;background:var(--tx3)}
+.guia-lista li .qd{color:var(--tx3);font-size:12.5px;white-space:nowrap;margin-left:auto;
+  padding-left:8px;font-variant-numeric:tabular-nums}
+.guia-tudoem{display:flex;gap:9px;align-items:center;color:var(--ok);font-size:14px;
+  padding:13px 0 4px;font-weight:600}
+.guia-nota{font-size:13px;color:var(--tx2);margin-top:13px;padding-top:12px;
+  border-top:1px solid var(--bd)}
+.guia-nota b{color:var(--tx)}
+@media(max-width:560px){
+  .guia-topo{padding:15px 17px}
+  .guia-corpo{padding:4px 17px 16px}
+  .guia-conta{margin-left:0;width:100%;justify-content:flex-start}
+  .guia-dia{font-size:18px}
+}
 
 /* tipografia do conteudo */
 .card h2{font-size:17px;font-weight:700;letter-spacing:-.2px;margin:26px 0 11px;
@@ -379,12 +424,23 @@ mark{background:rgba(232,161,58,.35);color:inherit;border-radius:3px;padding:0 2
       <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
       <input id="q" type="search" placeholder="Buscar em tudo (Ctrl+K)" autocomplete="off" spellcheck="false">
     </div>
-    <nav role="tablist"><button data-aba="painel" role="tab" aria-selected="false"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/></svg>Painel<span class="pill pill-b" style="display:none"></span></button><button data-aba="prazos" role="tab" aria-selected="false"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4M16 3v4M3 11h18"/></svg>Prazos<span class="pill pill-b" style="display:none"></span></button><button data-aba="tarefas" role="tab" aria-selected="false"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Tarefas<span class="pill">6</span><span class="pill pill-b" style="display:none"></span></button><button data-aba="rotina" role="tab" aria-selected="false"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Rotina<span class="pill pill-b" style="display:none"></span></button><button data-aba="contatos" role="tab" aria-selected="false"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 20v-1a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v1"/><circle cx="9.5" cy="8" r="3.5"/><path d="M21 20v-1a4 4 0 0 0-3-3.8"/><path d="M16 4.2a3.5 3.5 0 0 1 0 6.8"/></svg>Contatos<span class="pill pill-b" style="display:none"></span></button><button data-aba="duvidas" role="tab" aria-selected="false"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.2 2.4c-.7.2-1.2.9-1.2 1.6v.5"/><path d="M12 17.5h.01"/></svg>Dúvidas<span class="pill pill-b" style="display:none"></span></button><button data-aba="anotacoes" role="tab" aria-selected="false"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3h9l5 5v13H5z"/><path d="M14 3v5h5"/><path d="M9 13h6M9 17h4"/></svg>Anotações<span class="pill pill-b" style="display:none"></span></button><button data-aba="compras" role="tab" aria-selected="false"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4h2l2.4 11.2a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.5L21 8H6"/><circle cx="10" cy="20" r="1.2"/><circle cx="18" cy="20" r="1.2"/></svg>Compras<span class="pill pill-b" style="display:none"></span></button><button data-aba="mala" role="tab" aria-selected="false"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="14" rx="2"/><path d="M9 7V4h6v3"/><path d="M3 12h18"/></svg>Mala<span class="pill pill-b" style="display:none"></span></button><button data-aba="viagens" role="tab" aria-selected="false"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4 3 6.5v14L9 18l6 2.5 6-2.5v-14L15 6.5 9 4z"/><path d="M9 4v14M15 6.5v14"/></svg>Viagens<span class="pill pill-b" style="display:none"></span></button></nav>
+    <nav role="tablist"><button data-aba="painel" role="tab" aria-selected="false"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/></svg>Painel<span class="pill pill-b" style="display:none"></span></button><button data-aba="prazos" role="tab" aria-selected="false"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4M16 3v4M3 11h18"/></svg>Prazos<span class="pill pill-b" style="display:none"></span></button><button data-aba="tarefas" role="tab" aria-selected="false"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Tarefas<span class="pill">16</span><span class="pill pill-b" style="display:none"></span></button><button data-aba="rotina" role="tab" aria-selected="false"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Rotina<span class="pill pill-b" style="display:none"></span></button><button data-aba="contatos" role="tab" aria-selected="false"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 20v-1a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v1"/><circle cx="9.5" cy="8" r="3.5"/><path d="M21 20v-1a4 4 0 0 0-3-3.8"/><path d="M16 4.2a3.5 3.5 0 0 1 0 6.8"/></svg>Contatos<span class="pill pill-b" style="display:none"></span></button><button data-aba="duvidas" role="tab" aria-selected="false"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.2 2.4c-.7.2-1.2.9-1.2 1.6v.5"/><path d="M12 17.5h.01"/></svg>Dúvidas<span class="pill pill-b" style="display:none"></span></button><button data-aba="anotacoes" role="tab" aria-selected="false"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3h9l5 5v13H5z"/><path d="M14 3v5h5"/><path d="M9 13h6M9 17h4"/></svg>Anotações<span class="pill pill-b" style="display:none"></span></button><button data-aba="compras" role="tab" aria-selected="false"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4h2l2.4 11.2a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.5L21 8H6"/><circle cx="10" cy="20" r="1.2"/><circle cx="18" cy="20" r="1.2"/></svg>Compras<span class="pill pill-b" style="display:none"></span></button><button data-aba="mala" role="tab" aria-selected="false"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="14" rx="2"/><path d="M9 7V4h6v3"/><path d="M3 12h18"/></svg>Mala<span class="pill pill-b" style="display:none"></span></button><button data-aba="viagens" role="tab" aria-selected="false"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4 3 6.5v14L9 18l6 2.5 6-2.5v-14L15 6.5 9 4z"/><path d="M9 4v14M15 6.5v14"/></svg>Viagens<span class="pill pill-b" style="display:none"></span></button></nav>
   </div>
 </header>
-<main><section class="aba" id="ab-painel" role="tabpanel"><div class="grade"><div class="kpi dest"><div class="rot">Início do curso</div><div class="val">9</div><div class="sub">dias para 17/08/2026</div><div class="barra"><i style="width:0%"></i></div></div><div class="kpi"><div class="rot">Tarefas pendentes</div><div class="val" id="kpi-tar-val">6</div><div class="sub" id="kpi-tar-sub">3 já concluídas</div></div><div class="kpi"><div class="rot">Turma</div><div class="val">CAO-II</div><div class="sub">2026 / 2027, CAES</div></div><div class="kpi"><div class="rot">Formação</div><div class="val">Mestrado</div><div class="sub">Ciências Policiais</div></div></div><div class="aviso"><h3>Pendente agora</h3><ul id="home-tarefas"><li>Enviar Ofício de Apresentação para a mesa SEI 302090130 e liberar a Rotina 13 do SIPA (código 302090000) [14/08/2026] #admin</li><li>Conferir se a conta do Banco do Brasil não é "Conta Salário" e se o nome não está no CADIN [14/08/2026] #admin</li><li>Decidir opção de desconto SIPA: Alojamento (R$ 30,35) ou Vestiário (R$ 21,52), e cessar o equivalente na OPM de origem [17/08/2026] #admin</li><li>Se aplicável: pedir Ajuda de Custo (oficial de outro município) #admin</li><li>Atualizar STATUS.md e PRAZOS.md com a situação atual do curso (módulo/disciplina em andamento) #curso</li><li>Ficar de olho no Recadastramento Anual + Inspeção de Saúde (IAS) próximo do aniversário #admin</li></ul></div><div class="card"><blockquote data-b>Painel principal. Ler isso primeiro em qualquer sessão nova ("onde paramos?"). Atualizado em: 06/08/2026</blockquote>
-<h2 data-b>Novidade de 06/08/2026: publicação automática</h2>
-<p data-b>O painel agora se publica sozinho. Editou um <code>.md</code> e deu push (ou editou pela web do GitHub, do celular), o painel regenera e vai para o ar sem ninguém rodar nada. Rodar <code>python gerar_painel.py</code> na mão continua valendo para conferir antes de subir. Detalhe e o histórico do build quebrado do Pages estão em <a href="#anotacoes" class="lnk-aba">ANOTACOES.md</a>.</p>
+<main><section class="aba" id="ab-painel" role="tabpanel"><section class="guia"><div class="guia-topo"><div><p class="guia-ola" id="guia-ola">Central do CAO</p><h2 class="guia-dia" id="guia-dia">Carregando o dia...</h2><p class="guia-fase" id="guia-fase"></p></div><div class="guia-conta" id="guia-conta"></div></div><div class="guia-corpo" id="guia-corpo"></div></section><div class="grade"><div class="kpi dest"><div class="rot" id="kpi-curso-rot">Curso</div><div class="val" id="kpi-curso-val">...</div><div class="sub" id="kpi-curso-sub">CAO-II/26</div><div class="barra"><i id="kpi-curso-barra" style="width:0%"></i></div></div><div class="kpi"><div class="rot">Tarefas pendentes</div><div class="val" id="kpi-tar-val">16</div><div class="sub" id="kpi-tar-sub">4 já concluídas</div></div><div class="kpi lista-kpi" data-aba="ab-compras" data-rot="Compras"><div class="rot">Compras</div><div class="val">...</div><div class="sub">antes de viajar</div><div class="barra"><i style="width:0%"></i></div></div><div class="kpi lista-kpi" data-aba="ab-mala" data-rot="Mala"><div class="rot">Mala</div><div class="val">...</div><div class="sub">itens separados</div><div class="barra"><i style="width:0%"></i></div></div></div><div class="card"><blockquote data-b>Painel principal. Ler isso primeiro em qualquer sessão nova ("onde paramos?"). Atualizado em: 11/08/2026</blockquote>
+<h2 data-b>Novidade de 11/08/2026: o painel virou guia do dia</h2>
+<p data-b>Abrir o painel agora responde à pergunta certa: <strong>o que eu faço hoje</strong>. A abertura mostra a data por extenso, em que ponto da semana você está (em casa, dia de viajar, semana de aula, dia de voltar), a contagem para o próximo marco e as tarefas separadas em <em>hoje</em>, <em>amanhã</em> e <em>ainda esta semana</em>. Os cartões de Compras e Mala mostram quantos itens ainda faltam, lendo o que você já ticou.</p>
+<p data-b>Duas regras que nasceram daí:</p>
+<ul data-b>
+<li><strong>Tarefa sem data não aparece no guia.</strong> A data em <code>[dd/mm/aaaa]</code> no</li>
+</ul>
+<p data-b><a href="#tarefas" class="lnk-aba">TAREFAS.md</a> é o que faz o item ser cobrado no dia certo.</p>
+<ul data-b>
+<li><strong>Toda conta de tempo é feita no navegador</strong>, nunca na geração. O painel</li>
+</ul>
+<p data-b>publicado só é regerado quando um <code>.md</code> muda, então contador calculado na geração congela: o cartão ficou de 08/08 a 11/08 dizendo "9 dias para o início" quando já faltavam 6. Corrigido.</p>
+<h2 data-b>Publicação automática (06/08/2026)</h2>
+<p data-b>O painel se publica sozinho. Editou um <code>.md</code> e deu push (ou editou pela web do GitHub, do celular), o painel regenera e vai para o ar sem ninguém rodar nada. Rodar <code>python gerar_painel.py</code> na mão continua valendo para conferir antes de subir. Detalhe e o histórico do build quebrado do Pages estão em <a href="#anotacoes" class="lnk-aba">ANOTACOES.md</a>.</p>
 <h2 data-b>Onde estou agora</h2>
 <ul data-b>
 <li>Sou <strong>Oficial-Aluno do CAO/II-2026</strong> (2ª Turma) — <strong>Programa de Mestrado Profissional em Ciências Policiais de Segurança e Ordem Pública</strong>, no <strong>CAES "Cel Nelson Freire Terra"</strong> (região da Barra Funda, São Paulo — Av. Rio Branco / Av. Duque de Caxias).</li>
@@ -397,17 +453,25 @@ mark{background:rgba(232,161,58,.35);color:inherit;border-radius:3px;padding:0 2
 <li><strong>Falta preencher</strong>: em qual módulo/disciplina o curso está agora, o que já foi entregue no curso em si (não só na seleção/recepção).</li>
 </ul>
 <h2 data-b>Próximo passo</h2>
-<ul data-b class="tarefas">
-<li class="pend" data-mk="94f9e6bccb"><span class="box"></span><span><strong>Josemar: ligar na loja de fardamento esta semana</strong> e resolver o bloco 1 da aba</span></li>
-</ul>
-<p data-b><a href="#compras" class="lnk-aba">Compras</a>. É o único que depende de terceiro: 2 camisas de passeio, 2 camisetas de serviço, aplicação de tarjeta e logomarca, 4 distintivos de OPM do CAES e a tarjeta administrativa de acrílico. Se não sair esta semana, não volta a tempo do dia 16/08. O resto (calça social, boina, camisa social e gravata do S-1) é peça pronta, dá até 12/08.</p>
-<ul data-b class="tarefas">
-<li class="pend" data-mk="58e41973ba"><span class="box"></span><span>Josemar: me contar o que está rolando no curso agora (módulo atual, próxima entrega, próxima aula presencial) pra eu atualizar <a href="#prazos" class="lnk-aba">PRAZOS.md</a> e este painel.</span></li>
-<li class="pend" data-mk="7970391cbe"><span class="box"></span><span>Enviar Ofício de Apresentação pra mesa SEI 302090130 e liberar a Rotina 13 do SIPA (código 302090000), se ainda não fez — matrícula e verbas dependem disso (ver <a href="#rotina" class="lnk-aba">ROTINA.md</a>).</span></li>
-<li class="pend" data-mk="a53a266b3a"><span class="box"></span><span>Regularizar conta Banco do Brasil pro Auxílio Financeiro a Estudantes (não pode ser "Conta Salário", nome não pode estar no CADIN).</span></li>
-</ul>
+<p data-b>O roteiro dia a dia até a viagem está em <a href="#tarefas" class="lnk-aba">TAREFAS.md</a>, com data, e é o que o painel cobra na abertura (por isso aqui é só leitura, para não ter duas listas dizendo a mesma coisa). O que trava tudo:</p>
+<ol data-b>
+<li><strong>Ligar hoje na loja de fardamento.</strong> É o único bloco que depende de terceiro:</li>
+</ol>
+<p data-b>2 camisas de passeio, 2 camisetas de serviço, aplicação de tarjeta e logomarca, 4 distintivos de OPM do CAES e a tarjeta administrativa de acrílico. Se a aplicação não entrar esta semana, não volta a tempo do dia 16/08.</p>
+<ol data-b>
+<li><strong>Escrever ao SAE</strong> com as perguntas de <a href="#duvidas" class="lnk-aba">DUVIDAS.md</a> (horário de</li>
+</ol>
+<p data-b>chegada no domingo, tamanho da cama, armário, estacionamento). A resposta muda a mala e a hora de sair.</p>
+<ol data-b>
+<li><strong>Fechar como vou viajar</strong> (carro ou ônibus) e preencher em <a href="#viagens" class="lnk-aba">VIAGENS.md</a>.</li>
+</ol>
+<p data-b>Se for de carro, o cartão de estacionamento precisa ser pedido antes.</p>
+<ol data-b>
+<li>Josemar: me contar o que está rolando no curso (módulo, entregas, avaliações)</li>
+</ol>
+<p data-b>pra eu completar <a href="#prazos" class="lnk-aba">PRAZOS.md</a>.</p>
 <h2 data-b>Prazos mais próximos</h2>
-<p data-b>Ver <a href="#prazos" class="lnk-aba">PRAZOS.md</a> para a lista completa.</p>
+<p data-b>Agosto inteiro, dia a dia, está em <a href="#prazos" class="lnk-aba">PRAZOS.md</a>.</p>
 <h2 data-b>Painel visual</h2>
 <p data-b>No ar em https://esdraaline.github.io/central-cao — <strong>gerado</strong> a partir dos <code>.md</code>, nunca editado à mão. Depois de mexer em qualquer <code>.md</code>, rode <code>python gerar_painel.py</code> (ou só dê push: a publicação é automática).</p>
 <p data-b>Como o painel funciona por dentro (caixinhas ticáveis, marcação parcial, sincronização entre aparelhos, aba Tarefas): <span class="arq" title="Arquivo na pasta local: PAINEL.md"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2h8l4 4v16H6z"/><path d="M14 2v4h4"/></svg><code>PAINEL.md</code></span>.</p>
@@ -417,22 +481,25 @@ mark{background:rgba(232,161,58,.35);color:inherit;border-radius:3px;padding:0 2
 <li>Documentos pesados (PDF de estudo, edital, PP) ficam só aqui local + Google Drive. A pasta <code>CAO 2026/</code> inteira está no <code>.gitignore</code> e <strong>não vai para o GitHub</strong>.</li>
 <li>O que vira repositório: os .md, o <code>gerar_painel.py</code> e a pasta <code>docs/</code> (o painel publicado).</li>
 </ul></div></section>
-<section class="aba" id="ab-prazos" role="tabpanel"><div class="card"><blockquote data-b>Calendário vivo. Datas já cumpridas ficam marcadas como histórico (não apagar — serve de referência pro próximo ciclo/pra memória do curso).</blockquote>
+<section class="aba" id="ab-prazos" role="tabpanel"><div class="card"><blockquote data-b>Calendário vivo. Datas já cumpridas ficam marcadas como histórico (não apagar — serve de referência pro próximo ciclo/pra memória do curso). O que tem dia marcado e precisa virar ação também entra em <a href="#tarefas" class="lnk-aba">TAREFAS.md</a>: é de lá que sai o guia de abertura do painel.</blockquote>
+<h2 data-b>Agosto de 2026 — reta final e primeira semana</h2>
+<div class="tab-wrap" data-b><table><thead><tr><th>Data</th><th>Dia</th><th>O que</th></tr></thead><tbody><tr><td>11/08</td><td>terça</td><td>Ligar na loja de fardamento e comprar camisas e camisetas (bloco que depende de aplicação)</td></tr><tr><td>12/08</td><td>quarta</td><td>Comprar as peças prontas: calça social, boina, camisa social e gravata do S-1</td></tr><tr><td>13/08</td><td>quinta</td><td>Cartão de estacionamento do CAES, se for de carro (pedir à AAp)</td></tr><tr><td>14/08</td><td>sexta</td><td>Ofício de Apresentação na mesa SEI 302090130 + Rotina 13 do SIPA. Conta do Banco do Brasil regularizada. Retirar o que ficou na loja</td></tr><tr><td>15/08</td><td>sábado</td><td>Arrumar a mala (<a href="#mala" class="lnk-aba">MALA.md</a>) e separar os documentos de mão</td></tr><tr><td><strong>16/08</strong></td><td><strong>domingo</strong></td><td><strong>Deslocamento para São Paulo</strong> (<a href="#viagens" class="lnk-aba">VIAGENS.md</a>)</td></tr><tr><td><strong>17/08</strong></td><td><strong>segunda</strong></td><td><strong>Primeira aula, entrada 08h15.</strong> Início da Rotina 13 do SIPA</td></tr><tr><td>20/08</td><td>quinta</td><td>Fim da primeira semana, volta depois das 11h30</td></tr></tbody></table></div>
 <h2 data-b>Curso (CAO-II/26 — 2ª Turma)</h2>
 <ul data-b>
 <li><strong>Duração</strong>: agosto/2026 a agosto/2027, no CAES "Cel Nelson Freire Terra".</li>
-<li><strong>Rotina 13 do SIPA</strong>: liberada de 17/ago/26 a 22/jan/27 (1º bloco financeiro/administrativo — ver <a href="#rotina" class="lnk-aba">ROTINA.md</a>).</li>
-<li>Próxima entrega / próxima aula presencial: <em>(preencher)</em></li>
+<li><strong>Semana padrão</strong>: viaja domingo, aula de segunda a quinta, volta quinta depois das 11h30 (ver <a href="#rotina" class="lnk-aba">ROTINA.md</a>).</li>
+<li><strong>Rotina 13 do SIPA</strong>: liberada de 17/ago/26 a 22/jan/27 (1º bloco financeiro/administrativo).</li>
+<li>Próxima entrega / próxima avaliação: <em>(preencher quando o CAES divulgar)</em></li>
 <li>Formatura: data/hora/local ainda a ratificar pela turma (ver checklist em <a href="#rotina" class="lnk-aba">ROTINA.md</a>).</li>
 </ul>
-<h2 data-b>Histórico — processo seletivo (já concluído)</h2>
-<p data-b>Fonte: Edital DEC-005/24/25 (CAO/26), Anexo A.</p>
-<div class="tab-wrap" data-b><table><thead><tr><th>Etapa</th><th>Data</th></tr></thead><tbody><tr><td>Inscrição</td><td>18/ago/25 a 01/set/25</td></tr><tr><td>Análise das inscrições</td><td>02 a 05/set/25</td></tr><tr><td>Prova escrita (Etapa II)</td><td>26/set/25</td></tr><tr><td>Resultado da prova</td><td>até 03/out/25</td></tr><tr><td>Defesa do PP (Etapa III)</td><td>20 a 31/out/25</td></tr><tr><td>Resultado da defesa</td><td>até 05/nov/25</td></tr><tr><td>Resultado Final</td><td>até 24/nov/25</td></tr><tr><td>Homologação</td><td>até 12/dez/25</td></tr><tr><td>Publicação da homologação (Bol G PM)</td><td>até 17/dez/25</td></tr><tr><td>Publicidade da Convocação</td><td>até 23/jan/26</td></tr><tr><td>Início do curso — 1ª Turma (CAO-I/26)</td><td>fev/26</td></tr><tr><td><strong>Início do curso — 2ª Turma (CAO-II/26, a minha)</strong></td><td>ago/26</td></tr></tbody></table></div>
 <h2 data-b>Prazos do curso em andamento</h2>
 <p data-b><em>(a preencher conforme Josemar for repassando — entregas de trabalhos, provas, apresentações, viagens para módulos presenciais etc.)</em></p>
 <ul data-b class="tarefas">
 <li class="pend" data-mk="2f43b42fd8"><span class="box"></span><span>...</span></li>
-</ul></div></section>
+</ul>
+<h2 data-b>Histórico — processo seletivo (já concluído)</h2>
+<p data-b>Fonte: Edital DEC-005/24/25 (CAO/26), Anexo A.</p>
+<div class="tab-wrap" data-b><table><thead><tr><th>Etapa</th><th>Data</th></tr></thead><tbody><tr><td>Inscrição</td><td>18/ago/25 a 01/set/25</td></tr><tr><td>Análise das inscrições</td><td>02 a 05/set/25</td></tr><tr><td>Prova escrita (Etapa II)</td><td>26/set/25</td></tr><tr><td>Resultado da prova</td><td>até 03/out/25</td></tr><tr><td>Defesa do PP (Etapa III)</td><td>20 a 31/out/25</td></tr><tr><td>Resultado da defesa</td><td>até 05/nov/25</td></tr><tr><td>Resultado Final</td><td>até 24/nov/25</td></tr><tr><td>Homologação</td><td>até 12/dez/25</td></tr><tr><td>Publicação da homologação (Bol G PM)</td><td>até 17/dez/25</td></tr><tr><td>Publicidade da Convocação</td><td>até 23/jan/26</td></tr><tr><td>Início do curso — 1ª Turma (CAO-I/26)</td><td>fev/26</td></tr><tr><td><strong>Início do curso — 2ª Turma (CAO-II/26, a minha)</strong></td><td>ago/26</td></tr></tbody></table></div></div></section>
 <section class="aba" id="ab-tarefas" role="tabpanel">
 <div class="tf-topo">
   <button class="btn" id="tf-exportar" title="Gerar o texto para colar no TAREFAS.md"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 11 5 5 5-5"/><path d="M4 20h16"/></svg> Exportar</button>
@@ -660,8 +727,17 @@ mark{background:rgba(232,161,58,.35);color:inherit;border-radius:3px;padding:0 2
 </ol></div></section>
 <section class="aba" id="ab-duvidas" role="tabpanel"><div class="card"><blockquote data-b>Perguntas em aberto sobre o curso (regras, rotina, SAE, orientador, colegas de turma) e as respostas já obtidas. Formato: pergunta, contexto, resposta (quando resolvida), data.</blockquote>
 <h2 data-b>Em aberto</h2>
+<h3 data-b>Para o SAE (Cap Hiran, <a href="mailto:caessae@policiamilitar.sp.gov.br">caessae@policiamilitar.sp.gov.br</a>) — perguntar antes de 16/08</h3>
+<ol data-b>
+<li><strong>A partir de que horas dá para chegar no alojamento no domingo (16/08)?</strong> Preciso disso para definir a hora de sair de Guararapes.</li>
+<li><strong>Qual o tamanho da cama do alojamento?</strong> O alojamento não fornece roupa de cama e eu levo lençol de casa (solteiro ou box?).</li>
+<li><strong>Como funciona o armário?</strong> Quem entrega a chave, se é uma folha por aluno e se pode deixar material durante a semana.</li>
+<li><strong>Cartão de estacionamento</strong>: se eu for de carro, peço antes por e-mail ou retiro na chegada? A quem?</li>
+<li><strong>Apresentação de segunda (17/08)</strong>: tem formatura ou apresentação formal no primeiro dia? Uniforme é o P-1 normal ou tem alguma exigência específica?</li>
+</ol>
+<h3 data-b>Outras</h3>
 <ul data-b>
-<li><em>(nenhuma registrada ainda — vá anotando aqui conforme surgir)</em></li>
+<li><strong>Restaurante e padaria do entorno abrem domingo à noite?</strong> Se não, a primeira janta tem que sair de casa.</li>
 </ul>
 <h2 data-b>Resolvidas</h2>
 <ul data-b>
@@ -921,21 +997,33 @@ mark{background:rgba(232,161,58,.35);color:inherit;border-radius:3px;padding:0 2
 <section class="aba" id="ab-viagens" role="tabpanel"><div class="card"><blockquote data-b>Deslocamentos ligados ao curso: módulos presenciais, provas, apresentação do PP/monografia etc.</blockquote>
 <h2 data-b>Rotina semanal do curso</h2>
 <p data-b>Durante o curso a semana é <strong>domingo a quinta</strong>: desloca no domingo, dorme no alojamento do CAES, aulas de segunda a quinta e volta na quinta depois das 11h30. O que levar está em <a href="#mala" class="lnk-aba">MALA.md</a>; os horários, em <a href="#rotina" class="lnk-aba">ROTINA.md</a>.</p>
+<div class="tab-wrap" data-b><table><thead><tr><th>Dia</th><th>Movimento</th></tr></thead><tbody><tr><td>Domingo</td><td>Guararapes → São Paulo (CAES, Barra Funda). Instalação no alojamento</td></tr><tr><td>Segunda a quinta</td><td>Aula. Entrada 08h15 todo dia</td></tr><tr><td>Quinta</td><td>Saída às 11h30, São Paulo → Guararapes</td></tr></tbody></table></div>
 <h2 data-b>Programadas</h2>
+<h3 data-b>16/08/2026 (domingo) — primeira ida</h3>
+<p data-b>Primeira semana do CAO-II/26. Aula na segunda, 17/08, às 08h15. Alojamento no próprio prédio do CAES.</p>
 <ul data-b>
-<li><strong>16/08/2026 (domingo)</strong> — deslocamento para São Paulo, primeira semana do CAO-II/26. Início das aulas na segunda, 17/08, às 08h15. Alojamento no próprio prédio do CAES.</li>
+<li><strong>Destino</strong>: CAES "Cel Nelson Freire Terra", região da Barra Funda (Av. Rio Branco / Av. Duque de Caxias).</li>
+<li><strong>Como vou</strong>: <em>(preencher: carro próprio ou ônibus)</em></li>
+<li><strong>Horário de saída</strong>: <em>(preencher depois de fechar o meio de transporte)</em></li>
+<li><strong>Se for de carro</strong>: estacionamento do CAO tem 40 vagas sinalizadas e <strong>exige cartão de estacionamento visível</strong> — pedir à AAp antes de viajar. Motocicleta tem espaço coberto atrás do prédio.</li>
+<li><strong>Chegada no alojamento</strong>: horário de liberação ainda não confirmado, pergunta em aberto no <a href="#duvidas" class="lnk-aba">DUVIDAS.md</a>.</li>
+<li><strong>Levar em mãos</strong> (não na mala): identidade funcional, ofício de apresentação, comprovantes que a SAE pedir, cartão de estacionamento.</li>
+<li><strong>Primeira noite</strong>: não tem rancho. Levar lanche não perecível para domingo à noite (o Terraço e a Padaria Flor da Duque ficam a pé, mas confirmar se abrem no domingo).</li>
 </ul>
+<h3 data-b>20/08/2026 (quinta) — primeira volta</h3>
+<p data-b>Saída depois das 11h30. Volta tudo sujo para casa (não tem lavanderia no alojamento).</p>
 <h2 data-b>Realizadas</h2>
 <ul data-b>
 <li><em>(histórico de viagens já feitas, com data e motivo)</em></li>
 </ul></div></section>
-  <p class="rodape">Gerado a partir dos arquivos <code>.md</code> em 08/08/2026. Para atualizar: edite o .md e rode <code>python gerar_painel.py</code>.</p>
+  <p class="rodape">Gerado a partir dos arquivos <code>.md</code> em 11/08/2026. Para atualizar: edite o .md e rode <code>python gerar_painel.py</code>.</p>
 </main>
 <script>
 var SOL='<svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4"/></svg>',LUA='<svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z"/></svg>';
 var CATEGORIAS=[["curso", "Curso", "#3b7dd8"], ["dissertacao", "Dissertação", "#8b5cf6"], ["admin", "Administrativo", "#e8892b"], ["pessoal", "Pessoal", "#0f9d58"]];
-var BASE=[{"t": "Enviar Ofício de Apresentação para a mesa SEI 302090130 e liberar a Rotina 13 do SIPA (código 302090000)", "d": "2026-08-14", "c": "admin", "f": false}, {"t": "Conferir se a conta do Banco do Brasil não é \"Conta Salário\" e se o nome não está no CADIN", "d": "2026-08-14", "c": "admin", "f": false}, {"t": "Decidir opção de desconto SIPA: Alojamento (R$ 30,35) ou Vestiário (R$ 21,52), e cessar o equivalente na OPM de origem", "d": "2026-08-17", "c": "admin", "f": false}, {"t": "Se aplicável: pedir Ajuda de Custo (oficial de outro município)", "d": null, "c": "admin", "f": false}, {"t": "Atualizar STATUS.md e PRAZOS.md com a situação atual do curso (módulo/disciplina em andamento)", "d": null, "c": "curso", "f": false}, {"t": "Ficar de olho no Recadastramento Anual + Inspeção de Saúde (IAS) próximo do aniversário", "d": null, "c": "admin", "f": false}, {"t": "Organizar a pasta Central CAO (limpeza de duplicados, áudio/vídeo antigo, estrutura de pastas)", "d": "2026-08-04", "c": "pessoal", "f": true}, {"t": "Criar o painel visual em docs/index.html, gerado a partir dos .md", "d": "2026-08-04", "c": "pessoal", "f": true}, {"t": "Criar o cadastro de tarefas com data no painel", "d": "2026-08-04", "c": "pessoal", "f": true}];
+var BASE=[{"t": "Ligar na loja de fardamento e confirmar o prazo de aplicação de tarjeta, logomarca e distintivo de OPM", "d": "2026-08-11", "c": "pessoal", "f": false}, {"t": "Ir à loja comprar as 2 camisas de passeio e as 2 camisetas de serviço, e deixar para aplicar na mesma ida", "d": "2026-08-11", "c": "pessoal", "f": false}, {"t": "Escrever ao SAE (caessae) as dúvidas de chegada no domingo, tamanho da cama e cartão de estacionamento", "d": "2026-08-11", "c": "curso", "f": false}, {"t": "Comprar as peças prontas: calça social, boina, camisa social e gravata do S-1", "d": "2026-08-12", "c": "pessoal", "f": false}, {"t": "Se for de carro: pedir o cartão de estacionamento à AAp do CAES", "d": "2026-08-13", "c": "admin", "f": false}, {"t": "Enviar Ofício de Apresentação para a mesa SEI 302090130 e liberar a Rotina 13 do SIPA (código 302090000)", "d": "2026-08-14", "c": "admin", "f": false}, {"t": "Conferir se a conta do Banco do Brasil não é \"Conta Salário\" e se o nome não está no CADIN", "d": "2026-08-14", "c": "admin", "f": false}, {"t": "Retirar na loja o que ficou para aplicação (confirme a data na ligação de terça)", "d": "2026-08-14", "c": "pessoal", "f": false}, {"t": "Separar os documentos de mão: identidade funcional, ofício de apresentação, comprovantes da SAE", "d": "2026-08-15", "c": "admin", "f": false}, {"t": "Arrumar a mala seguindo a aba Mala", "d": "2026-08-15", "c": "pessoal", "f": false}, {"t": "Viajar para São Paulo com folga para se instalar no alojamento", "d": "2026-08-16", "c": "pessoal", "f": false}, {"t": "Decidir opção de desconto SIPA: Alojamento (R$ 30,35) ou Vestiário (R$ 21,52), e cessar o equivalente na OPM de origem", "d": "2026-08-17", "c": "admin", "f": false}, {"t": "Se aplicável: pedir Ajuda de Custo (oficial de outro município)", "d": "2026-08-17", "c": "admin", "f": false}, {"t": "Atualizar STATUS.md e PRAZOS.md com a situação real do curso (módulo, disciplinas, entregas)", "d": "2026-08-20", "c": "curso", "f": false}, {"t": "Procurar o Cap Gobbo (Seção de Pesquisa) sobre a transformação do PP em dissertação", "d": "2026-08-21", "c": "dissertacao", "f": false}, {"t": "Ficar de olho no Recadastramento Anual + Inspeção de Saúde (IAS) próximo do aniversário", "d": null, "c": "admin", "f": false}, {"t": "Conferência de armário: 78 das 90 peças já estavam em casa", "d": "2026-08-06", "c": "pessoal", "f": true}, {"t": "Organizar a pasta Central CAO (limpeza de duplicados, áudio/vídeo antigo, estrutura de pastas)", "d": "2026-08-04", "c": "pessoal", "f": true}, {"t": "Criar o painel visual em docs/index.html, gerado a partir dos .md", "d": "2026-08-04", "c": "pessoal", "f": true}, {"t": "Criar o cadastro de tarefas com data no painel", "d": "2026-08-04", "c": "pessoal", "f": true}];
 var ICO={"check": "<svg viewBox=\"0 0 24 24\" width=\"13\" height=\"13\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M20 6 9 17l-5-5\"/><\/svg>", "lapis": "<svg viewBox=\"0 0 24 24\" width=\"15\" height=\"15\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M4 20h4L20 8a2.8 2.8 0 0 0-4-4L4 16z\"/><\/svg>", "lixo": "<svg viewBox=\"0 0 24 24\" width=\"15\" height=\"15\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M4 7h16M10 11v6M14 11v6\"/><path d=\"M6 7l1 13h10l1-13\"/><path d=\"M9 7V4h6v3\"/><\/svg>", "cal": "<svg viewBox=\"0 0 24 24\" width=\"12\" height=\"12\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"3\" y=\"5\" width=\"18\" height=\"16\" rx=\"2\"/><path d=\"M8 3v4M16 3v4M3 11h18\"/><\/svg>", "vazio": "<svg viewBox=\"0 0 24 24\" width=\"46\" height=\"46\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><path d=\"M8.5 13.5s1.2 1.5 3.5 1.5 3.5-1.5 3.5-1.5\"/><path d=\"M9 9.5h.01M15 9.5h.01\"/><\/svg>", "copiar": "<svg viewBox=\"0 0 24 24\" width=\"15\" height=\"15\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"9\" y=\"9\" width=\"12\" height=\"12\" rx=\"2\"/><path d=\"M5 15V5a2 2 0 0 1 2-2h10\"/><\/svg>"};
+window.CURSO={"inicio": "2026-08-17", "fim": "2027-08-17", "viagem": "2026-08-16"};
 window.SUPA_CFG={"url": "https://lmmxaaoqygarwxbwwhlp.supabase.co", "key": "sb_publishable_8_rZ9ygJvrEoSSlgEJ0IMQ_Qi8mvMT-"};
 
 (function(){
@@ -1085,6 +1173,8 @@ window.SUPA_CFG={"url": "https://lmmxaaoqygarwxbwwhlp.supabase.co", "key": "sb_p
     var pct=total?Math.round(tem*100/total):0;
     topo.querySelector('.mk-n').textContent=tem+' de '+total;
     topo.querySelector('.mk-barra i').style.width=pct+'%';
+    /* os cartoes de Compras e Mala da abertura leem daqui */
+    if(window.GUIA)GUIA.listas();
   }
 
   /* monta o contador no topo e os steppers dos itens com quantidade */
@@ -1267,6 +1357,198 @@ window.SUPA_CFG={"url": "https://lmmxaaoqygarwxbwwhlp.supabase.co", "key": "sb_p
   document.addEventListener('keydown',function(e){
     if((e.ctrlKey||e.metaKey)&&e.key==='k'){e.preventDefault();inp.focus();inp.select();}
   });
+})();
+
+
+/* ========================= guia do dia =========================
+   Responde "o que eu faco hoje?" na abertura do painel.
+
+   Regra de ouro: tudo aqui e calculado no navegador, com a data de
+   quem esta olhando. O painel publicado so e regerado quando um .md
+   muda, entao qualquer conta feita na geracao envelhece em silencio
+   (foi o que aconteceu: o cartao ficou dias dizendo "9 dias para o
+   inicio" depois que ja faltavam 6).                             */
+(function(){
+  var C=window.CURSO||{};
+  var SEM=['domingo','segunda-feira','terça-feira','quarta-feira',
+           'quinta-feira','sexta-feira','sábado'];
+  var MES=['janeiro','fevereiro','março','abril','maio','junho','julho',
+           'agosto','setembro','outubro','novembro','dezembro'];
+
+  function dt(iso){var p=String(iso).split('-');
+    return new Date(+p[0],+p[1]-1,+p[2]);}
+  function hoje(){var d=new Date();return new Date(d.getFullYear(),d.getMonth(),d.getDate());}
+  function dias(a,b){return Math.round((b-a)/864e5);}
+  function curto(d){return ('0'+d.getDate()).slice(-2)+'/'+('0'+(d.getMonth()+1)).slice(-2);}
+  function el(s){return document.querySelector(s);}
+
+  var INICIO=C.inicio?dt(C.inicio):null;
+  var FIM=C.fim?dt(C.fim):null;
+  var VIAGEM1=C.viagem?dt(C.viagem):null;
+
+  /* ---- onde estou na semana do curso ----
+     A semana se repete: viaja domingo, aula de segunda a quinta, volta
+     quinta depois das 11h30 (ROTINA.md). Antes da primeira viagem, o
+     marco e ela mesma.                                              */
+  function marco(h){
+    var dow=h.getDay();  /* 0=domingo */
+    if(VIAGEM1&&h<VIAGEM1){
+      var n=dias(h,VIAGEM1);
+      return {n:n,alvo:VIAGEM1,
+        rot:n===0?'hoje é dia de viajar':(n===1?'dia para a viagem':'dias para a viagem'),
+        sub:'primeira ida, '+SEM[VIAGEM1.getDay()]+' '+curto(VIAGEM1),
+        fase:n===0?'Hoje você viaja para São Paulo. Aula amanhã, 08h15.':
+             'Você está em casa. A primeira semana no CAES começa em '+
+             SEM[VIAGEM1.getDay()]+', '+curto(VIAGEM1)+'.'};
+    }
+    if(FIM&&h>FIM)return {n:0,alvo:null,rot:'curso concluído',sub:'agosto de 2027',
+                          fase:'Curso concluído.'};
+    if(dow===0)return {n:0,alvo:h,rot:'hoje é dia de viajar',sub:'aula amanhã, 08h15',
+      fase:'Hoje você desloca para o CAES. A semana vai até quinta, 11h30.'};
+    if(dow>=1&&dow<=4){
+      var qui=new Date(h);qui.setDate(h.getDate()+(4-dow));
+      var n2=dias(h,qui);
+      return {n:n2,alvo:qui,
+        rot:n2===0?'volta hoje, 11h30':(n2===1?'dia para voltar':'dias para voltar'),
+        sub:'quinta, '+curto(qui),
+        fase:'Semana de aula no CAES. '+(dow===4?'Hoje você volta depois das 11h30.':
+             'Você volta na quinta, depois das 11h30.')};
+    }
+    /* sexta ou sabado: proximo domingo */
+    var dom=new Date(h);dom.setDate(h.getDate()+(7-dow));
+    var n3=dias(h,dom);
+    return {n:n3,alvo:dom,rot:n3===1?'dia para a viagem':'dias para a viagem',
+      sub:'domingo, '+curto(dom),
+      fase:'Você está em casa. Próxima ida ao CAES no domingo, '+curto(dom)+'.'};
+  }
+
+  function saudacao(){
+    var h=new Date().getHours();
+    return h<12?'Bom dia, Capitão':(h<18?'Boa tarde, Capitão':'Boa noite, Capitão');
+  }
+
+  function topo(){
+    var h=hoje(), m=marco(h);
+    var od=el('#guia-ola'), dd=el('#guia-dia'), fd=el('#guia-fase'), cd=el('#guia-conta');
+    if(od)od.textContent=saudacao();
+    if(dd)dd.textContent=SEM[h.getDay()].replace(/^./,function(c){return c.toUpperCase()})+
+      ', '+h.getDate()+' de '+MES[h.getMonth()];
+    if(fd)fd.textContent=m.fase;
+    if(cd)cd.innerHTML=m.n>0?('<b>'+m.n+'</b><span>'+m.rot+'<br>'+m.sub+'</span>'):
+      ('<span style="font-size:13.5px;font-weight:700">'+
+       m.rot.replace(/^./,function(c){return c.toUpperCase()})+'<br>'+
+       '<span style="font-weight:400;opacity:.9">'+m.sub+'</span></span>');
+    /* KPI do curso: dias para comecar, ou quanto ja andou */
+    var kr=el('#kpi-curso-rot'),kv=el('#kpi-curso-val'),ks=el('#kpi-curso-sub'),
+        kb=el('#kpi-curso-barra');
+    if(kv&&INICIO&&FIM){
+      if(h<INICIO){
+        var n=dias(h,INICIO);
+        kr.textContent='Início do curso';kv.textContent=n;
+        ks.textContent=(n===1?'dia para ':'dias para ')+curto(INICIO)+'/'+INICIO.getFullYear();
+        kb.style.width='0%';
+      }else if(h>FIM){
+        kr.textContent='Curso';kv.textContent='Concluído';
+        ks.textContent='agosto de 2027';kb.style.width='100%';
+      }else{
+        var pct=Math.round(dias(INICIO,h)*100/dias(INICIO,FIM));
+        kr.textContent='Curso em andamento';kv.textContent=pct+'%';
+        ks.textContent='faltam '+dias(h,FIM)+' dias';kb.style.width=pct+'%';
+      }
+    }
+  }
+
+  /* ---- o que fazer: vem das tarefas com data (TAREFAS.md + as que voce
+     cadastra no painel). Quem chama e o app de tarefas, a cada desenho. */
+  function esc(s){return String(s).replace(/[&<>"]/g,function(c){
+    return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]});}
+
+  /* cor da categoria: o mapa do app de tarefas e privado, entao remonto aqui */
+  var COR={};
+  (window.CATEGORIAS||[]).forEach(function(c){COR[c[0]]=c[2]});
+
+  function linha(t,mostraData){
+    var cor=t.cat?(COR[t.cat]||''):'';
+    var quando='';
+    if(mostraData&&t.data){
+      var d=dt(t.data), n=dias(hoje(),d);
+      quando='<span class="qd">'+SEM[d.getDay()].slice(0,3)+' '+curto(d)+'</span>';
+      if(n<0)quando='<span class="qd">venceu '+curto(d)+'</span>';
+    }
+    return '<li><span class="pt"'+(cor?' style="background:'+cor+'"':'')+'></span>'+
+           '<span>'+esc(t.txt)+'</span>'+quando+'</li>';
+  }
+
+  function tarefas(g){
+    var alvo=el('#guia-corpo');
+    if(!alvo)return;
+    var out='';
+    var bloco=function(arr,rot,cls,comData){
+      if(!arr||!arr.length)return;
+      out+='<div class="guia-bloco '+(cls||'')+'"><div class="guia-cab">'+rot+
+           '<span class="n">'+arr.length+'</span></div><ul class="guia-lista">'+
+           arr.map(function(t){return linha(t,comData)}).join('')+'</ul></div>';
+    };
+    bloco(g.atrasadas,'Atrasado, resolver primeiro','vencido',true);
+    bloco(g.hoje,'Hoje você precisa','agora',false);
+    bloco(g.amanha,'Amanhã','',false);
+    /* "esta semana" e ate o domingo que vem, nao "os proximos 7 dias": o que
+       cai depois disso vira ruido no cartao de abertura e continua na aba
+       Tarefas. Durante o curso, o domingo e justamente o dia de viajar.   */
+    var h=hoje(), fim=new Date(h);
+    fim.setDate(h.getDate()+(h.getDay()===0?0:7-h.getDay()));
+    var perto=[],longe=[];
+    (g.semana||[]).forEach(function(t){
+      (t.data&&dt(t.data)<=fim?perto:longe).push(t);
+    });
+    longe=longe.concat(g.depois||[]);
+    bloco(perto,h.getDay()===0?'Ainda hoje':'Ainda esta semana','',true);
+    if(!out){
+      out='<div class="guia-tudoem">'+(window.ICO&&ICO.check?ICO.check:'')+
+          'Nada com prazo para hoje nem para esta semana.</div>';
+    }
+    /* rodape: o que existe mas nao cabe no foco de hoje */
+    var resto=[];
+    if(longe.length)resto.push('<b>'+longe.length+'</b> '+
+      (longe.length===1?'tarefa mais adiante':'tarefas mais adiante'));
+    if(g.semdata&&g.semdata.length)resto.push('<b>'+g.semdata.length+'</b> '+
+      (g.semdata.length===1?'sem data marcada':'sem data marcada'));
+    if(resto.length)
+      out+='<p class="guia-nota">Também tem '+resto.join(' e ')+
+           '. Estão na aba Tarefas.</p>';
+    alvo.innerHTML=out;
+  }
+
+  /* ---- quanto falta nas listas ticaveis (Compras, Mala) ---- */
+  function listas(){
+    var estado=(window.TICADOS&&TICADOS.todos&&TICADOS.todos())||{};
+    [].forEach.call(document.querySelectorAll('.lista-kpi'),function(k){
+      var sec=document.getElementById(k.getAttribute('data-aba'));
+      if(!sec){k.style.display='none';return;}
+      var itens=sec.querySelectorAll('ul.tarefas li[data-mk]');
+      if(!itens.length){k.style.display='none';return;}
+      var tem=0,total=0;
+      [].forEach.call(itens,function(li){
+        var tot=parseInt(li.getAttribute('data-qtd')||'0',10)||1;
+        var v=estado[sec.id+'/'+li.getAttribute('data-mk')];
+        total+=tot;tem+=Math.min((v&&v.n)||0,tot);
+      });
+      var falta=total-tem, pct=total?Math.round(tem*100/total):0;
+      k.querySelector('.val').textContent=falta?falta:'ok';
+      k.querySelector('.sub').textContent=falta?
+        (falta===1?'item ainda falta':'itens ainda faltam'):
+        ('tudo marcado, '+total+' itens');
+      k.querySelector('.barra i').style.width=pct+'%';
+      k.classList.toggle('dest',falta>0&&k.getAttribute('data-aba')==='ab-compras');
+    });
+  }
+
+  /* marco fica exposto para conferir o texto de cada dia da semana sem
+     precisar esperar o dia chegar: GUIA.marco(new Date(2026,7,19))       */
+  window.GUIA={topo:topo,tarefas:tarefas,listas:listas,marco:marco};
+  topo();listas();
+  /* vira o dia com o painel aberto (celular que fica na tela): refaz o topo */
+  setInterval(topo,10*60*1000);
 })();
 
 
@@ -1623,14 +1905,8 @@ window.SUPA_CFG={"url": "https://lmmxaaoqygarwxbwwhlp.supabase.co", "key": "sb_p
                      (g.hoje.length?(g.hoje.length+' para hoje'):'nenhuma atrasada');
       ks.style.color=atras?'var(--vm)':'';
     }
-    var lh=el('#home-tarefas');
-    if(lh){
-      var prox=g.atrasadas.concat(g.hoje,g.amanha,g.semana,g.depois,g.semdata).slice(0,6);
-      lh.innerHTML=prox.length?prox.map(function(t){
-        var d=t.data?deIso(t.data):null;
-        return '<li>'+esc(t.txt)+(d?' <b>('+rotuloData(d)+')</b>':'')+'</li>';
-      }).join(''):'<li>Nada pendente. Tudo em dia.</li>';
-    }
+    /* guia do dia (cartao de abertura): mesma fonte, outra leitura */
+    if(window.GUIA)GUIA.tarefas(g);
   }
 
   /* -------------------------- exportar / importar ------------------------ */

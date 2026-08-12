@@ -60,7 +60,7 @@ Se aparecer alguma coisa na hora de arrumar a mala, anote aqui.
 
 ## Pendente, mas não é compra
 
-- [ ] **Ofício de Apresentação** — não é compra nem é papel para levar: é envio da OPM à mesa **SEI 302090130**, junto com a liberação da Rotina 13 do SIPA. Depende do B/1, então acione cedo. Detalhe em [ROTINA.md](ROTINA.md).
+- [ ] **Ofício de Apresentação** — não é compra nem é papel para levar: é envio da OPM à mesa **SEI 302090130**, junto com a liberação da Rotina 13 do SIPA. Depende da P/1, então acione cedo. Detalhe em [ROTINA.md](ROTINA.md).
 
 ## Onde comprar
 - **Fardamento, distintivos e aplicação**: loja de fardamento militar / cooperativa. É a que precisa de prazo.

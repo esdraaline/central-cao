@@ -91,7 +91,7 @@ Referência oficial: **R-5-PM, 6ª Ed. v.2** (Regulamento de Uniformes). Lista d
 
 **É ato eletrônico, não documento de mão.** O slide do SAE só manda enviar ao SEI; nem ele,
 nem o edital, nem as orientações de 12/08 pedem via impressa na apresentação. Quem encaminha
-é a **OPM de origem** (2º BPM/I, na prática pelo B/1, com assinatura do comandante), não o
+é a **OPM de origem** (2º BPM/I, na prática pela **P/1**, com assinatura do comandante), não o
 próprio oficial-aluno. Por isso a tarefa é acionar e acompanhar, e depende de terceiro dentro
 do quartel: começar cedo, não na véspera.
 

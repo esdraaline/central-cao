@@ -10,7 +10,7 @@
 | 11/08 | terça | Ligar na loja de fardamento e comprar camisas e camisetas (bloco que depende de aplicação) |
 | 12/08 | quarta | Comprar as peças prontas: calça social, boina, camisa social e gravata do S-1 |
 | 13/08 | quinta | Cartão de estacionamento do CAES, se for de carro (pedir à AAp) |
-| 12/08 | quarta | Acionar o B/1 para o Ofício de Apresentação (SEI 302090130) e a Rotina 13 do SIPA. Depende de assinatura, por isso saiu da sexta |
+| 12/08 | quarta | Acionar a P/1 para o Ofício de Apresentação (SEI 302090130) e a Rotina 13 do SIPA. Depende de assinatura, por isso saiu da sexta |
 | 14/08 | sexta | Conferir se a mesa SEI recebeu o ofício. Conta do Banco do Brasil regularizada. Retirar o que ficou na loja. Comprar o cadeado do armário |
 | 15/08 | sábado | Arrumar a mala ([MALA.md](MALA.md)) e separar os documentos de mão. **O alojamento já abre à tarde**, então este pode virar o dia da viagem |
 | **16/08** | **domingo** | **Deslocamento para São Paulo** ([VIAGENS.md](VIAGENS.md)), se não tiver ido no sábado |

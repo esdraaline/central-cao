@@ -19,7 +19,7 @@
 - [ ] Comprar o cadeado do armário (o do CAES não tem chave) e etiqueta + caneta permanente para as marmitas [14/08/2026] #pessoal
 - [ ] Vestir o S-1 inteiro em casa para ver o que precisa de ajuste antes de falar com a ConfecBell [15/08/2026] #pessoal
 - [ ] Separar a farda social completa (S-1) para deixar guardada no CAES: paletó, camisa social, gravata, calça social, quepe e tarjeta administrativa [15/08/2026] #pessoal
-- [ ] Acionar o B/1 do 2º BPM/I para o Ofício de Apresentação (mesa SEI 302090130) e a liberação da Rotina 13 do SIPA (código 302090000). Depende de assinatura e tramitação, então não deixe para sexta [12/08/2026] #admin
+- [ ] Acionar a P/1 do 2º BPM/I para o Ofício de Apresentação (mesa SEI 302090130) e a liberação da Rotina 13 do SIPA (código 302090000). Depende de assinatura e tramitação, então não deixe para sexta [12/08/2026] #admin
 - [ ] Conferir se a mesa SEI 302090130 recebeu o ofício e anotar o número do processo no celular [14/08/2026] #admin
 - [ ] Conferir se a conta do Banco do Brasil não é "Conta Salário" e se o nome não está no CADIN [14/08/2026] #admin
 - [ ] Retirar na loja o que ficou para aplicação (confirme a data na ligação de terça) [14/08/2026] #pessoal

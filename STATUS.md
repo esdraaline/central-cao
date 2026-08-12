@@ -73,7 +73,7 @@ dizendo a mesma coisa). O que trava tudo:
 3. **Fechar sábado ou domingo e como vou** (carro ou ônibus), preenchendo
    [VIAGENS.md](VIAGENS.md). Se for de carro, o cartão de estacionamento precisa ser
    pedido antes.
-4. **Acionar o B/1 pelo Ofício de Apresentação** (mesa SEI 302090130) e pela
+4. **Acionar a P/1 pelo Ofício de Apresentação** (mesa SEI 302090130) e pela
    liberação da Rotina 13 do SIPA. Não é papel para levar na mala: é ato eletrônico
    da OPM, e é dele que dependem a matrícula, a adição, a Ajuda de Custo e o Auxílio
    Financeiro a Estudantes. Estava marcado para sexta; passou para hoje porque

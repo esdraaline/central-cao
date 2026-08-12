@@ -6,7 +6,7 @@
 ## Em aberto
 
 ### Para o SAE (Cap Hiran, caessae@policiamilitar.sp.gov.br) — perguntar antes de 16/08
-1. **Chego no domingo (16/08) à noite. Tem restrição de horário para entrar no alojamento?** Quem recebe, e preciso avisar antes?
+1. **Chego no domingo (16/08) por volta das 22h. Tem restrição de horário para entrar no alojamento?** Quem recebe nesse horário, e preciso avisar antes?
 2. **"Passeio completo" nas atividades externas é o S-1 ou o P-1?** No R-5, "Passeio Completo" é o nome da seção dos uniformes sociais (Art. 49). Se for S-1 mesmo, o quepe deixa de ser item de cerimônia e passa a ser de rotina.
 3. **EPI**: qual EPI é esperado já na primeira semana, ou isso só se define depois que sair o QTS?
 4. **O SAE quer alguma via impressa no dia da apresentação?** O Ofício de Apresentação vai pela mesa SEI 302090130, mas vale confirmar se esperam cópia em mãos ou algum comprovante no dia 17.

@@ -11,7 +11,7 @@
 - [ ] Conferir distintivos, insígnias e tarjetas em **cada** peça (ver checagem no fim desta seção)
 - [ ] Providenciar o **distintivo de OPM do CAES** — vai na manga direita das camisas de passeio e da gandola. É o "brasão do CAES" do bizu. O colega disse que não cobraram, mas é o certo pelo R-5.
 - [ ] Comprar as camisetas de serviço que faltam (ver quadro abaixo — tem detalhe importante)
-- [ ] Combinar com o amigo da carona o horário de saída e o espaço de bagagem
+- [ ] Combinar com o amigo da carona o espaço de bagagem (saída às 15h)
 
 ## Uniforme — o que levar
 Referência: **R-5-PM, 6ª Ed. v.2** (Regulamento de Uniformes). O do dia a dia é o **P-1 (Passeio 1)**; o **B-1 (Básico Operacional 1)** entra na instrução e nas saídas externas.
@@ -32,14 +32,14 @@ Composição: quepe, camisa de passeio cinza-claro, camiseta de serviço cinza-b
 > **O quepe é substituído pela boina cinza-bandeirante** em trânsito e nas atividades administrativas (Art. 45, § 1º, item 2). No curso é isso que vale — o quepe só se tiver cerimônia. É por isso que a boina fica guardada no alojamento e você só põe ao sair para área descoberta.
 
 - [ ] 2 calças sociais cinza-bandeirante
-- [ ] 3 camisas de passeio cinza-claro *(ver nota de quantidade)*
+- [ ] 1 camisa de passeio cinza-claro *(é a única que tenho até a compra de segunda; vai engomada)*
 - [ ] Cinto de serviço cinza-bandeirante
 - [ ] Sapatos pretos (engraxados)
 - [ ] 5 pares de meias sociais pretas
 - [ ] Boina cinza-bandeirante *(a reserva, até comprar a nova na segunda)*
 - [ ] Quepe cinza-bandeirante *(no P-1 só em cerimônia, mas ele é a cobertura do S-1 — ver a seção do social)*
 
-**Nota de quantidade**: você falou em 2 jogos de P-1. A calça aguenta bem 2 para os 4 dias, mas a camisa é a peça que sofre. Se tiver uma terceira, leve — sai de 2 dias por camisa para 1,3.
+**Nota de quantidade**: confirmado em 12/08 que é **1 camisa de passeio** em casa. Ela veste a segunda; as outras 2 saem da ConfecBell na tarde de segunda e cobrem terça a quinta. Se a loja não tiver o tamanho, a semana roda com uma camisa só, então vale a pena não deixar a compra para o fim da tarde.
 
 ### B-1 — instrução e missão externa (Art. 23)
 Composição: boina cinza-bandeirante, gandola cinza-bandeirante, camiseta de serviço cinza-bandeirante, calça operacional cinza-bandeirante, cinto de serviço cinza-bandeirante, meias pretas, coturnos pretos.
@@ -159,7 +159,7 @@ nome vira marmita de todo mundo.
 - [ ] Detergente, esponja e pano de prato
 - [ ] Café, açúcar/adoçante e filtro (se for usar a cafeteira)
 - [ ] Garrafa de água
-- [ ] **Janta de domingo**, não só lanche: a chegada é à noite e ninguém confirmou que os lugares do entorno abrem
+- [ ] **Janta de domingo**, não só lanche: a chegada é por volta das 22h e contar com o entorno aberto nesse horário é aposta
 - [ ] Dinheiro/cartão para as refeições e para a vaquinha da turma
 
 ## Estudo e eletrônicos

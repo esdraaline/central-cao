@@ -12,7 +12,7 @@
 ### Reta final para a primeira semana (viagem em 16/08)
 - [ ] Escrever ao SAE (caessae) o que sobrou: chegada no domingo à noite, "passeio completo" é S-1 ou P-1, endereço da ConfecBell, qual EPI levar e se querem via impressa do ofício [13/08/2026] #curso
 - [ ] Acionar a P/1 do 2º BPM/I para o Ofício de Apresentação (mesa SEI 302090130) e a liberação da Rotina 13 do SIPA (código 302090000) [13/08/2026] #admin
-- [ ] Combinar com o amigo o horário de saída de domingo e quanto espaço de bagagem eu tenho [13/08/2026] #pessoal
+- [ ] Combinar com o amigo quanto espaço de bagagem eu tenho (o horário já está fechado: saída 15h) [13/08/2026] #pessoal
 - [ ] Comprar o cadeado do armário (o do CAES não tem chave) e etiqueta + caneta permanente para as marmitas [14/08/2026] #pessoal
 - [ ] Conferir se a mesa SEI 302090130 recebeu o ofício e anotar o número do processo no celular [14/08/2026] #admin
 - [ ] Conferir se a conta do Banco do Brasil não é "Conta Salário" e se o nome não está no CADIN [14/08/2026] #admin
@@ -20,7 +20,7 @@
 - [ ] Separar os documentos de mão: identidade funcional e o número do processo SEI [15/08/2026] #admin
 - [ ] Separar o que já tenho do S-1 para deixar guardado no CAES: paletó, calça social, quepe e tarjeta administrativa (camisa social e gravata só na segunda) [15/08/2026] #pessoal
 - [ ] Arrumar a mala seguindo a aba Mala, compacta (é carona), sem esquecer a boina reserva, o lençol de solteiro e a janta de domingo [15/08/2026] #pessoal
-- [ ] Viajar para São Paulo à tarde, chegando à noite [16/08/2026] #pessoal
+- [ ] Sair de casa às 15h00 para São Paulo, de carona, chegada por volta das 22h [16/08/2026] #pessoal
 
 ### Segunda, 17/08 (é o dia de resolver o fardamento)
 - [ ] Chegar ao CAES até 07h30: café da manhã, assinar a lista de presença do pelotão e palestra [17/08/2026] #curso

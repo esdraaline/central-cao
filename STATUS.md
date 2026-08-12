@@ -5,7 +5,7 @@
 
 ## Decisões de 12/08/2026 (fim do dia)
 
-- **Viagem: domingo 16/08 à tarde, de carona com um amigo**, chegando à noite. O alojamento abre desde sábado, mas o sábado fica em casa.
+- **Viagem: domingo 16/08, saindo de casa às 15h00**, de carona com um amigo, chegando por volta das 22h. O alojamento abre desde sábado, mas o sábado fica em casa.
 - **Fardamento: tudo na ConfecBell, na tarde de segunda 17/08.** Nada de loja antes de viajar.
 - **Cama de solteiro** confirmada, então o lençol é de solteiro.
 - **Boina reserva** vai na mala, então a boina nova é reposição, não urgência.
@@ -80,7 +80,7 @@ e a viagem é **domingo à tarde**. Isso esvaziou a correria da semana, e sobrou
    à noite, se "passeio completo" na atividade externa é S-1 ou P-1, endereço da
    ConfecBell, EPI e se querem via impressa do ofício.
 3. **Comprar cadeado e etiqueta** até sexta. É o único bloco de compra antes de viajar.
-4. **Combinar com o amigo** o horário de saída e o espaço de bagagem.
+4. **Combinar com o amigo** o espaço de bagagem. O horário já está fechado.
 5. Depois do **QTS de segunda (17/08)**, me trazer módulo, entregas e avaliações
    pra eu completar [PRAZOS.md](PRAZOS.md).
 

@@ -42,16 +42,14 @@ urgente: a boina nova é reposição, já que a reserva vai na mala.
 - [ ] **1 camisa social cinza-claro** — manga longa, gola social, sem bolsos, para compor o S-1
 - [ ] **1 gravata cinza-bandeirante** — para compor o S-1
 
-> **O social ganhou prazo, mas não deixou de ser prioridade.** O SAE avisou que a tarde de
-> segunda (17/08) é livre para experimentar a farda social e fazer **ajustes na ConfecBell**.
-> Ou seja, a costura de caimento pode esperar; o que não pode é chegar lá sem as peças. O S-1
-> completo (Art. 49) é quepe, paletó, camisa social cinza-claro, gravata, calça social, cinto,
-> meias pretas e sapato preto — confira se só faltam mesmo a camisa e a gravata.
+> **Como o S-1 fica completo.** Da composição do Art. 49 (quepe, paletó, camisa social
+> cinza-claro, gravata, calça social, cinto, meias pretas e sapato preto), o que já existe em
+> casa vai na mala; **camisa social e gravata são compra da segunda**. Então o social só se
+> fecha lá, depois da ConfecBell, e é lá também que se vê o ajuste de caimento.
 >
-> **A ConfecBell é loja do entorno, não atende dentro do CAES.** Ou seja, na tarde de segunda
-> você sai do quartel para ir até lá. Isso vale para **ajuste de caimento**, não para repor
-> peça: chegue com o social comprado, porque contar com a loja ter o seu tamanho na hora é
-> aposta. Antes de viajar, vista o social inteiro em casa para saber o que precisa de ajuste.
+> **A ConfecBell é loja do entorno, não atende dentro do CAES**: ir até ela é sair do quartel
+> na tarde de segunda. O risco real é ela não ter o seu tamanho no dia. Por isso vale ir cedo,
+> e não no fim da tarde: sobrando tempo, dá para procurar alternativa.
 
 ## 3. Mercado — até sexta 14/08 (o único bloco antes de viajar)
 

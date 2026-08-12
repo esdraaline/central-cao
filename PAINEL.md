@@ -99,6 +99,23 @@ acusa a exclusão, mas ao recarregar a tarefa volta do arquivo e o aviso some ju
 mescla traz de volta tudo que está no `.md` e não está aqui. Enquanto isso não mudar, para
 apagar de vez é preciso tirar a linha do `TAREFAS.md`.
 
+### Quem manda em cada tarefa (corrigido em 12/08/2026)
+Tarefa que **nasceu no arquivo** tem id derivado do próprio texto (prefixo `md`). Tarefa criada
+**no painel** tem id de sorteio (prefixo `t`). A regra passou a ser: **para o que nasceu no
+arquivo, o arquivo manda**. Se a linha some do `TAREFAS.md`, ou se o texto dela é reescrito, o
+registro antigo é removido do aparelho e marcado para a nuvem apagar junto. Tarefa criada no
+painel nunca é removida por isso.
+
+**O bug que isso conserta.** Antes, a mescla só somava: reescrever o texto de uma tarefa no
+`.md` gerava id novo e o registro velho ficava para sempre. Como o id também é a chave no
+Supabase, a duplicata subia e se espalhava para todos os aparelhos. Em 12/08/2026 o `.md`
+tinha 21 pendentes e a aba mostrava **38**, porque as tarefas foram reescritas várias vezes no
+mesmo dia. Ao abrir o painel atualizado, a limpeza é automática: não precisa apagar nada à mão.
+
+**O preço:** se você remarcar uma data no painel e depois o texto daquela tarefa for reescrito
+no `.md`, a remarcação se perde junto com o registro antigo. É a mesma regra que já valia para
+as caixinhas das outras abas, onde editar o texto do item zera a marcação.
+
 **Sincronização entre aparelhos: ligada.** As tarefas sincronizam pelo Supabase (projeto
 `relatorio-ronda`, tabela `cao_tarefas`). Em cada aparelho novo, entrar uma vez em
 **Tarefas → Entrar** com o e-mail e senha de sempre. Detalhes em [SUPABASE.md](SUPABASE.md).

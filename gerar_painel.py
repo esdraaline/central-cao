@@ -796,6 +796,12 @@ JS_TAREFAS = r"""
     try{localStorage.setItem(k,JSON.stringify(v));return true}catch(e){return false}
   };
 
+  /* Fila de exclusoes a propagar para a nuvem. Definida aqui porque a poda
+     abaixo precisa dela e este bloco carrega antes da camada de sincronizacao,
+     que le a mesma chave. */
+  window.K_APAGADAS='cao-apagadas';
+  var K_APAGADAS=window.K_APAGADAS;
+
   /* tarefas vindas do TAREFAS.md viram a base; ganham id estavel pelo texto */
   var idBase=function(t){
     var s=norm(t), h=0;
@@ -825,7 +831,36 @@ JS_TAREFAS = r"""
                         orig:'md',mod:new Date().toISOString(),sinc:true});
         }
       });
+      podarSumidasDoArquivo();
     }
+  }
+
+  /* Tira daqui a tarefa que veio do TAREFAS.md e nao existe mais nele.
+     O id de uma tarefa do arquivo e derivado do texto (idBase, prefixo "md"),
+     entao reescrever a linha no .md gera id novo. Sem esta poda o registro
+     antigo ficava para sempre e cada reescrita virava uma duplicata: em
+     12/08/2026 a aba mostrava 38 pendentes com 21 no arquivo, porque as
+     tarefas foram reescritas varias vezes no mesmo dia.
+
+     Regra: para o que nasceu no arquivo, o arquivo manda. Tarefa criada no
+     painel tem id com prefixo "t" (uid) e nunca e podada. */
+  function podarSumidasDoArquivo(){
+    if(!BASE.length)return;          /* arquivo vazio ou ilegivel: nao poda nada */
+    var noArquivo={};
+    BASE.forEach(function(b){noArquivo[idBase(b.t)]=1});
+    var mortas=tarefas.filter(function(t){
+      return String(t.id).indexOf('md')===0 && !noArquivo[t.id];
+    });
+    if(!mortas.length)return;
+    var fora={};
+    mortas.forEach(function(t){fora[t.id]=1});
+    tarefas=tarefas.filter(function(t){return !fora[t.id]});
+    /* a nuvem tem que esquecer junto, senao a proxima sincronizacao traz
+       tudo de volta: a mescla remota readiciona por id o que nao existe aqui */
+    var lista=lerLS(K_APAGADAS,[]);
+    mortas.forEach(function(t){if(lista.indexOf(t.id)<0)lista.push(t.id)});
+    gravarLS(K_APAGADAS,lista);
+    gravarLS(CHAVE,tarefas);
   }
 
   function salvar(){gravarLS(CHAVE,tarefas);desenhar();}
@@ -1323,7 +1358,7 @@ JS_SUPABASE = r"""
    e o RLS no banco (cada linha so e visivel para o dono).                    */
 (function(){
   var CFG=window.SUPA_CFG||{};
-  var K_SES='cao-sessao', K_DEL='cao-apagadas';
+  var K_SES='cao-sessao', K_DEL=window.K_APAGADAS||'cao-apagadas';
   var el=function(s){return document.querySelector(s)};
   var ses=null, sincronizando=false;
 

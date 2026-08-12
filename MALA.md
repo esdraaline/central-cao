@@ -1,6 +1,6 @@
 # MALA — semana no CAES
 
-> Checklist de enxoval, farda e material para a semana de curso. Rotina: **chega no domingo (na primeira semana dá para chegar já no sábado à tarde), aulas de segunda a quinta, volta quinta depois das 11h30**.
+> Checklist de enxoval, farda e material para a semana de curso. Rotina: **chega no domingo, aulas de segunda a quinta, volta quinta depois das 11h30**.
 > **Não tem lavanderia**: as quantidades abaixo cobrem os 4 dias de aula sem lavar nada.
 > Base: bizu de colega que já fez o CAO + [ROTINA.md](ROTINA.md).
 >
@@ -9,15 +9,19 @@
 ## Antes de sair de casa
 - [ ] **Cadeado para o armário** — o armário do CAES **não tem chave própria** (orientação do SAE, 12/08/2026). Sem cadeado, não dá para trancar nada
 - [ ] Conferir distintivos, insígnias e tarjetas em **cada** peça (ver checagem no fim desta seção)
-- [ ] Providenciar o **distintivo de OPM do CAES** — vai na manga direita das camisas de passeio e da gandola. É o "brasão do CAES" do bizu. O colega disse que não cobraram, mas é o certo pelo R-5.
-- [ ] Comprar as camisetas de serviço que faltam (ver quadro abaixo — tem detalhe importante)
 - [ ] Combinar com o amigo da carona o espaço de bagagem (saída às 15h)
+
+> **O que NÃO é para resolver antes de sair**: distintivo de OPM do CAES, camisetas que faltam,
+> camisas de passeio, boina, calça social, camisa social e gravata. Tudo isso ficou para a
+> tarde de segunda, na ConfecBell ([COMPRAS.md](COMPRAS.md)). Esta lista só embala o que já
+> está em casa.
 
 ## Uniforme — o que levar
 Referência: **R-5-PM, 6ª Ed. v.2** (Regulamento de Uniformes). O do dia a dia é o **P-1 (Passeio 1)**; o **B-1 (Básico Operacional 1)** entra na instrução e nas saídas externas.
 
 > **Regra do SAE (12/08/2026)**: na aula vale o fardamento que o QTS orientar; em passeio e
-> atividade externa, **passeio completo**; nas missões, o fardamento e o **EPI** pertinentes.
+> atividade externa, **passeio completo, que aqui é o P-1** com todas as peças, não o S-1;
+> nas missões, o **EPI** (cinto, colete e bota) com o B-1.
 > A **farda social vai junto e fica guardada no CAES** (ver seção do S-1 abaixo).
 >
 > **O que a compra na segunda muda nesta lista.** As 2 camisas de passeio, as 2 camisetas de
@@ -31,7 +35,7 @@ Composição: quepe, camisa de passeio cinza-claro, camiseta de serviço cinza-b
 
 > **O quepe é substituído pela boina cinza-bandeirante** em trânsito e nas atividades administrativas (Art. 45, § 1º, item 2). No curso é isso que vale — o quepe só se tiver cerimônia. É por isso que a boina fica guardada no alojamento e você só põe ao sair para área descoberta.
 
-- [ ] 2 calças sociais cinza-bandeirante
+- [ ] 1 calça social cinza-bandeirante *(a segunda só chega na compra de segunda)*
 - [ ] 1 camisa de passeio cinza-claro *(é a única que tenho até a compra de segunda; vai engomada)*
 - [ ] Cinto de serviço cinza-bandeirante
 - [ ] Sapatos pretos (engraxados)
@@ -50,14 +54,16 @@ Composição: boina cinza-bandeirante, gandola cinza-bandeirante, camiseta de se
 - [ ] Boina e cinto de serviço — os mesmos do P-1, não precisa duplicar
 
 ### Camiseta de serviço — atenção na hora de comprar (Art. 74)
-Ela entra **por baixo do P-1 e do B-1**, então é a peça que mais roda. 6 é uma boa conta para a semana.
+Ela entra **por baixo do P-1 e do B-1**, então é a peça que mais roda. 6 é a conta boa para a
+semana, mas **em casa há 4**: as outras 2 saem da ConfecBell na tarde de segunda. Para a
+primeira semana, 4 cobrem os 4 dias de aula, uma por dia, sem folga para imprevisto.
 
 Não é camiseta cinza comum. O R-5 exige:
 - Cor **cinza-bandeirante**, malha, **gola careca** na cor da camiseta, **meia manga com barra**
 - **Identificação nominal operacional** no peito direito — retângulo preto 15 × 80 mm, letras brancas de 6 mm: `CAP PM JOSEMAR`
 - **Distintivo da Logomarca da PMESP** no peito esquerdo, tamanho normal, alinhado com a tarjeta
 
-- [ ] 6 camisetas de serviço cinza-bandeirante, gola careca, já com tarjeta e logomarca
+- [ ] 4 camisetas de serviço cinza-bandeirante, gola careca, já com tarjeta e logomarca *(as 4 que tenho; as outras 2 chegam na segunda)*
 
 ### Agasalho — qual peça é a certa
 O bizu falou em "japona", mas pelo R-5 a **japona cinza-bandeirante é restrita ao efetivo do TOR** (Art. 124). Para o P-1 as peças previstas são:
@@ -81,12 +87,13 @@ ser exigido durante o curso, principalmente em visitas. Por isso o recomendado �
 Composição do S-1 (Art. 49, § 2º) — repare que aqui a cobertura é o **quepe**, não a boina:
 
 - [ ] Paletó cinza-bandeirante (tecido panamá, Art. 93)
-- [ ] Camisa social cinza-claro (manga longa, gola social)
-- [ ] Gravata cinza-bandeirante
 - [ ] Calça social cinza-bandeirante *(a mesma do P-1)*
 - [ ] Cinto de serviço, meias sociais pretas e sapatos pretos *(os mesmos do P-1)*
-- [ ] **Quepe cinza-bandeirante** — é a cobertura do S-1, então ele deixa de ser "só se tiver cerimônia"
+- [ ] **Quepe cinza-bandeirante** — vai porque é a cobertura do S-1, mesmo não sendo usado no dia a dia
 - [ ] Tarjeta administrativa de acrílico (a mesma imantada que roda entre as peças)
+
+> **Camisa social e gravata ainda não existem em casa**: são compra da tarde de segunda. Ou
+> seja, o S-1 só fica completo no CAES, depois da ConfecBell. O que vai na mala é o resto.
 
 > **Resolvido em 12/08/2026: "passeio completo" na atividade externa é o P-1**, não o S-1.
 > A dúvida vinha de o R-5 chamar a seção dos uniformes sociais de "Passeio Completo"

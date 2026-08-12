@@ -3,6 +3,13 @@
 > Painel principal. Ler isso primeiro em qualquer sessão nova ("onde paramos?").
 > Atualizado em: 12/08/2026
 
+## Decisões de 12/08/2026 (fim do dia)
+
+- **Viagem: domingo 16/08 à tarde, chegando à noite.** O alojamento abre desde sábado, mas o sábado fica em casa.
+- **Fardamento: tudo na ConfecBell, na tarde de segunda 17/08.** Nada de loja antes de viajar.
+- **Cama de solteiro** confirmada, então o lençol é de solteiro.
+- **Ofício de Apresentação: acionar a P/1 amanhã, 13/08.**
+
 ## Novidade de 12/08/2026: chegaram as orientações do SAE
 
 O Cap Hiran (SAE) repassou as orientações da recepção. Quatro coisas mudam o planejamento
@@ -52,7 +59,7 @@ de subir. Detalhe e o histórico do build quebrado do Pages estão em
 - Projeto de Pesquisa (PP) tem versão final entregue em [CAO 2026/PP/Projeto Pesquisa Cap Josemar Final.doc](CAO%202026/PP/Projeto%20Pesquisa%20Cap%20Josemar%20Final.doc) — tema: integração PM-Prefeituras / governança participativa no 2º BPM/I. Como agora é mestrado profissional, isso deve virar **dissertação** (ver contato de Pesquisa em [CONTATOS.md](CONTATOS.md)).
 - Contatos e organograma do CAES: ver [CONTATOS.md](CONTATOS.md).
 - Regras de rotina, uniforme, SIPA financeiro, formatura: ver [ROTINA.md](ROTINA.md).
-- **Primeira semana: viaja sábado 15/08 ou domingo 16/08** (alojamento abre sábado à tarde, decisão em [VIAGENS.md](VIAGENS.md)). Segunda 17/08 a recepção é **07h30**; da terça em diante entra 08h15 e sai 16h seg, 18h ter e qua, 11h30 qui. A conferência de armário está **feita** (06/08, 78 das 90 peças já em casa), então sobraram duas etapas: [COMPRAS.md](COMPRAS.md) (o que falta) → [MALA.md](MALA.md) (arrumar a mala no dia).
+- **Primeira semana: viaja domingo 16/08 à tarde, chegando à noite.** Segunda 17/08 a recepção é **07h30**; da terça em diante entra 08h15 e sai 16h seg, 18h ter e qua, 11h30 qui. A conferência de armário está **feita** (06/08, 78 das 90 peças já em casa), então sobraram duas etapas: [COMPRAS.md](COMPRAS.md) (o que falta) → [MALA.md](MALA.md) (arrumar a mala no dia).
 - **Módulo e disciplinas**: saem no **QTS de segunda, 17/08**. Até lá não tem o que preencher.
 
 ## Próximo passo
@@ -61,27 +68,26 @@ O roteiro dia a dia até a viagem está em [TAREFAS.md](TAREFAS.md), com data, e
 que o painel cobra na abertura (por isso aqui é só leitura, para não ter duas listas
 dizendo a mesma coisa). O que trava tudo:
 
-1. **Ligar na loja de fardamento (estava marcado para 11/08 e ainda está aberto).**
-   É o único bloco que depende de terceiro: 2 camisas de passeio, 2 camisetas de
-   serviço, aplicação de tarjeta e logomarca, 4 distintivos de OPM do CAES e a
-   tarjeta administrativa de acrílico. Se a aplicação não entrar esta semana, não
-   volta a tempo. E agora o prazo real pode ser **sexta 14/08**, não domingo, caso
-   você decida viajar no sábado.
-2. **Escrever ao SAE** com o que sobrou em [DUVIDAS.md](DUVIDAS.md): hora de abertura
-   do alojamento no sábado, tamanho da cama, estacionamento, se "passeio completo"
-   na atividade externa é S-1 ou P-1, e qual EPI levar.
-3. **Fechar sábado ou domingo e como vou** (carro ou ônibus), preenchendo
-   [VIAGENS.md](VIAGENS.md). Se for de carro, o cartão de estacionamento precisa ser
-   pedido antes.
-4. **Acionar a P/1 pelo Ofício de Apresentação** (mesa SEI 302090130) e pela
-   liberação da Rotina 13 do SIPA. Não é papel para levar na mala: é ato eletrônico
+Decidido em 12/08: **o fardamento inteiro fica para a tarde de segunda, na ConfecBell**,
+e a viagem é **domingo à tarde**. Isso esvaziou a correria da semana, e sobrou pouco:
+
+1. **Amanhã (13/08), acionar a P/1** pelo Ofício de Apresentação (mesa SEI 302090130) e
+   pela liberação da Rotina 13 do SIPA. Não é papel para levar na mala: é ato eletrônico
    da OPM, e é dele que dependem a matrícula, a adição, a Ajuda de Custo e o Auxílio
-   Financeiro a Estudantes. Estava marcado para sexta; passou para hoje porque
-   depende de assinatura de terceiro.
-5. **Comprar o cadeado** do armário. É item novo e é o tipo de coisa que só se
-   descobre que faltou na hora de trancar.
-6. Depois do **QTS de segunda (17/08)**, me trazer módulo, entregas e avaliações
+   Financeiro a Estudantes.
+2. **Escrever ao SAE** com o que sobrou em [DUVIDAS.md](DUVIDAS.md): chegada no domingo
+   à noite, estacionamento, se "passeio completo" na atividade externa é S-1 ou P-1,
+   endereço da ConfecBell, EPI e se querem via impressa do ofício.
+3. **Comprar cadeado e etiqueta** até sexta. É o único bloco de compra antes de viajar.
+4. **Fechar como vou** (carro ou ônibus) em [VIAGENS.md](VIAGENS.md). Se for de carro, o
+   cartão de estacionamento precisa ser pedido antes.
+5. Depois do **QTS de segunda (17/08)**, me trazer módulo, entregas e avaliações
    pra eu completar [PRAZOS.md](PRAZOS.md).
+
+**O que a compra ter ficado para segunda cobra da mala:** o **quepe** (a boina só chega
+na segunda, e cobertura é obrigatória em área descoberta), a **camisa de passeio
+engomada** (é a única até a tarde de segunda), o **lençol de solteiro** e a **janta de
+domingo**.
 
 ## Prazos mais próximos
 Agosto inteiro, dia a dia, está em [PRAZOS.md](PRAZOS.md).

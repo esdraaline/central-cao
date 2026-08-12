@@ -1,24 +1,29 @@
-# COMPRAS — antes de 16/08
+# COMPRAS — mercado antes de viajar, fardamento na segunda
 
 > **Conferência de armário concluída em 06/08/2026.** Das 90 peças da lista, 78 já estavam em casa. O que sobrou está aqui embaixo, junto com o que já se sabia que faltava. Depois desta lista vem só a [MALA.md](MALA.md), no dia de arrumar.
-> **Prazo: domingo 16/08/2026.**
+> **Prazos: mercado até sexta 14/08; fardamento na tarde de segunda 17/08.**
 
-## Regra de ouro do prazo
-Separe o que depende de terceiro do que você resolve sozinho:
+## Como ficou decidido (12/08/2026)
 
-| Tipo | Quando resolver | Por quê |
+**Todo o fardamento será comprado na segunda, 17/08, na ConfecBell**, aproveitando a tarde
+livre da recepção. Antes de viajar sobra só o que se compra em mercado.
+
+| Tipo | Quando | Onde |
 |---|---|---|
-| Costura e aplicação (tarjeta, logomarca, distintivo) | **esta semana** | a loja de fardamento precisa aplicar e devolver |
-| Peça de fardamento pronta | até 12/08 | pode não ter seu tamanho e ter que encomendar |
-| Mercado (limpeza, copa, papelaria, **cadeado**) | até sexta 14/08 | o alojamento abre já no sábado à tarde, então sábado pode virar dia de viagem |
+| Cadeado e etiqueta de marmita | até sexta 14/08 | mercado, aqui mesmo |
+| Fardamento e peças do S-1 | segunda 17/08, à tarde | ConfecBell (loja do entorno do CAES) |
+| Aplicação de tarjeta, logomarca e distintivo de OPM | a combinar na segunda | ConfecBell |
 
-**Ligue na loja de fardamento antes de qualquer coisa** e pergunte o prazo de aplicação. É isso que define se dá para fazer tudo em uma loja só.
+**O que isso custa:** você viaja com **1 camisa de passeio** (a única que já tem) e **sem
+boina**. Para o primeiro dia isso resolve, desde que a camisa vá engomada e o **quepe** vá na
+mala, que é a cobertura válida do P-1 enquanto a boina não chega. O risco que sobra é a loja
+não ter o seu tamanho na segunda; se isso acontecer, a semana roda com o que você levou.
 
-## 1. Loja de fardamento — esta semana
+## 1. ConfecBell — segunda, 17/08, à tarde
 
-Tudo aqui passa pela loja aplicar e devolver. É o único bloco que pode não chegar a tempo do dia 16/08.
+Tudo aqui passa pela loja aplicar e devolver, então não sai pronto no mesmo dia.
 
-> **Compre as peças e mande aplicar na mesma ida.** As 2 camisas de passeio novas são justamente onde vão os distintivos de OPM, então não adianta encomendar o distintivo antes de ter a camisa na mão.
+> **Compre as peças e mande aplicar na mesma ida.** As 2 camisas de passeio novas são justamente onde vão os distintivos de OPM, então não adianta encomendar o distintivo antes de ter a camisa na mão. Combine o prazo de retirada ainda na segunda: você volta para casa na quinta às 11h30.
 
 - [ ] **2 camisas de passeio cinza-claro** — completam o jogo de 3 (já tenho 1)
 - [ ] **2 camisetas de serviço cinza-bandeirante** — gola careca, meia manga com barra, completam as 6. **Não serve camiseta cinza comum.**
@@ -28,9 +33,10 @@ Tudo aqui passa pela loja aplicar e devolver. É o único bloco que pode não ch
 - [ ] **Tarjeta administrativa de acrílico** (retângulo preto 15 × 80 mm, letras brancas de 6 mm, `CAP PM JOSEMAR`) — vai na camisa de passeio, na jaqueta de passeio e no paletó do S-1. Sendo imantada, uma passa de peça em peça; peça 2 se não quiser ficar trocando.
 - [ ] Nas 2 camisas de passeio novas: conferir se já vêm com **distintivo de atividade, insígnia de gola, Bandeira de São Paulo e Logomarca**. A que já tenho está completa; as novas provavelmente vão precisar.
 
-## 2. Fardamento pronto — até 12/08
+## 2. Fardamento pronto — também na segunda
 
-Não depende de aplicação, mas pode não ter o seu tamanho e ter que encomendar.
+Não depende de aplicação, mas pode não ter o seu tamanho e ter que encomendar. A **boina** é a
+que faz falta imediata: até comprá-la, a cobertura do dia a dia é o quepe.
 
 - [ ] **1 calça social cinza-bandeirante** — completa o par (já tenho 1)
 - [ ] **Boina cinza-bandeirante** com distintivo de cobertura — é a cobertura do dia a dia no curso (o quepe só em cerimônia)
@@ -48,7 +54,7 @@ Não depende de aplicação, mas pode não ter o seu tamanho e ter que encomenda
 > peça: chegue com o social comprado, porque contar com a loja ter o seu tamanho na hora é
 > aposta. Antes de viajar, vista o social inteiro em casa para saber o que precisa de ajuste.
 
-## 3. Mercado — até sexta 14/08
+## 3. Mercado — até sexta 14/08 (o único bloco antes de viajar)
 
 A conferência de armário fechou cama, higiene, limpeza do alojamento, copa, estudo e roupa
 pessoal. Sobrou o que a orientação do SAE de 12/08/2026 trouxe de novo:

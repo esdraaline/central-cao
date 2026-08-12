@@ -19,6 +19,12 @@ Referência: **R-5-PM, 6ª Ed. v.2** (Regulamento de Uniformes). O do dia a dia 
 > **Regra do SAE (12/08/2026)**: na aula vale o fardamento que o QTS orientar; em passeio e
 > atividade externa, **passeio completo**; nas missões, o fardamento e o **EPI** pertinentes.
 > A **farda social vai junto e fica guardada no CAES** (ver seção do S-1 abaixo).
+>
+> **O que a compra na segunda muda nesta lista.** As 2 camisas de passeio, as 2 camisetas de
+> serviço, a boina, a calça social, a camisa social e a gravata só serão compradas na tarde de
+> segunda, na ConfecBell. Então na mala vai o que já existe em casa, com dois cuidados:
+> **leve o quepe** (a boina só chega segunda e cobertura é obrigatória em área descoberta) e
+> **a camisa de passeio que você tem é a única garantida para o primeiro dia**, então engomada.
 
 ### P-1 — uniforme do dia a dia (Art. 45)
 Composição: quepe, camisa de passeio cinza-claro, camiseta de serviço cinza-bandeirante, calça social cinza-bandeirante, cinto de serviço cinza-bandeirante, meias sociais pretas, sapatos pretos.
@@ -118,7 +124,9 @@ Composição: camiseta de treinamento branca, calção de treinamento azul-royal
 - [ ] Sacola separada para roupa suja (volta tudo sujo pra casa)
 
 ## Cama — o alojamento NÃO fornece
-- [ ] Lençol (conferir o tamanho da cama do alojamento)
+> **Cama de solteiro** (confirmado em 12/08/2026).
+
+- [ ] Lençol de solteiro
 - [ ] Fronha
 - [ ] Travesseiro
 - [ ] Cobertor ou manta leve
@@ -151,7 +159,7 @@ nome vira marmita de todo mundo.
 - [ ] Detergente, esponja e pano de prato
 - [ ] Café, açúcar/adoçante e filtro (se for usar a cafeteira)
 - [ ] Garrafa de água
-- [ ] Lanche não perecível para a primeira noite (domingo)
+- [ ] **Janta de domingo**, não só lanche: a chegada é à noite e ninguém confirmou que os lugares do entorno abrem
 - [ ] Dinheiro/cartão para as refeições e para a vaquinha da turma
 
 ## Estudo e eletrônicos

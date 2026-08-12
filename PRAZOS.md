@@ -7,14 +7,11 @@
 
 | Data | Dia | O que |
 |---|---|---|
-| 11/08 | terça | Ligar na loja de fardamento e comprar camisas e camisetas (bloco que depende de aplicação) |
-| 12/08 | quarta | Comprar as peças prontas: calça social, boina, camisa social e gravata do S-1 |
-| 13/08 | quinta | Cartão de estacionamento do CAES, se for de carro (pedir à AAp) |
-| 12/08 | quarta | Acionar a P/1 para o Ofício de Apresentação (SEI 302090130) e a Rotina 13 do SIPA. Depende de assinatura, por isso saiu da sexta |
-| 14/08 | sexta | Conferir se a mesa SEI recebeu o ofício. Conta do Banco do Brasil regularizada. Retirar o que ficou na loja. Comprar o cadeado do armário |
-| 15/08 | sábado | Arrumar a mala ([MALA.md](MALA.md)) e separar os documentos de mão. **O alojamento já abre à tarde**, então este pode virar o dia da viagem |
-| **16/08** | **domingo** | **Deslocamento para São Paulo** ([VIAGENS.md](VIAGENS.md)), se não tiver ido no sábado |
-| **17/08** | **segunda** | **Recepção no CAES a partir das 07h30** (café da manhã da turma do CAO-I/26, lista de presença por pelotão e palestra). **Sai o QTS.** Tarde livre para social/ConfecBell e alojamento. Início da Rotina 13 do SIPA |
+| 13/08 | quinta | Acionar a P/1: Ofício de Apresentação na mesa SEI 302090130 + Rotina 13 do SIPA. E-mail ao SAE com as dúvidas. Cartão de estacionamento, se for de carro |
+| 14/08 | sexta | Conferir se a mesa SEI recebeu o ofício. Conta do Banco do Brasil regularizada. Comprar cadeado e etiquetas. Engomar a camisa de passeio |
+| 15/08 | sábado | Arrumar a mala ([MALA.md](MALA.md)) e separar os documentos de mão |
+| **16/08** | **domingo** | **Deslocamento para São Paulo à tarde, chegada à noite** ([VIAGENS.md](VIAGENS.md)). A janta vai na mala |
+| **17/08** | **segunda** | **Recepção no CAES a partir das 07h30** (café da manhã da turma do CAO-I/26, lista de presença por pelotão e palestra). **Sai o QTS.** À tarde, **todo o fardamento na ConfecBell** e montagem do alojamento. Início da Rotina 13 do SIPA |
 | 20/08 | quinta | Fim da primeira semana, volta depois das 11h30 |
 
 ## Curso (CAO-II/26 — 2ª Turma)

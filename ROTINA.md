@@ -89,6 +89,21 @@ Referência oficial: **R-5-PM, 6ª Ed. v.2** (Regulamento de Uniformes). Lista d
 - Liberar a **Rotina 13 do SIPA de 17/ago/26 a 22/jan/27**, no código **302090000**.
 - Obs: matrícula e adição (verbas e auxílios) dependem do envio correto de tudo isso.
 
+**É ato eletrônico, não documento de mão.** O slide do SAE só manda enviar ao SEI; nem ele,
+nem o edital, nem as orientações de 12/08 pedem via impressa na apresentação. Quem encaminha
+é a **OPM de origem** (2º BPM/I, na prática pelo B/1, com assinatura do comandante), não o
+próprio oficial-aluno. Por isso a tarefa é acionar e acompanhar, e depende de terceiro dentro
+do quartel: começar cedo, não na véspera.
+
+**O que está preso nisso:** matrícula, adição, **Ajuda de Custo** (oficial de outro município)
+e **Auxílio Financeiro a Estudantes**. Some-se a condição da conta do Banco do Brasil (não pode
+ser Conta Salário, nome fora do CADIN). Atrasar aqui não atrapalha a aula, atrapalha o
+pagamento.
+
+**O que vale levar** é o **número do processo SEI** anotado no celular, para responder na hora
+se alguém do CAES perguntar. Uma cópia impressa é cortesia, não requisito.
+*[VERIFICAR: perguntar ao SAE se querem alguma via impressa no dia da apresentação.]*
+
 ## Auxílios (Oficiais-Alunos PMESP)
 - Processados via DA; todos os Oficiais-Alunos são adidos ao CAES (função: Oficial-Aluno).
 - Oficiais de outro município recebem **Ajuda de Custo** (conforme legislação).

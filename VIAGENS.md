@@ -27,7 +27,7 @@ Primeira semana do CAO-II/26. **Recepção na segunda, 17/08, a partir das 07h30
 - **Dia e horário de saída**: *(preencher depois de fechar sábado x domingo e o meio de transporte)*
 - **Se for de carro**: estacionamento do CAO tem 40 vagas sinalizadas e **exige cartão de estacionamento visível** — pedir à AAp antes de viajar. Motocicleta tem espaço coberto atrás do prédio.
 - **Chegada no alojamento**: liberado a partir de sábado à tarde; alojamento e sala já vêm identificados com o nome. Levar **cadeado**, o armário não tem chave.
-- **Levar em mãos** (não na mala): identidade funcional, ofício de apresentação, comprovantes que a SAE pedir, cartão de estacionamento.
+- **Levar em mãos** (não na mala): identidade funcional, cartão de estacionamento e o número do processo SEI do Ofício de Apresentação. O ofício é ato eletrônico da OPM, não papel de entregar na chegada (ver [ROTINA.md](ROTINA.md)).
 - **Primeira noite**: não tem rancho. Levar lanche não perecível (o Terraço e a Padaria Flor da Duque ficam a pé, mas confirmar se abrem no fim de semana). Na segunda tem café da manhã no CAES, bancado pela turma do CAO-I/26.
 
 ### 20/08/2026 (quinta) — primeira volta

@@ -164,7 +164,7 @@ nome vira marmita de todo mundo.
 
 ## Documentos
 - [ ] Carteira de identidade funcional
-- [ ] Ofício de apresentação / comprovantes que a SAE pedir
+- [ ] **Número do processo SEI** do Ofício de Apresentação anotado no celular. O ofício em si é enviado pela OPM à mesa **SEI 302090130** e **não precisa ir impresso** (ver [ROTINA.md](ROTINA.md)); cópia em papel é só cortesia
 - [ ] Cartão de estacionamento
 
 ## O que NÃO precisa levar

@@ -73,9 +73,14 @@ dizendo a mesma coisa). O que trava tudo:
 3. **Fechar sábado ou domingo e como vou** (carro ou ônibus), preenchendo
    [VIAGENS.md](VIAGENS.md). Se for de carro, o cartão de estacionamento precisa ser
    pedido antes.
-4. **Comprar o cadeado** do armário. É item novo e é o tipo de coisa que só se
+4. **Acionar o B/1 pelo Ofício de Apresentação** (mesa SEI 302090130) e pela
+   liberação da Rotina 13 do SIPA. Não é papel para levar na mala: é ato eletrônico
+   da OPM, e é dele que dependem a matrícula, a adição, a Ajuda de Custo e o Auxílio
+   Financeiro a Estudantes. Estava marcado para sexta; passou para hoje porque
+   depende de assinatura de terceiro.
+5. **Comprar o cadeado** do armário. É item novo e é o tipo de coisa que só se
    descobre que faltou na hora de trancar.
-5. Depois do **QTS de segunda (17/08)**, me trazer módulo, entregas e avaliações
+6. Depois do **QTS de segunda (17/08)**, me trazer módulo, entregas e avaliações
    pra eu completar [PRAZOS.md](PRAZOS.md).
 
 ## Prazos mais próximos

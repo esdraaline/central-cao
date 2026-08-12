@@ -11,6 +11,7 @@
 3. **Cartão de estacionamento**: se eu for de carro, peço antes por e-mail ou retiro na chegada? A quem?
 4. **"Passeio completo" nas atividades externas é o S-1 ou o P-1?** No R-5, "Passeio Completo" é o nome da seção dos uniformes sociais (Art. 49). Se for S-1 mesmo, o quepe deixa de ser item de cerimônia e passa a ser de rotina.
 5. **EPI**: qual EPI é esperado já na primeira semana, ou isso só se define depois que sair o QTS?
+6. **O SAE quer alguma via impressa no dia da apresentação?** O Ofício de Apresentação vai pela mesa SEI 302090130, mas vale confirmar se esperam cópia em mãos ou algum comprovante no dia 17.
 
 ### Outras
 - **Restaurante e padaria do entorno abrem domingo à noite?** Se não, a primeira janta tem que sair de casa. *(Se a chegada for no sábado, vale a mesma pergunta para sábado à noite.)*

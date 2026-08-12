@@ -663,6 +663,14 @@ ul.tarefas li.parcial .mk-qtd .n{color:var(--al);font-weight:600}
   display:grid;place-items:center;transition:all .13s}
 .tf-ac:hover{background:var(--card2);color:var(--tx)}
 .tf-ac.del:hover{background:rgba(200,16,46,.12);color:var(--vm)}
+/* a propria etiqueta de data e um botao: clicar nela remarca a tarefa */
+.tf-tag.dt.mud{font-family:inherit;cursor:pointer}
+.tf-tag.dt.mud:hover{border-color:var(--vm);color:var(--vm)}
+.tf-dtbox{display:flex;gap:7px;align-items:center;flex-wrap:wrap;margin-top:7px}
+.tf-dtbox input[type=date]{background:var(--card2);border:1px solid var(--vm);border-radius:8px;
+  padding:5px 9px;color:var(--tx);font:600 12.5px/1.5 inherit;font-family:inherit}
+.tf-dtbox input[type=date]:focus{outline:none;box-shadow:0 0 0 3px rgba(200,16,46,.1)}
+.tf-dtbox .chip{padding:4px 10px;font-size:12px}
 .tf-edit{width:100%;background:var(--card2);border:1px solid var(--vm);border-radius:7px;
   padding:6px 9px;color:var(--tx);font:14.5px/1.4 inherit}
 .tf-edit:focus{outline:none}
@@ -1001,6 +1009,59 @@ JS_TAREFAS = r"""
     };
   }
 
+  /* Remarcar: troca a data de uma tarefa que ja existe.
+     Sem confirmar no blur de proposito. O seletor nativo de data do celular
+     tira o foco do campo ao abrir; se blur cancelasse, a edicao morreria
+     justamente no aparelho em que ela mais e usada. Sai por Enter, por um
+     dos atalhos, pelo Escape ou pelo botao Cancelar. */
+  function editarData(id){
+    var no=el('[data-id="'+id+'"]');
+    var t=tarefas.filter(function(x){return x.id===id})[0];
+    if(!no||!t)return;
+    var corpo=el('.tf-corpo',no);
+    var antigo=corpo.innerHTML;
+    corpo.innerHTML='<div class="tf-txt">'+esc(t.txt)+'</div>'+
+      '<div class="tf-dtbox">'+
+        '<input type="date" class="tf-dtin" value="'+(t.data||'')+'">'+
+        '<button class="chip" data-q="0">Hoje</button>'+
+        '<button class="chip" data-q="1">Amanhã</button>'+
+        '<button class="chip" data-q="7">+1 semana</button>'+
+        (t.data?'<button class="chip" data-q="x">Sem data</button>':'')+
+        '<button class="chip" data-q="c">Cancelar</button>'+
+      '</div>';
+    var campo=el('.tf-dtin',corpo), pronto=false;
+
+    var cancelar=function(){
+      if(pronto)return; pronto=true; corpo.innerHTML=antigo;
+    };
+    var aplicar=function(valor){
+      if(pronto)return; pronto=true;
+      valor=valor||null;
+      if(valor===(t.data||null)){corpo.innerHTML=antigo;return}
+      t.data=valor;t.mod=new Date().toISOString();t.sinc=false;
+      salvar();   /* redesenha: a tarefa pula sozinha para o grupo certo */
+      if(window.SUPA&&SUPA.ativo())SUPA.enviar(t);
+    };
+
+    campo.focus();
+    campo.onchange=function(){aplicar(campo.value)};
+    campo.onkeydown=function(e){
+      if(e.key==='Enter'){e.preventDefault();aplicar(campo.value)}
+      if(e.key==='Escape'){e.preventDefault();cancelar()}
+    };
+    /* mousedown, nao click: dispara antes de qualquer perda de foco */
+    [].forEach.call(corpo.querySelectorAll('.chip'),function(c){
+      c.onmousedown=function(e){
+        e.preventDefault();
+        var q=c.dataset.q;
+        if(q==='c')return cancelar();
+        if(q==='x')return aplicar(null);
+        var d=hoje(); d.setDate(d.getDate()+parseInt(q,10));
+        aplicar(iso(d));
+      };
+    });
+  }
+
   /* agrupa por urgencia */
   function agrupar(){
     var h=hoje();
@@ -1032,7 +1093,8 @@ JS_TAREFAS = r"""
     var meta='';
     if(d){
       var dc=(!t.feito&&n<0)?' venc':((!t.feito&&n<=1)?' prox':'');
-      meta+='<span class="tf-tag dt'+dc+'">'+ICO.cal+rotuloData(d)+'</span>';
+      meta+='<button class="tf-tag dt mud'+dc+'" data-ac="dt" '+
+            'title="Mudar a data desta tarefa">'+ICO.cal+rotuloData(d)+'</button>';
     }
     if(t.cat&&CATS[t.cat]){
       meta+='<span class="tf-tag cat" style="background:'+CATS[t.cat].cor+'">'+
@@ -1046,7 +1108,9 @@ JS_TAREFAS = r"""
       '<div class="tf-corpo"><div class="tf-txt">'+esc(t.txt)+'</div>'+
       (meta?'<div class="tf-meta">'+meta+'</div>':'')+'</div>'+
       '<div class="tf-acoes">'+
-        '<button class="tf-ac" data-ac="ed" title="Editar">'+ICO.lapis+'</button>'+
+        '<button class="tf-ac" data-ac="dt" title="'+
+          (d?'Mudar a data':'Marcar uma data')+'">'+ICO.calbt+'</button>'+
+        '<button class="tf-ac" data-ac="ed" title="Editar o texto">'+ICO.lapis+'</button>'+
         '<button class="tf-ac del" data-ac="del" title="Excluir">'+ICO.lixo+'</button>'+
       '</div></div>';
   }
@@ -1196,6 +1260,7 @@ JS_TAREFAS = r"""
     if(b.dataset.ac==='ok')alternar(id);
     else if(b.dataset.ac==='del')excluir(id);
     else if(b.dataset.ac==='ed')editar(id);
+    else if(b.dataset.ac==='dt')editarData(id);
   };
 
   carregar();
@@ -2407,6 +2472,7 @@ window.SUPA_CFG=%(supa)s;
             "lapis": svg("lapis", 15),
             "lixo": svg("lixo", 15),
             "cal": svg("calendar", 12),
+            "calbt": svg("calendar", 15),
             "vazio": svg("vazio", 46),
             "copiar": svg("copiar", 15),
         }),

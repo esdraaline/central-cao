@@ -67,6 +67,22 @@ Dá para cadastrar tarefa direto no painel, escrevendo em linguagem normal: *"en
 *"prova dia 15"*, *"enviar ofício amanhã"*. Ele entende a data sozinho e agrupa por urgência
 (atrasadas, hoje, amanhã, próximos 7 dias). Categorias: Curso, Dissertação, Administrativo, Pessoal.
 
+### Remarcar uma tarefa (mudar a data)
+Toda tarefa tem **botão de calendário** ao lado do lápis, e **a própria etiqueta de data é
+clicável**. Abre um campo de data com atalhos: **Hoje**, **Amanhã**, **+1 semana**,
+**Sem data** (só aparece se a tarefa tiver data) e **Cancelar**. Confirmou, a tarefa pula
+sozinha para o grupo certo e o guia do dia lá em cima se refaz na hora, sem recarregar.
+
+Sai também por **Enter** (confirma) e **Esc** (cancela). Não confirma ao perder o foco de
+propósito: no celular, abrir o seletor de data tira o foco do campo, e confirmar no blur
+mataria a edição justamente no aparelho onde ela mais é usada.
+
+**A data nova fica só no painel até você exportar.** O `TAREFAS.md` continua com a data
+antiga, e isso é o desenho de sempre: o painel lê do arquivo, mas quem escreve de volta é o
+botão **Exportar**. A mescla é por texto da tarefa, então o `.md` com a data velha **não**
+sobrescreve o que você remarcou (testado: remarcada para 19/08 com o `.md` dizendo 11/08,
+sobreviveu ao recarregamento).
+
 **Sincronização entre aparelhos: ligada.** As tarefas sincronizam pelo Supabase (projeto
 `relatorio-ronda`, tabela `cao_tarefas`). Em cada aparelho novo, entrar uma vez em
 **Tarefas → Entrar** com o e-mail e senha de sempre. Detalhes em [SUPABASE.md](SUPABASE.md).

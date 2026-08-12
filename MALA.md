@@ -88,15 +88,22 @@ Composição do S-1 (Art. 49, § 2º) — repare que aqui a cobertura é o **que
 - [ ] **Quepe cinza-bandeirante** — é a cobertura do S-1, então ele deixa de ser "só se tiver cerimônia"
 - [ ] Tarjeta administrativa de acrílico (a mesma imantada que roda entre as peças)
 
-> **Ponto a confirmar com o SAE.** A orientação diz "para passeios e atividades externas,
-> passeio completo". No R-5, "Passeio Completo" é justamente o título da seção dos **uniformes
-> sociais** (Seção VI, Art. 49), o que faria a saída externa ser de S-1 e não de P-1. Pode
-> também ser só a forma coloquial de dizer "o passeio com todas as peças". Está anotado em
-> [DUVIDAS.md](DUVIDAS.md). De qualquer jeito, o social vai na mala.
+> **Resolvido em 12/08/2026: "passeio completo" na atividade externa é o P-1**, não o S-1.
+> A dúvida vinha de o R-5 chamar a seção dos uniformes sociais de "Passeio Completo"
+> (Art. 49), mas na prática do curso vale o P-1 com todas as peças. Ou seja, o **quepe
+> continua sendo peça de cerimônia**, e o social vai para o CAES por causa das visitas, não
+> das saídas.
 
 ### EPI e missões
-- [ ] Levar o **EPI** pertinente às missões previstas (orientação do SAE). O QTS de segunda é
-      que vai dizer o que a semana pede; até lá, colete e o que mais for de praxe na atividade.
+O EPI do curso é **cinto, colete e bota**, usados com o **B-1** (definido em 12/08/2026).
+
+- [ ] Cinto
+- [ ] Colete
+- [ ] Bota
+
+> **Atenção ao volume.** O colete é o item mais pesado e mais volumoso da mala inteira, e você
+> vai de carona, com porta-malas dividido. Se o QTS de segunda não previr atividade externa na
+> primeira semana, esse é o conjunto que mais faz sentido deixar para a semana seguinte.
 
 ### Educação física (T-1)
 Composição: camiseta de treinamento branca, calção de treinamento azul-royal, meias brancas, tênis preto. Usa pouco, mas leva.

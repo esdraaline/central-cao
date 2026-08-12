@@ -7,7 +7,7 @@
 
 | Data | Dia | O que |
 |---|---|---|
-| 13/08 | quinta | Acionar a P/1: Ofício de Apresentação na mesa SEI 302090130 + Rotina 13 do SIPA. E-mail ao SAE com as dúvidas. Combinar horário e bagagem com o amigo da carona |
+| 13/08 | quinta | Acionar a P/1: Ofício de Apresentação na mesa SEI 302090130 + Rotina 13 do SIPA. Combinar a bagagem com o amigo da carona |
 | 14/08 | sexta | Conferir se a mesa SEI recebeu o ofício. Conta do Banco do Brasil regularizada. Comprar cadeado e etiquetas. Engomar a camisa de passeio |
 | 15/08 | sábado | Arrumar a mala ([MALA.md](MALA.md)) e separar os documentos de mão |
 | **16/08** | **domingo** | **Saída de casa às 15h00**, de carona, chegada por volta das 22h ([VIAGENS.md](VIAGENS.md)). A janta vai na mala |

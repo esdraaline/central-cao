@@ -10,7 +10,7 @@
 ## Pendentes
 
 ### Reta final para a primeira semana (viagem em 16/08)
-- [ ] Escrever ao SAE (caessae) o que sobrou: chegada no domingo à noite, "passeio completo" é S-1 ou P-1, endereço da ConfecBell, qual EPI levar e se querem via impressa do ofício [13/08/2026] #curso
+- [ ] Levar na mala o EPI: cinto, colete e bota (rever se o QTS de segunda não previr atividade externa: é o conjunto mais volumoso da mala) [15/08/2026] #pessoal
 - [ ] Acionar a P/1 do 2º BPM/I para o Ofício de Apresentação (mesa SEI 302090130) e a liberação da Rotina 13 do SIPA (código 302090000) [13/08/2026] #admin
 - [ ] Combinar com o amigo quanto espaço de bagagem eu tenho (o horário já está fechado: saída 15h) [13/08/2026] #pessoal
 - [ ] Comprar o cadeado do armário (o do CAES não tem chave) e etiqueta + caneta permanente para as marmitas [14/08/2026] #pessoal
@@ -35,6 +35,7 @@
 - [ ] Ficar de olho no Recadastramento Anual + Inspeção de Saúde (IAS) próximo do aniversário #admin
 
 ## Concluídas
+- [x] Fechar as dúvidas que iriam para o SAE: chegada às 22h sem restrição, passeio completo é P-1, EPI é cinto/colete/bota com B-1, ofício não precisa de via impressa [12/08/2026] #curso
 - [x] Decidir como viajar: domingo 16/08 à tarde, de carona com um amigo, chegando à noite [12/08/2026] #pessoal
 - [x] Decidir onde comprar o fardamento: tudo na ConfecBell, na tarde de segunda 17/08 [12/08/2026] #pessoal
 - [x] Conferência de armário: 78 das 90 peças já estavam em casa [06/08/2026] #pessoal

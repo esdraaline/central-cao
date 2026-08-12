@@ -30,8 +30,9 @@ Orientação do Cap Hiran (SAE) em 12/08/2026:
 Referência oficial: **R-5-PM, 6ª Ed. v.2** (Regulamento de Uniformes). Lista de peças e quantidades em [MALA.md](MALA.md).
 
 - **Nas aulas, vale o fardamento orientado** (o QTS diz qual é o do dia). Em passeios e
-  atividades externas, **passeio completo**. Para as missões, levar o fardamento e o **EPI**
-  pertinentes (orientação do SAE, 12/08/2026).
+  atividades externas, **passeio completo, que aqui é o P-1** com todas as peças, não o S-1
+  (definido em 12/08/2026; o R-5 chama a seção dos sociais de "Passeio Completo", daí a
+  confusão possível). Para as missões, o **EPI é cinto, colete e bota**, com o **B-1**.
 - **Farda social (S-1)**: não é usada na segunda de recepção, mas pode ser exigida durante o
   curso, principalmente em visitas. O SAE recomenda **levar e deixar guardada no CAES**.
 - **Dia a dia do curso: P-1** (Art. 45) — camisa de passeio cinza-claro, calça social cinza-bandeirante, cinto de serviço, meias sociais pretas e sapatos pretos, com camiseta de serviço cinza-bandeirante por baixo.
@@ -100,9 +101,9 @@ e **Auxílio Financeiro a Estudantes**. Some-se a condição da conta do Banco d
 ser Conta Salário, nome fora do CADIN). Atrasar aqui não atrapalha a aula, atrapalha o
 pagamento.
 
-**O que vale levar** é o **número do processo SEI** anotado no celular, para responder na hora
-se alguém do CAES perguntar. Uma cópia impressa é cortesia, não requisito.
-*[VERIFICAR: perguntar ao SAE se querem alguma via impressa no dia da apresentação.]*
+**Não precisa levar via impressa** (confirmado em 12/08/2026). Basta o envio pela mesa SEI.
+Ainda assim, vale ter o **número do processo** anotado no celular, para responder na hora se
+alguém do CAES perguntar.
 
 ## Auxílios (Oficiais-Alunos PMESP)
 - Processados via DA; todos os Oficiais-Alunos são adidos ao CAES (função: Oficial-Aluno).

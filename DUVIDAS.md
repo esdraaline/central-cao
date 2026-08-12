@@ -5,11 +5,8 @@
 
 ## Em aberto
 
-### Para o SAE (Cap Hiran, caessae@policiamilitar.sp.gov.br) — perguntar antes de 16/08
-1. **Chego no domingo (16/08) por volta das 22h. Tem restrição de horário para entrar no alojamento?** Quem recebe nesse horário, e preciso avisar antes?
-2. **"Passeio completo" nas atividades externas é o S-1 ou o P-1?** No R-5, "Passeio Completo" é o nome da seção dos uniformes sociais (Art. 49). Se for S-1 mesmo, o quepe deixa de ser item de cerimônia e passa a ser de rotina.
-3. **EPI**: qual EPI é esperado já na primeira semana, ou isso só se define depois que sair o QTS?
-4. **O SAE quer alguma via impressa no dia da apresentação?** O Ofício de Apresentação vai pela mesa SEI 302090130, mas vale confirmar se esperam cópia em mãos ou algum comprovante no dia 17.
+### Para o SAE
+*(Nenhuma. As quatro que estavam aqui foram respondidas em 12/08/2026 — ver Resolvidas.)*
 
 ### Outras
 - **Restaurante e padaria do entorno abrem domingo à noite?** Chegando à noite, se não abrirem, a janta de domingo tem que sair de casa. Na dúvida, leve o lanche.
@@ -19,6 +16,14 @@
 ## Resolvidas
 > Fonte das três primeiras: orientações do Cap Hiran (SAE), repassadas em 12/08/2026.
 
+> As quatro abaixo foram respondidas pelo próprio Josemar em 12/08/2026, não pelo SAE. Não
+> chegou a ser preciso escrever. Se alguma delas tiver consequência cara mais adiante, vale
+> confirmar com a Seção antes de agir.
+
+- **Chegando por volta das 22h no domingo, tem restrição de horário no alojamento?** **Não.** *(Josemar, 12/08/2026)*
+- **"Passeio completo" na atividade externa é S-1 ou P-1?** **P-1.** A dúvida vinha de o R-5 chamar a seção dos uniformes sociais de "Passeio Completo" (Art. 49), mas na prática do curso o que vale é o P-1 completo. O quepe continua sendo peça de cerimônia, e o S-1 continua indo para o CAES por causa das visitas. *(Josemar, 12/08/2026)*
+- **Qual EPI levar?** **Cinto, colete e bota**, usados com o **B-1**. *(Josemar, 12/08/2026)*
+- **O SAE quer via impressa do Ofício de Apresentação no dia 17?** **Não.** Basta o envio pela mesa SEI 302090130. *(Josemar, 12/08/2026)*
 - **Qual o tamanho da cama do alojamento?** **Solteiro.** Levar lençol de solteiro. *(Josemar, 12/08/2026)*
 - **Cartão de estacionamento, peço a quem?** **Não se aplica**: vou de carona. O cartão é do veículo, então quem precisar pedir à AAp é o motorista. *(Josemar, 12/08/2026)*
 - **A partir de quando dá para chegar no alojamento?** A partir de **sábado à tarde**, não só no domingo. Alojamentos e salas já vêm identificados com o nome de cada aluno. Decidido viajar **domingo à tarde, chegando à noite**. *(12/08/2026)*

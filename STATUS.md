@@ -9,7 +9,9 @@
 - **Fardamento: tudo na ConfecBell, na tarde de segunda 17/08.** Nada de loja antes de viajar.
 - **Cama de solteiro** confirmada, então o lençol é de solteiro.
 - **Boina reserva** vai na mala, então a boina nova é reposição, não urgência.
-- **Ofício de Apresentação: acionar a P/1 amanhã, 13/08.**
+- **Ofício de Apresentação: acionar a P/1 amanhã, 13/08.** Não precisa de via impressa no dia 17.
+- **"Passeio completo" na atividade externa é o P-1**, não o S-1. O quepe segue sendo peça de cerimônia.
+- **EPI do curso: cinto, colete e bota**, com o B-1.
 
 ## Novidade de 12/08/2026: chegaram as orientações do SAE
 
@@ -76,13 +78,13 @@ e a viagem é **domingo à tarde**. Isso esvaziou a correria da semana, e sobrou
    pela liberação da Rotina 13 do SIPA. Não é papel para levar na mala: é ato eletrônico
    da OPM, e é dele que dependem a matrícula, a adição, a Ajuda de Custo e o Auxílio
    Financeiro a Estudantes.
-2. **Escrever ao SAE** com o que sobrou em [DUVIDAS.md](DUVIDAS.md): chegada no domingo
-   à noite, se "passeio completo" na atividade externa é S-1 ou P-1, endereço da
-   ConfecBell, EPI e se querem via impressa do ofício.
-3. **Comprar cadeado e etiqueta** até sexta. É o único bloco de compra antes de viajar.
-4. **Combinar com o amigo** o espaço de bagagem. O horário já está fechado.
-5. Depois do **QTS de segunda (17/08)**, me trazer módulo, entregas e avaliações
+2. **Comprar cadeado e etiqueta** até sexta. É o único bloco de compra antes de viajar.
+3. **Combinar com o amigo** o espaço de bagagem. O horário já está fechado.
+4. Depois do **QTS de segunda (17/08)**, me trazer módulo, entregas e avaliações
    pra eu completar [PRAZOS.md](PRAZOS.md).
+
+Não é mais preciso escrever ao SAE: as quatro dúvidas foram fechadas em 12/08
+(ver [DUVIDAS.md](DUVIDAS.md)).
 
 **O que a mala cobra:** **boina reserva**, **camisa de passeio engomada** (é a que veste
 o primeiro dia), **lençol de solteiro**, **janta de domingo** e volume contido, porque a

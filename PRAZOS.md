@@ -10,17 +10,18 @@
 | 11/08 | terça | Ligar na loja de fardamento e comprar camisas e camisetas (bloco que depende de aplicação) |
 | 12/08 | quarta | Comprar as peças prontas: calça social, boina, camisa social e gravata do S-1 |
 | 13/08 | quinta | Cartão de estacionamento do CAES, se for de carro (pedir à AAp) |
-| 14/08 | sexta | Ofício de Apresentação na mesa SEI 302090130 + Rotina 13 do SIPA. Conta do Banco do Brasil regularizada. Retirar o que ficou na loja |
-| 15/08 | sábado | Arrumar a mala ([MALA.md](MALA.md)) e separar os documentos de mão |
-| **16/08** | **domingo** | **Deslocamento para São Paulo** ([VIAGENS.md](VIAGENS.md)) |
-| **17/08** | **segunda** | **Primeira aula, entrada 08h15.** Início da Rotina 13 do SIPA |
+| 14/08 | sexta | Ofício de Apresentação na mesa SEI 302090130 + Rotina 13 do SIPA. Conta do Banco do Brasil regularizada. Retirar o que ficou na loja. Comprar o cadeado do armário |
+| 15/08 | sábado | Arrumar a mala ([MALA.md](MALA.md)) e separar os documentos de mão. **O alojamento já abre à tarde**, então este pode virar o dia da viagem |
+| **16/08** | **domingo** | **Deslocamento para São Paulo** ([VIAGENS.md](VIAGENS.md)), se não tiver ido no sábado |
+| **17/08** | **segunda** | **Recepção no CAES a partir das 07h30** (café da manhã da turma do CAO-I/26, lista de presença por pelotão e palestra). **Sai o QTS.** Tarde livre para social/ConfecBell e alojamento. Início da Rotina 13 do SIPA |
 | 20/08 | quinta | Fim da primeira semana, volta depois das 11h30 |
 
 ## Curso (CAO-II/26 — 2ª Turma)
 - **Duração**: agosto/2026 a agosto/2027, no CAES "Cel Nelson Freire Terra".
 - **Semana padrão**: viaja domingo, aula de segunda a quinta, volta quinta depois das 11h30 (ver [ROTINA.md](ROTINA.md)).
 - **Rotina 13 do SIPA**: liberada de 17/ago/26 a 22/jan/27 (1º bloco financeiro/administrativo).
-- Próxima entrega / próxima avaliação: *(preencher quando o CAES divulgar)*
+- **QTS (programação das aulas)**: divulgado na segunda, 17/08. É dele que saem as próximas datas deste arquivo.
+- Próxima entrega / próxima avaliação: *(preencher a partir do QTS de 17/08)*
 - Formatura: data/hora/local ainda a ratificar pela turma (ver checklist em [ROTINA.md](ROTINA.md)).
 
 ## Prazos do curso em andamento

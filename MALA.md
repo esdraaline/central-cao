@@ -1,12 +1,13 @@
 # MALA — semana no CAES
 
-> Checklist de enxoval, farda e material para a semana de curso. Rotina: **chega domingo, aulas de segunda a quinta, volta quinta depois das 11h30**.
+> Checklist de enxoval, farda e material para a semana de curso. Rotina: **chega no domingo (na primeira semana dá para chegar já no sábado à tarde), aulas de segunda a quinta, volta quinta depois das 11h30**.
 > **Não tem lavanderia**: as quantidades abaixo cobrem os 4 dias de aula sem lavar nada.
 > Base: bizu de colega que já fez o CAO + [ROTINA.md](ROTINA.md).
 >
 > **Esta é a lista do dia de arrumar a mala** — tique conforme for pondo dentro. Antes dela vem a [COMPRAS.md](COMPRAS.md) (o que ainda falta comprar). A conferência de armário já foi feita em 06/08/2026.
 
 ## Antes de sair de casa
+- [ ] **Cadeado para o armário** — o armário do CAES **não tem chave própria** (orientação do SAE, 12/08/2026). Sem cadeado, não dá para trancar nada
 - [ ] Conferir distintivos, insígnias e tarjetas em **cada** peça (ver checagem no fim desta seção)
 - [ ] Providenciar o **distintivo de OPM do CAES** — vai na manga direita das camisas de passeio e da gandola. É o "brasão do CAES" do bizu. O colega disse que não cobraram, mas é o certo pelo R-5.
 - [ ] Comprar as camisetas de serviço que faltam (ver quadro abaixo — tem detalhe importante)
@@ -14,6 +15,10 @@
 
 ## Uniforme — o que levar
 Referência: **R-5-PM, 6ª Ed. v.2** (Regulamento de Uniformes). O do dia a dia é o **P-1 (Passeio 1)**; o **B-1 (Básico Operacional 1)** entra na instrução e nas saídas externas.
+
+> **Regra do SAE (12/08/2026)**: na aula vale o fardamento que o QTS orientar; em passeio e
+> atividade externa, **passeio completo**; nas missões, o fardamento e o **EPI** pertinentes.
+> A **farda social vai junto e fica guardada no CAES** (ver seção do S-1 abaixo).
 
 ### P-1 — uniforme do dia a dia (Art. 45)
 Composição: quepe, camisa de passeio cinza-claro, camiseta de serviço cinza-bandeirante, calça social cinza-bandeirante, cinto de serviço cinza-bandeirante, meias sociais pretas, sapatos pretos.
@@ -26,7 +31,7 @@ Composição: quepe, camisa de passeio cinza-claro, camiseta de serviço cinza-b
 - [ ] Sapatos pretos (engraxados)
 - [ ] 5 pares de meias sociais pretas
 - [ ] Boina cinza-bandeirante
-- [ ] Quepe cinza-bandeirante *(só se houver cerimônia/formatura na semana)*
+- [ ] Quepe cinza-bandeirante *(no P-1 só em cerimônia, mas ele é a cobertura do S-1 — ver a seção do social)*
 
 **Nota de quantidade**: você falou em 2 jogos de P-1. A calça aguenta bem 2 para os 4 dias, mas a camisa é a peça que sofre. Se tiver uma terceira, leve — sai de 2 dias por camisa para 1,3.
 
@@ -61,6 +66,31 @@ O bizu falou em "japona", mas pelo R-5 a **japona cinza-bandeirante é restrita 
 
 - [ ] Jaqueta de passeio cinza-bandeirante, com as 3 estrelas de Capitão em metal nas platinas
 - [ ] Blusa de lã cinza-bandeirante *(opcional, se o frio apertar)*
+
+### S-1 — farda social (leva e deixa no CAES)
+Orientação do SAE em 12/08/2026: **na segunda de recepção não se usa o social**, mas ele pode
+ser exigido durante o curso, principalmente em visitas. Por isso o recomendado é levar e
+**deixar guardado no CAES**, para não depender de ir buscar em casa.
+
+Composição do S-1 (Art. 49, § 2º) — repare que aqui a cobertura é o **quepe**, não a boina:
+
+- [ ] Paletó cinza-bandeirante (tecido panamá, Art. 93)
+- [ ] Camisa social cinza-claro (manga longa, gola social)
+- [ ] Gravata cinza-bandeirante
+- [ ] Calça social cinza-bandeirante *(a mesma do P-1)*
+- [ ] Cinto de serviço, meias sociais pretas e sapatos pretos *(os mesmos do P-1)*
+- [ ] **Quepe cinza-bandeirante** — é a cobertura do S-1, então ele deixa de ser "só se tiver cerimônia"
+- [ ] Tarjeta administrativa de acrílico (a mesma imantada que roda entre as peças)
+
+> **Ponto a confirmar com o SAE.** A orientação diz "para passeios e atividades externas,
+> passeio completo". No R-5, "Passeio Completo" é justamente o título da seção dos **uniformes
+> sociais** (Seção VI, Art. 49), o que faria a saída externa ser de S-1 e não de P-1. Pode
+> também ser só a forma coloquial de dizer "o passeio com todas as peças". Está anotado em
+> [DUVIDAS.md](DUVIDAS.md). De qualquer jeito, o social vai na mala.
+
+### EPI e missões
+- [ ] Levar o **EPI** pertinente às missões previstas (orientação do SAE). O QTS de segunda é
+      que vai dizer o que a semana pede; até lá, colete e o que mais for de praxe na atividade.
 
 ### Educação física (T-1)
 Composição: camiseta de treinamento branca, calção de treinamento azul-royal, meias brancas, tênis preto. Usa pouco, mas leva.
@@ -111,9 +141,13 @@ A conservação de salas e alojamento é por escala dos próprios alunos. Leve o
 - [ ] Papel toalha
 
 ## Copa e alimentação
-Não tem rancho, mas a estrutura ajuda: **copa com geladeira e micro-ondas anexa ao alojamento**, **frigobar dentro do alojamento**, **mesas e cadeiras para comer** e **cafeteiras**.
+Não tem rancho, mas a estrutura ajuda: **copa e refeitório à disposição**, os dois com
+eletrodomésticos, **1 geladeira na copa, 1 no refeitório e 2 frigobares**, mesas e cadeiras
+para comer e cafeteiras. São muitas pessoas dividindo as mesmas geladeiras, então marmita sem
+nome vira marmita de todo mundo.
 - [ ] Caneca, prato, talheres
 - [ ] Pote/marmita que possa ir ao micro-ondas
+- [ ] **Etiqueta ou fita crepe + caneta permanente** para identificar os potes na geladeira
 - [ ] Detergente, esponja e pano de prato
 - [ ] Café, açúcar/adoçante e filtro (se for usar a cafeteira)
 - [ ] Garrafa de água
@@ -140,7 +174,8 @@ Não tem rancho, mas a estrutura ajuda: **copa com geladeira e micro-ondas anexa
 - Roupa de aula sobressalente além do quadro acima — o armário é apertado
 
 ## Detalhes que mudam a mala
-- **Armário**: provavelmente só **1 folha de armário padrão da PM** por aluno. Leve compacto e prefira mala que caiba embaixo da cama.
+- **Armário**: provavelmente só **1 folha de armário padrão da PM** por aluno. Leve compacto e prefira mala que caiba embaixo da cama. **Ele não vem com chave: o cadeado é seu** (SAE, 12/08/2026).
+- **Alojamento e sala já vêm identificados com o seu nome**, e abrem **a partir de sábado à tarde**. A tarde de segunda também tem tempo reservado para arrumar armário e alojamento, então não precisa deixar tudo perfeito na chegada.
 - **Wi-fi**: tem intranet e funcionou bem (rede WCorp).
 - **Comes e bebes da turma**: os próprios alunos se organizam para deixar o ambiente melhor; isso é acertado no início do curso — separe um trocado.
 

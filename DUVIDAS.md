@@ -6,14 +6,20 @@
 ## Em aberto
 
 ### Para o SAE (Cap Hiran, caessae@policiamilitar.sp.gov.br) — perguntar antes de 16/08
-1. **A partir de que horas dá para chegar no alojamento no domingo (16/08)?** Preciso disso para definir a hora de sair de Guararapes.
+1. **A partir de que horas de sábado (15/08) o alojamento abre?** Já se sabe que é "sábado à tarde"; falta a hora, que é o que define se compensa viajar sábado ou domingo.
 2. **Qual o tamanho da cama do alojamento?** O alojamento não fornece roupa de cama e eu levo lençol de casa (solteiro ou box?).
-3. **Como funciona o armário?** Quem entrega a chave, se é uma folha por aluno e se pode deixar material durante a semana.
-4. **Cartão de estacionamento**: se eu for de carro, peço antes por e-mail ou retiro na chegada? A quem?
-5. **Apresentação de segunda (17/08)**: tem formatura ou apresentação formal no primeiro dia? Uniforme é o P-1 normal ou tem alguma exigência específica?
+3. **Cartão de estacionamento**: se eu for de carro, peço antes por e-mail ou retiro na chegada? A quem?
+4. **"Passeio completo" nas atividades externas é o S-1 ou o P-1?** No R-5, "Passeio Completo" é o nome da seção dos uniformes sociais (Art. 49). Se for S-1 mesmo, o quepe deixa de ser item de cerimônia e passa a ser de rotina.
+5. **EPI**: qual EPI é esperado já na primeira semana, ou isso só se define depois que sair o QTS?
 
 ### Outras
-- **Restaurante e padaria do entorno abrem domingo à noite?** Se não, a primeira janta tem que sair de casa.
+- **Restaurante e padaria do entorno abrem domingo à noite?** Se não, a primeira janta tem que sair de casa. *(Se a chegada for no sábado, vale a mesma pergunta para sábado à noite.)*
+- **Endereço e horário da ConfecBell** (loja do entorno). Vale conferir antes, para não descobrir na tarde de segunda que ela fecha cedo ou que fica longe a pé.
+- **Café da manhã de segunda é bancado pela turma do CAO-I/26** — vale confirmar com o chefe de turma se entra alguma vaquinha de retribuição.
 
 ## Resolvidas
-- *(mover pra cá quando a dúvida for esclarecida, com a resposta e a fonte)*
+> Fonte das três primeiras: orientações do Cap Hiran (SAE), repassadas em 12/08/2026.
+
+- **A partir de quando dá para chegar no alojamento?** A partir de **sábado à tarde**, não só no domingo. Alojamentos e salas já vêm identificados com o nome de cada aluno. *(12/08/2026)*
+- **Como funciona o armário?** Ele **não tem chave própria**: cada aluno leva o próprio **cadeado**. A tarde de segunda tem tempo reservado para organizar armário e alojamento. *(12/08/2026)*
+- **Como é a apresentação de segunda (17/08)?** Recepção no CAES **a partir das 07h30**, com café da manhã patrocinado pela turma do CAO-I/26, **lista de presença para assinar por pelotão** e, em seguida, uma palestra. **A farda social não é usada na segunda**, mas deve ser levada e deixada guardada no CAES para as visitas do curso. O **QTS com a programação das aulas sai nesta segunda**. *(12/08/2026)*

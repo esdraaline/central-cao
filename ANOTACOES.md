@@ -2,6 +2,35 @@
 
 > Notas soltas, recados, ideias, coisas que não se encaixam em prazo/tarefa/dúvida.
 
+## 12/08/2026 — Orientações do SAE (Cap Hiran) sobre a recepção
+
+Fonte: mensagem do Cap Hiran repassada pelo Josemar em 12/08/2026. Conteúdo distribuído
+pelos arquivos certos (ROTINA, MALA, COMPRAS, PRAZOS, VIAGENS, DUVIDAS, TAREFAS); aqui fica
+só o registro do que veio e do que isso mudou.
+
+**O que veio:** fardamento orientado nas aulas e passeio completo nas atividades externas;
+alunos adidos ao CAES, que é o quartel de referência; levar fardamento e EPI das missões;
+farda social não se usa na segunda, mas leva e deixa no CAES por causa das visitas.
+Alojamento e salas identificados com o nome de cada aluno, liberados a partir de sábado à
+tarde; armário sem chave própria, cada um leva cadeado; tarde de segunda com tempo para
+arrumar. Copa e refeitório com eletrodomésticos, 1 geladeira em cada e 2 frigobares.
+Recepção na segunda a partir de 07h30, com café da manhã da turma do CAO-I/26, lista de
+presença por pelotão e palestra. Tarde de segunda livre para experimentar o social, ajustar
+na ConfecBell e organizar alojamento e armário. QTS divulgado na segunda.
+A **ConfecBell é loja do entorno** (confirmado pelo Josemar em 12/08/2026), não atende dentro
+do CAES: a ida serve para ajuste de caimento, não para repor peça que faltou.
+
+**O que mudou de verdade no planejamento:**
+- Cadeado virou compra nova. Não estava em lista nenhuma.
+- Sábado 15/08 virou opção de viagem, o que puxa o prazo de compras para sexta 14/08.
+- A segunda começa 07h30, e o painel/PRAZOS dizia 08h15.
+- A MALA não tinha S-1 nenhum. Ganhou seção própria, com a composição do Art. 49.
+
+**Dúvida que a orientação criou:** "passeio completo" é o nome que o R-5 dá à seção dos
+uniformes **sociais** (Seção VI, Art. 49). Se for isso mesmo, saída externa é S-1 e o quepe
+sai da condição de peça só de cerimônia. Pode ser também só a forma coloquial de dizer "o
+P-1 com todas as peças". Ficou como pergunta ao SAE, e o social vai na mala de qualquer jeito.
+
 ## 06/08/2026 — Publicação passou a ser automática (GitHub Actions)
 
 **O que mudou na prática:** não precisa mais rodar `python gerar_painel.py` e

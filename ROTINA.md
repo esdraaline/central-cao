@@ -14,9 +14,26 @@ Entrada sempre às **08h15**. A saída muda por dia:
 
 Ou seja: chega no domingo, quatro dias de aula e volta na quinta depois das 11h30.
 
+## Primeiro dia (segunda, 17/08) — não é 08h15
+Orientação do Cap Hiran (SAE) em 12/08/2026:
+
+- **Recepção no CAES a partir das 07h30**, não 08h15.
+- Café da manhã por conta da turma do CAO-I/26.
+- **Lista de presença para assinar**, com indicação do pelotão.
+- Em seguida, palestra.
+- **O QTS com a programação das aulas é divulgado nesta segunda.**
+- **Tarde livre** para experimentar a farda social, fazer ajustes na ConfecBell,
+  organizar alojamento e armário. A **ConfecBell é loja do entorno**, então ir até lá é sair
+  do quartel: leve o social já comprado e use a ida só para o ajuste de caimento.
+
 ## Uniforme
 Referência oficial: **R-5-PM, 6ª Ed. v.2** (Regulamento de Uniformes). Lista de peças e quantidades em [MALA.md](MALA.md).
 
+- **Nas aulas, vale o fardamento orientado** (o QTS diz qual é o do dia). Em passeios e
+  atividades externas, **passeio completo**. Para as missões, levar o fardamento e o **EPI**
+  pertinentes (orientação do SAE, 12/08/2026).
+- **Farda social (S-1)**: não é usada na segunda de recepção, mas pode ser exigida durante o
+  curso, principalmente em visitas. O SAE recomenda **levar e deixar guardada no CAES**.
 - **Dia a dia do curso: P-1** (Art. 45) — camisa de passeio cinza-claro, calça social cinza-bandeirante, cinto de serviço, meias sociais pretas e sapatos pretos, com camiseta de serviço cinza-bandeirante por baixo.
 - **Cobertura**: no curso o **quepe é substituído pela boina cinza-bandeirante** (Art. 45, § 1º, item 2, que trata de trânsito e atividades administrativas). Quepe só em cerimônia. Por isso a boina fica guardada no alojamento e só é usada ao sair para área descoberta.
 - **Instrução e missão externa: B-1** (Art. 23) — gandola e calça operacional cinza-bandeirante, coturnos pretos. Segundo o colega, saiu umas 3 vezes no curso todo.
@@ -28,8 +45,11 @@ Referência oficial: **R-5-PM, 6ª Ed. v.2** (Regulamento de Uniformes). Lista d
 - **EF (T-1)**: camiseta de treinamento branca, calção azul-royal, meias brancas e tênis preto.
 
 ## Estrutura do prédio
-- **Copa anexa ao alojamento**: geladeira e micro-ondas.
-- **Frigobar dentro do alojamento**, além de mesas e cadeiras para se alimentar.
+- **Copa e refeitório** à disposição da turma, os dois com eletrodomésticos.
+- Para guardar marmita: **1 geladeira na copa, 1 geladeira no refeitório e 2 frigobares**
+  (SAE, 12/08/2026). São muitas pessoas usando as mesmas geladeiras, então **identifique os
+  potes com o seu nome**.
+- Micro-ondas, mesas e cadeiras para se alimentar.
 - **Cafeteiras** disponíveis.
 - **Sala de aula tem poucas tomadas** — bizu: levar extensão com várias saídas para o notebook.
 - **Wi-fi da intranet funciona bem** (rede WCorp).
@@ -38,7 +58,11 @@ Referência oficial: **R-5-PM, 6ª Ed. v.2** (Regulamento de Uniformes). Lista d
 - Os próprios alunos se organizam para melhorar o ambiente (comes e bebes); isso é acertado no início do curso.
 
 ## Alojamento e estacionamento
-- Alojamento: armários e camas identificados; não usar outras dependências.
+- **Liberado a partir de sábado à tarde** (SAE, 12/08/2026). Não precisa esperar o domingo.
+- Alojamento e salas de aula **identificados com o nome de cada aluno**; não usar outras dependências.
+- **O armário não tem chave: cada aluno leva o próprio cadeado.**
+- A tarde de segunda tem tempo reservado para arrumar alojamento e armário.
+- A farda social pode ficar guardada no CAES durante o curso.
 - **Não fornece roupa de cama** — levar lençol, fronha, travesseiro e cobertor.
 - **Levar material de limpeza**: saco de lixo grande e pequeno, pano de chão, balde, Veja, papel higiênico.
 - Estacionamento do CAO: 40 vagas sinalizadas, cartão de estacionamento visível (contatar a AAp se necessário). Motocicletas: espaço coberto atrás do prédio. Viaturas: 20 vagas sinalizadas defronte à OPM.

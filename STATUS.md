@@ -1,7 +1,24 @@
 # STATUS — Central do CAO
 
 > Painel principal. Ler isso primeiro em qualquer sessão nova ("onde paramos?").
-> Atualizado em: 11/08/2026
+> Atualizado em: 12/08/2026
+
+## Novidade de 12/08/2026: chegaram as orientações do SAE
+
+O Cap Hiran (SAE) repassou as orientações da recepção. Quatro coisas mudam o planejamento
+que estava aqui:
+
+1. **O alojamento abre a partir de sábado à tarde.** Viajar dia 15 virou opção real, e é a
+   que tira o risco de chegar em cima da hora numa segunda que começa 07h30.
+2. **A segunda começa 07h30, não 08h15**: recepção, café da manhã bancado pela turma do
+   CAO-I/26, lista de presença por pelotão e palestra. À tarde, tempo livre para social,
+   ConfecBell, alojamento e armário. **O QTS sai neste dia.**
+3. **O armário não tem chave: o cadeado é seu.** Item novo, ninguém tinha previsto.
+4. **A farda social vai junto e fica guardada no CAES.** Não se usa na segunda, mas o curso
+   tem visitas. A [MALA.md](MALA.md) não tinha S-1 nenhum; agora tem.
+
+O que ficou de dúvida nova (inclusive se "passeio completo" na atividade externa é S-1 ou
+P-1) está em [DUVIDAS.md](DUVIDAS.md).
 
 ## Novidade de 11/08/2026: o painel virou guia do dia
 
@@ -35,8 +52,8 @@ de subir. Detalhe e o histórico do build quebrado do Pages estão em
 - Projeto de Pesquisa (PP) tem versão final entregue em [CAO 2026/PP/Projeto Pesquisa Cap Josemar Final.doc](CAO%202026/PP/Projeto%20Pesquisa%20Cap%20Josemar%20Final.doc) — tema: integração PM-Prefeituras / governança participativa no 2º BPM/I. Como agora é mestrado profissional, isso deve virar **dissertação** (ver contato de Pesquisa em [CONTATOS.md](CONTATOS.md)).
 - Contatos e organograma do CAES: ver [CONTATOS.md](CONTATOS.md).
 - Regras de rotina, uniforme, SIPA financeiro, formatura: ver [ROTINA.md](ROTINA.md).
-- **Primeira semana: viaja domingo 16/08/2026**, aulas de segunda a quinta (entra 08h15; sai 16h seg, 18h ter e qua, 11h30 qui). A conferência de armário está **feita** (06/08, 78 das 90 peças já em casa), então sobraram duas etapas: [COMPRAS.md](COMPRAS.md) (o que falta) → [MALA.md](MALA.md) (arrumar a mala no dia).
-- **Falta preencher**: em qual módulo/disciplina o curso está agora, o que já foi entregue no curso em si (não só na seleção/recepção).
+- **Primeira semana: viaja sábado 15/08 ou domingo 16/08** (alojamento abre sábado à tarde, decisão em [VIAGENS.md](VIAGENS.md)). Segunda 17/08 a recepção é **07h30**; da terça em diante entra 08h15 e sai 16h seg, 18h ter e qua, 11h30 qui. A conferência de armário está **feita** (06/08, 78 das 90 peças já em casa), então sobraram duas etapas: [COMPRAS.md](COMPRAS.md) (o que falta) → [MALA.md](MALA.md) (arrumar a mala no dia).
+- **Módulo e disciplinas**: saem no **QTS de segunda, 17/08**. Até lá não tem o que preencher.
 
 ## Próximo passo
 
@@ -44,16 +61,21 @@ O roteiro dia a dia até a viagem está em [TAREFAS.md](TAREFAS.md), com data, e
 que o painel cobra na abertura (por isso aqui é só leitura, para não ter duas listas
 dizendo a mesma coisa). O que trava tudo:
 
-1. **Ligar hoje na loja de fardamento.** É o único bloco que depende de terceiro:
-   2 camisas de passeio, 2 camisetas de serviço, aplicação de tarjeta e logomarca,
-   4 distintivos de OPM do CAES e a tarjeta administrativa de acrílico. Se a
-   aplicação não entrar esta semana, não volta a tempo do dia 16/08.
-2. **Escrever ao SAE** com as perguntas de [DUVIDAS.md](DUVIDAS.md) (horário de
-   chegada no domingo, tamanho da cama, armário, estacionamento). A resposta muda
-   a mala e a hora de sair.
-3. **Fechar como vou viajar** (carro ou ônibus) e preencher em [VIAGENS.md](VIAGENS.md).
-   Se for de carro, o cartão de estacionamento precisa ser pedido antes.
-4. Josemar: me contar o que está rolando no curso (módulo, entregas, avaliações)
+1. **Ligar na loja de fardamento (estava marcado para 11/08 e ainda está aberto).**
+   É o único bloco que depende de terceiro: 2 camisas de passeio, 2 camisetas de
+   serviço, aplicação de tarjeta e logomarca, 4 distintivos de OPM do CAES e a
+   tarjeta administrativa de acrílico. Se a aplicação não entrar esta semana, não
+   volta a tempo. E agora o prazo real pode ser **sexta 14/08**, não domingo, caso
+   você decida viajar no sábado.
+2. **Escrever ao SAE** com o que sobrou em [DUVIDAS.md](DUVIDAS.md): hora de abertura
+   do alojamento no sábado, tamanho da cama, estacionamento, se "passeio completo"
+   na atividade externa é S-1 ou P-1, e qual EPI levar.
+3. **Fechar sábado ou domingo e como vou** (carro ou ônibus), preenchendo
+   [VIAGENS.md](VIAGENS.md). Se for de carro, o cartão de estacionamento precisa ser
+   pedido antes.
+4. **Comprar o cadeado** do armário. É item novo e é o tipo de coisa que só se
+   descobre que faltou na hora de trancar.
+5. Depois do **QTS de segunda (17/08)**, me trazer módulo, entregas e avaliações
    pra eu completar [PRAZOS.md](PRAZOS.md).
 
 ## Prazos mais próximos

@@ -10,7 +10,7 @@ Separe o que depende de terceiro do que você resolve sozinho:
 |---|---|---|
 | Costura e aplicação (tarjeta, logomarca, distintivo) | **esta semana** | a loja de fardamento precisa aplicar e devolver |
 | Peça de fardamento pronta | até 12/08 | pode não ter seu tamanho e ter que encomendar |
-| Mercado (limpeza, copa, papelaria) | sábado 15/08 | não trava nada |
+| Mercado (limpeza, copa, papelaria, **cadeado**) | até sexta 14/08 | o alojamento abre já no sábado à tarde, então sábado pode virar dia de viagem |
 
 **Ligue na loja de fardamento antes de qualquer coisa** e pergunte o prazo de aplicação. É isso que define se dá para fazer tudo em uma loja só.
 
@@ -37,9 +37,26 @@ Não depende de aplicação, mas pode não ter o seu tamanho e ter que encomenda
 - [ ] **1 camisa social cinza-claro** — manga longa, gola social, sem bolsos, para compor o S-1
 - [ ] **1 gravata cinza-bandeirante** — para compor o S-1
 
-## 3. Mercado — sábado 15/08
+> **O social ganhou prazo, mas não deixou de ser prioridade.** O SAE avisou que a tarde de
+> segunda (17/08) é livre para experimentar a farda social e fazer **ajustes na ConfecBell**.
+> Ou seja, a costura de caimento pode esperar; o que não pode é chegar lá sem as peças. O S-1
+> completo (Art. 49) é quepe, paletó, camisa social cinza-claro, gravata, calça social, cinto,
+> meias pretas e sapato preto — confira se só faltam mesmo a camisa e a gravata.
+>
+> **A ConfecBell é loja do entorno, não atende dentro do CAES.** Ou seja, na tarde de segunda
+> você sai do quartel para ir até lá. Isso vale para **ajuste de caimento**, não para repor
+> peça: chegue com o social comprado, porque contar com a loja ter o seu tamanho na hora é
+> aposta. Antes de viajar, vista o social inteiro em casa para saber o que precisa de ajuste.
 
-**Nada.** A conferência fechou cama, higiene, limpeza do alojamento, copa, estudo e roupa pessoal: está tudo em casa. Se aparecer alguma coisa na hora de arrumar a mala, anote aqui.
+## 3. Mercado — até sexta 14/08
+
+A conferência de armário fechou cama, higiene, limpeza do alojamento, copa, estudo e roupa
+pessoal. Sobrou o que a orientação do SAE de 12/08/2026 trouxe de novo:
+
+- [ ] **Cadeado** — o armário do CAES **não tem chave própria**, cada um leva o seu. Prefira o de segredo, para não depender de chavinha, e leve 2 se quiser trancar também a mala.
+- [ ] **Etiqueta ou fita crepe + caneta permanente** — são 2 geladeiras e 2 frigobares para a turma inteira; pote sem nome se perde.
+
+Se aparecer alguma coisa na hora de arrumar a mala, anote aqui.
 
 ## Pendente, mas não é compra
 

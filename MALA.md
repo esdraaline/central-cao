@@ -11,7 +11,7 @@
 - [ ] Conferir distintivos, insígnias e tarjetas em **cada** peça (ver checagem no fim desta seção)
 - [ ] Providenciar o **distintivo de OPM do CAES** — vai na manga direita das camisas de passeio e da gandola. É o "brasão do CAES" do bizu. O colega disse que não cobraram, mas é o certo pelo R-5.
 - [ ] Comprar as camisetas de serviço que faltam (ver quadro abaixo — tem detalhe importante)
-- [ ] Cartão de estacionamento visível, se for de carro (40 vagas sinalizadas)
+- [ ] Combinar com o amigo da carona o horário de saída e o espaço de bagagem
 
 ## Uniforme — o que levar
 Referência: **R-5-PM, 6ª Ed. v.2** (Regulamento de Uniformes). O do dia a dia é o **P-1 (Passeio 1)**; o **B-1 (Básico Operacional 1)** entra na instrução e nas saídas externas.
@@ -22,9 +22,9 @@ Referência: **R-5-PM, 6ª Ed. v.2** (Regulamento de Uniformes). O do dia a dia 
 >
 > **O que a compra na segunda muda nesta lista.** As 2 camisas de passeio, as 2 camisetas de
 > serviço, a boina, a calça social, a camisa social e a gravata só serão compradas na tarde de
-> segunda, na ConfecBell. Então na mala vai o que já existe em casa, com dois cuidados:
-> **leve o quepe** (a boina só chega segunda e cobertura é obrigatória em área descoberta) e
-> **a camisa de passeio que você tem é a única garantida para o primeiro dia**, então engomada.
+> segunda, na ConfecBell. Então na mala vai o que já existe em casa. A **boina reserva** cobre
+> a segunda de manhã, e a **camisa de passeio vai engomada**, porque é a que veste o primeiro
+> dia.
 
 ### P-1 — uniforme do dia a dia (Art. 45)
 Composição: quepe, camisa de passeio cinza-claro, camiseta de serviço cinza-bandeirante, calça social cinza-bandeirante, cinto de serviço cinza-bandeirante, meias sociais pretas, sapatos pretos.
@@ -36,7 +36,7 @@ Composição: quepe, camisa de passeio cinza-claro, camiseta de serviço cinza-b
 - [ ] Cinto de serviço cinza-bandeirante
 - [ ] Sapatos pretos (engraxados)
 - [ ] 5 pares de meias sociais pretas
-- [ ] Boina cinza-bandeirante
+- [ ] Boina cinza-bandeirante *(a reserva, até comprar a nova na segunda)*
 - [ ] Quepe cinza-bandeirante *(no P-1 só em cerimônia, mas ele é a cobertura do S-1 — ver a seção do social)*
 
 **Nota de quantidade**: você falou em 2 jogos de P-1. A calça aguenta bem 2 para os 4 dias, mas a camisa é a peça que sofre. Se tiver uma terceira, leve — sai de 2 dias por camisa para 1,3.
@@ -173,7 +173,7 @@ nome vira marmita de todo mundo.
 ## Documentos
 - [ ] Carteira de identidade funcional
 - [ ] **Número do processo SEI** do Ofício de Apresentação anotado no celular. O ofício em si é enviado pela OPM à mesa **SEI 302090130** e **não precisa ir impresso** (ver [ROTINA.md](ROTINA.md)); cópia em papel é só cortesia
-- [ ] Cartão de estacionamento
+- [ ] Dinheiro/cartão para a divisão do combustível da carona
 
 ## O que NÃO precisa levar
 - **B-2 e B-3** — o bizu citou, mas pelo R-5 o B-2 é da Corregedoria (boina azul-celeste, Art. 24) e o B-3 é de patrulha montada, com culote e botas de cavalaria (Art. 25). Para curso e missão externa o uniforme é o **B-1**.
@@ -182,6 +182,7 @@ nome vira marmita de todo mundo.
 - Roupa de aula sobressalente além do quadro acima — o armário é apertado
 
 ## Detalhes que mudam a mala
+- **Vou de carona.** O porta-malas é dividido com outra pessoa, então volume é moeda: combine antes quanto cabe. O **balde** é o item mais caro em espaço nesta lista; se apertar, é o primeiro a ficar (ou leve um dobrável). A extensão, o travesseiro e o cobertor vêm logo atrás.
 - **Armário**: provavelmente só **1 folha de armário padrão da PM** por aluno. Leve compacto e prefira mala que caiba embaixo da cama. **Ele não vem com chave: o cadeado é seu** (SAE, 12/08/2026).
 - **Alojamento e sala já vêm identificados com o seu nome**, e abrem **a partir de sábado à tarde**. A tarde de segunda também tem tempo reservado para arrumar armário e alojamento, então não precisa deixar tudo perfeito na chegada.
 - **Wi-fi**: tem intranet e funcionou bem (rede WCorp).

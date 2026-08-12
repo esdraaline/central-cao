@@ -14,9 +14,8 @@ livre da recepção. Antes de viajar sobra só o que se compra em mercado.
 | Fardamento e peças do S-1 | segunda 17/08, à tarde | ConfecBell (loja do entorno do CAES) |
 | Aplicação de tarjeta, logomarca e distintivo de OPM | a combinar na segunda | ConfecBell |
 
-**O que isso custa:** você viaja com **1 camisa de passeio** (a única que já tem) e **sem
-boina**. Para o primeiro dia isso resolve, desde que a camisa vá engomada e o **quepe** vá na
-mala, que é a cobertura válida do P-1 enquanto a boina não chega. O risco que sobra é a loja
+**O que isso custa:** você veste a segunda com o que já tem, ou seja, a **camisa de passeio
+engomada** e a **boina reserva**. Nada disso trava o primeiro dia. O risco que sobra é a loja
 não ter o seu tamanho na segunda; se isso acontecer, a semana roda com o que você levou.
 
 ## 1. ConfecBell — segunda, 17/08, à tarde
@@ -35,11 +34,11 @@ Tudo aqui passa pela loja aplicar e devolver, então não sai pronto no mesmo di
 
 ## 2. Fardamento pronto — também na segunda
 
-Não depende de aplicação, mas pode não ter o seu tamanho e ter que encomendar. A **boina** é a
-que faz falta imediata: até comprá-la, a cobertura do dia a dia é o quepe.
+Não depende de aplicação, mas pode não ter o seu tamanho e ter que encomendar. Nada aqui é
+urgente: a boina nova é reposição, já que a reserva vai na mala.
 
 - [ ] **1 calça social cinza-bandeirante** — completa o par (já tenho 1)
-- [ ] **Boina cinza-bandeirante** com distintivo de cobertura — é a cobertura do dia a dia no curso (o quepe só em cerimônia)
+- [ ] **Boina cinza-bandeirante** com distintivo de cobertura — é a cobertura do dia a dia no curso (o quepe só em cerimônia). Reposição: a reserva já vai na mala
 - [ ] **1 camisa social cinza-claro** — manga longa, gola social, sem bolsos, para compor o S-1
 - [ ] **1 gravata cinza-bandeirante** — para compor o S-1
 

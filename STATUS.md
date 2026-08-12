@@ -5,9 +5,10 @@
 
 ## Decisões de 12/08/2026 (fim do dia)
 
-- **Viagem: domingo 16/08 à tarde, chegando à noite.** O alojamento abre desde sábado, mas o sábado fica em casa.
+- **Viagem: domingo 16/08 à tarde, de carona com um amigo**, chegando à noite. O alojamento abre desde sábado, mas o sábado fica em casa.
 - **Fardamento: tudo na ConfecBell, na tarde de segunda 17/08.** Nada de loja antes de viajar.
 - **Cama de solteiro** confirmada, então o lençol é de solteiro.
+- **Boina reserva** vai na mala, então a boina nova é reposição, não urgência.
 - **Ofício de Apresentação: acionar a P/1 amanhã, 13/08.**
 
 ## Novidade de 12/08/2026: chegaram as orientações do SAE
@@ -76,18 +77,16 @@ e a viagem é **domingo à tarde**. Isso esvaziou a correria da semana, e sobrou
    da OPM, e é dele que dependem a matrícula, a adição, a Ajuda de Custo e o Auxílio
    Financeiro a Estudantes.
 2. **Escrever ao SAE** com o que sobrou em [DUVIDAS.md](DUVIDAS.md): chegada no domingo
-   à noite, estacionamento, se "passeio completo" na atividade externa é S-1 ou P-1,
-   endereço da ConfecBell, EPI e se querem via impressa do ofício.
+   à noite, se "passeio completo" na atividade externa é S-1 ou P-1, endereço da
+   ConfecBell, EPI e se querem via impressa do ofício.
 3. **Comprar cadeado e etiqueta** até sexta. É o único bloco de compra antes de viajar.
-4. **Fechar como vou** (carro ou ônibus) em [VIAGENS.md](VIAGENS.md). Se for de carro, o
-   cartão de estacionamento precisa ser pedido antes.
+4. **Combinar com o amigo** o horário de saída e o espaço de bagagem.
 5. Depois do **QTS de segunda (17/08)**, me trazer módulo, entregas e avaliações
    pra eu completar [PRAZOS.md](PRAZOS.md).
 
-**O que a compra ter ficado para segunda cobra da mala:** o **quepe** (a boina só chega
-na segunda, e cobertura é obrigatória em área descoberta), a **camisa de passeio
-engomada** (é a única até a tarde de segunda), o **lençol de solteiro** e a **janta de
-domingo**.
+**O que a mala cobra:** **boina reserva**, **camisa de passeio engomada** (é a que veste
+o primeiro dia), **lençol de solteiro**, **janta de domingo** e volume contido, porque a
+carona divide porta-malas.
 
 ## Prazos mais próximos
 Agosto inteiro, dia a dia, está em [PRAZOS.md](PRAZOS.md).

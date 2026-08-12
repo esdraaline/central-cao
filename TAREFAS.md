@@ -10,16 +10,16 @@
 ## Pendentes
 
 ### Reta final para a primeira semana (viagem em 16/08)
-- [ ] Escrever ao SAE (caessae) o que sobrou: chegada no domingo à noite, cartão de estacionamento, "passeio completo" é S-1 ou P-1, endereço da ConfecBell, qual EPI levar e se querem via impressa do ofício [13/08/2026] #curso
+- [ ] Escrever ao SAE (caessae) o que sobrou: chegada no domingo à noite, "passeio completo" é S-1 ou P-1, endereço da ConfecBell, qual EPI levar e se querem via impressa do ofício [13/08/2026] #curso
 - [ ] Acionar a P/1 do 2º BPM/I para o Ofício de Apresentação (mesa SEI 302090130) e a liberação da Rotina 13 do SIPA (código 302090000) [13/08/2026] #admin
-- [ ] Se for de carro: pedir o cartão de estacionamento à AAp do CAES [13/08/2026] #admin
+- [ ] Combinar com o amigo o horário de saída de domingo e quanto espaço de bagagem eu tenho [13/08/2026] #pessoal
 - [ ] Comprar o cadeado do armário (o do CAES não tem chave) e etiqueta + caneta permanente para as marmitas [14/08/2026] #pessoal
 - [ ] Conferir se a mesa SEI 302090130 recebeu o ofício e anotar o número do processo no celular [14/08/2026] #admin
 - [ ] Conferir se a conta do Banco do Brasil não é "Conta Salário" e se o nome não está no CADIN [14/08/2026] #admin
 - [ ] Engomar a camisa de passeio que já tenho: é a única garantida para segunda, porque as outras 2 só serão compradas à tarde [14/08/2026] #pessoal
 - [ ] Separar os documentos de mão: identidade funcional e o número do processo SEI [15/08/2026] #admin
 - [ ] Separar o que já tenho do S-1 para deixar guardado no CAES: paletó, calça social, quepe e tarjeta administrativa (camisa social e gravata só na segunda) [15/08/2026] #pessoal
-- [ ] Arrumar a mala seguindo a aba Mala, sem esquecer o quepe (a boina só chega na segunda), o lençol de solteiro e o lanche da janta de domingo [15/08/2026] #pessoal
+- [ ] Arrumar a mala seguindo a aba Mala, compacta (é carona), sem esquecer a boina reserva, o lençol de solteiro e a janta de domingo [15/08/2026] #pessoal
 - [ ] Viajar para São Paulo à tarde, chegando à noite [16/08/2026] #pessoal
 
 ### Segunda, 17/08 (é o dia de resolver o fardamento)
@@ -35,7 +35,7 @@
 - [ ] Ficar de olho no Recadastramento Anual + Inspeção de Saúde (IAS) próximo do aniversário #admin
 
 ## Concluídas
-- [x] Decidir como viajar: domingo 16/08 à tarde, chegando à noite [12/08/2026] #pessoal
+- [x] Decidir como viajar: domingo 16/08 à tarde, de carona com um amigo, chegando à noite [12/08/2026] #pessoal
 - [x] Decidir onde comprar o fardamento: tudo na ConfecBell, na tarde de segunda 17/08 [12/08/2026] #pessoal
 - [x] Conferência de armário: 78 das 90 peças já estavam em casa [06/08/2026] #pessoal
 - [x] Organizar a pasta Central CAO (limpeza de duplicados, áudio/vídeo antigo, estrutura de pastas) [04/08/2026] #pessoal

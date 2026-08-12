@@ -83,6 +83,22 @@ botão **Exportar**. A mescla é por texto da tarefa, então o `.md` com a data 
 sobrescreve o que você remarcou (testado: remarcada para 19/08 com o `.md` dizendo 11/08,
 sobreviveu ao recarregamento).
 
+### O aviso de "ainda não foi para o TAREFAS.md"
+A tarja âmbar no topo da aba compara, item a item, o que está no painel com o que o
+`TAREFAS.md` diz, e conta quatro tipos: **nova**, **remarcada** (mudou a data), **alterada**
+(mudou categoria ou o feito/não feito) e **excluída aqui**. Sem divergência, ela não aparece.
+
+**Ela olha o arquivo, não a nuvem.** Antes essa mesma tarja contava a flag do Supabase, e
+mentia dos dois lados: sumia quando a tarefa subia para a nuvem, mesmo sem nunca ter ido para
+o `.md`, e ficava acesa para sempre em aparelho sem login. Quem informa o estado da nuvem é a
+linha de status ("Salvo na nuvem", "Sem conexão"); a tarja é só sobre o arquivo do
+repositório. Corrigido em 12/08/2026.
+
+**Limitação conhecida:** excluir no painel uma tarefa que veio do `.md` não gruda. A tarja
+acusa a exclusão, mas ao recarregar a tarefa volta do arquivo e o aviso some junto, porque a
+mescla traz de volta tudo que está no `.md` e não está aqui. Enquanto isso não mudar, para
+apagar de vez é preciso tirar a linha do `TAREFAS.md`.
+
 **Sincronização entre aparelhos: ligada.** As tarefas sincronizam pelo Supabase (projeto
 `relatorio-ronda`, tabela `cao_tarefas`). Em cada aparelho novo, entrar uma vez em
 **Tarefas → Entrar** com o e-mail e senha de sempre. Detalhes em [SUPABASE.md](SUPABASE.md).

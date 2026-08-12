@@ -9,7 +9,7 @@
 <!-- o painel e um arquivo unico que muda a cada geracao; sem isto o navegador
      serve a versao antiga do cache e correcoes nao chegam ate o usuario -->
 <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
-<meta name="gerado-em" content="20260812204335">
+<meta name="gerado-em" content="20260812174943">
 <title>Central do CAO</title>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23c8102e'/%3E%3Ctext x='16' y='22' font-size='15' font-family='Arial' font-weight='bold' fill='white' text-anchor='middle'%3ECAO%3C/text%3E%3C/svg%3E">
 <style>
@@ -546,8 +546,9 @@ mark{background:rgba(232,161,58,.35);color:inherit;border-radius:3px;padding:0 2
   <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 2 20h20z"/><path d="M12 10v4M12 17h.01"/></svg>
   <div>
     <b id="tf-pend-n"></b>
-    O painel guarda no navegador deste aparelho. Para não perder e para eu enxergar
-    nas próximas sessões, jogue no arquivo com o botão Exportar.
+    Remarcar, concluir e criar tarefa aqui não reescreve o arquivo do repositório.
+    Enquanto não exportar, o <code>TAREFAS.md</code> continua com o que estava antes,
+    e é dele que eu leio nas próximas sessões.
     <div><button class="btn" onclick="document.getElementById('tf-exportar').click()">
       <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 11 5 5 5-5"/><path d="M4 20h16"/></svg> Exportar agora</button></div>
   </div>
@@ -1961,6 +1962,44 @@ window.SUPA_CFG={"url": "https://lmmxaaoqygarwxbwwhlp.supabase.co", "key": "sb_p
     });
   }
 
+  /* ---------------------- divergencia com o TAREFAS.md -------------------
+     A BASE e exatamente o que o arquivo diz hoje. Comparar contra ela e o
+     unico jeito honesto de saber se o repositorio esta velho.
+     Nao confundir com t.sinc, que e a flag do Supabase: subir para a nuvem
+     nao escreve uma linha no .md. O aviso antigo usava t.sinc e por isso
+     mentia dos dois lados (sumia ao sincronizar, ficava aceso sem login). */
+  function divergencias(){
+    var doArquivo={};
+    BASE.forEach(function(b){doArquivo[norm(b.t)]=b});
+    var d={novas:0,remarcadas:0,alteradas:0,excluidas:0,total:0}, vistos={};
+    tarefas.forEach(function(t){
+      var k=norm(t.txt); vistos[k]=1;
+      var b=doArquivo[k];
+      if(!b){d.novas++;return}
+      if((b.d||null)!==(t.data||null))d.remarcadas++;
+      else if((b.c||'')!==(t.cat||'')||!!b.f!==!!t.feito)d.alteradas++;
+    });
+    BASE.forEach(function(b){if(!vistos[norm(b.t)])d.excluidas++});
+    d.total=d.novas+d.remarcadas+d.alteradas+d.excluidas;
+    return d;
+  }
+
+  function fraseDivergencia(d){
+    if(!d.total)return '';
+    var p=[], n=function(q,um,varios){if(q)p.push(q+' '+(q===1?um:varios))};
+    n(d.novas,'nova','novas');
+    n(d.remarcadas,'remarcada','remarcadas');
+    n(d.alteradas,'alterada','alteradas');
+    n(d.excluidas,'excluída aqui','excluídas aqui');
+    /* um tipo so: frase direta. Varios: total na frente e o detalhe atras. */
+    if(p.length===1){
+      return (d.total===1?'1 tarefa ':d.total+' tarefas ')+p[0].replace(/^\d+\s/,'')+
+             (d.total===1?' ainda não foi':' ainda não foram')+' para o TAREFAS.md';
+    }
+    var lista=p.slice(0,-1).join(', ')+' e '+p[p.length-1];
+    return d.total+' mudanças ainda não foram para o TAREFAS.md: '+lista;
+  }
+
   /* agrupa por urgencia */
   function agrupar(){
     var h=hoje();
@@ -2044,14 +2083,13 @@ window.SUPA_CFG={"url": "https://lmmxaaoqygarwxbwwhlp.supabase.co", "key": "sb_p
     }
     lista.innerHTML=out;
 
-    /* contador de nao sincronizadas */
-    var naoSinc=tarefas.filter(function(t){return !t.sinc}).length;
+    /* o que ainda nao foi para o TAREFAS.md */
+    var dv=divergencias();
     var cx=el('#tf-pend');
     if(cx){
-      cx.style.display=naoSinc?'flex':'none';
+      cx.style.display=dv.total?'flex':'none';
       var b=el('#tf-pend-n');
-      if(b)b.textContent=naoSinc===1?'1 tarefa ainda não foi para o TAREFAS.md':
-                          naoSinc+' tarefas ainda não foram para o TAREFAS.md';
+      if(b)b.textContent=fraseDivergencia(dv);
     }
     /* badge da aba */
     var pend=tarefas.filter(function(t){return !t.feito}).length;

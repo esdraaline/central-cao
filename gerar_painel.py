@@ -1062,6 +1062,44 @@ JS_TAREFAS = r"""
     });
   }
 
+  /* ---------------------- divergencia com o TAREFAS.md -------------------
+     A BASE e exatamente o que o arquivo diz hoje. Comparar contra ela e o
+     unico jeito honesto de saber se o repositorio esta velho.
+     Nao confundir com t.sinc, que e a flag do Supabase: subir para a nuvem
+     nao escreve uma linha no .md. O aviso antigo usava t.sinc e por isso
+     mentia dos dois lados (sumia ao sincronizar, ficava aceso sem login). */
+  function divergencias(){
+    var doArquivo={};
+    BASE.forEach(function(b){doArquivo[norm(b.t)]=b});
+    var d={novas:0,remarcadas:0,alteradas:0,excluidas:0,total:0}, vistos={};
+    tarefas.forEach(function(t){
+      var k=norm(t.txt); vistos[k]=1;
+      var b=doArquivo[k];
+      if(!b){d.novas++;return}
+      if((b.d||null)!==(t.data||null))d.remarcadas++;
+      else if((b.c||'')!==(t.cat||'')||!!b.f!==!!t.feito)d.alteradas++;
+    });
+    BASE.forEach(function(b){if(!vistos[norm(b.t)])d.excluidas++});
+    d.total=d.novas+d.remarcadas+d.alteradas+d.excluidas;
+    return d;
+  }
+
+  function fraseDivergencia(d){
+    if(!d.total)return '';
+    var p=[], n=function(q,um,varios){if(q)p.push(q+' '+(q===1?um:varios))};
+    n(d.novas,'nova','novas');
+    n(d.remarcadas,'remarcada','remarcadas');
+    n(d.alteradas,'alterada','alteradas');
+    n(d.excluidas,'excluída aqui','excluídas aqui');
+    /* um tipo so: frase direta. Varios: total na frente e o detalhe atras. */
+    if(p.length===1){
+      return (d.total===1?'1 tarefa ':d.total+' tarefas ')+p[0].replace(/^\d+\s/,'')+
+             (d.total===1?' ainda não foi':' ainda não foram')+' para o TAREFAS.md';
+    }
+    var lista=p.slice(0,-1).join(', ')+' e '+p[p.length-1];
+    return d.total+' mudanças ainda não foram para o TAREFAS.md: '+lista;
+  }
+
   /* agrupa por urgencia */
   function agrupar(){
     var h=hoje();
@@ -1145,14 +1183,13 @@ JS_TAREFAS = r"""
     }
     lista.innerHTML=out;
 
-    /* contador de nao sincronizadas */
-    var naoSinc=tarefas.filter(function(t){return !t.sinc}).length;
+    /* o que ainda nao foi para o TAREFAS.md */
+    var dv=divergencias();
     var cx=el('#tf-pend');
     if(cx){
-      cx.style.display=naoSinc?'flex':'none';
+      cx.style.display=dv.total?'flex':'none';
       var b=el('#tf-pend-n');
-      if(b)b.textContent=naoSinc===1?'1 tarefa ainda não foi para o TAREFAS.md':
-                          naoSinc+' tarefas ainda não foram para o TAREFAS.md';
+      if(b)b.textContent=fraseDivergencia(dv);
     }
     /* badge da aba */
     var pend=tarefas.filter(function(t){return !t.feito}).length;
@@ -2230,8 +2267,9 @@ def app_tarefas():
   %(alerta)s
   <div>
     <b id="tf-pend-n"></b>
-    O painel guarda no navegador deste aparelho. Para não perder e para eu enxergar
-    nas próximas sessões, jogue no arquivo com o botão Exportar.
+    Remarcar, concluir e criar tarefa aqui não reescreve o arquivo do repositório.
+    Enquanto não exportar, o <code>TAREFAS.md</code> continua com o que estava antes,
+    e é dele que eu leio nas próximas sessões.
     <div><button class="btn" onclick="document.getElementById('tf-exportar').click()">
       %(baixar)s Exportar agora</button></div>
   </div>

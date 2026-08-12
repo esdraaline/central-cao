@@ -18,8 +18,8 @@
 O Cap Hiran (SAE) repassou as orientações da recepção. Quatro coisas mudam o planejamento
 que estava aqui:
 
-1. **O alojamento abre a partir de sábado à tarde.** Viajar dia 15 virou opção real, e é a
-   que tira o risco de chegar em cima da hora numa segunda que começa 07h30.
+1. **O alojamento abre a partir de sábado à tarde.** Chegou a virar opção de viajar dia 15,
+   mas a decisão do fim do dia foi ir no domingo (ver o bloco acima).
 2. **A segunda começa 07h30, não 08h15**: recepção, café da manhã bancado pela turma do
    CAO-I/26, lista de presença por pelotão e palestra. À tarde, tempo livre para social,
    ConfecBell, alojamento e armário. **O QTS sai neste dia.**
@@ -27,8 +27,8 @@ que estava aqui:
 4. **A farda social vai junto e fica guardada no CAES.** Não se usa na segunda, mas o curso
    tem visitas. A [MALA.md](MALA.md) não tinha S-1 nenhum; agora tem.
 
-O que ficou de dúvida nova (inclusive se "passeio completo" na atividade externa é S-1 ou
-P-1) está em [DUVIDAS.md](DUVIDAS.md).
+As dúvidas que isso levantou foram todas fechadas no mesmo dia, e estão em
+[DUVIDAS.md](DUVIDAS.md) com a marca de que a fonte foi o Josemar, não a Seção.
 
 ## Novidade de 11/08/2026: o painel virou guia do dia
 

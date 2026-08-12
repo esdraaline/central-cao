@@ -27,7 +27,7 @@ Primeira semana do CAO-II/26. **Recepção na segunda, 17/08, a partir das 07h30
 - **Bagagem**: é carona, então o porta-malas é dividido. Combine o volume antes e leve compacto: a mala da semana já tem roupa de cama, material de limpeza e itens de copa. Se apertar, o balde é o primeiro a ficar.
 - **Estacionamento**: não se aplica a mim. O cartão do CAES é do veículo; se o amigo for parar lá dentro, é ele quem pede à AAp.
 - **Para quem dirige** (caso do amigo, ou de mim mesmo em outra semana): o estacionamento do CAO tem 40 vagas sinalizadas e **exige cartão de estacionamento visível**, pedido à AAp antes de viajar. Motocicleta tem espaço coberto atrás do prédio.
-- **Chegada no alojamento**: à noite. Liberado desde sábado à tarde e já identificado com o nome. Levar **cadeado**, o armário não tem chave. Falta confirmar com o SAE se há restrição de horário para entrar à noite ([DUVIDAS.md](DUVIDAS.md)).
+- **Chegada no alojamento**: por volta das 22h, **sem restrição de horário** (confirmado em 12/08/2026). Liberado desde sábado à tarde e já identificado com o nome. Levar **cadeado**, o armário não tem chave.
 - **Cobertura**: a **boina reserva** resolve a segunda de manhã. A boina nova só será comprada à tarde.
 - **Levar em mãos** (não na mala): identidade funcional e o número do processo SEI do Ofício de Apresentação. O ofício é ato eletrônico da OPM, não papel de entregar na chegada (ver [ROTINA.md](ROTINA.md)).
 - **Primeira noite**: chegando perto das 22h e sem rancho, **a janta de domingo vai na mala**, ponto. Contar com Terraço ou padaria abertos nesse horário de domingo é aposta. Na segunda tem café da manhã no CAES, bancado pela turma do CAO-I/26.

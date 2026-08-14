@@ -172,6 +172,14 @@ cada tarefa volta para a seção de onde saiu; seção que ficou sem tarefa some
 criada no painel não tem seção e sai solta logo abaixo de `## Pendentes`. Dentro de cada
 seção a ordem passa a ser por data, que é a mesma da lista na tela.
 
+**A ordem no arquivo é sempre pela data da tarefa, nunca pela hora da nuvem.** Vale para as
+Pendentes e para as Concluídas, e o `sincroniza_tarefas.py` usa o mesmo critério. Se os dois
+divergissem, cada um reordenaria o bloco por cima do outro e o `TAREFAS.md` geraria commit
+sem nada ter mudado. Foi o que o modo conferência pegou em 14/08 antes de virar commit: as
+24 tarefas antigas subiram todas juntas na primeira carga, então a hora da nuvem delas virou
+o horário daquela carga, e as concluídas de 04/08 iam parar em cima das de 14/08. Na tela a
+aba continua mostrando as concluídas pela ordem em que foram mexidas, que é o útil ali.
+
 ## Estrutura da pasta
 ```
 Central CAO/

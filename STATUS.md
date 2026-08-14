@@ -1,7 +1,7 @@
 # STATUS — Central do CAO
 
 > Painel principal. Ler isso primeiro em qualquer sessão nova ("onde paramos?").
-> Atualizado em: 12/08/2026
+> Atualizado em: 14/08/2026
 
 ## Decisões de 12/08/2026 (fim do dia)
 
@@ -80,14 +80,19 @@ que o painel cobra na abertura (por isso aqui é só leitura, para não ter duas
 dizendo a mesma coisa). O que trava tudo:
 
 Decidido em 12/08: **o fardamento inteiro fica para a tarde de segunda, na ConfecBell**,
-e a viagem é **domingo à tarde**. Isso esvaziou a correria da semana, e sobrou pouco:
+e a viagem é **domingo à tarde**. Isso esvaziou a correria da semana.
 
-1. **Amanhã (13/08), acionar a P/1** pelo Ofício de Apresentação (mesa SEI 302090130) e
-   pela liberação da Rotina 13 do SIPA. Não é papel para levar na mala: é ato eletrônico
-   da OPM, e é dele que dependem a matrícula, a adição, a Ajuda de Custo e o Auxílio
-   Financeiro a Estudantes.
-2. **Comprar cadeado e etiqueta** até sexta. É o único bloco de compra antes de viajar.
-3. **Combinar com o amigo** o espaço de bagagem. O horário já está fechado.
+Até 14/08 já saíram do caminho: **a P/1 foi acionada** pelo Ofício de Apresentação e
+pela Rotina 13 do SIPA, **o cadeado e a etiqueta foram comprados**, **a carona está
+combinada** (espaço de bagagem incluído), a **camisa de passeio está engomada** e a
+conta do Banco do Brasil foi conferida. Sobrou:
+
+1. **Hoje (14/08), conferir se a mesa SEI 302090130 recebeu o ofício** e anotar o
+   número do processo no celular. É do ato eletrônico da P/1 que dependem a matrícula,
+   a adição, a Ajuda de Custo e o Auxílio Financeiro a Estudantes.
+2. **Sábado (15/08), separar e arrumar**: o EPI (cinto, colete e bota), os documentos
+   de mão, o S-1 que fica guardado no CAES e a mala inteira, seguindo a [MALA.md](MALA.md).
+3. **Domingo (16/08), sair de casa às 15h00.** Chegada por volta das 22h.
 4. Depois do **QTS de segunda (17/08)**, me trazer módulo, entregas e avaliações
    pra eu completar [PRAZOS.md](PRAZOS.md).
 

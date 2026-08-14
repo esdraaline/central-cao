@@ -10,7 +10,6 @@
 ## Pendentes
 
 ### Reta final para a primeira semana (viagem em 16/08)
-- [ ] Comprar o cadeado do armário (o do CAES não tem chave) e etiqueta + caneta permanente para as marmitas [14/08/2026] #pessoal
 - [ ] Conferir se a mesa SEI 302090130 recebeu o ofício e anotar o número do processo no celular [14/08/2026] #admin
 - [ ] Levar na mala o EPI: cinto, colete e bota (rever se o QTS de segunda não previr atividade externa: é o conjunto mais volumoso da mala) [15/08/2026] #pessoal
 - [ ] Separar os documentos de mão: identidade funcional e o número do processo SEI [15/08/2026] #admin
@@ -31,6 +30,7 @@
 - [ ] Ficar de olho no Recadastramento Anual + Inspeção de Saúde (IAS) próximo do aniversário #admin
 
 ## Concluídas
+- [x] Comprar o cadeado do armário (o do CAES não tem chave) e etiqueta + caneta permanente para as marmitas [14/08/2026] #pessoal
 - [x] Engomar a camisa de passeio que já tenho: é a única garantida para segunda, porque as outras 2 só serão compradas à tarde [14/08/2026] #pessoal
 - [x] Conferir se a conta do Banco do Brasil não é "Conta Salário" e se o nome não está no CADIN [14/08/2026] #admin
 - [x] Combinar com o amigo quanto espaço de bagagem eu tenho (o horário já está fechado: saída 15h) [13/08/2026] #pessoal

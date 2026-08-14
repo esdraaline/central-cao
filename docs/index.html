@@ -9,7 +9,7 @@
 <!-- o painel e um arquivo unico que muda a cada geracao; sem isto o navegador
      serve a versao antiga do cache e correcoes nao chegam ate o usuario -->
 <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
-<meta name="gerado-em" content="20260814210541">
+<meta name="gerado-em" content="20260814181610">
 <title>Central do CAO</title>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23c8102e'/%3E%3Ctext x='16' y='22' font-size='15' font-family='Arial' font-weight='bold' fill='white' text-anchor='middle'%3ECAO%3C/text%3E%3C/svg%3E">
 <style>
@@ -2205,8 +2205,16 @@ window.SUPA_CFG={"url": "https://lmmxaaoqygarwxbwwhlp.supabase.co", "key": "sb_p
           '(histórico do que já foi cumprido).\n> Editável aqui ou pelo painel '+
           '(aba Tarefas). Formato: `- [ ] texto [dd/mm/aaaa] #categoria`.';
     }
+    /* Na tela as concluidas aparecem pela ordem em que foram mexidas, que e o
+       util para conferir o que voce acabou de fazer. No arquivo elas vao pela
+       data da tarefa, mais recente em cima, igual ao sincroniza_tarefas.py: se
+       os dois usassem criterios diferentes, cada um reordenaria o bloco por
+       cima do outro e o TAREFAS.md geraria commit sem nada ter mudado. */
+    var feitas=g.feitas.slice().sort(function(a,b){
+      return (b.data||'')<(a.data||'')?-1:((b.data||'')>(a.data||'')?1:0);
+    });
     return cab+'\n\n## Pendentes\n'+corpo+
-           '\n## Concluídas\n'+(g.feitas.length?g.feitas.map(linha).join('\n')+'\n':'');
+           '\n## Concluídas\n'+(feitas.length?feitas.map(linha).join('\n')+'\n':'');
   }
 
   function abrirModal(id){el(id).classList.add('on')}

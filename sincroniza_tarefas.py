@@ -265,7 +265,13 @@ def para_markdown(tarefas, cabecalho, ordem_secoes):
     feitas = [t for t in tarefas if t["feito"]]
 
     pend.sort(key=lambda t: t["data"] or "9999-99-99")
-    feitas.sort(key=lambda t: t.get("mod") or "", reverse=True)
+    # Concluidas pela data da tarefa, mais recente em cima, e nao pelo `mod`.
+    # O `mod` e a hora em que a linha mexeu na nuvem: as 24 tarefas antigas
+    # subiram todas juntas na primeira carga, entao o mod delas e o horario
+    # daquela carga e nao tem relacao com quando foram concluidas. Ordenar por
+    # ele jogava as concluidas de 04/08 para cima das de 14/08 e gerava commit
+    # de barulho. A data e do proprio texto, entao nao envelhece.
+    feitas.sort(key=lambda t: t["data"] or "", reverse=True)
 
     grupos = {}
     for t in pend:

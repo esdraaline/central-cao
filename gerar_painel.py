@@ -1325,8 +1325,16 @@ JS_TAREFAS = r"""
           '(histórico do que já foi cumprido).\n> Editável aqui ou pelo painel '+
           '(aba Tarefas). Formato: `- [ ] texto [dd/mm/aaaa] #categoria`.';
     }
+    /* Na tela as concluidas aparecem pela ordem em que foram mexidas, que e o
+       util para conferir o que voce acabou de fazer. No arquivo elas vao pela
+       data da tarefa, mais recente em cima, igual ao sincroniza_tarefas.py: se
+       os dois usassem criterios diferentes, cada um reordenaria o bloco por
+       cima do outro e o TAREFAS.md geraria commit sem nada ter mudado. */
+    var feitas=g.feitas.slice().sort(function(a,b){
+      return (b.data||'')<(a.data||'')?-1:((b.data||'')>(a.data||'')?1:0);
+    });
     return cab+'\n\n## Pendentes\n'+corpo+
-           '\n## Concluídas\n'+(g.feitas.length?g.feitas.map(linha).join('\n')+'\n':'');
+           '\n## Concluídas\n'+(feitas.length?feitas.map(linha).join('\n')+'\n':'');
   }
 
   function abrirModal(id){el(id).classList.add('on')}

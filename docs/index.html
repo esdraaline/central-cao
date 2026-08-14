@@ -9,7 +9,7 @@
 <!-- o painel e um arquivo unico que muda a cada geracao; sem isto o navegador
      serve a versao antiga do cache e correcoes nao chegam ate o usuario -->
 <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
-<meta name="gerado-em" content="20260814212342">
+<meta name="gerado-em" content="20260814182853">
 <title>Central do CAO</title>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23c8102e'/%3E%3Ctext x='16' y='22' font-size='15' font-family='Arial' font-weight='bold' fill='white' text-anchor='middle'%3ECAO%3C/text%3E%3C/svg%3E">
 <style>
@@ -547,11 +547,11 @@ mark{background:rgba(232,161,58,.35);color:inherit;border-radius:3px;padding:0 2
   <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 2 20h20z"/><path d="M12 10v4M12 17h.01"/></svg>
   <div>
     <b id="tf-pend-n"></b>
-    Remarcar, concluir e criar tarefa aqui não reescreve o arquivo do repositório.
-    Enquanto não exportar, o <code>TAREFAS.md</code> continua com o que estava antes,
-    e é dele que eu leio nas próximas sessões.
+    Não precisa fazer nada: a sincronização roda de hora em hora e leva isso sozinha
+    para o <code>TAREFAS.md</code>. Este aviso some quando ela rodar e o painel
+    republicar. Se estiver com pressa, dá para levar na mão agora.
     <div><button class="btn" onclick="document.getElementById('tf-exportar').click()">
-      <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 11 5 5 5-5"/><path d="M4 20h16"/></svg> Exportar agora</button></div>
+      <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 11 5 5 5-5"/><path d="M4 20h16"/></svg> Exportar na mão</button></div>
   </div>
 </div>
 
@@ -581,9 +581,10 @@ mark{background:rgba(232,161,58,.35);color:inherit;border-radius:3px;padding:0 2
     <div class="modal-cab"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 11 5 5 5-5"/><path d="M4 20h16"/></svg><h3>Levar para o TAREFAS.md</h3>
       <button class="tf-ac" data-fechar="modal-exp"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>
     <div class="modal-corpo">
-      <p>Copie o texto abaixo e substitua o conteúdo do arquivo
-         <code>TAREFAS.md</code>. É assim que as tarefas entram no repositório
-         e ficam disponíveis nas outras máquinas e para mim nas próximas sessões.</p>
+      <p>Normalmente não precisa: a sincronização escreve isto no
+         <code>TAREFAS.md</code> sozinha, de hora em hora. Isto aqui é a saída de
+         emergência, para quando ela estiver fora do ar ou você não quiser esperar.
+         Copie e substitua o conteúdo do arquivo; é exatamente o que ela escreveria.</p>
       <textarea id="exp-txt" spellcheck="false"></textarea>
     </div>
     <div class="modal-rod">

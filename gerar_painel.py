@@ -2370,11 +2370,11 @@ def app_tarefas():
   %(alerta)s
   <div>
     <b id="tf-pend-n"></b>
-    Remarcar, concluir e criar tarefa aqui não reescreve o arquivo do repositório.
-    Enquanto não exportar, o <code>TAREFAS.md</code> continua com o que estava antes,
-    e é dele que eu leio nas próximas sessões.
+    Não precisa fazer nada: a sincronização roda de hora em hora e leva isso sozinha
+    para o <code>TAREFAS.md</code>. Este aviso some quando ela rodar e o painel
+    republicar. Se estiver com pressa, dá para levar na mão agora.
     <div><button class="btn" onclick="document.getElementById('tf-exportar').click()">
-      %(baixar)s Exportar agora</button></div>
+      %(baixar)s Exportar na mão</button></div>
   </div>
 </div>
 
@@ -2404,9 +2404,10 @@ def app_tarefas():
     <div class="modal-cab">%(baixar)s<h3>Levar para o TAREFAS.md</h3>
       <button class="tf-ac" data-fechar="modal-exp">%(fechar)s</button></div>
     <div class="modal-corpo">
-      <p>Copie o texto abaixo e substitua o conteúdo do arquivo
-         <code>TAREFAS.md</code>. É assim que as tarefas entram no repositório
-         e ficam disponíveis nas outras máquinas e para mim nas próximas sessões.</p>
+      <p>Normalmente não precisa: a sincronização escreve isto no
+         <code>TAREFAS.md</code> sozinha, de hora em hora. Isto aqui é a saída de
+         emergência, para quando ela estiver fora do ar ou você não quiser esperar.
+         Copie e substitua o conteúdo do arquivo; é exatamente o que ela escreveria.</p>
       <textarea id="exp-txt" spellcheck="false"></textarea>
     </div>
     <div class="modal-rod">

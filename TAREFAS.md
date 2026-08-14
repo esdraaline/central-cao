@@ -10,13 +10,9 @@
 ## Pendentes
 
 ### Reta final para a primeira semana (viagem em 16/08)
-- [ ] Levar na mala o EPI: cinto, colete e bota (rever se o QTS de segunda não previr atividade externa: é o conjunto mais volumoso da mala) [15/08/2026] #pessoal
-- [ ] Acionar a P/1 do 2º BPM/I para o Ofício de Apresentação (mesa SEI 302090130) e a liberação da Rotina 13 do SIPA (código 302090000) [13/08/2026] #admin
-- [ ] Combinar com o amigo quanto espaço de bagagem eu tenho (o horário já está fechado: saída 15h) [13/08/2026] #pessoal
 - [ ] Comprar o cadeado do armário (o do CAES não tem chave) e etiqueta + caneta permanente para as marmitas [14/08/2026] #pessoal
 - [ ] Conferir se a mesa SEI 302090130 recebeu o ofício e anotar o número do processo no celular [14/08/2026] #admin
-- [ ] Conferir se a conta do Banco do Brasil não é "Conta Salário" e se o nome não está no CADIN [14/08/2026] #admin
-- [ ] Engomar a camisa de passeio que já tenho: é a única garantida para segunda, porque as outras 2 só serão compradas à tarde [14/08/2026] #pessoal
+- [ ] Levar na mala o EPI: cinto, colete e bota (rever se o QTS de segunda não previr atividade externa: é o conjunto mais volumoso da mala) [15/08/2026] #pessoal
 - [ ] Separar os documentos de mão: identidade funcional e o número do processo SEI [15/08/2026] #admin
 - [ ] Separar o que já tenho do S-1 para deixar guardado no CAES: paletó, calça social, quepe e tarjeta administrativa (camisa social e gravata só na segunda) [15/08/2026] #pessoal
 - [ ] Arrumar a mala seguindo a aba Mala, compacta (é carona), sem esquecer a boina reserva, o lençol de solteiro e a janta de domingo [15/08/2026] #pessoal
@@ -35,6 +31,10 @@
 - [ ] Ficar de olho no Recadastramento Anual + Inspeção de Saúde (IAS) próximo do aniversário #admin
 
 ## Concluídas
+- [x] Engomar a camisa de passeio que já tenho: é a única garantida para segunda, porque as outras 2 só serão compradas à tarde [14/08/2026] #pessoal
+- [x] Conferir se a conta do Banco do Brasil não é "Conta Salário" e se o nome não está no CADIN [14/08/2026] #admin
+- [x] Combinar com o amigo quanto espaço de bagagem eu tenho (o horário já está fechado: saída 15h) [13/08/2026] #pessoal
+- [x] Acionar a P/1 do 2º BPM/I para o Ofício de Apresentação (mesa SEI 302090130) e a liberação da Rotina 13 do SIPA (código 302090000) [13/08/2026] #admin
 - [x] Fechar as dúvidas que iriam para o SAE: chegada às 22h sem restrição, passeio completo é P-1, EPI é cinto/colete/bota com B-1, ofício não precisa de via impressa [12/08/2026] #curso
 - [x] Decidir como viajar: domingo 16/08 à tarde, de carona com um amigo, chegando à noite [12/08/2026] #pessoal
 - [x] Decidir onde comprar o fardamento: tudo na ConfecBell, na tarde de segunda 17/08 [12/08/2026] #pessoal

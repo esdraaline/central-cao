@@ -192,7 +192,8 @@ def juntar(arquivo, nuvem, estado, t_arquivo):
     na_nuv = {r["id"]: r for r in nuvem}
     ordem = [t["id"] for t in arquivo] + [r["id"] for r in nuvem if r["id"] not in no_arq]
 
-    final, subir, rel = [], [], {"baixadas": 0, "subidas": 0, "apagadas": 0, "novas_da_nuvem": 0}
+    final, subir = [], []
+    rel = {"baixadas": 0, "subidas": 0, "apagadas": 0, "novas_da_nuvem": 0, "det": []}
 
     for tid in ordem:
         a, n = no_arq.get(tid), na_nuv.get(tid)
@@ -206,13 +207,17 @@ def juntar(arquivo, nuvem, estado, t_arquivo):
                 final.append(a)                       # o arquivo mexeu depois
                 subir.append(a)
                 rel["subidas"] += 1
+                rel["det"].append(("sobe (arquivo mexeu depois)", a["txt"], da_nuvem(n), a))
             else:
-                final.append(da_nuvem(n, a["secao"]))  # o painel mexeu depois
+                novo = da_nuvem(n, a["secao"])         # o painel mexeu depois
+                final.append(novo)
                 rel["baixadas"] += 1
+                rel["det"].append(("desce (painel mexeu depois)", novo["txt"], a, novo))
 
         elif a and not n:
             if tid in estado:
                 rel["apagadas"] += 1                  # existia na nuvem e sumiu
+                rel["det"].append(("sai (apagada no painel)", a["txt"], a, None))
             else:
                 final.append(a)                       # nasceu aqui, ainda nao subiu
                 subir.append(a)
@@ -224,10 +229,27 @@ def juntar(arquivo, nuvem, estado, t_arquivo):
             # nasceu no arquivo, o arquivo manda. Nao ressuscita.
             if str(tid).startswith("md"):
                 continue
-            final.append(da_nuvem(n))                 # criada no painel
+            novo = da_nuvem(n)                        # criada no painel
+            final.append(novo)
             rel["novas_da_nuvem"] += 1
+            rel["det"].append(("entra (criada no painel)", novo["txt"], None, novo))
 
     return final, subir, rel
+
+
+def descreve(t):
+    """Resumo de uma tarefa numa linha, para o relatorio do --conferir."""
+    if t is None:
+        return "(nao existia)"
+    p = ["feita" if t["feito"] else "pendente"]
+    if t["data"]:
+        a, m, d = t["data"].split("-")
+        p.append("%s/%s/%s" % (d, m, a))
+    else:
+        p.append("sem data")
+    if t["cat"]:
+        p.append("#" + t["cat"])
+    return ", ".join(p)
 
 
 # --------------------------------------------------------------- escrita ---
@@ -325,7 +347,18 @@ def main():
              " (primeira rodada: nada e apagado)" if primeira else ""))
     print("TAREFAS.md: " + ("muda" if mudou else "ja estava em dia"))
 
+    # As 24 que sobem na primeira carga sao so o arquivo se semeando na nuvem,
+    # e nao mudam nada do que esta escrito. O que merece olho e o que muda de
+    # conteudo: por isso a lista abaixo so mostra essas.
+    if rel["det"]:
+        print("\nO que muda de conteudo (%d):" % len(rel["det"]))
+        for rotulo, txt, antes, depois in rel["det"]:
+            print("\n  %s" % txt[:88])
+            print("    %-28s antes: %s" % (rotulo, descreve(antes)))
+            print("    %-28s fica:  %s" % ("", descreve(depois)))
+
     if conferir:
+        print("\n(--conferir: nada foi escrito, nem no arquivo nem na nuvem)")
         return 0
 
     if subir:

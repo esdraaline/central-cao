@@ -13,14 +13,14 @@
 - [ ] Conferir se a mesa SEI 302090130 recebeu o ofício e anotar o número do processo no celular [14/08/2026] #admin
 - [ ] Deixar separado em casa o que só sobe em 23/08: B-1 (gandola, calça operacional, coturno) e EPI (cinto, colete, bota) [15/08/2026] #pessoal
 - [ ] Separar os documentos de mão: identidade funcional e o número do processo SEI [15/08/2026] #admin
-- [ ] Separar o que já tenho do S-1 para deixar guardado no CAES: paletó, calça social, gravata, quepe e tarjeta administrativa (da compra de segunda falta só a camisa social) [15/08/2026] #pessoal
+- [ ] Separar o que já tenho do S-1 para deixar guardado no CAES: paletó, a segunda calça social, gravata, quepe e tarjeta administrativa (da compra de segunda falta só a camisa social) [15/08/2026] #pessoal
 - [ ] Arrumar a mala seguindo a aba Mala, compacta (é carona), sem esquecer a boina reserva, o lençol de solteiro e a janta de domingo [15/08/2026] #pessoal
 - [ ] Sair de casa às 15h00 para São Paulo, de carona, chegada por volta das 22h [16/08/2026] #pessoal
 
 ### Segunda, 17/08 (é o dia de resolver o fardamento)
 - [ ] Chegar ao CAES até 07h30: café da manhã, assinar a lista de presença do pelotão e palestra [17/08/2026] #curso
 - [ ] Pegar o QTS divulgado na segunda e lançar as datas em PRAZOS.md [17/08/2026] #curso
-- [ ] Comprar na ConfecBell: 2 camisas de passeio, 2 camisetas de serviço, calça social, boina e a camisa social do S-1 (a gravata já tenho em casa) [17/08/2026] #pessoal
+- [ ] Comprar na ConfecBell: 2 camisas de passeio, 2 camisetas de serviço, boina e a camisa social do S-1 (gravata e as 2 calças já tenho em casa) [17/08/2026] #pessoal
 - [ ] Deixar para aplicar e combinar prazo de retirada: tarjeta operacional e Logomarca nas 2 camisetas novas, 4 distintivos de OPM do CAES e a tarjeta administrativa de acrílico [17/08/2026] #pessoal
 - [ ] Combinar o destino do 4º distintivo de OPM, o da gandola: trazer solto ou deixar na loja, porque a gandola só sobe em 23/08 [17/08/2026] #pessoal
 - [ ] Experimentar a farda social, ver os ajustes de caimento e montar armário e alojamento [17/08/2026] #pessoal

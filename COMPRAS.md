@@ -36,13 +36,15 @@ Tudo aqui passa pela loja aplicar e devolver, então não sai pronto no mesmo di
 ## 2. Fardamento pronto — também na segunda
 
 Não depende de aplicação, mas pode não ter o seu tamanho e ter que encomendar. Nada aqui é
-urgente: a boina nova é reposição, já que a reserva vai na mala.
+urgente: a boina nova é reposição, já que a reserva vai na mala, e a camisa social não é
+usada na segunda.
 
-- [ ] **1 calça social cinza-bandeirante** — completa o par (já tenho 1)
 - [ ] **Boina cinza-bandeirante** com distintivo de cobertura — é a cobertura do dia a dia no curso (o quepe só em cerimônia). Reposição: a reserva já vai na mala
 - [ ] **1 camisa social cinza-claro** — manga longa, gola social, sem bolsos, para compor o S-1
 
-> **A gravata saiu desta lista em 14/08**: já está em casa e vai na mala ([MALA.md](MALA.md)).
+> **Saíram desta lista em 14/08**: a **gravata** e a **segunda calça social**. As duas já
+> estão em casa e vão na mala ([MALA.md](MALA.md)). O par de calças fecha a conta da semana:
+> uma roda com o P-1 e a outra fica guardada no CAES junto com o social.
 
 > **Como o S-1 fica completo.** Da composição do Art. 49 (quepe, paletó, camisa social
 > cinza-claro, gravata, calça social, cinto, meias pretas e sapato preto), o que já existe em

@@ -12,6 +12,10 @@
   avisa o chefe de turma e o B-1 sobe no domingo. Pelo bizu, o B-1 saiu 3 vezes no curso todo.
 - **A gravata cinza-bandeirante já está em casa** e vai na mala. Saiu da lista da ConfecBell:
   da compra de segunda o S-1 passa a depender só da **camisa social**.
+- **As 2 calças sociais também já existem em casa** (uma do P-1 e a do social), corrigindo o
+  "já tenho 1" da conferência de armário. A calça saiu da compra de segunda, e as duas vão na
+  mala: uma roda a semana com o P-1, a outra fica guardada no CAES junto com o social. Sobrou
+  na ConfecBell só camisa de passeio, camiseta de serviço, boina e a camisa social.
 - **Na segunda semana sobem também whey protein, creatina e energético**, com coqueteleira e
   etiqueta de nome (a geladeira é dividida pela turma).
 - **Detalhe que isso criou**: o 4º distintivo de OPM do CAES é o da gandola, e a gandola não

@@ -16,9 +16,10 @@
 - [ ] Combinar com o amigo da carona o espaço de bagagem (saída às 15h)
 
 > **O que NÃO é para resolver antes de sair**: distintivo de OPM do CAES, camisetas que faltam,
-> camisas de passeio, boina, calça social e camisa social. Tudo isso ficou para a
+> camisas de passeio, boina e camisa social. Tudo isso ficou para a
 > tarde de segunda, na ConfecBell ([COMPRAS.md](COMPRAS.md)). Esta lista só embala o que já
-> está em casa. **A gravata saiu dessa lista em 14/08**: já está em casa e vai na mala.
+> está em casa. **A gravata e a segunda calça social saíram dessa lista em 14/08**: já estão
+> em casa e vão na mala.
 
 ## Uniforme — o que levar
 Referência: **R-5-PM, 6ª Ed. v.2** (Regulamento de Uniformes). O do dia a dia é o **P-1 (Passeio 1)**; o **B-1 (Básico Operacional 1)** entra na instrução e nas saídas externas.
@@ -49,7 +50,7 @@ Composição: quepe, camisa de passeio cinza-claro, camiseta de serviço cinza-b
 
 > **O quepe é substituído pela boina cinza-bandeirante** em trânsito e nas atividades administrativas (Art. 45, § 1º, item 2). No curso é isso que vale — o quepe só se tiver cerimônia. É por isso que a boina fica guardada no alojamento e você só põe ao sair para área descoberta.
 
-- [ ] 1 calça social cinza-bandeirante *(a segunda só chega na compra de segunda)*
+- [ ] 2 calças sociais cinza-bandeirante *(confirmado em 14/08: o par já está em casa)* — uma roda a semana com o P-1, a outra fica guardada no CAES com o social
 - [ ] 1 camisa de passeio cinza-claro *(é a única que tenho até a compra de segunda; vai engomada)*
 - [ ] Cinto de serviço cinza-bandeirante
 - [ ] Sapatos pretos (engraxados)
@@ -57,7 +58,7 @@ Composição: quepe, camisa de passeio cinza-claro, camiseta de serviço cinza-b
 - [ ] Boina cinza-bandeirante *(a reserva, até comprar a nova na segunda)*
 - [ ] Quepe cinza-bandeirante *(no P-1 só em cerimônia, mas ele é a cobertura do S-1 — ver a seção do social)*
 
-**Nota de quantidade**: confirmado em 12/08 que é **1 camisa de passeio** em casa. Ela veste a segunda; as outras 2 saem da ConfecBell na tarde de segunda e cobrem terça a quinta. Se a loja não tiver o tamanho, a semana roda com uma camisa só, então vale a pena não deixar a compra para o fim da tarde.
+**Nota de quantidade**: confirmado em 14/08 que **as 2 calças sociais já existem em casa** (uma do P-1 e uma do social), então calça saiu da compra de segunda. Confirmado em 12/08 que é **1 camisa de passeio** em casa. Ela veste a segunda; as outras 2 saem da ConfecBell na tarde de segunda e cobrem terça a quinta. Se a loja não tiver o tamanho, a semana roda com uma camisa só, então vale a pena não deixar a compra para o fim da tarde.
 
 ### B-1 — instrução e missão externa (Art. 23) — *não vai nesta viagem*
 Composição: boina cinza-bandeirante, gandola cinza-bandeirante, camiseta de serviço cinza-bandeirante, calça operacional cinza-bandeirante, cinto de serviço cinza-bandeirante, meias pretas, coturnos pretos.
@@ -104,15 +105,15 @@ ser exigido durante o curso, principalmente em visitas. Por isso o recomendado �
 Composição do S-1 (Art. 49, § 2º) — repare que aqui a cobertura é o **quepe**, não a boina:
 
 - [ ] Paletó cinza-bandeirante (tecido panamá, Art. 93)
-- [ ] Calça social cinza-bandeirante *(a mesma do P-1)*
+- [ ] Calça social cinza-bandeirante — **a segunda calça**, a que vai ficar guardada aqui com o social. É a mesma peça do P-1 (mesmo tecido panamá), então as duas se cobrem se precisar
 - [ ] **Gravata cinza-bandeirante** *(conferido em 14/08: já tenho em casa, saiu da lista de compras)*
 - [ ] Cinto de serviço, meias sociais pretas e sapatos pretos *(os mesmos do P-1)*
 - [ ] **Quepe cinza-bandeirante** — vai porque é a cobertura do S-1, mesmo não sendo usado no dia a dia
 - [ ] Tarjeta administrativa de acrílico (a mesma imantada que roda entre as peças)
 
-> **Falta só a camisa social**, que é compra da tarde de segunda. A **gravata já está em
-> casa** (14/08) e vai na mala, então de toda a composição do Art. 49 é só a camisa que o
-> S-1 espera da ConfecBell. Se a loja não tiver o tamanho, é uma peça só para procurar em
+> **Falta só a camisa social**, que é compra da tarde de segunda. A **gravata e a segunda
+> calça já estão em casa** (14/08) e vão na mala, então de toda a composição do Art. 49 é só
+> a camisa que o S-1 espera da ConfecBell. Se a loja não tiver o tamanho, é uma peça só para procurar em
 > outro lugar, e não duas.
 
 > **Resolvido em 12/08/2026: "passeio completo" na atividade externa é o P-1**, não o S-1.

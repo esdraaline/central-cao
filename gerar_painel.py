@@ -308,17 +308,44 @@ def conta_tarefas(texto):
     return pend, feito
 
 
+def extrai_cabecalho(texto):
+    """Devolve o topo do TAREFAS.md (titulo e linhas de instrucao) ate o
+    primeiro "## ".
+
+    O botao Exportar reescreve o arquivo inteiro, entao ele precisa devolver
+    este topo como ele esta. Antes o cabecalho era uma copia decorada dentro do
+    JavaScript, e ela envelheceu: exportar apagava as linhas sobre categorias e
+    sobre a data nao ser enfeite, que so existiam no arquivo.
+    """
+    corte = re.search(r"^##\s", texto, re.M)
+    return (texto[:corte.start()] if corte else texto).rstrip()
+
+
 def extrai_tarefas(texto):
     """Le as tarefas do TAREFAS.md em formato estruturado.
 
     Sintaxe reconhecida (a data e a categoria sao opcionais):
         - [ ] Entregar o artigo [15/09/2026] #dissertacao
         - [x] Tarefa ja concluida
+
+    O campo "s" guarda o subtitulo (###) sob o qual a linha estava. E o que
+    permite ao Exportar devolver o arquivo com as mesmas secoes, em vez de
+    achatar tudo numa lista corrida.
     """
     tarefas = []
     validas = {c[0] for c in CATEGORIAS}
+    secao = ""
 
-    for m in re.finditer(r"^\s*[-*]\s+\[([ xX])\]\s+(.*)$", texto, re.M):
+    for linha in texto.splitlines():
+        # "## Pendentes"/"## Concluidas" zeram a secao; "###" em diante define
+        h = re.match(r"^(#{2,6})\s+(.*)$", linha)
+        if h:
+            secao = h.group(2).strip() if len(h.group(1)) >= 3 else ""
+            continue
+
+        m = re.match(r"^\s*[-*]\s+\[([ xX])\]\s+(.*)$", linha)
+        if not m:
+            continue
         feito = m.group(1).lower() == "x"
         corpo = m.group(2).strip()
 
@@ -346,7 +373,7 @@ def extrai_tarefas(texto):
         corpo = re.sub(r"`([^`]+)`", r"\1", corpo)               # codigo
         corpo = re.sub(r"\s{2,}", " ", corpo).strip(" -—")
         if corpo:
-            tarefas.append({"t": corpo, "d": iso, "c": cat, "f": feito})
+            tarefas.append({"t": corpo, "d": iso, "c": cat, "f": feito, "s": secao})
 
     return tarefas
 
@@ -1262,14 +1289,44 @@ JS_TAREFAS = r"""
       if(t.cat)s+=' #'+t.cat;
       return s;
     };
+    /* A secao (###) de cada tarefa vem do arquivo, procurada pelo texto. Sem
+       isto o exportado saia como lista corrida e colar por cima apagava os
+       subtitulos ("Reta final...", "Segunda, 17/08"). Tarefa criada no painel
+       nao tem secao e sai solta, logo abaixo de "## Pendentes", que e o unico
+       lugar onde ela cabe sem mentir sobre a secao a que pertence. */
+    var secaoDe={}, ordem=[];
+    BASE.forEach(function(b){
+      var s=b.s||'';
+      secaoDe[norm(b.t)]=s;
+      if(s&&ordem.indexOf(s)<0)ordem.push(s);
+    });
+
     var pend=g.atrasadas.concat(g.hoje,g.amanha,g.semana,g.depois,g.semdata);
-    var txt='# TAREFAS — CAO 2026\n\n'+
-      '> Lista de tarefas correntes do curso. Marcar como feito, não apagar '+
-      '(histórico do que já foi cumprido).\n> Editável aqui ou pelo painel '+
-      '(aba Tarefas). Formato: `- [ ] texto [dd/mm/aaaa] #categoria`.\n\n'+
-      '## Pendentes\n'+(pend.length?pend.map(linha).join('\n'):'- [ ] ...')+'\n\n'+
-      '## Concluídas\n'+(g.feitas.length?g.feitas.map(linha).join('\n'):'')+'\n';
-    return txt;
+    var grupos={};
+    pend.forEach(function(t){
+      var s=secaoDe[norm(t.txt)]||'';
+      (grupos[s]=grupos[s]||[]).push(t);
+    });
+
+    var corpo='';
+    if(grupos[''])corpo+=grupos[''].map(linha).join('\n')+'\n';
+    ordem.forEach(function(s){
+      if(!grupos[s])return;            /* secao que esvaziou sai junto */
+      corpo+='\n### '+s+'\n'+grupos[s].map(linha).join('\n')+'\n';
+    });
+    if(!pend.length)corpo='- [ ] ...\n';
+
+    /* o topo vem do proprio arquivo (TAR_CAB); o texto abaixo e so a rede de
+       seguranca para quando o TAREFAS.md nao existe ainda */
+    var cab=(window.TAR_CAB||'').trim();
+    if(!cab){
+      cab='# TAREFAS — CAO 2026\n\n'+
+          '> Lista de tarefas correntes do curso. Marcar como feito, não apagar '+
+          '(histórico do que já foi cumprido).\n> Editável aqui ou pelo painel '+
+          '(aba Tarefas). Formato: `- [ ] texto [dd/mm/aaaa] #categoria`.';
+    }
+    return cab+'\n\n## Pendentes\n'+corpo+
+           '\n## Concluídas\n'+(g.feitas.length?g.feitas.map(linha).join('\n')+'\n':'');
   }
 
   function abrirModal(id){el(id).classList.add('on')}
@@ -1289,10 +1346,13 @@ JS_TAREFAS = r"""
     var b=el('#exp-copiar');
     b.textContent=ok?'Copiado':'Selecione e copie';
     setTimeout(function(){b.innerHTML=ICO.copiar+'Copiar';},1800);
-    if(ok){
-      tarefas.forEach(function(t){t.sinc=true});
-      salvar();
-    }
+    /* Copiar NAO mexe em t.sinc. Aqui era o resto do desenho antigo, de quando
+       exportar significava "ja esta no arquivo, considera sincronizado". Como
+       t.sinc e a fila de upload (a sincronizacao sobe so quem tem sinc=false),
+       marcar tudo como sincronizado aqui zerava a fila: exportar sem internet
+       ou sem login jogava fora alteracoes que nunca tinham subido para a nuvem,
+       e o outro aparelho nunca as recebia. Quem escreve no .md e o colar, e
+       quem informa o estado da nuvem e a linha de status. Corrigido 14/08/2026. */
   };
   [].forEach.call(document.querySelectorAll('[data-fechar]'),function(b){
     b.onclick=function(){fecharModal('#'+b.dataset.fechar)};
@@ -2511,6 +2571,7 @@ def build():
 var SOL=%(sol)r,LUA=%(lua)r;
 var CATEGORIAS=%(cats)s;
 var BASE=%(base)s;
+var TAR_CAB=%(tarcab)s;
 var ICO=%(ico)s;
 window.CURSO=%(curso)s;
 window.SUPA_CFG=%(supa)s;
@@ -2539,6 +2600,7 @@ window.SUPA_CFG=%(supa)s;
         "carimbo": _carimbo_versao(),
         "cats": escapa_js([[c[0], c[1], c[2]] for c in CATEGORIAS]),
         "base": escapa_js(extrai_tarefas(docs.get("TAREFAS.md", ""))),
+        "tarcab": escapa_js(extrai_cabecalho(docs.get("TAREFAS.md", ""))),
         "supa": escapa_js(le_config_supabase()),
         "ico": escapa_js({
             "check": svg("check", 13),

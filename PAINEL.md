@@ -94,6 +94,10 @@ o `.md`, e ficava acesa para sempre em aparelho sem login. Quem informa o estado
 linha de status ("Salvo na nuvem", "Sem conexão"); a tarja é só sobre o arquivo do
 repositório. Corrigido em 12/08/2026.
 
+**A tarja não apaga ao exportar, e isso é de propósito.** Ela compara com o arquivo que
+estava no repositório na hora em que o painel foi gerado. Só some depois que o `TAREFAS.md`
+novo subir e o painel for regerado. Copiar o texto e não colar não conta.
+
 **Limitação conhecida:** excluir no painel uma tarefa que veio do `.md` não gruda. A tarja
 acusa a exclusão, mas ao recarregar a tarefa volta do arquivo e o aviso some junto, porque a
 mescla traz de volta tudo que está no `.md` e não está aqui. Enquanto isso não mudar, para
@@ -123,6 +127,22 @@ as caixinhas das outras abas, onde editar o texto do item zera a marcação.
 **Mesmo assim, use o Exportar de vez em quando.** Ele gera o [TAREFAS.md](TAREFAS.md) pronto para
 colar, e é o que coloca as tarefas dentro do repositório para eu enxergar o histórico nas próximas
 sessões. Sem internet, o painel continua funcionando e sobe as alterações quando a conexão voltar.
+
+### Dois consertos no Exportar (14/08/2026)
+
+**Copiar zerava a fila de upload.** O botão Copiar marcava todas as tarefas como já
+sincronizadas. Só que essa marca é a fila do Supabase: a sincronização sobe apenas o que
+está fora dela. Exportar sem internet ou sem login jogava fora alterações que nunca tinham
+subido, elas ficavam presas naquele aparelho, e se o outro aparelho mexesse na mesma tarefa
+depois, a versão dele vencia. Era resto de quando exportar significava "já está no arquivo".
+Agora Copiar só copia.
+
+**O exportado achatava o arquivo.** O cabeçalho vinha de uma cópia escrita dentro do código,
+que envelheceu, e as seções (`###`) sumiam. Colar por cima apagava os subtítulos e as linhas
+sobre categorias e sobre a data não ser enfeite. Agora o topo vem do próprio `TAREFAS.md` e
+cada tarefa volta para a seção de onde saiu; seção que ficou sem tarefa some junto. Tarefa
+criada no painel não tem seção e sai solta logo abaixo de `## Pendentes`. Dentro de cada
+seção a ordem passa a ser por data, que é a mesma da lista na tela.
 
 ## Estrutura da pasta
 ```

@@ -9,6 +9,7 @@
 *(Nenhuma. As quatro que estavam aqui foram respondidas em 12/08/2026 — ver Resolvidas.)*
 
 ### Outras
+- **O QTS de segunda marca atividade externa já na primeira semana?** É o que decide se a aposta de deixar o B-1 e o EPI para 23/08 sai de graça. Se marcar, vai de P-1, avisa o chefe de turma e o B-1 sobe no domingo. *(aberta em 14/08/2026)*
 - **Restaurante e padaria do entorno abrem domingo à noite?** Chegando à noite, se não abrirem, a janta de domingo tem que sair de casa. Na dúvida, leve o lanche.
 - **Endereço e horário da ConfecBell** (loja do entorno). Vale conferir antes, para não descobrir na tarde de segunda que ela fecha cedo ou que fica longe a pé.
 - **Café da manhã de segunda é bancado pela turma do CAO-I/26** — vale confirmar com o chefe de turma se entra alguma vaquinha de retribuição.

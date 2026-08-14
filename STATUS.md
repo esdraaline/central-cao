@@ -3,6 +3,21 @@
 > Painel principal. Ler isso primeiro em qualquer sessão nova ("onde paramos?").
 > Atualizado em: 14/08/2026
 
+## Decisões de 14/08/2026 (o que vai na mala)
+
+- **B-1 e EPI ficam para a segunda semana** (viagem de 23/08). Gandola, calça operacional,
+  coturno e principalmente o colete são o conjunto mais volumoso da mala, e a carona divide
+  porta-malas. A primeira semana vai de **P-1**, mais o **S-1** que fica guardado no CAES.
+  *Risco assumido*: se o QTS de segunda marcar atividade externa já nesta semana, vai de P-1,
+  avisa o chefe de turma e o B-1 sobe no domingo. Pelo bizu, o B-1 saiu 3 vezes no curso todo.
+- **A gravata cinza-bandeirante já está em casa** e vai na mala. Saiu da lista da ConfecBell:
+  da compra de segunda o S-1 passa a depender só da **camisa social**.
+- **Na segunda semana sobem também whey protein, creatina e energético**, com coqueteleira e
+  etiqueta de nome (a geladeira é dividida pela turma).
+- **Detalhe que isso criou**: o 4º distintivo de OPM do CAES é o da gandola, e a gandola não
+  vai estar em São Paulo na segunda. Ele sai solto da ConfecBell ou fica lá esperando a peça —
+  ver [COMPRAS.md](COMPRAS.md).
+
 ## Decisões de 12/08/2026 (fim do dia)
 
 - **Viagem: domingo 16/08, saindo de casa às 15h00**, de carona com um amigo, chegando por volta das 22h. O alojamento abre desde sábado, mas o sábado fica em casa.
@@ -90,8 +105,9 @@ conta do Banco do Brasil foi conferida. Sobrou:
 1. **Hoje (14/08), conferir se a mesa SEI 302090130 recebeu o ofício** e anotar o
    número do processo no celular. É do ato eletrônico da P/1 que dependem a matrícula,
    a adição, a Ajuda de Custo e o Auxílio Financeiro a Estudantes.
-2. **Sábado (15/08), separar e arrumar**: o EPI (cinto, colete e bota), os documentos
-   de mão, o S-1 que fica guardado no CAES e a mala inteira, seguindo a [MALA.md](MALA.md).
+2. **Sábado (15/08), separar e arrumar**: os documentos de mão, o S-1 que fica guardado no
+   CAES (com a gravata, que já está em casa) e a mala inteira, seguindo a [MALA.md](MALA.md).
+   O B-1 e o EPI **não** entram nessa mala: ficam separados em casa, para a viagem de 23/08.
 3. **Domingo (16/08), sair de casa às 15h00.** Chegada por volta das 22h.
 4. Depois do **QTS de segunda (17/08)**, me trazer módulo, entregas e avaliações
    pra eu completar [PRAZOS.md](PRAZOS.md).
@@ -101,7 +117,8 @@ Não é mais preciso escrever ao SAE: as quatro dúvidas foram fechadas em 12/08
 
 **O que a mala cobra:** **boina reserva**, **camisa de passeio engomada** (é a que veste
 o primeiro dia), **lençol de solteiro**, **janta de domingo** e volume contido, porque a
-carona divide porta-malas.
+carona divide porta-malas. Sem coturno na mala, o **sapato preto é o único calçado de farda
+da semana** — confira antes de fechar.
 
 ## Prazos mais próximos
 Agosto inteiro, dia a dia, está em [PRAZOS.md](PRAZOS.md).

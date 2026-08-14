@@ -11,23 +11,28 @@
 
 ### Reta final para a primeira semana (viagem em 16/08)
 - [ ] Conferir se a mesa SEI 302090130 recebeu o ofício e anotar o número do processo no celular [14/08/2026] #admin
-- [ ] Levar na mala o EPI: cinto, colete e bota (rever se o QTS de segunda não previr atividade externa: é o conjunto mais volumoso da mala) [15/08/2026] #pessoal
+- [ ] Deixar separado em casa o que só sobe em 23/08: B-1 (gandola, calça operacional, coturno) e EPI (cinto, colete, bota) [15/08/2026] #pessoal
 - [ ] Separar os documentos de mão: identidade funcional e o número do processo SEI [15/08/2026] #admin
-- [ ] Separar o que já tenho do S-1 para deixar guardado no CAES: paletó, calça social, quepe e tarjeta administrativa (camisa social e gravata só na segunda) [15/08/2026] #pessoal
+- [ ] Separar o que já tenho do S-1 para deixar guardado no CAES: paletó, calça social, gravata, quepe e tarjeta administrativa (da compra de segunda falta só a camisa social) [15/08/2026] #pessoal
 - [ ] Arrumar a mala seguindo a aba Mala, compacta (é carona), sem esquecer a boina reserva, o lençol de solteiro e a janta de domingo [15/08/2026] #pessoal
 - [ ] Sair de casa às 15h00 para São Paulo, de carona, chegada por volta das 22h [16/08/2026] #pessoal
 
 ### Segunda, 17/08 (é o dia de resolver o fardamento)
 - [ ] Chegar ao CAES até 07h30: café da manhã, assinar a lista de presença do pelotão e palestra [17/08/2026] #curso
 - [ ] Pegar o QTS divulgado na segunda e lançar as datas em PRAZOS.md [17/08/2026] #curso
-- [ ] Comprar na ConfecBell: 2 camisas de passeio, 2 camisetas de serviço, calça social, boina, camisa social e gravata do S-1 [17/08/2026] #pessoal
+- [ ] Comprar na ConfecBell: 2 camisas de passeio, 2 camisetas de serviço, calça social, boina e a camisa social do S-1 (a gravata já tenho em casa) [17/08/2026] #pessoal
 - [ ] Deixar para aplicar e combinar prazo de retirada: tarjeta operacional e Logomarca nas 2 camisetas novas, 4 distintivos de OPM do CAES e a tarjeta administrativa de acrílico [17/08/2026] #pessoal
+- [ ] Combinar o destino do 4º distintivo de OPM, o da gandola: trazer solto ou deixar na loja, porque a gandola só sobe em 23/08 [17/08/2026] #pessoal
 - [ ] Experimentar a farda social, ver os ajustes de caimento e montar armário e alojamento [17/08/2026] #pessoal
 - [ ] Decidir opção de desconto SIPA: Alojamento (R$ 30,35) ou Vestiário (R$ 21,52), e cessar o equivalente na OPM de origem [17/08/2026] #admin
 - [ ] Se aplicável: pedir Ajuda de Custo (oficial de outro município) [17/08/2026] #admin
 - [ ] Atualizar STATUS.md e PRAZOS.md com a situação real do curso (módulo, disciplinas, entregas) [20/08/2026] #curso
 - [ ] Procurar o Cap Gobbo (Seção de Pesquisa) sobre a transformação do PP em dissertação [21/08/2026] #dissertacao
 - [ ] Ficar de olho no Recadastramento Anual + Inspeção de Saúde (IAS) próximo do aniversário #admin
+
+### Segunda semana (viagem em 23/08)
+- [ ] Conferir whey, creatina, energético e coqueteleira, e comprar o que faltar [22/08/2026] #pessoal
+- [ ] Levar na viagem: B-1 (gandola, calça operacional, coturno), EPI (cinto, colete, bota) e os suplementos [23/08/2026] #pessoal
 
 ## Concluídas
 - [x] Comprar o cadeado do armário (o do CAES não tem chave) e etiqueta + caneta permanente para as marmitas [14/08/2026] #pessoal

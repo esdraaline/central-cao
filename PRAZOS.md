@@ -3,7 +3,7 @@
 > Calendário vivo. Datas já cumpridas ficam marcadas como histórico (não apagar — serve de referência pro próximo ciclo/pra memória do curso).
 > O que tem dia marcado e precisa virar ação também entra em [TAREFAS.md](TAREFAS.md): é de lá que sai o guia de abertura do painel.
 
-## Agosto de 2026 — reta final e primeira semana
+## Agosto de 2026 — reta final e primeiras semanas
 
 | Data | Dia | O que |
 |---|---|---|
@@ -13,6 +13,9 @@
 | **16/08** | **domingo** | **Saída de casa às 15h00**, de carona, chegada por volta das 22h ([VIAGENS.md](VIAGENS.md)). A janta vai na mala |
 | **17/08** | **segunda** | **Recepção no CAES a partir das 07h30** (café da manhã da turma do CAO-I/26, lista de presença por pelotão e palestra). **Sai o QTS.** À tarde, **todo o fardamento na ConfecBell** e montagem do alojamento. Início da Rotina 13 do SIPA |
 | 20/08 | quinta | Fim da primeira semana, volta depois das 11h30 |
+| 22/08 | sábado | Conferir os suplementos e a coqueteleira para a segunda semana ([COMPRAS.md](COMPRAS.md)) |
+| **23/08** | **domingo** | Volta para São Paulo. **É esta viagem que leva o B-1** (gandola, calça operacional, coturno), o **EPI** (cinto, colete e bota) e os **suplementos** — decisão de 14/08, por espaço na carona |
+| 27/08 | quinta | Fim da segunda semana, volta depois das 11h30 |
 
 ## Curso (CAO-II/26 — 2ª Turma)
 - **Duração**: agosto/2026 a agosto/2027, no CAES "Cel Nelson Freire Terra".

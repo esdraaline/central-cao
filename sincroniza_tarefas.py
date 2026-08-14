@@ -190,6 +190,29 @@ def juntar(arquivo, nuvem, estado, t_arquivo):
     """Devolve (tarefas finais, o que subir para a nuvem, relatorio)."""
     no_arq = {t["id"]: t for t in arquivo}
     na_nuv = {r["id"]: r for r in nuvem}
+
+    # Tarefa criada no painel nasce com id de sorteio ("t..."). Quando esta
+    # rodada a escreve no TAREFAS.md, a rodada seguinte le a linha e deriva do
+    # texto um id diferente ("md..."), e os dois passam a apontar para a mesma
+    # tarefa. Sem casar pelo texto, ela vira duas: duplica no arquivo e sobe uma
+    # linha sobrando para a nuvem. Quem vale e o id da nuvem, porque e o que
+    # todos os aparelhos ja tem gravado no navegador; trocar por o do arquivo
+    # faria cada aparelho reenviar o antigo e duplicar de novo.
+    por_texto = {}
+    for r in nuvem:
+        por_texto.setdefault(norm(r["txt"]), r)
+
+    apelido = {}
+    for t in arquivo:
+        if t["id"] in na_nuv:
+            continue
+        r = por_texto.get(norm(t["txt"]))
+        if r and r["id"] not in no_arq:
+            apelido[t["id"]] = r["id"]
+    if apelido:
+        arquivo = [dict(t, id=apelido.get(t["id"], t["id"])) for t in arquivo]
+        no_arq = {t["id"]: t for t in arquivo}
+
     ordem = [t["id"] for t in arquivo] + [r["id"] for r in nuvem if r["id"] not in no_arq]
 
     final, subir = [], []

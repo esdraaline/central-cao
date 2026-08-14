@@ -47,6 +47,14 @@ Duas regras que nasceram daí:
   geração congela: o cartão ficou de 08/08 a 11/08 dizendo "9 dias para o
   início" quando já faltavam 6. Corrigido.
 
+## As tarefas voltam sozinhas para o repositório (14/08/2026)
+
+Marcar, remarcar ou criar tarefa no painel não exige mais copiar e colar no
+[TAREFAS.md](TAREFAS.md). Uma Action roda de hora em hora, lê o Supabase e reescreve o
+arquivo, preservando cabeçalho e seções. Mexeu no celular, em até uma hora o repositório
+está em dia e o painel republicado. Como funciona e quem manda quando arquivo e nuvem
+discordam: [PAINEL.md](PAINEL.md) e [SUPABASE.md](SUPABASE.md).
+
 ## Publicação automática (06/08/2026)
 
 O painel se publica sozinho. Editou um `.md` e deu push (ou editou pela

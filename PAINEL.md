@@ -94,14 +94,14 @@ o `.md`, e ficava acesa para sempre em aparelho sem login. Quem informa o estado
 linha de status ("Salvo na nuvem", "Sem conexão"); a tarja é só sobre o arquivo do
 repositório. Corrigido em 12/08/2026.
 
-**A tarja não apaga ao exportar, e isso é de propósito.** Ela compara com o arquivo que
-estava no repositório na hora em que o painel foi gerado. Só some depois que o `TAREFAS.md`
-novo subir e o painel for regerado. Copiar o texto e não colar não conta.
+**A tarja não apaga na hora, e isso é de propósito.** Ela compara com o arquivo que estava no
+repositório quando o painel foi gerado. Só some depois que o `TAREFAS.md` novo subir e o
+painel for regerado. Com a sincronização automática ligada, isso acontece sozinho em até uma
+hora.
 
-**Limitação conhecida:** excluir no painel uma tarefa que veio do `.md` não gruda. A tarja
-acusa a exclusão, mas ao recarregar a tarefa volta do arquivo e o aviso some junto, porque a
-mescla traz de volta tudo que está no `.md` e não está aqui. Enquanto isso não mudar, para
-apagar de vez é preciso tirar a linha do `TAREFAS.md`.
+**Limitação resolvida em 14/08/2026:** excluir no painel uma tarefa que veio do `.md` não
+grudava. Ao recarregar, ela voltava do arquivo. Agora a Action de sincronização tira a linha
+do `TAREFAS.md` na rodada seguinte, então a exclusão gruda sozinha (ver abaixo).
 
 ### Quem manda em cada tarefa (corrigido em 12/08/2026)
 Tarefa que **nasceu no arquivo** tem id derivado do próprio texto (prefixo `md`). Tarefa criada
@@ -124,9 +124,37 @@ as caixinhas das outras abas, onde editar o texto do item zera a marcação.
 `relatorio-ronda`, tabela `cao_tarefas`). Em cada aparelho novo, entrar uma vez em
 **Tarefas → Entrar** com o e-mail e senha de sempre. Detalhes em [SUPABASE.md](SUPABASE.md).
 
-**Mesmo assim, use o Exportar de vez em quando.** Ele gera o [TAREFAS.md](TAREFAS.md) pronto para
-colar, e é o que coloca as tarefas dentro do repositório para eu enxergar o histórico nas próximas
-sessões. Sem internet, o painel continua funcionando e sobe as alterações quando a conexão voltar.
+### O ciclo se fecha sozinho (14/08/2026)
+
+**Não precisa mais copiar e colar.** Uma Action agendada
+([sincronizar-tarefas.yml](.github/workflows/sincronizar-tarefas.yml)) roda de hora em hora,
+lê a `cao_tarefas` no Supabase e reescreve o [TAREFAS.md](TAREFAS.md) sozinho, preservando
+cabeçalho e seções. Depois pede a republicação do painel. Você mexe no celular e o
+repositório se atualiza sem você fazer nada. Editar o `.md` na mão também dispara a rodada
+na hora, sem esperar a hora cheia.
+
+Por que a Action e não o próprio painel: o painel é página estática no GitHub Pages, não tem
+servidor e não pode escrever no repositório. A credencial de escrita não pode morar dentro
+dele porque o repositório é público. Na Action ela fica nos Secrets.
+
+**Quem manda quando arquivo e nuvem discordam: quem mexeu por último.** A hora da nuvem é a
+coluna `mod`; a hora do arquivo é a data do último commit que tocou o `TAREFAS.md`. Sem essa
+regra, a Action comeria na rodada seguinte qualquer edição feita à mão no arquivo.
+
+**Como ela sabe que uma tarefa foi apagada no painel:** o `estado_tarefas.json` guarda os ids
+da última sincronização. Tarefa que está no arquivo, sumiu da nuvem e estava no estado
+anterior foi apagada no painel, então sai do arquivo. Sem esse registro, "sumiu da nuvem" e
+"ainda não subiu" seriam a mesma coisa e a tarefa apagada voltaria a cada hora. **É isto que
+conserta a limitação antiga** de excluir no painel não grudar. Não apague esse arquivo.
+
+Na primeira rodada não existe estado anterior, então nada é apagado: ela só sobe.
+
+Para conferir sem escrever nada, rode a Action pela aba Actions marcando a opção
+"Só mostrar o que faria", ou local: `python sincroniza_tarefas.py --conferir`.
+
+**O Exportar continua existindo como saída de emergência.** Ele gera o
+[TAREFAS.md](TAREFAS.md) pronto para colar, no mesmo formato que a Action escreve, para o
+caso de a automação estar fora do ar.
 
 ### Dois consertos no Exportar (14/08/2026)
 
@@ -160,6 +188,8 @@ Central CAO/
 ├── VIAGENS.md         <- deslocamentos (módulos presenciais, provas etc.)
 ├── SUPABASE.md       <- como ligar a sincronização das tarefas
 ├── gerar_painel.py   <- gera o painel a partir dos .md acima
+├── sincroniza_tarefas.py  <- traz as tarefas da nuvem de volta para o TAREFAS.md
+├── estado_tarefas.json    <- ids da última sincronização (não apagar)
 ├── docs/index.html   <- o painel (gerado; é o que vai para o GitHub Pages)
 └── CAO 2026/
     ├── Inscrição/    <- documentos da fase de seleção (arquivo morto)

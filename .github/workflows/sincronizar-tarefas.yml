@@ -1,0 +1,102 @@
+name: Sincronizar tarefas
+
+# Por que este workflow existe:
+#
+# O painel e uma pagina estatica no GitHub Pages. Pagina estatica nao tem
+# servidor e nao pode escrever no repositorio, e a credencial de escrita nao
+# pode morar dentro dela porque o repositorio e publico. Ate 14/08/2026 quem
+# fazia a ponte entre o Supabase e o TAREFAS.md era o Josemar, copiando o texto
+# do botao Exportar na mao. Aqui a ponte roda sozinha, de hora em hora, onde a
+# credencial pode ficar guardada: nos Secrets.
+#
+# Resultado: mexeu no celular, o TAREFAS.md se atualiza sozinho e o painel
+# republica. O botao Exportar continua existindo como saida de emergencia.
+
+on:
+  schedule:
+    # De hora em hora. O cron do GitHub nao e pontual, costuma atrasar alguns
+    # minutos em horario de pico, e para esta finalidade tanto faz.
+    - cron: "17 * * * *"
+  workflow_dispatch:
+    inputs:
+      conferir:
+        description: "Só mostrar o que faria, sem escrever nada"
+        type: boolean
+        default: false
+  push:
+    branches: [main]
+    # Editou o TAREFAS.md a mao? Sobe para a nuvem na hora, sem esperar a hora
+    # cheia, senao o celular passaria ate uma hora mostrando o que ja mudou.
+    paths:
+      - "TAREFAS.md"
+      - "sincroniza_tarefas.py"
+      - ".github/workflows/sincronizar-tarefas.yml"
+
+permissions:
+  contents: write   # para commitar o TAREFAS.md atualizado
+  actions: write    # para pedir a republicacao do painel (ver ultimo passo)
+
+# Duas rodadas ao mesmo tempo leriam a mesma nuvem e commitariam por cima uma
+# da outra.
+concurrency:
+  group: sincronizar-tarefas
+  cancel-in-progress: false
+
+jobs:
+  sincronizar:
+    runs-on: ubuntu-latest
+    steps:
+      # fetch-depth: 0 e obrigatorio. O script decide quem manda (arquivo ou
+      # nuvem) pela data do ultimo commit que tocou o TAREFAS.md, e com o
+      # checkout raso essa data nao existe.
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Sincronizar com o Supabase
+        env:
+          SUPABASE_EMAIL: ${{ secrets.SUPABASE_EMAIL }}
+          SUPABASE_SENHA: ${{ secrets.SUPABASE_SENHA }}
+        run: python sincroniza_tarefas.py ${{ inputs.conferir && '--conferir' || '' }}
+
+      - name: Guardar o resultado
+        id: guardar
+        if: ${{ !inputs.conferir }}
+        run: |
+          git config user.name "painel-cao-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add TAREFAS.md estado_tarefas.json
+          if git diff --cached --quiet; then
+            echo "Nada mudou nesta rodada."
+            echo "mudou=nao" >> "$GITHUB_OUTPUT"
+          else
+            git commit -m "Tarefas do painel para o TAREFAS.md ($(date -u +'%Y-%m-%d %H:%M') UTC)"
+            # A publicacao do painel tambem commita, e as duas rodam em grupos
+            # de concorrencia diferentes. Se ela empurrar primeiro, o push daqui
+            # e rejeitado por nao ser fast-forward. Rebase e tenta de novo, em
+            # vez de deixar a Action vermelha por uma corrida de segundos.
+            for TENTATIVA in 1 2 3; do
+              if git push; then
+                echo "mudou=sim" >> "$GITHUB_OUTPUT"
+                exit 0
+              fi
+              echo "Push rejeitado (tentativa $TENTATIVA). Rebase e tenta de novo."
+              git pull --rebase origin main
+            done
+            echo "::error::Nao consegui empurrar o TAREFAS.md depois de 3 tentativas."
+            exit 1
+          fi
+
+      # Push feito com o GITHUB_TOKEN nao dispara outro workflow: e uma trava
+      # do proprio GitHub contra Action que se chama em loop. Sem este passo o
+      # TAREFAS.md mudaria e o painel publicado continuaria mostrando o antigo,
+      # que e exatamente o problema que este workflow existe para resolver.
+      - name: Pedir a republicacao do painel
+        if: steps.guardar.outputs.mudou == 'sim'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh workflow run publicar-painel.yml --ref main

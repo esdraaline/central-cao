@@ -1,5 +1,32 @@
 # Sincronizar as tarefas (Supabase)
 
+## ✅ O ciclo fecha sozinho (14/08/2026)
+
+A nuvem volta para o `TAREFAS.md` sem ninguém copiar nada. Quem faz isso é
+`sincroniza_tarefas.py`, rodado de hora em hora pela Action
+[sincronizar-tarefas.yml](.github/workflows/sincronizar-tarefas.yml). A explicação de como
+ele decide quem manda está em [PAINEL.md](PAINEL.md).
+
+**Os dois Secrets do repositório** (Settings → Secrets and variables → Actions):
+
+| Secret | O que é |
+|---|---|
+| `SUPABASE_EMAIL` | o mesmo e-mail do login do painel |
+| `SUPABASE_SENHA` | a mesma senha |
+
+É o login normal, não chave de serviço: o RLS entrega só as suas linhas. Secret de
+repositório não aparece na página, nem no log da Action, e Action de fork não enxerga.
+Se um dia trocar a senha do Supabase, troque o `SUPABASE_SENHA` junto, senão a Action
+começa a falhar em silêncio (ela fica vermelha na aba Actions).
+
+Para rodar na mão, em qualquer máquina:
+
+```powershell
+$env:SUPABASE_EMAIL = "..."; $env:SUPABASE_SENHA = "..."
+python sincroniza_tarefas.py --conferir   # só mostra o que faria
+python sincroniza_tarefas.py              # escreve
+```
+
 ## ✅ Já está ligado (04/08/2026)
 
 - **Projeto**: `relatorio-ronda` (o mesmo dos relatórios, org `esdraaline's Org`)

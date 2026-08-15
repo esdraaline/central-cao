@@ -10,10 +10,6 @@
 ## Pendentes
 
 ### Reta final para a primeira semana (viagem em 16/08)
-- [ ] Deixar separado em casa o que só sobe em 23/08: B-1 (gandola, calça operacional, coturno) e EPI (cinto, colete, bota) [15/08/2026] #pessoal
-- [ ] Separar o que já tenho do S-1 para deixar guardado no CAES: paletó, a segunda calça social, gravata, quepe e tarjeta administrativa (da compra de segunda falta só a camisa social) [15/08/2026] #pessoal
-- [ ] Arrumar a mala seguindo a aba Mala, compacta (é carona), sem esquecer a boina reserva, o lençol de solteiro e a janta de domingo [15/08/2026] #pessoal
-- [ ] Sair de casa às 15h00 para São Paulo, de carona, chegada por volta das 22h [16/08/2026] #pessoal
 - [ ] Conferir se a mesa SEI 302090130 recebeu o ofício e anotar o número do processo no celular [18/08/2026] #admin
 
 ### Segunda, 17/08 (é o dia de resolver o fardamento)
@@ -34,6 +30,10 @@
 - [ ] Levar na viagem: B-1 (gandola, calça operacional, coturno), EPI (cinto, colete, bota) e os suplementos [23/08/2026] #pessoal
 
 ## Concluídas
+- [x] Sair de casa às 15h00 para São Paulo, de carona, chegada por volta das 22h [16/08/2026] #pessoal
+- [x] Deixar separado em casa o que só sobe em 23/08: B-1 (gandola, calça operacional, coturno) e EPI (cinto, colete, bota) [15/08/2026] #pessoal
+- [x] Separar o que já tenho do S-1 para deixar guardado no CAES: paletó, a segunda calça social, gravata, quepe e tarjeta administrativa (da compra de segunda falta só a camisa social) [15/08/2026] #pessoal
+- [x] Arrumar a mala seguindo a aba Mala, compacta (é carona), sem esquecer a boina reserva, o lençol de solteiro e a janta de domingo [15/08/2026] #pessoal
 - [x] Separar os documentos de mão: identidade funcional e o número do processo SEI [15/08/2026] #admin
 - [x] Comprar o cadeado do armário (o do CAES não tem chave) e etiqueta + caneta permanente para as marmitas [14/08/2026] #pessoal
 - [x] Engomar a camisa de passeio que já tenho: é a única garantida para segunda, porque as outras 2 só serão compradas à tarde [14/08/2026] #pessoal

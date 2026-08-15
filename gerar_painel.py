@@ -2281,10 +2281,26 @@ JS_GUIA = r"""
 """
 
 
-def _carimbo_versao():
-    """Identifica esta geracao do painel, para o navegador nao servir cache velho."""
-    import time
-    return time.strftime("%Y%m%d%H%M%S")
+CARIMBO_VAGA = "@@CARIMBO@@"
+
+
+def _carimbo_versao(doc):
+    """Identifica esta versao do painel, para o navegador nao servir cache velho.
+
+    E um hash do proprio documento, nao o relogio. Isso importa porque
+    'docs/index.html' e arquivo gerado, esta versionado e tem dois produtores:
+    a maquina do Josemar e a Action de publicacao. Com carimbo de relogio, duas
+    geracoes do mesmo conteudo davam arquivos diferentes, e o Git via conflito
+    em cima de nada: em 15/08/2026 um commit da Action mudou uma unica linha do
+    painel, so o carimbo. Com hash, os dois produtores chegam ao mesmo byte,
+    a Action nao commita quando nada mudou e a pasta local nao suja depois de
+    gerar so para conferir.
+
+    Para o cache do navegador tambem e melhor: muda quando o conteudo muda, em
+    vez de forcar download novo a cada geracao.
+    """
+    import hashlib
+    return hashlib.sha256(doc.encode("utf-8")).hexdigest()[:16]
 
 
 def _papel_da_chave(key):
@@ -2470,7 +2486,10 @@ def build():
     if faltando:
         print("Aviso: nao encontrei %s" % ", ".join(faltando))
 
-    hoje = date.today()
+    # Nada no painel gerado pode depender da data de hoje. O rodape mostrava a
+    # data da geracao, e isso fazia a Action (que roda em UTC) e o PC (UTC-3)
+    # produzirem arquivos diferentes perto da meia-noite, alem de reintroduzir
+    # o conflito a cada virada de dia. Toda conta de tempo e feita no navegador.
     pend, feito = conta_tarefas(docs.get("TAREFAS.md", ""))
 
     # navegacao
@@ -2574,7 +2593,7 @@ def build():
   </div>
 </header>
 <main>%(paineis)s
-  <p class="rodape">Gerado a partir dos arquivos <code>.md</code> em %(data)s. Para atualizar: edite o .md e rode <code>python gerar_painel.py</code>.</p>
+  <p class="rodape">Gerado a partir dos arquivos <code>.md</code>. Para atualizar: edite o .md e rode <code>python gerar_painel.py</code>.</p>
 </main>
 <script>
 var SOL=%(sol)r,LUA=%(lua)r;
@@ -2605,8 +2624,7 @@ window.SUPA_CFG=%(supa)s;
         "icbusca": svg("search", 16),
         "sol": svg("sun", 17),
         "lua": svg("moon", 17),
-        "data": hoje.strftime("%d/%m/%Y"),
-        "carimbo": _carimbo_versao(),
+        "carimbo": CARIMBO_VAGA,
         "cats": escapa_js([[c[0], c[1], c[2]] for c in CATEGORIAS]),
         "base": escapa_js(extrai_tarefas(docs.get("TAREFAS.md", ""))),
         "tarcab": escapa_js(extrai_cabecalho(docs.get("TAREFAS.md", ""))),
@@ -2621,6 +2639,10 @@ window.SUPA_CFG=%(supa)s;
             "copiar": svg("copiar", 15),
         }),
     }
+
+    # O carimbo entra por ultimo, calculado sobre o documento ja montado (com a
+    # vaga ainda no lugar). Assim o mesmo conteudo sempre gera o mesmo carimbo.
+    doc = doc.replace(CARIMBO_VAGA, _carimbo_versao(doc))
 
     os.makedirs(os.path.dirname(SAIDA), exist_ok=True)
     # newline="\n" e obrigatorio: sem isso o Python no Windows escreve CRLF, o

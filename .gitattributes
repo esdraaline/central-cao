@@ -1,0 +1,10 @@
+# O painel e gerado em duas maquinas: o PC do Josemar (Windows) e a Action de
+# publicacao (Linux). Sem isto, o Git converte a quebra de linha na saida do
+# checkout no Windows e o arquivo inteiro aparece como modificado depois de
+# gerar. Fixar em LF mantem o mesmo byte nos dois lados.
+docs/index.html text eol=lf
+
+# Os .md sao a fonte de verdade e tambem sao editados pela web do GitHub.
+*.md text eol=lf
+*.py text eol=lf
+*.yml text eol=lf

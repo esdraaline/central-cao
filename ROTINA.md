@@ -55,7 +55,7 @@ Repare que **não entra camiseta**, diferente do P-1.
 
 | Onde | O que vai |
 |---|---|
-| Platinas | Insígnia de Cap PM, metal, tamanho normal (3 estrelas de 25 mm), centralizada nos terços externo, médio e interno |
+| Platinas | Insígnia de Cap PM, metal, tamanho normal (3 estrelas de 25 mm), fixada direto na platina, centralizada nos terços externo, médio e interno |
 | Golas, nos dois lados | Distintivo de policiamento (2 pistolas cruzadas), metal dourado, tamanho normal 35 x 40 mm, 5 mm acima da costura da lapela |
 | Manga direita | Distintivo da Bandeira do Estado de São Paulo |
 | Manga esquerda | Distintivo da Logomarca da PMESP |
@@ -68,6 +68,18 @@ Facultativos (Art. 93, § 4º): CPFO no bolso direito 2 mm abaixo do distintivo 
 3 distintivos acima do bolso direito (Comando de Órgão de Execução, Patrulheiro,
 Especialização), sendo que o de Comando de Cia PM exige 2 anos completos publicados em BI
 (Art. 152, I, "a"); e a Láurea de Mérito Pessoal presa ao botão do bolso esquerdo.
+
+**Platina do paletó: é fixa, não removível.** Art. 93, § 1º, item 4: platina embutida na
+junção da manga com o corpo, presa por botão dourado de 15 mm na outra ponta. A estrela de
+metal vai espetada direto no tecido dela. A **platina rígida removível azul-ferrete** (veludo,
+pentagonal, 140 x 60 mm) é só do **R-1** (Art. 93, § 1º, item 6), uniforme de smoking, que não
+aparece no CAO.
+
+**A platina da jaqueta de passeio do P-1 funciona igual** (Art. 127, item VI e parágrafo único,
+item 1): também é embutida e a insígnia é a mesma, metal, tamanho normal, três estrelas nos
+terços. A única diferença é o botão, dourado de 15 mm no paletó e botão liso comum na jaqueta.
+Na prática, **a mesma estrela serve nas duas peças**: 6 estrelas de 25 mm por peça, ou um jogo
+só transferido de uma para a outra (não compensa, porque o social fica guardado no CAES).
 
 **Camisa social cinza-claro** (Art. 72, § 2º): distintivo de policiamento reduzido na gola
 direita e insígnia de Cap PM reduzida (estrelas de 12 mm) na gola esquerda. Nada nas mangas,

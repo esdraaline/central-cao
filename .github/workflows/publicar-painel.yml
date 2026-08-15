@@ -93,12 +93,21 @@ jobs:
       # falhou pela metade passaria despercebido.
       - name: Conferir que o site no ar e o desta rodada
         run: |
-          CARIMBO=$(grep -o 'gerado-em" content="[0-9]*"' docs/index.html | grep -o '[0-9]*')
+          # O carimbo e hash do conteudo (hexadecimal), nao mais data e hora.
+          # A leitura antiga era 'content="[0-9]*"', que so casa com digito: com
+          # a primeira letra no hash ela nao achava nada, o grep saia 1 e o
+          # 'bash -e' matava o passo antes mesmo da primeira consulta ao site.
+          carimbo_de() { sed -n 's/.*gerado-em" content="\([^"]*\)".*/\1/p' | head -1; }
+          CARIMBO=$(carimbo_de < docs/index.html)
+          if [ -z "$CARIMBO" ]; then
+            echo "::error::Nao achei o carimbo gerado-em no docs/index.html."
+            exit 1
+          fi
           echo "Carimbo desta rodada: $CARIMBO"
           for TENTATIVA in $(seq 1 30); do
             NO_AR=$(curl -fsS -H "Cache-Control: no-cache" \
               "${{ steps.deploy.outputs.page_url }}?run=${GITHUB_RUN_ID}-${TENTATIVA}" 2>/dev/null \
-              | grep -o 'gerado-em" content="[0-9]*"' | grep -o '[0-9]*' || true)
+              | carimbo_de || true)
             if [ "$NO_AR" = "$CARIMBO" ]; then
               echo "Confirmado: o site no ar e o desta rodada."
               exit 0

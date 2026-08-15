@@ -10,8 +10,12 @@ O principal manual de referência do projeto é o **R-5-PM, 6ª Ed. v.2** (Regul
 **Onde ele está:** no Google Drive, não neste repositório.
 
 ```
-G:\Meu Drive\Arquivos Josemar\Trabalho\Manuais\R-5-PM 6ª Ed. v.2_RU_Port 2 e 4 de 26_bvp.pdf
+G:\Meu Drive\10_JOSEMAR\02_TRABALHO\P1\Manuais\R-5-PM 6ª Ed. v.2_RU_Port 2 e 4 de 26_bvp.pdf
+G:\Meu Drive\10_JOSEMAR\02_TRABALHO\P4\R-5-PM 6ª Ed. v.2_RU_Port 2 e 4 de 26_bvp.pdf
 ```
+
+As duas cópias têm o mesmo conteúdo (texto idêntico, 420 páginas). O md5 difere só
+por recompressão do PDF.
 
 Também existe uma cópia local em `Manuais/`, que o `.gitignore` mantém fora do
 git. Se a pasta não existir na máquina em que você está, use o caminho do Drive
@@ -33,6 +37,20 @@ sempre o que entra. Decisão tomada em 06/08/2026.
 Responda com base no texto do regulamento. Cite o artigo/item ou seção quando
 possível. Se a informação não estiver clara no texto, indique a incerteza antes
 de responder.
+
+**Ler o desenho, não só o texto (aprendido em 15/08/2026).** As figuras do R-5-PM
+fazem parte da norma e trazem itens que o texto do artigo não enumera. Exemplo real:
+o Art. 93, § 3º lista os ornamentos obrigatórios do paletó e não cita as mangas, mas
+o desenho do § 1º mostra a Bandeira de São Paulo na manga direita e a Logomarca da
+PMESP na esquerda. Quem lê só o texto extraído erra. Antes de afirmar que uma peça
+"não leva" algum distintivo, renderize a página e olhe:
+
+```
+pdftotext -layout -enc UTF-8 "<pdf>" saida.txt      # achar o artigo
+pdftoppm -f <pag> -l <pag> -r 200 -png "<pdf>" img  # olhar a figura
+```
+
+A numeração impressa do RU fica cerca de 3 páginas atrás da numeração do PDF.
 
 **Uso mais frequente hoje:** conferir os itens de uniforme das abas
 [Compras](COMPRAS.md) e [Mala](MALA.md), que listam as peças a levar para o CAO

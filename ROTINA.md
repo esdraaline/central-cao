@@ -45,6 +45,50 @@ Referência oficial: **R-5-PM, 6ª Ed. v.2** (Regulamento de Uniformes). Lista d
 - Uso obrigatório de cobertura nas áreas descobertas do CAES.
 - **EF (T-1)**: camiseta de treinamento branca, calção azul-royal, meias brancas e tênis preto.
 
+### O que vai montado no S-1 (conferido no R-5-PM em 15/08/2026)
+
+Composição do S-1 no **Art. 49, § 2º**: quepe, paletó, camisa social cinza-claro, gravata
+cinza-bandeirante, calça social, cinto de serviço, meias sociais pretas e sapatos pretos.
+Repare que **não entra camiseta**, diferente do P-1.
+
+**Paletó** (Art. 93, RU pp. 140 a 153), para Cap PM:
+
+| Onde | O que vai |
+|---|---|
+| Platinas | Insígnia de Cap PM, metal, tamanho normal (3 estrelas de 25 mm), centralizada nos terços externo, médio e interno |
+| Golas, nos dois lados | Distintivo de policiamento (2 pistolas cruzadas), metal dourado, tamanho normal 35 x 40 mm, 5 mm acima da costura da lapela |
+| Manga direita | Distintivo da Bandeira do Estado de São Paulo |
+| Manga esquerda | Distintivo da Logomarca da PMESP |
+| Manga direita, no punho | Distintivo do CAO de manga, bordado a 30 mm do canhão. Só depois de concluir o curso, e aí **não** se usa o modelo de bolso |
+| Sobre a pestana do bolso direito | Tarjeta administrativa de acrílico preta, 15 x 80 mm, "CAP PM JOSEMAR" (Art. 151, IV) |
+| Bolso direito | Distintivo de formação ou aperfeiçoamento, metal, tamanho normal. Hoje é o CFO |
+| Acima do bolso esquerdo | Barretas das condecorações, fileiras de 3 |
+
+Facultativos (Art. 93, § 4º): CPFO no bolso direito 2 mm abaixo do distintivo de curso; até
+3 distintivos acima do bolso direito (Comando de Órgão de Execução, Patrulheiro,
+Especialização), sendo que o de Comando de Cia PM exige 2 anos completos publicados em BI
+(Art. 152, I, "a"); e a Láurea de Mérito Pessoal presa ao botão do bolso esquerdo.
+
+**Camisa social cinza-claro** (Art. 72, § 2º): distintivo de policiamento reduzido na gola
+direita e insígnia de Cap PM reduzida (estrelas de 12 mm) na gola esquerda. Nada nas mangas,
+e ela não tem bolso, então não leva tarjeta.
+
+**Quepe** (Art. 95): distintivo de cobertura de Oficial no ilhós da copa, jugular de galões
+dourados, pala preta lisa. Bordado na pala é de Oficial Superior, de Major para cima.
+
+**Cinto de serviço** (Art. 77): cinza-bandeirante, fivela retangular 30 x 35 mm com a
+Logomarca da PMESP em alto-relevo. Gravata, calça, meias e sapatos não levam insígnia.
+
+Duas pegadinhas registradas aqui para não errar de novo:
+
+1. **A bandeira e a logomarca de manga não estão no texto do Art. 93**, que só lista platinas,
+   golas, mangas de praça, tarjeta, bolso e barretas. Elas aparecem **no desenho** do § 1º e do
+   § 2º, que também é norma. Conferir sempre a figura, não só o texto.
+2. **No paletó não vai brasão de OPM abaixo da bandeira.** Isso é da camisa de passeio do P-1
+   (Art. 70, § 1º, item 3). A medida de altura da bandeira no paletó não está escrita; nas peças
+   análogas (capote Art. 121, jaqueta de passeio Art. 127, camisa de passeio Art. 70) o padrão é
+   **40 mm da costura superior da manga**, e é essa a referência para mandar costurar.
+
 ## Estrutura do prédio
 - **Copa e refeitório** à disposição da turma, os dois com eletrodomésticos.
 - Para guardar marmita: **1 geladeira na copa, 1 geladeira no refeitório e 2 frigobares**

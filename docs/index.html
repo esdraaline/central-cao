@@ -9,7 +9,7 @@
 <!-- o painel e um arquivo unico que muda a cada geracao; sem isto o navegador
      serve a versao antiga do cache e correcoes nao chegam ate o usuario -->
 <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
-<meta name="gerado-em" content="5347313cb66416fd">
+<meta name="gerado-em" content="7ea504fae47e9658">
 <title>Central do CAO</title>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23c8102e'/%3E%3Ctext x='16' y='22' font-size='15' font-family='Arial' font-weight='bold' fill='white' text-anchor='middle'%3ECAO%3C/text%3E%3C/svg%3E">
 <style>
@@ -71,7 +71,7 @@ body{background:var(--bg);color:var(--tx);
 nav{display:flex;gap:2px;margin-top:14px;overflow-x:auto;scrollbar-width:none}
 nav::-webkit-scrollbar{display:none}
 nav button{background:none;border:0;color:rgba(255,255,255,.72);font:600 13.5px/1 inherit;
-  padding:12px 14px 13px;cursor:pointer;border-bottom:3px solid transparent;white-space:nowrap;
+  padding:12px 10px 13px;cursor:pointer;border-bottom:3px solid transparent;white-space:nowrap;
   display:flex;align-items:center;gap:7px;transition:color .15s}
 nav button:hover{color:#fff}
 nav button[aria-selected=true]{color:#fff;border-bottom-color:#fff}
@@ -432,10 +432,32 @@ mark{background:rgba(232,161,58,.35);color:inherit;border-radius:3px;padding:0 2
       <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
       <input id="q" type="search" placeholder="Buscar em tudo (Ctrl+K)" autocomplete="off" spellcheck="false">
     </div>
-    <nav role="tablist"><button data-aba="painel" role="tab" aria-selected="false"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/></svg>Painel<span class="pill pill-b" style="display:none"></span></button><button data-aba="prazos" role="tab" aria-selected="false"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4M16 3v4M3 11h18"/></svg>Prazos<span class="pill pill-b" style="display:none"></span></button><button data-aba="tarefas" role="tab" aria-selected="false"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Tarefas<span class="pill">14</span><span class="pill pill-b" style="display:none"></span></button><button data-aba="rotina" role="tab" aria-selected="false"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Rotina<span class="pill pill-b" style="display:none"></span></button><button data-aba="contatos" role="tab" aria-selected="false"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 20v-1a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v1"/><circle cx="9.5" cy="8" r="3.5"/><path d="M21 20v-1a4 4 0 0 0-3-3.8"/><path d="M16 4.2a3.5 3.5 0 0 1 0 6.8"/></svg>Contatos<span class="pill pill-b" style="display:none"></span></button><button data-aba="duvidas" role="tab" aria-selected="false"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.2 2.4c-.7.2-1.2.9-1.2 1.6v.5"/><path d="M12 17.5h.01"/></svg>Dúvidas<span class="pill pill-b" style="display:none"></span></button><button data-aba="anotacoes" role="tab" aria-selected="false"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3h9l5 5v13H5z"/><path d="M14 3v5h5"/><path d="M9 13h6M9 17h4"/></svg>Anotações<span class="pill pill-b" style="display:none"></span></button><button data-aba="compras" role="tab" aria-selected="false"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4h2l2.4 11.2a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.5L21 8H6"/><circle cx="10" cy="20" r="1.2"/><circle cx="18" cy="20" r="1.2"/></svg>Compras<span class="pill pill-b" style="display:none"></span></button><button data-aba="mala" role="tab" aria-selected="false"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="14" rx="2"/><path d="M9 7V4h6v3"/><path d="M3 12h18"/></svg>Mala<span class="pill pill-b" style="display:none"></span></button><button data-aba="viagens" role="tab" aria-selected="false"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4 3 6.5v14L9 18l6 2.5 6-2.5v-14L15 6.5 9 4z"/><path d="M9 4v14M15 6.5v14"/></svg>Viagens<span class="pill pill-b" style="display:none"></span></button></nav>
+    <nav role="tablist"><button data-aba="painel" role="tab" aria-selected="false"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/></svg>Painel<span class="pill pill-b" style="display:none"></span></button><button data-aba="prazos" role="tab" aria-selected="false"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4M16 3v4M3 11h18"/></svg>Prazos<span class="pill pill-b" style="display:none"></span></button><button data-aba="tarefas" role="tab" aria-selected="false"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Tarefas<span class="pill">14</span><span class="pill pill-b" style="display:none"></span></button><button data-aba="estudos" role="tab" aria-selected="false"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4.5A2.5 2.5 0 0 1 6.5 2H20v16H6.5A2.5 2.5 0 0 0 4 20.5z"/><path d="M4 20.5A2.5 2.5 0 0 1 6.5 18H20v4H6.5A2.5 2.5 0 0 1 4 19.5z"/><path d="M9 7h7"/></svg>Estudos<span class="pill pill-b" style="display:none"></span></button><button data-aba="rotina" role="tab" aria-selected="false"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Rotina<span class="pill pill-b" style="display:none"></span></button><button data-aba="contatos" role="tab" aria-selected="false"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 20v-1a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v1"/><circle cx="9.5" cy="8" r="3.5"/><path d="M21 20v-1a4 4 0 0 0-3-3.8"/><path d="M16 4.2a3.5 3.5 0 0 1 0 6.8"/></svg>Contatos<span class="pill pill-b" style="display:none"></span></button><button data-aba="duvidas" role="tab" aria-selected="false"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.2 2.4c-.7.2-1.2.9-1.2 1.6v.5"/><path d="M12 17.5h.01"/></svg>Dúvidas<span class="pill pill-b" style="display:none"></span></button><button data-aba="anotacoes" role="tab" aria-selected="false"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3h9l5 5v13H5z"/><path d="M14 3v5h5"/><path d="M9 13h6M9 17h4"/></svg>Anotações<span class="pill pill-b" style="display:none"></span></button><button data-aba="compras" role="tab" aria-selected="false"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4h2l2.4 11.2a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.5L21 8H6"/><circle cx="10" cy="20" r="1.2"/><circle cx="18" cy="20" r="1.2"/></svg>Compras<span class="pill pill-b" style="display:none"></span></button><button data-aba="mala" role="tab" aria-selected="false"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="14" rx="2"/><path d="M9 7V4h6v3"/><path d="M3 12h18"/></svg>Mala<span class="pill pill-b" style="display:none"></span></button><button data-aba="viagens" role="tab" aria-selected="false"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4 3 6.5v14L9 18l6 2.5 6-2.5v-14L15 6.5 9 4z"/><path d="M9 4v14M15 6.5v14"/></svg>Viagens<span class="pill pill-b" style="display:none"></span></button></nav>
   </div>
 </header>
-<main><section class="aba" id="ab-painel" role="tabpanel"><section class="guia"><div class="guia-topo"><div><p class="guia-ola" id="guia-ola">Central do CAO</p><h2 class="guia-dia" id="guia-dia">Carregando o dia...</h2><p class="guia-fase" id="guia-fase"></p></div><div class="guia-conta" id="guia-conta"></div></div><div class="guia-corpo" id="guia-corpo"></div></section><div class="grade"><div class="kpi dest"><div class="rot" id="kpi-curso-rot">Curso</div><div class="val" id="kpi-curso-val">...</div><div class="sub" id="kpi-curso-sub">CAO-II/26</div><div class="barra"><i id="kpi-curso-barra" style="width:0%"></i></div></div><div class="kpi"><div class="rot">Tarefas pendentes</div><div class="val" id="kpi-tar-val">14</div><div class="sub" id="kpi-tar-sub">17 já concluídas</div></div><div class="kpi lista-kpi" data-aba="ab-compras" data-rot="Compras"><div class="rot">Compras</div><div class="val">...</div><div class="sub">antes de viajar</div><div class="barra"><i style="width:0%"></i></div></div><div class="kpi lista-kpi" data-aba="ab-mala" data-rot="Mala"><div class="rot">Mala</div><div class="val">...</div><div class="sub">itens separados</div><div class="barra"><i style="width:0%"></i></div></div></div><div class="card"><blockquote data-b>Painel principal. Ler isso primeiro em qualquer sessão nova ("onde paramos?"). Atualizado em: 14/08/2026</blockquote>
+<main><section class="aba" id="ab-painel" role="tabpanel"><section class="guia"><div class="guia-topo"><div><p class="guia-ola" id="guia-ola">Central do CAO</p><h2 class="guia-dia" id="guia-dia">Carregando o dia...</h2><p class="guia-fase" id="guia-fase"></p></div><div class="guia-conta" id="guia-conta"></div></div><div class="guia-corpo" id="guia-corpo"></div></section><div class="grade"><div class="kpi dest"><div class="rot" id="kpi-curso-rot">Curso</div><div class="val" id="kpi-curso-val">...</div><div class="sub" id="kpi-curso-sub">CAO-II/26</div><div class="barra"><i id="kpi-curso-barra" style="width:0%"></i></div></div><div class="kpi"><div class="rot">Tarefas pendentes</div><div class="val" id="kpi-tar-val">14</div><div class="sub" id="kpi-tar-sub">17 já concluídas</div></div><div class="kpi lista-kpi" data-aba="ab-compras" data-rot="Compras"><div class="rot">Compras</div><div class="val">...</div><div class="sub">antes de viajar</div><div class="barra"><i style="width:0%"></i></div></div><div class="kpi lista-kpi" data-aba="ab-mala" data-rot="Mala"><div class="rot">Mala</div><div class="val">...</div><div class="sub">itens separados</div><div class="barra"><i style="width:0%"></i></div></div></div><div class="card"><blockquote data-b>Painel principal. Ler isso primeiro em qualquer sessão nova ("onde paramos?"). Atualizado em: 17/08/2026</blockquote>
+<h2 data-b>17/08/2026: primeiro dia de curso e método de estudo definido</h2>
+<p data-b>O curso começou. Junto com ele nasceu a aba <a href="#estudos" class="lnk-aba">ESTUDOS.md</a>, que responde "onde eu salvo, onde eu escrevo e como eu reviso" pelos próximos 12 meses. O resumo:</p>
+<ul data-b>
+<li><strong>Divisão de território</strong>: este repositório guarda logística (prazo, tarefa, rotina).</li>
+</ul>
+<p data-b>O Google Drive guarda conteúdo (slide, anotação, trabalho, dissertação). Conteúdo de aula nunca entra aqui, porque o repositório é público.</p>
+<ul data-b>
+<li><strong>A pasta do curso saiu de <code>02_TRABALHO/Outros/CAO 2026</code></strong>, onde estava enterrada, e</li>
+</ul>
+<p data-b>virou <code>02_TRABALHO/08_CAO_2026</code>, de primeira linha junto com 5ª Cia e Operações. Os 848 arquivos foram realocados por assunto e a pasta antiga foi removida.</p>
+<ul data-b>
+<li><strong>Anotação é em Google Docs, um documento por disciplina</strong>, não em Word e não um por</li>
+</ul>
+<p data-b>aula. O motivo decisivo: o NotebookLM lê Google Docs direto do Drive e não lê <code>.docx</code>. Word fica só para entrega formal e para a dissertação em ABNT.</p>
+<ul data-b>
+<li><strong>Três etiquetas em toda anotação</strong>: <code>#PROVA</code>, <code>#DISSERTA</code> e <code>#DUVIDA</code>. É o que evita</li>
+</ul>
+<p data-b>reler doze meses de caderno em julho de 2027.</p>
+<ul data-b>
+<li><strong>Audio Overview do NotebookLM ouvido na estrada de quinta</strong>, que hoje é tempo morto.</li>
+</ul>
+<p data-b><strong>A grade do curso não está no edital.</strong> Foi vasculhado: o Edital DEC-005/24/25 é do processo seletivo e o Anexo "B" é a bibliografia da prova escrita. O que existe é um esqueleto provisório (2 disciplinas confirmadas do CAO I/2024 pela dissertação do Cap Ferrarez, mais a grade do manual do CAES de 2012), tudo registrado em <a href="#estudos" class="lnk-aba">ESTUDOS.md</a>. <strong>Quem manda é o QTS de hoje</strong>: assim que ele sair, aquela seção é reescrita e as pastas das disciplinas são criadas.</p>
 <h2 data-b>Decisões de 14/08/2026 (o que vai na mala)</h2>
 <ul data-b>
 <li><strong>B-1 e EPI ficam para a segunda semana</strong> (viagem de 23/08). Gandola, calça operacional,</li>
@@ -648,6 +670,116 @@ mark{background:rgba(232,161,58,.35);color:inherit;border-radius:3px;padding:0 2
   </div>
 </div>
 </section>
+<section class="aba" id="ab-estudos" role="tabpanel"><div class="card"><blockquote data-b>Como eu estudo, onde eu salvo e onde eu escrevo, pelos 12 meses de curso. Montado em 17/08/2026, no primeiro dia.</blockquote>
+<h2 data-b>A regra que sustenta tudo: dois lugares, sem sobreposição</h2>
+<div class="tab-wrap" data-b><table><thead><tr><th>Onde</th><th>O que vive lá</th></tr></thead><tbody><tr><td><strong>Este repositório</strong> (os <code>.md</code> e o painel)</td><td>Logística: prazos, tarefas, rotina, contatos, uniforme</td></tr><tr><td><strong>Google Drive</strong>, <code>10_JOSEMAR/02_TRABALHO/08_CAO_2026/</code></td><td>Conteúdo: slides, minhas anotações, trabalhos, dissertação</td></tr></tbody></table></div>
+<p data-b>Na dúvida sobre onde salvar, a pergunta é: <strong>isso é data ou é conteúdo?</strong> Data vem para cá. Conteúdo vai para o Drive. Conteúdo de aula nunca entra no repositório, que é público.</p>
+<h2 data-b>Estrutura no Drive</h2>
+<p data-b>Criada em 17/08/2026. Saiu de <code>02_TRABALHO/Outros/CAO 2026</code>, onde estava enterrada, e virou item de primeira linha junto com 5ª Cia e Operações. Os 848 arquivos que já existiam foram todos realocados.</p>
+<pre data-b><code>10_JOSEMAR/02_TRABALHO/08_CAO_2026/
+├── 00_CURSO/              edital, QTS de cada semana, normas, calendário
+├── 01_DISCIPLINAS/
+│   ├── _MODELO_DISCIPLINA/     pasta-molde: duplicar a cada disciplina nova
+│   └── 2026-08_D01_NOME/
+│       ├── aulas/         material do instrutor (CRU, nunca editar)
+│       ├── trabalhos/     o que EU entrego
+│       └── avaliacoes/    provas, gabaritos, notas
+├── 02_DISSERTACAO/
+│   ├── 00_orientacao/     atas das reuniões com o orientador
+│   ├── 01_referencias/    artigos, teses, dissertações-modelo
+│   ├── 02_texto/          o texto em si
+│   ├── 03_campo/          dados, entrevistas, protocolos
+│   └── PP_original/       a pasta do PP como estava na seleção
+├── 03_TURMA/              formatura, comissões, escalas
+├── 04_ARQUIVO_SELECAO/    inscrição, provas e material de estudo da seleção (encerrado)
+└── 99_INBOX/              tudo que chega e ainda não foi arquivado</code></pre>
+<p data-b>Três detalhes que não são enfeite:</p>
+<p data-b><strong>O <code>99_INBOX</code> é o mais importante.</strong> Slide chega no meio da aula, por WhatsApp, do Subchefe de Turma, com nome ruim. Se eu tiver que decidir na hora onde arquivar, não arquivo. Jogo no INBOX e esvazio na quinta. Estrutura sem lata de despejo morre na terceira semana.</p>
+<p data-b><strong>A pasta da disciplina nasce com data na frente</strong> (<code>2026-08_D01_</code>). Ordena sozinha na linha do tempo do curso, que é como eu vou lembrar depois ("aquilo foi em outubro").</p>
+<p data-b><strong><code>aulas/</code> é intocável.</strong> O material do instrutor entra e não é editado nem renomeado por dentro. O que é meu vai para o documento de notas, separado. Assim sempre dá para saber o que é fonte e o que é meu.</p>
+<h2 data-b>Onde escrevo: Google Docs, um documento por disciplina</h2>
+<p data-b>Decidido em 17/08/2026. <strong>Não é Word.</strong></p>
+<ul data-b>
+<li>Eu troco de máquina o tempo todo. Word em pasta sincronizada gera arquivo em conflito e</li>
+</ul>
+<p data-b>perde anotação.</p>
+<ul data-b>
+<li><strong>O NotebookLM lê Google Docs direto do Drive, mas não lê <code>.docx</code>.</strong> Em Word, eu teria que</li>
+</ul>
+<p data-b>exportar PDF toda vez que quisesse alimentar a IA.</p>
+<ul data-b>
+<li>O Docs salva sozinho e tem modo offline (ativar antes no Chrome: a sala tem poucas tomadas</li>
+</ul>
+<p data-b>e pode faltar rede).</p>
+<p data-b><strong>Word continua existindo, só para entrega formal</strong>: trabalho avaliado e a dissertação em ABNT. Formatação séria é Word, anotação do dia a dia é Docs.</p>
+<p data-b>OneNote foi considerado e descartado: o NotebookLM não lê e exportar de lá é sofrido.</p>
+<p data-b><strong>Um documento por disciplina, não um por aula.</strong> Trinta aulas viram trinta arquivos e eu nunca mais acho nada. Um documento contínuo cresce com o semestre, o índice automático do Docs se monta sozinho pelos títulos e o Ctrl+F resolve o resto. E é <strong>1 fonte</strong> no NotebookLM em vez de 30.</p>
+<p data-b>Nome do arquivo: <code>NOTAS — D01 Nome da Disciplina (Instrutor)</code>, dentro da pasta da disciplina.</p>
+<h3 data-b>Modelo de anotação em aula</h3>
+<p data-b>Burro o suficiente para eu conseguir preencher enquanto o instrutor fala:</p>
+<pre data-b><code>## 18/08 — Tema da aula — Instrutor
+
+Ideia central:
+Cai na prova:           #PROVA
+Serve na dissertação:   #DISSERTA
+Ficou dúvida:           #DUVIDA</code></pre>
+<p data-b><strong>As três etiquetas são o coração do método.</strong> Eu não vou reler doze meses de anotação em julho de 2027. Vou buscar <code>#DISSERTA</code> e achar em dois minutos tudo que marquei como aproveitável no ano inteiro. Custa meio segundo por anotação. Mesma coisa com <code>#PROVA</code> na véspera da avaliação.</p>
+<p data-b>Não transcrever aula. Anotação boa é a ideia com as minhas palavras. O slide eu já tenho salvo em <code>aulas/</code>.</p>
+<h2 data-b>NotebookLM: três tipos de caderno</h2>
+<p data-b>Não um caderno gigante, porque misturar assunto piora a resposta e há limite de fontes.</p>
+<div class="tab-wrap" data-b><table><thead><tr><th>Caderno</th><th>Fontes</th><th>Para quê</th></tr></thead><tbody><tr><td><strong>Um por disciplina</strong> (criado quando ela começa)</td><td>slides do instrutor + meu documento de notas + bibliografia</td><td>estudar para a prova, tirar dúvida sem abrir PDF</td></tr><tr><td><strong>CAO Dissertação</strong> (permanente)</td><td>PP, dissertação do Cap Ferrarez, artigos, atas de orientação</td><td>pensar a dissertação o ano inteiro</td></tr><tr><td><strong>CAO Normas</strong> (permanente)</td><td>edital, QTS, regras do SAE, R-5-PM</td><td>responder "quantas faltas posso ter?" em dez segundos</td></tr></tbody></table></div>
+<h3 data-b>O uso que paga o esforço sozinho</h3>
+<p data-b>Guararapes ↔ São Paulo toda semana são umas 6 a 7 horas de estrada, hoje perdidas.</p>
+<p data-b>Na quinta, antes de pegar a estrada, gerar o <strong>Audio Overview</strong> do caderno da disciplina da semana e ouvir na volta. Revisão semanal sem gastar um minuto a mais do dia. Doze meses disso é o curso inteiro revisado de graça.</p>
+<p data-b><em>[VERIFICAR: limite de fontes por caderno muda conforme o plano do NotebookLM.]</em></p>
+<p data-b><em>[VERIFICAR com o Chefe de Turma: se pode gravar áudio de aula. Se puder, o NotebookLM aceita áudio como fonte e isso muda muita coisa. Se não puder, esquecer.]</em></p>
+<h2 data-b>Ritmo semanal</h2>
+<p data-b>Encaixado no horário real de segunda a quinta (<a href="#rotina" class="lnk-aba">ROTINA.md</a>):</p>
+<div class="tab-wrap" data-b><table><thead><tr><th>Quando</th><th>Quanto</th><th>O quê</th></tr></thead><tbody><tr><td>Todo dia, últimos 10 min</td><td>10 min</td><td>Fechar o documento do dia, jogar slide e foto no <code>99_INBOX</code></td></tr><tr><td>Quinta, depois das 11h30</td><td>15 min</td><td>Esvaziar o INBOX para as pastas certas. Gerar o Audio Overview</td></tr><tr><td>Quinta, na estrada</td><td>grátis</td><td>Ouvir o resumo da semana</td></tr><tr><td>Domingo à tarde, antes de sair</td><td>30 min</td><td>Ler as notas da semana, conferir o QTS da semana seguinte, atualizar <a href="#prazos" class="lnk-aba">PRAZOS.md</a></td></tr><tr><td>1x por mês</td><td>1 h</td><td>Buscar <code>#DISSERTA</code> em todos os documentos e mover o que prestou para <code>02_DISSERTACAO</code></td></tr></tbody></table></div>
+<p data-b>O domingo de 30 minutos é o que amarra o Drive com o painel do celular.</p>
+<h2 data-b>A dissertação começa agora, não em 2027</h2>
+<p data-b>PP aprovado, tema definido (integração PM-Prefeituras / governança participativa no 2º BPM/I) e uma dissertação-modelo já em mãos. O erro clássico é tratar isso como "ano que vem".</p>
+<ul data-b>
+<li><strong>Semana 1 e 2</strong>: criar o caderno "CAO Dissertação" no NotebookLM. Procurar o <strong>Cap Gobbo</strong></li>
+</ul>
+<p data-b>(Seção de Pesquisa) sobre transformar o PP em dissertação.</p>
+<ul data-b>
+<li><strong>Setembro</strong>: instalar o <strong>Zotero</strong> (grátis, plugin do Word, gera ABNT sozinho). Todo PDF de</li>
+</ul>
+<p data-b>artigo entra nele com um clique. Sem isso, em maio serão 80 PDFs sem saber de onde veio cada citação. Foi deixado para setembro de propósito: ferramenta nova em semana de curso novo é ferramenta abandonada.</p>
+<ul data-b>
+<li><strong>O mês inteiro</strong>: a etiqueta <code>#DISSERTA</code> trabalhando sozinha.</li>
+</ul>
+<h2 data-b>O que não fazer</h2>
+<ul data-b>
+<li>Pasta por aula ou documento por aula: vira lixo em um mês.</li>
+<li>Adotar Notion ou Obsidian agora: ferramenta nova + curso novo = abandono na semana 4.</li>
+<li>Anotar em três lugares "para garantir".</li>
+<li>Copiar slide para dentro da anotação: o slide já está salvo.</li>
+<li>Guardar conteúdo de aula neste repositório: é público e o git guarda para sempre.</li>
+</ul>
+<h2 data-b>Disciplinas do curso</h2>
+<p data-b><strong>O edital não traz a grade.</strong> Vasculhado em 17/08/2026: o Edital DEC-005/24/25 é do processo seletivo, e o Anexo "B" ("Conteúdo Programático") é a bibliografia da prova escrita, não a matriz do curso. O slide de recepção do SAE também não traz. Nenhum dos 848 arquivos do Drive traz.</p>
+<p data-b>O que existe são <strong>duas fontes indiretas</strong>, as duas provisórias até sair o QTS.</p>
+<p data-b><strong>1. Disciplinas confirmadas do CAO I/2024</strong>, citadas em notas de rodapé da dissertação do Cap PM Ferrarez (que está em <code>02_DISSERTACAO/01_referencias/</code>):</p>
+<div class="tab-wrap" data-b><table><thead><tr><th>Disciplina</th><th>Instrutor</th><th>Registro</th></tr></thead><tbody><tr><td>Criminologia e Fenomenologia do Crime</td><td>TC Maurício Alves Barbosa</td><td>aula ao pelotão "A", 02/abr/2024</td></tr><tr><td>Planejamento Operacional</td><td>Maj Hudson Arthur Rodrigues Rosa</td><td>aula ao pelotão "D", 27/jun/2024, 13h00 às 16h15</td></tr></tbody></table></div>
+<p data-b><strong>2. Grade do Programa de Mestrado Profissional</strong>, do <em>Manual e Código de Conduta do Aluno</em> do CAES (Anexo "B"), publicado na página do CAES. <strong>Atenção: o manual é de 2012</strong>, então serve de esqueleto, não de verdade atual. As duas disciplinas de 2024 acima já não batem exatamente com ele.</p>
+<p data-b>Matérias comuns: Metodologia da Pesquisa; Ética e Cidadania; Direitos Humanos; Justiça, Processo Penal e Polícia Judiciária Militares; Tiro Defensivo na Preservação da Vida "Método Giraldi"; Direito Administrativo da Ordem Pública; Geografia do Crime; Legislação Especial Aplicada; Planejamento Estratégico e Construção de Cenários; Políticas Públicas de Prevenção e Controle da Criminalidade; Geopolítica do Estado de São Paulo; Direito Constitucional.</p>
+<p data-b>Matérias específicas da minha linha (Administração PM e Policiamento Ostensivo):</p>
+<ul data-b>
+<li><strong>Teoria Geral de Ciências Policiais</strong>, com as unidades: Teoria das Ciências Policiais,</li>
+</ul>
+<p data-b>Fenomenologia da Violência e do Crime, Filosofia e Doutrina de Polícia Ostensiva, Polícia Comunitária, Mediação de Conflitos e Gerenciamento de Crises, Inteligência Policial.</p>
+<ul data-b>
+<li><strong>Organização e Gestão de Polícia Ostensiva</strong>, com as unidades: Gestão de Recursos Humanos,</li>
+</ul>
+<p data-b>Gestão de Recursos Públicos, Gestão de Logística, Gestão pela Qualidade, Comunicação Social, Gestão do Conhecimento, Administração por Projetos, Tecnologia da Informação e Comunicação, Avaliação e Prescrição do Treinamento Físico e Saúde.</p>
+<ul data-b>
+<li><strong>Exercícios de Planejamento de Polícia Ostensiva (ExPPO)</strong>.</li>
+</ul>
+<p data-b><em>(A matéria "Organização e Gestão do Sistema de Saúde Policial-Militar" é do QOS, não se aplica a mim.)</em></p>
+<p data-b><em>[VERIFICAR: as cargas horárias saíram embaralhadas na extração do PDF de 2012 e por isso não foram anotadas aqui. Se precisar do número, abrir o manual na página do CAES.]</em></p>
+<p data-b><strong>Fonte de verdade é o QTS.</strong> Assim que ele sair, esta seção é reescrita com os nomes reais e as pastas de <code>01_DISCIPLINAS</code> são criadas a partir do <code>_MODELO_DISCIPLINA</code>.</p></div></section>
 <section class="aba" id="ab-rotina" role="tabpanel"><div class="card"><blockquote data-b>Regras do dia a dia no CAES. Fonte: slide de Recepção aos Oficiais-Alunos (<span class="arq" title="Arquivo na pasta local: CAO 2026/Curso/SAE - Recepcao dos Discentes CAO II 26.pdf"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2h8l4 4v16H6z"/><path d="M14 2v4h4"/></svg>CAO 2026/Curso/SAE - Recepcao dos Discentes CAO II 26.pdf</span>) + bizu de colega que já fez o curso. Ver contatos por assunto em <a href="#contatos" class="lnk-aba">CONTATOS.md</a> e o que levar em <a href="#mala" class="lnk-aba">MALA.md</a>.</blockquote>
 <h2 data-b>Horário das aulas</h2>
 <p data-b>Entrada sempre às <strong>08h15</strong>. A saída muda por dia:</p>

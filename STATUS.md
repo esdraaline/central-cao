@@ -1,7 +1,32 @@
 # STATUS — Central do CAO
 
 > Painel principal. Ler isso primeiro em qualquer sessão nova ("onde paramos?").
-> Atualizado em: 14/08/2026
+> Atualizado em: 17/08/2026
+
+## 17/08/2026: primeiro dia de curso e método de estudo definido
+
+O curso começou. Junto com ele nasceu a aba [ESTUDOS.md](ESTUDOS.md), que responde
+"onde eu salvo, onde eu escrevo e como eu reviso" pelos próximos 12 meses. O resumo:
+
+- **Divisão de território**: este repositório guarda logística (prazo, tarefa, rotina).
+  O Google Drive guarda conteúdo (slide, anotação, trabalho, dissertação). Conteúdo de
+  aula nunca entra aqui, porque o repositório é público.
+- **A pasta do curso saiu de `02_TRABALHO/Outros/CAO 2026`**, onde estava enterrada, e
+  virou `02_TRABALHO/08_CAO_2026`, de primeira linha junto com 5ª Cia e Operações. Os
+  848 arquivos foram realocados por assunto e a pasta antiga foi removida.
+- **Anotação é em Google Docs, um documento por disciplina**, não em Word e não um por
+  aula. O motivo decisivo: o NotebookLM lê Google Docs direto do Drive e não lê `.docx`.
+  Word fica só para entrega formal e para a dissertação em ABNT.
+- **Três etiquetas em toda anotação**: `#PROVA`, `#DISSERTA` e `#DUVIDA`. É o que evita
+  reler doze meses de caderno em julho de 2027.
+- **Audio Overview do NotebookLM ouvido na estrada de quinta**, que hoje é tempo morto.
+
+**A grade do curso não está no edital.** Foi vasculhado: o Edital DEC-005/24/25 é do
+processo seletivo e o Anexo "B" é a bibliografia da prova escrita. O que existe é um
+esqueleto provisório (2 disciplinas confirmadas do CAO I/2024 pela dissertação do Cap
+Ferrarez, mais a grade do manual do CAES de 2012), tudo registrado em
+[ESTUDOS.md](ESTUDOS.md). **Quem manda é o QTS de hoje**: assim que ele sair, aquela
+seção é reescrita e as pastas das disciplinas são criadas.
 
 ## Decisões de 14/08/2026 (o que vai na mala)
 

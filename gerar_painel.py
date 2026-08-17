@@ -42,6 +42,7 @@ ABAS = [
     ("COMPRAS.md",   "compras",   "Compras",    "carrinho"),
     ("MALA.md",      "mala",      "Mala",       "mala"),
     ("VIAGENS.md",   "viagens",   "Viagens",    "map"),
+    ("ENTORNO.md",   "entorno",   "Entorno",    "garfo"),
 ]
 
 MD_PARA_ABA = {arq: aba_id for arq, aba_id, _, _ in ABAS}
@@ -55,6 +56,7 @@ ICONES = {
     "help":     '<circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.2 2.4c-.7.2-1.2.9-1.2 1.6v.5"/><path d="M12 17.5h.01"/>',
     "note":     '<path d="M5 3h9l5 5v13H5z"/><path d="M14 3v5h5"/><path d="M9 13h6M9 17h4"/>',
     "livro":    '<path d="M4 4.5A2.5 2.5 0 0 1 6.5 2H20v16H6.5A2.5 2.5 0 0 0 4 20.5z"/><path d="M4 20.5A2.5 2.5 0 0 1 6.5 18H20v4H6.5A2.5 2.5 0 0 1 4 19.5z"/><path d="M9 7h7"/>',
+    "garfo":    '<path d="M6 2v7a2 2 0 0 0 4 0V2"/><path d="M8 9v13"/><path d="M17 2c-1.7 1.4-2.5 3.3-2.5 5.5 0 1.9.8 3 2.5 3.5v11"/>',
     "map":      '<path d="M9 4 3 6.5v14L9 18l6 2.5 6-2.5v-14L15 6.5 9 4z"/><path d="M9 4v14M15 6.5v14"/>',
     "mala":     '<rect x="3" y="7" width="18" height="14" rx="2"/><path d="M9 7V4h6v3"/><path d="M3 12h18"/>',
     "carrinho": '<path d="M3 4h2l2.4 11.2a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.5L21 8H6"/><circle cx="10" cy="20" r="1.2"/><circle cx="18" cy="20" r="1.2"/>',
@@ -447,6 +449,9 @@ body{background:var(--bg);color:var(--tx);
 /* abas */
 nav{display:flex;gap:2px;margin-top:14px;overflow-x:auto;scrollbar-width:none}
 nav::-webkit-scrollbar{display:none}
+/* No desktop a barra quebra em linhas em vez de esconder aba no scroll.
+   No celular segue rolando de lado, que ali funciona melhor. */
+@media(min-width:900px){nav{flex-wrap:wrap;overflow-x:visible;row-gap:0}}
 nav button{background:none;border:0;color:rgba(255,255,255,.72);font:600 13.5px/1 inherit;
   padding:12px 10px 13px;cursor:pointer;border-bottom:3px solid transparent;white-space:nowrap;
   display:flex;align-items:center;gap:7px;transition:color .15s}

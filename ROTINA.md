@@ -184,15 +184,6 @@ alguém do CAES perguntar.
 - Subchefes de Turma cuidam de: controle de frequência diária (SAE), QTS (Coord), controle PDM (Coord), coleta/divulgação de materiais dos docentes (Coord), equipamentos de informática (Coord).
 
 ## Facilities no entorno do CAES
-- Evoque Academia — Av. Rio Branco, 1457 (aceita Gympass)
-- Agência Banco do Brasil — Av. Rio Branco, 1437
-- Terminal de Ônibus Princesa Isabel — Av. Rio Branco
-- Drogaria Nova Duque — Av. Duque de Caxias, 788
-- Restaurante Rio Branco — Av. Duque de Caxias x Av. Rio Branco
-- Lissandra Cabeleireiros — Av. Duque de Caxias, 830
-- Duque Supermercados — Av. Duque de Caxias, 812
-- Lotérica Natal — Av. Duque de Caxias, 876
-- OXXO — Largo General Osório, 153
-- Banco 24Horas (Shop Inter Continental) — Rua Santa Efigênia, 452
-- Pronto Socorro Barra Funda — Rua Vitorino Carmilo, 717
-- Padaria — Alameda Barão de Limeira, 872
+Endereços, comércio, comida, shoppings e o que dá para fazer de metrô: tudo em
+[ENTORNO.md](ENTORNO.md). Ficava aqui até 17/08/2026, e saiu para não existirem duas
+listas dizendo a mesma coisa.

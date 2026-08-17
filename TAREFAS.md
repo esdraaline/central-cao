@@ -21,6 +21,7 @@
 - [ ] Experimentar a farda social, ver os ajustes de caimento e montar armário e alojamento [17/08/2026] #pessoal
 - [ ] Decidir opção de desconto SIPA: Alojamento (R$ 30,35) ou Vestiário (R$ 21,52), e cessar o equivalente na OPM de origem [17/08/2026] #admin
 - [ ] Se aplicável: pedir Ajuda de Custo (oficial de outro município) [17/08/2026] #admin
+- [ ] Perguntar ao pessoal do CAO-I/26 onde eles almoçam e jantam, e lançar em ENTORNO.md [18/08/2026] #pessoal
 - [ ] Atualizar STATUS.md e PRAZOS.md com a situação real do curso (módulo, disciplinas, entregas) [20/08/2026] #curso
 - [ ] Procurar o Cap Gobbo (Seção de Pesquisa) sobre a transformação do PP em dissertação [21/08/2026] #dissertacao
 - [ ] Ficar de olho no Recadastramento Anual + Inspeção de Saúde (IAS) próximo do aniversário #admin

@@ -169,6 +169,62 @@ que não existe em Guararapes e que não estraga na viagem.
 
 *(A preencher.)*
 
+## Casas de oração da CCB na região
+
+Levantado em 17/08/2026. **Todos os cultos de meio de semana são 19h30**, e a saída da aula
+é 16h na segunda e 18h na terça e quarta, então os três dias dão tempo folgado.
+
+**Distâncias são estimativas** por endereço e CEP, não rota medida. Conferir no mapa.
+
+### Por dia da semana
+
+| Dia | Casa de oração | Endereço | Culto | Distância | Como chegar |
+|---|---|---|---|---|---|
+| **Segunda** | **Canindé** | R. Silva Teles, 1611 — 03026-001 | 19h30 | ~3,2 km | Luz → **Linha 1-Azul** → Armênia + ~10 min a pé (~35 min) |
+| Segunda | Cambuci | R. José Bento, 311 — 01523-030 | 19h30 | ~4 km | Luz → Linha 1-Azul → São Joaquim + ~10 min (~35 min) |
+| Segunda | Belém | R. Pimenta Bueno, 132 — 03060-000 | 19h30 | ~5,5 km | Santa Cecília → Linha 3 → Belém + ~7 min (~40 min) |
+| **Terça** | **Bom Retiro** | R. Anhaia, 613 — 01130-000 | 19h30 | **~1,3 km** | **A pé direto, ~16 min. Sem metrô** |
+| Terça | Ponte Pequena | R. Afonso Arinos, 91 — 03033-030 | 19h30 | ~2,5 km | Luz → Linha 1-Azul → Armênia + ~8 min (~30 min) |
+| Terça | Baixada do Glicério | Pça. Dr. Mario Margarido, 36 — 01514-020 | 19h30 | ~3 km | Luz → Linha 1-Azul → São Joaquim + ~8 min (~30 min) |
+| Terça | Água Branca | Av. Santa Marina, 602 — 05036-000 | 19h30 | ~5 km | **Júlio Prestes → CPTM Linha 8, 2 estações** + ~10 min (~30 min) |
+| **Quarta** | **Barra Funda** | R. Brigadeiro Galvão, 683 — 01151-000 | 19h30 | ~2,2 km | Santa Cecília → Linha 3 → Marechal Deodoro + ~8 min (~25 min) |
+| Quarta | Brás | R. Visconde de Parnaíba, 1616 — 03164-300 | 19h30 | ~4,5 km | Santa Cecília → Linha 3 → Bresser-Mooca + ~10 min (~40 min) |
+
+O Brás também tem culto **terça às 14h30**, que não serve: é horário de aula.
+
+### Escolha por dia
+
+**Segunda: Canindé. Terça: Bom Retiro. Quarta: Barra Funda.** Resolve os três dias com duas
+linhas só, a 1-Azul e a 3-Vermelha, ambas rodando até perto da meia-noite. A de terça é a
+melhor de todas, porque dá a pé e não depende de horário de metrô na volta.
+
+### Agenda completa das mais próximas
+
+| Casa | Telefone | Todos os cultos |
+|---|---|---|
+| **Bom Retiro** (~1,3 km) | (11) 97638-6286 | Terça 19h30 · Quinta 20h · Sábado 19h30 · Domingo RJM 10h e culto 18h30 |
+| **Barra Funda** (~2,2 km) | (11) 97636-9719 | Quarta 19h30 · Domingo RJM 10h e culto 18h30 |
+| **Ponte Pequena** (~2,5 km) | (11) 99378-2823 | Terça 19h30 · Sexta 19h30 · Domingo RJM 10h |
+| **Baixada do Glicério** (~3 km) | não informado | Terça 19h30 · Quinta 19h30 · Sábado 19h30 · Domingo RJM 15h |
+| **Canindé** (~3,2 km) | (11) 2695-1777 | Segunda 19h30 · Quinta 20h · Sábado 19h30 · Domingo RJM 10h e culto 18h30 |
+
+### De onde vieram estes dados
+
+**O localizador oficial está fora do ar.** `congregacao.org.br` devolve 404, `congregacao.org`
+é um servidor sem site configurado, e `congregacaocristanobrasil.org.br` entra em loop de
+redirecionamento. O `congregacoes.com.br` depende de GPS e não tem listagem estática.
+
+Tudo aqui veio do **[relatorioccb.net](https://relatorioccb.net/brasil/sao-paulo/sao-paulo/)**,
+que **se declara não oficial**, com fichas atualizadas em 08/07/2026. Nenhum dia de culto saiu
+de Google Maps.
+
+Por isso: **ligar antes na primeira vez**, principalmente para Canindé e Barra Funda, que
+definem a segunda e a quarta.
+
+*Não é varredura exaustiva: São Paulo tem 497 localidades no site e não há filtro por raio.
+Foram consultadas uma a uma as centrais. Não existem localidades chamadas Luz, Campos
+Elíseos, Santa Cecília, República, Pari ou Perdizes.*
+
 ---
 
 ## Como este guia cresce

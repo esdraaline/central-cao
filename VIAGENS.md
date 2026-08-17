@@ -7,7 +7,7 @@ Durante o curso a semana é **domingo a quinta**: desloca no domingo, dorme no a
 
 | Dia | Movimento |
 |---|---|
-| Domingo | Guararapes → São Paulo (CAES, Barra Funda). Instalação no alojamento |
+| Domingo | Guararapes → São Paulo (CAES, Praça Júlio Prestes, centro). Instalação no alojamento |
 | Segunda a quinta | Aula. Entrada 08h15 todo dia |
 | Quinta | Saída às 11h30, São Paulo → Guararapes |
 
@@ -21,9 +21,9 @@ Primeira semana do CAO-II/26. **Recepção na segunda, 17/08, a partir das 07h30
 > no sábado, e a **janta de domingo vai na mala**, porque chegando à noite não dá para contar
 > com restaurante aberto.
 
-- **Destino**: CAES "Cel Nelson Freire Terra", região da Barra Funda (Av. Rio Branco / Av. Duque de Caxias).
+- **Destino**: CAES "Cel Nelson Freire Terra", **em frente à Praça Júlio Prestes**, centro de São Paulo (Campos Elíseos / Santa Ifigênia, entorno de Av. Rio Branco / Av. Duque de Caxias). Corrigido em 17/08/2026: antes constava Barra Funda.
 - **Como vou**: **de carona com um amigo** (definido em 12/08/2026).
-- **Horário de saída**: **15h00, de casa** (fechado em 12/08/2026). Pela distância de Guararapes até a Barra Funda, a chegada cai por volta das 22h, salvo trânsito ou parada.
+- **Horário de saída**: **15h00, de casa** (fechado em 12/08/2026). Pela distância de Guararapes até o centro de São Paulo, a chegada cai por volta das 22h, salvo trânsito ou parada.
 - **Bagagem**: é carona, então o porta-malas é dividido. Combine o volume antes e leve compacto: a mala da semana já tem roupa de cama, material de limpeza e itens de copa. Se apertar, o balde é o primeiro a ficar.
 - **Estacionamento**: não se aplica a mim. O cartão do CAES é do veículo; se o amigo for parar lá dentro, é ele quem pede à AAp.
 - **Para quem dirige** (caso do amigo, ou de mim mesmo em outra semana): o estacionamento do CAO tem 40 vagas sinalizadas e **exige cartão de estacionamento visível**, pedido à AAp antes de viajar. Motocicleta tem espaço coberto atrás do prédio.

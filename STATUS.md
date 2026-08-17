@@ -114,7 +114,7 @@ de subir. Detalhe e o histórico do build quebrado do Pages estão em
 [ANOTACOES.md](ANOTACOES.md).
 
 ## Onde estou agora
-- Sou **Oficial-Aluno do CAO/II-2026** (2ª Turma) — **Programa de Mestrado Profissional em Ciências Policiais de Segurança e Ordem Pública**, no **CAES "Cel Nelson Freire Terra"** (região da Barra Funda, São Paulo — Av. Rio Branco / Av. Duque de Caxias).
+- Sou **Oficial-Aluno do CAO/II-2026** (2ª Turma) — **Programa de Mestrado Profissional em Ciências Policiais de Segurança e Ordem Pública**, no **CAES "Cel Nelson Freire Terra"**, **em frente à Praça Júlio Prestes, no centro de São Paulo** (Campos Elíseos / Santa Ifigênia). *Corrigido em 17/08/2026, no local: até então este arquivo dizia "região da Barra Funda", o que é outro bairro e chegou a produzir guia com a estação de metrô errada.* Estações a pé: **Luz** (Linhas 1-Azul e 4-Amarela), **Santa Cecília** (3-Vermelha) e **Júlio Prestes** (CPTM, na praça). Ver [ENTORNO.md](ENTORNO.md).
 - Curso roda de **ago/2026 a ago/2027** (conforme edital). Rotina 13 do SIPA liberada de **17/ago/26 a 22/jan/27** (1º bloco financeiro/administrativo).
 - Fase de seleção (inscrição, prova escrita, defesa do PP) já concluída — documentos arquivados em [CAO 2026/Inscrição](CAO%202026/Inscrição/).
 - Projeto de Pesquisa (PP) tem versão final entregue em [CAO 2026/PP/Projeto Pesquisa Cap Josemar Final.doc](CAO%202026/PP/Projeto%20Pesquisa%20Cap%20Josemar%20Final.doc) — tema: integração PM-Prefeituras / governança participativa no 2º BPM/I. Como agora é mestrado profissional, isso deve virar **dissertação** (ver contato de Pesquisa em [CONTATOS.md](CONTATOS.md)).

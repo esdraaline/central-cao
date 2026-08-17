@@ -20,21 +20,41 @@ Cada lugar tem uma marca:
 **Saio à paisana** no almoço e no jantar (via de regra), então não há restrição de
 ambiente. Fardado é exceção.
 
-## O metrô
+## Onde é e como sair daqui
 
-O CAES fica na Av. Rio Branco. As estações a pé:
+**O curso é em frente à Praça Júlio Prestes**, no centro (Campos Elíseos / Santa Ifigênia),
+não na Barra Funda. Confirmado pelo Josemar em 17/08/2026, no local.
 
-| Estação | Linha | Serve para |
-|---|---|---|
-| **Marechal Deodoro** | 3-Vermelha | É a da porta, na própria Rio Branco |
-| Santa Cecília | 3-Vermelha | Alternativa, lado de Higienópolis |
-| República | 3-Vermelha + 4-Amarela | **A baldeação que abre a cidade** |
-| Luz | 1-Azul + 4-Amarela + CPTM | Mercado Municipal, Pinacoteca |
+| Estação | Linha | A pé | Serve para |
+|---|---|---|---|
+| **Júlio Prestes** | CPTM 8-Diamante e 11-Coral | **na praça, em frente** | É trem, não metrô. Serve pra Osasco e oeste |
+| **Luz** | Metrô **1-Azul** + **4-Amarela** + CPTM | ~10 min | **A mais útil de todas** |
+| **Santa Cecília** | Metrô 3-Vermelha | 770 m, ~10 min | A Linha 3, pros dois lados |
+| República | Metrô 3 + 4 | mais longe | Só se for conveniente no trajeto |
 
-*[VERIFICAR na prática: quantos minutos a pé dá cada uma. Estou indo pelo mapa, não pelo pé.]*
+**A Luz é a estação-chave.** Dali sai a **Linha 4-Amarela**, que leva **direto, sem
+baldeação**, a Higienópolis, Paulista, Faria Lima e Pinheiros. E a **Linha 1-Azul** leva ao
+Center Norte e ao Shopping D. É de lá que você sai da região sem complicação.
 
-A **República** é a chave: de lá a Linha 4-Amarela leva a Higienópolis, Paulista, Faria Lima
-e Pinheiros sem trocar de novo.
+A **Santa Cecília** cobre o que a Luz não cobre: a Linha 3-Vermelha, que de um lado vai pra
+Barra Funda e do outro pro Tatuapé.
+
+*Correção de 17/08: este guia nasceu dizendo que a estação da porta era a Marechal Deodoro,
+o que estava errado. A confusão veio de o [STATUS.md](STATUS.md) descrever o local como
+"região da Barra Funda". Os endereços de comércio, esses vieram do slide do SAE e continuam
+válidos.*
+
+## Cultura na porta
+
+Isso é vantagem de estar no centro, e some se você não reparar. Vale principalmente **terça e
+quarta, que a saída é 18h00**.
+
+**Sala São Paulo** — na Estação Júlio Prestes, **do outro lado da praça** — **[CANDIDATO]**
+Sede da Osesp, uma das melhores salas de concerto do país. Literalmente na sua frente.
+Vale olhar a programação e o preço do ingresso avulso.
+
+**Pinacoteca de São Paulo** e **Museu da Língua Portuguesa** — região da Luz, no caminho da
+estação — **[CANDIDATO]**
 
 ---
 
@@ -108,27 +128,39 @@ Conveniência, para o que faltou à noite.
 
 Todos **[CANDIDATO]**: nenhum foi conferido ainda.
 
-| Shopping | Como chegar da Rio Branco | Vale para |
+| Shopping | Como chegar | Vale para |
 |---|---|---|
-| **Shopping Light** | Linha 3 até Anhangabaú, 2 estações | O mais perto. Prédio histórico, shopping pequeno |
-| **West Plaza** | Linha 3 até Palmeiras-Barra Funda + ~10 min a pé | Zara, Nike, praça de alimentação, cinema |
-| **Bourbon Shopping** | Linha 3 até Palmeiras-Barra Funda + ~18 min a pé (passa pelo Allianz Parque), ou Linha 2 até Vila Madalena + 13 min | Zara, Adidas, Outback, cinema IMAX, Teatro Bradesco |
-| **Pátio Higienópolis** | Linha 3 até República, troca para Linha 4 até Higienópolis-Mackenzie | O de melhor padrão perto. Boa praça de alimentação |
-| **Metrô Tatuapé + Boulevard Tatuapé** | Linha 3 direto até Tatuapé, sem baldeação | Complexo de ~500 lojas. É o maior alcançável sem trocar de linha |
-| **Cidade São Paulo / Center 3 / Frei Caneca** | Linha 3 até República, troca para Linha 4, região da Paulista | Passeio de fim de tarde na Paulista |
+| **Pátio Higienópolis** | **Luz → Linha 4 até Higienópolis-Mackenzie, direto** | O de melhor padrão perto, e sem baldeação. Boa praça de alimentação |
+| **Shopping D** | **Luz → Linha 1 até Armênia**, 2 estações | Perto e popular, resolve compra prática |
+| **Center Norte + Lar Center** | **Luz → Linha 1 até Portuguesa-Tietê**, direto | Grande, tem de tudo, inclusive casa e decoração |
+| **Shopping Light** | Anhangabaú / Vale do Anhangabaú, no centro | O mais perto de todos. Prédio histórico, shopping pequeno |
+| **Metrô Tatuapé + Boulevard Tatuapé** | **Santa Cecília → Linha 3 até Tatuapé, direto** | Complexo de ~500 lojas, o maior sem baldeação |
+| **West Plaza** | Santa Cecília → Linha 3 até Palmeiras-Barra Funda + ~10 min a pé | Zara, Nike, praça de alimentação, cinema |
+| **Bourbon Shopping** | Santa Cecília → Linha 3 até Palmeiras-Barra Funda + ~18 min a pé (passa pelo Allianz Parque) | Outback, cinema IMAX, Teatro Bradesco |
+| **Cidade São Paulo / Center 3 / Pátio Paulista** | **Luz → Linha 4 até Paulista**, direto | Passeio de fim de tarde na Avenida Paulista |
+| **Iguatemi / Eldorado** | **Luz → Linha 4 até Faria Lima ou Pinheiros**, direto | Alto padrão, se o caso pedir |
 
-**Sem baldeação nenhuma**: Shopping Light e o complexo do Tatuapé. **Melhor qualidade por
-uma baldeação só**: Pátio Higienópolis.
+**Nada disso pede baldeação**, e é por isso que a Luz vale os 10 minutos de caminhada. Pela
+Linha 4 você chega em Higienópolis, Paulista, Faria Lima e Pinheiros; pela Linha 1, no
+Center Norte e no Shopping D; pela Linha 3, saindo da Santa Cecília, no Tatuapé e na Barra
+Funda.
 
 ## Vale a viagem
 
-**Mercado Municipal (Mercadão)** — Linha 3 até Sé ou a pé pela Luz — **[CANDIDATO]**
-Clássico de São Paulo. Bom para levar coisa pra casa: queijo, castanha, bacalhau, tempero.
+**Mercado Municipal (Mercadão)** — Luz → Linha 1 até São Bento, ou a pé — **[CANDIDATO]**
+Clássico de São Paulo, e daqui é pertíssimo. Bom para levar coisa pra casa: queijo,
+castanha, bacalhau, tempero.
 
-**Rua 25 de Março e Santa Ifigênia** — a pé ou 1 estação — **[CANDIDATO]**
-25 de Março para bugiganga e presente barato. Santa Ifigênia para eletrônico.
+**Rua 25 de Março** — a pé ou 1 estação — **[CANDIDATO]**
+Bugiganga, armarinho e presente barato.
 
-*[VERIFICAR: as duas são regiões de muito movimento e furto. Ir de dia, sem exibir celular.]*
+**Santa Ifigênia** — **é o próprio bairro, a pé** — **[CANDIDATO]**
+Rua de eletrônico. Cabo, carregador, fone, adaptador, extensão. Lembrando que a sala de
+aula tem poucas tomadas e o bizu era levar extensão: resolve aqui, andando.
+
+**Sobre a região:** você é da PM e conhece o centro melhor que qualquer guia, mas fica
+registrado porque o guia serve pra planejar rota: Luz e Santa Ifigênia têm trechos pesados,
+sobretudo à noite. Seu juízo sobre horário e caminho vale mais que qualquer nota daqui.
 
 ## Levar pra casa na quinta
 

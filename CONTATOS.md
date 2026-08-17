@@ -3,7 +3,7 @@
 > Organograma e contatos por assunto. Fonte: slide de Recepção aos Oficiais-Alunos do CAO/II-2026 ([CAO 2026/Curso/SAE - Recepcao dos Discentes CAO II 26.pdf](CAO%202026/Curso/SAE%20-%20Recepcao%20dos%20Discentes%20CAO%20II%2026.pdf)).
 
 ## Local
-CAES "Cel Nelson Freire Terra" — região da Barra Funda, São Paulo (entorno de Av. Rio Branco / Av. Duque de Caxias / Largo General Osório).
+CAES "Cel Nelson Freire Terra" — **em frente à Praça Júlio Prestes**, centro de São Paulo (Campos Elíseos / Santa Ifigênia, entorno de Av. Rio Branco / Av. Duque de Caxias / Largo General Osório). Corrigido em 17/08/2026: antes constava "região da Barra Funda", que é outro bairro.
 
 ## Organograma
 - **Comandante**: Cel PM Melo

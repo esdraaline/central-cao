@@ -330,6 +330,144 @@ def desenha(arquivo, rotulo, titulo, rota, vias):
 
 # ------------------------------------------------------------------ fluxo
 
+# ------------------------------------------------- mapa de abastecimento
+
+# Categorias buscadas em volta do CAES para o "mapa do abastecimento".
+CATEGORIAS = [("shop", "bakery"), ("shop", "supermarket"), ("shop", "convenience"),
+              ("shop", "greengrocer"), ("shop", "butcher"), ("shop", "deli"),
+              ("shop", "pastry"), ("amenity", "marketplace"), ("amenity", "pharmacy"),
+              ("shop", "chemist")]
+
+# O que entra no desenho, com a cor. Conveniencia e farmacia ficam de fora
+# do mapa (sao dezenas e viram poeira); continuam na tabela do guia.
+NO_MAPA = {"bakery": ("#c8102e", "padaria"), "supermarket": ("#0a7d3c", "mercado"),
+           "marketplace": ("#b06f00", "feira"), "butcher": ("#7a4bbf", "açougue"),
+           "greengrocer": ("#0a7d3c", "hortifrúti"), "pastry": ("#c8102e", "doceria")}
+
+RAIO_BUSCA = 1500      # metros em linha reta
+LIMITE_MIN = 20        # minutos a pe
+
+
+def busca_pois():
+    partes = "".join(
+        'node["%s"="%s"](around:%d,%f,%f);way["%s"="%s"](around:%d,%f,%f);'
+        % (k, v, RAIO_BUSCA, ORIGEM[0], ORIGEM[1], k, v, RAIO_BUSCA, ORIGEM[0], ORIGEM[1])
+        for k, v in CATEGORIAS)
+    q = "[out:json][timeout:90];(%s);out center tags;" % partes
+    for _ in range(2):
+        for espelho in ESPELHOS_OVERPASS:
+            try:
+                d = _busca(espelho + "?data=" + urllib.parse.quote(q), 180)
+                vistos, achados = set(), []
+                for el in d.get("elements", []):
+                    t = el.get("tags", {})
+                    lat = el.get("lat") or el.get("center", {}).get("lat")
+                    lon = el.get("lon") or el.get("center", {}).get("lon")
+                    if not lat:
+                        continue
+                    nome = (t.get("name") or "").strip()
+                    chave = (nome.lower(), round(lat, 4), round(lon, 4))
+                    if chave in vistos:
+                        continue
+                    vistos.add(chave)
+                    achados.append({"nome": nome or "(sem nome)",
+                                    "cat": t.get("shop") or t.get("amenity"),
+                                    "lat": lat, "lon": lon,
+                                    "rua": t.get("addr:street", ""),
+                                    "num": t.get("addr:housenumber", ""),
+                                    "hora": t.get("opening_hours", ""),
+                                    "tel": t.get("phone") or t.get("contact:phone", "")})
+                return achados
+            except Exception as erro:
+                print("     espelho falhou: %s" % str(erro)[:50])
+                time.sleep(4)
+    raise RuntimeError("Overpass nao respondeu")
+
+
+def mede_pois(pois):
+    """Matriz do Valhalla: uma chamada por lote, em vez de uma por ponto."""
+    saida = []
+    for i in range(0, len(pois), 45):
+        lote = pois[i:i + 45]
+        q = {"sources": [{"lat": ORIGEM[0], "lon": ORIGEM[1]}],
+             "targets": [{"lat": p["lat"], "lon": p["lon"]} for p in lote],
+             "costing": "pedestrian", "units": "kilometers"}
+        url = ("https://valhalla1.openstreetmap.de/sources_to_targets?json="
+               + urllib.parse.quote(json.dumps(q)))
+        d = _busca(url, 120)
+        for p, c in zip(lote, d["sources_to_targets"][0]):
+            if c.get("distance") is None:
+                continue
+            p["m"] = round(c["distance"] * 1000)
+            p["min"] = round(c["time"] / 60)
+            saida.append(p)
+        time.sleep(1.5)
+    saida = [p for p in saida if p["min"] <= LIMITE_MIN]
+    saida.sort(key=lambda p: p["m"])
+    return saida
+
+
+def desenha_pois(pois, vias):
+    dentro_mapa = [p for p in pois if p["cat"] in NO_MAPA]
+    lats = [ORIGEM[0]] + [p["lat"] for p in dentro_mapa]
+    lons = [ORIGEM[1]] + [p["lon"] for p in dentro_mapa]
+    cx = _caixa_da_rota([[lo, la] for lo, la in zip(lons, lats)], folga=0.0012)
+    proj, k = _projetor(cx)
+    em_vista = [v for v in vias if _dentro(v["pts"], cx)]
+
+    out = ['<svg viewBox="0 0 %d %d" role="img" aria-label="Padarias, mercados e feiras '
+           'a até 20 minutos a pé do CAES">' % (L, A), ESTILO,
+           '<rect class="fundo" x="0" y="0" width="%d" height="%d"/>' % (L, A)]
+    for v in em_vista:
+        out.append('<path class="%s" d="%s" stroke-width="%.1f"/>'
+                   % ("viaf" if v["tipo"] in GRANDES else "via",
+                      _traco(v["pts"], proj), ESPESSURA.get(v["tipo"], 1.3)))
+
+    ox, oy = proj(ORIGEM[1], ORIGEM[0])
+    for raio_min, rotulo in ((10, "10 min"), (20, "20 min")):
+        rr = (raio_min * 75.0) / 111320.0 * k      # ~4,5 km/h em linha reta
+        out.append('<circle cx="%.0f" cy="%.0f" r="%.0f" fill="none" stroke="var(--tx3)" '
+                   'stroke-width="1.2" stroke-dasharray="5 5" opacity=".55"/>' % (ox, oy, rr))
+        out.append('<text class="esc" x="%.0f" y="%.0f" text-anchor="middle">%s</text>'
+                   % (ox, oy - rr - 5, rotulo))
+
+    postos = []
+    for p in dentro_mapa:
+        cor, _ = NO_MAPA[p["cat"]]
+        x, y = proj(p["lon"], p["lat"])
+        out.append('<circle cx="%.0f" cy="%.0f" r="5" fill="%s" stroke="var(--card)" '
+                   'stroke-width="1.8"/>' % (x, y, cor))
+        if p["nome"] == "(sem nome)" or len(postos) >= 9:
+            continue
+        if any(abs(x - ax) < 135 and abs(y - ay) < 24 for ax, ay in postos):
+            continue
+        postos.append((x, y))
+        anc = "start" if x < L / 2 else "end"
+        out.append('<text class="esc" x="%.0f" y="%.0f" text-anchor="%s" paint-order="stroke" '
+                   'stroke="var(--card)" stroke-width="3">%s</text>'
+                   % (x + (8 if anc == "start" else -8), y - 7, anc, _esc(p["nome"][:26])))
+
+    out.append('<circle class="pin" cx="%.0f" cy="%.0f" r="9"/>' % (ox, oy))
+    out.append('<text class="marc" x="%.0f" y="%.0f" paint-order="stroke" '
+               'stroke="var(--card)" stroke-width="4">CAES</text>' % (ox + 13, oy + 4))
+
+    out.append('<text class="tit" x="16" y="22">Padarias, mercados e feiras</text>')
+    out.append('<text class="sub" x="16" y="40">%d lugares a até 20 min a pé</text>'
+               % len(dentro_mapa))
+    vistas, lx = [], 16
+    for cat, (cor, rot) in NO_MAPA.items():
+        if cor in vistas or not any(p["cat"] == cat for p in dentro_mapa):
+            continue
+        vistas.append(cor)
+        out.append('<circle cx="%d" cy="%d" r="4.5" fill="%s"/>' % (lx, A - 16, cor))
+        out.append('<text class="esc" x="%d" y="%d">%s</text>' % (lx + 9, A - 12, rot))
+        lx += 22 + len(rot) * 6
+    out.append('<text class="esc" x="%d" y="%d" text-anchor="end">Dados: OpenStreetMap</text>'
+               % (L - 16, A - 12))
+    out.append("</svg>")
+    io.open(os.path.join(AQUI, "abastecimento.svg"), "w", encoding="utf-8").write("\n".join(out))
+
+
 def cache_le(nome):
     p = os.path.join(CACHE, nome)
     return json.load(io.open(p, encoding="utf-8")) if os.path.isfile(p) else None
@@ -383,7 +521,25 @@ def main():
         desenha(arq, rotulo, titulo, rotas[arq], malhas[grupo])
         print("  mapa  %s.svg" % arq)
 
-    print("\n%d mapas em %s" % (len(DESTINOS), AQUI))
+    # mapa do abastecimento (padaria, mercado, feira, acougue)
+    pois = None if refazer else cache_le("pois.json")
+    if pois is None:
+        pois = mede_pois(busca_pois())
+        cache_grava("pois.json", pois)
+    print("  pois  %d lugares a ate %d min" % (len(pois), LIMITE_MIN))
+
+    nome = "vias_pois.json"
+    vp = None if refazer else cache_le(nome)
+    if vp is None:
+        lats = [ORIGEM[0]] + [p["lat"] for p in pois]
+        lons = [ORIGEM[1]] + [p["lon"] for p in pois]
+        vp = malha((min(lats) - 0.002, min(lons) - 0.002,
+                    max(lats) + 0.002, max(lons) + 0.002), GRUPOS["marco"])
+        cache_grava(nome, vp)
+    desenha_pois(pois, vp)
+    print("  mapa  abastecimento.svg")
+
+    print("\n%d mapas em %s" % (len(DESTINOS) + 1, AQUI))
     print("Agora rode: python gerar_painel.py")
 
 

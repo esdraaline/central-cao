@@ -200,16 +200,97 @@ sentar por duas horas. As opções de almoço acima servem, mas o critério muda
 
 *(A preencher depois da primeira quinta.)*
 
-## Mercado e marmita
+## Abastecimento: padaria, mercado e farmácia
 
-O CAES tem **2 geladeiras, 2 frigobares e micro-ondas** ([ROTINA.md](ROTINA.md)), então
-marmita é opção real e barata. Identificar o pote com o nome.
+Levantamento de 17/08/2026: **102 estabelecimentos a até 20 minutos a pé** do CAES, todos
+com a distância medida por roteador de pedestre, não estimada.
 
-**Duque Supermercados** — Av. Duque de Caxias, 812 — **[CANDIDATO]**
-O mais perto para compra de semana.
+![Padarias, mercados, feiras e açougues a até 20 minutos a pé do CAES.](mapas/abastecimento.svg)
 
-**OXXO** — Largo General Osório, 153 — **[CANDIDATO]**
-Conveniência, para o que faltou à noite.
+### Padarias
+
+| Padaria | Endereço | A pé | Horário |
+|---|---|---|---|
+| **Padaria Caxias** | Al. Barão de Limeira, 339 (ou 360) | **698 m · 9 min** | **06h às 22h30, todos os dias** |
+| **Cascatinha** | R. General Couto de Magalhães, 172 | **733 m · 9 min** | **05h à meia-noite, dom a sex** |
+| Bololokko Bolos Caseiros | Av. Ipiranga, 1241 | 847 m · 11 min | não localizado |
+| Light Day | Av. Rio Branco, 1636 | 876 m · 11 min | não localizado |
+| Santa Ifigenia Paes&Cia | R. Santa Ifigênia, 57 | 936 m · 12 min | Seg-Sex 06h-20h30 · Sáb-Dom 08h-16h |
+| **Padaria Campos Elíseos** | Al. Barão de Limeira, 872 | 939 m · 11 min | **06h às 22h, todos os dias** |
+| **Casa Aurora** | R. Aurora, 580 | 969 m · 13 min | **06h às 22h, todos os dias** |
+| San Remo Panificadora | R. Prates, 627 | 1.290 m · 15 min | Seg-Sáb 06h às 21h |
+| Casa de Bolos | R. Aurora, 886 | 1.305 m · 17 min | não localizado |
+
+**A mais perto é a Caxias**, 9 minutos. **A mais tradicional é a Cascatinha**, de 1953, que
+fez 70 anos em 2023, é referência de pão francês (chegam a 5.000 no fim de semana) e de
+bolinho de bacalhau. Fica na mesma direção da Estação da Luz e **abre às 5h da manhã**.
+
+A **Padaria Campos Elíseos, de 1972**, é a que o slide do SAE listava só como "Padaria,
+Alameda Barão de Limeira, 872". Mistério resolvido.
+
+### Mercados e feiras
+
+| Lugar | Endereço | A pé | Horário |
+|---|---|---|---|
+| **Dia** | Al. Barão de Limeira, 513 | **647 m · 8 min** | **Seg-Sex 07h-21h · Dom 07h-18h** |
+| **Extra** | Av. Rio Branco, 452 | **650 m · 8 min** | não localizado |
+| Casa de Carnes Bom Boi | Av. Ipiranga, 1290 | 849 m · 12 min | não localizado |
+| Ninki Supermercado | Al. Nothmann, 701 | 896 m · 11 min | não localizado |
+| **Feira do Bom Retiro** | R. Cônego Martins | 919 m · 10 min | **sábados, 10h às 17h** |
+| Futurama | Av. Cásper Líbero, 390 | 955 m · 12 min | Seg-Sáb 07h30-20h30 · Dom 08h30-14h30 |
+| **Dia** | Al. Barão de Limeira, 1114 | ~1,1 km · 14 min | **Seg-Sáb 07h-21h · Dom 08h-21h** |
+| Best Market | Largo do Arouche, 175 | 1.194 m · 15 min | Todos os dias, 09h às 23h |
+| Mercado Extra | R. das Palmeiras, 187 | 1.199 m · 15 min | Todos os dias, 07h às 22h |
+
+Para a marmita da semana, **Dia e Extra resolvem em 8 minutos**. Lembrando que o CAES tem
+2 geladeiras, 2 frigobares e micro-ondas, e que o pote precisa de nome.
+
+**A Feira do Bom Retiro é de sábado**, então não serve para você, que volta para casa na
+quinta. Fica registrada para o caso de algum sábado em São Paulo.
+
+### Conveniência, para o que faltou à noite
+
+| Lugar | Endereço | A pé | Horário |
+|---|---|---|---|
+| RS Musical | R. General Osório, 46 | **379 m · 4 min** | não localizado |
+| **Oxxo** | R. José Paulino, 592 | 893 m · 10 min | **24 horas** |
+| **Oxxo** | Al. Barão de Limeira, 897 | 976 m · 12 min | **24 horas** |
+| Mini Mercado Extra | Av. Rio Branco, 212 | 918 m · 12 min | não localizado |
+
+Os dois **Oxxo abrem 24 horas**. É a rede de segurança para o que faltar de madrugada.
+
+### Farmácias
+
+| Farmácia | Endereço | A pé | Horário |
+|---|---|---|---|
+| DrogaRadium | Av. Rio Branco, 464A | **690 m · 8 min** | não localizado |
+| Drogaria São Paulo | Al. Barão de Limeira, 668 | 712 m · 9 min | não localizado |
+| Ecomofarma | Av. Cásper Líbero, 489 | 882 m · 11 min | não localizado |
+| **Drogaria São Paulo** | Pça. Júlio Mesquita, 131 | 1.020 m · 13 min | **24 horas** |
+
+Para emergência de madrugada, a **Drogaria São Paulo da Praça Júlio Mesquita abre 24h**.
+
+### O que este levantamento cobre e o que não cobre
+
+**Cobre**: 102 lugares dentro de 20 min a pé, sendo 13 padarias, 21 mercados, 32
+conveniências, 4 açougues, 4 feiras e 22 farmácias. **Distância e tempo são medidos**, do
+mesmo jeito que os mapas de trajeto.
+
+**Não cobre bem o horário.** Só **41 dos 102** tinham horário cadastrado no OpenStreetMap.
+Fui atrás dos principais na busca e consegui confirmar Padaria Caxias, Cascatinha, Padaria
+Campos Elíseos e os dois Dia. Os demais estão marcados como **"não localizado"**, e isso é
+literal: eu procurei e não achei, não é que deixei em branco. Padaria de bairro raramente
+publica horário.
+
+**Duas divergências de endereço** entre o OpenStreetMap e a busca, que só se resolvem no
+olho: a **Padaria Caxias** aparece como Al. Barão de Limeira **339** no OSM e **360** na
+busca; a **Padaria Campos Elíseos** aparece como **1500** no OSM e **872** na busca (e o
+slide do SAE também diz 872, então 872 deve ser o certo). *[VERIFICAR ao passar na rua.]*
+
+**A "Padaria Flor da Duque", o bizu do colega, não existe.** Procurei no OpenStreetMap e na
+busca, em várias formas, e não há nada com esse nome na Av. Duque de Caxias nem perto. Ou o
+nome está trocado, ou ela fechou. Quando você passar por lá, confere o nome real que eu
+corrijo.
 
 ## Emergência e utilidade
 

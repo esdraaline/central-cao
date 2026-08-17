@@ -414,7 +414,7 @@
 <path class="via" d="M368.8 422.9 L370.8 420.4 L371.5 419.5 L372.7 417.8" stroke-width="1.2"/>
 <path class="via" d="M415.6 364.8 L417.5 362.4 L421.6 357.1 L423.4 355.1 L424.1 354.5 L425.1 354.1 L425.3 354.0 L425.7 354.0 L426.3 354.0" stroke-width="2.4"/>
 <path class="via" d="M438.9 415.6 L440.3 414.7 L449.0 409.4 L450.6 408.4" stroke-width="1.5"/>
-<path class="viaf" d="M352.0 322.8 L351.3 323.7 L347.7 328.6 L335.8 343.2" stroke-width="3.0"/>
+<path class="viaf" d="M349.6 325.9 L347.7 328.6 L335.8 343.2" stroke-width="3.0"/>
 <path class="viaf" d="M333.3 346.7 L331.2 350.1 L322.3 367.1 L321.5 368.7 L316.8 377.7 L314.3 382.7 L308.3 394.4 L307.1 396.4 L305.6 399.7" stroke-width="3.0"/>
 <path class="viaf" d="M335.8 343.2 L335.0 344.3 L334.7 344.6 L333.3 346.7" stroke-width="3.0"/>
 <path class="via" d="M362.2 330.2 L362.8 329.0 L363.3 328.0" stroke-width="1.2"/>
@@ -690,27 +690,27 @@
 <path class="via" d="M447.9 327.2 L445.2 330.4" stroke-width="2.4"/>
 <path class="via" d="M445.2 330.4 L442.7 333.0" stroke-width="2.4"/>
 <path class="via" d="M475.3 295.9 L473.5 297.4 L471.6 299.1 L466.4 305.5 L463.8 308.5 L461.9 310.8" stroke-width="2.4"/>
+<path class="viaf" d="M352.0 322.8 L351.3 323.7 L349.6 325.9" stroke-width="3.0"/>
 <path class="capa" d="M196.2 77.3 L202.3 86.1 L211.8 99.1 L211.9 99.4 L212.0 99.9 L211.7 100.4 L211.6 100.5 L212.5 101.6 L213.6 102.9 L214.6 104.3 L216.6 102.8 L220.1 99.9 L224.1 97.2 L225.3 96.6 L226.3 96.5 L227.3 96.3 L229.7 96.2 L233.9 96.3 L247.3 97.0 L249.8 97.1 L251.2 99.1 L251.4 99.4 L256.8 107.0 L257.7 108.3 L258.6 109.5 L262.6 115.1 L268.0 122.6 L270.5 126.1 L271.6 127.5 L272.6 129.0 L284.4 145.1 L285.3 146.3 L286.4 147.8 L294.2 158.6 L296.5 161.8 L298.6 165.1 L299.5 166.6 L300.4 168.5 L301.8 171.5 L305.6 179.4 L307.6 183.5 L308.6 185.6 L310.5 186.0 L315.9 187.1 L318.3 187.5 L321.2 188.3 L323.3 188.9 L326.8 190.0 L329.1 190.7 L329.8 190.9 L345.8 195.8 L347.7 196.4 L347.2 197.9 L346.7 199.3 L348.2 199.8 L353.9 201.5 L357.2 202.4 L360.9 203.0 L374.0 203.2 L376.7 203.3 L379.9 203.3 L382.6 203.3 L392.6 203.8 L396.1 204.6 L405.0 206.9 L411.2 208.5 L411.1 211.4 L410.5 228.4 L410.3 233.2 L410.2 237.5 L409.9 248.1 L409.7 254.5 L408.5 264.3 L408.3 266.2 L408.0 267.9 L407.8 269.4 L405.0 286.1 L404.7 288.0 L402.0 304.1 L406.0 304.8 L409.7 305.4 L411.4 305.7 L410.9 308.8 L408.7 322.0 L408.3 324.0 L398.9 324.8 L399.5 326.2 L402.0 331.7 L406.8 343.5 L410.7 352.9 L414.5 362.0 L415.6 364.8 L416.8 367.5 L418.4 370.8 L418.8 371.7 L419.3 372.7 L420.3 374.6 L422.3 379.4 L423.7 382.2 L427.4 390.4 L428.7 393.1 L429.2 394.3 L433.2 403.1 L433.5 403.8 L434.9 406.8 L437.8 413.3 L438.9 415.6 L443.8 426.7"/>
 <path class="rota" d="M196.2 77.3 L202.3 86.1 L211.8 99.1 L211.9 99.4 L212.0 99.9 L211.7 100.4 L211.6 100.5 L212.5 101.6 L213.6 102.9 L214.6 104.3 L216.6 102.8 L220.1 99.9 L224.1 97.2 L225.3 96.6 L226.3 96.5 L227.3 96.3 L229.7 96.2 L233.9 96.3 L247.3 97.0 L249.8 97.1 L251.2 99.1 L251.4 99.4 L256.8 107.0 L257.7 108.3 L258.6 109.5 L262.6 115.1 L268.0 122.6 L270.5 126.1 L271.6 127.5 L272.6 129.0 L284.4 145.1 L285.3 146.3 L286.4 147.8 L294.2 158.6 L296.5 161.8 L298.6 165.1 L299.5 166.6 L300.4 168.5 L301.8 171.5 L305.6 179.4 L307.6 183.5 L308.6 185.6 L310.5 186.0 L315.9 187.1 L318.3 187.5 L321.2 188.3 L323.3 188.9 L326.8 190.0 L329.1 190.7 L329.8 190.9 L345.8 195.8 L347.7 196.4 L347.2 197.9 L346.7 199.3 L348.2 199.8 L353.9 201.5 L357.2 202.4 L360.9 203.0 L374.0 203.2 L376.7 203.3 L379.9 203.3 L382.6 203.3 L392.6 203.8 L396.1 204.6 L405.0 206.9 L411.2 208.5 L411.1 211.4 L410.5 228.4 L410.3 233.2 L410.2 237.5 L409.9 248.1 L409.7 254.5 L408.5 264.3 L408.3 266.2 L408.0 267.9 L407.8 269.4 L405.0 286.1 L404.7 288.0 L402.0 304.1 L406.0 304.8 L409.7 305.4 L411.4 305.7 L410.9 308.8 L408.7 322.0 L408.3 324.0 L398.9 324.8 L399.5 326.2 L402.0 331.7 L406.8 343.5 L410.7 352.9 L414.5 362.0 L415.6 364.8 L416.8 367.5 L418.4 370.8 L418.8 371.7 L419.3 372.7 L420.3 374.6 L422.3 379.4 L423.7 382.2 L427.4 390.4 L428.7 393.1 L429.2 394.3 L433.2 403.1 L433.5 403.8 L434.9 406.8 L437.8 413.3 L438.9 415.6 L443.8 426.7"/>
 <text class="rot" x="295" y="95" text-anchor="middle" paint-order="stroke" stroke="var(--card)" stroke-width="3.5">R. Mauá</text>
 <text class="rot" x="227" y="243" text-anchor="middle" paint-order="stroke" stroke="var(--card)" stroke-width="3.5">R. dos Timbiras</text>
 <text class="rot" x="453" y="216" text-anchor="middle" paint-order="stroke" stroke="var(--card)" stroke-width="3.5">Av. Senador Queirós</text>
 <text class="rot" x="402" y="302" text-anchor="middle" paint-order="stroke" stroke="var(--card)" stroke-width="3.5">R. Vinte e Cinco de Março</text>
-<text class="esc" x="180" y="214" text-anchor="middle" paint-order="stroke" stroke="var(--card)" stroke-width="3">R. Conselheiro Nébias</text>
-<text class="esc" x="188" y="186" text-anchor="middle" paint-order="stroke" stroke="var(--card)" stroke-width="3">R. Guaianases</text>
-<text class="esc" x="253" y="140" text-anchor="middle" paint-order="stroke" stroke="var(--card)" stroke-width="3">R. dos Andradas</text>
-<text class="esc" x="479" y="94" text-anchor="middle" paint-order="stroke" stroke="var(--card)" stroke-width="3">R. São Caetano</text>
-<text class="esc" x="282" y="378" text-anchor="middle" paint-order="stroke" stroke="var(--card)" stroke-width="3">Túnel São João Paulo II</text>
-<text class="esc" x="150" y="299" text-anchor="middle" paint-order="stroke" stroke="var(--card)" stroke-width="3">Praça da República</text>
-<text class="esc" x="197" y="429" text-anchor="middle" paint-order="stroke" stroke="var(--card)" stroke-width="3">R. Álvaro de Carvalho</text>
+<text class="esc" x="180" y="214" text-anchor="middle" paint-order="stroke" stroke="var(--card)" stroke-width="3.5">R. Conselheiro Nébias</text>
+<text class="esc" x="188" y="186" text-anchor="middle" paint-order="stroke" stroke="var(--card)" stroke-width="3.5">R. Guaianases</text>
+<text class="esc" x="253" y="140" text-anchor="middle" paint-order="stroke" stroke="var(--card)" stroke-width="3.5">R. dos Andradas</text>
+<text class="esc" x="479" y="94" text-anchor="middle" paint-order="stroke" stroke="var(--card)" stroke-width="3.5">R. São Caetano</text>
+<text class="esc" x="282" y="378" text-anchor="middle" paint-order="stroke" stroke="var(--card)" stroke-width="3.5">Túnel São João Paulo II</text>
+<text class="esc" x="150" y="299" text-anchor="middle" paint-order="stroke" stroke="var(--card)" stroke-width="3.5">Praça da República</text>
+<text class="esc" x="197" y="429" text-anchor="middle" paint-order="stroke" stroke="var(--card)" stroke-width="3.5">R. Álvaro de Carvalho</text>
 <circle class="pin" cx="193" cy="79" r="8"/>
 <circle class="pin2" cx="444" cy="427" r="8"/>
 <text class="marc" x="205" y="83" text-anchor="start" paint-order="stroke" stroke="var(--card)" stroke-width="4">CAES</text>
 <text class="marc" x="432" y="431" text-anchor="end" paint-order="stroke" stroke="var(--card)" stroke-width="4">25 de Março</text>
 <text class="tit" x="16" y="22">Do CAES até a 25 de Março</text>
 <text class="sub" x="16" y="40">2.394 m a pé, cerca de 31 min</text>
-<path d="M502.8 454.0 L614.0 454.0" stroke="var(--tx3)" stroke-width="2"/>
-<path d="M502.8 450.0 L502.8 458.0 M614.0 450.0 L614.0 458.0" stroke="var(--tx3)" stroke-width="2"/>
+<path d="M502.8 454.0 L614.0 454.0 M502.8 450.0 L502.8 458.0 M614.0 450.0 L614.0 458.0" stroke="var(--tx3)" stroke-width="2" fill="none"/>
 <text class="esc" x="558.4" y="446.0" text-anchor="middle">500 m</text>
 <text class="esc" x="16" y="458">Dados: OpenStreetMap · rota a pé Valhalla</text>
 </svg>

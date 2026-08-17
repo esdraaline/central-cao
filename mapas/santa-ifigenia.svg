@@ -52,6 +52,7 @@
 <path class="via" d="M484.7 154.2 L484.7 159.5 L484.9 174.3 L484.9 178.4" stroke-width="1.5"/>
 <path class="via" d="M32.6 289.3 L37.7 285.2 L67.8 261.3" stroke-width="1.5"/>
 <path class="viaf" d="M52.6 430.4 L-0.5 395.6 L-8.4 390.6" stroke-width="3.6"/>
+<path class="via" d="M280.2 153.8 L282.9 157.5" stroke-width="1.5"/>
 <path class="viaf" d="M16.4 -17.9 L44.6 25.3 L58.9 47.1 L62.5 52.6 L68.2 61.3" stroke-width="3.6"/>
 <path class="viaf" d="M71.0 65.5 L75.0 71.6 L86.1 88.6" stroke-width="3.6"/>
 <path class="via" d="M108.5 131.9 L106.8 133.2 L78.9 152.3 L74.2 155.5" stroke-width="1.5"/>
@@ -103,12 +104,14 @@
 <path class="via" d="M511.7 365.7 L506.5 368.3 L505.1 369.0 L500.9 371.4 L474.2 389.5 L468.3 393.5" stroke-width="2.4"/>
 <path class="via" d="M622.7 317.5 L621.2 322.8 L618.5 332.3 L616.3 340.1 L615.7 342.1 L611.5 356.5 L604.2 384.1 L602.5 390.5" stroke-width="2.4"/>
 <path class="via" d="M61.8 327.9 L57.7 322.5 L45.7 306.5 L38.2 296.7 L36.2 294.1 L32.6 289.3 L30.2 286.1 L11.6 261.5 L-17.8 222.7 L-21.1 218.4" stroke-width="1.5"/>
-<path class="via" d="M123.6 28.8 L126.1 32.4 L140.8 53.8 L142.9 56.7 L143.2 57.2 L145.9 61.1 L164.3 87.8 L165.6 89.7 L167.0 91.7 L170.0 96.0 L180.2 110.9 L193.2 129.9 L208.7 152.6 L231.1 185.3 L232.4 187.2 L236.7 193.3" stroke-width="1.5"/>
-<path class="via" d="M242.7 101.2 L239.5 96.5 L216.3 63.3 L213.8 59.7" stroke-width="1.5"/>
-<path class="via" d="M242.7 101.2 L279.9 153.2 L282.9 157.5" stroke-width="1.5"/>
+<path class="via" d="M123.6 28.8 L126.1 32.4 L140.8 53.8 L142.9 56.7 L143.2 57.2 L145.9 61.1 L164.3 87.8 L165.6 89.7 L167.0 91.7 L167.9 92.9 L169.4 95.1 L180.2 110.9 L193.2 129.9 L208.7 152.6 L231.1 185.3 L234.1 189.6" stroke-width="1.5"/>
+<path class="via" d="M234.1 189.6 L236.7 193.3" stroke-width="1.5"/>
+<path class="via" d="M242.7 101.2 L239.5 96.5 L215.7 62.5" stroke-width="1.5"/>
+<path class="via" d="M242.7 101.2 L279.4 152.6 L280.2 153.8" stroke-width="1.5"/>
 <path class="via" d="M282.9 157.5 L285.5 160.9 L288.0 164.1" stroke-width="1.5"/>
+<path class="via" d="M215.7 62.5 L213.8 59.7 L211.0 55.8" stroke-width="1.5"/>
 <path class="via" d="M71.0 65.5 L78.9 60.0" stroke-width="1.5"/>
-<path class="via" d="M-65.3 160.1 L-60.3 156.7 L-53.9 152.4 L-26.3 134.1 L-20.8 130.1 L-17.0 127.3 L11.5 107.2 L12.6 106.4 L13.7 105.6 L21.0 100.4 L26.1 96.9" stroke-width="1.5"/>
+<path class="via" d="M-65.3 160.1 L-60.3 156.7 L-53.9 152.4 L-26.3 134.1 L-20.8 130.1 L-17.3 127.5 L11.5 107.2 L12.6 106.4 L13.7 105.6 L21.0 100.4 L26.1 96.9" stroke-width="1.5"/>
 <path class="via" d="M26.1 96.9 L32.6 92.3 L66.5 68.7 L68.7 67.2 L71.0 65.5" stroke-width="1.5"/>
 <path class="viaf" d="M61.8 327.9 L67.5 323.6 L92.3 304.6 L98.7 299.8" stroke-width="3.0"/>
 <path class="viaf" d="M195.2 234.2 L200.4 230.1 L231.5 206.4 L235.2 203.6 L240.8 199.2" stroke-width="3.0"/>
@@ -133,7 +136,7 @@
 <path class="via" d="M246.4 98.5 L242.7 101.2" stroke-width="1.5"/>
 <path class="via" d="M98.7 299.8 L97.3 297.8 L95.5 295.1 L74.5 265.6" stroke-width="1.5"/>
 <path class="via" d="M74.5 265.6 L70.2 259.4 L67.6 255.7" stroke-width="1.5"/>
-<path class="via" d="M67.6 255.7 L47.9 228.0 L38.2 214.1 L37.6 212.8 L24.6 195.3 L21.4 190.8 L18.9 187.4 L17.1 184.8 L-16.8 135.6 L-18.2 133.8 L-20.8 130.1" stroke-width="1.5"/>
+<path class="via" d="M67.6 255.7 L47.9 228.0 L38.2 214.1 L37.6 212.8 L24.6 195.3 L21.4 190.8 L18.9 187.4 L17.1 184.8 L-16.8 135.6 L-20.8 130.1" stroke-width="1.5"/>
 <path class="via" d="M102.4 305.3 L98.7 299.8" stroke-width="1.5"/>
 <path class="via" d="M387.9 177.4 L384.8 179.8 L341.4 212.5 L338.6 214.6 L335.8 216.8 L301.4 242.6 L297.1 245.6 L294.6 247.7 L239.0 290.8 L237.1 292.2 L234.5 294.7" stroke-width="1.5"/>
 <path class="via" d="M227.5 301.0 L223.2 304.9 L191.9 332.7 L188.7 335.0 L185.6 337.2 L150.0 362.8 L147.9 364.2 L145.5 365.9 L142.5 368.2 L115.3 387.5 L109.7 391.4 L105.1 394.6 L103.6 395.6 L73.0 416.9 L66.4 421.2" stroke-width="1.5"/>
@@ -142,14 +145,14 @@
 <path class="via" d="M67.8 261.3 L70.2 259.4" stroke-width="1.5"/>
 <path class="via" d="M145.6 272.2 L149.4 277.8 L187.6 333.3 L188.7 335.0 L192.0 339.8 L211.5 367.8 L212.1 368.6 L213.5 370.7 L215.0 372.8 L217.8 376.8 L218.4 377.7 L240.0 409.0 L241.3 410.8 L244.4 415.3 L276.3 461.4 L279.7 466.3 L283.0 471.2 L311.3 511.6 L313.7 515.2" stroke-width="1.5"/>
 <path class="via" d="M142.1 266.6 L137.8 260.4 L113.5 224.8" stroke-width="1.5"/>
-<path class="via" d="M213.8 59.7 L209.4 62.7 L195.5 72.2 L170.5 89.3 L167.0 91.7" stroke-width="1.5"/>
+<path class="via" d="M213.8 59.7 L210.4 62.0 L195.5 72.2 L170.5 89.3 L167.0 91.7" stroke-width="1.5"/>
 <path class="via" d="M112.6 129.1 L108.5 131.9" stroke-width="1.5"/>
 <path class="via" d="M65.1 162.0 L27.0 187.2 L21.4 190.8" stroke-width="1.5"/>
 <path class="via" d="M74.2 155.5 L68.8 159.4" stroke-width="1.5"/>
 <path class="via" d="M68.8 159.4 L65.1 162.0" stroke-width="1.5"/>
 <path class="via" d="M167.0 91.7 L163.5 94.2 L155.1 99.9 L134.9 113.9 L126.5 119.6 L125.7 120.1 L121.2 123.3" stroke-width="1.5"/>
 <path class="via" d="M236.7 193.3 L240.8 199.2" stroke-width="1.5"/>
-<path class="viaf" d="M236.7 193.3 L241.7 189.5 L278.0 161.2 L282.9 157.5" stroke-width="3.0"/>
+<path class="viaf" d="M236.7 193.3 L241.5 189.6 L278.0 161.2 L282.9 157.5" stroke-width="3.0"/>
 <path class="viaf" d="M191.4 228.4 L196.6 224.4 L230.7 197.9 L236.7 193.3" stroke-width="3.0"/>
 <path class="viaf" d="M-14.2 395.6 L-6.4 400.5 L27.3 420.9" stroke-width="3.6"/>
 <path class="via" d="M611.5 356.5 L617.7 357.2 L654.3 360.8 L657.4 361.4" stroke-width="1.5"/>
@@ -169,7 +172,7 @@
 <path class="via" d="M66.4 421.2 L59.7 425.9 L52.6 430.4" stroke-width="1.5"/>
 <path class="via" d="M66.4 421.2 L65.5 419.7 L63.1 416.3 L27.0 371.4 L23.0 366.2" stroke-width="1.5"/>
 <path class="via" d="M328.9 431.7 L321.3 437.0" stroke-width="2.4"/>
-<path class="viaf" d="M240.8 199.2 L245.9 195.4 L258.5 185.8" stroke-width="3.0"/>
+<path class="viaf" d="M240.8 199.2 L245.5 195.7 L258.5 185.8" stroke-width="3.0"/>
 <path class="viaf" d="M321.2 136.4 L327.1 137.2 L337.2 138.9" stroke-width="3.0"/>
 <path class="viaf" d="M287.9 153.4 L300.9 142.9 L304.0 141.1 L307.5 139.7 L313.3 138.5 L317.1 137.5 L321.2 136.4" stroke-width="3.0"/>
 <path class="viaf" d="M313.9 148.3 L319.9 148.0 L330.0 148.4 L362.6 150.0" stroke-width="3.0"/>
@@ -225,21 +228,20 @@
 <path class="capa" d="M238.3 102.2 L253.2 123.4 L276.3 155.1 L276.5 155.8 L276.8 157.0 L276.1 158.2 L275.7 158.5 L278.1 161.3 L280.5 164.4 L283.2 167.7 L270.5 177.0 L258.5 185.8 L261.7 190.8 L278.4 216.4 L295.8 243.5 L297.1 245.6 L300.1 250.2 L325.1 287.6 L328.3 292.2 L330.2 294.7 L354.2 330.8 L357.0 335.0 L359.9 339.5 L388.7 382.3 L392.0 387.3 L395.1 391.9 L401.7 401.8"/>
 <path class="rota" d="M238.3 102.2 L253.2 123.4 L276.3 155.1 L276.5 155.8 L276.8 157.0 L276.1 158.2 L275.7 158.5 L278.1 161.3 L280.5 164.4 L283.2 167.7 L270.5 177.0 L258.5 185.8 L261.7 190.8 L278.4 216.4 L295.8 243.5 L297.1 245.6 L300.1 250.2 L325.1 287.6 L328.3 292.2 L330.2 294.7 L354.2 330.8 L357.0 335.0 L359.9 339.5 L388.7 382.3 L392.0 387.3 L395.1 391.9 L401.7 401.8"/>
 <text class="rot" x="330" y="291" text-anchor="middle" paint-order="stroke" stroke="var(--card)" stroke-width="3.5">R. Santa Ifigênia</text>
-<text class="esc" x="218" y="373" text-anchor="middle" paint-order="stroke" stroke="var(--card)" stroke-width="3">R. Guaianases</text>
-<text class="esc" x="376" y="260" text-anchor="middle" paint-order="stroke" stroke="var(--card)" stroke-width="3">R. dos Andradas</text>
-<text class="esc" x="167" y="88" text-anchor="middle" paint-order="stroke" stroke="var(--card)" stroke-width="3">Al. Barão de Piracicaba</text>
-<text class="esc" x="130" y="415" text-anchor="middle" paint-order="stroke" stroke="var(--card)" stroke-width="3">Al. Barão de Limeira</text>
-<text class="esc" x="424" y="224" text-anchor="middle" paint-order="stroke" stroke="var(--card)" stroke-width="3">R. do Triunfo</text>
-<text class="esc" x="388" y="386" text-anchor="middle" paint-order="stroke" stroke="var(--card)" stroke-width="3">R. Aurora</text>
-<text class="esc" x="238" y="409" text-anchor="middle" paint-order="stroke" stroke="var(--card)" stroke-width="3">R. Vitória</text>
+<text class="esc" x="218" y="373" text-anchor="middle" paint-order="stroke" stroke="var(--card)" stroke-width="3.5">R. Guaianases</text>
+<text class="esc" x="376" y="260" text-anchor="middle" paint-order="stroke" stroke="var(--card)" stroke-width="3.5">R. dos Andradas</text>
+<text class="esc" x="167" y="88" text-anchor="middle" paint-order="stroke" stroke="var(--card)" stroke-width="3.5">Al. Barão de Piracicaba</text>
+<text class="esc" x="130" y="415" text-anchor="middle" paint-order="stroke" stroke="var(--card)" stroke-width="3.5">Al. Barão de Limeira</text>
+<text class="esc" x="424" y="224" text-anchor="middle" paint-order="stroke" stroke="var(--card)" stroke-width="3.5">R. do Triunfo</text>
+<text class="esc" x="388" y="386" text-anchor="middle" paint-order="stroke" stroke="var(--card)" stroke-width="3.5">R. Aurora</text>
+<text class="esc" x="238" y="409" text-anchor="middle" paint-order="stroke" stroke="var(--card)" stroke-width="3.5">R. Vitória</text>
 <circle class="pin" cx="231" cy="107" r="8"/>
 <circle class="pin2" cx="405" cy="400" r="8"/>
 <text class="marc" x="243" y="111" text-anchor="start" paint-order="stroke" stroke="var(--card)" stroke-width="4">CAES</text>
 <text class="marc" x="393" y="404" text-anchor="end" paint-order="stroke" stroke="var(--card)" stroke-width="4">Santa Ifigênia</text>
 <text class="tit" x="16" y="22">Do CAES até a Rua Santa Ifigênia</text>
 <text class="sub" x="16" y="40">684 m a pé, cerca de 8 min</text>
-<path d="M505.8 454.0 L614.0 454.0" stroke="var(--tx3)" stroke-width="2"/>
-<path d="M505.8 450.0 L505.8 458.0 M614.0 450.0 L614.0 458.0" stroke="var(--tx3)" stroke-width="2"/>
+<path d="M505.8 454.0 L614.0 454.0 M505.8 450.0 L505.8 458.0 M614.0 450.0 L614.0 458.0" stroke="var(--tx3)" stroke-width="2" fill="none"/>
 <text class="esc" x="559.9" y="446.0" text-anchor="middle">200 m</text>
 <text class="esc" x="16" y="458">Dados: OpenStreetMap · rota a pé Valhalla</text>
 </svg>

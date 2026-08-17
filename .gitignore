@@ -26,3 +26,7 @@ desktop.ini
 # nada de documento institucional aqui. Os manuais vivem no Google Drive, em
 # "Arquivos Josemar/Trabalho/Manuais". Ver AGENTS.md.
 Manuais/
+
+# Cache do gerador de mapas (rotas e malha viaria baixadas).
+# E refeito sozinho: "python mapas/gerar_mapas.py --refazer".
+mapas/.cache/

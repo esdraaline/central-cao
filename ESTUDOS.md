@@ -52,28 +52,54 @@ do tempo do curso, que é como eu vou lembrar depois ("aquilo foi em outubro").
 dentro. O que é meu vai para o documento de notas, separado. Assim sempre dá para saber o que
 é fonte e o que é meu.
 
-## Onde escrevo: Google Docs, um documento por disciplina
+## Onde escrevo: arquivo Markdown local, um por disciplina
 
-Decidido em 17/08/2026. **Não é Word.**
+**Decidido em 17/08/2026, depois de o Google Docs falhar na prática. Não é Word e não é
+Google Docs.**
 
-- Eu troco de máquina o tempo todo. Word em pasta sincronizada gera arquivo em conflito e
-  perde anotação.
-- **O NotebookLM lê Google Docs direto do Drive, mas não lê `.docx`.** Em Word, eu teria que
-  exportar PDF toda vez que quisesse alimentar a IA.
-- O Docs salva sozinho e tem modo offline (ativar antes no Chrome: a sala tem poucas tomadas
-  e pode faltar rede).
+A primeira versão deste documento, escrita na manhã do mesmo dia, mandava anotar em Google
+Docs. Estava errado, e o erro apareceu no mesmo dia, nas duas primeiras aulas.
+
+**O que aconteceu:** dentro do CAES, na rede WCorp, o Google Docs **não abre documento que
+já existe**. Foi testado à exaustão em 17/08. O que confunde é que um documento em branco
+criado ali na hora abre normal, porque ele nasce dentro do próprio navegador e não precisa
+buscar nada no servidor. Qualquer documento que já existe, a WCorp não deixa carregar. O
+mesmo arquivo, no wi-fi de fora, abre sem reclamar. Descartados no caminho: bloqueio geral
+do Google (o Drive abre), formato do arquivo (documento nativo vazio falhou igual), link
+errado (abrir pela pasta falhou igual) e permissão (os arquivos são meus).
+
+**Conclusão prática: não dá para depender de nuvem para anotar em sala de aula.**
+
+Então a anotação é **um arquivo `.md` por disciplina**, dentro da pasta da disciplina no
+Drive, editado em qualquer editor de texto (Bloco de Notas serve, VS Code é melhor). O
+Google Drive do computador sincroniza sozinho quando a rede permitir.
+
+Por que `.md` e não `.docx`:
+
+- **Funciona sem rede nenhuma.** É a única exigência que realmente importa em sala.
+- **O NotebookLM lê Markdown e `.txt` numa boa.** O que se perde em relação ao Docs é só a
+  sincronização automática da fonte: em vez de o NotebookLM se atualizar sozinho, eu reenvio
+  o arquivo quando quiser. Custo baixo.
+- Eu já escrevo Markdown o dia inteiro neste repositório, então não é ferramenta nova.
+- Arquivo de texto não corrompe, não trava e abre em qualquer máquina.
 
 **Word continua existindo, só para entrega formal**: trabalho avaliado e a dissertação em
-ABNT. Formatação séria é Word, anotação do dia a dia é Docs.
+ABNT. Formatação séria é Word, anotação do dia a dia é `.md`.
 
-OneNote foi considerado e descartado: o NotebookLM não lê e exportar de lá é sofrido.
+Descartados: **Google Docs** pelo motivo acima; **OneNote**, porque o NotebookLM não lê e
+exportar de lá é sofrido; **Notion e Obsidian**, por serem ferramenta nova em semana de
+curso novo.
 
-**Um documento por disciplina, não um por aula.** Trinta aulas viram trinta arquivos e eu
-nunca mais acho nada. Um documento contínuo cresce com o semestre, o índice automático do
-Docs se monta sozinho pelos títulos e o Ctrl+F resolve o resto. E é **1 fonte** no NotebookLM
-em vez de 30.
+**Um arquivo por disciplina, não um por aula.** Trinta aulas viram trinta arquivos e eu
+nunca mais acho nada. Um arquivo contínuo cresce com o semestre e o Ctrl+F resolve. E é
+**1 fonte** no NotebookLM em vez de 30.
 
-Nome do arquivo: `NOTAS — D01 Nome da Disciplina (Instrutor)`, dentro da pasta da disciplina.
+Nome: `NOTAS-D01-Nome-Da-Disciplina.md`, dentro da pasta da disciplina.
+
+*[VERIFICAR amanhã, 18/08: se o Google Drive do computador consegue sincronizar dentro da
+WCorp. Se não conseguir, os arquivos sobem sozinhos quando eu sair do quartel, o que não
+atrapalha nada, mas é bom saber. Vale também marcar a pasta 08_CAO_2026 como "disponível
+off-line" no Drive, para o arquivo morar no disco e não depender de streaming.]*
 
 ### Modelo de anotação em aula
 
@@ -154,6 +180,20 @@ e uma dissertação-modelo já em mãos. O erro clássico é tratar isso como "a
 - Guardar conteúdo de aula neste repositório: é público e o git guarda para sempre.
 
 ## Disciplinas do curso
+
+### Confirmadas na prática (CAO-II/2026)
+
+| # | Disciplina | Instrutor | Primeira aula |
+|---|---|---|---|
+| D01 | Políticas Públicas | Cel Lucena | 17/08/2026, 13h00 às 14h30 |
+| D02 | Planejamento Estratégico | Cel Elgis | 17/08/2026, à tarde |
+
+As duas **batem com o esqueleto de 2012** abaixo ("Políticas Públicas de Prevenção e
+Controle da Criminalidade" e "Planejamento Estratégico e Construção de Cenários"), o que
+aumenta a confiança no resto da lista. Quando sair o QTS com os nomes oficiais, conferir se
+o nome completo é esse e renomear as pastas se precisar.
+
+### O levantamento de origem
 
 **O edital não traz a grade.** Vasculhado em 17/08/2026: o Edital DEC-005/24/25 é do processo
 seletivo, e o Anexo "B" ("Conteúdo Programático") é a bibliografia da prova escrita, não a

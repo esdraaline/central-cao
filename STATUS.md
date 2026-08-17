@@ -14,9 +14,15 @@ O curso começou. Junto com ele nasceu a aba [ESTUDOS.md](ESTUDOS.md), que respo
 - **A pasta do curso saiu de `02_TRABALHO/Outros/CAO 2026`**, onde estava enterrada, e
   virou `02_TRABALHO/08_CAO_2026`, de primeira linha junto com 5ª Cia e Operações. Os
   848 arquivos foram realocados por assunto e a pasta antiga foi removida.
-- **Anotação é em Google Docs, um documento por disciplina**, não em Word e não um por
-  aula. O motivo decisivo: o NotebookLM lê Google Docs direto do Drive e não lê `.docx`.
-  Word fica só para entrega formal e para a dissertação em ABNT.
+- **Anotação é em arquivo `.md`, um por disciplina**, dentro da pasta da disciplina no
+  Drive. Word fica só para entrega formal e para a dissertação em ABNT.
+- **Correção do mesmo dia**: de manhã a recomendação era Google Docs, e ela caiu à tarde.
+  **Dentro do CAES, na WCorp, o Google Docs não abre documento que já existe** (documento
+  em branco criado na hora abre, porque nasce dentro do navegador). Testado nas duas
+  primeiras aulas, com bloqueio de Google, formato, link e permissão todos descartados.
+  Fora do quartel, o mesmo arquivo abre. Não dá para depender de nuvem em sala de aula.
+- **As duas primeiras disciplinas**: D01 Políticas Públicas (Cel Lucena) e D02 Planejamento
+  Estratégico (Cel Elgis), as duas com pasta criada e notas de 17/08 salvas.
 - **Três etiquetas em toda anotação**: `#PROVA`, `#DISSERTA` e `#DUVIDA`. É o que evita
   reler doze meses de caderno em julho de 2027.
 - **Audio Overview do NotebookLM ouvido na estrada de quinta**, que hoje é tempo morto.

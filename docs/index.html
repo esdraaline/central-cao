@@ -9,7 +9,7 @@
 <!-- o painel e um arquivo unico que muda a cada geracao; sem isto o navegador
      serve a versao antiga do cache e correcoes nao chegam ate o usuario -->
 <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
-<meta name="gerado-em" content="ee57f471b4fdc826">
+<meta name="gerado-em" content="17222506ac494cca">
 <title>Central do CAO</title>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23c8102e'/%3E%3Ctext x='16' y='22' font-size='15' font-family='Arial' font-weight='bold' fill='white' text-anchor='middle'%3ECAO%3C/text%3E%3C/svg%3E">
 <style>
@@ -177,6 +177,21 @@ hr{border:0;border-top:1px solid var(--bd);margin:20px 0}
 .arq{color:var(--tx2);font-size:.95em;border-bottom:1px dotted var(--tx3);cursor:help;
   overflow-wrap:anywhere}
 .arq svg{flex:none;opacity:.55;vertical-align:-2px;margin-right:3px}
+
+/* mapas desenhados (svg embutido da pasta mapas/) */
+figure.mapa{margin:18px 0;padding:14px 12px 10px;border:1px solid var(--bd);
+  border-radius:12px;background:var(--card2);overflow-x:auto}
+/* min-width: sem isso o desenho encolhe junto com a tela e o texto do svg
+   fica ilegivel no celular. Melhor manter o tamanho e deixar arrastar de lado. */
+figure.mapa svg{display:block;width:100%;min-width:560px;max-width:640px;
+  height:auto;margin:0 auto}
+figure.mapa figcaption{margin-top:10px;text-align:center;color:var(--tx3);
+  font-size:12.5px;line-height:1.5}
+@media(max-width:620px){
+  figure.mapa figcaption::before{content:"Arraste o desenho para o lado. ";
+    color:var(--vm-cl);font-weight:600}
+}
+.mapa-erro{color:var(--vm-cl);font-size:13px}
 
 /* tabelas */
 .tab-wrap{overflow-x:auto;margin:13px 0;border:1px solid var(--bd);border-radius:10px}
@@ -1354,10 +1369,122 @@ Ficou dúvida:           #DUVIDA</code></pre>
 <p data-b><strong>Saio à paisana</strong> no almoço e no jantar (via de regra), então não há restrição de ambiente. Fardado é exceção.</p>
 <h2 data-b>Onde é e como sair daqui</h2>
 <p data-b><strong>O curso é em frente à Praça Júlio Prestes</strong>, no centro (Campos Elíseos / Santa Ifigênia), não na Barra Funda. Confirmado pelo Josemar em 17/08/2026, no local.</p>
-<div class="tab-wrap" data-b><table><thead><tr><th>Estação</th><th>Linha</th><th>A pé</th><th>Serve para</th></tr></thead><tbody><tr><td><strong>Júlio Prestes</strong></td><td>CPTM 8-Diamante e 11-Coral</td><td><strong>na praça, em frente</strong></td><td>É trem, não metrô. Serve pra Osasco e oeste</td></tr><tr><td><strong>Luz</strong></td><td>Metrô <strong>1-Azul</strong> + <strong>4-Amarela</strong> + CPTM</td><td>~10 min</td><td><strong>A mais útil de todas</strong></td></tr><tr><td><strong>Santa Cecília</strong></td><td>Metrô 3-Vermelha</td><td>770 m, ~10 min</td><td>A Linha 3, pros dois lados</td></tr><tr><td>República</td><td>Metrô 3 + 4</td><td>mais longe</td><td>Só se for conveniente no trajeto</td></tr></tbody></table></div>
+<div class="tab-wrap" data-b><table><thead><tr><th>Estação</th><th>Linha</th><th>A pé</th><th>Serve para</th></tr></thead><tbody><tr><td><strong>Júlio Prestes</strong></td><td>CPTM <strong>8-Diamante</strong> apenas</td><td><strong>na praça, em frente</strong></td><td>É trem, não metrô. Sentido oeste (Itapevi). Ver ressalva abaixo</td></tr><tr><td><strong>Luz</strong></td><td>Metrô <strong>1-Azul</strong> + <strong>4-Amarela</strong> + CPTM</td><td>~10 min</td><td><strong>A mais útil de todas</strong></td></tr><tr><td><strong>Santa Cecília</strong></td><td>Metrô 3-Vermelha</td><td>770 m, ~10 min</td><td>A Linha 3, pros dois lados</td></tr><tr><td>República</td><td>Metrô 3 + 4</td><td>mais longe</td><td>Só se for conveniente no trajeto</td></tr></tbody></table></div>
 <p data-b><strong>A Luz é a estação-chave.</strong> Dali sai a <strong>Linha 4-Amarela</strong>, que leva <strong>direto, sem baldeação</strong>, a Higienópolis, Paulista, Faria Lima e Pinheiros. E a <strong>Linha 1-Azul</strong> leva ao Center Norte e ao Shopping D. É de lá que você sai da região sem complicação.</p>
 <p data-b>A <strong>Santa Cecília</strong> cobre o que a Luz não cobre: a Linha 3-Vermelha, que de um lado vai pra Barra Funda e do outro pro Tatuapé.</p>
-<p data-b><em>Correção de 17/08: este guia nasceu dizendo que a estação da porta era a Marechal Deodoro, o que estava errado. A confusão veio de o <a href="#painel" class="lnk-aba">STATUS.md</a> descrever o local como "região da Barra Funda". Os endereços de comércio, esses vieram do slide do SAE e continuam válidos.</em></p>
+<p data-b><strong>Ressalva sobre a Júlio Prestes</strong>: ela é <strong>terminal da Linha 8-Diamante e só dela</strong> (a 11-Coral não passa lá, apesar de haver projeto futuro no Bom Retiro). Além disso, <strong>houve descarrilamento na Linha 8 em 13/08/2026 e a estação chegou a ficar fechada</strong>, e existe um plano estadual, anunciado em 2024, de desativá-la na revitalização do centro.</p>
+<p data-b><em>[VERIFICAR se está operando normalmente antes de contar com ela.]</em> Na prática, <strong>conte com a Luz e a Santa Cecília</strong>, que são metrô e não dependem disso.</p>
+<p data-b><em>Duas correções de 17/08: este guia nasceu dizendo que a estação da porta era a Marechal Deodoro (errado, veio do <a href="#painel" class="lnk-aba">STATUS.md</a> dizer "região da Barra Funda") e que a Júlio Prestes tinha a 11-Coral (também errado). Os endereços de comércio vieram do slide do SAE e sempre estiveram certos.</em></p>
+<h2 data-b>Os trajetos a pé, no desenho</h2>
+<p data-b>A geografia daqui é simples e vale entender uma vez: <strong>quase tudo sai da Rua Mauá</strong>, no sentido sudeste. Santa Ifigênia, Estação da Luz e 25 de Março estão os três nesse mesmo corredor, um depois do outro. Santa Cecília é o único que fica pro outro lado.</p>
+<figure class="mapa"><svg viewBox="0 0 640 330" role="img" aria-label="Esquema dos trajetos a pe saindo do CAES na Praca Julio Prestes">
+  <style>
+    .via   { stroke: var(--vm-cl); stroke-width: 7; fill: none; stroke-linecap: round; }
+    .ramo  { stroke: var(--tx3); stroke-width: 3.5; fill: none; stroke-linecap: round;
+             stroke-dasharray: 7 6; }
+    .ponto { fill: var(--card); stroke: var(--vm-cl); stroke-width: 3.5; }
+    .orig  { fill: var(--vm-cl); stroke: var(--card); stroke-width: 3.5; }
+    .tit   { fill: var(--tx); font: 700 15px system-ui, sans-serif; }
+    .nome  { fill: var(--tx); font: 700 13px system-ui, sans-serif; }
+    .dado  { fill: var(--tx2); font: 12px system-ui, sans-serif; }
+    .fraco { fill: var(--tx3); font: 11.5px system-ui, sans-serif; }
+    .rua   { fill: var(--tx3); font: italic 12px system-ui, sans-serif; }
+  </style>
+
+  <text class="tit" x="16" y="24">A pé, saindo da frente do CAES</text>
+  <text class="fraco" x="16" y="42">Esquema de direção e distância. Não é mapa de ruas nem está em escala.</text>
+
+  <!-- ramo oeste: Santa Cecilia, sentido oposto ao corredor -->
+  <path class="ramo" d="M 150 175 L 150 100"/>
+  <circle class="ponto" cx="150" cy="100" r="9"/>
+  <text class="nome" x="132" y="88" text-anchor="end">Santa Cecília</text>
+  <text class="dado" x="132" y="105" text-anchor="end">770 m · 10 min</text>
+  <text class="fraco" x="132" y="121" text-anchor="end">↑ oeste, Linha 3</text>
+
+  <!-- eixo principal: Rua Maua, sentido sudeste -->
+  <path class="via" d="M 150 175 L 596 175"/>
+  <text class="rua" x="196" y="163">Rua Mauá, sentido sudeste →</text>
+
+  <!-- origem -->
+  <circle class="orig" cx="150" cy="175" r="11"/>
+  <text class="nome" x="150" y="207" text-anchor="middle">CAES</text>
+  <text class="dado" x="150" y="224" text-anchor="middle">Pça. Júlio Prestes</text>
+  <text class="fraco" x="150" y="240" text-anchor="middle">0 m</text>
+
+  <!-- Santa Ifigenia -->
+  <circle class="ponto" cx="300" cy="175" r="9"/>
+  <path class="ramo" d="M 300 175 L 300 252"/>
+  <text class="nome" x="300" y="272" text-anchor="middle">Santa Ifigênia</text>
+  <text class="dado" x="300" y="289" text-anchor="middle">~450 m · 6 min</text>
+  <text class="fraco" x="300" y="305" text-anchor="middle">eletrônico, cabo, extensão</text>
+
+  <!-- Estacao da Luz -->
+  <circle class="ponto" cx="430" cy="175" r="9"/>
+  <text class="fraco" x="430" y="105" text-anchor="middle">Linhas 1-Azul e 4-Amarela</text>
+  <text class="nome" x="430" y="124" text-anchor="middle">Estação da Luz</text>
+  <text class="dado" x="430" y="141" text-anchor="middle">712 m · 10 min</text>
+
+  <!-- 25 de Marco -->
+  <circle class="ponto" cx="596" cy="175" r="9"/>
+  <text class="nome" x="632" y="207" text-anchor="end">25 de Março</text>
+  <text class="dado" x="632" y="224" text-anchor="end">~1,9 km · 25 min</text>
+  <text class="fraco" x="632" y="240" text-anchor="end">segue além da Luz</text>
+</svg><figcaption>Trajetos a pé a partir da Praça Júlio Prestes. Distâncias da Luz e da Santa Cecília são medidas; as demais são estimativas, confira no celular.</figcaption></figure>
+<div class="tab-wrap" data-b><table><thead><tr><th>Destino</th><th>Distância</th><th>Tempo</th><th>Como é</th></tr></thead><tbody><tr><td><strong>Rua Santa Ifigênia</strong></td><td>~450 m até o começo</td><td>~6 min</td><td>Sai da própria Rua Mauá. O miolo de eletrônico é mais adiante, depois da Av. Ipiranga</td></tr><tr><td><strong>Estação da Luz</strong></td><td><strong>712 m</strong></td><td><strong>10 min</strong></td><td>Reto pela Rua Mauá. É o caminho mais usado</td></tr><tr><td><strong>25 de Março</strong></td><td>~1,9 km</td><td>~25 min</td><td>Mesmo sentido, seguindo além da Luz</td></tr><tr><td><strong>Estação Santa Cecília</strong></td><td><strong>770 m</strong></td><td><strong>10 min</strong></td><td>Pro lado oposto, oeste</td></tr></tbody></table></div>
+<p data-b>As distâncias da <strong>Luz e da Santa Cecília são medidas</strong> e vieram de fonte. As de Santa Ifigênia e 25 de Março são <strong>estimativas</strong> minhas pelo traçado das ruas: confira no celular antes de contar com o tempo.</p>
+<h3 data-b>Feira da Madrugada</h3>
+<figure class="mapa"><svg viewBox="0 0 640 250" role="img" aria-label="Como chegar a Feira da Madrugada no Bras saindo do CAES">
+  <style>
+    .azul  { stroke: #2f7fd6; stroke-width: 7; fill: none; stroke-linecap: round; }
+    .pe    { stroke: var(--tx3); stroke-width: 3.5; fill: none; stroke-linecap: round;
+             stroke-dasharray: 7 6; }
+    .ponto { fill: var(--card); stroke: #2f7fd6; stroke-width: 3.5; }
+    .cinza { fill: var(--card); stroke: var(--tx3); stroke-width: 3.5; }
+    .tit   { fill: var(--tx); font: 700 15px system-ui, sans-serif; }
+    .nome  { fill: var(--tx); font: 700 13px system-ui, sans-serif; }
+    .dado  { fill: var(--tx2); font: 12px system-ui, sans-serif; }
+    .fraco { fill: var(--tx3); font: 11.5px system-ui, sans-serif; }
+    .alerta{ fill: var(--vm-cl); font: 700 12px system-ui, sans-serif; }
+  </style>
+
+  <text class="tit" x="16" y="24">Feira da Madrugada: de trem, não a pé</text>
+  <text class="fraco" x="16" y="42">A pé dá cerca de 4 km. Não compensa.</text>
+
+  <!-- trecho a pe ate a Luz -->
+  <circle class="cinza" cx="62" cy="112" r="10"/>
+  <text class="nome" x="16" y="146">CAES</text>
+  <text class="fraco" x="16" y="162">Pça. Júlio Prestes</text>
+  <path class="pe" d="M 62 112 L 245 112"/>
+  <text class="fraco" x="153" y="90" text-anchor="middle">a pé, 712 m</text>
+  <text class="fraco" x="153" y="105" text-anchor="middle">10 min</text>
+
+  <!-- Luz -->
+  <circle class="ponto" cx="245" cy="112" r="10"/>
+  <text class="nome" x="245" y="146" text-anchor="middle">Estação da Luz</text>
+  <text class="dado" x="245" y="162" text-anchor="middle">Linha 1-Azul</text>
+
+  <!-- trecho de metro -->
+  <path class="azul" d="M 245 112 L 445 112"/>
+  <text class="dado" x="345" y="90" text-anchor="middle">Linha 1-Azul, sentido leste</text>
+  <text class="fraco" x="345" y="105" text-anchor="middle">poucas estações</text>
+
+  <!-- Bras -->
+  <circle class="ponto" cx="445" cy="112" r="10"/>
+  <text class="nome" x="445" y="146" text-anchor="middle">Estação Brás</text>
+  <text class="dado" x="445" y="162" text-anchor="middle">Metrô 3 + CPTM</text>
+
+  <!-- a pe final -->
+  <path class="pe" d="M 445 112 L 592 112"/>
+  <text class="fraco" x="518" y="98" text-anchor="middle">poucos min a pé</text>
+  <circle class="cinza" cx="592" cy="112" r="10"/>
+  <text class="nome" x="630" y="146" text-anchor="end">Feira</text>
+  <text class="dado" x="630" y="162" text-anchor="end">R. Oriente, 500</text>
+
+  <text class="alerta" x="16" y="208">Funciona 00h às 16h, de segunda a sábado.</text>
+  <text class="fraco" x="16" y="228">Quando você sai da aula, ela já fechou. A janela real é quinta, saída 11h30.</text>
+</svg><figcaption>A Feira fica no Brás, longe demais para ir a pé. O trajeto que compensa é de trem.</figcaption></figure>
+<p data-b><strong>A pé não compensa: dá cerca de 4 km.</strong> O polo principal é na <strong>Rua Oriente, 500, Brás</strong>, e o circuito se espalha pelas ruas São Caetano, Monsenhor Andrade, João Teodoro, Tiers e Av. Vautier. Vai a pé até a Luz e pega a <strong>Linha 1-Azul</strong> até o Brás, ou a <strong>Linha 3-Vermelha</strong> pela Santa Cecília. A Estação Brás atende metrô e CPTM, e a feira fica a poucos minutos dela.</p>
+<p data-b><strong>O horário é o problema, não a distância.</strong> A feira funciona <strong>de segunda a sábado, das 00h às 16h</strong>. Você sai da aula 16h na segunda, 18h na terça e quarta: quando você é liberado, ela já fechou ou está fechando. <strong>A janela real é a quinta</strong>, que a saída é 11h30, ou ir bem cedo antes da aula. Vale planejar, não sair na sorte.</p>
 <h2 data-b>Cultura na porta</h2>
 <p data-b>Isso é vantagem de estar no centro, e some se você não reparar. Vale principalmente <strong>terça e quarta, que a saída é 18h00</strong>.</p>
 <p data-b><strong>Sala São Paulo</strong> — na Estação Júlio Prestes, <strong>do outro lado da praça</strong> — <strong>[CANDIDATO]</strong> Sede da Osesp, uma das melhores salas de concerto do país. Literalmente na sua frente. Vale olhar a programação e o preço do ingresso avulso.</p>

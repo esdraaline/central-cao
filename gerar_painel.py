@@ -126,6 +126,22 @@ def _inline(txt):
     return txt
 
 
+def figura_svg(alt, caminho):
+    """Embute um .svg da pasta mapas/ direto no HTML.
+
+    O conteudo vai inline em vez de virar <img src>, para o painel continuar
+    abrindo sem rede e para o desenho herdar as cores do tema (claro/escuro)
+    pelas variaveis CSS da pagina.
+    """
+    destino = os.path.join(RAIZ, *caminho.split("/"))
+    if not os.path.isfile(destino):
+        return '<p class="mapa-erro">[mapa nao encontrado: %s]</p>' % html.escape(caminho)
+    with open(destino, encoding="utf-8") as fig:
+        desenho = fig.read().strip()
+    legenda = "<figcaption>%s</figcaption>" % _inline(alt) if alt else ""
+    return '<figure class="mapa">%s%s</figure>' % (desenho, legenda)
+
+
 # Itens de checklist que comecam com um numero ("6 camisetas...") ou terminam
 # com "- 5" / "- 2 pares" viram contador, para dar para marcar so uma parte.
 _QTD_INICIO = re.compile(r"^(?:\*\*)?(\d{1,2})\s+[A-Za-zÀ-ÿ]")
@@ -177,6 +193,14 @@ def md_para_html(texto):
                 i += 1
             i += 1
             saida.append("<pre><code>%s</code></pre>" % html.escape("\n".join(buf), quote=False))
+            continue
+
+        # mapa: ![legenda](mapas/arquivo.svg) sozinho na linha
+        fig = re.match(r"^!\[([^\]]*)\]\((mapas/[^)]+\.svg)\)$", strip)
+        if fig:
+            fecha_lista()
+            saida.append(figura_svg(fig.group(1), fig.group(2)))
+            i += 1
             continue
 
         # linha vazia
@@ -556,6 +580,21 @@ hr{border:0;border-top:1px solid var(--bd);margin:20px 0}
 .arq{color:var(--tx2);font-size:.95em;border-bottom:1px dotted var(--tx3);cursor:help;
   overflow-wrap:anywhere}
 .arq svg{flex:none;opacity:.55;vertical-align:-2px;margin-right:3px}
+
+/* mapas desenhados (svg embutido da pasta mapas/) */
+figure.mapa{margin:18px 0;padding:14px 12px 10px;border:1px solid var(--bd);
+  border-radius:12px;background:var(--card2);overflow-x:auto}
+/* min-width: sem isso o desenho encolhe junto com a tela e o texto do svg
+   fica ilegivel no celular. Melhor manter o tamanho e deixar arrastar de lado. */
+figure.mapa svg{display:block;width:100%;min-width:560px;max-width:640px;
+  height:auto;margin:0 auto}
+figure.mapa figcaption{margin-top:10px;text-align:center;color:var(--tx3);
+  font-size:12.5px;line-height:1.5}
+@media(max-width:620px){
+  figure.mapa figcaption::before{content:"Arraste o desenho para o lado. ";
+    color:var(--vm-cl);font-weight:600}
+}
+.mapa-erro{color:var(--vm-cl);font-size:13px}
 
 /* tabelas */
 .tab-wrap{overflow-x:auto;margin:13px 0;border:1px solid var(--bd);border-radius:10px}

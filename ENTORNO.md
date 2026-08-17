@@ -27,7 +27,7 @@ não na Barra Funda. Confirmado pelo Josemar em 17/08/2026, no local.
 
 | Estação | Linha | A pé | Serve para |
 |---|---|---|---|
-| **Júlio Prestes** | CPTM 8-Diamante e 11-Coral | **na praça, em frente** | É trem, não metrô. Serve pra Osasco e oeste |
+| **Júlio Prestes** | CPTM **8-Diamante** apenas | **na praça, em frente** | É trem, não metrô. Sentido oeste (Itapevi). Ver ressalva abaixo |
 | **Luz** | Metrô **1-Azul** + **4-Amarela** + CPTM | ~10 min | **A mais útil de todas** |
 | **Santa Cecília** | Metrô 3-Vermelha | 770 m, ~10 min | A Linha 3, pros dois lados |
 | República | Metrô 3 + 4 | mais longe | Só se for conveniente no trajeto |
@@ -39,10 +39,50 @@ Center Norte e ao Shopping D. É de lá que você sai da região sem complicaç�
 A **Santa Cecília** cobre o que a Luz não cobre: a Linha 3-Vermelha, que de um lado vai pra
 Barra Funda e do outro pro Tatuapé.
 
-*Correção de 17/08: este guia nasceu dizendo que a estação da porta era a Marechal Deodoro,
-o que estava errado. A confusão veio de o [STATUS.md](STATUS.md) descrever o local como
-"região da Barra Funda". Os endereços de comércio, esses vieram do slide do SAE e continuam
-válidos.*
+**Ressalva sobre a Júlio Prestes**: ela é **terminal da Linha 8-Diamante e só dela** (a
+11-Coral não passa lá, apesar de haver projeto futuro no Bom Retiro). Além disso, **houve
+descarrilamento na Linha 8 em 13/08/2026 e a estação chegou a ficar fechada**, e existe um
+plano estadual, anunciado em 2024, de desativá-la na revitalização do centro.
+*[VERIFICAR se está operando normalmente antes de contar com ela.]* Na prática, **conte com
+a Luz e a Santa Cecília**, que são metrô e não dependem disso.
+
+*Duas correções de 17/08: este guia nasceu dizendo que a estação da porta era a Marechal
+Deodoro (errado, veio do [STATUS.md](STATUS.md) dizer "região da Barra Funda") e que a Júlio
+Prestes tinha a 11-Coral (também errado). Os endereços de comércio vieram do slide do SAE e
+sempre estiveram certos.*
+
+## Os trajetos a pé, no desenho
+
+A geografia daqui é simples e vale entender uma vez: **quase tudo sai da Rua Mauá**, no
+sentido sudeste. Santa Ifigênia, Estação da Luz e 25 de Março estão os três nesse mesmo
+corredor, um depois do outro. Santa Cecília é o único que fica pro outro lado.
+
+![Trajetos a pé a partir da Praça Júlio Prestes. Distâncias da Luz e da Santa Cecília são medidas; as demais são estimativas, confira no celular.](mapas/a-pe-corredor-maua.svg)
+
+| Destino | Distância | Tempo | Como é |
+|---|---|---|---|
+| **Rua Santa Ifigênia** | ~450 m até o começo | ~6 min | Sai da própria Rua Mauá. O miolo de eletrônico é mais adiante, depois da Av. Ipiranga |
+| **Estação da Luz** | **712 m** | **10 min** | Reto pela Rua Mauá. É o caminho mais usado |
+| **25 de Março** | ~1,9 km | ~25 min | Mesmo sentido, seguindo além da Luz |
+| **Estação Santa Cecília** | **770 m** | **10 min** | Pro lado oposto, oeste |
+
+As distâncias da **Luz e da Santa Cecília são medidas** e vieram de fonte. As de Santa
+Ifigênia e 25 de Março são **estimativas** minhas pelo traçado das ruas: confira no celular
+antes de contar com o tempo.
+
+### Feira da Madrugada
+
+![A Feira fica no Brás, longe demais para ir a pé. O trajeto que compensa é de trem.](mapas/feira-da-madrugada.svg)
+
+**A pé não compensa: dá cerca de 4 km.** O polo principal é na **Rua Oriente, 500, Brás**, e
+o circuito se espalha pelas ruas São Caetano, Monsenhor Andrade, João Teodoro, Tiers e
+Av. Vautier. Vai a pé até a Luz e pega a **Linha 1-Azul** até o Brás, ou a **Linha 3-Vermelha**
+pela Santa Cecília. A Estação Brás atende metrô e CPTM, e a feira fica a poucos minutos dela.
+
+**O horário é o problema, não a distância.** A feira funciona **de segunda a sábado, das 00h
+às 16h**. Você sai da aula 16h na segunda, 18h na terça e quarta: quando você é liberado, ela
+já fechou ou está fechando. **A janela real é a quinta**, que a saída é 11h30, ou ir bem cedo
+antes da aula. Vale planejar, não sair na sorte.
 
 ## Cultura na porta
 

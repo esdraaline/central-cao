@@ -211,32 +211,67 @@ que não existe em Guararapes e que não estraga na viagem.
 
 ## Casas de oração da CCB na região
 
-Levantado em 17/08/2026. **Todos os cultos de meio de semana são 19h30**, e a saída da aula
-é 16h na segunda e 18h na terça e quarta, então os três dias dão tempo folgado.
+Levantado em 17/08/2026, **19 casas de oração** no anel em volta do CAES. Quase todos os
+cultos de meio de semana são **19h30**, e a saída da aula é 16h na segunda e 18h na terça e
+quarta, então os três dias dão tempo folgado.
+
+Sua premissa de que cada casa tem um único dia fixo no meio da semana **não se confirmou**:
+a maioria tem dois ou três cultos por semana. Bom Retiro, por exemplo, tem terça, quinta e
+sábado.
 
 **Distâncias são estimativas** por endereço e CEP, não rota medida. Conferir no mapa.
 
-### Por dia da semana
+### SEGUNDA-FEIRA (saída da aula 16h, sobra tempo)
 
-| Dia | Casa de oração | Endereço | Culto | Distância | Como chegar |
-|---|---|---|---|---|---|
-| **Segunda** | **Canindé** | R. Silva Teles, 1611 — 03026-001 | 19h30 | ~3,2 km | Luz → **Linha 1-Azul** → Armênia + ~10 min a pé (~35 min) |
-| Segunda | Cambuci | R. José Bento, 311 — 01523-030 | 19h30 | ~4 km | Luz → Linha 1-Azul → São Joaquim + ~10 min (~35 min) |
-| Segunda | Belém | R. Pimenta Bueno, 132 — 03060-000 | 19h30 | ~5,5 km | Santa Cecília → Linha 3 → Belém + ~7 min (~40 min) |
-| **Terça** | **Bom Retiro** | R. Anhaia, 613 — 01130-000 | 19h30 | **~1,3 km** | **A pé direto, ~16 min. Sem metrô** |
-| Terça | Ponte Pequena | R. Afonso Arinos, 91 — 03033-030 | 19h30 | ~2,5 km | Luz → Linha 1-Azul → Armênia + ~8 min (~30 min) |
-| Terça | Baixada do Glicério | Pça. Dr. Mario Margarido, 36 — 01514-020 | 19h30 | ~3 km | Luz → Linha 1-Azul → São Joaquim + ~8 min (~30 min) |
-| Terça | Água Branca | Av. Santa Marina, 602 — 05036-000 | 19h30 | ~5 km | **Júlio Prestes → CPTM Linha 8, 2 estações** + ~10 min (~30 min) |
-| **Quarta** | **Barra Funda** | R. Brigadeiro Galvão, 683 — 01151-000 | 19h30 | ~2,2 km | Santa Cecília → Linha 3 → Marechal Deodoro + ~8 min (~25 min) |
-| Quarta | Brás | R. Visconde de Parnaíba, 1616 — 03164-300 | 19h30 | ~4,5 km | Santa Cecília → Linha 3 → Bresser-Mooca + ~10 min (~40 min) |
+| Casa de oração | Endereço | Culto | Distância | Como chegar |
+|---|---|---|---|---|
+| **Canindé** | R. Silva Teles, 1611 — 03026-001 | 19h30 | **~3,2 km** | Luz → **Linha 1-Azul** → Armênia + ~10 min a pé |
+| Cambuci | R. José Bento, 311 — 01523-030 | 19h30 | ~4 km | Luz → Linha 1-Azul → São Joaquim + ~10 min |
+| Belém | R. Pimenta Bueno, 132 — 03060-000 | 19h30 | ~5,5 km | Santa Cecília → Linha 3 → Belém + ~7 min |
+| **Santana** | R. Daniel Rossi, 194 — 02019-010 | 19h30 | ~6 km | **Luz → Linha 1-Azul → Santana, direto** |
+| Bairro do Limão | R. Carolina Soares, 444 — 02554-000 | 19h30 | ~6,5 km | Luz → Linha 1-Azul → Santana + ônibus. Sem metrô na porta |
 
-O Brás também tem culto **terça às 14h30**, que não serve: é horário de aula.
+### TERÇA-FEIRA (saída 18h)
+
+| Casa de oração | Endereço | Culto | Distância | Como chegar |
+|---|---|---|---|---|
+| **Bom Retiro** | R. Anhaia, 613 — 01130-000 | 19h30 | **~1,3 km** | **A pé, ~16 min. Sem metrô nenhum** |
+| Ponte Pequena | R. Afonso Arinos, 91 — 03033-030 | 19h30 | ~2,5 km | Luz → Linha 1-Azul → Armênia + ~8 min |
+| Baixada do Glicério | Pça. Dr. Mario Margarido, 36 — 01514-020 | 19h30 | ~3 km | Luz → Linha 1-Azul → São Joaquim + ~8 min |
+| **Água Branca** | Av. Santa Marina, 602 — 05036-000 | 19h30 | ~5 km | **CPTM Linha 8 da própria porta**, 2 estações |
+| Vila Guilherme | R. Eugênio de Freitas, 200 — 02060-000 | 19h30 | ~5,5 km | Luz → Linha 1-Azul → Portuguesa-Tietê + ônibus |
+| Casa Verde | R. Juca Floriano, 262 — 02530-020 | 19h30 | ~6 km | Sem metrô perto. Ônibus |
+| **Lapa** | R. João Pereira, 319 — 05074-070 | 19h30 | ~7 km | **CPTM Linha 8 da própria porta**, 3 estações |
+| Pinheiros | R. Marcos Azevedo, 52 — 05428-050 | 19h30 | ~8 km | **Luz → Linha 4-Amarela → Pinheiros, direto** |
+| Penha | R. Capitão João Cesário, 160 — 03603-000 | 19h30 | ~9 km | Santa Cecília → Linha 3 → Penha, direto |
+
+### QUARTA-FEIRA (saída 18h)
+
+| Casa de oração | Endereço | Culto | Distância | Como chegar |
+|---|---|---|---|---|
+| **Barra Funda** | R. Brigadeiro Galvão, 683 — 01151-000 | 19h30 | **~2,2 km** | A pé ~28 min, ou Santa Cecília → Linha 3 → Marechal Deodoro |
+| Brás | R. Visconde de Parnaíba, 1616 — 03164-300 | 19h30 | ~4,5 km | Santa Cecília → Linha 3 → Bresser-Mooca + ~10 min |
+| **Santana** | R. Daniel Rossi, 194 — 02019-010 | **20h00** | ~6 km | **Luz → Linha 1-Azul → Santana, direto** |
+| Vila Maria | R. Filipe Bandeira, 571 — 02126-020 | 19h30 | ~7 km | Luz → Linha 1-Azul → Portuguesa-Tietê + ônibus |
+
+**Horários que não servem**, para não perder viagem: Brás tem terça **14h30** e Lapa tem
+quarta **09h30**, os dois em horário de aula. Vila Mariana só tem terça **09h30**. Vila
+Pompéia não tem culto em segunda, terça nem quarta (é quinta e sábado).
 
 ### Escolha por dia
 
-**Segunda: Canindé. Terça: Bom Retiro. Quarta: Barra Funda.** Resolve os três dias com duas
-linhas só, a 1-Azul e a 3-Vermelha, ambas rodando até perto da meia-noite. A de terça é a
-melhor de todas, porque dá a pé e não depende de horário de metrô na volta.
+**Segunda: Canindé. Terça: Bom Retiro. Quarta: Barra Funda.**
+
+A de **terça é a melhor de todas**: dá a pé em ~16 minutos, sem metrô, sem baldeação e sem
+depender de horário de trem na volta.
+
+Se quiser trocar distância por comodidade, **Santana é a alternativa de segunda**: fica mais
+longe que o Canindé, mas é **Linha 1-Azul direta da Luz**, sem ônibus e mais simples de
+voltar à noite. E ela também tem quarta, às 20h.
+
+**Duas ficam na linha que começa na sua porta**: Água Branca e Lapa estão na **CPTM Linha
+8-Diamante**, que parte da própria Júlio Prestes. As duas são de terça. Só lembrar da
+ressalva sobre a Linha 8 lá em cima.
 
 ### Agenda completa das mais próximas
 
@@ -247,6 +282,20 @@ melhor de todas, porque dá a pé e não depende de horário de metrô na volta.
 | **Ponte Pequena** (~2,5 km) | (11) 99378-2823 | Terça 19h30 · Sexta 19h30 · Domingo RJM 10h |
 | **Baixada do Glicério** (~3 km) | não informado | Terça 19h30 · Quinta 19h30 · Sábado 19h30 · Domingo RJM 15h |
 | **Canindé** (~3,2 km) | (11) 2695-1777 | Segunda 19h30 · Quinta 20h · Sábado 19h30 · Domingo RJM 10h e culto 18h30 |
+| **Cambuci** (~4 km) | não informado | Segunda 19h30 · Sexta 19h30 |
+| **Brás** (~4,5 km) | (11) 3299-0200 | Terça 14h30 · Quarta 19h30 · Sexta 19h30 · Domingo 10h, RJM 10h e 18h30 |
+| **Água Branca** (~5 km) | não informado | Terça 19h30 · Quinta 19h30 · Domingo RJM 10h e culto 18h30 |
+| **Belém** (~5,5 km) | (11) 97666-8831 | Segunda 19h30 · Quinta 19h30 · Domingo RJM 10h e culto 18h30 |
+| **Vila Guilherme** (~5,5 km) | (11) 99183-6416 | Terça 19h30 · Sexta 19h30 · Domingo RJM 10h e culto 18h30 |
+| **Vila Pompéia** (~5,5 km) | (11) 99430-2600 | Quinta 19h30 · Sábado 19h30 · Domingo RJM 10h e culto 18h30 |
+| **Santana** (~6 km) | (11) 97056-5962 | Segunda 19h30 · Quarta 20h · Domingo RJM 10h e culto 18h30 |
+| **Casa Verde** (~6 km) | (11) 97641-7223 | Terça 19h30 · Sexta 19h30 · Domingo RJM 10h e culto 18h30 |
+| **Bairro do Limão** (~6,5 km) | (11) 97632-7093 | Segunda 19h30 · Quinta 20h · Sábado 19h30 · Domingo RJM 10h |
+| **Vila Maria** (~7 km) | (11) 97675-0692 | Quarta 19h30 · Sábado 19h30 · Domingo RJM 14h e culto 18h30 |
+| **Lapa** (~7 km) | (11) 97683-2506 | Terça 19h30 · Quarta 9h30 · Sexta 19h30 · Domingo 9h30, RJM 14h e 18h30 |
+| **Vila Mariana** (~7 km) | (11) 99246-3056 | Terça 9h30 · Quinta 19h30 · Sábado 19h30 · Domingo RJM 10h e culto 18h30 |
+| **Pinheiros** (~8 km) | (11) 98941-4008 | Terça 19h30 · Quinta 20h · Domingo RJM 10h e culto 18h30 |
+| **Penha** (~9 km) | (11) 99342-8532 | Terça 19h30 · Quinta 19h30 · Sábado 19h30 · Domingo RJM 10h e culto 18h30 |
 
 ### De onde vieram estes dados
 
@@ -261,9 +310,19 @@ de Google Maps.
 Por isso: **ligar antes na primeira vez**, principalmente para Canindé e Barra Funda, que
 definem a segunda e a quarta.
 
-*Não é varredura exaustiva: São Paulo tem 497 localidades no site e não há filtro por raio.
-Foram consultadas uma a uma as centrais. Não existem localidades chamadas Luz, Campos
-Elíseos, Santa Cecília, República, Pari ou Perdizes.*
+**Como a varredura foi feita (17/08/2026).** São Paulo tem **497 localidades** no site e não
+há filtro por raio nem por dia. Método: extrair o índice da cidade por **faixas do alfabeto**
+(A-B, C-J, M-S, T-Z) para descobrir os nomes reais, e depois abrir uma a uma as fichas de
+todo o anel próximo. **19 casas de oração** levantadas.
+
+**Não existem** como localidade, apesar de serem bairros conhecidos: Luz, Campos Elíseos,
+Santa Cecília, República, Sé, Liberdade, Bela Vista, Consolação, Higienópolis, Vila Buarque,
+Paraíso, Pari, Perdizes, Mooca, Catumbi, Carandiru, Vila Romana, Sumaré e Tatuapé. O centro
+velho praticamente não tem casa da CCB, o que empurra tudo para o anel de fora.
+
+*Cuidado com uma armadilha do site: pedir "quais destes nomes existem" devolve resposta
+errada (chegou a afirmar que Pompéia, Aclimação e Paraíso existiam, e os três dão 404). A
+listagem por faixa do alfabeto é confiável; a busca dirigida não é.*
 
 ---
 

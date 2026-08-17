@@ -1,6 +1,6 @@
 # ENTORNO — comer, comprar e passear a partir do CAES
 
-> Guia da região do CAES (Av. Rio Branco com Av. Duque de Caxias, Campos Elíseos).
+> Guia da região do CAES — Praça Júlio Prestes, 142, Campos Elíseos, CEP 01218-020.
 > Criado em 17/08/2026.
 
 ## Como usar isto
@@ -28,8 +28,8 @@ não na Barra Funda. Confirmado pelo Josemar em 17/08/2026, no local.
 | Estação | Linha | A pé | Serve para |
 |---|---|---|---|
 | **Júlio Prestes** | CPTM **8-Diamante** apenas | **na praça, em frente** | É trem, não metrô. Sentido oeste (Itapevi). Ver ressalva abaixo |
-| **Luz** | Metrô **1-Azul** + **4-Amarela** + CPTM | ~10 min | **A mais útil de todas** |
-| **Santa Cecília** | Metrô 3-Vermelha | 770 m, ~10 min | A Linha 3, pros dois lados |
+| **Luz** | Metrô **1-Azul** + **4-Amarela** + CPTM | **807 m, 10 min** | **A mais útil de todas** |
+| **Santa Cecília** | Metrô 3-Vermelha | **1.164 m, 15 min** | A Linha 3, pros dois lados |
 | República | Metrô 3 + 4 | mais longe | Só se for conveniente no trajeto |
 
 **A Luz é a estação-chave.** Dali sai a **Linha 4-Amarela**, que leva **direto, sem
@@ -53,36 +53,96 @@ sempre estiveram certos.*
 
 ## Os trajetos a pé, no desenho
 
-A geografia daqui é simples e vale entender uma vez: **quase tudo sai da Rua Mauá**, no
-sentido sudeste. Santa Ifigênia, Estação da Luz e 25 de Março estão os três nesse mesmo
-corredor, um depois do outro. Santa Cecília é o único que fica pro outro lado.
+**Saída do CAES: Praça Júlio Prestes, 142, Campos Elíseos, CEP 01218-020.**
 
-![Trajetos a pé a partir da Praça Júlio Prestes. Distâncias da Luz e da Santa Cecília são medidas; as demais são estimativas, confira no celular.](mapas/a-pe-corredor-maua.svg)
+Os mapas abaixo são traçados sobre a malha viária real do OpenStreetMap, com a rota a pé
+calculada por roteador de pedestre (respeita calçada e travessia, não mão de direção de
+carro). **As distâncias e os tempos são medidos, não estimados.**
 
-| Destino | Distância | Tempo | Como é |
-|---|---|---|---|
-| **Rua Santa Ifigênia** | ~450 m até o começo | ~6 min | Sai da própria Rua Mauá. O miolo de eletrônico é mais adiante, depois da Av. Ipiranga |
-| **Estação da Luz** | **712 m** | **10 min** | Reto pela Rua Mauá. É o caminho mais usado |
-| **25 de Março** | ~1,9 km | ~25 min | Mesmo sentido, seguindo além da Luz |
-| **Estação Santa Cecília** | **770 m** | **10 min** | Pro lado oposto, oeste |
+*Correção de 17/08: a primeira versão desta seção trazia distâncias que eu estimei olhando
+o traçado das ruas, e várias estavam curtas demais. Os números abaixo substituem aquelas.*
 
-As distâncias da **Luz e da Santa Cecília são medidas** e vieram de fonte. As de Santa
-Ifigênia e 25 de Março são **estimativas** minhas pelo traçado das ruas: confira no celular
-antes de contar com o tempo.
+### Estação da Luz — a estação de metrô mais perto
+
+![Do CAES até a Estação da Luz: 807 m, cerca de 10 min.](mapas/estacao-da-luz.svg)
+
+**807 m, cerca de 10 min.** Sai da praça para sudeste, pega a **Alameda Dino Bueno**, vira
+à esquerda na **Rua Mauá** e segue 392 m até a estação. É reto e simples.
+
+Dali saem a **Linha 1-Azul** e a **Linha 4-Amarela**, que é o que abre a cidade para você.
+
+### Rua Santa Ifigênia — o comércio de eletrônico
+
+![Do CAES até a Rua Santa Ifigênia: 684 m, cerca de 8 min.](mapas/santa-ifigenia.svg)
+
+**684 m, cerca de 8 min.** É o destino mais perto de todos. Sai para sudeste, entra à direita
+na **Avenida Duque de Caxias** e vira à esquerda na **Rua Santa Ifigênia**, seguindo 478 m.
+
+É onde você resolve cabo, carregador, fone e a **extensão de tomada** que o bizu manda levar,
+porque a sala de aula tem poucas tomadas.
+
+### Estação Santa Cecília
+
+![Do CAES até a Estação Santa Cecília: 1.164 m, cerca de 15 min.](mapas/santa-cecilia.svg)
+
+**1.164 m, cerca de 15 min.** Sai para noroeste e é praticamente uma reta só: **Rua Helvétia**
+por 909 m.
+
+**Fica bem mais longe que a Luz** (807 m). Só vale a pena quando o destino é na
+**Linha 3-Vermelha**, como Barra Funda, Brás, Belém, Penha ou Tatuapé. Para o resto, Luz.
+
+### CCB do Bom Retiro — o culto de terça
+
+![Do CAES até a CCB do Bom Retiro: 1.282 m, cerca de 15 min.](mapas/ccb-bom-retiro.svg)
+
+**1.282 m, cerca de 15 min.** **Alameda Dino Bueno** → **Alameda Nothmann** → **Rua Anhaia**,
+e são 619 m na Anhaia até o número 613.
+
+Confirma o que o levantamento das casas de oração já apontava: dá a pé, sem metrô e sem
+depender de horário de trem na volta.
+
+### 25 de Março
+
+![Do CAES até a 25 de Março: 2.394 m, cerca de 31 min.](mapas/25-de-marco.svg)
+
+**2.394 m, cerca de 31 min.** O caminho passa pela Luz e segue: **Av. Duque de Caxias** →
+**Rua Mauá** → **Largo General Osório** → **Rua dos Timbiras** → **Avenida Senador Queirós**
+→ **Rua 25 de Março**.
+
+Meia hora de caminhada. Se preferir, é mais rápido ir de metrô pela Luz e descer na região da
+Sé ou São Bento.
 
 ### Feira da Madrugada
 
-![A Feira fica no Brás, longe demais para ir a pé. O trajeto que compensa é de trem.](mapas/feira-da-madrugada.svg)
+![Do CAES até a Feira da Madrugada: 3.122 m, cerca de 37 min a pé.](mapas/feira-madrugada.svg)
 
-**A pé não compensa: dá cerca de 4 km.** O polo principal é na **Rua Oriente, 500, Brás**, e
-o circuito se espalha pelas ruas São Caetano, Monsenhor Andrade, João Teodoro, Tiers e
-Av. Vautier. Vai a pé até a Luz e pega a **Linha 1-Azul** até o Brás, ou a **Linha 3-Vermelha**
-pela Santa Cecília. A Estação Brás atende metrô e CPTM, e a feira fica a poucos minutos dela.
+**3.122 m, cerca de 37 min a pé**, pela **Rua Mauá** → **Praça da Luz** → **Avenida
+Tiradentes** → **Rua Ribeiro de Lima**, que sozinha tem 1.576 m.
 
-**O horário é o problema, não a distância.** A feira funciona **de segunda a sábado, das 00h
-às 16h**. Você sai da aula 16h na segunda, 18h na terça e quarta: quando você é liberado, ela
-já fechou ou está fechando. **A janela real é a quinta**, que a saída é 11h30, ou ir bem cedo
-antes da aula. Vale planejar, não sair na sorte.
+Ou seja: **dá para ir a pé**, ao contrário do que eu tinha dito antes. Mas de trem compensa
+mais, principalmente carregando compra.
+
+![De trem é melhor: vai a pé até a Luz e pega a Linha 1-Azul até o Brás.](mapas/feira-de-trem.svg)
+
+**O horário continua sendo o problema, não a distância.** A feira funciona **de segunda a
+sábado, das 00h às 16h**, e o polo principal é na **Rua Oriente, 500, Brás**, com o circuito
+se espalhando pelas ruas São Caetano, Monsenhor Andrade, João Teodoro, Tiers e Av. Vautier.
+Você sai da aula 16h na segunda e 18h na terça e quarta: quando é liberado, ela já fechou.
+**A janela real é a quinta**, com saída 11h30, ou ir bem cedo antes da aula.
+
+### Resumo das caminhadas
+
+| Destino | Distância | Tempo | Ruas principais |
+|---|---|---|---|
+| **Rua Santa Ifigênia** | 684 m | 8 min | Duque de Caxias → Santa Ifigênia |
+| **Estação da Luz** | 807 m | 10 min | Dino Bueno → Rua Mauá |
+| **Estação Santa Cecília** | 1.164 m | 15 min | Rua Helvétia |
+| **CCB Bom Retiro** | 1.282 m | 15 min | Dino Bueno → Nothmann → Anhaia |
+| **25 de Março** | 2.394 m | 31 min | Mauá → Gen. Osório → Senador Queirós |
+| **Feira da Madrugada** | 3.122 m | 37 min | Mauá → Tiradentes → Ribeiro de Lima |
+
+Fonte da malha e das rotas: **OpenStreetMap**, roteamento a pé pelo **Valhalla**. Os mapas
+são desenhados aqui e abrem sem internet.
 
 ## Cultura na porta
 

@@ -305,26 +305,78 @@ corrijo.
 | Pronto-socorro | PS Barra Funda — R. Vitorino Carmilo, 717 |
 | Ônibus | Terminal Princesa Isabel — Av. Rio Branco |
 
-## Shoppings pelo metrô
+## Shoppings pelo metrô e trem
 
-Todos **[CANDIDATO]**: nenhum foi conferido ainda.
+**A escolha padrão é o Complexo Tatuapé.** Não por ser o mais perto em número de estações,
+mas por causa da última perna: **você chega dentro do shopping sem sair da estação**, por uma
+passarela interna, sem atravessar rua. Nenhum outro perto faz isso.
 
-| Shopping | Como chegar | Vale para |
+E é o maior alcançável: **500 lojas, 13 salas de cinema, supermercado e farmácia**, somando
+o Shopping Metrô Tatuapé e o Boulevard Tatuapé, que são ligados por dentro.
+
+### Como chegar ao Tatuapé: duas rotas, escolha pelo painel
+
+**Rota A, a mais curta** — 807 m a pé até a **Luz**, e **CPTM Linha 11-Coral** sentido
+Estudantes. São **2 estações**: Brás e Tatuapé.
+
+**Rota B, toda de metrô** — 1.164 m a pé até **Santa Cecília**, e **Linha 3-Vermelha** direta
+até Tatuapé. São **8 estações**, sem baldeação.
+
+A **A** tem menos estação e menos caminhada. A **B** anda 5 minutos a mais, mas o metrô passa
+com mais frequência que a CPTM, principalmente à noite. **Olhe o intervalo no painel e
+decida**: se o trem demorar mais que uns 8 minutos, vale a rota B.
+
+### A pegadinha da volta
+
+Em Tatuapé param **três linhas da CPTM**, e duas delas **não chegam à Luz**:
+
+| Letreiro do trem | Linha | Onde termina |
 |---|---|---|
-| **Pátio Higienópolis** | **Luz → Linha 4 até Higienópolis-Mackenzie, direto** | O de melhor padrão perto, e sem baldeação. Boa praça de alimentação |
-| **Shopping D** | **Luz → Linha 1 até Armênia**, 2 estações | Perto e popular, resolve compra prática |
-| **Center Norte + Lar Center** | **Luz → Linha 1 até Portuguesa-Tietê**, direto | Grande, tem de tudo, inclusive casa e decoração |
-| **Shopping Light** | Anhangabaú / Vale do Anhangabaú, no centro | O mais perto de todos. Prédio histórico, shopping pequeno |
-| **Metrô Tatuapé + Boulevard Tatuapé** | **Santa Cecília → Linha 3 até Tatuapé, direto** | Complexo de ~500 lojas, o maior sem baldeação |
-| **West Plaza** | Santa Cecília → Linha 3 até Palmeiras-Barra Funda + ~10 min a pé | Zara, Nike, praça de alimentação, cinema |
-| **Bourbon Shopping** | Santa Cecília → Linha 3 até Palmeiras-Barra Funda + ~18 min a pé (passa pelo Allianz Parque) | Outback, cinema IMAX, Teatro Bradesco |
-| **Cidade São Paulo / Center 3 / Pátio Paulista** | **Luz → Linha 4 até Paulista**, direto | Passeio de fim de tarde na Avenida Paulista |
-| **Iguatemi / Eldorado** | **Luz → Linha 4 até Faria Lima ou Pinheiros**, direto | Alto padrão, se o caso pedir |
+| **Luz** | 11-Coral | **É o seu.** Brás e Luz |
+| Brás | 12-Safira | Para uma estação antes |
+| Brás | 13-Jade | Para uma estação antes |
 
-**Nada disso pede baldeação**, e é por isso que a Luz vale os 10 minutos de caminhada. Pela
-Linha 4 você chega em Higienópolis, Paulista, Faria Lima e Pinheiros; pela Linha 1, no
-Center Norte e no Shopping D; pela Linha 3, saindo da Santa Cecília, no Tatuapé e na Barra
-Funda.
+**Só embarque no que estiver escrito LUZ.** Se errar, desce no Brás e pega o próximo da
+Linha 11, que é só mais uma estação.
+
+### O que tem dentro
+
+- **Oba Hortifruti**, formato "Oba Way", que é supermercado e não só hortifrúti — piso
+  Tatuapé, R. Domingos Agostim, 91
+- **Cacau Show** no piso Metrô, telefone (11) 2225-7303, e outra loja no Boulevard
+- **Cinemark** no piso G2 e **Starbucks** no piso Metrô
+- Farmácia e praça de alimentação
+
+**Horário**: lojas de **segunda a sábado, 10h às 22h**; domingo e feriado, 14h às 20h.
+Praça de alimentação e restaurantes, 11h às 22h.
+
+*Para compra de semana, porém, não compensa carregar dali: são ~40 min de volta com sacola
+na mão, e você tem Dia e Extra a 8 minutos do CAES. O Oba vale pelo que o Dia não tem, que é
+fruta, verdura e queijo bons.*
+
+### Os outros, e a verdade sobre cada um
+
+| Shopping | Como chegar | Da estação até a porta |
+|---|---|---|
+| **Complexo Tatuapé** | Luz → CPTM 11 (2 est.) ou Sta. Cecília → Linha 3 (8 est.) | **passarela interna** |
+| **Shopping D** | Luz → **Linha 1-Azul** até Armênia, 2 estações | curto |
+| **Center Norte + Lar Center** | Luz → **Linha 1-Azul** até Portuguesa-Tietê, 3 estações | curto |
+| **Shopping Light** | Sta. Cecília → Linha 3 até Anhangabaú, 2 estações | no centro, pequeno |
+| **Pátio Higienópolis** | Luz → **Linha 4-Amarela** até Higienópolis-Mackenzie, 2 estações | **1.135 m, 17 min a pé** |
+| **West Plaza** | Sta. Cecília → Linha 3 até Palmeiras-Barra Funda, 2 estações | ~10 min a pé |
+| **Bourbon** | Sta. Cecília → Linha 3 até Palmeiras-Barra Funda, 2 estações | ~18 min a pé, passa pelo Allianz |
+| **Cidade São Paulo / Center 3 / Pátio Paulista** | Luz → **Linha 4-Amarela** até Paulista, 3 estações | curto, na Paulista |
+| **Iguatemi / Eldorado** | Luz → **Linha 4-Amarela** até Faria Lima ou Pinheiros | médio |
+
+**Correção de 17/08 sobre o Pátio Higienópolis**: este guia dizia que ele era "o de melhor
+padrão perto, e sem baldeação". A parte das estações está certa, são 2 da Luz pela Linha 4.
+Mas a caminhada final eu não tinha medido, e ela é **1.135 m, 17 minutos**. Medi as três
+estações possíveis e todas são ruins: Higienópolis-Mackenzie 1.135 m, Santa Cecília 1.382 m,
+Marechal Deodoro 1.478 m. Algumas páginas afirmam "157 m, 3 minutos", **e isso está errado**.
+
+**A Luz continua sendo a chave de tudo**: dela saem a Linha 1-Azul (Shopping D, Center Norte)
+e a Linha 4-Amarela (Higienópolis, Paulista, Faria Lima, Pinheiros), além da CPTM do Tatuapé.
+A Santa Cecília cobre a Linha 3-Vermelha (Barra Funda, Anhangabaú, Tatuapé).
 
 ## Vale a viagem
 

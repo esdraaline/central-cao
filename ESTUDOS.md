@@ -185,13 +185,32 @@ e uma dissertação-modelo já em mãos. O erro clássico é tratar isso como "a
 
 | # | Disciplina | Instrutor | Primeira aula |
 |---|---|---|---|
-| D01 | Políticas Públicas | Cel Lucena | 17/08/2026, 13h00 às 14h30 |
-| D02 | Planejamento Estratégico | Cel Elgis | 17/08/2026, à tarde |
+| D01 | Políticas Públicas | Cel Lucena | 17/08, 13h00–14h30 |
+| D02 | Planejamento Estratégico | Cel Elgis | 17/08, à tarde |
+| D03 | Geopolítica | Cel PM Komata | 18/08, 08h15–09h45 |
+| D04 | Mídia Training | Cap PM Anderson | 18/08, 10h00–11h30 |
+| D05 | Gestão de Crises de Imagem | Cel PM Massera | 18/08, 13h00–14h30 |
+| D06 | Métodos Quantitativos de Pesquisa | Cap PM Franco | 18/08, 14h45–16h15 |
+| D07 | Fundamentos da Metodologia Científica | Maj PM Zampronio | 18/08, 16h30–18h00 |
 
-As duas **batem com o esqueleto de 2012** abaixo ("Políticas Públicas de Prevenção e
-Controle da Criminalidade" e "Planejamento Estratégico e Construção de Cenários"), o que
-aumenta a confiança no resto da lista. Quando sair o QTS com os nomes oficiais, conferir se
-o nome completo é esse e renomear as pastas se precisar.
+**O QTS sai dia a dia, não por semestre.** Isso derrubou uma premissa que este documento
+tinha: eu supunha disciplina em bloco, uma terminando antes da outra começar. **Não é assim.**
+Elas correm em paralelo, em blocos de 45 minutos, várias por dia. Só a terça de 18/08 teve
+cinco disciplinas diferentes.
+
+**O que isso muda no método:** nada na estrutura, e muito no ritmo.
+
+- Um arquivo por disciplina continua certo, e fica ainda mais importante: sem isso, a
+  anotação de cinco matérias diferentes cairia tudo no mesmo lugar.
+- **Mas o arquivo do dia não é um só.** Numa terça você abre cinco arquivos, um por bloco.
+  Por isso o atalho abre a **pasta** no VS Code, e não um arquivo: você clica na matéria da
+  vez na barra da esquerda.
+- **A etiqueta `#DISSERTA` fica mais valiosa ainda.** Repare que D06 e D07 são
+  metodologia de pesquisa pura, ou seja, aula que existe para a sua dissertação. O que sair
+  dali vai direto para o texto.
+
+*Os RE dos instrutores constam do QTS, mas não são copiados para cá: é dado pessoal de
+terceiro e este repositório é público. Ficam só nome e posto.*
 
 ### O levantamento de origem
 

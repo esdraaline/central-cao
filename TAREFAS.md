@@ -13,7 +13,7 @@
 - [ ] Conferir se a mesa SEI 302090130 recebeu o ofício e anotar o número do processo no celular [18/08/2026] #admin
 
 ### Segunda, 17/08 (é o dia de resolver o fardamento)
-- [ ] Pegar o QTS divulgado na segunda e lançar as datas em PRAZOS.md [17/08/2026] #curso
+- [ ] Mandar o QTS do dia seguinte assim que sair, para eu criar pasta e arquivo das disciplinas novas [19/08/2026] #curso
 - [ ] Comprar na ConfecBell: 2 camisas de passeio, 2 camisetas de serviço, boina e a camisa social do S-1 (gravata e as 2 calças já tenho em casa) [17/08/2026] #pessoal
 - [ ] Deixar para aplicar e combinar prazo de retirada: tarjeta operacional e Logomarca nas 2 camisetas novas, 4 distintivos de OPM do CAES e a tarjeta administrativa de acrílico [17/08/2026] #pessoal
 - [ ] Experimentar a farda social, ver os ajustes de caimento e montar armário e alojamento [17/08/2026] #pessoal
@@ -26,6 +26,7 @@
 - [ ] Levar na viagem: B-1 (gandola, calça operacional, coturno), EPI (cinto, colete, bota) e os suplementos [23/08/2026] #pessoal
 
 ## Concluídas
+- [x] Pegar o QTS e lançar as disciplinas: sai dia a dia, 7 disciplinas até 18/08 [18/08/2026] #curso
 - [x] Perguntar ao pessoal do CAO-I/26 onde eles almoçam e jantam, e lançar em ENTORNO.md [18/08/2026] #pessoal
 - [x] Chegar ao CAES até 07h30: café da manhã, assinar a lista de presença do pelotão e palestra [17/08/2026] #curso
 - [x] Combinar o destino do 4º distintivo de OPM, o da gandola: trazer solto ou deixar na loja, porque a gandola só sobe em 23/08 [17/08/2026] #pessoal

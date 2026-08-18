@@ -21,7 +21,8 @@
 - **Duração**: agosto/2026 a agosto/2027, no CAES "Cel Nelson Freire Terra".
 - **Semana padrão**: viaja domingo, aula de segunda a quinta, volta quinta depois das 11h30 (ver [ROTINA.md](ROTINA.md)).
 - **Rotina 13 do SIPA**: liberada de 17/ago/26 a 22/jan/27 (1º bloco financeiro/administrativo).
-- **QTS (programação das aulas)**: divulgado na segunda, 17/08. É dele que saem as próximas datas deste arquivo.
+- **QTS (programação das aulas)**: **sai dia a dia**, não por semestre nem por semana (confirmado em 18/08/2026). Cada dia traz de 8 a 10 aulas de 45 min, com várias disciplinas em paralelo. É dele que saem as próximas datas deste arquivo.
+- **Disciplinas em curso** (7 até 18/08): Políticas Públicas, Planejamento Estratégico, Geopolítica, Mídia Training, Gestão de Crises de Imagem, Métodos Quantitativos de Pesquisa e Fundamentos da Metodologia Científica. Ver [ESTUDOS.md](ESTUDOS.md).
 - Próxima entrega / próxima avaliação: *(preencher a partir do QTS de 17/08)*
 - Formatura: data/hora/local ainda a ratificar pela turma (ver checklist em [ROTINA.md](ROTINA.md)).
 

@@ -21,10 +21,12 @@ todos realocados.
 
 ```
 10_JOSEMAR/02_TRABALHO/08_CAO_2026/
-├── 00_CURSO/              edital, QTS de cada semana, normas, calendário
-├── 01_DISCIPLINAS/
-│   ├── _MODELO_DISCIPLINA/     pasta-molde: duplicar a cada disciplina nova
-│   └── 2026-08_D01_NOME/
+├── 00_CURSO/              edital, normas, calendário
+│   └── QTS/               o quadro de trabalho de cada semana, em PDF
+├── 01_DISCIPLINAS/        as 31 disciplinas, D01 a D31 (ver aba Grade)
+│   ├── _MODELO_DISCIPLINA/     pasta-molde, caso apareça disciplina nova
+│   └── D01_POLITICAS-PUBLICAS/
+│       ├── NOTAS-D01-Politicas-Publicas.md   onde eu escrevo
 │       ├── aulas/         material do instrutor (CRU, nunca editar)
 │       ├── trabalhos/     o que EU entrego
 │       └── avaliacoes/    provas, gabaritos, notas
@@ -45,8 +47,17 @@ Três detalhes que não são enfeite:
 de Turma, com nome ruim. Se eu tiver que decidir na hora onde arquivar, não arquivo. Jogo no
 INBOX e esvazio na quinta. Estrutura sem lata de despejo morre na terceira semana.
 
-**A pasta da disciplina nasce com data na frente** (`2026-08_D01_`). Ordena sozinha na linha
-do tempo do curso, que é como eu vou lembrar depois ("aquilo foi em outubro").
+**As 31 pastas já existem, numeradas na ordem do QTS.** Criadas de uma vez em 18/08/2026,
+quando o QTS trouxe a grade inteira (ver [GRADE.md](GRADE.md)). Cada uma nasce com as três
+subpastas e com o arquivo de notas já cabeçalhado, esperando a primeira aula. Assim o INBOX
+sempre tem para onde despejar, mesmo em disciplina que ainda não começou.
+
+**A numeração mudou em 18/08 e o motivo é simples.** A primeira versão punha data na frente
+(`2026-08_D01_`) para ordenar na linha do tempo do curso. Isso pressupunha disciplina em
+bloco, uma terminando antes da outra começar. **O QTS mostrou que não é assim:** as 31 correm
+em paralelo, então todas nasceriam com `2026-08` e a data não ordenaria nada. Ficou
+`D01_` a `D31_`, na ordem da grade oficial, que é estável o curso inteiro. Quem responde
+"quando foi aquilo" é a data dentro do arquivo de notas.
 
 **`aulas/` é intocável.** O material do instrutor entra e não é editado nem renomeado por
 dentro. O que é meu vai para o documento de notas, separado. Assim sempre dá para saber o que
@@ -217,18 +228,21 @@ que desfazer uma escolha errada.
 **2. A lista curta, por afinidade com o tema**
 
 Meu tema é **integração PM-Prefeituras e governança participativa**. Isso é política pública
-e articulação interinstitucional, não é operacional puro. Dos sete instrutores conhecidos até
-18/08:
+e articulação interinstitucional, não é operacional puro. Refeita em 18/08, agora com a grade
+completa do QTS na mão (ver [GRADE.md](GRADE.md)):
 
 | Instrutor | Disciplina | Encaixe no meu tema |
 |---|---|---|
-| **Cel Lucena** | Políticas Públicas | **O mais direto.** Meu tema É política pública. E na aula 1 ele abriu com modelo reativo x pró-ativo, que é o eixo do meu argumento |
-| **Cel Elgis** | Planejamento Estratégico | **Forte.** Ele perguntou "nosso foco é polícia repressiva ou comunitária?", que é exatamente a tensão que a dissertação enfrenta |
-| Cap Franco | Métodos Quantitativos de Pesquisa | Encaixe de **método**, não de tema. Candidato natural a coorientador se o trabalho tiver survey |
-| Maj Zampronio | Fundamentos da Metodologia Científica | Idem. E é quem vai avaliar o rigor do método |
-| Cel Komata | Geopolítica | Fraco para o tema |
-| Cap Anderson | Mídia Training | Fraco |
-| Cel Massera | Gestão de Crises de Imagem | Fraco |
+| **Cel Barreto** | D28 Policiamento Comunitário | **Novo, e forte.** Apareceu com a grade completa. Policiamento comunitário é o berço doutrinário da integração PM-comunidade |
+| **Cel Lucena** | D01 Políticas Públicas | **O mais direto.** Meu tema É política pública. Na aula 1 ele abriu com modelo reativo x pró-ativo, que é o eixo do meu argumento |
+| **Cel Elgis** | D14 Planejamento Estratégico | **Forte, e é a decisão em vigor.** Ele perguntou "nosso foco é polícia repressiva ou comunitária?", que é exatamente a tensão que a dissertação enfrenta |
+| **Cel Fernandes** | D04 Relações Sociais e Institucionais no Brasil | **Novo.** Articulação interinstitucional é a outra metade da pergunta de pesquisa |
+| Cel Beatriz / Cel Possato | D13 Gestão de Processos e Estrutura Organizacional | Serve se o trabalho descer para o "como se opera" a integração |
+| TC Tamanaha / Maj Goulart | D16 Gestão da Informação para Tomada de Decisão | Idem, pelo lado do dado que circula entre PM e Prefeitura |
+| Cap Franco / Cel Boggi | D07 Métodos Quantitativos de Pesquisa | Encaixe de **método**, não de tema. Coorientador natural se o trabalho tiver survey |
+| Maj Zampronio | D05 Fundamentos da Metodologia Científica | Idem. E é quem vai avaliar o rigor do método |
+| Maj Daniela / Cap Fernando | D06 Métodos Qualitativos de Pesquisa | Coorientação de método se a pesquisa for por entrevista, que é o mais provável no meu tema |
+| Cel Komata, Cap Anderson, Cel Massera | D02, D22, D21 | Fracos para o tema |
 
 **3. Sondar cedo, com o texto na mão**
 
@@ -248,10 +262,15 @@ A dissertação do **Cap PM José Fernando Ferrarez** (CAO/24, defendida em 2025
 O Cel Siconeli não apareceu (ainda) como instrutor da minha turma, mas vale perguntar ao Cap
 Gobbo se ele segue orientando. Orientador experiente poupa meses.
 
-### O que ainda falta
+### O rol completo chegou em 18/08
 
-O **rol completo**. Cada QTS que chega acrescenta instrutores, e a tabela acima cresce junto
-com a de disciplinas. Enquanto isso não fecha, os passos 1 e 3 já podem andar.
+O que estava travando esta missão era esperar a lista fechar. **Fechou:** o QTS da semana 1
+trouxe as 31 disciplinas e todo o corpo docente de uma vez, e está na aba
+[Grade](GRADE.md). Não há mais motivo para esperar antes de procurar o Cap Gobbo.
+
+O que **continua** faltando não muda a decisão: carga horária por disciplina, ordem em que
+elas entram no ano e quem tem prova ou trabalho. Nada disso é pré-requisito para as conversas
+dos passos 1 e 3.
 
 ## O que não fazer
 
@@ -263,81 +282,46 @@ com a de disciplinas. Enquanto isso não fecha, os passos 1 e 3 já podem andar.
 
 ## Disciplinas do curso
 
-### Confirmadas na prática (CAO-II/2026)
+**São 31, e o rol completo está na aba [Grade](GRADE.md)**, com os docentes de cada uma, os
+horários por bloco e o quadro da semana. Aqui fica só o que o levantamento ensinou sobre o
+método, que é o assunto deste documento.
 
-| # | Disciplina | Instrutor | Primeira aula |
-|---|---|---|---|
-| D01 | Políticas Públicas | Cel Lucena | 17/08, 13h00–14h30 |
-| D02 | Planejamento Estratégico | Cel Elgis | 17/08, à tarde |
-| D03 | Geopolítica | Cel PM Komata | 18/08, 08h15–09h45 |
-| D04 | Mídia Training | Cap PM Anderson | 18/08, 10h00–11h30 |
-| D05 | Gestão de Crises de Imagem | Cel PM Massera | 18/08, 13h00–14h30 |
-| D06 | Métodos Quantitativos de Pesquisa | Cap PM Franco | 18/08, 14h45–16h15 |
-| D07 | Fundamentos da Metodologia Científica | Maj PM Zampronio | 18/08, 16h30–18h00 |
-
-**O QTS sai dia a dia, não por semestre.** Isso derrubou uma premissa que este documento
+**O QTS sai semana a semana, não por semestre.** Isso derrubou uma premissa que este documento
 tinha: eu supunha disciplina em bloco, uma terminando antes da outra começar. **Não é assim.**
 Elas correm em paralelo, em blocos de 45 minutos, várias por dia. Só a terça de 18/08 teve
 cinco disciplinas diferentes.
 
 **O que isso muda no método:** nada na estrutura, e muito no ritmo.
 
-- Um arquivo por disciplina continua certo, e fica ainda mais importante: sem isso, a
-  anotação de cinco matérias diferentes cairia tudo no mesmo lugar.
-- **Mas o arquivo do dia não é um só.** Numa terça você abre cinco arquivos, um por bloco.
-  Por isso o atalho abre a **pasta** no VS Code, e não um arquivo: você clica na matéria da
-  vez na barra da esquerda.
-- **A etiqueta `#DISSERTA` fica mais valiosa ainda.** Repare que D06 e D07 são
-  metodologia de pesquisa pura, ou seja, aula que existe para a sua dissertação. O que sair
-  dali vai direto para o texto.
+- Um arquivo por disciplina continua certo, e fica ainda mais importante: sem isso, a anotação
+  de cinco matérias diferentes cairia tudo no mesmo lugar.
+- **Mas o arquivo do dia não é um só.** Numa terça você abre cinco arquivos, um por bloco. Por
+  isso o atalho abre a **pasta** no VS Code, e não um arquivo: você clica na matéria da vez na
+  barra da esquerda.
+- **A etiqueta `#DISSERTA` fica mais valiosa ainda.** D05, D06, D07 e D08 são metodologia e
+  análise de dados, ou seja, aula que existe para a sua dissertação. O que sair dali vai direto
+  para o texto.
+- **O NotebookLM não vai ter 31 cadernos.** Um por disciplina funcionava com sete. Com 31, o
+  caderno nasce quando a disciplina começa **e tem prova ou trabalho à vista**. As demais
+  ficam só com o arquivo de notas.
 
-*Os RE dos instrutores constam do QTS, mas não são copiados para cá: é dado pessoal de
-terceiro e este repositório é público. Ficam só nome e posto.*
+### O levantamento de origem, encerrado em 18/08
 
-### O levantamento de origem
+Fica registrado porque custou um dia de garimpo e porque explica por que o rol demorou.
 
 **O edital não traz a grade.** Vasculhado em 17/08/2026: o Edital DEC-005/24/25 é do processo
 seletivo, e o Anexo "B" ("Conteúdo Programático") é a bibliografia da prova escrita, não a
 matriz do curso. O slide de recepção do SAE também não traz. Nenhum dos 848 arquivos do Drive
-traz.
+traz. Restaram duas fontes indiretas, as duas hoje **superadas pelo QTS**:
 
-O que existe são **duas fontes indiretas**, as duas provisórias até sair o QTS.
+1. **Disciplinas do CAO I/2024** citadas em notas de rodapé da dissertação do Cap PM Ferrarez
+   (Criminologia com o TC Maurício Alves Barbosa; Planejamento Operacional com o Maj Hudson
+   Arthur Rodrigues Rosa). As duas existem na grade de 2026, com outros docentes.
+2. **Grade do Mestrado Profissional** no *Manual e Código de Conduta do Aluno* do CAES,
+   **de 2012**. Serviu de esqueleto e errou bastante: nomes como "Tiro Defensivo Método
+   Giraldi", "Geografia do Crime" e "Justiça e Processo Penal Militares" não estão na grade
+   de 2026, enquanto Análise de Dados, Gestão de Crises de Imagem, Mídia Training e Excelência
+   da Gestão, que estão, não apareciam lá.
 
-**1. Disciplinas confirmadas do CAO I/2024**, citadas em notas de rodapé da dissertação do
-Cap PM Ferrarez (que está em `02_DISSERTACAO/01_referencias/`):
-
-| Disciplina | Instrutor | Registro |
-|---|---|---|
-| Criminologia e Fenomenologia do Crime | TC Maurício Alves Barbosa | aula ao pelotão "A", 02/abr/2024 |
-| Planejamento Operacional | Maj Hudson Arthur Rodrigues Rosa | aula ao pelotão "D", 27/jun/2024, 13h00 às 16h15 |
-
-**2. Grade do Programa de Mestrado Profissional**, do *Manual e Código de Conduta do Aluno* do
-CAES (Anexo "B"), publicado na página do CAES. **Atenção: o manual é de 2012**, então serve de
-esqueleto, não de verdade atual. As duas disciplinas de 2024 acima já não batem exatamente com
-ele.
-
-Matérias comuns: Metodologia da Pesquisa; Ética e Cidadania; Direitos Humanos; Justiça,
-Processo Penal e Polícia Judiciária Militares; Tiro Defensivo na Preservação da Vida "Método
-Giraldi"; Direito Administrativo da Ordem Pública; Geografia do Crime; Legislação Especial
-Aplicada; Planejamento Estratégico e Construção de Cenários; Políticas Públicas de Prevenção e
-Controle da Criminalidade; Geopolítica do Estado de São Paulo; Direito Constitucional.
-
-Matérias específicas da minha linha (Administração PM e Policiamento Ostensivo):
-
-- **Teoria Geral de Ciências Policiais**, com as unidades: Teoria das Ciências Policiais,
-  Fenomenologia da Violência e do Crime, Filosofia e Doutrina de Polícia Ostensiva, Polícia
-  Comunitária, Mediação de Conflitos e Gerenciamento de Crises, Inteligência Policial.
-- **Organização e Gestão de Polícia Ostensiva**, com as unidades: Gestão de Recursos Humanos,
-  Gestão de Recursos Públicos, Gestão de Logística, Gestão pela Qualidade, Comunicação Social,
-  Gestão do Conhecimento, Administração por Projetos, Tecnologia da Informação e Comunicação,
-  Avaliação e Prescrição do Treinamento Físico e Saúde.
-- **Exercícios de Planejamento de Polícia Ostensiva (ExPPO)**.
-
-*(A matéria "Organização e Gestão do Sistema de Saúde Policial-Militar" é do QOS, não se
-aplica a mim.)*
-
-*[VERIFICAR: as cargas horárias saíram embaralhadas na extração do PDF de 2012 e por isso não
-foram anotadas aqui. Se precisar do número, abrir o manual na página do CAES.]*
-
-**Fonte de verdade é o QTS.** Assim que ele sair, esta seção é reescrita com os nomes reais e
-as pastas de `01_DISCIPLINAS` são criadas a partir do `_MODELO_DISCIPLINA`.
+**A lição, que vale para o resto do curso:** documento de origem indireta serve para não ficar
+parado, nunca para planejar em cima. **A fonte de verdade é o QTS**, e ele chega semanalmente.

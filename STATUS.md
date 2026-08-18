@@ -1,7 +1,33 @@
 # STATUS — Central do CAO
 
 > Painel principal. Ler isso primeiro em qualquer sessão nova ("onde paramos?").
-> Atualizado em: 17/08/2026
+> Atualizado em: 18/08/2026
+
+## 18/08/2026: o QTS chegou e o curso deixou de ser um mistério
+
+O primeiro QTS completo (semana 1, 17 a 21/08) resolveu de uma vez o levantamento que vinha
+sendo feito a conta-gotas desde 17/08.
+
+- **São 31 disciplinas**, não sete, com o corpo docente inteiro de cada uma. Rol completo na
+  aba nova [Grade](GRADE.md), que também traz como se lê o QTS e o quadro da semana.
+- **Eu sou do pelotão "A".** Não está escrito no QTS: foi deduzido cruzando as cinco aulas
+  que assisti na terça 18/08 com as células marcadas "A". Cinco de cinco. Com isso o quadro
+  de cinco pelotões vira agenda pessoal. **Falta confirmar de viva voz na Coordenação.**
+- **Quarta 19/08 tem embarque às 07h50**, 25 minutos antes do normal, para atividade externa
+  de Ed Física. O rodapé do QTS diz "pelotões A", e é só o meu.
+- **As 31 pastas de disciplina foram criadas no Drive**, cada uma com `aulas/`, `trabalhos/`,
+  `avaliacoes/` e o arquivo de notas já cabeçalhado com o corpo docente.
+- **A numeração das pastas mudou:** saiu o prefixo de data (`2026-08_D01_`) e entrou
+  `D01_` a `D31_`, na ordem da grade oficial. Motivo em [ESTUDOS.md](ESTUDOS.md): as 31
+  disciplinas correm em paralelo, então a data não ordenava nada. As sete pastas que já
+  existiam foram renumeradas e as notas de 17 e 18/08 foram preservadas.
+- **A caça ao orientador destravou.** Ela esperava "o rol completo", que agora existe. O
+  Cel Elgis continua sendo o alvo, e apareceram dois nomes novos fortes para o tema:
+  **Cel Barreto** (Policiamento Comunitário) e **Cel Fernandes** (Relações Sociais e
+  Institucionais no Brasil).
+
+**Próximo passo:** procurar o Cap Gobbo (Seção de Pesquisa) com as cinco perguntas das regras,
+que estão em [ESTUDOS.md](ESTUDOS.md). Ele dá aula em duas disciplinas, D05 e D20.
 
 ## 17/08/2026, fim do dia: auditoria do que foi produzido
 

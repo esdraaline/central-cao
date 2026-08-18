@@ -192,22 +192,42 @@ está o mais perto de tudo. A **Praça Princesa Isabel**, a 4 minutos pela Rua H
 cinco opções juntas: se uma estiver cheia ou fechada, você resolve ali mesmo sem andar de
 novo. É o melhor lugar para ir sem decidir antes.
 
-### O "Terraço" do bizu: existe, mas não está no mapa
+### Restaurante da Sala São Paulo — na sua praça
+
+**Praça Júlio Prestes, 16 — 401 m, 5 min a pé.** Fica dentro do complexo da Sala São Paulo,
+do outro lado da sua praça. Buffet, **segunda a sexta, 12h às 15h**, preço fixo de **R$ 57**
+por pessoa. Nos dias de concerto à noite abre jantar, 18h30 à 1h, com reserva pelo
+(11) 3225-9958. **[CANDIDATO]**
+
+Não é preço de dia a dia, mas é o mais perto que existe e serve para quando alguém vier
+visitar, ou num dia que valha a pena.
+
+### O "Terraço" do bizu: existe, mas não tem rastro digital
 
 O colega indicou um **Terraço, R$ 28,00, come à vontade**, e essa continua sendo a melhor
 indicação de custo que existe aqui.
 
-Procurei no OpenStreetMap (335 estabelecimentos num raio de 1,6 km) e na busca, e não achei.
-O único "Terraço" da região é o **Terraço Itália**, no Edifício Itália, restaurante caro de
-vista panorâmica, que claramente não é o do bizu.
+**Busca refeita a fundo em 18/08/2026**, em cinco frentes: OpenStreetMap por tipo de
+estabelecimento, OpenStreetMap por nome (qualquer coisa com "terra" ou "terraç" num raio de
+3 km, **zero resultados**), busca web com o nome cruzado com as ruas daqui, redes sociais, e
+agregadores de restaurante. **Não há rastro digital nenhum.**
 
-**Mas atenção ao motivo, porque ele vale para o guia inteiro:** a **Av. Duque de Caxias**, que
-é a avenida do próprio CAES, tem **apenas 2 registros no OpenStreetMap** em toda a sua
-extensão (um restaurante no n. 529 e um supermercado sem nome). **A rua da nossa porta é
-quase invisível para a base de dados.**
+Os únicos "Terraço" que existem em São Paulo e que eu consegui localizar, os dois medidos:
 
-Então a ausência do Terraço **não é prova de que ele não existe**. É prova de que ninguém o
-cadastrou. Comércio pequeno de bairro raramente está.
+| Nome | Onde | A pé do CAES | Por que não é |
+|---|---|---|---|
+| Terraço Itália | Av. Ipiranga, 344 | **1.678 m, 21 min** | Alta gastronomia, vista panorâmica |
+| Terraço Paulista | R. São Carlos do Pinhal, 200 | **4.303 m, 57 min** | Buffet, mas perto da Paulista, longe daqui |
+
+**A conclusão não é que ele não existe. É que ele não está em lugar nenhum da internet.**
+
+E isso é absolutamente normal para o que ele é: restaurante pequeno de centro, buffet a
+R$ 28, que vive de quem passa na calçada. Não precisa de site, não vende por aplicativo, e
+ninguém cadastrou no OpenStreetMap. Reforça isso o fato de a **Av. Duque de Caxias**, a
+avenida do próprio CAES, ter **apenas 2 registros na base** em toda a extensão.
+
+**O colega não errou.** Ele comeu lá. O que falta é o endereço, e isso a internet não vai
+dar: só a calçada ou ele.
 
 **O candidato mais provável** continua sendo o **S S Self Service**, Duque de Caxias 839, a 3
 minutos, que é self-service e bate com o perfil de preço.

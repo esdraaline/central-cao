@@ -93,9 +93,11 @@ por 909 m.
 
 ### 25 de Março
 
-![Do CAES até a 25 de Março: 2.394 m, cerca de 31 min.](mapas/25-de-marco.svg)
+![Do CAES até a 25 de Março: 2.480 m, cerca de 32 min.](mapas/25-de-marco.svg)
 
-**2.394 m, cerca de 31 min.** O caminho passa pela Luz e segue: **Av. Duque de Caxias** →
+**2.480 m, cerca de 32 min.** *(Remedido em 18/08 junto com o novo mapa do Terraço Aurora —
+o roteador ajustou a rota em ~86 m em relação à medição anterior.)* O caminho passa pela Luz
+e segue: **Av. Duque de Caxias** →
 **Rua Mauá** → **Largo General Osório** → **Rua dos Timbiras** → **Avenida Senador Queirós**
 → **Rua 25 de Março**.
 
@@ -136,7 +138,8 @@ sua própria rotina, registrada neste repositório.)*
 | **Estação da Luz** | 807 m | 10 min | Dino Bueno → Rua Mauá |
 | **Estação Santa Cecília** | 1.164 m | 15 min | Rua Helvétia |
 | **CCB Bom Retiro** | 1.282 m | 15 min | Dino Bueno → Nothmann → Anhaia |
-| **25 de Março** | 2.394 m | 31 min | Mauá → Gen. Osório → Senador Queirós |
+| **Terraço Aurora** | 616 m | 8 min | Duque de Caxias → Santa Ifigênia → Vitória |
+| **25 de Março** | 2.480 m | 32 min | Mauá → Gen. Osório → Senador Queirós |
 | **Feira da Madrugada** | 3.122 m | 37 min | Mauá → Tiradentes → Ribeiro de Lima |
 
 
@@ -184,6 +187,7 @@ pé, todos com a distância medida. Os mais perto:
 | Pizzaria Odalisca | Pça. Princesa Isabel, 60 | 381 m · 4 min | pizzaria |
 | Zebrinha | — | 387 m · 4 min | restaurante |
 | Restaurante Grill e Café | Av. Duque de Caxias, 5 | 585 m · 7 min | restaurante |
+| **Terraço Aurora** | R. Vitória, 365, 1º andar | **616 m · 8 min** | a quilo e à vontade, **R$ 28,90** |
 | Subway | R. Vitória, 371 | 625 m · 8 min | lanche rápido |
 | **Cascatinha** | R. General Couto de Magalhães, 172 | 733 m · 9 min | padaria e restaurante, **05h à meia-noite** |
 
@@ -202,38 +206,47 @@ por pessoa. Nos dias de concerto à noite abre jantar, 18h30 à 1h, com reserva 
 Não é preço de dia a dia, mas é o mais perto que existe e serve para quando alguém vier
 visitar, ou num dia que valha a pena.
 
-### O "Terraço" do bizu: existe, mas não tem rastro digital
+### Terraço Aurora — o bizu resolvido, achado o impresso na calçada
 
-O colega indicou um **Terraço, R$ 28,00, come à vontade**, e essa continua sendo a melhor
-indicação de custo que existe aqui.
+**Restaurante Terraço Aurora** — R. Vitória, 365, 1º andar, Santa Ifigênia — (11) 3331-8532
+— **[BIZU]**, com endereço confirmado em 18/08/2026.
 
-**Busca refeita a fundo em 18/08/2026**, em cinco frentes: OpenStreetMap por tipo de
-estabelecimento, OpenStreetMap por nome (qualquer coisa com "terra" ou "terraç" num raio de
-3 km, **zero resultados**), busca web com o nome cruzado com as ruas daqui, redes sociais, e
-agregadores de restaurante. **Não há rastro digital nenhum.**
+O colega tinha indicado um **Terraço, R$ 28,00, come à vontade**, e a busca online de
+17-18/08 não achou rastro nenhum dele (nem no OpenStreetMap, nem na web — ver a auditoria
+de fundo que ficou registrada no histórico deste arquivo). O motivo era exatamente o
+suspeitado: **restaurante pequeno de centro, sem site, sem cadastro em app, que vive de
+quem passa na calçada.** Resolveu-se no impresso do próprio local, não na internet.
 
-Os únicos "Terraço" que existem em São Paulo e que eu consegui localizar, os dois medidos:
+**O que é:** restaurante a quilo e à vontade, **comida caseira**, ambiente agradável, com
+Wi-Fi e convênio com lojista. **R$ 28,90, sirva-se uma vez**, das **11h às 15h35**. No
+almoço, **um suco do dia é grátis**.
 
-| Nome | Onde | A pé do CAES | Por que não é |
-|---|---|---|---|
-| Terraço Itália | Av. Ipiranga, 344 | **1.678 m, 21 min** | Alta gastronomia, vista panorâmica |
-| Terraço Paulista | R. São Carlos do Pinhal, 200 | **4.303 m, 57 min** | Buffet, mas perto da Paulista, longe daqui |
+**Também faz marmitex** — pedido só até **14h15**, pelo WhatsApp **(11) 98838-8806**.
+Escolha uma carne + 3 acompanhamentos:
 
-**A conclusão não é que ele não existe. É que ele não está em lugar nenhum da internet.**
+| Carne | Preço |
+|---|---|
+| Bife | R$ 23,90 |
+| Filé de peixe | R$ 23,00 |
+| Filé de frango | R$ 22,00 |
+| Calabresa ou toscana | R$ 22,00 |
+| Bisteca | R$ 22,00 |
+| Fígado | R$ 19,90 |
 
-E isso é absolutamente normal para o que ele é: restaurante pequeno de centro, buffet a
-R$ 28, que vive de quem passa na calçada. Não precisa de site, não vende por aplicativo, e
-ninguém cadastrou no OpenStreetMap. Reforça isso o fato de a **Av. Duque de Caxias**, a
-avenida do próprio CAES, ter **apenas 2 registros na base** em toda a extensão.
+Acompanhamentos: arroz, arroz integral, feijão, purê, ovo frito, batata frita, legumes
+(extra R$ 4,00; mistura acebolada +R$ 2,00). Tem também salada completa + frango/peixe
+(R$ 22,00), salada completa + bife (R$ 23,90) e omelete com salada ou acompanhamentos
+(R$ 24,00). Vem com 1 suco e 1 salada do dia grátis.
 
-**O colega não errou.** Ele comeu lá. O que falta é o endereço, e isso a internet não vai
-dar: só a calçada ou ele.
+![Do CAES até o Terraço Aurora: 616 m, cerca de 8 min.](mapas/terraco-aurora.svg)
 
-**O candidato mais provável** continua sendo o **S S Self Service**, Duque de Caxias 839, a 3
-minutos, que é self-service e bate com o perfil de preço.
+**616 m, cerca de 8 min a pé.** Sai da praça pela **Av. Duque de Caxias** (57 m), entra na
+**Rua Santa Ifigênia** (330 m) e vira na **Rua Vitória** (79 m) até o número 365 — o mesmo
+caminho de quem vai comprar eletrônico, só que virando um pouco antes. Praticamente a mesma
+distância do Subway (625 m) e mais perto que a Cascatinha (733 m).
 
-**O que resolve:** pergunte ao colega o nome da rua, ou olhe a fachada ao passar. Com isso eu
-meço e ele vira `[TESTADO]` com distância.
+**Falta só uma coisa para virar `[TESTADO]`: ir e comer.** Quando for, diz o que pediu, o
+que achou e se voltaria.
 
 **Restaurante Rio Branco** — Av. Duque de Caxias x Av. Rio Branco — **[CANDIDATO]**
 Está na lista do SAE por proximidade. Não aparece no OpenStreetMap com esse nome, então pode

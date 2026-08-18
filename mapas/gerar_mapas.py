@@ -72,6 +72,8 @@ DESTINOS = [
      "perto", "Do CAES até a Estação Santa Cecília", None, "CAES"),
     ("ccb-bom-retiro", "CCB Bom Retiro", "Rua Anhaia, 613, Bom Retiro, São Paulo",
      "perto", "Do CAES até a CCB do Bom Retiro", None, "CAES"),
+    ("terraco-aurora", "Terraço Aurora", "Rua Vitória, 365, São Paulo",
+     "perto", "Do CAES até o Terraço Aurora", None, "CAES"),
     ("25-de-marco", "25 de Março", "Rua 25 de Março, Sé, São Paulo",
      "marco", "Do CAES até a 25 de Março", None, "CAES"),
     ("feira-madrugada", "Feira", "Rua Oriente, 500, Brás, São Paulo",

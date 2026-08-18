@@ -4,10 +4,9 @@
 > **Prazos: mercado até sexta 14/08; fardamento na tarde de segunda 17/08; o que é da segunda semana, até sábado 22/08.**
 
 
-> **Aviso sobre as marcações.** As caixinhas ticadas no painel sobem para o Supabase, mas
-> **não voltam para este arquivo**. Então o `.md` pode divergir do painel. **Em 18/08/2026**
-> este arquivo foi reconciliado a partir do relato direto do Josemar (voltou da ConfecBell),
-> não do painel — é por isso que dá para confiar nele agora.
+> **As marcações se resolvem sozinhas desde 18/08/2026.** O que você tica no painel volta
+> para este arquivo de hora em hora, e o que for marcado aqui à mão aparece no painel. Não
+> precisa mais reconciliar nada. Detalhe em [PAINEL.md](PAINEL.md) e [SUPABASE.md](SUPABASE.md).
 
 ## Situação em 18/08/2026 (dia seguinte à ConfecBell)
 

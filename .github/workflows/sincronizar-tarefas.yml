@@ -1,4 +1,4 @@
-name: Sincronizar tarefas
+name: Sincronizar tarefas e caixinhas
 
 # Por que este workflow existe:
 #
@@ -11,6 +11,11 @@ name: Sincronizar tarefas
 #
 # Resultado: mexeu no celular, o TAREFAS.md se atualiza sozinho e o painel
 # republica. O botao Exportar continua existindo como saida de emergencia.
+#
+# Desde 18/08/2026 este workflow tambem fecha o ciclo das CAIXINHAS das outras
+# abas (Compras, Mala, Rotina...), que ate entao so iam do .md para o painel: o
+# tique subia para o Supabase e morria la, e o .md ficava mostrando em aberto o
+# que ja tinha sido comprado. A volta e o sincroniza_ticados.py.
 
 on:
   schedule:
@@ -28,12 +33,13 @@ on:
     # Editou o TAREFAS.md a mao? Sobe para a nuvem na hora, sem esperar a hora
     # cheia, senao o celular passaria ate uma hora mostrando o que ja mudou.
     paths:
-      - "TAREFAS.md"
+      - "*.md"
       - "sincroniza_tarefas.py"
+      - "sincroniza_ticados.py"
       - ".github/workflows/sincronizar-tarefas.yml"
 
 permissions:
-  contents: write   # para commitar o TAREFAS.md atualizado
+  contents: write   # para commitar os .md atualizados
   actions: write    # para pedir a republicacao do painel (ver ultimo passo)
 
 # Duas rodadas ao mesmo tempo leriam a mesma nuvem e commitariam por cima uma
@@ -57,11 +63,19 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Sincronizar com o Supabase
+      - name: Sincronizar as tarefas com o Supabase
         env:
           SUPABASE_EMAIL: ${{ secrets.SUPABASE_EMAIL }}
           SUPABASE_SENHA: ${{ secrets.SUPABASE_SENHA }}
         run: python sincroniza_tarefas.py ${{ inputs.conferir && '--conferir' || '' }}
+
+      # Depois das tarefas, e nao antes: as duas rodadas escrevem .md e commitam
+      # juntas no passo seguinte, entao a ordem so precisa ser estavel.
+      - name: Sincronizar as caixinhas (Compras, Mala, Rotina...)
+        env:
+          SUPABASE_EMAIL: ${{ secrets.SUPABASE_EMAIL }}
+          SUPABASE_SENHA: ${{ secrets.SUPABASE_SENHA }}
+        run: python sincroniza_ticados.py ${{ inputs.conferir && '--conferir' || '' }}
 
       - name: Guardar o resultado
         id: guardar
@@ -69,12 +83,15 @@ jobs:
         run: |
           git config user.name "painel-cao-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add TAREFAS.md estado_tarefas.json
+          # -A com *.md porque o sincroniza_ticados.py pode ter mexido em
+          # qualquer aba com caixinha, nao so no TAREFAS.md. O checkout e novo a
+          # cada rodada, entao aqui so existe o que os scripts acabaram de fazer.
+          git add -A -- '*.md' estado_tarefas.json
           if git diff --cached --quiet; then
             echo "Nada mudou nesta rodada."
             echo "mudou=nao" >> "$GITHUB_OUTPUT"
           else
-            git commit -m "Tarefas do painel para o TAREFAS.md ($(date -u +'%Y-%m-%d %H:%M') UTC)"
+            git commit -m "Painel para os .md: tarefas e caixinhas ($(date -u +'%Y-%m-%d %H:%M') UTC)"
             # A publicacao do painel tambem commita, e as duas rodam em grupos
             # de concorrencia diferentes. Se ela empurrar primeiro, o push daqui
             # e rejeitado por nao ser fast-forward. Rebase e tenta de novo, em
@@ -87,7 +104,7 @@ jobs:
               echo "Push rejeitado (tentativa $TENTATIVA). Rebase e tenta de novo."
               git pull --rebase origin main
             done
-            echo "::error::Nao consegui empurrar o TAREFAS.md depois de 3 tentativas."
+            echo "::error::Nao consegui empurrar os .md depois de 3 tentativas."
             exit 1
           fi
 

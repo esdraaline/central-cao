@@ -34,7 +34,34 @@ python sincroniza_tarefas.py              # escreve
 - **Login**: o e-mail de sempre (o mesmo usuário que já existia no projeto)
 - **Configuração**: arquivo `supabase.json` na raiz
 
-## ✅ Itens ticados também sincronizam (04/08/2026)
+## ✅ O ciclo das caixinhas também fecha sozinho (18/08/2026)
+
+Faltava a volta. Até aqui o tique subia para a nuvem e **morria lá**: o `.md` continuava
+mostrando em aberto o que já tinha sido comprado. Em 18/08 isso obrigou uma reconciliação
+manual do `COMPRAS.md`, item por item, depois da ida à ConfecBell. Foi a última.
+
+Quem fecha é o **`sincroniza_ticados.py`**, no mesmo workflow das tarefas, de hora em hora.
+
+- Ele **não inventa identificador**: usa a mesma chave que o painel já usa, `md5(texto)[:10]`.
+  Conferido na implantação: **as 94 caixinhas dos `.md` batem com as 94 chaves do painel
+  publicado**. Se a chave divergisse, o script rodaria sem fazer nada e ninguém perceberia.
+- **Conflito: quem mexeu por último ganha**, comparando `mod` da nuvem com a data do último
+  commit que tocou aquele `.md`. É a mesma regra do `sincroniza_tarefas.py`, de propósito:
+  duas lógicas diferentes de conflito no mesmo repositório seria pedir para errar.
+- **Item que a nuvem nunca viu é decidido pelo arquivo, e sobe.** É o que faz a marcação feita
+  à mão no `.md` aparecer no celular.
+- Item cujo texto foi editado vira chave nova, e a linha antiga fica órfã na tabela. Não
+  atrapalha; o script só informa quantas são.
+
+Para rodar na mão:
+
+```powershell
+$env:SUPABASE_EMAIL = "..."; $env:SUPABASE_SENHA = "..."
+python sincroniza_ticados.py --conferir   # só mostra o que faria
+python sincroniza_ticados.py              # escreve
+```
+
+## ✅ Itens ticados sobem para a nuvem (04/08/2026)
 
 O que você tica nas abas **Compras e Mala** sobe junto com as tarefas.
 

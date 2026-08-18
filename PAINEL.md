@@ -59,6 +59,15 @@ vindo do .md — se eu editar o texto de um item, aquele item volta a ficar desm
 junto com as tarefas, valendo sempre a alteração mais recente. Em cada aparelho novo, entrar uma vez em
 **Tarefas → Entrar**. Sem internet continua funcionando e sobe quando a conexão voltar.
 
+**E voltam para o `.md` sozinhas (18/08/2026).** Até então a marcação subia para a nuvem e morria lá:
+o `.md` continuava mostrando em aberto o que já tinha sido comprado, e alguém tinha que reconciliar na
+mão, item por item. Agora o `sincroniza_ticados.py` faz a volta, de hora em hora, na mesma Action das
+tarefas. **A regra de conflito é a mesma das tarefas: quem mexeu por último ganha**, comparando a coluna
+`mod` da nuvem com a data do último commit que tocou aquele `.md`.
+
+Item que a nuvem nunca viu é decidido pelo arquivo, e esse estado **sobe**. É isso que faz uma marcação
+feita à mão no `.md` aparecer no celular, em vez de ficar só no arquivo.
+
 A própria barra de progresso mostra o estado: **Salvo na nuvem** (verde), *Salvando...*, **Sem conexão**
 (âmbar), **Sessão expirada** (vermelho) ou **Somente neste aparelho** quando não está logado.
 

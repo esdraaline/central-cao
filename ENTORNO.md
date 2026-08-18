@@ -414,57 +414,87 @@ sábado.
 
 **Distâncias são estimativas** por endereço e CEP, não rota medida. Conferir no mapa.
 
-### SEGUNDA-FEIRA (saída da aula 16h, sobra tempo)
+### Correção importante de 17/08
 
-| Casa de oração | Endereço | Culto | Distância | Como chegar |
+A primeira versão desta seção estimava a caminhada da estação até a casa de oração, e
+**errou feio em duas**. Agora todas foram medidas por roteador de pedestre:
+
+| Casa | Da estação até a porta | Antes eu dizia |
+|---|---|---|
+| **Canindé** | Armênia → **2.871 m, 36 min** | "+~10 min a pé" |
+| **Cambuci** | São Joaquim → **2.648 m, 32 min** | "+~10 min" |
+| Bairro do Limão | Santana → **5.757 m, 72 min** | "+ ônibus" |
+| **Belém** | Est. Belém → **638 m, 8 min** | "+~7 min" |
+| **Santana** | Est. Santana → **939 m, 14 min** | "direto" |
+| **Barra Funda** | Mal. Deodoro → **680 m, 8 min** | "+~8 min" |
+| Ponte Pequena | Armênia → **907 m, 11 min** | "+~8 min" |
+
+**O Canindé sai da recomendação de segunda.** Ele fica a 4,5 km do CAES e a 36 minutos de
+caminhada de qualquer estação. Não é opção de noite de semana.
+
+### SEGUNDA-FEIRA (saída da aula 16h)
+
+| Casa | Endereço | Culto | Como chegar | A pé no fim |
 |---|---|---|---|---|
-| **Canindé** | R. Silva Teles, 1611 — 03026-001 | 19h30 | **~3,2 km** | Luz → **Linha 1-Azul** → Armênia + ~10 min a pé |
-| Cambuci | R. José Bento, 311 — 01523-030 | 19h30 | ~4 km | Luz → Linha 1-Azul → São Joaquim + ~10 min |
-| Belém | R. Pimenta Bueno, 132 — 03060-000 | 19h30 | ~5,5 km | Santa Cecília → Linha 3 → Belém + ~7 min |
-| **Santana** | R. Daniel Rossi, 194 — 02019-010 | 19h30 | ~6 km | **Luz → Linha 1-Azul → Santana, direto** |
-| Bairro do Limão | R. Carolina Soares, 444 — 02554-000 | 19h30 | ~6,5 km | Luz → Linha 1-Azul → Santana + ônibus. Sem metrô na porta |
+| **Santana** | R. Daniel Rossi, 194 | 19h30 | 807 m até a **Luz** → **Linha 1-Azul** até Santana (5 est.) | **939 m, 14 min** |
+| **Belém** | R. Pimenta Bueno, 132 | 19h30 | 1.164 m até **Santa Cecília** → **Linha 3** até Belém (7 est.) | **638 m, 8 min** |
+| ~~Canindé~~ | R. Silva Teles, 1611 | 19h30 | — | 36 min. **Descartada** |
+| ~~Cambuci~~ | R. José Bento, 311 | 19h30 | — | 32 min. **Descartada** |
+| ~~Bairro do Limão~~ | R. Carolina Soares, 444 | 19h30 | — | 72 min. **Descartada** |
+
+![Da Estação Santana até a CCB de Santana: 939 m, cerca de 14 min.](mapas/ccb-santana.svg)
+
+**Santana e Belém empatam**: caminhada total quase igual (1.746 m contra 1.802 m). Santana
+tem menos estações e a ida mais curta; Belém tem a **chegada mais curta**, que é o que pesa
+quando está escuro ou chovendo. Escolha pelo gosto.
 
 ### TERÇA-FEIRA (saída 18h)
 
-| Casa de oração | Endereço | Culto | Distância | Como chegar |
+| Casa | Endereço | Culto | Como chegar | A pé |
 |---|---|---|---|---|
-| **Bom Retiro** | R. Anhaia, 613 — 01130-000 | 19h30 | **~1,3 km** | **A pé, ~16 min. Sem metrô nenhum** |
-| Ponte Pequena | R. Afonso Arinos, 91 — 03033-030 | 19h30 | ~2,5 km | Luz → Linha 1-Azul → Armênia + ~8 min |
-| Baixada do Glicério | Pça. Dr. Mario Margarido, 36 — 01514-020 | 19h30 | ~3 km | Luz → Linha 1-Azul → São Joaquim + ~8 min |
-| **Água Branca** | Av. Santa Marina, 602 — 05036-000 | 19h30 | ~5 km | **CPTM Linha 8 da própria porta**, 2 estações |
-| Vila Guilherme | R. Eugênio de Freitas, 200 — 02060-000 | 19h30 | ~5,5 km | Luz → Linha 1-Azul → Portuguesa-Tietê + ônibus |
-| Casa Verde | R. Juca Floriano, 262 — 02530-020 | 19h30 | ~6 km | Sem metrô perto. Ônibus |
-| **Lapa** | R. João Pereira, 319 — 05074-070 | 19h30 | ~7 km | **CPTM Linha 8 da própria porta**, 3 estações |
-| Pinheiros | R. Marcos Azevedo, 52 — 05428-050 | 19h30 | ~8 km | **Luz → Linha 4-Amarela → Pinheiros, direto** |
-| Penha | R. Capitão João Cesário, 160 — 03603-000 | 19h30 | ~9 km | Santa Cecília → Linha 3 → Penha, direto |
+| **Bom Retiro** | R. Anhaia, 613 | 19h30 | **A pé direto, sem metrô** | **1.282 m, 15 min** |
+| Ponte Pequena | R. Afonso Arinos, 91 | 19h30 | Luz → Linha 1 até Armênia (2 est.) | 907 m, 11 min |
+| Baixada do Glicério | Pça. Dr. Mario Margarido, 36 | 19h30 | Luz → Linha 1 até São Joaquim | a medir |
+| Água Branca | Av. Santa Marina, 602 | 19h30 | **CPTM Linha 8 da própria porta**, 2 est. | a medir |
+| Lapa | R. João Pereira, 319 | 19h30 | **CPTM Linha 8 da própria porta**, 3 est. | a medir |
+| Pinheiros | R. Marcos Azevedo, 52 | 19h30 | Luz → **Linha 4-Amarela** até Pinheiros | a medir |
+| Penha | R. Capitão João Cesário, 160 | 19h30 | Sta. Cecília → Linha 3 até Penha | a medir |
+
+![Do CAES até a CCB do Bom Retiro: 1.282 m, cerca de 15 min.](mapas/ccb-bom-retiro.svg)
+
+**É a melhor das três noites, disparado.** Alameda Dino Bueno → Alameda Nothmann → Rua
+Anhaia, e são 619 m na Anhaia até o 613. Sem metrô, sem baldeação, sem depender de horário
+de trem na volta.
 
 ### QUARTA-FEIRA (saída 18h)
 
-| Casa de oração | Endereço | Culto | Distância | Como chegar |
+| Casa | Endereço | Culto | Como chegar | A pé no fim |
 |---|---|---|---|---|
-| **Barra Funda** | R. Brigadeiro Galvão, 683 — 01151-000 | 19h30 | **~2,2 km** | A pé ~28 min, ou Santa Cecília → Linha 3 → Marechal Deodoro |
-| Brás | R. Visconde de Parnaíba, 1616 — 03164-300 | 19h30 | ~4,5 km | Santa Cecília → Linha 3 → Bresser-Mooca + ~10 min |
-| **Santana** | R. Daniel Rossi, 194 — 02019-010 | **20h00** | ~6 km | **Luz → Linha 1-Azul → Santana, direto** |
-| Vila Maria | R. Filipe Bandeira, 571 — 02126-020 | 19h30 | ~7 km | Luz → Linha 1-Azul → Portuguesa-Tietê + ônibus |
+| **Barra Funda** | R. Brigadeiro Galvão, 683 | 19h30 | 1.164 m até **Santa Cecília** → **Linha 3** até Marechal Deodoro (1 est.) | **680 m, 8 min** |
+| Brás | R. Visconde de Parnaíba, 1616 | 19h30 | Sta. Cecília → Linha 3 até Bresser-Mooca | a medir |
+| Santana | R. Daniel Rossi, 194 | **20h00** | Luz → Linha 1-Azul até Santana | 939 m, 14 min |
+| Vila Maria | R. Filipe Bandeira, 571 | 19h30 | Luz → Linha 1 até Portuguesa-Tietê + ônibus | a medir |
+
+![Da Estação Marechal Deodoro até a CCB da Barra Funda: 680 m, cerca de 8 min.](mapas/ccb-barra-funda.svg)
+
+**Uma estação só de metrô e 8 minutos a pé.** Dá também para ir inteiramente a pé do CAES,
+mas são **2.131 m e 26 min**, então o metrô compensa.
 
 **Horários que não servem**, para não perder viagem: Brás tem terça **14h30** e Lapa tem
 quarta **09h30**, os dois em horário de aula. Vila Mariana só tem terça **09h30**. Vila
-Pompéia não tem culto em segunda, terça nem quarta (é quinta e sábado).
+Pompéia não tem culto em segunda, terça nem quarta.
 
 ### Escolha por dia
 
-**Segunda: Canindé. Terça: Bom Retiro. Quarta: Barra Funda.**
+**Segunda: Santana (ou Belém). Terça: Bom Retiro. Quarta: Barra Funda.**
 
-A de **terça é a melhor de todas**: dá a pé em ~16 minutos, sem metrô, sem baldeação e sem
-depender de horário de trem na volta.
+A de **terça continua imbatível**: 15 minutos a pé, sem metrô nenhum. A de **quarta é quase
+tão boa**: uma estação e 8 minutos. A de **segunda é a mais cara** das três, cerca de 35 a 40
+minutos porta a porta, mas você sai da aula às 16h nesse dia, então sobra tempo.
 
-Se quiser trocar distância por comodidade, **Santana é a alternativa de segunda**: fica mais
-longe que o Canindé, mas é **Linha 1-Azul direta da Luz**, sem ônibus e mais simples de
-voltar à noite. E ela também tem quarta, às 20h.
-
-**Duas ficam na linha que começa na sua porta**: Água Branca e Lapa estão na **CPTM Linha
-8-Diamante**, que parte da própria Júlio Prestes. As duas são de terça. Só lembrar da
-ressalva sobre a Linha 8 lá em cima.
+*Observação: o número 194 da Rua Daniel Rossi não existe na base do OpenStreetMap, então o
+ponto de Santana caiu no meio da rua. A distância pode variar uns 100 metros para mais ou
+para menos.*
 
 ### Agenda completa das mais próximas
 

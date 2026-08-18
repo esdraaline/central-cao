@@ -1,0 +1,171 @@
+<svg viewBox="0 0 640 470" role="img" aria-label="Da Estação Santana até a CCB de Santana">
+<style>
+  .fundo{fill:var(--card)}
+  .via{fill:none;stroke:var(--tx3);opacity:.30;stroke-linecap:round;stroke-linejoin:round}
+  .viaf{fill:none;stroke:var(--tx3);opacity:.45;stroke-linecap:round}
+  .capa{fill:none;stroke:var(--card);stroke-width:9;stroke-linecap:round;stroke-linejoin:round}
+  .rota{fill:none;stroke:var(--vm-cl);stroke-width:5;stroke-linecap:round;stroke-linejoin:round}
+  .tit{fill:var(--tx);font:700 15px system-ui,sans-serif}
+  .sub{fill:var(--tx2);font:12.5px system-ui,sans-serif}
+  .rot{fill:var(--tx2);font:600 10.5px system-ui,sans-serif}
+  .esc{fill:var(--tx3);font:10.5px system-ui,sans-serif}
+  .pin{fill:var(--vm-cl);stroke:var(--card);stroke-width:2.5}
+  .pin2{fill:var(--card);stroke:var(--vm-cl);stroke-width:3.5}
+  .marc{fill:var(--tx);font:700 11.5px system-ui,sans-serif}
+</style>
+<rect class="fundo" x="0" y="0" width="640" height="470"/>
+<path class="via" d="M301.5 32.3 L305.3 30.9 L309.3 31.6 L325.1 37.5 L381.3 56.9 L388.8 59.0 L391.6 59.7 L394.7 60.2" stroke-width="1.5"/>
+<path class="viaf" d="M427.8 254.7 L450.6 267.5 L455.8 275.6" stroke-width="3.0"/>
+<path class="viaf" d="M473.4 289.4 L479.7 289.5 L529.8 291.0 L534.5 291.1" stroke-width="3.0"/>
+<path class="via" d="M313.5 261.0 L312.4 296.3 L310.0 329.4 L309.3 344.2 L307.0 377.8 L306.7 391.2 L306.0 398.7" stroke-width="1.5"/>
+<path class="via" d="M73.0 301.4 L76.8 301.4 L89.7 301.3 L100.1 300.9 L110.0 299.8 L142.2 290.9 L148.4 289.5 L155.5 289.1 L167.9 288.9 L177.6 288.7 L203.2 288.8 L247.4 287.9 L263.3 288.8 L271.1 289.9 L277.4 291.5 L278.3 291.7 L286.4 294.0 L294.8 295.1 L305.9 296.1 L312.4 296.3" stroke-width="1.5"/>
+<path class="via" d="M310.0 329.4 L372.9 334.8 L377.8 335.2" stroke-width="1.5"/>
+<path class="via" d="M532.9 363.6 L537.4 363.7 L538.7 363.7 L596.6 365.6 L598.7 365.6 L599.4 365.7 L602.4 365.8 L605.3 365.8" stroke-width="1.5"/>
+<path class="viaf" d="M467.8 164.6 L465.8 164.5 L453.9 163.4 L437.8 161.9 L415.3 159.8 L407.6 159.1" stroke-width="3.6"/>
+<path class="viaf" d="M392.2 -24.2 L392.1 -19.7 L391.8 3.8 L391.6 27.5 L392.0 33.9 L392.4 38.8 L392.9 44.7 L394.7 60.2 L398.8 89.6 L400.9 106.3 L401.1 107.3" stroke-width="3.6"/>
+<path class="viaf" d="M274.6 75.2 L272.6 67.6 L273.1 60.9 L276.3 53.6 L283.4 46.7 L298.8 37.7 L301.0 34.6 L301.5 32.3" stroke-width="3.0"/>
+<path class="viaf" d="M334.6 143.4 L358.9 148.5 L363.0 149.4 L364.0 149.6 L364.6 149.7 L401.6 157.8 L407.6 159.1" stroke-width="3.0"/>
+<path class="via" d="M258.2 386.6 L257.5 390.7 L256.8 394.6 L240.9 486.2 L239.6 493.3" stroke-width="1.5"/>
+<path class="via" d="M93.2 482.9 L97.5 402.9 L97.8 398.4 L97.9 396.2" stroke-width="1.5"/>
+<path class="via" d="M196.0 377.5 L195.0 384.3 L194.9 385.4 L191.5 407.2 L180.0 482.5 L179.0 489.0" stroke-width="1.5"/>
+<path class="viaf" d="M250.1 244.8 L224.6 243.4 L220.1 243.2 L199.4 242.3 L178.2 241.9 L114.4 240.6 L93.9 240.4" stroke-width="3.0"/>
+<path class="viaf" d="M427.8 254.7 L408.0 254.7 L395.6 251.9" stroke-width="3.0"/>
+<path class="via" d="M177.6 288.7 L178.0 285.0 L178.2 241.9" stroke-width="1.5"/>
+<path class="via" d="M100.1 300.9 L99.3 378.7 L99.3 381.7 L99.4 390.0" stroke-width="1.5"/>
+<path class="via" d="M473.8 94.1 L474.5 20.5 L474.5 16.2 L474.1 5.6" stroke-width="1.5"/>
+<path class="via" d="M493.6 95.4 L473.8 94.1 L404.6 90.0 L398.8 89.6" stroke-width="1.5"/>
+<path class="via" d="M334.6 143.4 L335.9 148.7 L338.3 153.2 L360.2 181.8 L361.6 184.8 L362.4 187.9 L362.8 192.0 L361.2 250.7" stroke-width="1.5"/>
+<path class="viaf" d="M476.8 174.6 L475.4 171.2 L473.4 168.9 L472.0 167.5 L470.0 166.0 L467.8 164.6" stroke-width="3.6"/>
+<path class="via" d="M225.7 44.8 L225.7 57.1 L225.9 91.5 L226.1 108.2 L226.2 124.9 L226.1 130.1 L225.8 159.0 L225.1 212.5 L224.6 243.4" stroke-width="2.4"/>
+<path class="via" d="M15.9 173.1 L48.6 172.7 L65.1 172.4 L84.3 173.5 L112.4 177.4" stroke-width="1.5"/>
+<path class="via" d="M226.2 124.9 L243.5 122.6 L264.0 119.3 L280.7 116.3 L289.8 113.2 L297.3 109.9 L301.8 106.8" stroke-width="1.5"/>
+<path class="via" d="M220.1 91.6 L138.7 93.0 L134.5 94.5 L131.3 96.9 L128.9 102.1 L127.6 113.5 L127.2 118.4 L127.9 122.1 L130.1 124.9 L133.1 125.7 L138.5 126.2 L144.8 125.5 L151.1 124.7 L219.1 109.7" stroke-width="1.5"/>
+<path class="via" d="M455.2 288.8 L431.8 288.1 L427.7 287.9 L415.9 287.6 L400.8 287.1 L388.8 286.7" stroke-width="1.5"/>
+<path class="via" d="M452.2 362.0 L445.4 361.8 L441.3 361.6 L434.1 361.4 L417.2 360.9 L402.7 360.5 L386.0 359.9" stroke-width="1.5"/>
+<path class="via" d="M305.8 112.0 L318.2 95.8 L319.2 94.5 L320.2 93.9 L321.5 93.8 L323.2 94.6 L341.1 105.5 L346.8 109.1 L354.7 113.5 L358.4 116.3 L360.6 120.0 L362.0 124.4 L364.6 149.7" stroke-width="1.5"/>
+<path class="via" d="M32.1 107.3 L100.6 107.5 L104.1 107.1 L106.1 106.1 L107.7 103.9 L120.4 59.5" stroke-width="1.5"/>
+<path class="via" d="M255.6 159.4 L280.8 159.5 L284.4 161.6 L287.8 163.0 L291.9 163.5 L295.8 163.0 L298.2 161.4 L300.1 159.0 L300.8 156.5 L302.4 119.8 L302.8 117.0 L303.3 115.6" stroke-width="1.2"/>
+<path class="via" d="M231.3 129.3 L280.7 121.1 L280.8 159.5" stroke-width="1.2"/>
+<path class="via" d="M101.4 139.1 L19.9 140.8" stroke-width="1.5"/>
+<path class="via" d="M451.5 217.3 L456.3 220.3 L457.2 224.2" stroke-width="2.4"/>
+<path class="via" d="M215.0 211.5 L210.0 211.0 L198.6 209.6 L186.3 207.0 L176.3 205.4" stroke-width="1.5"/>
+<path class="via" d="M457.5 215.0 L461.2 214.1 L467.5 212.1 L470.2 211.2 L472.6 209.4 L473.5 208.5 L475.5 206.2" stroke-width="2.4"/>
+<path class="via" d="M299.5 212.1 L298.3 241.5 L298.0 247.4" stroke-width="1.5"/>
+<path class="via" d="M575.7 170.2 L587.0 75.6 L591.5 36.1 L594.6 1.3" stroke-width="1.2"/>
+<path class="via" d="M559.5 18.8 L554.9 52.9 L540.2 162.3 L539.5 168.2" stroke-width="2.4"/>
+<path class="viaf" d="M457.2 224.2 L457.0 234.6" stroke-width="3.6"/>
+<path class="viaf" d="M474.8 243.9 L475.3 227.9 L475.3 223.7 L475.3 219.3" stroke-width="3.6"/>
+<path class="via" d="M451.5 217.3 L453.8 216.1 L457.5 215.0" stroke-width="2.4"/>
+<path class="via" d="M227.3 382.3 L210.0 379.5 L200.9 378.2 L196.0 377.5 L160.2 370.1 L157.0 369.8 L152.6 370.2 L147.8 371.2 L105.4 387.7 L102.8 388.7 L99.4 390.0" stroke-width="2.4"/>
+<path class="viaf" d="M455.8 275.6 L455.2 288.8" stroke-width="3.6"/>
+<path class="viaf" d="M536.9 219.8 L528.5 219.5 L498.6 218.9 L481.4 219.1 L475.3 219.3 L471.5 219.3 L465.9 219.7 L464.5 220.1 L462.2 220.8 L460.0 222.0 L457.2 224.2" stroke-width="3.0"/>
+<path class="viaf" d="M601.2 510.0 L601.6 490.1 L603.2 439.9" stroke-width="3.6"/>
+<path class="via" d="M531.3 428.0 L531.2 430.2 L531.1 431.4 L531.1 434.0 L531.0 437.6" stroke-width="2.4"/>
+<path class="via" d="M534.5 291.1 L534.4 296.4 L533.1 349.6" stroke-width="2.4"/>
+<path class="viaf" d="M466.5 491.1 L467.3 465.5 L468.0 444.7 L468.2 436.1" stroke-width="3.6"/>
+<path class="via" d="M539.5 168.2 L537.8 174.1 L537.1 205.7 L536.9 213.8 L536.9 219.8" stroke-width="2.4"/>
+<path class="viaf" d="M395.6 251.9 L393.5 260.5 L390.1 280.2 L388.8 286.7" stroke-width="3.6"/>
+<path class="via" d="M603.2 439.9 L597.0 439.7 L595.3 439.7 L538.0 437.8 L531.0 437.6" stroke-width="2.4"/>
+<path class="via" d="M531.0 437.6 L530.7 443.3 L530.6 448.7" stroke-width="2.4"/>
+<path class="via" d="M360.0 422.1 L367.5 423.5 L391.6 428.2 L435.3 436.7 L442.7 438.1" stroke-width="2.4"/>
+<path class="via" d="M532.9 363.6 L527.5 363.4 L525.3 363.4" stroke-width="1.5"/>
+<path class="via" d="M532.0 397.6 L531.9 400.8 L531.7 407.9 L531.5 415.8 L531.3 428.0" stroke-width="2.4"/>
+<path class="viaf" d="M611.2 172.1 L606.2 171.8 L575.7 170.2 L545.8 168.5 L539.5 168.2 L533.3 167.9 L501.6 166.0 L487.8 165.2" stroke-width="3.6"/>
+<path class="viaf" d="M457.5 215.0 L457.1 220.1 L457.2 224.2" stroke-width="3.6"/>
+<path class="via" d="M306.3 247.8 L306.5 242.1 L307.6 217.6 L308.0 213.8 L308.8 212.2 L309.9 211.2 L311.6 210.7 L318.0 210.5" stroke-width="1.5"/>
+<path class="via" d="M483.7 400.2 L428.6 399.4" stroke-width="1.2"/>
+<path class="viaf" d="M456.5 256.6 L451.3 258.4 L448.0 258.9 L427.8 254.7" stroke-width="3.0"/>
+<path class="viaf" d="M473.4 289.4 L474.5 261.3" stroke-width="3.6"/>
+<path class="viaf" d="M475.3 219.3 L475.4 214.1 L475.5 206.2 L476.8 174.6" stroke-width="3.6"/>
+<path class="viaf" d="M474.5 261.3 L474.8 249.8 L474.8 243.9" stroke-width="3.6"/>
+<path class="via" d="M402.9 216.1 L432.1 216.9 L441.5 217.2 L451.5 217.3" stroke-width="2.4"/>
+<path class="viaf" d="M305.8 112.0 L301.8 106.8 L288.3 90.9 L274.6 75.2" stroke-width="3.0"/>
+<path class="via" d="M483.7 400.2 L506.7 400.8 L516.6 400.9 L522.9 401.0 L528.9 401.0" stroke-width="1.2"/>
+<path class="via" d="M501.8 362.8 L479.8 362.2 L471.3 362.0" stroke-width="1.5"/>
+<path class="via" d="M519.6 363.2 L512.3 363.0" stroke-width="1.5"/>
+<path class="via" d="M525.3 363.4 L519.6 363.2" stroke-width="1.5"/>
+<path class="via" d="M250.1 244.8 L250.6 210.8" stroke-width="1.5"/>
+<path class="via" d="M309.3 344.2 L257.8 341.6" stroke-width="1.5"/>
+<path class="via" d="M136.6 175.3 L176.8 168.2 L195.7 164.8 L225.8 159.0" stroke-width="1.5"/>
+<path class="via" d="M112.4 177.4 L136.6 175.3" stroke-width="1.5"/>
+<path class="viaf" d="M468.2 436.1 L468.5 430.5 L469.2 414.1" stroke-width="3.6"/>
+<path class="viaf" d="M452.2 362.0 L452.1 367.2 L451.7 383.1" stroke-width="3.6"/>
+<path class="viaf" d="M465.8 164.5 L462.7 166.6 L459.9 169.0 L458.7 170.5 L457.8 173.0 L457.6 179.4 L457.5 197.1 L457.4 205.2 L457.3 210.5 L457.5 215.0" stroke-width="3.6"/>
+<path class="viaf" d="M471.3 362.0 L471.9 347.6 L472.3 338.9 L472.8 313.0 L473.4 289.4" stroke-width="3.6"/>
+<path class="viaf" d="M451.7 383.1 L451.5 394.0 L451.0 414.2" stroke-width="3.6"/>
+<path class="viaf" d="M469.2 414.1 L469.5 405.1 L469.8 399.0 L470.5 382.8" stroke-width="3.6"/>
+<path class="viaf" d="M451.0 414.2 L450.7 430.6 L450.5 439.5" stroke-width="3.6"/>
+<path class="viaf" d="M487.8 165.2 L475.0 164.8 L467.8 164.6" stroke-width="3.6"/>
+<path class="viaf" d="M360.0 422.1 L360.1 425.6 L360.2 429.3 L361.9 482.4" stroke-width="3.6"/>
+<path class="viaf" d="M457.0 234.6 L456.5 256.6" stroke-width="3.6"/>
+<path class="viaf" d="M534.5 291.1 L539.5 291.2 L591.7 292.8 L599.2 292.9 L602.9 292.9 L607.2 293.1" stroke-width="3.0"/>
+<path class="viaf" d="M608.7 221.6 L603.9 221.5 L542.3 219.9 L536.9 219.8" stroke-width="3.0"/>
+<path class="via" d="M536.9 219.8 L536.7 224.0 L535.6 260.5 L534.7 286.6 L534.5 291.1" stroke-width="2.4"/>
+<path class="via" d="M305.5 405.3 L305.3 407.5 L306.3 421.3 L306.9 465.6 L307.1 478.6 L307.3 496.6" stroke-width="1.5"/>
+<path class="via" d="M508.2 259.7 L530.8 260.3" stroke-width="1.2"/>
+<path class="via" d="M360.6 411.0 L356.1 411.4 L349.4 411.3 L309.3 401.2" stroke-width="2.4"/>
+<path class="via" d="M308.5 404.3 L354.4 419.2 L360.1 425.6" stroke-width="2.4"/>
+<path class="via" d="M398.4 106.8 L395.1 106.2 L360.2 100.0 L350.6 97.1 L344.6 93.9 L325.9 83.9 L332.3 68.8" stroke-width="1.2"/>
+<path class="via" d="M344.6 93.9 L343.9 73.2" stroke-width="1.2"/>
+<path class="viaf" d="M334.6 143.4 L328.6 139.0 L305.8 112.0" stroke-width="3.0"/>
+<path class="via" d="M97.9 396.2 L102.8 388.7" stroke-width="1.5"/>
+<path class="via" d="M97.9 396.2 L91.3 393.1" stroke-width="1.5"/>
+<path class="viaf" d="M402.9 216.1 L397.4 242.9 L395.6 251.9" stroke-width="3.6"/>
+<path class="viaf" d="M407.6 159.1 L407.8 160.0 L408.5 164.4 L409.4 169.1 L409.8 172.8 L409.8 176.5" stroke-width="3.6"/>
+<path class="viaf" d="M470.5 382.8 L470.7 377.1 L471.0 369.9 L471.0 368.5 L471.3 362.0" stroke-width="3.6"/>
+<path class="via" d="M512.3 363.0 L501.8 362.8" stroke-width="1.5"/>
+<path class="viaf" d="M453.8 322.6 L452.4 357.4 L452.2 362.0" stroke-width="3.6"/>
+<path class="viaf" d="M409.8 176.5 L409.2 183.3 L408.0 189.7 L402.9 216.1" stroke-width="3.6"/>
+<path class="via" d="M401.1 107.3 L398.4 106.8" stroke-width="1.2"/>
+<path class="viaf" d="M450.5 439.5 L450.4 444.5" stroke-width="3.6"/>
+<path class="via" d="M442.7 438.1 L450.5 439.5" stroke-width="2.4"/>
+<path class="via" d="M303.3 115.6 L303.8 114.4 L305.8 112.0" stroke-width="1.2"/>
+<path class="via" d="M226.1 130.1 L231.3 129.3" stroke-width="1.2"/>
+<path class="via" d="M530.8 260.3 L535.6 260.5" stroke-width="1.2"/>
+<path class="via" d="M219.1 109.7 L226.1 108.2" stroke-width="1.5"/>
+<path class="via" d="M225.1 212.5 L215.0 211.5" stroke-width="1.5"/>
+<path class="via" d="M225.9 91.5 L220.1 91.6" stroke-width="1.5"/>
+<path class="viaf" d="M372.7 359.2 L362.0 405.2 L360.6 411.0" stroke-width="3.6"/>
+<path class="viaf" d="M360.6 411.0 L360.4 414.2 L360.3 416.1 L360.0 422.1" stroke-width="3.6"/>
+<path class="via" d="M386.0 359.9 L379.7 359.7 L372.7 359.2" stroke-width="1.5"/>
+<path class="viaf" d="M456.5 256.6 L455.8 275.6" stroke-width="3.6"/>
+<path class="viaf" d="M388.8 286.7 L377.8 335.2 L374.1 352.5 L372.7 359.2" stroke-width="3.6"/>
+<path class="viaf" d="M455.2 288.8 L453.8 322.6" stroke-width="3.6"/>
+<path class="viaf" d="M603.2 439.9 L603.4 431.2 L605.2 371.7 L605.2 370.7 L605.3 365.8" stroke-width="3.6"/>
+<path class="viaf" d="M401.1 107.3 L403.4 125.8 L404.5 134.5 L406.9 153.6 L407.6 159.1" stroke-width="3.6"/>
+<path class="viaf" d="M298.0 247.4 L250.1 244.8" stroke-width="3.0"/>
+<path class="viaf" d="M306.3 247.8 L303.2 247.7 L298.0 247.4" stroke-width="3.0"/>
+<path class="viaf" d="M395.6 251.9 L389.1 251.7 L375.7 251.2 L361.2 250.7 L314.0 248.2 L306.3 247.8" stroke-width="3.0"/>
+<path class="viaf" d="M93.9 240.4 L76.4 240.2 L58.7 240.3" stroke-width="3.0"/>
+<path class="via" d="M99.4 390.0 L91.3 393.1" stroke-width="2.4"/>
+<path class="via" d="M91.3 393.1 L89.7 393.7 L71.5 400.6 L69.8 401.2 L65.6 402.8 L63.2 403.7 L44.4 410.8 L36.2 413.9" stroke-width="2.4"/>
+<path class="via" d="M533.1 349.6 L533.0 356.1 L532.9 363.6" stroke-width="2.4"/>
+<path class="via" d="M532.9 363.6 L532.7 369.6 L532.0 397.6" stroke-width="2.4"/>
+<path class="via" d="M303.0 403.4 L303.6 404.3 L304.4 405.0 L305.5 405.3 L307.6 405.0 L308.5 404.3 L309.1 403.4 L309.4 402.3 L309.3 401.2 L308.8 400.2 L308.1 399.4 L307.1 398.9 L306.0 398.7 L304.9 399.0 L304.2 399.3" stroke-width="2.4"/>
+<path class="via" d="M227.3 382.3 L251.4 389.0 L257.5 390.7 L299.0 402.2 L303.0 403.4" stroke-width="2.4"/>
+<path class="via" d="M304.2 399.3 L299.4 398.0 L258.2 386.6 L252.7 385.3 L235.7 383.0 L227.3 382.3" stroke-width="2.4"/>
+<path class="via" d="M304.2 399.3 L303.2 400.3 L302.8 401.3 L302.8 402.3 L303.0 403.4" stroke-width="2.4"/>
+<path class="viaf" d="M427.8 254.7 L404.2 249.9 L395.6 251.9" stroke-width="3.0"/>
+<path class="capa" d="M451.4 397.1 L451.5 394.1 L451.7 383.1 L452.1 367.2 L452.2 365.8 L452.2 361.9 L452.4 357.4 L452.7 350.7 L454.3 311.2 L455.2 288.8 L455.8 275.6 L456.5 256.6 L456.9 234.6 L457.1 224.2 L457.1 220.1 L457.5 215.0 L457.3 210.6 L457.4 205.2 L457.6 197.1 L457.6 179.4 L457.8 173.0 L458.7 170.6 L455.5 168.3 L453.9 163.4 L437.8 161.9 L415.3 159.8 L407.6 159.1 L401.7 157.8 L364.6 149.7 L364.0 149.6 L363.0 149.4 L358.9 148.5 L334.6 143.4 L328.6 139.0 L305.7 112.0 L301.8 106.8 L297.3 109.9 L289.8 113.2 L280.7 116.3 L264.0 119.3 L243.5 122.6 L226.2 124.9 L226.1 130.1 L225.8 159.0 L195.6 164.8 L181.3 167.4"/>
+<path class="rota" d="M451.4 397.1 L451.5 394.1 L451.7 383.1 L452.1 367.2 L452.2 365.8 L452.2 361.9 L452.4 357.4 L452.7 350.7 L454.3 311.2 L455.2 288.8 L455.8 275.6 L456.5 256.6 L456.9 234.6 L457.1 224.2 L457.1 220.1 L457.5 215.0 L457.3 210.6 L457.4 205.2 L457.6 197.1 L457.6 179.4 L457.8 173.0 L458.7 170.6 L455.5 168.3 L453.9 163.4 L437.8 161.9 L415.3 159.8 L407.6 159.1 L401.7 157.8 L364.6 149.7 L364.0 149.6 L363.0 149.4 L358.9 148.5 L334.6 143.4 L328.6 139.0 L305.7 112.0 L301.8 106.8 L297.3 109.9 L289.8 113.2 L280.7 116.3 L264.0 119.3 L243.5 122.6 L226.2 124.9 L226.1 130.1 L225.8 159.0 L195.6 164.8 L181.3 167.4"/>
+<text class="rot" x="458" y="175" text-anchor="middle" paint-order="stroke" stroke="var(--card)" stroke-width="3.5">Av. Cruzeiro do Sul</text>
+<text class="rot" x="281" y="112" text-anchor="middle" paint-order="stroke" stroke="var(--card)" stroke-width="3.5">R. Benedito Xavier Pinheiro</text>
+<text class="esc" x="203" y="285" text-anchor="middle" paint-order="stroke" stroke="var(--card)" stroke-width="3.5">R. Banco das Palmas</text>
+<text class="esc" x="128" y="118" text-anchor="middle" paint-order="stroke" stroke="var(--card)" stroke-width="3.5">R. Paderewsky</text>
+<text class="esc" x="199" y="238" text-anchor="middle" paint-order="stroke" stroke="var(--card)" stroke-width="3.5">R. Alfredo Pujol</text>
+<text class="esc" x="157" y="366" text-anchor="middle" paint-order="stroke" stroke="var(--card)" stroke-width="3.5">R. Doutor César</text>
+<text class="esc" x="540" y="158" text-anchor="middle" paint-order="stroke" stroke="var(--card)" stroke-width="3.5">R. Benvinda Aparecida de Abreu Leme</text>
+<text class="esc" x="309" y="340" text-anchor="middle" paint-order="stroke" stroke="var(--card)" stroke-width="3.5">R. Salete</text>
+<text class="esc" x="362" y="181" text-anchor="middle" paint-order="stroke" stroke="var(--card)" stroke-width="3.5">R. Amaral Gama</text>
+<text class="esc" x="381" y="53" text-anchor="middle" paint-order="stroke" stroke="var(--card)" stroke-width="3.5">R. Conselheiro Moreira de Barros</text>
+<text class="esc" x="192" y="403" text-anchor="middle" paint-order="stroke" stroke="var(--card)" stroke-width="3.5">R. Fernando Sandreschi</text>
+<circle class="pin" cx="451" cy="397" r="8"/>
+<circle class="pin2" cx="181" cy="167" r="8"/>
+<text class="marc" x="439" y="401" text-anchor="end" paint-order="stroke" stroke="var(--card)" stroke-width="4">Estação Santana</text>
+<text class="marc" x="193" y="171" text-anchor="start" paint-order="stroke" stroke="var(--card)" stroke-width="4">CCB Santana</text>
+<text class="tit" x="16" y="22">Da Estação Santana até a CCB de Santana</text>
+<text class="sub" x="16" y="40">939 m a pé, cerca de 14 min</text>
+<path d="M493.8 454.0 L614.0 454.0 M493.8 450.0 L493.8 458.0 M614.0 450.0 L614.0 458.0" stroke="var(--tx3)" stroke-width="2" fill="none"/>
+<text class="esc" x="553.9" y="446.0" text-anchor="middle">200 m</text>
+<text class="esc" x="16" y="458">Dados: OpenStreetMap · rota a pé Valhalla</text>
+</svg>

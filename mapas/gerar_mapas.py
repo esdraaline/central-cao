@@ -35,6 +35,7 @@ import io
 import json
 import math
 import os
+import re
 import sys
 import time
 import urllib.parse
@@ -49,7 +50,7 @@ UA = {"User-Agent": "central-cao-guia/1.0 (uso pessoal, mapas do guia do CAO)"}
 ORIGEM = (-23.53437, -46.64168)
 
 # Prende a geocodificacao no centro de Sao Paulo (ver armadilha 2).
-CAIXA_SP = "-46.70,-23.50,-46.56,-23.58"
+CAIXA_SP = "-46.78,-23.42,-46.48,-23.68"   # cobre a capital, longe de outra cidade
 
 ESPELHOS_OVERPASS = [
     "https://overpass.kumi.systems/api/interpreter",
@@ -57,20 +58,30 @@ ESPELHOS_OVERPASS = [
     "https://overpass.private.coffee/api/interpreter",
 ]
 
-# (arquivo, rotulo no mapa, texto da busca, grupo de malha, titulo)
+# (arquivo, rotulo do destino, busca do destino, grupo de malha, titulo,
+#  origem: None sai do CAES, ou um texto de busca que sera geocodificado,
+#  rotulo da origem)
+# A origem alternativa serve para os trajetos que comecam numa estacao de
+# metro, e nao no CAES: andar 4,5 km ate a CCB do Caninde nao e trajeto real.
 DESTINOS = [
     ("estacao-da-luz", "Luz", "Estação da Luz, Luz, São Paulo",
-     "perto", "Do CAES até a Estação da Luz"),
+     "perto", "Do CAES até a Estação da Luz", None, "CAES"),
     ("santa-ifigenia", "Santa Ifigênia", "Rua Santa Ifigênia, 300, São Paulo",
-     "perto", "Do CAES até a Rua Santa Ifigênia"),
+     "perto", "Do CAES até a Rua Santa Ifigênia", None, "CAES"),
     ("santa-cecilia", "Santa Cecília", "Estação Santa Cecília, São Paulo",
-     "perto", "Do CAES até a Estação Santa Cecília"),
+     "perto", "Do CAES até a Estação Santa Cecília", None, "CAES"),
     ("ccb-bom-retiro", "CCB Bom Retiro", "Rua Anhaia, 613, Bom Retiro, São Paulo",
-     "perto", "Do CAES até a CCB do Bom Retiro"),
+     "perto", "Do CAES até a CCB do Bom Retiro", None, "CAES"),
     ("25-de-marco", "25 de Março", "Rua 25 de Março, Sé, São Paulo",
-     "marco", "Do CAES até a 25 de Março"),
+     "marco", "Do CAES até a 25 de Março", None, "CAES"),
     ("feira-madrugada", "Feira", "Rua Oriente, 500, Brás, São Paulo",
-     "feira", "Do CAES até a Feira da Madrugada"),
+     "feira", "Do CAES até a Feira da Madrugada", None, "CAES"),
+    ("ccb-santana", "CCB Santana", "Rua Daniel Rossi, 194, São Paulo",
+     "ccbnorte", "Da Estação Santana até a CCB de Santana",
+     "Estação Santana, São Paulo", "Estação Santana"),
+    ("ccb-barra-funda", "CCB Barra Funda", "Rua Brigadeiro Galvão, 683, São Paulo",
+     "ccboeste", "Da Estação Marechal Deodoro até a CCB da Barra Funda",
+     "Estação Marechal Deodoro, São Paulo", "Est. Mal. Deodoro"),
 ]
 
 # Caixa pequena leva rua residencial; as grandes so via principal, senao a
@@ -80,6 +91,10 @@ GRUPOS = {
               "living_street|pedestrian"),
     "marco": "motorway|trunk|primary|secondary|tertiary|residential|pedestrian",
     "feira": "motorway|trunk|primary|secondary|tertiary",
+    "ccbnorte": ("motorway|trunk|primary|secondary|tertiary|residential|unclassified|"
+                 "living_street|pedestrian"),
+    "ccboeste": ("motorway|trunk|primary|secondary|tertiary|residential|unclassified|"
+                 "living_street|pedestrian"),
 }
 
 L, A = 640.0, 470.0          # tela do svg
@@ -114,14 +129,24 @@ def _busca(url, tempo=60):
 
 
 def geocodifica(consulta):
-    """Nominatim, preso a CAIXA_SP para nao cair em outra cidade."""
-    url = "https://nominatim.openstreetmap.org/search?" + urllib.parse.urlencode({
-        "q": consulta, "format": "json", "limit": 1,
-        "viewbox": CAIXA_SP, "bounded": 1})
-    d = _busca(url, 40)
-    if not d:
-        raise RuntimeError("nao geocodificou: %s" % consulta)
-    return float(d[0]["lat"]), float(d[0]["lon"]), d[0]["display_name"][:60]
+    """Nominatim, preso a CAIXA_SP para nao cair em outra cidade.
+
+    Se o numero da casa nao existir na base, tenta de novo so com a rua:
+    cai no meio dela, o que para desenho de trajeto e aceitavel.
+    """
+    tentativas = [consulta]
+    sem_numero = re.sub(r",\s*\d+\s*,", ",", consulta, count=1)
+    if sem_numero != consulta:
+        tentativas.append(sem_numero)
+    for q in tentativas:
+        url = "https://nominatim.openstreetmap.org/search?" + urllib.parse.urlencode({
+            "q": q, "format": "json", "limit": 1,
+            "viewbox": CAIXA_SP, "bounded": 1})
+        d = _busca(url, 40)
+        if d:
+            return float(d[0]["lat"]), float(d[0]["lon"]), d[0]["display_name"][:60]
+        time.sleep(1.2)
+    raise RuntimeError("nao geocodificou: %s" % consulta)
 
 
 def _decodifica(s, precisao=1e6):
@@ -144,6 +169,17 @@ def _decodifica(s, precisao=1e6):
                 lon += delta
         pontos.append([lon / precisao, lat / precisao])
     return pontos
+
+
+def resolve_origem(org):
+    """None = CAES. Texto = geocodifica (mais fiel que eu digitar coordenada)."""
+    if org is None:
+        return ORIGEM
+    if isinstance(org, str):
+        lat, lon, _ = geocodifica(org)
+        time.sleep(1.2)
+        return (lat, lon)
+    return org
 
 
 def rota_a_pe(a, b):
@@ -239,8 +275,8 @@ def _traco(pts, proj):
                     for i, p in enumerate(pts))
 
 
-def desenha(arquivo, rotulo, titulo, rota, vias):
-    cx = _caixa_da_rota(rota["geo"])
+def desenha(arquivo, rotulo, titulo, rota, vias, org, rot_org):
+    cx = _caixa_da_rota(rota["geo"] + [[org[1], org[0]]])
     proj, k = _projetor(cx)
     em_vista = [v for v in vias if _dentro(v["pts"], cx)]
 
@@ -296,11 +332,11 @@ def desenha(arquivo, rotulo, titulo, rota, vias):
             break
         rotula(nome, v, "esc")
 
-    ox, oy = proj(ORIGEM[1], ORIGEM[0])
+    ox, oy = proj(org[1], org[0])
     dx_, dy_ = proj(rota["lon"], rota["lat"])
     out.append('<circle class="pin" cx="%.0f" cy="%.0f" r="8"/>' % (ox, oy))
     out.append('<circle class="pin2" cx="%.0f" cy="%.0f" r="8"/>' % (dx_, dy_))
-    for x, y, texto in ((ox, oy, "CAES"), (dx_, dy_, rotulo)):
+    for x, y, texto in ((ox, oy, rot_org), (dx_, dy_, rotulo)):
         anc = "start" if x < L / 2 else "end"
         out.append('<text class="marc" x="%.0f" y="%.0f" text-anchor="%s" '
                    'paint-order="stroke" stroke="var(--card)" stroke-width="4">%s</text>'
@@ -486,10 +522,12 @@ def main():
     rotas = None if refazer else cache_le("rotas.json")
     if rotas is None:
         rotas = {}
-        for arq, _rot, consulta, _g, _t in DESTINOS:
+        for arq, _rot, consulta, _g, _t, org, _ro in DESTINOS:
+            partida = resolve_origem(org)
             lat, lon, achou = geocodifica(consulta)
             time.sleep(1.2)                      # Nominatim pede 1 req/s
-            r = rota_a_pe(ORIGEM, (lat, lon))
+            r = rota_a_pe(partida, (lat, lon))
+            r["org"] = list(partida)
             r.update({"lat": lat, "lon": lon, "achou": achou})
             rotas[arq] = r
             print("  rota  %-16s %5d m  %2d min  |  %s" % (arq, r["m"], r["min"], achou[:38]))
@@ -501,11 +539,13 @@ def main():
         nome = "vias_%s.json" % grupo
         v = None if refazer else cache_le(nome)
         if v is None:
-            lats = [ORIGEM[0]]
-            lons = [ORIGEM[1]]
-            for arq, _r, _c, g, _t in DESTINOS:
+            lats, lons = [], []
+            for arq, _r, _c, g, _t, org, _ro in DESTINOS:
                 if g != grupo:
                     continue
+                o = rotas[arq].get("org", ORIGEM)
+                lats.append(o[0])
+                lons.append(o[1])
                 for lon, lat in rotas[arq]["geo"]:
                     lats.append(lat)
                     lons.append(lon)
@@ -517,8 +557,9 @@ def main():
             time.sleep(3)
         malhas[grupo] = v
 
-    for arq, rotulo, _c, grupo, titulo in DESTINOS:
-        desenha(arq, rotulo, titulo, rotas[arq], malhas[grupo])
+    for arq, rotulo, _c, grupo, titulo, _org, rot_org in DESTINOS:
+        r = rotas[arq]
+        desenha(arq, rotulo, titulo, r, malhas[grupo], r.get("org", ORIGEM), rot_org)
         print("  mapa  %s.svg" % arq)
 
     # mapa do abastecimento (padaria, mercado, feira, acougue)

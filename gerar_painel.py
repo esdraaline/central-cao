@@ -409,6 +409,111 @@ def extrai_tarefas(texto):
     return tarefas
 
 
+def extrai_qts(texto):
+    """Le o quadro da semana no GRADE.md e devolve o que o painel precisa.
+
+    O painel monta sozinho o cartao "hoje e quarta, voce tem isso". Quem sabe a
+    data de quem esta olhando e o navegador, nao a geracao, entao o que sai
+    daqui e so o dado: os dias, os blocos e os avisos. A conta de "hoje" e a de
+    "que bloco esta correndo agora" ficam no JS_GUIA.
+
+    A fonte e o GRADE.md, e nao um arquivo de dados separado, para nao existir
+    duas verdades sobre a mesma semana. O formato lido e o que ja estava
+    escrito la, so com a data completa no dia:
+
+        **Quarta-feira 19/08/2026**
+
+        | Bloco | Disciplina | Docente |
+        |---|---|---|
+        | 3 — 13h00 às 14h30 | D28 Policiamento Comunitario | Cel PM Barreto |
+
+        **Aviso 19/08/2026:** embarque as 07h50 ...
+
+    Dia declarado sem tabela e dia livre (a sexta da semana 1), o que e
+    diferente de dia ausente: ausente quer dizer "o QTS dessa semana ainda nao
+    entrou aqui", e o painel avisa isso em vez de dizer que nao tem aula.
+    """
+    dias = {}
+    atual = None
+    em_tabela = False
+
+    DIA = re.compile(r"^\*\*(?:Segunda|Terça|Quarta|Quinta|Sexta|Sábado|Domingo)"
+                     r"(?:-feira)?\s+(\d{1,2})/(\d{1,2})/(\d{4})\*\*")
+    AVISO = re.compile(r"^\*\*Aviso\s+(\d{1,2})/(\d{1,2})/(\d{4}):\*\*\s*(.+)$")
+    LINHA = re.compile(r"^\|\s*(\d)\s*[—-]\s*(\d{1,2})h(\d{2})\s+às\s+"
+                       r"(\d{1,2})h(\d{2})\s*\|\s*(.+?)\s*\|\s*(.+?)\s*\|\s*$")
+
+    def iso(d, m, a):
+        try:
+            return date(int(a), int(m), int(d)).isoformat()
+        except ValueError:
+            return None
+
+    linhas = texto.splitlines()
+    i = -1
+    while i + 1 < len(linhas):
+        i += 1
+        linha = linhas[i]
+
+        mv = AVISO.match(linha)
+        if mv:
+            k = iso(mv.group(1), mv.group(2), mv.group(3))
+            # o aviso e um paragrafo, e paragrafo em markdown quebra em varias
+            # linhas. Sem juntar a continuacao, o painel mostrava o texto
+            # cortado no meio ("...para atividade").
+            partes = [mv.group(4)]
+            while i + 1 < len(linhas):
+                seg = linhas[i + 1]
+                if not seg.strip() or seg.lstrip()[0] in "*|#>-":
+                    break
+                partes.append(seg.strip())
+                i += 1
+            if k:
+                dias.setdefault(k, {"blocos": [], "aviso": ""})
+                # tira negrito/italico/codigo: o aviso e exibido como texto puro
+                txt = re.sub(r"[*`_]", "", " ".join(partes))
+                dias[k]["aviso"] = re.sub(r"\s{2,}", " ", txt).strip()
+            em_tabela = False
+            continue
+
+        md = DIA.match(linha)
+        if md:
+            atual = iso(md.group(1), md.group(2), md.group(3))
+            if atual:
+                dias.setdefault(atual, {"blocos": [], "aviso": ""})
+            em_tabela = False
+            continue
+
+        ml = LINHA.match(linha)
+        if ml and atual:
+            dias[atual]["blocos"].append({
+                "n": int(ml.group(1)),
+                "ini": "%02d:%s" % (int(ml.group(2)), ml.group(3)),
+                "fim": "%02d:%s" % (int(ml.group(4)), ml.group(5)),
+                "disc": re.sub(r"[*`]", "", ml.group(6)).strip(),
+                "doc": re.sub(r"[*`]", "", ml.group(7)).strip(),
+            })
+            em_tabela = True
+            continue
+
+        # so a tabela imediatamente abaixo do dia conta. Depois que ela acaba,
+        # o dia deixa de valer, senao a tabela das 31 disciplinas (que vem
+        # muito depois) seria lida como se fosse do ultimo dia declarado.
+        if em_tabela and not linha.lstrip().startswith("|"):
+            atual = None
+            em_tabela = False
+
+    for k in dias:
+        dias[k]["blocos"].sort(key=lambda b: b["n"])
+
+    pel = ""
+    mp = re.search(r"pelotão\s+\"?([A-E])\"?", texto)
+    if mp:
+        pel = mp.group(1)
+
+    return {"pelotao": pel, "dias": dias}
+
+
 def escapa_js(obj):
     """Serializa para JSON seguro dentro de uma tag <script>."""
     import json
@@ -546,6 +651,31 @@ main{max-width:1080px;margin:0 auto;padding:24px 20px 64px}
 .guia-lista li .pt{width:8px;height:8px;border-radius:50%;flex:none;margin-top:7px;background:var(--tx3)}
 .guia-lista li .qd{color:var(--tx3);font-size:12.5px;white-space:nowrap;margin-left:auto;
   padding-left:8px;font-variant-numeric:tabular-nums}
+/* quadro do dia: as aulas de hoje, lidas do QTS (GRADE.md). Fica entre o
+   topo e as tarefas porque a pergunta "onde eu tenho que estar agora" vem
+   antes de "o que eu tenho que fazer". */
+.guia-aula{padding:15px 22px 0}
+.qts-aviso{display:flex;gap:9px;align-items:flex-start;background:var(--al-bg);
+  border:1px solid var(--al);border-radius:9px;padding:9px 12px;margin-bottom:11px;
+  font-size:13.5px;color:var(--tx);line-height:1.4}
+.qts-aviso b{color:var(--al);flex:none}
+.qts-lista{list-style:none;margin:0}
+.qts-lista li{display:flex;gap:12px;align-items:center;padding:9px 12px;margin:6px 0;
+  border:1px solid var(--bd);border-left-width:3px;border-radius:9px;background:var(--card2)}
+.qts-lista li .hr{font-size:13px;font-weight:700;color:var(--tx2);flex:none;width:46px;
+  font-variant-numeric:tabular-nums;line-height:1.3}
+.qts-lista li .hr i{display:block;font-style:normal;font-size:11px;font-weight:500;color:var(--tx3)}
+.qts-lista li .ds{min-width:0;flex:1}
+.qts-lista li .ds b{display:block;font-size:14.5px;font-weight:650;color:var(--tx);line-height:1.3}
+.qts-lista li .ds i{font-style:normal;font-size:12.5px;color:var(--tx2)}
+.qts-lista li .qd{font-size:12px;font-weight:700;color:var(--tx3);white-space:nowrap;
+  margin-left:auto;padding-left:8px;text-transform:uppercase;letter-spacing:.5px}
+.qts-lista li.passou{opacity:.5}
+.qts-lista li.passou .ds b{text-decoration:line-through;text-decoration-color:var(--tx3)}
+.qts-lista li.agora{border-color:var(--vm);border-left-color:var(--vm);background:var(--card)}
+.qts-lista li.agora .qd{color:var(--vm)}
+.qts-lista li.prox{border-left-color:var(--al)}
+.qts-lista li.prox .qd{color:var(--al)}
 .guia-tudoem{display:flex;gap:9px;align-items:center;color:var(--ok);font-size:14px;
   padding:13px 0 4px;font-weight:600}
 .guia-nota{font-size:13px;color:var(--tx2);margin-top:13px;padding-top:12px;
@@ -554,6 +684,8 @@ main{max-width:1080px;margin:0 auto;padding:24px 20px 64px}
 @media(max-width:560px){
   .guia-topo{padding:15px 17px}
   .guia-corpo{padding:4px 17px 16px}
+  .guia-aula{padding:13px 17px 0}
+  .qts-lista li{gap:10px;padding:8px 10px}
   .guia-conta{margin-left:0;width:100%;justify-content:flex-start}
   .guia-dia{font-size:18px}
 }
@@ -2321,12 +2453,121 @@ JS_GUIA = r"""
     });
   }
 
+  /* ---- as aulas de hoje, vindas do QTS ----
+     O dado sai do GRADE.md na geracao (extrai_qts) e chega aqui como
+     window.QTS. A conta de "que dia e hoje" e "que bloco esta correndo
+     agora" e feita no navegador, pelo mesmo motivo do resto deste
+     arquivo: o painel publicado so e regerado quando um .md muda, entao
+     qualquer hora calculada na geracao ja nasce velha.
+
+     Tres situacoes diferentes, que nao podem virar a mesma frase:
+       - dia com blocos      -> a lista
+       - dia declarado vazio -> "hoje nao tem aula", que e uma informacao
+       - dia ausente         -> "o QTS ainda nao entrou aqui", que e o
+                                painel admitindo que nao sabe            */
+  var Q=window.QTS||{dias:{}};
+
+  function chave(d){return d.getFullYear()+'-'+('0'+(d.getMonth()+1)).slice(-2)+
+                           '-'+('0'+d.getDate()).slice(-2);}
+  function min(hm){var p=String(hm).split(':');return (+p[0])*60+(+p[1]);}
+  function hhmm(hm){return String(hm).replace(':','h');}
+  function falta(m){
+    if(m<60)return 'em '+m+' min';
+    var h=Math.floor(m/60), r=m%60;
+    return 'em '+h+'h'+(r?('0'+r).slice(-2):'');
+  }
+
+  /* proximo dia com aula a partir de uma data (exclusive) */
+  function proximo(depois){
+    var ks=Object.keys(Q.dias||{}).sort(), i;
+    for(i=0;i<ks.length;i++){
+      if(ks[i]>depois && Q.dias[ks[i]].blocos && Q.dias[ks[i]].blocos.length)
+        return ks[i];
+    }
+    return null;
+  }
+
+  function rotuloDia(k){
+    var d=dt(k);
+    return SEM[d.getDay()]+' '+curto(d);
+  }
+
+  function listaBlocos(bl,agoraMin){
+    return '<ul class="qts-lista">'+bl.map(function(b,i){
+      var cls='',qd='';
+      if(agoraMin!==null){
+        if(agoraMin>=min(b.fim))cls='passou';
+        else if(agoraMin>=min(b.ini)){cls='agora';qd='agora';}
+        else{
+          /* o proximo e o primeiro que ainda nao comecou */
+          var eh=true,j;
+          for(j=0;j<i;j++)if(agoraMin<min(bl[j].ini))eh=false;
+          if(eh){cls='prox';qd=falta(min(b.ini)-agoraMin);}
+        }
+      }
+      return '<li class="'+cls+'"><span class="hr">'+hhmm(b.ini)+
+             '<i>'+hhmm(b.fim)+'</i></span><span class="ds"><b>'+esc(b.disc)+
+             '</b><i>'+esc(b.doc)+'</i></span>'+
+             (qd?'<span class="qd">'+qd+'</span>':'')+'</li>';
+    }).join('')+'</ul>';
+  }
+
+  function aulas(){
+    var alvo=el('#guia-aula');
+    if(!alvo)return;
+    var ag=new Date(), h=hoje(), k=chave(h), dia=(Q.dias||{})[k];
+    var agoraMin=ag.getHours()*60+ag.getMinutes();
+    var out='';
+
+    if(dia&&dia.blocos&&dia.blocos.length){
+      var acabou=agoraMin>=min(dia.blocos[dia.blocos.length-1].fim);
+      out+='<div class="guia-cab">'+(acabou?'Hoje, já encerrado':'Hoje no CAES')+
+           '<span class="n">'+dia.blocos.length+'</span></div>';
+      if(dia.aviso)
+        out+='<div class="qts-aviso"><b>Atenção</b><span>'+esc(dia.aviso)+'</span></div>';
+      out+=listaBlocos(dia.blocos,agoraMin);
+      if(acabou){
+        var p1=proximo(k);
+        out+='<p class="guia-nota">'+(p1?
+          'Próxima aula na '+rotuloDia(p1)+', '+hhmm(Q.dias[p1].blocos[0].ini)+
+          ', '+esc(Q.dias[p1].blocos[0].disc)+'.':
+          'O QTS não tem mais nenhum dia depois de hoje. Quando o próximo chegar, ele entra na aba Grade.')+'</p>';
+      }
+    }else if(dia){
+      out+='<div class="guia-cab">Hoje no CAES</div>'+
+           '<div class="guia-tudoem">'+(window.ICO&&ICO.check?ICO.check:'')+
+           'Hoje não tem aula no QTS.</div>';
+      var p2=proximo(k);
+      out+='<p class="guia-nota">'+(p2?
+        'Próxima aula na '+rotuloDia(p2)+', '+hhmm(Q.dias[p2].blocos[0].ini)+', '+
+        esc(Q.dias[p2].blocos[0].disc)+'.':
+        'O QTS da semana que vem ainda não entrou. Ele é lançado na aba <a href="#grade" class="lnk-aba">Grade</a>.')+'</p>';
+    }else{
+      var p3=proximo(k), ks=Object.keys(Q.dias||{}).sort();
+      out+='<div class="guia-cab">Hoje no CAES</div>';
+      if(p3){
+        out+='<p class="guia-nota">O QTS não tem nada marcado para hoje. A próxima aula é na '+
+             rotuloDia(p3)+', '+hhmm(Q.dias[p3].blocos[0].ini)+', '+
+             esc(Q.dias[p3].blocos[0].disc)+'.</p>';
+      }else{
+        out+='<p class="guia-nota"><b>O QTS desta semana ainda não entrou no painel.</b> '+
+             (ks.length?'O último que entrou foi o de '+curto(dt(ks[0]))+' a '+
+              curto(dt(ks[ks.length-1]))+'. ':'')+
+             'Assim que o novo chegar, ele é lançado na aba <a href="#grade" class="lnk-aba">Grade</a> e este cartão volta sozinho.</p>';
+      }
+    }
+    alvo.innerHTML=out;
+  }
+
   /* marco fica exposto para conferir o texto de cada dia da semana sem
      precisar esperar o dia chegar: GUIA.marco(new Date(2026,7,19))       */
-  window.GUIA={topo:topo,tarefas:tarefas,listas:listas,marco:marco};
-  topo();listas();
+  window.GUIA={topo:topo,tarefas:tarefas,listas:listas,marco:marco,aulas:aulas};
+  topo();listas();aulas();
   /* vira o dia com o painel aberto (celular que fica na tela): refaz o topo */
   setInterval(topo,10*60*1000);
+  /* o cartao de aula marca "agora" e "em 25 min", entao acompanha o relogio
+     de perto: de 10 em 10 minutos a aula ja teria trocado sem o painel notar */
+  setInterval(aulas,60*1000);
 })();
 """
 
@@ -2541,6 +2782,7 @@ def build():
     # produzirem arquivos diferentes perto da meia-noite, alem de reintroduzir
     # o conflito a cada virada de dia. Toda conta de tempo e feita no navegador.
     pend, feito = conta_tarefas(docs.get("TAREFAS.md", ""))
+    qts = extrai_qts(docs.get("GRADE.md", ""))
 
     # navegacao
     nav = []
@@ -2565,6 +2807,7 @@ def build():
             '<h2 class="guia-dia" id="guia-dia">Carregando o dia...</h2>'
             '<p class="guia-fase" id="guia-fase"></p></div>'
             '<div class="guia-conta" id="guia-conta"></div></div>'
+            '<div class="guia-aula" id="guia-aula"></div>'
             '<div class="guia-corpo" id="guia-corpo"></div>'
             '</section>']
 
@@ -2652,6 +2895,7 @@ var BASE=%(base)s;
 var TAR_CAB=%(tarcab)s;
 var ICO=%(ico)s;
 window.CURSO=%(curso)s;
+window.QTS=%(qts)s;
 window.SUPA_CFG=%(supa)s;
 %(js)s
 %(js_guia)s
@@ -2668,6 +2912,7 @@ window.SUPA_CFG=%(supa)s;
         "curso": escapa_js({"inicio": CURSO_INICIO.isoformat(),
                             "fim": CURSO_FIM.isoformat(),
                             "viagem": PRIMEIRA_VIAGEM.isoformat()}),
+        "qts": escapa_js(qts),
         "js_supabase": JS_SUPABASE,
         "nav": "".join(nav),
         "paineis": "\n".join(paineis),

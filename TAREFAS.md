@@ -15,7 +15,7 @@
 ### Segunda, 17/08 (é o dia de resolver o fardamento)
 - [ ] Decidir opção de desconto SIPA: Alojamento (R$ 30,35) ou Vestiário (R$ 21,52), e cessar o equivalente na OPM de origem [18/08/2026] #admin
 - [ ] Comprar a camisa social cinza-claro do S-1 e a boina de reposição, que faltaram na ida à ConfecBell [19/08/2026] #pessoal
-- [ ] Mandar o QTS do dia seguinte assim que sair, para eu criar pasta e arquivo das disciplinas novas [19/08/2026] #curso
+- [ ] Mandar o QTS assim que sair, para eu lançar na aba Grade e o painel montar o dia sozinho [19/08/2026] #curso
 - [ ] Experimentar a farda social e ver os ajustes de caimento, depois de comprar a camisa social [20/08/2026] #pessoal
 - [ ] Atualizar STATUS.md e PRAZOS.md com a situação real do curso (módulo, disciplinas, entregas) [20/08/2026] #curso
 - [ ] Procurar o Cap Gobbo (Seção de Pesquisa) sobre a transformação do PP em dissertação [21/08/2026] #dissertacao

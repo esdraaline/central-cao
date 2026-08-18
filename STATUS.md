@@ -26,6 +26,20 @@ sendo feito a conta-gotas desde 17/08.
   **Cel Barreto** (Policiamento Comunitário) e **Cel Fernandes** (Relações Sociais e
   Institucionais no Brasil).
 
+### O painel passou a montar o dia sozinho
+
+A home agora abre com **"hoje no CAES"**: os blocos do dia, com a aula que está correndo
+marcada como *agora* e a próxima com *em 25 min*. Sai do QTS lançado na aba
+[Grade](GRADE.md), e a conta é feita no navegador, com a data de quem está olhando, então
+não envelhece entre uma geração e outra.
+
+Três respostas diferentes, de propósito: dia com aula mostra a lista; dia declarado sem aula
+diz que não tem; e dia que o QTS ainda não cobriu **avisa que não sabe**, em vez de dizer que
+está livre.
+
+**O que isso pede de você:** mandar o QTS assim que ele sair. O resto é trocar a seção da
+semana no GRADE.md e rodar o gerador.
+
 **Próximo passo:** procurar o Cap Gobbo (Seção de Pesquisa) com as cinco perguntas das regras,
 que estão em [ESTUDOS.md](ESTUDOS.md). Ele dá aula em duas disciplinas, D05 e D20.
 

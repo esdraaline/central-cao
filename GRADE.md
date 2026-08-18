@@ -54,9 +54,16 @@ nomes iguais na mesma coluna, então quem dá aula em mais de uma disciplina apa
 conforme o número de repetições. **É a mesma pessoa.** Isso importa na caça ao orientador: o
 oficial que aparece em três disciplinas está mais presente no curso do que o nome sugere.
 
-## Semana 1 — o que é meu (pelotão A)
+## Semana 1 — 17 a 21/08/2026 (pelotão A)
 
-**Segunda-feira 17/08**
+> **Estas tabelas alimentam o painel.** O cartão de abertura da home lê esta seção e monta
+> o "hoje é quarta, você tem isso" sozinho, no navegador. Por isso o formato é rígido:
+> o dia em negrito com a data completa (`**Quarta-feira 19/08/2026**`), a tabela com
+> `Bloco | Disciplina | Docente` e o bloco escrito como `4 — 14h45 às 16h15`. Aviso do dia
+> é um parágrafo que começa com `**Aviso 19/08/2026:**`. Quando o QTS da semana seguinte
+> chegar, é só trocar esta seção inteira: o painel acompanha.
+
+**Segunda-feira 17/08/2026**
 
 | Bloco | Disciplina | Docente |
 |---|---|---|
@@ -66,7 +73,7 @@ oficial que aparece em três disciplinas está mais presente no curso do que o n
 Os blocos 1 e 2 de segunda estão vazios para os cinco pelotões: foi a manhã de abertura do
 curso.
 
-**Terça-feira 18/08**
+**Terça-feira 18/08/2026**
 
 | Bloco | Disciplina | Docente |
 |---|---|---|
@@ -76,7 +83,7 @@ curso.
 | 4 — 14h45 às 16h15 | D07 Métodos Quantitativos de Pesquisa | Cap PM Franco |
 | 5 — 16h30 às 18h00 | D05 Fundamentos da Metodologia Científica | Maj PM Zampronio |
 
-**Quarta-feira 19/08**
+**Quarta-feira 19/08/2026**
 
 | Bloco | Disciplina | Docente |
 |---|---|---|
@@ -86,12 +93,14 @@ curso.
 | 4 — 14h45 às 16h15 | D26 Inteligência | Cap PM Maurício |
 | 5 — 16h30 às 18h00 | D08 Análise de Dados | Maj PM Hudson |
 
-**Atenção ao rodapé do QTS, em vermelho:** *"Em 190750AGO26 embarque e saída do transporte
-para atividade externa de Ed Física, pelotões A"*. **É o meu pelotão e é só o meu.** Embarque
-às **07h50 de quarta**, 25 minutos antes do horário normal, para atividade fora do CAES. Os
-blocos 1 e 2 de quarta são esse pacote (Ed Física + CAES).
+**Aviso 19/08/2026:** embarque às 07h50, 25 minutos antes do horário normal, para atividade
+externa de Ed Física.
 
-**Quinta-feira 20/08**
+Vem do rodapé em vermelho do QTS: *"Em 190750AGO26 embarque e saída do transporte para
+atividade externa de Ed Física, pelotões A"*. **É o meu pelotão e é só o meu.** Os blocos 1
+e 2 de quarta são esse pacote (Ed Física + CAES).
+
+**Quinta-feira 20/08/2026**
 
 | Bloco | Disciplina | Docente |
 |---|---|---|
@@ -101,7 +110,7 @@ blocos 1 e 2 de quarta são esse pacote (Ed Física + CAES).
 Quinta acaba às 11h30 e é o dia de voltar para Guararapes, como já previa
 [ROTINA.md](ROTINA.md).
 
-**Sexta-feira 21/08**: sem nenhuma marcação no QTS, para nenhum pelotão.
+**Sexta-feira 21/08/2026**: sem nenhuma marcação no QTS, para nenhum pelotão.
 
 ## As 31 disciplinas
 
@@ -213,6 +222,15 @@ de caçá-lo na seção.
 - **Quais têm prova e quais têm trabalho.** Nada disso está no QTS.
 - **Se a Ed. Física de quarta com embarque às 07h50 é toda semana ou foi só na semana 1.**
 
-**Regra de manutenção: todo QTS novo que chegar entra em `08_CAO_2026/00_CURSO/QTS/` e este
-documento é conferido.** Se aparecer disciplina nova, cria-se a pasta `D32_...` e a linha na
-tabela. O domingo de 30 minutos previsto em [ESTUDOS.md](ESTUDOS.md) é a hora de fazer isso.
+## Regra de manutenção, toda semana
+
+1. O QTS novo entra em `08_CAO_2026/00_CURSO/QTS/`.
+2. A seção **Semana N** acima é trocada pela da semana nova, no mesmo formato.
+3. `python gerar_painel.py` e pronto: **o cartão de abertura da home passa a montar o dia
+   sozinho**, dizendo qual aula está correndo agora e qual é a próxima.
+4. Se aparecer disciplina que não está na lista das 31, cria-se a pasta `D32_...` e a linha
+   na tabela.
+
+O domingo de 30 minutos previsto em [ESTUDOS.md](ESTUDOS.md) é a hora de fazer isso. É o
+passo que mantém o painel útil: sem QTS lançado, o cartão avisa que não sabe, em vez de
+dizer que não tem aula.

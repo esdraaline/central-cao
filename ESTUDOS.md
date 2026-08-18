@@ -171,6 +171,73 @@ e uma dissertação-modelo já em mãos. O erro clássico é tratar isso como "a
   ferramenta abandonada.
 - **O mês inteiro**: a etiqueta `#DISSERTA` trabalhando sozinha.
 
+## Orientador da dissertação — missão urgente
+
+Aberta em 18/08/2026. **O orientador deve ser, preferencialmente, instrutor do curso.**
+
+### O problema é de tempo, não de escolha
+
+A informação de que preciso chega **devagar**: o QTS sai dia a dia, então o rol completo de
+disciplinas e instrutores só fecha depois de semanas. Mas o recurso que quero **acaba
+rápido**: bom orientador é procurado, e quem chega primeiro leva.
+
+**Conclusão: não dá para esperar a lista completa.** A ordem certa é agir sobre o que já se
+sabe e deixar o resto amadurecer.
+
+### A sequência, nesta ordem
+
+**1. As regras, antes de qualquer nome** (Cap Gobbo, Seção de Pesquisa)
+
+Sem isso, escolher é chute. Perguntar:
+
+- O orientador **precisa** ser instrutor do curso, ou é só preferência?
+- **Quantos orientandos** cada um pode aceitar?
+- Existe **prazo** para definir? Qual?
+- O pedido é **formal** ou é conversa direta com o oficial?
+- Cabe **coorientador**, por exemplo um para o tema e outro para o método?
+
+Uma dessas respostas pode eliminar metade das opções, e todas são mais baratas de obter do
+que desfazer uma escolha errada.
+
+**2. A lista curta, por afinidade com o tema**
+
+Meu tema é **integração PM-Prefeituras e governança participativa**. Isso é política pública
+e articulação interinstitucional, não é operacional puro. Dos sete instrutores conhecidos até
+18/08:
+
+| Instrutor | Disciplina | Encaixe no meu tema |
+|---|---|---|
+| **Cel Lucena** | Políticas Públicas | **O mais direto.** Meu tema É política pública. E na aula 1 ele abriu com modelo reativo x pró-ativo, que é o eixo do meu argumento |
+| **Cel Elgis** | Planejamento Estratégico | **Forte.** Ele perguntou "nosso foco é polícia repressiva ou comunitária?", que é exatamente a tensão que a dissertação enfrenta |
+| Cap Franco | Métodos Quantitativos de Pesquisa | Encaixe de **método**, não de tema. Candidato natural a coorientador se o trabalho tiver survey |
+| Maj Zampronio | Fundamentos da Metodologia Científica | Idem. E é quem vai avaliar o rigor do método |
+| Cel Komata | Geopolítica | Fraco para o tema |
+| Cap Anderson | Mídia Training | Fraco |
+| Cel Massera | Gestão de Crises de Imagem | Fraco |
+
+**3. Sondar cedo, com o texto na mão**
+
+Chegar com o PP aprovado e uma pergunta objetiva vale mais que "o senhor me orientaria?".
+O PP já existe e está em `02_DISSERTACAO/02_texto/`.
+
+### Uma pista que veio da dissertação de referência
+
+A dissertação do **Cap PM José Fernando Ferrarez** (CAO/24, defendida em 2025), que está em
+`02_DISSERTACAO/01_referencias/`, nomeia quem o orientou:
+
+- **Cel PM Mario Luciano Siconeli** — orientador
+- **Ten Cel PM Ivan Cesar Belentani** e **Cap PM Valdomiro Garcia Rafael Junior** —
+  citados nos agradecimentos como quem o orientou sobre os caminhos do estudo
+
+**Por que isso importa:** são oficiais que **já orientaram no CAES e conhecem o processo**.
+O Cel Siconeli não apareceu (ainda) como instrutor da minha turma, mas vale perguntar ao Cap
+Gobbo se ele segue orientando. Orientador experiente poupa meses.
+
+### O que ainda falta
+
+O **rol completo**. Cada QTS que chega acrescenta instrutores, e a tabela acima cresce junto
+com a de disciplinas. Enquanto isso não fecha, os passos 1 e 3 já podem andar.
+
 ## O que não fazer
 
 - Pasta por aula ou documento por aula: vira lixo em um mês.

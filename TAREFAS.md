@@ -21,6 +21,15 @@
 - [ ] Atualizar STATUS.md e PRAZOS.md com a situação real do curso (módulo, disciplinas, entregas) [20/08/2026] #curso
 - [ ] Procurar o Cap Gobbo (Seção de Pesquisa) sobre a transformação do PP em dissertação [21/08/2026] #dissertacao
 
+### Rodízio da mala (toda semana, ver MALA.md)
+- [ ] Quinta de manhã, separar para levar para casa: toalha de banho, fronha e roupa suja [20/08/2026] #pessoal
+- [ ] Domingo, arrumar para a volta: 2 toalhas, fronha limpa, roupa lavada (cuecas, meias, camisetas), whey e creatina [23/08/2026] #pessoal
+
+### Orientador da dissertação — MISSÃO URGENTE
+- [ ] Perguntar ao Cap Gobbo as REGRAS da orientação: o orientador precisa ser instrutor do curso? Quantos orientandos cada um aceita? Há prazo para escolher? Como é o pedido formal? [21/08/2026] #dissertacao
+- [ ] Montar o rol completo de disciplinas e instrutores conforme os QTS forem saindo, para ter o universo de candidatos [28/08/2026] #dissertacao
+- [ ] Definir a lista curta de 3 orientadores possíveis por afinidade com o tema (integração PM-Prefeituras) e sondar o primeiro [04/09/2026] #dissertacao
+
 ### Segunda semana (viagem em 23/08)
 - [ ] Conferir whey, creatina, energético e coqueteleira, e comprar o que faltar [22/08/2026] #pessoal
 - [ ] Levar na viagem: B-1 (gandola, calça operacional, coturno), EPI (cinto, colete, bota) e os suplementos [23/08/2026] #pessoal

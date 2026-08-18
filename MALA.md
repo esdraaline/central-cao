@@ -242,6 +242,32 @@ nome vira marmita de todo mundo.
 > (Largo General Osório, 153) ficam a pé do CAES ([ROTINA.md](ROTINA.md)). Se o porta-malas
 > apertar no domingo, é o primeiro a ficar em casa.
 
+## Rodízio semanal — o que vai e volta toda semana
+
+Definido em 18/08/2026. A partir da segunda semana, a mala não é montada do zero: é um
+**rodízio**. O grosso já fica no armário do CAES e só circula o que suja.
+
+### Quinta de manhã, antes de pegar a estrada — vai para casa
+
+- [ ] Toalha de banho usada
+- [ ] Fronha usada
+- [ ] Roupa suja da semana
+
+### Domingo, na volta — traz limpo
+
+- [ ] **2 toalhas** (banho e rosto)
+- [ ] Fronha limpa
+- [ ] Roupa lavada: cuecas, meias, camisetas
+- [ ] Whey protein
+- [ ] Creatina
+
+**Por que duas toalhas na volta e uma na ida:** você leva a suja de banho e volta com duas
+limpas, o que dá folga para uma semana em que a toalha demore a secar. Vale conferir se a de
+rosto também precisa entrar no rodízio.
+
+**O que NÃO entra no rodízio** e fica no CAES: o S-1 guardado, a farda do dia a dia, o
+lençol (a não ser que queira lavar), material de limpeza e a coqueteleira.
+
 ## O que NÃO precisa levar
 - **B-2 e B-3** — o bizu citou, mas pelo R-5 o B-2 é da Corregedoria (boina azul-celeste, Art. 24) e o B-3 é de patrulha montada, com culote e botas de cavalaria (Art. 25). Para curso e missão externa o uniforme é o **B-1**.
 - **Japona** — restrita ao efetivo do TOR (Art. 124). O agasalho do P-1 é a jaqueta de passeio.

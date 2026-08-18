@@ -13,11 +13,11 @@
 - [ ] Conferir se a mesa SEI 302090130 recebeu o ofício e anotar o número do processo no celular [18/08/2026] #admin
 
 ### Segunda, 17/08 (é o dia de resolver o fardamento)
-- [ ] Mandar o QTS do dia seguinte assim que sair, para eu criar pasta e arquivo das disciplinas novas [19/08/2026] #curso
 - [ ] Comprar na ConfecBell: 2 camisas de passeio, 2 camisetas de serviço, boina e a camisa social do S-1 (gravata e as 2 calças já tenho em casa) [17/08/2026] #pessoal
 - [ ] Deixar para aplicar e combinar prazo de retirada: tarjeta operacional e Logomarca nas 2 camisetas novas, 4 distintivos de OPM do CAES e a tarjeta administrativa de acrílico [17/08/2026] #pessoal
 - [ ] Experimentar a farda social, ver os ajustes de caimento e montar armário e alojamento [17/08/2026] #pessoal
 - [ ] Decidir opção de desconto SIPA: Alojamento (R$ 30,35) ou Vestiário (R$ 21,52), e cessar o equivalente na OPM de origem [18/08/2026] #admin
+- [ ] Mandar o QTS do dia seguinte assim que sair, para eu criar pasta e arquivo das disciplinas novas [19/08/2026] #curso
 - [ ] Atualizar STATUS.md e PRAZOS.md com a situação real do curso (módulo, disciplinas, entregas) [20/08/2026] #curso
 - [ ] Procurar o Cap Gobbo (Seção de Pesquisa) sobre a transformação do PP em dissertação [21/08/2026] #dissertacao
 

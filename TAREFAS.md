@@ -13,24 +13,23 @@
 - [ ] Conferir se a mesa SEI 302090130 recebeu o ofício e anotar o número do processo no celular [18/08/2026] #admin
 
 ### Segunda, 17/08 (é o dia de resolver o fardamento)
-- [ ] Chegar ao CAES até 07h30: café da manhã, assinar a lista de presença do pelotão e palestra [17/08/2026] #curso
 - [ ] Pegar o QTS divulgado na segunda e lançar as datas em PRAZOS.md [17/08/2026] #curso
 - [ ] Comprar na ConfecBell: 2 camisas de passeio, 2 camisetas de serviço, boina e a camisa social do S-1 (gravata e as 2 calças já tenho em casa) [17/08/2026] #pessoal
 - [ ] Deixar para aplicar e combinar prazo de retirada: tarjeta operacional e Logomarca nas 2 camisetas novas, 4 distintivos de OPM do CAES e a tarjeta administrativa de acrílico [17/08/2026] #pessoal
-- [ ] Combinar o destino do 4º distintivo de OPM, o da gandola: trazer solto ou deixar na loja, porque a gandola só sobe em 23/08 [17/08/2026] #pessoal
 - [ ] Experimentar a farda social, ver os ajustes de caimento e montar armário e alojamento [17/08/2026] #pessoal
-- [ ] Decidir opção de desconto SIPA: Alojamento (R$ 30,35) ou Vestiário (R$ 21,52), e cessar o equivalente na OPM de origem [17/08/2026] #admin
-- [ ] Se aplicável: pedir Ajuda de Custo (oficial de outro município) [17/08/2026] #admin
-- [ ] Perguntar ao pessoal do CAO-I/26 onde eles almoçam e jantam, e lançar em ENTORNO.md [18/08/2026] #pessoal
+- [ ] Decidir opção de desconto SIPA: Alojamento (R$ 30,35) ou Vestiário (R$ 21,52), e cessar o equivalente na OPM de origem [18/08/2026] #admin
 - [ ] Atualizar STATUS.md e PRAZOS.md com a situação real do curso (módulo, disciplinas, entregas) [20/08/2026] #curso
 - [ ] Procurar o Cap Gobbo (Seção de Pesquisa) sobre a transformação do PP em dissertação [21/08/2026] #dissertacao
-- [ ] Ficar de olho no Recadastramento Anual + Inspeção de Saúde (IAS) próximo do aniversário #admin
 
 ### Segunda semana (viagem em 23/08)
 - [ ] Conferir whey, creatina, energético e coqueteleira, e comprar o que faltar [22/08/2026] #pessoal
 - [ ] Levar na viagem: B-1 (gandola, calça operacional, coturno), EPI (cinto, colete, bota) e os suplementos [23/08/2026] #pessoal
 
 ## Concluídas
+- [x] Perguntar ao pessoal do CAO-I/26 onde eles almoçam e jantam, e lançar em ENTORNO.md [18/08/2026] #pessoal
+- [x] Chegar ao CAES até 07h30: café da manhã, assinar a lista de presença do pelotão e palestra [17/08/2026] #curso
+- [x] Combinar o destino do 4º distintivo de OPM, o da gandola: trazer solto ou deixar na loja, porque a gandola só sobe em 23/08 [17/08/2026] #pessoal
+- [x] Se aplicável: pedir Ajuda de Custo (oficial de outro município) [17/08/2026] #admin
 - [x] Sair de casa às 15h00 para São Paulo, de carona, chegada por volta das 22h [16/08/2026] #pessoal
 - [x] Deixar separado em casa o que só sobe em 23/08: B-1 (gandola, calça operacional, coturno) e EPI (cinto, colete, bota) [15/08/2026] #pessoal
 - [x] Separar o que já tenho do S-1 para deixar guardado no CAES: paletó, a segunda calça social, gravata, quepe e tarjeta administrativa (da compra de segunda falta só a camisa social) [15/08/2026] #pessoal
@@ -48,3 +47,4 @@
 - [x] Organizar a pasta Central CAO (limpeza de duplicados, áudio/vídeo antigo, estrutura de pastas) [04/08/2026] #pessoal
 - [x] Criar o painel visual em docs/index.html, gerado a partir dos .md [04/08/2026] #pessoal
 - [x] Criar o cadastro de tarefas com data no painel [04/08/2026] #pessoal
+- [x] Ficar de olho no Recadastramento Anual + Inspeção de Saúde (IAS) próximo do aniversário #admin

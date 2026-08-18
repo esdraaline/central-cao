@@ -4,10 +4,20 @@
 > **Prazos: mercado até sexta 14/08; fardamento na tarde de segunda 17/08; o que é da segunda semana, até sábado 22/08.**
 
 
-> **Aviso sobre as marcações (18/08/2026).** As caixinhas ticadas no painel sobem para o
-> Supabase, mas **não voltam para este arquivo**. Então o `.md` pode mostrar em aberto algo
-> que você já comprou. **A verdade está no painel, não aqui.** Os dois itens marcados abaixo
-> foram reconciliados a partir de uma tarefa concluída, não do painel.
+> **Aviso sobre as marcações.** As caixinhas ticadas no painel sobem para o Supabase, mas
+> **não voltam para este arquivo**. Então o `.md` pode divergir do painel. **Em 18/08/2026**
+> este arquivo foi reconciliado a partir do relato direto do Josemar (voltou da ConfecBell),
+> não do painel — é por isso que dá para confiar nele agora.
+
+## Situação em 18/08/2026 (dia seguinte à ConfecBell)
+
+**Resolvido**: as 2 camisas de passeio, as 2 camisetas de serviço, tarjeta operacional e
+Logomarca nas duas camisetas novas, os 4 distintivos de OPM (3 aplicados, 1 solto para a
+gandola) e a tarjeta administrativa de acrílico. Whey, creatina e coqueteleira, já em casa.
+
+**Ainda falta**: a **camisa social cinza-claro** do S-1 e a **boina** de reposição. Nenhuma
+das duas trava o curso — a social só fecha o conjunto do S-1, que ainda nem foi usado, e a
+boina é reposição da que já está na mala.
 
 ## Como ficou decidido (12/08/2026)
 
@@ -31,12 +41,12 @@ Tudo aqui passa pela loja aplicar e devolver, então não sai pronto no mesmo di
 
 > **Compre as peças e mande aplicar na mesma ida.** As 2 camisas de passeio novas são justamente onde vão os distintivos de OPM, então não adianta encomendar o distintivo antes de ter a camisa na mão. Combine o prazo de retirada ainda na segunda: você volta para casa na quinta às 11h30.
 
-- [ ] **2 camisas de passeio cinza-claro** — completam o jogo de 3 (já tenho 1)
-- [ ] **2 camisetas de serviço cinza-bandeirante** — gola careca, meia manga com barra, completam as 6. **Não serve camiseta cinza comum.**
-- [ ] Nas 2 camisetas novas: **tarjeta operacional** no peito direito (retângulo preto 15 × 80 mm, letras brancas de 6 mm, `CAP PM JOSEMAR`). As que já tenho estão aplicadas.
-- [ ] Nas 2 camisetas novas: **distintivo da Logomarca da PMESP** no peito esquerdo, tamanho normal, alinhado com a tarjeta
-- [ ] **4 distintivos de OPM do CAES** (o "brasão") — 3 para as camisas de passeio + 1 para a gandola. Manga direita, 20 mm abaixo do distintivo da Bandeira de São Paulo. **O da gandola sai solto**: por decisão de 14/08 a gandola só sobe na segunda semana (23/08), então ou você traz o distintivo para casa e aplica lá, ou deixa combinado com a loja para aplicar no dia 23. Se ninguém avisar, você chega com a gandola sem brasão.
-- [ ] **Tarjeta administrativa de acrílico** (retângulo preto 15 × 80 mm, letras brancas de 6 mm, `CAP PM JOSEMAR`) — vai na camisa de passeio, na jaqueta de passeio e no paletó do S-1. Sendo imantada, uma passa de peça em peça; peça 2 se não quiser ficar trocando.
+- [x] **2 camisas de passeio cinza-claro** (retirado em 18/08) — completam o jogo de 3 (já tenho 1)
+- [x] **2 camisetas de serviço cinza-bandeirante** (retirado em 18/08) — gola careca, meia manga com barra, completam as 6.
+- [x] Nas 2 camisetas novas: **tarjeta operacional** no peito direito (retângulo preto 15 × 80 mm, letras brancas de 6 mm, `CAP PM JOSEMAR`). Aplicada (18/08). As que já tinha também estão aplicadas.
+- [x] Nas 2 camisetas novas: **distintivo da Logomarca da PMESP** no peito esquerdo, tamanho normal, alinhado com a tarjeta. Aplicado (18/08).
+- [x] **4 distintivos de OPM do CAES** (o "brasão") — retirados em 18/08. 3 aplicados nas camisas de passeio, manga direita, 20 mm abaixo da Bandeira de São Paulo. **O 4º, da gandola, ficou solto com você**: como a gandola só sobe em 23/08, leve-o na bagagem daquela viagem e aplique (ou combine na loja de origem) só então.
+- [x] **Tarjeta administrativa de acrílico** (retângulo preto 15 × 80 mm, letras brancas de 6 mm, `CAP PM JOSEMAR`) — retirada em 18/08, imantada. Vai na camisa de passeio, na jaqueta de passeio e no paletó do S-1, passando de peça em peça.
 - [ ] Nas 2 camisas de passeio novas: conferir se já vêm com **distintivo de atividade, insígnia de gola, Bandeira de São Paulo e Logomarca**. A que já tenho está completa; as novas provavelmente vão precisar.
 
 ## 2. Fardamento pronto — também na segunda
@@ -45,8 +55,8 @@ Não depende de aplicação, mas pode não ter o seu tamanho e ter que encomenda
 urgente: a boina nova é reposição, já que a reserva vai na mala, e a camisa social não é
 usada na segunda.
 
-- [ ] **Boina cinza-bandeirante** com distintivo de cobertura — é a cobertura do dia a dia no curso (o quepe só em cerimônia). Reposição: a reserva já vai na mala
-- [ ] **1 camisa social cinza-claro** — manga longa, gola social, sem bolsos, para compor o S-1
+- [ ] **Boina cinza-bandeirante** com distintivo de cobertura — **ainda pendente** (confirmado em 18/08). É a cobertura do dia a dia no curso (o quepe só em cerimônia). Reposição: a reserva já vai na mala, então não trava nada
+- [ ] **1 camisa social cinza-claro** — **ainda pendente** (confirmado em 18/08). Manga longa, gola social, sem bolsos, para compor o S-1
 
 > **Saíram desta lista em 14/08**: a **gravata** e a **segunda calça social**. As duas já
 > estão em casa e vão na mala ([MALA.md](MALA.md)). O par de calças fecha a conta da semana:
@@ -79,9 +89,9 @@ Nada aqui é da viagem de 16/08. Por decisão de 14/08, **whey protein, creatina
 sobem na viagem de domingo 23/08**, junto com o B-1 e o EPI. Isto aqui é só o que precisa
 existir em casa até lá (a lista de arrumar está em [MALA.md](MALA.md)).
 
-- [ ] **Conferir se o whey dura os 4 dias da semana** e repor se não durar. Vale fracionar a porção da semana num pote menor: o pote grande é caro em volume no porta-malas da carona
-- [ ] **Conferir a creatina** — pote pequeno, cabe em qualquer canto, mas confira se dá para a semana
-- [ ] **Coqueteleira** — sem ela o whey não sai. Se não tiver uma, esta é a única compra nova deste bloco
+- [x] **Whey protein** — já tem (confirmado em 18/08). Fracionar a porção da semana num pote menor continua valendo: o pote grande é caro em volume no porta-malas da carona
+- [x] **Creatina** — já tem (confirmado em 18/08). Pote pequeno, cabe em qualquer canto
+- [x] **Coqueteleira** — já tem (confirmado em 18/08)
 - [ ] **Etiqueta ou fita crepe para os potes e latas** — mesma regra da marmita, a geladeira é dividida pela turma. Se sobrar da compra de 14/08, já está resolvido
 - [ ] **Energético: decidir se leva de casa ou compra chegando.** É o item mais pesado por unidade, e o **Duque Supermercados** (Av. Duque de Caxias, 812) e o **OXXO** (Largo General Osório, 153) ficam a pé do CAES. Se o porta-malas apertar no domingo, comprar lá sai mais barato em espaço
 

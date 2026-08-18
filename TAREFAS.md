@@ -13,9 +13,8 @@
 - [ ] Conferir se a mesa SEI 302090130 recebeu o ofício e anotar o número do processo no celular [18/08/2026] #admin
 
 ### Segunda, 17/08 (é o dia de resolver o fardamento)
-- [ ] Comprar na ConfecBell: 2 camisas de passeio, 2 camisetas de serviço, boina e a camisa social do S-1 (gravata e as 2 calças já tenho em casa) [17/08/2026] #pessoal
-- [ ] Deixar para aplicar e combinar prazo de retirada: tarjeta operacional e Logomarca nas 2 camisetas novas, 4 distintivos de OPM do CAES e a tarjeta administrativa de acrílico [17/08/2026] #pessoal
-- [ ] Experimentar a farda social, ver os ajustes de caimento e montar armário e alojamento [17/08/2026] #pessoal
+- [ ] Comprar a camisa social cinza-claro do S-1 e a boina de reposição, que faltaram na ida à ConfecBell [19/08/2026] #pessoal
+- [ ] Experimentar a farda social e ver os ajustes de caimento, depois de comprar a camisa social [20/08/2026] #pessoal
 - [ ] Decidir opção de desconto SIPA: Alojamento (R$ 30,35) ou Vestiário (R$ 21,52), e cessar o equivalente na OPM de origem [18/08/2026] #admin
 - [ ] Mandar o QTS do dia seguinte assim que sair, para eu criar pasta e arquivo das disciplinas novas [19/08/2026] #curso
 - [ ] Atualizar STATUS.md e PRAZOS.md com a situação real do curso (módulo, disciplinas, entregas) [20/08/2026] #curso
@@ -32,10 +31,12 @@
 - [ ] Montar o rol completo de disciplinas e instrutores conforme os QTS forem saindo, para ter o universo de candidatos [28/08/2026] #dissertacao
 
 ### Segunda semana (viagem em 23/08)
-- [ ] Conferir whey, creatina, energético e coqueteleira, e comprar o que faltar [22/08/2026] #pessoal
+- [ ] Decidir e comprar o energético: leva de casa ou compra perto do CAES na chegada (whey, creatina e coqueteleira já resolvidos) [22/08/2026] #pessoal
 - [ ] Levar na viagem: B-1 (gandola, calça operacional, coturno), EPI (cinto, colete, bota) e os suplementos [23/08/2026] #pessoal
 
 ## Concluídas
+- [x] Comprar na ConfecBell: 2 camisas de passeio, 2 camisetas de serviço, tarjeta operacional, Logomarca, 4 distintivos de OPM e tarjeta administrativa de acrílico [18/08/2026] #pessoal
+- [x] Conferir whey, creatina e coqueteleira — os três já em casa [18/08/2026] #pessoal
 - [x] Pegar o QTS e lançar as disciplinas: sai dia a dia, 7 disciplinas até 18/08 [18/08/2026] #curso
 - [x] Perguntar ao pessoal do CAO-I/26 onde eles almoçam e jantam, e lançar em ENTORNO.md [18/08/2026] #pessoal
 - [x] Chegar ao CAES até 07h30: café da manhã, assinar a lista de presença do pelotão e palestra [17/08/2026] #curso

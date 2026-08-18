@@ -76,17 +76,12 @@ DESTINOS = [
      "marco", "Do CAES até a 25 de Março", None, "CAES"),
     ("feira-madrugada", "Feira", "Rua Oriente, 500, Brás, São Paulo",
      "feira", "Do CAES até a Feira da Madrugada", None, "CAES"),
-    # As rotas ate as casas de oracao sairam do repositorio publico em
-    # 17/08/2026 (auditoria, achado C1): dia + hora + endereco + trajeto a pe
-    # permitiam prever onde ele estaria. Os .svg vivem no Drive, em
-    # 08_CAO_2026/00_CURSO/mapas/. Para regerar, reative o bloco abaixo e
-    # aponte AQUI para aquela pasta.
-    # ("ccb-santana", "CCB Santana", "Rua Daniel Rossi, 194, São Paulo",
-    # "ccbnorte", "Da Estação Santana até a CCB de Santana",
-    # "Estação Santana, São Paulo", "Estação Santana"),
-    # ("ccb-barra-funda", "CCB Barra Funda", "Rua Brigadeiro Galvão, 683, São Paulo",
-    # "ccboeste", "Da Estação Marechal Deodoro até a CCB da Barra Funda",
-    # "Estação Marechal Deodoro, São Paulo", "Est. Mal. Deodoro"),
+    ("ccb-santana", "CCB Santana", "Rua Daniel Rossi, 194, São Paulo",
+    "ccbnorte", "Da Estação Santana até a CCB de Santana",
+    "Estação Santana, São Paulo", "Estação Santana"),
+    ("ccb-barra-funda", "CCB Barra Funda", "Rua Brigadeiro Galvão, 683, São Paulo",
+    "ccboeste", "Da Estação Marechal Deodoro até a CCB da Barra Funda",
+    "Estação Marechal Deodoro, São Paulo", "Est. Mal. Deodoro"),
 ]
 
 # Trechos que o guia cita mas que nao rendem mapa proprio. Ficam aqui para

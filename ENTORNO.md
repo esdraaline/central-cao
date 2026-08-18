@@ -135,11 +135,10 @@ sua própria rotina, registrada neste repositório.)*
 | **Rua Santa Ifigênia** | 684 m | 8 min | Duque de Caxias → Santa Ifigênia |
 | **Estação da Luz** | 807 m | 10 min | Dino Bueno → Rua Mauá |
 | **Estação Santa Cecília** | 1.164 m | 15 min | Rua Helvétia |
+| **CCB Bom Retiro** | 1.282 m | 15 min | Dino Bueno → Nothmann → Anhaia |
 | **25 de Março** | 2.394 m | 31 min | Mauá → Gen. Osório → Senador Queirós |
 | **Feira da Madrugada** | 3.122 m | 37 min | Mauá → Tiradentes → Ribeiro de Lima |
 
-*Os trajetos até as casas de oração saíram desta tabela em 17/08/2026 e estão no Drive, em
-`08_CAO_2026/00_CURSO/`, com os mapas. Motivo na seção mais abaixo.*
 
 Fonte da malha e das rotas: **OpenStreetMap**, roteamento a pé pelo **Valhalla**. Os mapas
 são desenhados aqui e abrem sem internet.
@@ -416,15 +415,154 @@ que não existe em Guararapes e que não estraga na viagem.
 
 ## Casas de oração da CCB na região
 
-O levantamento das 19 casas de oração, com dia, horário, endereço, telefone, distância medida
-e os mapas dos trajetos, **saiu deste repositório em 17/08/2026** e está no Google Drive:
+Levantado em 17/08/2026, **19 casas de oração** no anel em volta do CAES. Quase todos os
+cultos de meio de semana são **19h30**, e a saída da aula é 16h na segunda e 18h na terça e
+quarta, então os três dias dão tempo folgado.
 
-`08_CAO_2026/00_CURSO/CASAS-DE-ORACAO.md`
+Sua premissa de que cada casa tem um único dia fixo no meio da semana **não se confirmou**:
+a maioria tem dois ou três cultos por semana. Bom Retiro, por exemplo, tem terça, quinta e
+sábado.
 
-**Por quê:** aquela seção reunia dia da semana, horário exato, endereço e trajeto a pé
-desenhado. Somada ao que este repositório já publica, ela permitia prever onde eu estaria,
-a pé e sozinho, em dia e hora fixos. É o único conteúdo daqui com essa precisão, então foi o
-primeiro a sair. Nada se perdeu: está inteiro no Drive, junto com as anotações de aula.
+**Distâncias são estimativas** por endereço e CEP, não rota medida. Conferir no mapa.
+
+### Correção importante de 17/08
+
+A primeira versão desta seção estimava a caminhada da estação até a casa de oração, e
+**errou feio em duas**. Agora todas foram medidas por roteador de pedestre:
+
+| Casa | Da estação até a porta | Antes eu dizia |
+|---|---|---|
+| **Canindé** | Armênia → **2.871 m, 36 min** | "+~10 min a pé" |
+| **Cambuci** | São Joaquim → **2.648 m, 32 min** | "+~10 min" |
+| Bairro do Limão | Santana → **5.757 m, 72 min** | "+ ônibus" |
+| **Belém** | Est. Belém → **638 m, 8 min** | "+~7 min" |
+| **Santana** | Est. Santana → **939 m, 14 min** | "direto" |
+| **Barra Funda** | Mal. Deodoro → **680 m, 8 min** | "+~8 min" |
+| Ponte Pequena | Armênia → **907 m, 11 min** | "+~8 min" |
+
+**O Canindé sai da recomendação de segunda.** Ele fica a 4,5 km do CAES e a 36 minutos de
+caminhada de qualquer estação. Não é opção de noite de semana.
+
+### SEGUNDA-FEIRA (saída da aula 16h)
+
+| Casa | Endereço | Culto | Como chegar | A pé no fim |
+|---|---|---|---|---|
+| **Santana** | R. Daniel Rossi, 194 | 19h30 | 807 m até a **Luz** → **Linha 1-Azul** até Santana (5 est.) | **939 m, 14 min** |
+| **Belém** | R. Pimenta Bueno, 132 | 19h30 | 1.164 m até **Santa Cecília** → **Linha 3** até Belém (7 est.) | **638 m, 8 min** |
+| ~~Canindé~~ | R. Silva Teles, 1611 | 19h30 | — | 36 min. **Descartada** |
+| ~~Cambuci~~ | R. José Bento, 311 | 19h30 | — | 32 min. **Descartada** |
+| ~~Bairro do Limão~~ | R. Carolina Soares, 444 | 19h30 | — | 72 min. **Descartada** |
+
+![Da Estação Santana até a CCB de Santana: 939 m, cerca de 14 min.](mapas/ccb-santana.svg)
+
+**Santana e Belém empatam**: caminhada total quase igual (1.746 m contra 1.802 m). Santana
+tem menos estações e a ida mais curta; Belém tem a **chegada mais curta**, que é o que pesa
+quando está escuro ou chovendo. Escolha pelo gosto.
+
+### TERÇA-FEIRA (saída 18h)
+
+| Casa | Endereço | Culto | Como chegar | A pé |
+|---|---|---|---|---|
+| **Bom Retiro** | R. Anhaia, 613 | 19h30 | **A pé direto, sem metrô** | **1.282 m, 15 min** |
+| Ponte Pequena | R. Afonso Arinos, 91 | 19h30 | Luz → Linha 1 até Armênia (2 est.) | 907 m, 11 min |
+| Baixada do Glicério | Pça. Dr. Mario Margarido, 36 | 19h30 | Luz → Linha 1 até São Joaquim | a medir |
+| Água Branca | Av. Santa Marina, 602 | 19h30 | CPTM Linha 8 ⚠ | a medir |
+| Lapa | R. João Pereira, 319 | 19h30 | CPTM Linha 8 ⚠ | a medir |
+| Pinheiros | R. Marcos Azevedo, 52 | 19h30 | Luz → **Linha 4-Amarela** até Pinheiros | a medir |
+| Penha | R. Capitão João Cesário, 160 | 19h30 | Sta. Cecília → Linha 3 até Penha | a medir |
+
+![Do CAES até a CCB do Bom Retiro: 1.282 m, cerca de 15 min.](mapas/ccb-bom-retiro.svg)
+
+**É a melhor das três noites, disparado.** Alameda Dino Bueno → Alameda Nothmann → Rua
+Anhaia, e são 619 m na Anhaia até o 613. Sem metrô, sem baldeação, sem depender de horário
+de trem na volta.
+
+### QUARTA-FEIRA (saída 18h)
+
+| Casa | Endereço | Culto | Como chegar | A pé no fim |
+|---|---|---|---|---|
+| **Barra Funda** | R. Brigadeiro Galvão, 683 | 19h30 | 1.164 m até **Santa Cecília** → **Linha 3** até Marechal Deodoro (1 est.) | **680 m, 8 min** |
+| Brás | R. Visconde de Parnaíba, 1616 | 19h30 | Sta. Cecília → Linha 3 até Bresser-Mooca | a medir |
+| Santana | R. Daniel Rossi, 194 | **20h00** | Luz → Linha 1-Azul até Santana | 939 m, 14 min |
+| Vila Maria | R. Filipe Bandeira, 571 | 19h30 | Luz → Linha 1 até Portuguesa-Tietê + ônibus | a medir |
+
+![Da Estação Marechal Deodoro até a CCB da Barra Funda: 680 m, cerca de 8 min.](mapas/ccb-barra-funda.svg)
+
+**Uma estação só de metrô e 8 minutos a pé.** Dá também para ir inteiramente a pé do CAES,
+mas são **2.131 m e 26 min**, então o metrô compensa.
+
+⚠ **Água Branca e Lapa dependem da Linha 8**, que está sob ressalva (descarrilamento em
+13/08 e plano de desativação da Júlio Prestes), e as duas ainda estão **sem a caminhada
+final medida**. Não conte com elas até que os dois pontos sejam resolvidos.
+
+**Horários que não servem**, para não perder viagem: Brás tem terça **14h30** e Lapa tem
+quarta **09h30**, os dois em horário de aula. Vila Mariana só tem terça **09h30**. Vila
+Pompéia não tem culto em segunda, terça nem quarta.
+
+### Escolha por dia
+
+**Segunda: Santana (ou Belém). Terça: Bom Retiro. Quarta: Barra Funda.**
+
+A de **terça continua imbatível**: 15 minutos a pé, sem metrô nenhum. A de **quarta é quase
+tão boa**: uma estação e 8 minutos. A de **segunda é a mais cara** das três, cerca de 35 a 40
+minutos porta a porta, mas você sai da aula às 16h nesse dia, então sobra tempo.
+
+*Observação: o número 194 da Rua Daniel Rossi não existe na base do OpenStreetMap, então o
+ponto de Santana caiu no meio da rua. A distância pode variar uns 100 metros para mais ou
+para menos.*
+
+### Agenda completa das mais próximas
+
+| Casa | Telefone | Todos os cultos |
+|---|---|---|
+| **Bom Retiro** (~1,3 km) | (11) 97638-6286 | Terça 19h30 · Quinta 20h · Sábado 19h30 · Domingo RJM 10h e culto 18h30 |
+| **Barra Funda** (~2,2 km) | (11) 97636-9719 | Quarta 19h30 · Domingo RJM 10h e culto 18h30 |
+| **Ponte Pequena** (~2,5 km) | (11) 99378-2823 | Terça 19h30 · Sexta 19h30 · Domingo RJM 10h |
+| **Baixada do Glicério** (~3 km) | não informado | Terça 19h30 · Quinta 19h30 · Sábado 19h30 · Domingo RJM 15h |
+| **Canindé** (~3,2 km) | (11) 2695-1777 | Segunda 19h30 · Quinta 20h · Sábado 19h30 · Domingo RJM 10h e culto 18h30 |
+| **Cambuci** (~4 km) | não informado | Segunda 19h30 · Sexta 19h30 |
+| **Brás** (~4,5 km) | (11) 3299-0200 | Terça 14h30 · Quarta 19h30 · Sexta 19h30 · Domingo 10h, RJM 10h e 18h30 |
+| **Água Branca** (~5 km) | não informado | Terça 19h30 · Quinta 19h30 · Domingo RJM 10h e culto 18h30 |
+| **Belém** (~5,5 km) | (11) 97666-8831 | Segunda 19h30 · Quinta 19h30 · Domingo RJM 10h e culto 18h30 |
+| **Vila Guilherme** (~5,5 km) | (11) 99183-6416 | Terça 19h30 · Sexta 19h30 · Domingo RJM 10h e culto 18h30 |
+| **Vila Pompéia** (~5,5 km) | (11) 99430-2600 | Quinta 19h30 · Sábado 19h30 · Domingo RJM 10h e culto 18h30 |
+| **Santana** (~6 km) | (11) 97056-5962 | Segunda 19h30 · Quarta 20h · Domingo RJM 10h e culto 18h30 |
+| **Casa Verde** (~6 km) | (11) 97641-7223 | Terça 19h30 · Sexta 19h30 · Domingo RJM 10h e culto 18h30 |
+| **Bairro do Limão** (~6,5 km) | (11) 97632-7093 | Segunda 19h30 · Quinta 20h · Sábado 19h30 · Domingo RJM 10h |
+| **Vila Maria** (~7 km) | (11) 97675-0692 | Quarta 19h30 · Sábado 19h30 · Domingo RJM 14h e culto 18h30 |
+| **Lapa** (~7 km) | (11) 97683-2506 | Terça 19h30 · Quarta 9h30 · Sexta 19h30 · Domingo 9h30, RJM 14h e 18h30 |
+| **Vila Mariana** (~7 km) | (11) 99246-3056 | Terça 9h30 · Quinta 19h30 · Sábado 19h30 · Domingo RJM 10h e culto 18h30 |
+| **Pinheiros** (~8 km) | (11) 98941-4008 | Terça 19h30 · Quinta 20h · Domingo RJM 10h e culto 18h30 |
+| **Penha** (~9 km) | (11) 99342-8532 | Terça 19h30 · Quinta 19h30 · Sábado 19h30 · Domingo RJM 10h e culto 18h30 |
+
+### De onde vieram estes dados
+
+**O localizador oficial está fora do ar.** `congregacao.org.br` devolve 404, `congregacao.org`
+é um servidor sem site configurado, e `congregacaocristanobrasil.org.br` entra em loop de
+redirecionamento. O `congregacoes.com.br` depende de GPS e não tem listagem estática.
+
+Tudo aqui veio do **[relatorioccb.net](https://relatorioccb.net/brasil/sao-paulo/sao-paulo/)**,
+que **se declara não oficial**, com fichas atualizadas em 08/07/2026. Nenhum dia de culto saiu
+de Google Maps.
+
+Por isso: **ligar antes na primeira vez**, principalmente para Canindé e Barra Funda, que
+definem a segunda e a quarta.
+
+**Como a varredura foi feita (17/08/2026).** São Paulo tem **497 localidades** no site e não
+há filtro por raio nem por dia. Método: extrair o índice da cidade por **faixas do alfabeto**
+(A-B, C-J, M-S, T-Z) para descobrir os nomes reais, e depois abrir uma a uma as fichas de
+todo o anel próximo. **19 casas de oração** levantadas.
+
+**Não existem** como localidade, apesar de serem bairros conhecidos: Luz, Campos Elíseos,
+Santa Cecília, República, Sé, Liberdade, Bela Vista, Consolação, Higienópolis, Vila Buarque,
+Paraíso, Pari, Perdizes, Mooca, Catumbi, Carandiru, Vila Romana, Sumaré e Tatuapé. O centro
+velho praticamente não tem casa da CCB, o que empurra tudo para o anel de fora.
+
+*Cuidado com uma armadilha do site: pedir "quais destes nomes existem" devolve resposta
+errada (chegou a afirmar que Pompéia, Aclimação e Paraíso existiam, e os três dão 404). A
+listagem por faixa do alfabeto é confiável; a busca dirigida não é.*
+
+---
 
 ## Como este guia cresce
 

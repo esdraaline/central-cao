@@ -16,23 +16,23 @@ Revisão dos três eixos (mecânica, fatos e fontes, risco) sobre tudo que foi e
   gerador e podem ser reconferidos.
 - **As casas de oração saíram do repositório público** e foram para o Drive. Ver abaixo.
 
-### Decisão de privacidade
+### Decisão de privacidade: levantada e revertida
 
-Este repositório é público (o GitHub Pages gratuito exige). Ele já publica nome, posto,
-unidade, o endereço onde estudo, o horário de aula dia a dia e os dias de viagem. A seção das
-casas de oração somava a isso **dia da semana, horário exato, endereço e trajeto a pé
-desenhado**, o que permitia prever onde eu estaria, a pé, em hora fixa.
+Cheguei a mover as casas de oração para o Drive alegando padrão de vida. **O Josemar
+reverteu, e com razão.** Dois furos no meu argumento:
 
-**Ela foi movida para `08_CAO_2026/00_CURSO/CASAS-DE-ORACAO.md`, no Drive**, com os três
-mapas. Nada se perdeu.
+1. **Nenhum daquele dado é secreto.** Endereço de igreja e horário de culto são públicos.
+2. **Eu tirei o previsor mais fraco e deixei o mais forte.** O horário de aula é 4 dias por
+   semana, todo ano, em endereço fixo. O culto é uma possibilidade. Removi o menos
+   informativo e mantive o mais informativo, o que torna a remoção quase simbólica.
 
-**O que ficou de fora dessa limpeza, de propósito**: o horário de aula e os dias de viagem.
-São de utilidade diária alta e risco marginal menor, já que o CAES é instituição com muitos
-alunos. Se eu quiser tirar também, é decidir e mandar.
+O único ponto que continua válido, e fica registrado sem virar ação: **convicção religiosa é
+"dado pessoal sensível" na LGPD** (Lei 13.709/2018, art. 5º, II). Não é motivo para esconder,
+é motivo para ele saber que está ali por escolha dele, e não por descuido meu.
 
-**Ressalva importante**: remover do arquivo **não apaga do histórico do git**. O conteúdo
-segue acessível em commits antigos deste repositório público. Apagar de verdade exige
-reescrever o histórico e forçar o push, que é operação destrutiva e ainda não foi feita.
+**Conclusão: a seção voltou inteira ao guia, com os três mapas.** E o histórico do git fica
+como está: reescrever custaria alto (105 commits mudam de identidade, as outras máquinas
+quebram) para um ganho pequeno.
 
 ## 17/08/2026: primeiro dia de curso e método de estudo definido
 

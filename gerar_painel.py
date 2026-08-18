@@ -118,6 +118,7 @@ def _inline(txt):
     txt = re.sub(r"(?<!\">)(?<![\w.@-])([\w.+-]+@[\w-]+\.[\w.]+)",
                  r'<a href="mailto:\1">\1</a>', txt)
 
+    txt = re.sub(r"~~([^~]+)~~", r"<del>\1</del>", txt)
     txt = re.sub(r"\*\*([^*]+)\*\*", r"<strong>\1</strong>", txt)
     txt = re.sub(r"(?<!\*)\*([^*\n]+)\*(?!\*)", r"<em>\1</em>", txt)
 
@@ -571,6 +572,7 @@ main{max-width:1080px;margin:0 auto;padding:24px 20px 64px}
 .card a:hover{border-bottom-color:currentColor}
 blockquote{border-left:3px solid var(--vm);background:var(--card2);padding:11px 16px;
   border-radius:0 9px 9px 0;margin:13px 0;font-size:13.5px;color:var(--tx2)}
+del{color:var(--tx3);text-decoration-thickness:1px}
 code{background:var(--card2);border:1px solid var(--bd);border-radius:5px;padding:1.5px 5px;
   font:.88em/1.4 ui-monospace,SFMono-Regular,Consolas,monospace;color:var(--vm-cl)}
 pre{background:var(--card2);border:1px solid var(--bd);border-radius:10px;padding:15px 17px;

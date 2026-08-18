@@ -3,6 +3,37 @@
 > Painel principal. Ler isso primeiro em qualquer sessão nova ("onde paramos?").
 > Atualizado em: 17/08/2026
 
+## 17/08/2026, fim do dia: auditoria do que foi produzido
+
+Revisão dos três eixos (mecânica, fatos e fontes, risco) sobre tudo que foi escrito hoje.
+**12 achados, todos aplicados.** Três mereciam ficar registrados aqui:
+
+- **A Linha 13-Jade não para em Tatuapé**, ao contrário do que o guia dizia. E a **janela da
+  Feira da Madrugada não existia**: a recomendação era quinta 11h30, que é exatamente o
+  horário em que eu pego a estrada para casa. Duas informações que se contradiziam dentro do
+  próprio repositório.
+- **15 números publicados como "medidos" não tinham fonte** guardada aqui. Agora estão no
+  gerador e podem ser reconferidos.
+- **As casas de oração saíram do repositório público** e foram para o Drive. Ver abaixo.
+
+### Decisão de privacidade
+
+Este repositório é público (o GitHub Pages gratuito exige). Ele já publica nome, posto,
+unidade, o endereço onde estudo, o horário de aula dia a dia e os dias de viagem. A seção das
+casas de oração somava a isso **dia da semana, horário exato, endereço e trajeto a pé
+desenhado**, o que permitia prever onde eu estaria, a pé, em hora fixa.
+
+**Ela foi movida para `08_CAO_2026/00_CURSO/CASAS-DE-ORACAO.md`, no Drive**, com os três
+mapas. Nada se perdeu.
+
+**O que ficou de fora dessa limpeza, de propósito**: o horário de aula e os dias de viagem.
+São de utilidade diária alta e risco marginal menor, já que o CAES é instituição com muitos
+alunos. Se eu quiser tirar também, é decidir e mandar.
+
+**Ressalva importante**: remover do arquivo **não apaga do histórico do git**. O conteúdo
+segue acessível em commits antigos deste repositório público. Apagar de verdade exige
+reescrever o histórico e forçar o push, que é operação destrutiva e ainda não foi feita.
+
 ## 17/08/2026: primeiro dia de curso e método de estudo definido
 
 O curso começou. Junto com ele nasceu a aba [ESTUDOS.md](ESTUDOS.md), que responde

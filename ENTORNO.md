@@ -172,14 +172,51 @@ Faz café, almoço e janta. Indicação de colega que já fez o curso.
 
 ## Almoço entre aulas
 
-**Terraço** — **[BIZU]** — R$ 28,00, come à vontade
-Testado por colega de turma. É a referência de custo-benefício até agora.
-*[VERIFICAR: endereço exato.]*
+Levantamento de 18/08/2026: **99 restaurantes, lanchonetes e cafés com nome** a até 15 min a
+pé, todos com a distância medida. Os mais perto:
+
+| Lugar | Endereço | A pé | O que é |
+|---|---|---|---|
+| **S S Self Service** | Av. Duque de Caxias, 839 | **265 m · 3 min** | Self-service. **O mais perto de todos** |
+| Churrascaria | Pça. Princesa Isabel, 28 | 359 m · 4 min | restaurante |
+| Bar e Lanches Cantinho da Princesa | Pça. Princesa Isabel | 365 m · 4 min | lanchonete |
+| Snooker Café e Bar | Pça. Princesa Isabel, 50 | 373 m · 4 min | café e bar |
+| Pizzaria Odalisca | Pça. Princesa Isabel, 60 | 381 m · 4 min | pizzaria |
+| Zebrinha | — | 387 m · 4 min | restaurante |
+| Restaurante Grill e Café | Av. Duque de Caxias, 5 | 585 m · 7 min | restaurante |
+| Subway | R. Vitória, 371 | 625 m · 8 min | lanche rápido |
+| **Cascatinha** | R. General Couto de Magalhães, 172 | 733 m · 9 min | padaria e restaurante, **05h à meia-noite** |
+
+**Dois polos, e vale entender a diferença.** A **Duque de Caxias** é a saída natural, e nela
+está o mais perto de tudo. A **Praça Princesa Isabel**, a 4 minutos pela Rua Helvétia, tem
+cinco opções juntas: se uma estiver cheia ou fechada, você resolve ali mesmo sem andar de
+novo. É o melhor lugar para ir sem decidir antes.
+
+### O "Terraço" do bizu: não localizado
+
+O colega indicou um **Terraço, R$ 28,00, come à vontade**, e essa continua sendo a melhor
+indicação de custo que existe aqui. Mas o lugar **não foi encontrado**.
+
+Procurei no OpenStreetMap (335 estabelecimentos num raio de 1,6 km) e na busca. O único
+"Terraço" da região é o **Terraço Itália**, no Edifício Itália, que é restaurante caro de
+vista panorâmica e claramente não é o do bizu.
+
+**Duas hipóteses**, e só você resolve:
+
+1. **O nome está trocado** e o lugar é outro. O candidato mais provável é o **S S Self
+   Service**, na Duque de Caxias 839, a 3 minutos, que é self-service e bate com o perfil.
+2. **Existe e não está mapeado.** Comércio pequeno de bairro muitas vezes não está no
+   OpenStreetMap nem tem página.
+
+**O que resolve:** pergunte ao colega o endereço ou a rua. Com isso eu meço, coloco no mapa e
+ele deixa de ser `[BIZU]` solto para virar `[TESTADO]` com distância.
 
 **Restaurante Rio Branco** — Av. Duque de Caxias x Av. Rio Branco — **[CANDIDATO]**
-Está na lista do SAE por proximidade. Ninguém confirmou se presta.
+Está na lista do SAE por proximidade. Não aparece no OpenStreetMap com esse nome, então pode
+ser o mesmo caso do Terraço.
 
-**Padaria** — Al. Barão de Limeira, 872 — **[CANDIDATO]**
+*Fonte das distâncias: OpenStreetMap, rota a pé pelo Valhalla. Os horários de funcionamento
+da maioria não constam em lugar nenhum, como já aconteceu com as padarias.*
 
 ## Jantar de terça e quarta
 

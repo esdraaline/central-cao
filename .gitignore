@@ -30,3 +30,7 @@ Manuais/
 # Cache do gerador de mapas (rotas e malha viaria baixadas).
 # E refeito sozinho: "python mapas/gerar_mapas.py --refazer".
 mapas/.cache/
+
+# Capturas e snapshots do Playwright (uso do assistente para conferir o painel).
+# Sao descartaveis e poluiam o controle de versao com dezenas de arquivos.
+.playwright-mcp/

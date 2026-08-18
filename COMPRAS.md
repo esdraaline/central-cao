@@ -3,6 +3,12 @@
 > **Conferência de armário concluída em 06/08/2026.** Das 90 peças da lista, 78 já estavam em casa. O que sobrou está aqui embaixo, junto com o que já se sabia que faltava. Depois desta lista vem só a [MALA.md](MALA.md), no dia de arrumar.
 > **Prazos: mercado até sexta 14/08; fardamento na tarde de segunda 17/08; o que é da segunda semana, até sábado 22/08.**
 
+
+> **Aviso sobre as marcações (18/08/2026).** As caixinhas ticadas no painel sobem para o
+> Supabase, mas **não voltam para este arquivo**. Então o `.md` pode mostrar em aberto algo
+> que você já comprou. **A verdade está no painel, não aqui.** Os dois itens marcados abaixo
+> foram reconciliados a partir de uma tarefa concluída, não do painel.
+
 ## Como ficou decidido (12/08/2026)
 
 **Todo o fardamento será comprado na segunda, 17/08, na ConfecBell**, aproveitando a tarde
@@ -62,8 +68,8 @@ usada na segunda.
 A conferência de armário fechou cama, higiene, limpeza do alojamento, copa, estudo e roupa
 pessoal. Sobrou o que a orientação do SAE de 12/08/2026 trouxe de novo:
 
-- [ ] **Cadeado** — o armário do CAES **não tem chave própria**, cada um leva o seu. Prefira o de segredo, para não depender de chavinha, e leve 2 se quiser trancar também a mala.
-- [ ] **Etiqueta ou fita crepe + caneta permanente** — são 2 geladeiras e 2 frigobares para a turma inteira; pote sem nome se perde.
+- [x] **Cadeado** (comprado em 14/08) — o armário do CAES **não tem chave própria**, cada um leva o seu. Prefira o de segredo, para não depender de chavinha, e leve 2 se quiser trancar também a mala.
+- [x] **Etiqueta ou fita crepe + caneta permanente** (comprado em 14/08) — são 2 geladeiras e 2 frigobares para a turma inteira; pote sem nome se perde.
 
 Se aparecer alguma coisa na hora de arrumar a mala, anote aqui.
 

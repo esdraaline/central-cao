@@ -192,24 +192,28 @@ está o mais perto de tudo. A **Praça Princesa Isabel**, a 4 minutos pela Rua H
 cinco opções juntas: se uma estiver cheia ou fechada, você resolve ali mesmo sem andar de
 novo. É o melhor lugar para ir sem decidir antes.
 
-### O "Terraço" do bizu: não localizado
+### O "Terraço" do bizu: existe, mas não está no mapa
 
 O colega indicou um **Terraço, R$ 28,00, come à vontade**, e essa continua sendo a melhor
-indicação de custo que existe aqui. Mas o lugar **não foi encontrado**.
+indicação de custo que existe aqui.
 
-Procurei no OpenStreetMap (335 estabelecimentos num raio de 1,6 km) e na busca. O único
-"Terraço" da região é o **Terraço Itália**, no Edifício Itália, que é restaurante caro de
-vista panorâmica e claramente não é o do bizu.
+Procurei no OpenStreetMap (335 estabelecimentos num raio de 1,6 km) e na busca, e não achei.
+O único "Terraço" da região é o **Terraço Itália**, no Edifício Itália, restaurante caro de
+vista panorâmica, que claramente não é o do bizu.
 
-**Duas hipóteses**, e só você resolve:
+**Mas atenção ao motivo, porque ele vale para o guia inteiro:** a **Av. Duque de Caxias**, que
+é a avenida do próprio CAES, tem **apenas 2 registros no OpenStreetMap** em toda a sua
+extensão (um restaurante no n. 529 e um supermercado sem nome). **A rua da nossa porta é
+quase invisível para a base de dados.**
 
-1. **O nome está trocado** e o lugar é outro. O candidato mais provável é o **S S Self
-   Service**, na Duque de Caxias 839, a 3 minutos, que é self-service e bate com o perfil.
-2. **Existe e não está mapeado.** Comércio pequeno de bairro muitas vezes não está no
-   OpenStreetMap nem tem página.
+Então a ausência do Terraço **não é prova de que ele não existe**. É prova de que ninguém o
+cadastrou. Comércio pequeno de bairro raramente está.
 
-**O que resolve:** pergunte ao colega o endereço ou a rua. Com isso eu meço, coloco no mapa e
-ele deixa de ser `[BIZU]` solto para virar `[TESTADO]` com distância.
+**O candidato mais provável** continua sendo o **S S Self Service**, Duque de Caxias 839, a 3
+minutos, que é self-service e bate com o perfil de preço.
+
+**O que resolve:** pergunte ao colega o nome da rua, ou olhe a fachada ao passar. Com isso eu
+meço e ele vira `[TESTADO]` com distância.
 
 **Restaurante Rio Branco** — Av. Duque de Caxias x Av. Rio Branco — **[CANDIDATO]**
 Está na lista do SAE por proximidade. Não aparece no OpenStreetMap com esse nome, então pode
@@ -312,6 +316,12 @@ Para emergência de madrugada, a **Drogaria São Paulo da Praça Júlio Mesquita
 conveniências, 4 açougues, 4 feiras e 22 farmácias. **Distância e tempo são medidos**, do
 mesmo jeito que os mapas de trajeto.
 
+**Não cobre o que não está no OpenStreetMap, e isso é mais grave do que parece.** A
+**Av. Duque de Caxias**, a avenida do CAES, tem só **2 registros na base** em toda a
+extensão. Ou seja: **pode haver coisa boa a 100 metros da porta que este guia não vê**, e os
+dois lugares que o colega indicou (Terraço e Flor da Duque) são provavelmente exatamente
+isso. **O olho na calçada vale mais que esta lista para o que está bem perto.**
+
 **Não cobre bem o horário.** Só **41 dos 102** tinham horário cadastrado no OpenStreetMap.
 Fui atrás dos principais na busca e consegui confirmar Padaria Caxias, Cascatinha, Padaria
 Campos Elíseos e os dois Dia. Os demais estão marcados como **"não localizado"**, e isso é
@@ -323,10 +333,11 @@ olho: a **Padaria Caxias** aparece como Al. Barão de Limeira **339** no OSM e *
 busca; a **Padaria Campos Elíseos** aparece como **1500** no OSM e **872** na busca (e o
 slide do SAE também diz 872, então 872 deve ser o certo). *[VERIFICAR ao passar na rua.]*
 
-**A "Padaria Flor da Duque", o bizu do colega, não existe.** Procurei no OpenStreetMap e na
-busca, em várias formas, e não há nada com esse nome na Av. Duque de Caxias nem perto. Ou o
-nome está trocado, ou ela fechou. Quando você passar por lá, confere o nome real que eu
-corrijo.
+**A "Flor da Duque" do bizu não está mapeada**, e provavelmente é isso, e não inexistência.
+Procurei no OpenStreetMap e na busca, em várias formas, sem achar. Mas o nome sugere a
+própria **Av. Duque de Caxias**, e essa avenida tem só **2 registros no OpenStreetMap** em
+toda a extensão. É o mesmo caso do Terraço. Ao passar por lá, confere a fachada que eu meço e
+incluo.
 
 ## Emergência e utilidade
 

@@ -102,7 +102,10 @@ Duas pegadinhas registradas aqui para não errar de novo:
    **40 mm da costura superior da manga**, e é essa a referência para mandar costurar.
 
 ## Estrutura do prédio
-- **Copa e refeitório** à disposição da turma, os dois com eletrodomésticos.
+- **Copa e refeitório** à disposição da turma, os dois com eletrodomésticos. *O bizu do
+  colega descreve de forma um pouco diferente: copa com geladeira e micro-ondas **anexa ao
+  alojamento**, frigobar e mesas **dentro do alojamento**. As duas descrições podem conviver;
+  confirmar no local.*
 - Para guardar marmita: **1 geladeira na copa, 1 geladeira no refeitório e 2 frigobares**
   (SAE, 12/08/2026). São muitas pessoas usando as mesmas geladeiras, então **identifique os
   potes com o seu nome**.

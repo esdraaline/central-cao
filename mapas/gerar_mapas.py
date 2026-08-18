@@ -76,12 +76,43 @@ DESTINOS = [
      "marco", "Do CAES até a 25 de Março", None, "CAES"),
     ("feira-madrugada", "Feira", "Rua Oriente, 500, Brás, São Paulo",
      "feira", "Do CAES até a Feira da Madrugada", None, "CAES"),
-    ("ccb-santana", "CCB Santana", "Rua Daniel Rossi, 194, São Paulo",
-     "ccbnorte", "Da Estação Santana até a CCB de Santana",
-     "Estação Santana, São Paulo", "Estação Santana"),
-    ("ccb-barra-funda", "CCB Barra Funda", "Rua Brigadeiro Galvão, 683, São Paulo",
-     "ccboeste", "Da Estação Marechal Deodoro até a CCB da Barra Funda",
-     "Estação Marechal Deodoro, São Paulo", "Est. Mal. Deodoro"),
+    # As rotas ate as casas de oracao sairam do repositorio publico em
+    # 17/08/2026 (auditoria, achado C1): dia + hora + endereco + trajeto a pe
+    # permitiam prever onde ele estaria. Os .svg vivem no Drive, em
+    # 08_CAO_2026/00_CURSO/mapas/. Para regerar, reative o bloco abaixo e
+    # aponte AQUI para aquela pasta.
+    # ("ccb-santana", "CCB Santana", "Rua Daniel Rossi, 194, São Paulo",
+    # "ccbnorte", "Da Estação Santana até a CCB de Santana",
+    # "Estação Santana, São Paulo", "Estação Santana"),
+    # ("ccb-barra-funda", "CCB Barra Funda", "Rua Brigadeiro Galvão, 683, São Paulo",
+    # "ccboeste", "Da Estação Marechal Deodoro até a CCB da Barra Funda",
+    # "Estação Marechal Deodoro, São Paulo", "Est. Mal. Deodoro"),
+]
+
+# Trechos que o guia cita mas que nao rendem mapa proprio. Ficam aqui para
+# serem reprodutiveis: sem isto, o numero publicado nao tem como ser
+# reconferido depois (achado M1 da auditoria de 17/08).
+MEDICOES = [
+    ("higienopolis-por-mackenzie", "Estação Higienópolis-Mackenzie, São Paulo",
+     "Shopping Pátio Higienópolis, Avenida Higienópolis 618, São Paulo"),
+    ("higienopolis-por-sta-cecilia", "Estação Santa Cecília, São Paulo",
+     "Shopping Pátio Higienópolis, Avenida Higienópolis 618, São Paulo"),
+    ("higienopolis-por-mal-deodoro", "Estação Marechal Deodoro, São Paulo",
+     "Shopping Pátio Higienópolis, Avenida Higienópolis 618, São Paulo"),
+    ("ccb-caninde-por-armenia", "Estação Armênia, São Paulo",
+     "Rua Silva Teles, 1611, São Paulo"),
+    ("ccb-cambuci-por-sao-joaquim", "Estação São Joaquim, São Paulo",
+     "Rua José Bento, 311, São Paulo"),
+    ("ccb-limao-por-santana", "Estação Santana, São Paulo",
+     "Rua Carolina Soares, 444, São Paulo"),
+    ("ccb-belem-por-belem", "Estação Belém, São Paulo",
+     "Rua Pimenta Bueno, 132, São Paulo"),
+    ("ccb-ponte-pequena-por-armenia", "Estação Armênia, São Paulo",
+     "Rua Afonso Arinos, 91, São Paulo"),
+    ("ccb-barra-funda-a-pe-do-caes", None,
+     "Rua Brigadeiro Galvão, 683, São Paulo"),
+    ("tatuape-estacao-ao-shopping", "Estação Tatuapé, São Paulo",
+     "Shopping Metrô Tatuapé, São Paulo"),
 ]
 
 # Caixa pequena leva rua residencial; as grandes so via principal, senao a
@@ -122,10 +153,23 @@ ESTILO = """<style>
 
 # ------------------------------------------------------------------ rede
 
-def _busca(url, tempo=60):
-    req = urllib.request.Request(url, headers=UA)
-    with urllib.request.urlopen(req, timeout=tempo) as r:
-        return json.load(r)
+def _busca(url, tempo=60, tentativas=3):
+    """Busca com retentativa: rede cai no meio de rodada longa e derruba tudo.
+
+    Sem isto, uma falha de rede no 12o de 16 pedidos perdia a rodada inteira
+    (aconteceu na auditoria de 17/08).
+    """
+    erro = None
+    for n in range(tentativas):
+        try:
+            req = urllib.request.Request(url, headers=UA)
+            with urllib.request.urlopen(req, timeout=tempo) as r:
+                return json.load(r)
+        except Exception as e:
+            erro = e
+            print("     rede falhou (%d/%d): %s" % (n + 1, tentativas, str(e)[:44]))
+            time.sleep(4 * (n + 1))
+    raise erro
 
 
 def geocodifica(consulta):
@@ -299,7 +343,11 @@ def desenha(arquivo, rotulo, titulo, rota, vias, org, rot_org):
     def rotula(nome, via, classe):
         mp = via["pts"][len(via["pts"]) // 2]
         x, y = proj(mp[0], mp[1])
-        if not (MARGEM < x < L - MARGEM and 46 < y < A - 34):
+        # O texto e centrado no ponto, entao ele se espalha metade da largura
+        # para cada lado. Validar so o centro deixava rotulo comprido vazar
+        # pela borda (auditoria de 17/08: dois cortados no mapa da Feira).
+        meia = len(_curto(nome)) * 2.9
+        if not (MARGEM + meia < x < L - MARGEM - meia and 46 < y < A - 34):
             return
         if any(abs(x - ax) < 92 and abs(y - ay) < 16 for ax, ay in postos):
             return
@@ -477,6 +525,9 @@ def desenha_pois(pois, vias):
             continue
         if any(abs(x - ax) < 135 and abs(y - ay) < 24 for ax, ay in postos):
             continue
+        larg = len(p["nome"][:26]) * 5.4
+        if (x < L / 2 and x + 8 + larg > L - 8) or (x >= L / 2 and x - 8 - larg < 8):
+            continue
         postos.append((x, y))
         anc = "start" if x < L / 2 else "end"
         out.append('<text class="esc" x="%.0f" y="%.0f" text-anchor="%s" paint-order="stroke" '
@@ -532,6 +583,16 @@ def main():
             rotas[arq] = r
             print("  rota  %-16s %5d m  %2d min  |  %s" % (arq, r["m"], r["min"], achou[:38]))
             time.sleep(0.8)
+        for chave, de, para in MEDICOES:
+            partida = resolve_origem(de)
+            lat, lon, achou = geocodifica(para)
+            time.sleep(1.2)
+            r = rota_a_pe(partida, (lat, lon))
+            r.update({"lat": lat, "lon": lon, "achou": achou,
+                      "org": list(partida), "so_medicao": True})
+            rotas[chave] = r
+            print("  med.  %-30s %5d m  %2d min" % (chave, r["m"], r["min"]))
+            time.sleep(0.8)
         cache_grava("rotas.json", rotas)
 
     malhas = {}
@@ -541,7 +602,7 @@ def main():
         if v is None:
             lats, lons = [], []
             for arq, _r, _c, g, _t, org, _ro in DESTINOS:
-                if g != grupo:
+                if g != grupo or arq not in rotas:
                     continue
                 o = rotas[arq].get("org", ORIGEM)
                 lats.append(o[0])

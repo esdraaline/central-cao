@@ -341,13 +341,13 @@
 <text class="rot" x="259" y="146" text-anchor="middle" paint-order="stroke" stroke="var(--card)" stroke-width="3.5">Av. Tiradentes</text>
 <text class="rot" x="211" y="173" text-anchor="middle" paint-order="stroke" stroke="var(--card)" stroke-width="3.5">R. Ribeiro de Lima</text>
 <text class="esc" x="393" y="159" text-anchor="middle" paint-order="stroke" stroke="var(--card)" stroke-width="3.5">Av. do Estado</text>
-<text class="esc" x="607" y="121" text-anchor="middle" paint-order="stroke" stroke="var(--card)" stroke-width="3.5">R. Coronel Morais</text>
 <text class="esc" x="110" y="159" text-anchor="middle" paint-order="stroke" stroke="var(--card)" stroke-width="3.5">R. José Paulino</text>
 <text class="esc" x="329" y="247" text-anchor="middle" paint-order="stroke" stroke="var(--card)" stroke-width="3.5">R. São Caetano</text>
 <text class="esc" x="422" y="367" text-anchor="middle" paint-order="stroke" stroke="var(--card)" stroke-width="3.5">R. Mendes Caldeira</text>
 <text class="esc" x="496" y="186" text-anchor="middle" paint-order="stroke" stroke="var(--card)" stroke-width="3.5">R. Alexandrino Pedroso</text>
-<text class="esc" x="595" y="371" text-anchor="middle" paint-order="stroke" stroke="var(--card)" stroke-width="3.5">R. Conselheiro Belisário</text>
-<text class="esc" x="611" y="194" text-anchor="middle" paint-order="stroke" stroke="var(--card)" stroke-width="3.5">R. Paraíba</text>
+<text class="esc" x="264" y="318" text-anchor="middle" paint-order="stroke" stroke="var(--card)" stroke-width="3.5">R. Paula Sousa</text>
+<text class="esc" x="81" y="366" text-anchor="middle" paint-order="stroke" stroke="var(--card)" stroke-width="3.5">Av. Rio Branco</text>
+<text class="esc" x="81" y="139" text-anchor="middle" paint-order="stroke" stroke="var(--card)" stroke-width="3.5">R. Aimorés</text>
 <circle class="pin" cx="42" cy="232" r="8"/>
 <circle class="pin2" cx="598" cy="321" r="8"/>
 <text class="marc" x="54" y="236" text-anchor="start" paint-order="stroke" stroke="var(--card)" stroke-width="4">CAES</text>

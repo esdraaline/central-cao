@@ -28,7 +28,8 @@
 ### Orientador da dissertação — MISSÃO URGENTE
 - [ ] Perguntar ao Cap Gobbo as REGRAS da orientação: o orientador precisa ser instrutor do curso? Quantos orientandos cada um aceita? Há prazo para escolher? Como é o pedido formal? [21/08/2026] #dissertacao
 - [ ] Montar o rol completo de disciplinas e instrutores conforme os QTS forem saindo, para ter o universo de candidatos [28/08/2026] #dissertacao
-- [ ] Definir a lista curta de 3 orientadores possíveis por afinidade com o tema (integração PM-Prefeituras) e sondar o primeiro [04/09/2026] #dissertacao
+- [ ] Falar com o Cap Simões e pegar o contato do Cel Elgis [19/08/2026] #dissertacao
+- [ ] Procurar o Cel Elgis e sondar a orientação, levando o PP já aprovado [21/08/2026] #dissertacao
 
 ### Segunda semana (viagem em 23/08)
 - [ ] Conferir whey, creatina, energético e coqueteleira, e comprar o que faltar [22/08/2026] #pessoal

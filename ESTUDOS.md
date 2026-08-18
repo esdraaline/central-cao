@@ -184,6 +184,21 @@ rápido**: bom orientador é procurado, e quem chega primeiro leva.
 **Conclusão: não dá para esperar a lista completa.** A ordem certa é agir sobre o que já se
 sabe e deixar o resto amadurecer.
 
+### DECIDIDO em 18/08: o alvo é o Cel PM Elgis
+
+Escolhido entre os sete instrutores conhecidos. **O caminho até ele é o Cap PM Simões**, que
+tem o contato. Ver [CONTATOS.md](CONTATOS.md).
+
+**Por quê**: na aula de 17/08 ele abriu perguntando *"nosso foco, visão de futuro, é polícia
+repressiva ou polícia comunitária?"*. É exatamente a tensão que a minha dissertação sobre
+integração PM-Prefeituras tem que sustentar. Um orientador que já formula o problema nos
+mesmos termos poupa meses de tradução.
+
+**O que não muda com a decisão:** as regras continuam sendo o primeiro passo. Chegar no Cel
+Elgis sabendo se ele pode aceitar, quantos orientandos já tem e qual o prazo vale mais do que
+chegar antes e no escuro. As duas conversas podem correr em paralelo, mas a do Gobbo é a que
+protege a outra.
+
 ### A sequência, nesta ordem
 
 **1. As regras, antes de qualquer nome** (Cap Gobbo, Seção de Pesquisa)

@@ -106,8 +106,8 @@ Quinta acaba às 11h30 e é o dia de voltar para Guararapes, como já previa
 ## As 31 disciplinas
 
 Na ordem em que aparecem no QTS, que é a ordem das pastas no Drive
-(`08_CAO_2026/01_DISCIPLINAS/D01_...` até `D31_...`). A coluna "meu" traz o docente que já
-deu aula ao pelotão A na semana 1.
+(`08_CAO_2026/01_DISCIPLINAS/D01_...` até `D31_...`). A coluna "meu" traz o docente que
+pega o pelotão A na semana 1.
 
 | # | Disciplina | Corpo docente no QTS | Meu |
 |---|---|---|---|
@@ -183,18 +183,18 @@ A missão do orientador ([ESTUDOS.md](ESTUDOS.md)) estava esperando "o rol compl
 chegou.** Três coisas mudam:
 
 **O Cel Elgis continua de pé.** Ele é o primeiro nome do Planejamento Estratégico, que tem o
-segundo maior corpo docente do curso (seis oficiais). Nada na grade contradiz a decisão de
+terceiro maior corpo docente do curso (seis oficiais, atrás só de Direitos Humanos e Gestão de Pessoas). Nada na grade contradiz a decisão de
 18/08.
 
 **Apareceram disciplinas que são o meu tema, e que eu nem sabia que existiam.** Duas em
 especial:
 
-- **D28 Policiamento Comunitário** (Cel Barreto e mais três). Já deu aula ao pelotão A na
-  quarta 19/08. Governança participativa e integração com a comunidade é literalmente o
-  assunto da minha dissertação.
+- **D28 Policiamento Comunitário** (Cel Barreto e mais três). Entra na **quarta 19/08**, com
+  o Cel Barreto no bloco 3. Governança participativa e integração com a comunidade é
+  literalmente o assunto da minha dissertação.
 - **D04 Relações Sociais e Institucionais no Brasil** (Cel Fernandes e mais quatro).
-  Articulação interinstitucional é a outra metade da pergunta de pesquisa. Também já deu aula
-  ao pelotão A, na quinta 20/08.
+  Articulação interinstitucional é a outra metade da pergunta de pesquisa. Entra na **quinta
+  20/08**, com o Cel Fernandes no bloco 1.
 
 Se D13 Gestão de Processos e D16 Gestão da Informação entrarem, servem para o "como se opera"
 da integração.
@@ -208,8 +208,8 @@ de caçá-lo na seção.
 
 - **A carga horária de cada disciplina.** O QTS é semanal e não traz o total do curso. Sem
   isso não dá para saber quais são as matérias pesadas.
-- **A ordem em que as disciplinas entram.** A semana 1 acionou 14 das 31. As outras 17
-  aparecem quando o QTS da semana delas sair.
+- **A ordem em que as disciplinas entram.** A semana 1 acionou 19 das 31 (contando todos os
+  pelotões, não só o meu). As outras 12 aparecem quando o QTS da semana delas sair.
 - **Quais têm prova e quais têm trabalho.** Nada disso está no QTS.
 - **Se a Ed. Física de quarta com embarque às 07h50 é toda semana ou foi só na semana 1.**
 

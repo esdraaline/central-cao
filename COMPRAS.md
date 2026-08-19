@@ -96,7 +96,7 @@ existir em casa até lá (a lista de arrumar está em [MALA.md](MALA.md)).
 
 ## Pendente, mas não é compra
 
-- [ ] **Ofício de Apresentação** — não é compra nem é papel para levar: é envio da OPM à mesa **SEI 302090130**, junto com a liberação da Rotina 13 do SIPA. Depende da P/1, então acione cedo. Detalhe em [ROTINA.md](ROTINA.md).
+- [x] **Ofício de Apresentação** — resolvido em 19/08/2026. A P/1 do 2º BPM/I enviou à mesa **SEI 302090130**: a cobrança do CAES aos que faltavam não traz meu nome nem o 2º BPM/I. Detalhe em [ROTINA.md](ROTINA.md).
 
 ## Onde comprar
 - **Fardamento, distintivos e aplicação**: loja de fardamento militar / cooperativa. É a que precisa de prazo.

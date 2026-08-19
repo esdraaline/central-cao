@@ -204,7 +204,7 @@ nome vira marmita de todo mundo.
 
 ## Documentos
 - [ ] Carteira de identidade funcional
-- [ ] **Número do processo SEI** do Ofício de Apresentação anotado no celular. O ofício em si é enviado pela OPM à mesa **SEI 302090130** e **não precisa ir impresso** (ver [ROTINA.md](ROTINA.md)); cópia em papel é só cortesia
+- [x] **Ofício de Apresentação** — nada a levar. O envio da P/1 à mesa **SEI 302090130** foi confirmado em 19/08/2026 (ver [ROTINA.md](ROTINA.md)); é ato eletrônico, não vai impresso
 - [ ] Dinheiro/cartão para a divisão do combustível da carona
 
 ## Segunda semana — o que fica para 23/08

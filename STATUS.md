@@ -241,9 +241,11 @@ pela Rotina 13 do SIPA, **o cadeado e a etiqueta foram comprados**, **a carona e
 combinada** (espaço de bagagem incluído), a **camisa de passeio está engomada** e a
 conta do Banco do Brasil foi conferida. Sobrou:
 
-1. **Hoje (14/08), conferir se a mesa SEI 302090130 recebeu o ofício** e anotar o
-   número do processo no celular. É do ato eletrônico da P/1 que dependem a matrícula,
-   a adição, a Ajuda de Custo e o Auxílio Financeiro a Estudantes.
+1. ~~Conferir se a mesa SEI 302090130 recebeu o ofício.~~ **Recebeu — fechado em
+   19/08/2026.** A cobrança do CAES aos capitães cujo Ofício de Apresentação ainda não
+   tinha chegado não traz meu nome nem o 2º BPM/I. Como é desse ato eletrônico da P/1 que
+   dependem matrícula, adição, Ajuda de Custo e Auxílio Financeiro a Estudantes, o assunto
+   sai da lista de pendências.
 2. **Sábado (15/08), separar e arrumar**: os documentos de mão, o S-1 que fica guardado no
    CAES (com a gravata, que já está em casa) e a mala inteira, seguindo a [MALA.md](MALA.md).
    O B-1 e o EPI **não** entram nessa mala: ficam separados em casa, para a viagem de 23/08.

@@ -9,9 +9,6 @@
 
 ## Pendentes
 
-### Reta final para a primeira semana (viagem em 16/08)
-- [ ] Conferir se a mesa SEI 302090130 recebeu o ofício e anotar o número do processo no celular [18/08/2026] #admin
-
 ### Segunda, 17/08 (é o dia de resolver o fardamento)
 - [ ] Decidir opção de desconto SIPA: Alojamento (R$ 30,35) ou Vestiário (R$ 21,52), e cessar o equivalente na OPM de origem [18/08/2026] #admin
 - [ ] Comprar a camisa social cinza-claro do S-1 e a boina de reposição, que faltaram na ida à ConfecBell [19/08/2026] #pessoal
@@ -35,6 +32,7 @@
 - [ ] Levar na viagem: B-1 (gandola, calça operacional, coturno), EPI (cinto, colete, bota) e os suplementos [23/08/2026] #pessoal
 
 ## Concluídas
+- [x] Conferir se a mesa SEI 302090130 recebeu o ofício: recebeu. A cobrança do CAES aos faltantes (19/08) não traz meu nome nem o 2º BPM/I [19/08/2026] #admin
 - [x] Comprar na ConfecBell: 2 camisas de passeio, 2 camisetas de serviço, tarjeta operacional, Logomarca, 4 distintivos de OPM e tarjeta administrativa de acrílico [18/08/2026] #pessoal
 - [x] Conferir whey, creatina e coqueteleira — os três já em casa [18/08/2026] #pessoal
 - [x] Pegar o QTS e lançar as disciplinas: sai dia a dia, 7 disciplinas até 18/08 [18/08/2026] #curso

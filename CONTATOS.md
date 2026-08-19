@@ -17,11 +17,19 @@ Duas correções já feitas neste endereço, para ninguém desandar de novo:
 - **17/08/2026**: antes constava "região da Barra Funda", que é outro bairro. Corrigido no local pelo Josemar.
 - **19/08/2026**: o número passou de 142 para **5005**, que é o oficial. Praça, bairro e CEP não mudaram, então **nenhum trajeto e nenhum mapa do [ENTORNO.md](ENTORNO.md) muda**: as distâncias continuam valendo.
 
-*[VERIFICAR na Seção de Coordenação qual endereço usar em documento formal e no SEI.]* O site
-da PMESP ainda publica o CAES em **Av. Água Fria, 1923, Água Fria, CEP 02333-900**, e um
-manual antigo do aluno traz **Rua Jorge Miranda, 658, Luz, CEP 01106-000**. São endereços
-velhos, de antes da mudança para os Campos Elíseos, mas enquanto a página oficial não é
-atualizada dá para alguém cobrar o endereço antigo num cadastro.
+### Dois endereços que ainda circulam e estão desatualizados
+
+Confirmado pelo Josemar em 19/08/2026: **os dois estão errados hoje.** Ficam anotados só para
+serem reconhecidos e recusados, porque saem de fonte que parece confiável.
+
+| Endereço | Onde ainda aparece |
+|---|---|
+| Av. Água Fria, 1923, Água Fria, CEP 02333-900 | Página do CAES no site da PMESP |
+| Rua Jorge Miranda, 658, Luz, CEP 01106-000 | Manual do aluno antigo, do próprio CAES |
+
+São de antes da mudança para os Campos Elíseos. **Se algum cadastro, formulário ou documento
+vier com um desses, corrigir para a Praça Júlio Prestes, 5005** — inclusive quando quem
+mandou citar a fonte oficial, porque a fonte oficial é que está velha.
 
 ## Organograma
 - **Comandante**: Cel PM Melo

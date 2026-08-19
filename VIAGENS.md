@@ -21,7 +21,7 @@ Primeira semana do CAO-II/26. **Recepção na segunda, 17/08, a partir das 07h30
 > no sábado, e a **janta de domingo vai na mala**, porque chegando à noite não dá para contar
 > com restaurante aberto.
 
-- **Destino**: CAES "Cel Nelson Freire Terra", **em frente à Praça Júlio Prestes**, centro de São Paulo (Campos Elíseos / Santa Ifigênia, entorno de Av. Rio Branco / Av. Duque de Caxias). Corrigido em 17/08/2026: antes constava Barra Funda.
+- **Destino**: CAES "Cel Nelson Freire Terra" — **Praça Júlio Prestes, 5005, Campos Elíseos, São Paulo/SP, CEP 01218-020**. É esse o endereço para jogar no GPS. Fica **em frente à Praça Júlio Prestes**, no centro (Campos Elíseos / Santa Ifigênia, entorno de Av. Rio Branco / Av. Duque de Caxias). Duas correções: em 17/08/2026 saiu o "Barra Funda", que era outro bairro; em 19/08/2026 o número passou de 142 para o oficial 5005.
 - **Como vou**: **de carona com um amigo** (definido em 12/08/2026).
 - **Horário de saída**: **15h00, de casa** (fechado em 12/08/2026). Pela distância de Guararapes até o centro de São Paulo, a chegada cai por volta das 22h, salvo trânsito ou parada.
 - **Bagagem**: é carona, então o porta-malas é dividido. Combine o volume antes e leve compacto: a mala da semana já tem roupa de cama, material de limpeza e itens de copa. Se apertar, o balde é o primeiro a ficar.

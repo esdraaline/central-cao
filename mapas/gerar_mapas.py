@@ -45,8 +45,15 @@ AQUI = os.path.dirname(os.path.abspath(__file__))
 CACHE = os.path.join(AQUI, ".cache")
 UA = {"User-Agent": "central-cao-guia/1.0 (uso pessoal, mapas do guia do CAO)"}
 
-# Saida do CAES, confirmada no local em 17/08/2026:
-# Praca Julio Prestes, 142, Campos Eliseos, CEP 01218-020.
+# Saida do CAES: Praca Julio Prestes, 5005, Campos Eliseos, Sao Paulo/SP,
+# CEP 01218-020 (endereco oficial; o numero era 142 ate 19/08/2026).
+#
+# NAO trocar esta coordenada pelo que um geocodificador devolve para o endereco.
+# Ela e o PORTAO, conferido no local em 17/08/2026, do lado da Alameda Dino Bueno.
+# A praca nao tem numeracao cadastrada no OpenStreetMap, entao qualquer numero cai
+# no centro da praca (-23.5343452, -46.6404391), uns 130 m a leste daqui, e todas
+# as distancias do guia sairiam erradas na mesma medida. Por isso a mudanca de
+# numero de 2026 nao exigiu refazer mapa nenhum.
 ORIGEM = (-23.53437, -46.64168)
 
 # Prende a geocodificacao no centro de Sao Paulo (ver armadilha 2).

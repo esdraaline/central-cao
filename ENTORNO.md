@@ -1,7 +1,8 @@
 # ENTORNO — comer, comprar e passear a partir do CAES
 
-> Guia da região do CAES — Praça Júlio Prestes, 142, Campos Elíseos, CEP 01218-020.
-> Criado em 17/08/2026.
+> Guia da região do CAES — **Praça Júlio Prestes, 5005, Campos Elíseos, São Paulo/SP,
+> CEP 01218-020** (endereço oficial, ver [CONTATOS.md](CONTATOS.md)).
+> Criado em 17/08/2026, número do endereço corrigido em 19/08/2026.
 
 ## Como usar isto
 
@@ -53,14 +54,24 @@ sempre estiveram certos.*
 
 ## Os trajetos a pé, no desenho
 
-**Saída do CAES: Praça Júlio Prestes, 142, Campos Elíseos, CEP 01218-020.**
+**Saída do CAES: Praça Júlio Prestes, 5005, Campos Elíseos, São Paulo/SP, CEP 01218-020.**
 
 Os mapas abaixo são traçados sobre a malha viária real do OpenStreetMap, com a rota a pé
 calculada por roteador de pedestre (respeita calçada e travessia, não mão de direção de
 carro). **As distâncias e os tempos são medidos, não estimados.**
 
+**O ponto de partida não é o centro da praça: é o portão**, marcado por coordenada conferida
+no local em 17/08/2026, do lado da Alameda Dino Bueno. Fica registrado porque geocodificador
+nenhum sabe disso — jogar o endereço no Google devolve o meio da praça, uns 130 m a leste, e
+todas as distâncias daqui sairiam erradas na mesma medida.
+
 *Correção de 17/08: a primeira versão desta seção trazia distâncias que eu estimei olhando
 o traçado das ruas, e várias estavam curtas demais. Os números abaixo substituem aquelas.*
+
+*Nota de 19/08: o número do endereço mudou de 142 para 5005, o oficial. **Os mapas e as
+distâncias abaixo não mudaram e não precisaram ser refeitos**: o ponto de saída é a
+coordenada do portão, que continua a mesma. Conferido: os dois números caem no mesmo lugar
+na base do OpenStreetMap, porque a praça não tem numeração cadastrada.*
 
 ### Estação da Luz — a estação de metrô mais perto
 

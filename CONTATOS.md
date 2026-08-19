@@ -3,7 +3,25 @@
 > Organograma e contatos por assunto. Fonte: slide de Recepção aos Oficiais-Alunos do CAO/II-2026 ([CAO 2026/Curso/SAE - Recepcao dos Discentes CAO II 26.pdf](CAO%202026/Curso/SAE%20-%20Recepcao%20dos%20Discentes%20CAO%20II%2026.pdf)).
 
 ## Local
-CAES "Cel Nelson Freire Terra" — **em frente à Praça Júlio Prestes**, centro de São Paulo (Campos Elíseos / Santa Ifigênia, entorno de Av. Rio Branco / Av. Duque de Caxias / Largo General Osório). Corrigido em 17/08/2026: antes constava "região da Barra Funda", que é outro bairro.
+
+**CAES — Centro de Altos Estudos de Segurança "Cel Nelson Freire Terra"**
+**Praça Júlio Prestes, 5005 — Campos Elíseos, São Paulo/SP, CEP 01218-020.**
+
+É o endereço oficial, e é a forma de escrever em documento, cadastro e aplicativo de mapa.
+Fica **em frente à Praça Júlio Prestes**, no centro (Campos Elíseos / Santa Ifigênia, entorno
+de Av. Rio Branco / Av. Duque de Caxias / Largo General Osório). O guia da região, com os
+trajetos a pé medidos, está em [ENTORNO.md](ENTORNO.md).
+
+Duas correções já feitas neste endereço, para ninguém desandar de novo:
+
+- **17/08/2026**: antes constava "região da Barra Funda", que é outro bairro. Corrigido no local pelo Josemar.
+- **19/08/2026**: o número passou de 142 para **5005**, que é o oficial. Praça, bairro e CEP não mudaram, então **nenhum trajeto e nenhum mapa do [ENTORNO.md](ENTORNO.md) muda**: as distâncias continuam valendo.
+
+*[VERIFICAR na Seção de Coordenação qual endereço usar em documento formal e no SEI.]* O site
+da PMESP ainda publica o CAES em **Av. Água Fria, 1923, Água Fria, CEP 02333-900**, e um
+manual antigo do aluno traz **Rua Jorge Miranda, 658, Luz, CEP 01106-000**. São endereços
+velhos, de antes da mudança para os Campos Elíseos, mas enquanto a página oficial não é
+atualizada dá para alguém cobrar o endereço antigo num cadastro.
 
 ## Organograma
 - **Comandante**: Cel PM Melo

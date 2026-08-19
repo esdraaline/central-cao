@@ -1,7 +1,40 @@
 # STATUS — Central do CAO
 
 > Painel principal. Ler isso primeiro em qualquer sessão nova ("onde paramos?").
-> Atualizado em: 18/08/2026
+> Atualizado em: 19/08/2026
+
+## 19/08/2026: o Drive ganhou mapa e as duas pontas passaram a se enxergar
+
+Diagnóstico pedido pelo Josemar depois de a IA errar três vezes seguidas no mesmo dia:
+pesquisou igreja na web em vez de ler o `ENTORNO.md`, não sabia o endereço do CAES e ofereceu
+criar um arquivo de notas que já existia.
+
+**A causa não era excesso de conteúdo.** Era isto: a regra de território ("repo guarda
+logística, Drive guarda conteúdo") estava escrita **só aqui dentro**, no STATUS de 17/08.
+Quando a sessão abre no Drive, que é onde se anota aula, essa regra era invisível. A IA
+trabalhava sem saber que este repositório existia.
+
+O que foi feito:
+
+- **Nasceu o `08_CAO_2026/CLAUDE.md`**, no Drive. É o mapa: estrutura das pastas, a regra de
+  território e uma tabela de "qual pergunta se responde em qual arquivo daqui". Sessão aberta
+  em qualquer pasta do CAO agora começa sabendo que este repositório existe.
+- **Este `AGENTS.md` ganhou a mesma regra**, na direção contrária, para quem abrir a sessão
+  deste lado.
+- **Duas skills novas**: `cao` (situar no curso: que aula é agora, prazo, entorno, rota) e
+  `aula-cao` (anotar aula no arquivo da disciplina, no formato padrão, com `#PROVA`,
+  `#DISSERTA` e `[VERIFICAR]`).
+- **A cópia órfã das casas de oração virou ponteiro.** O `00_CURSO/CASAS-DE-ORACAO.md` no
+  Drive ficou dois dias afirmando que o dado tinha saído do repositório público, quando a
+  decisão foi revertida no mesmo 17/08 e a seção voltou inteira ao `ENTORNO.md`. Quem lesse a
+  cópia concluiria o contrário do que é verdade.
+
+**Regra que ficou:** uma informação, um dono. Quando o mesmo assunto existir dos dois lados,
+um é dono e o outro é ponteiro de uma linha. Duplicar não confunde só a IA, apaga decisão.
+
+**Pendência:** os três `mapas/ccb-*.svg` estão duplicados byte a byte em `00_CURSO/mapas/` no
+Drive. Como o arquivo que os usava virou ponteiro, as cópias ficaram órfãs. Aguardando o
+Josemar decidir se apaga.
 
 ## 18/08/2026: o QTS chegou e o curso deixou de ser um mistério
 

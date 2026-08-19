@@ -3,6 +3,29 @@
 - O usuário é **Oficial da Polícia Militar do Estado de São Paulo (PMESP)** no posto de **Capitão PM**.
 - Sempre que uma resposta puder ser direcionada por posto/graduação, priorize as regras aplicáveis a **Capitão PM**.
 
+## Divisão de território: este repo x o Google Drive
+
+O CAO vive em dois lugares, com papel fixo:
+
+| Onde | O que guarda |
+|---|---|
+| **Este repositório** (`c:\projetos\central-cao`) | **Logística**: grade, prazo, tarefa, rotina, entorno, compras, contatos, mala |
+| **Google Drive** (`G:\Meu Drive\10_JOSEMAR\02_TRABALHO\08_CAO_2026`) | **Conteúdo**: anotação de aula, slide, trabalho, avaliação, dissertação |
+
+**Este repositório é PÚBLICO.** Conteúdo de aula, slide, PDF de material e documento
+institucional nunca entram aqui.
+
+O mapa completo, com a tabela de "qual pergunta se responde em qual arquivo", está em
+`08_CAO_2026/CLAUDE.md`, do lado do Drive. Skills: **`cao`** (situar no curso, logística) e
+**`aula-cao`** (anotar aula, no Drive).
+
+**Fonte única por assunto.** Quando a mesma informação existir dos dois lados, um é dono e o
+outro é ponteiro de uma linha. Donos atuais: casas de oração e mapas SVG são deste repositório;
+o PDF do QTS (`00_CURSO/QTS/`, no Drive) é a fonte primária da grade e o `GRADE.md` é a
+transcrição de trabalho. Duplicar não confunde só a IA, apaga decisão: em 17/08/2026 uma cópia
+órfã ficou dois dias afirmando que as casas de oração tinham saído do repositório público,
+quando a decisão havia sido revertida no mesmo dia.
+
 ## Regulamento de uniformes (R-5-PM)
 
 O principal manual de referência do projeto é o **R-5-PM, 6ª Ed. v.2** (Regulamento de Uniformes da PMESP).

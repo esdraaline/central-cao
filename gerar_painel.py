@@ -352,6 +352,39 @@ def extrai_cabecalho(texto):
     return (texto[:corte.start()] if corte else texto).rstrip()
 
 
+def extrai_notas(texto):
+    """Devolve as linhas que nao sao tarefa dentro de cada secao (###).
+
+    O arquivo e remontado do zero toda vez que o painel ou a Action escrevem
+    nele: cabecalho + secoes + linhas de tarefa. Tudo que estivesse dentro de
+    uma secao sem ser tarefa se perdia calado nessa reescrita. Em 20/08/2026 foi
+    o que comeu a nota da secao da Univesp, que guardava a hora do protocolo no
+    SAE e o ponteiro para o outro repositorio. Robo que apaga nota nao deixa
+    rastro no lugar certo: quem abre o arquivo depois nao tem como saber que
+    faltou alguma coisa ali.
+
+    Pega o que vier logo abaixo do "### ", ate a primeira tarefa daquela secao.
+    Devolve {nome da secao: [linhas]}.
+    """
+    notas, secao, coletando = {}, None, False
+
+    for linha in texto.splitlines():
+        h = re.match(r"^(#{2,6})\s+(.*)$", linha)
+        if h:
+            secao = h.group(2).strip() if len(h.group(1)) >= 3 else None
+            coletando = secao is not None
+            continue
+        if not coletando:
+            continue
+        if re.match(r"^\s*[-*]\s+\[[ xX]\]\s+", linha):
+            coletando = False                 # da primeira tarefa em diante, para
+            continue
+        if linha.strip():
+            notas.setdefault(secao, []).append(linha.rstrip())
+
+    return notas
+
+
 def extrai_tarefas(texto):
     """Le as tarefas do TAREFAS.md em formato estruturado.
 
@@ -1494,7 +1527,12 @@ JS_TAREFAS = r"""
     if(grupos[''])corpo+=grupos[''].map(linha).join('\n')+'\n';
     ordem.forEach(function(s){
       if(!grupos[s])return;            /* secao que esvaziou sai junto */
-      corpo+='\n### '+s+'\n'+grupos[s].map(linha).join('\n')+'\n';
+      /* As notas da secao voltam logo abaixo do subtitulo, do jeito que
+         estavam no arquivo. Sem isto o exportado apaga toda linha que nao
+         seja tarefa: em 20/08/2026 sumiu assim a nota do protocolo da Univesp. */
+      var nt=(window.TAR_NOTAS||{})[s];
+      corpo+='\n### '+s+'\n'+(nt&&nt.length?nt.join('\n')+'\n':'')+
+             grupos[s].map(linha).join('\n')+'\n';
     });
     if(!pend.length)corpo='- [ ] ...\n';
 
@@ -2893,6 +2931,7 @@ var SOL=%(sol)r,LUA=%(lua)r;
 var CATEGORIAS=%(cats)s;
 var BASE=%(base)s;
 var TAR_CAB=%(tarcab)s;
+var TAR_NOTAS=%(tarnotas)s;
 var ICO=%(ico)s;
 window.CURSO=%(curso)s;
 window.QTS=%(qts)s;
@@ -2923,6 +2962,7 @@ window.SUPA_CFG=%(supa)s;
         "cats": escapa_js([[c[0], c[1], c[2]] for c in CATEGORIAS]),
         "base": escapa_js(extrai_tarefas(docs.get("TAREFAS.md", ""))),
         "tarcab": escapa_js(extrai_cabecalho(docs.get("TAREFAS.md", ""))),
+        "tarnotas": escapa_js(extrai_notas(docs.get("TAREFAS.md", ""))),
         "supa": escapa_js(le_config_supabase()),
         "ico": escapa_js({
             "check": svg("check", 13),

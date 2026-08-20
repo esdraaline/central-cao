@@ -3,6 +3,39 @@
 > Painel principal. Ler isso primeiro em qualquer sessão nova ("onde paramos?").
 > Atualizado em: 19/08/2026
 
+## 20/08/2026: o robô do painel estava comendo linha do TAREFAS.md
+
+Descoberto na volta da semana 1, ao rebasear em cima do commit
+`53fa894` do **painel-cao-bot**: ele tinha apagado a nota da seção da Univesp, a linha que
+guardava a hora do protocolo no SAE (19/08, 20h02) e o ponteiro para o repositório
+`mentor-univesp`. Sem ela não dava para saber quando o prazo dos 10 dias úteis começou a
+correr, e a prova é 22/09.
+
+**A causa é de desenho, não de sorte.** O `TAREFAS.md` não é editado, é **remontado do zero**
+a cada sincronização: cabeçalho + subtítulos + linhas de tarefa, e nada mais. Qualquer linha
+dentro de uma seção que não fosse tarefa desaparecia calada. Valia para os dois caminhos que
+escrevem no arquivo: a Action (`sincroniza_tarefas.py`) e o botão Exportar do painel.
+
+O que foi feito:
+
+- **`extrai_notas()` em `gerar_painel.py`**: lê o que vem logo abaixo de cada `###` até a
+  primeira tarefa da seção e devolve `{seção: [linhas]}`.
+- **As duas pontas passaram a devolver essas linhas**: o `para_markdown()` do Python e o
+  `paraMarkdown()` do JavaScript. Tinham que ser as duas, porque o próprio código já registra
+  que, se os dois gerarem saídas diferentes, cada um reescreve por cima do outro e o arquivo
+  entra em commit de barulho eterno.
+- **A nota da Univesp foi restaurada** a partir de `f404ce9`.
+- **Conferido de ida e volta**: ler o `TAREFAS.md` e remontá-lo devolve o arquivo byte a byte
+  igual, pelos dois caminhos. Sem a correção, some exatamente aquela linha.
+
+**Regra que fica:** robô que reescreve arquivo tem que devolver o que não entendeu, não
+descartar. Apagar em silêncio é pior que falhar, porque não deixa rastro no lugar onde a
+pessoa vai procurar.
+
+*Sobra um detalhe conhecido, e este é de propósito: o texto da tarefa é gravado sem markdown
+(`extrai_tarefas` tira negrito, link e code). O painel mostra texto puro. Então não vale
+escrever `**assim**` dentro de uma linha de tarefa, porque some na primeira sincronização.*
+
 ## 19/08/2026: o Drive ganhou mapa e as duas pontas passaram a se enxergar
 
 Diagnóstico pedido pelo Josemar depois de a IA errar três vezes seguidas no mesmo dia:

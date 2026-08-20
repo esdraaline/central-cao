@@ -38,7 +38,7 @@ import urllib.error
 import urllib.request
 from datetime import datetime, timezone
 
-from gerar_painel import extrai_cabecalho, extrai_tarefas
+from gerar_painel import extrai_cabecalho, extrai_notas, extrai_tarefas
 
 RAIZ = os.path.dirname(os.path.abspath(__file__))
 ARQUIVO = os.path.join(RAIZ, "TAREFAS.md")
@@ -277,12 +277,17 @@ def descreve(t):
 
 # --------------------------------------------------------------- escrita ---
 
-def para_markdown(tarefas, cabecalho, ordem_secoes):
+def para_markdown(tarefas, cabecalho, ordem_secoes, notas=None):
     """Mesmo formato do botao Exportar do painel, para os dois nunca brigarem.
 
     Ordena por data dentro de cada secao, que e a ordem que a aba Tarefas
     mostra. A ordenacao e estavel, entao tarefa de mesma data nao troca de
     lugar a cada rodada e o arquivo nao gera commit de barulho.
+
+    `notas` sao as linhas que nao sao tarefa dentro de cada secao, lidas do
+    arquivo antes da reescrita (extrai_notas). Elas voltam logo abaixo do
+    subtitulo. Sem isso a remontagem apaga em silencio tudo que nao for tarefa,
+    que foi o que aconteceu em 20/08/2026 com a nota do protocolo da Univesp.
     """
     pend = [t for t in tarefas if not t["feito"]]
     feitas = [t for t in tarefas if t["feito"]]
@@ -306,7 +311,11 @@ def para_markdown(tarefas, cabecalho, ordem_secoes):
     for s in ordem_secoes:
         if not grupos.get(s):
             continue                                  # secao que esvaziou sai junto
-        corpo += "\n### %s\n%s\n" % (s, "\n".join(linha(t) for t in grupos[s]))
+        nt = (notas or {}).get(s) or []
+        corpo += "\n### %s\n%s%s\n" % (
+            s,
+            ("\n".join(nt) + "\n") if nt else "",
+            "\n".join(linha(t) for t in grupos[s]))
     if not pend:
         corpo = "- [ ] ...\n"
 
@@ -367,7 +376,8 @@ def main():
     primeira = not estado
 
     final, subir, rel = juntar(arquivo, nuvem, estado, hora_do_arquivo())
-    novo = para_markdown(final, extrai_cabecalho(texto), ordem_secoes)
+    novo = para_markdown(final, extrai_cabecalho(texto), ordem_secoes,
+                         extrai_notas(texto))
     mudou = novo != texto
 
     print("arquivo: %d | nuvem: %d | resultado: %d" % (len(arquivo), len(nuvem), len(final)))

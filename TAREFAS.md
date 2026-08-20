@@ -29,7 +29,7 @@
 
 ### Segunda semana (viagem em 23/08)
 - [ ] Decidir e comprar o energético: leva de casa ou compra perto do CAES na chegada (whey, creatina e coqueteleira já resolvidos) [22/08/2026] #pessoal
-- [ ] Levar na viagem: B-1 (gandola, calça operacional, coturno), EPI (cinto, colete, bota) e os suplementos [23/08/2026] #pessoal
+- [ ] Levar na viagem: 5 cuecas, 5 pares de meia social preta, 3 pares de meia branca, 2 camisetas de serviço e 2 pijamas lavados, 2 toalhas de banho e 1 fronha, mais a carga da copa (whey, creatina, energético, Pepsi Black, lanches, marmitas prontas, porta-sabonete e shampoo). **B-1 e EPI não vão** (decisão de 20/08) [23/08/2026] #pessoal
 
 ### Univesp — prova de 22/09 em conflito com o curso (pedido já protocolado)
 > Pedido enviado ao SAE em 19/08/2026, 20h02, com a Ata de Convocação anexada. Detalhes completos em `C:\projetos\mentor-univesp\STATUS.md`.

@@ -214,6 +214,10 @@ nome vira marmita de todo mundo.
 > propósito**, para não entrar na conta de "itens que ainda faltam" do que você está
 > separando para sábado 15/08. Quando chegar a hora, vira checklist.
 
+> **Revertido em 20/08/2026: este conjunto não sobe no dia 23.** O B-1 e o EPI ficam em casa,
+> sem data nova. O texto abaixo fica como histórico da decisão de 14/08; o motivo da mudança
+> está na seção *Decisão de 20/08/2026*, no fim do rodízio semanal.
+
 **Uniforme que ficou de fora por volume (decisão de 14/08)**
 - 1 gandola cinza-bandeirante — com tarjeta operacional, insígnia de Cap e o distintivo de OPM do CAES (ver a observação abaixo, porque esse distintivo é comprado na segunda 17/08 e a gandola não vai estar lá)
 - 1 calça operacional cinza-bandeirante
@@ -267,6 +271,86 @@ rosto também precisa entrar no rodízio.
 
 **O que NÃO entra no rodízio** e fica no CAES: o S-1 guardado, a farda do dia a dia, o
 lençol (a não ser que queira lavar), material de limpeza e a coqueteleira.
+
+### Inventário do armário em 20/08/2026, e a mala do dia 23
+
+Primeira vez que o rodízio roda de verdade. Inventário feito por ele no armário do CAES na
+quinta 20/08, antes de pegar a estrada. **O que está na caixa não precisa subir de novo**: a
+mala de domingo passa a ser só o buraco, mais a carga da copa.
+
+**Fica no CAES, limpo, na caixa da semana 2**
+
+- Camisas de passeio (nenhuma sujou na semana 1; 1 delas nem foi usada)
+- 4 camisetas de serviço
+- 3 cuecas
+- 2 meias pretas grossas (as de coturno, não servem para o P-1)
+- 1 par de meia branca (EF)
+- 2 camisetas polo
+
+**Volta para casa sujo em 20/08**: 2 camisetas de serviço, os 2 pijamas, cuecas e meias da
+semana, toalha de banho e fronha. **Camisa de passeio não volta**, porque não sujou.
+
+**O buraco a cobrir na viagem de 23/08**
+
+Estoque alvo revisado por ele em 20/08: cueca sobe de 5 para **8 sempre em estoque**, e meia
+branca passa a subir **3 pares por viagem**.
+
+| Item | Estoque alvo | Na caixa | Sobe no dia 23 |
+|---|---|---|---|
+| Camisa de passeio | 3 a 4 | as que ficaram, nenhuma suja | nada |
+| Camiseta de serviço | 6 | 4 | 2, as lavadas |
+| Cueca | 8 | 3 | **5** |
+| Meia social preta (P-1) | 5 pares | 0 | **5 pares** |
+| Meia preta grossa (coturno) | 1 a 2 pares | 2 | nada |
+| Meia branca (EF) | 4 pares | 1 | **3 pares** |
+| Pijama | 2 conjuntos | 0 | os 2 lavados |
+| Polo e paisana | 2 mudas | 2 polos | calça ou bermuda à paisana, se não ficou lá |
+| Toalha de banho | 2 | 0 | **2** |
+| Fronha | 1 | 0 | **1** |
+
+**Copa, higiene e comida que sobem no dia 23**
+
+- Whey fracionado em pote menor, creatina, energético
+- Pepsi Black
+- Lanches para deixar na geladeira
+- Marmitas prontas, só de esquentar
+- Porta-sabonete e shampoo
+
+Etiqueta com o nome em tudo que for para a geladeira. São muitas pessoas dividindo as mesmas
+duas geladeiras e os dois frigobares, e marmita sem nome vira marmita de todo mundo.
+
+**Meia social é o item mais crítico da lista.** As 2 pretas que sobraram são grossas, de
+coturno, e o P-1 pede meia social fina os quatro dias. Na prática o estoque de meia do dia a
+dia está zerado no CAES: se esquecer os 5 pares em casa, não tem como improvisar com o que
+ficou lá.
+
+**As 4 camisetas de serviço fecham exatamente os 4 dias de aula, sem folga.** Se uma sujar no
+almoço, a semana anda com falta. É por isso que as 2 sujas valem a lavagem: com elas o estoque
+volta a 6, que é a conta boa do Art. 74.
+
+**Correção da regra da toalha, decidida em 20/08/2026.** O rodízio escrito acima previa
+"2 toalhas (banho e rosto)". O certo é **2 toalhas de banho, para revezar**, porque ele toma
+vários banhos por dia e uma toalha só não seca a tempo. A toalha de rosto entra por fora, se
+for usar. Fica respondida a dúvida deixada em aberto logo acima.
+
+### Decisão de 20/08/2026: o B-1 e o EPI não sobem no dia 23
+
+Reverte a decisão de 14/08, que tinha adiado o conjunto para a segunda viagem por falta de
+espaço na carona. Agora não é adiamento por volume, é opção: **gandola, calça operacional,
+coturno, cinto, colete e bota ficam em casa**, sem data nova.
+
+O QTS da semana 2 sustenta a escolha: **não há Ed. Física nem embarque antecipado para o
+pelotão A** entre 24 e 27/08 (os dois embarques das 07h50 no rodapé são dos pelotões C e E), e
+nenhuma atividade externa aparece na grade do A. Pelo bizu do colega, o B-1 saiu umas 3 vezes
+no curso inteiro.
+
+**O risco que fica**, o mesmo de 14/08 e agora carregado por mais uma semana: se o QTS marcar
+atividade externa de véspera, o B-1 não está no CAES. Nesse caso vai de P-1, avisa o chefe de
+turma e o conjunto sobe na viagem seguinte.
+
+**O quarto distintivo de OPM do CAES continua pendente.** Ele foi comprado em 17/08 para a
+gandola, que segue em casa. Enquanto a gandola não subir, o distintivo tem que estar costurado
+nela, senão a peça chega sem distintivo justamente no dia em que for exigida.
 
 ## O que NÃO precisa levar
 - **B-2 e B-3** — o bizu citou, mas pelo R-5 o B-2 é da Corregedoria (boina azul-celeste, Art. 24) e o B-3 é de patrulha montada, com culote e botas de cavalaria (Art. 25). Para curso e missão externa o uniforme é o **B-1**.

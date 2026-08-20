@@ -333,6 +333,19 @@ volta a 6, que é a conta boa do Art. 74.
 vários banhos por dia e uma toalha só não seca a tempo. A toalha de rosto entra por fora, se
 for usar. Fica respondida a dúvida deixada em aberto logo acima.
 
+### O que viaja nos dois sentidos toda semana
+
+O rodízio acima resolve roupa, cama e toalha. Falta a terceira categoria: o que **não** é
+estoque de armário e nem volta sujo, simplesmente vai e vem com ele toda semana.
+
+**Confirmado em 20/08/2026**
+
+- **Fone de ouvido**
+
+**A confirmar com ele** (hoje é inferência, não decisão): notebook e carregador, celular e
+carregador, a extensão com várias saídas, os 2 cadernos e a identidade funcional. Enquanto
+não estiver confirmado aqui, essa lista não entra na tarefa de domingo.
+
 ### Decisão de 20/08/2026: o B-1 e o EPI não sobem no dia 23
 
 Reverte a decisão de 14/08, que tinha adiado o conjunto para a segunda viagem por falta de

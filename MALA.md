@@ -310,7 +310,7 @@ branca passa a subir **3 pares por viagem**.
 
 **Copa, higiene e comida que sobem no dia 23**
 
-- Whey fracionado em pote menor, creatina, energético
+- Whey fracionado em pote menor, creatina, energético zero
 - Pepsi Black
 - Lanches para deixar na geladeira
 - Marmitas prontas, só de esquentar

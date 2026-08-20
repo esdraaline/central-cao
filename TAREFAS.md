@@ -31,6 +31,12 @@
 - [ ] Decidir e comprar o energético: leva de casa ou compra perto do CAES na chegada (whey, creatina e coqueteleira já resolvidos) [22/08/2026] #pessoal
 - [ ] Levar na viagem: B-1 (gandola, calça operacional, coturno), EPI (cinto, colete, bota) e os suplementos [23/08/2026] #pessoal
 
+### Univesp — prova de 22/09 em conflito com o curso (pedido já protocolado)
+> Pedido enviado ao SAE em 19/08/2026, 20h02, com a Ata de Convocação anexada. Detalhes completos em `C:\projetos\mentor-univesp\STATUS.md`.
+- [ ] Pedir ao CAES (Seç Apoio Escolar, mesa SEI 302090130) a declaração de matrícula e frequência do CAO-II/26, para ter em mãos se a Univesp exigir comprovação [24/08/2026] #admin
+- [ ] Ver no WhatsApp da Univesp (11 4200-2982) se veio resposta ao pedido de prova em polo da capital [24/08/2026] #admin
+- [ ] Vencimento dos 10 dias úteis do SAE: sem resposta, cobrar pelo 0800 051 3333 ou WhatsApp, citando o assunto do e-mail. A prova é 22/09 [03/09/2026] #admin
+
 ## Concluídas
 - [x] Conferir se a mesa SEI 302090130 recebeu o ofício: recebeu. A cobrança do CAES aos faltantes (19/08) não traz meu nome nem o 2º BPM/I [19/08/2026] #admin
 - [x] Comprar na ConfecBell: 2 camisas de passeio, 2 camisetas de serviço, tarjeta operacional, Logomarca, 4 distintivos de OPM e tarjeta administrativa de acrílico [18/08/2026] #pessoal

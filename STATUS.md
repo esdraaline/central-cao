@@ -37,6 +37,13 @@ sem login. Sem entrar em **Tarefas → Entrar**, o que é marcado ali não sai d
 git, porque `git` não carrega `localStorage`. A reconciliação faz o repositório chegar na tela; o
 login é o que faz o caminho de volta existir em minutos em vez de depender da Action de hora em hora.
 
+**No mesmo dia, o login saiu de dentro da aba Tarefas.** Perguntado pelo Josemar: *"por que essa
+lógica: Tarefas → Entrar?"*. Não havia lógica. O modal de conta era gerado dentro da seção da aba
+Tarefas, que é `display:none` nas outras, então entrar na conta exigia estar naquela aba — mesmo
+quando o que se queria sincronizar era a Mala. Agora o modal vive fora das abas, o botão **Entrar**
+fica no cabeçalho ao lado do tema, e a linha de estado da sincronização virou clicável em qualquer
+aba: quem lê "Somente neste aparelho" resolve ali mesmo, que é onde a dúvida aparece.
+
 *Pendente de conferência no navegador: a validação visual não pôde ser feita na mesma sessão porque o
 servidor do Playwright travou (token da extensão é por perfil do Chrome, e a janela aberta era de
 outra conta).*

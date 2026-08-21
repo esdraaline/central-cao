@@ -55,6 +55,13 @@ junto. Enquanto ainda faltam peças o item continua na lista, mostrando quantas 
 Cada aba mostra no topo quanto já foi marcado e tem um botão "Limpar marcações". O texto continua
 vindo do .md — se eu editar o texto de um item, aquele item volta a ficar desmarcado.
 
+**Onde se entra na conta (21/08/2026).** No **cabeçalho**, ao lado do botão de tema, em qualquer aba.
+E também clicando na própria linha de estado ("Somente neste aparelho", "Salvo na nuvem"), que existe
+no topo de cada lista. Antes o login vivia dentro da aba Tarefas, e não era só o botão: o modal era
+gerado dentro da seção daquela aba, que fica `display:none` nas outras. Ou seja, para entrar na conta
+era preciso estar em Tarefas, mesmo quando o que você queria sincronizar era a Mala. Isso era resto de
+quando só as tarefas subiam para a nuvem, não uma decisão.
+
 **Sincronização entre aparelhos: ligada.** As marcações sobem para o Supabase (tabela `cao_ticados`)
 junto com as tarefas, valendo sempre a alteração mais recente. Em cada aparelho novo, entrar uma vez em
 **Tarefas → Entrar**. Sem internet continua funcionando e sobe quando a conexão voltar.

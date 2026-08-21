@@ -9,7 +9,7 @@
 <!-- o painel e um arquivo unico que muda a cada geracao; sem isto o navegador
      serve a versao antiga do cache e correcoes nao chegam ate o usuario -->
 <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
-<meta name="gerado-em" content="dffdccdca4d0fdbe">
+<meta name="gerado-em" content="788d019c4ff3a53f">
 <title>Central do CAO</title>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23c8102e'/%3E%3Ctext x='16' y='22' font-size='15' font-family='Arial' font-weight='bold' fill='white' text-anchor='middle'%3ECAO%3C/text%3E%3C/svg%3E">
 <style>
@@ -58,6 +58,15 @@ body{background:var(--bg);color:var(--tx);
   border-radius:9px;padding:8px;cursor:pointer;display:grid;place-items:center;
   transition:background .15s}
 .bt:hover{background:rgba(255,255,255,.26)}
+/* o botao da conta leva texto ao lado do icone; o do tema continua quadrado */
+#topo-conta{display:flex;gap:7px;padding:8px 11px;font:inherit;font-size:13px;font-weight:600}
+
+/* A linha de estado da sincronizacao e clicavel em qualquer aba: e onde a
+   pergunta "por que isto nao aparece no outro PC" nasce, entao e de onde se
+   entra na conta. */
+.tf-status{cursor:pointer}
+.tf-status:hover{color:var(--tx2)}
+.tf-status:hover .bola{box-shadow:0 0 0 3px rgba(127,127,127,.22)}
 
 /* busca */
 .busca{position:relative;margin:16px 0 4px;max-width:420px}
@@ -471,6 +480,10 @@ mark{background:rgba(232,161,58,.35);color:inherit;border-radius:3px;padding:0 2
         <p>CAO-II / 2026, CAES "Cel Nelson Freire Terra"</p>
       </div>
       <div class="acoes">
+        <!-- A conta vive no cabecalho porque a sincronizacao vale para o painel
+             inteiro, nao so para a aba Tarefas, que era onde ela ficava. -->
+        <button class="bt" id="topo-conta" title="Sincronizar entre aparelhos">
+          <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 20v-1a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v1"/><circle cx="9.5" cy="8" r="3.5"/><path d="M21 20v-1a4 4 0 0 0-3-3.8"/><path d="M16 4.2a3.5 3.5 0 0 1 0 6.8"/></svg> <span id="tf-conta-rot">Entrar</span></button>
         <button class="bt" id="tema" title="Alternar tema"></button>
       </div>
     </div>
@@ -501,6 +514,7 @@ mark{background:rgba(232,161,58,.35);color:inherit;border-radius:3px;padding:0 2
 <p data-b>hora cairia na mtime do checkout (sempre "agora") e o arquivo ganharia de qualquer marcação feita no navegador. O <code>sincronizar-tarefas.yml</code> já exigia isso pelo mesmo motivo.</p>
 <p data-b>Detalhe do mecanismo em <span class="arq" title="Arquivo na pasta local: PAINEL.md"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2h8l4 4v16H6z"/><path d="M14 2v4h4"/></svg>PAINEL.md</span>.</p>
 <p data-b><strong>A segunda causa, que nenhum código conserta:</strong> o painel de casa estava <strong>"Somente neste aparelho"</strong>, sem login. Sem entrar em <strong>Tarefas → Entrar</strong>, o que é marcado ali não sai daquele navegador — nem por git, porque <code>git</code> não carrega <code>localStorage</code>. A reconciliação faz o repositório chegar na tela; o login é o que faz o caminho de volta existir em minutos em vez de depender da Action de hora em hora.</p>
+<p data-b><strong>No mesmo dia, o login saiu de dentro da aba Tarefas.</strong> Perguntado pelo Josemar: <em>"por que essa lógica: Tarefas → Entrar?"</em>. Não havia lógica. O modal de conta era gerado dentro da seção da aba Tarefas, que é <code>display:none</code> nas outras, então entrar na conta exigia estar naquela aba — mesmo quando o que se queria sincronizar era a Mala. Agora o modal vive fora das abas, o botão <strong>Entrar</strong> fica no cabeçalho ao lado do tema, e a linha de estado da sincronização virou clicável em qualquer aba: quem lê "Somente neste aparelho" resolve ali mesmo, que é onde a dúvida aparece.</p>
 <p data-b><em>Pendente de conferência no navegador: a validação visual não pôde ser feita na mesma sessão porque o servidor do Playwright travou (token da extensão é por perfil do Chrome, e a janela aberta era de outra conta).</em></p>
 <h2 data-b>21/08/2026: o QTS da semana 2 voltou alterado, e a semana não mudou</h2>
 <p data-b>Chegou o <strong><code>QTS_CAOII_2_Alterado_2.pdf</code></strong>, revisão da folha de 24 a 28/08 que já estava lançada na <a href="#grade" class="lnk-aba">Grade</a>. O arquivo foi gerado pela Coordenação em 20/08 às 20h39, um dia depois de a seção ter sido escrita, então tinha que ser conferido antes de valer.</p>
@@ -762,7 +776,6 @@ mark{background:rgba(232,161,58,.35);color:inherit;border-radius:3px;padding:0 2
 <section class="aba" id="ab-tarefas" role="tabpanel">
 <div class="tf-topo">
   <button class="btn" id="tf-exportar" title="Gerar o texto para colar no TAREFAS.md"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 11 5 5 5-5"/><path d="M4 20h16"/></svg> Exportar</button>
-  <button class="btn" id="tf-conta"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 20v-1a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v1"/><circle cx="9.5" cy="8" r="3.5"/><path d="M21 20v-1a4 4 0 0 0-3-3.8"/><path d="M16 4.2a3.5 3.5 0 0 1 0 6.8"/></svg> <span id="tf-conta-rot">Entrar</span></button>
   <div class="tf-status" id="tf-status" title="Estado da sincronização">
     <span class="bola"></span><span id="tf-status-txt">Somente neste aparelho</span>
   </div>
@@ -819,33 +832,6 @@ mark{background:rgba(232,161,58,.35);color:inherit;border-radius:3px;padding:0 2
   </div>
 </div>
 
-<div class="modal" id="modal-conta">
-  <div class="modal-cx">
-    <div class="modal-cab"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 20v-1a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v1"/><circle cx="9.5" cy="8" r="3.5"/><path d="M21 20v-1a4 4 0 0 0-3-3.8"/><path d="M16 4.2a3.5 3.5 0 0 1 0 6.8"/></svg><h3 id="conta-titulo">Entrar na conta</h3>
-      <button class="tf-ac" data-fechar="modal-conta"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>
-    <div class="modal-corpo">
-      <div class="modal-erro" id="conta-erro"></div>
-      <div id="conta-form">
-        <div class="aviso-cx" id="conta-aviso">
-          Entrando, suas tarefas passam a sincronizar entre o computador e o celular.
-          Sem entrar, elas ficam salvas só neste aparelho.
-        </div>
-        <label for="conta-email">E-mail</label>
-        <input type="email" id="conta-email" autocomplete="username" placeholder="seu@email.com">
-        <label for="conta-senha">Senha</label>
-        <input type="password" id="conta-senha" autocomplete="current-password" placeholder="••••••••">
-      </div>
-      <div id="conta-logado" style="display:none">
-        <p>Conectado como <b id="conta-quem"></b>. As tarefas estão sincronizando.</p>
-      </div>
-    </div>
-    <div class="modal-rod">
-      <button class="btn" data-fechar="modal-conta">Fechar</button>
-      <button class="btn" id="conta-sair" style="display:none">Sair da conta</button>
-      <button class="btn pri" id="conta-entrar">Entrar</button>
-    </div>
-  </div>
-</div>
 </section>
 <section class="aba" id="ab-estudos" role="tabpanel" data-mod="2026-08-21T13:22:22.000Z"><div class="card"><blockquote data-b>Como eu estudo, onde eu salvo e onde eu escrevo, pelos 12 meses de curso. Montado em 17/08/2026, no primeiro dia.</blockquote>
 <h2 data-b>A regra que sustenta tudo: dois lugares, sem sobreposição</h2>
@@ -5970,6 +5956,36 @@ Ficou dúvida:           #DUVIDA</code></pre>
 <p data-b>Fontes das buscas de 17/08/2026: <a href="https://catracalivre.com.br/gira/novas-cafeterias-em-sp/" target="_blank" rel="noopener">Catraca Livre</a>, <a href="https://magikjc.com.br/6-restaurantes-para-conhecer-perto-dos-campos-eliseos/" target="_blank" rel="noopener">Magik JC</a>, <a href="https://mobilidade360.com.br/2025/01/01/shoppings-proximos-linha-3-vermelha-metro-sao-paulo/" target="_blank" rel="noopener">Mobilidade 360</a>, <a href="https://moovitapp.com/index/pt-br/transporte_p%C3%BAblico-Shopping_Bourbon-Sao_Paulo-site_50537450-242" target="_blank" rel="noopener">Moovit</a>.</p></div></section>
   <p class="rodape">Gerado a partir dos arquivos <code>.md</code>. Para atualizar: edite o .md e rode <code>python gerar_painel.py</code>.</p>
 </main>
+
+<div class="modal" id="modal-conta">
+  <div class="modal-cx">
+    <div class="modal-cab"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 20v-1a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v1"/><circle cx="9.5" cy="8" r="3.5"/><path d="M21 20v-1a4 4 0 0 0-3-3.8"/><path d="M16 4.2a3.5 3.5 0 0 1 0 6.8"/></svg><h3 id="conta-titulo">Entrar na conta</h3>
+      <button class="tf-ac" data-fechar="modal-conta"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>
+    <div class="modal-corpo">
+      <div class="modal-erro" id="conta-erro"></div>
+      <div id="conta-form">
+        <div class="aviso-cx" id="conta-aviso">
+          Entrando, este aparelho passa a sincronizar com os outros: as tarefas e também
+          as marcações das listas (Compras, Mala, Rotina). Sem entrar, tudo continua
+          salvo só neste navegador.
+        </div>
+        <label for="conta-email">E-mail</label>
+        <input type="email" id="conta-email" autocomplete="username" placeholder="seu@email.com">
+        <label for="conta-senha">Senha</label>
+        <input type="password" id="conta-senha" autocomplete="current-password" placeholder="••••••••">
+      </div>
+      <div id="conta-logado" style="display:none">
+        <p>Conectado como <b id="conta-quem"></b>. Tarefas e marcações estão sincronizando.</p>
+      </div>
+    </div>
+    <div class="modal-rod">
+      <button class="btn" data-fechar="modal-conta">Fechar</button>
+      <button class="btn" id="conta-sair" style="display:none">Sair da conta</button>
+      <button class="btn pri" id="conta-entrar">Entrar</button>
+    </div>
+  </div>
+</div>
+
 <script>
 var SOL='<svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4"/></svg>',LUA='<svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z"/></svg>';
 var CATEGORIAS=[["curso", "Curso", "#3b7dd8"], ["dissertacao", "Dissertação", "#8b5cf6"], ["admin", "Administrativo", "#e8892b"], ["pessoal", "Pessoal", "#0f9d58"]];
@@ -7436,9 +7452,9 @@ window.ARQ_MOD={"ab-painel": "2026-08-21T17:30:26.000Z", "ab-prazos": "2026-08-1
       estado('on','Sincronizado','Suas tarefas estão salvas na nuvem');
       tic('on','Salvo na nuvem','Suas marcações estão sincronizadas');
     }else if(configurado()){
-      estado('','Somente neste aparelho','Entre na conta para sincronizar');
+      estado('','Somente neste aparelho','Clique aqui para entrar e sincronizar');
       tic('','Somente neste aparelho',
-          'Entre na conta, na aba Tarefas, para sincronizar entre aparelhos');
+          'Clique aqui para entrar e sincronizar entre aparelhos');
     }else{
       estado('','Somente neste aparelho',
              'A sincronização ainda não foi configurada neste painel');
@@ -7593,7 +7609,7 @@ window.ARQ_MOD={"ab-painel": "2026-08-21T17:30:26.000Z", "ab-prazos": "2026-08-1
       tic('on','Salvo na nuvem','Suas marcações estão sincronizadas');
     }).catch(function(e){
       if(e&&(e.status===401||e.status===403))
-        tic('erro','Sessão expirada','Entre na conta de novo, na aba Tarefas');
+        tic('erro','Sessão expirada','Clique aqui para entrar de novo');
       else
         tic('off','Sem conexão','As marcações sobem sozinhas quando a rede voltar');
       throw e;
@@ -7603,7 +7619,7 @@ window.ARQ_MOD={"ab-painel": "2026-08-21T17:30:26.000Z", "ab-prazos": "2026-08-1
   var tmTic=null;
   window.TICADOS_SYNC=function(){
     if(!ativo()){
-      tic('','Somente neste aparelho','Entre na conta, na aba Tarefas, para sincronizar');
+      tic('','Somente neste aparelho','Clique aqui para entrar e sincronizar');
       return;
     }
     tic('','Salvando...');
@@ -7674,28 +7690,33 @@ window.ARQ_MOD={"ab-painel": "2026-08-21T17:30:26.000Z", "ab-prazos": "2026-08-1
   }
 
   /* ------------------------------- eventos ------------------------------- */
-  var btConta=el('#tf-conta');
-  if(btConta){
-    btConta.onclick=function(){
-      var logado=ativo();
-      el('#conta-form').style.display=logado?'none':'';
-      el('#conta-logado').style.display=logado?'':'none';
-      el('#conta-entrar').style.display=logado?'none':'';
-      el('#conta-sair').style.display=logado?'':'none';
-      el('#conta-titulo').textContent=logado?'Sua conta':'Entrar na conta';
-      el('#conta-erro').classList.remove('on');
-      if(logado)el('#conta-quem').textContent=ses.email||'';
-      if(!configurado()){
-        el('#conta-aviso').innerHTML='A sincronização ainda não foi ligada neste painel. '+
-          'Peça para configurar o Supabase (o passo a passo está no arquivo '+
-          '<code>SUPABASE.md</code>). Por enquanto, as tarefas ficam salvas '+
-          'apenas neste aparelho, e o botão <b>Exportar</b> é o que garante que nada se perca.';
-        el('#conta-entrar').disabled=true;
-      }
-      window.TAREFAS.modal.abrir('#modal-conta');
-      if(!logado&&configurado())setTimeout(function(){el('#conta-email').focus()},80);
-    };
+  /* Abrir a conta nao e mais assunto da aba Tarefas. O gatilho e o botao do
+     cabecalho e, em qualquer aba, a propria linha de estado: quem le
+     "Somente neste aparelho" e quer resolver clica ali mesmo, que e onde a
+     duvida aparece. Delegado no documento porque as linhas de estado das
+     listas sao criadas depois, quando cada aba monta o contador.           */
+  function abrirConta(){
+    var logado=ativo();
+    el('#conta-form').style.display=logado?'none':'';
+    el('#conta-logado').style.display=logado?'':'none';
+    el('#conta-entrar').style.display=logado?'none':'';
+    el('#conta-sair').style.display=logado?'':'none';
+    el('#conta-titulo').textContent=logado?'Sua conta':'Entrar na conta';
+    el('#conta-erro').classList.remove('on');
+    if(logado)el('#conta-quem').textContent=ses.email||'';
+    if(!configurado()){
+      el('#conta-aviso').innerHTML='A sincronização ainda não foi ligada neste painel. '+
+        'Peça para configurar o Supabase (o passo a passo está no arquivo '+
+        '<code>SUPABASE.md</code>). Por enquanto, tudo fica salvo apenas neste '+
+        'aparelho, e o botão <b>Exportar</b> é o que garante que nada se perca.';
+      el('#conta-entrar').disabled=true;
+    }
+    window.TAREFAS.modal.abrir('#modal-conta');
+    if(!logado&&configurado())setTimeout(function(){el('#conta-email').focus()},80);
   }
+  document.addEventListener('click',function(e){
+    if(e.target.closest('#topo-conta,#tf-status,.mk-sinc'))abrirConta();
+  });
   var btEntrar=el('#conta-entrar');
   if(btEntrar){
     btEntrar.onclick=function(){

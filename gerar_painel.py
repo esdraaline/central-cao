@@ -641,6 +641,15 @@ body{background:var(--bg);color:var(--tx);
   border-radius:9px;padding:8px;cursor:pointer;display:grid;place-items:center;
   transition:background .15s}
 .bt:hover{background:rgba(255,255,255,.26)}
+/* o botao da conta leva texto ao lado do icone; o do tema continua quadrado */
+#topo-conta{display:flex;gap:7px;padding:8px 11px;font:inherit;font-size:13px;font-weight:600}
+
+/* A linha de estado da sincronizacao e clicavel em qualquer aba: e onde a
+   pergunta "por que isto nao aparece no outro PC" nasce, entao e de onde se
+   entra na conta. */
+.tf-status{cursor:pointer}
+.tf-status:hover{color:var(--tx2)}
+.tf-status:hover .bola{box-shadow:0 0 0 3px rgba(127,127,127,.22)}
 
 /* busca */
 .busca{position:relative;margin:16px 0 4px;max-width:420px}
@@ -1790,9 +1799,9 @@ JS_SUPABASE = r"""
       estado('on','Sincronizado','Suas tarefas estão salvas na nuvem');
       tic('on','Salvo na nuvem','Suas marcações estão sincronizadas');
     }else if(configurado()){
-      estado('','Somente neste aparelho','Entre na conta para sincronizar');
+      estado('','Somente neste aparelho','Clique aqui para entrar e sincronizar');
       tic('','Somente neste aparelho',
-          'Entre na conta, na aba Tarefas, para sincronizar entre aparelhos');
+          'Clique aqui para entrar e sincronizar entre aparelhos');
     }else{
       estado('','Somente neste aparelho',
              'A sincronização ainda não foi configurada neste painel');
@@ -1947,7 +1956,7 @@ JS_SUPABASE = r"""
       tic('on','Salvo na nuvem','Suas marcações estão sincronizadas');
     }).catch(function(e){
       if(e&&(e.status===401||e.status===403))
-        tic('erro','Sessão expirada','Entre na conta de novo, na aba Tarefas');
+        tic('erro','Sessão expirada','Clique aqui para entrar de novo');
       else
         tic('off','Sem conexão','As marcações sobem sozinhas quando a rede voltar');
       throw e;
@@ -1957,7 +1966,7 @@ JS_SUPABASE = r"""
   var tmTic=null;
   window.TICADOS_SYNC=function(){
     if(!ativo()){
-      tic('','Somente neste aparelho','Entre na conta, na aba Tarefas, para sincronizar');
+      tic('','Somente neste aparelho','Clique aqui para entrar e sincronizar');
       return;
     }
     tic('','Salvando...');
@@ -2028,28 +2037,33 @@ JS_SUPABASE = r"""
   }
 
   /* ------------------------------- eventos ------------------------------- */
-  var btConta=el('#tf-conta');
-  if(btConta){
-    btConta.onclick=function(){
-      var logado=ativo();
-      el('#conta-form').style.display=logado?'none':'';
-      el('#conta-logado').style.display=logado?'':'none';
-      el('#conta-entrar').style.display=logado?'none':'';
-      el('#conta-sair').style.display=logado?'':'none';
-      el('#conta-titulo').textContent=logado?'Sua conta':'Entrar na conta';
-      el('#conta-erro').classList.remove('on');
-      if(logado)el('#conta-quem').textContent=ses.email||'';
-      if(!configurado()){
-        el('#conta-aviso').innerHTML='A sincronização ainda não foi ligada neste painel. '+
-          'Peça para configurar o Supabase (o passo a passo está no arquivo '+
-          '<code>SUPABASE.md</code>). Por enquanto, as tarefas ficam salvas '+
-          'apenas neste aparelho, e o botão <b>Exportar</b> é o que garante que nada se perca.';
-        el('#conta-entrar').disabled=true;
-      }
-      window.TAREFAS.modal.abrir('#modal-conta');
-      if(!logado&&configurado())setTimeout(function(){el('#conta-email').focus()},80);
-    };
+  /* Abrir a conta nao e mais assunto da aba Tarefas. O gatilho e o botao do
+     cabecalho e, em qualquer aba, a propria linha de estado: quem le
+     "Somente neste aparelho" e quer resolver clica ali mesmo, que e onde a
+     duvida aparece. Delegado no documento porque as linhas de estado das
+     listas sao criadas depois, quando cada aba monta o contador.           */
+  function abrirConta(){
+    var logado=ativo();
+    el('#conta-form').style.display=logado?'none':'';
+    el('#conta-logado').style.display=logado?'':'none';
+    el('#conta-entrar').style.display=logado?'none':'';
+    el('#conta-sair').style.display=logado?'':'none';
+    el('#conta-titulo').textContent=logado?'Sua conta':'Entrar na conta';
+    el('#conta-erro').classList.remove('on');
+    if(logado)el('#conta-quem').textContent=ses.email||'';
+    if(!configurado()){
+      el('#conta-aviso').innerHTML='A sincronização ainda não foi ligada neste painel. '+
+        'Peça para configurar o Supabase (o passo a passo está no arquivo '+
+        '<code>SUPABASE.md</code>). Por enquanto, tudo fica salvo apenas neste '+
+        'aparelho, e o botão <b>Exportar</b> é o que garante que nada se perca.';
+      el('#conta-entrar').disabled=true;
+    }
+    window.TAREFAS.modal.abrir('#modal-conta');
+    if(!logado&&configurado())setTimeout(function(){el('#conta-email').focus()},80);
   }
+  document.addEventListener('click',function(e){
+    if(e.target.closest('#topo-conta,#tf-status,.mk-sinc'))abrirConta();
+  });
   var btEntrar=el('#conta-entrar');
   if(btEntrar){
     btEntrar.onclick=function(){
@@ -2899,7 +2913,6 @@ def app_tarefas():
     return """
 <div class="tf-topo">
   <button class="btn" id="tf-exportar" title="Gerar o texto para colar no TAREFAS.md">%(baixar)s Exportar</button>
-  <button class="btn" id="tf-conta">%(users)s <span id="tf-conta-rot">Entrar</span></button>
   <div class="tf-status" id="tf-status" title="Estado da sincronização">
     <span class="bola"></span><span id="tf-status-txt">Somente neste aparelho</span>
   </div>
@@ -2956,6 +2969,27 @@ def app_tarefas():
   </div>
 </div>
 
+""" % {
+        "cats": chips_cat,
+        "mais": svg("mais", 19),
+        "baixar": svg("baixar", 15),
+        "alerta": svg("alerta", 18),
+        "fechar": svg("fechar", 16),
+        "copiar": svg("copiar", 15),
+        "users": svg("users", 15),
+    }
+
+
+def modal_conta():
+    """HTML do login. Fica FORA das abas, no corpo da pagina.
+
+    Ate 21/08/2026 ele era gerado dentro da secao da aba Tarefas, que e
+    `display:none` em qualquer outra aba. Ou seja, entrar na conta so era
+    possivel estando em Tarefas - e a sincronizacao vale para o painel inteiro,
+    inclusive as caixinhas de Compras, Mala e Rotina. Era resto de quando so as
+    tarefas subiam para a nuvem, nao uma decisao.
+    """
+    return """
 <div class="modal" id="modal-conta">
   <div class="modal-cx">
     <div class="modal-cab">%(users)s<h3 id="conta-titulo">Entrar na conta</h3>
@@ -2964,8 +2998,9 @@ def app_tarefas():
       <div class="modal-erro" id="conta-erro"></div>
       <div id="conta-form">
         <div class="aviso-cx" id="conta-aviso">
-          Entrando, suas tarefas passam a sincronizar entre o computador e o celular.
-          Sem entrar, elas ficam salvas só neste aparelho.
+          Entrando, este aparelho passa a sincronizar com os outros: as tarefas e também
+          as marcações das listas (Compras, Mala, Rotina). Sem entrar, tudo continua
+          salvo só neste navegador.
         </div>
         <label for="conta-email">E-mail</label>
         <input type="email" id="conta-email" autocomplete="username" placeholder="seu@email.com">
@@ -2973,7 +3008,7 @@ def app_tarefas():
         <input type="password" id="conta-senha" autocomplete="current-password" placeholder="••••••••">
       </div>
       <div id="conta-logado" style="display:none">
-        <p>Conectado como <b id="conta-quem"></b>. As tarefas estão sincronizando.</p>
+        <p>Conectado como <b id="conta-quem"></b>. Tarefas e marcações estão sincronizando.</p>
       </div>
     </div>
     <div class="modal-rod">
@@ -2984,12 +3019,7 @@ def app_tarefas():
   </div>
 </div>
 """ % {
-        "cats": chips_cat,
-        "mais": svg("mais", 19),
-        "baixar": svg("baixar", 15),
-        "alerta": svg("alerta", 18),
         "fechar": svg("fechar", 16),
-        "copiar": svg("copiar", 15),
         "users": svg("users", 15),
     }
 
@@ -3116,6 +3146,10 @@ def build():
         <p>CAO-II / 2026, CAES "Cel Nelson Freire Terra"</p>
       </div>
       <div class="acoes">
+        <!-- A conta vive no cabecalho porque a sincronizacao vale para o painel
+             inteiro, nao so para a aba Tarefas, que era onde ela ficava. -->
+        <button class="bt" id="topo-conta" title="Sincronizar entre aparelhos">
+          %(users)s <span id="tf-conta-rot">Entrar</span></button>
         <button class="bt" id="tema" title="Alternar tema"></button>
       </div>
     </div>
@@ -3129,6 +3163,7 @@ def build():
 <main>%(paineis)s
   <p class="rodape">Gerado a partir dos arquivos <code>.md</code>. Para atualizar: edite o .md e rode <code>python gerar_painel.py</code>.</p>
 </main>
+%(modalconta)s
 <script>
 var SOL=%(sol)r,LUA=%(lua)r;
 var CATEGORIAS=%(cats)s;
@@ -3160,6 +3195,8 @@ window.ARQ_MOD=%(arqmod)s;
         "nav": "".join(nav),
         "paineis": "\n".join(paineis),
         "icbusca": svg("search", 16),
+        "users": svg("users", 15),
+        "modalconta": modal_conta(),
         "sol": svg("sun", 17),
         "lua": svg("moon", 17),
         "carimbo": CARIMBO_VAGA,

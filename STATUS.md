@@ -44,9 +44,30 @@ quando o que se queria sincronizar era a Mala. Agora o modal vive fora das abas,
 fica no cabeçalho ao lado do tema, e a linha de estado da sincronização virou clicável em qualquer
 aba: quem lê "Somente neste aparelho" resolve ali mesmo, que é onde a dúvida aparece.
 
-*Pendente de conferência no navegador: a validação visual não pôde ser feita na mesma sessão porque o
-servidor do Playwright travou (token da extensão é por perfil do Chrome, e a janela aberta era de
-outra conta).*
+**Conferido no navegador em 21/08/2026, e passou nos cinco pontos.** No Chrome, tamanho de notebook
+(1366) e de celular (390), nos dois temas:
+
+- **O botão Entrar no cabeçalho** fica ao lado do tema sem apertar nenhum dos dois, com o texto
+  inteiro e sem estourar a largura da tela. No celular o cabeçalho quebra em duas linhas e os dois
+  botões descem juntos para a segunda, alinhados à direita.
+- **O modal abre de qualquer aba.** Testado a partir da **Mala**, que era exatamente o caso que não
+  funcionava antes.
+- **A linha de estado da sincronização abre o mesmo modal**, clicada no topo da lista de Compras e
+  da de Mala, no notebook e no celular.
+- **Console sem erro e sem aviso.** O único registro é uma dica *verbose* do próprio Chrome dizendo
+  que o campo de senha não está dentro de um `<form>`. Não é erro, e mexer nisso só muda o
+  comportamento do gerenciador de senhas.
+- **As caixinhas abrem com o que o `.md` diz**, que era o ponto principal. Num navegador de
+  armazenamento zerado, **os 93 itens bateram um a um** com o arquivo: 17 em Compras (12 já
+  marcados), 69 na Mala e 7 na Rotina, nenhuma divergência.
+
+A prova do aparelho novo foi feita numa cópia do painel servida em `localhost`, byte a byte igual à
+publicada (mesmo md5), de propósito: zerar o `localStorage` do painel de casa apagaria marcação de
+verdade. E o painel de casa **entrou na conta durante o teste**, saindo de "Somente neste aparelho"
+para "Salvo na nuvem", que era a segunda causa descrita acima.
+
+*Detalhe do método, para a próxima vez: a janela do Chrome precisa estar visível na tela. Minimizada
+ou coberta, o navegador congela o desenho e o screenshot expira sem tirar nada.*
 
 ## 21/08/2026: o QTS da semana 2 voltou alterado, e a semana não mudou
 

@@ -22,9 +22,9 @@
 - [ ] Domingo, arrumar para a volta: 2 toalhas, fronha limpa, roupa lavada (cuecas, meias, camisetas), whey e creatina [23/08/2026] #pessoal
 
 ### Orientador da dissertação — MISSÃO URGENTE
-- [ ] Falar com o Cap Simões e pegar o contato do Cel Elgis [19/08/2026] #dissertacao
+- [ ] Falar com o Cap Simões e pegar o contato do Cel Eglis [19/08/2026] #dissertacao
 - [ ] Perguntar ao Cap Gobbo as REGRAS da orientação: o orientador precisa ser instrutor do curso? Quantos orientandos cada um aceita? Há prazo para escolher? Como é o pedido formal? [21/08/2026] #dissertacao
-- [ ] Procurar o Cel Elgis e sondar a orientação, levando o PP já aprovado [21/08/2026] #dissertacao
+- [ ] Procurar o Cel Eglis e sondar a orientação, levando o PP já aprovado [21/08/2026] #dissertacao
 - [ ] Montar o rol completo de disciplinas e instrutores conforme os QTS forem saindo, para ter o universo de candidatos [28/08/2026] #dissertacao
 
 ### Segunda semana (viagem em 23/08)
@@ -38,6 +38,7 @@
 - [ ] Vencimento dos 10 dias úteis do SAE: sem resposta, cobrar pelo 0800 051 3333 ou WhatsApp, citando o assunto do e-mail. A prova é 22/09 [03/09/2026] #admin
 
 ## Concluídas
+- [x] Confirmar a grafia do nome do orientador pretendido: é Cel PM Eglis, com o g antes do l, como traz o QTS revisado de 20/08. A Central escrevia Elgis desde 17/08 e foi corrigida [21/08/2026] #dissertacao
 - [x] Conferir se a mesa SEI 302090130 recebeu o ofício: recebeu. A cobrança do CAES aos faltantes (19/08) não traz meu nome nem o 2º BPM/I [19/08/2026] #admin
 - [x] Comprar na ConfecBell: 2 camisas de passeio, 2 camisetas de serviço, tarjeta operacional, Logomarca, 4 distintivos de OPM e tarjeta administrativa de acrílico [18/08/2026] #pessoal
 - [x] Conferir whey, creatina e coqueteleira — os três já em casa [18/08/2026] #pessoal

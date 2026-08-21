@@ -1,7 +1,32 @@
 # STATUS — Central do CAO
 
 > Painel principal. Ler isso primeiro em qualquer sessão nova ("onde paramos?").
-> Atualizado em: 19/08/2026
+> Atualizado em: 21/08/2026
+
+## 21/08/2026: o QTS da semana 2 voltou alterado, e a semana não mudou
+
+Chegou o **`QTS_CAOII_2_Alterado_2.pdf`**, revisão da folha de 24 a 28/08 que já estava
+lançada na [Grade](GRADE.md). O arquivo foi gerado pela Coordenação em 20/08 às 20h39, um dia
+depois de a seção ter sido escrita, então tinha que ser conferido antes de valer.
+
+**Foi conferido célula a célula, e não mudou nada.** As 16 aulas do pelotão A estão iguais,
+uma a uma; o corpo docente continua com os mesmos 117 nomes; o rodapé mantém os embarques de
+07h50 nos pelotões C (24/08) e E (26/08), nenhum deles o meu; quinta 27/08 segue acabando às
+11h30 e sexta 28/08 segue vazia. Duas decisões que dependiam desta semana continuam de pé: a
+mala sem item de Ed. Física ([MALA.md](MALA.md)) e a abordagem ao orientador na terça 25/08,
+bloco 4 ([ESTUDOS.md](ESTUDOS.md)).
+
+**E o nome do orientador estava errado aqui dentro.** A revisão escreve o docente de D14 como
+**"Cel PM Eglis"**; este repositório vinha escrevendo **"Elgis"** desde 17/08, inclusive na
+decisão de orientação. **O Josemar confirmou no mesmo 21/08 que "Eglis" é o correto**, e a
+grafia foi acertada nos cinco arquivos que citavam o nome: [Grade](GRADE.md), este STATUS,
+[CONTATOS.md](CONTATOS.md), [ESTUDOS.md](ESTUDOS.md) e [TAREFAS.md](TAREFAS.md). Ia entrar
+assim no pedido formal de orientação, que é conversa da terça 25/08.
+
+**O que ficou de regra:** revisão de semana já lançada não se reescreve, se confere — e o
+resultado da conferência fica registrado mesmo quando dá "igual", com data e nome do arquivo.
+Sem isso, a próxima revisão obrigaria a reler a folha inteira do zero. A regra está no fim da
+[Grade](GRADE.md), junto com a manutenção semanal.
 
 ## 20/08/2026: o robô do painel estava comendo linha do TAREFAS.md
 
@@ -88,7 +113,7 @@ sendo feito a conta-gotas desde 17/08.
   disciplinas correm em paralelo, então a data não ordenava nada. As sete pastas que já
   existiam foram renumeradas e as notas de 17 e 18/08 foram preservadas.
 - **A caça ao orientador destravou.** Ela esperava "o rol completo", que agora existe. O
-  Cel Elgis continua sendo o alvo, e apareceram dois nomes novos fortes para o tema:
+  Cel Eglis continua sendo o alvo, e apareceram dois nomes novos fortes para o tema:
   **Cel Barreto** (Policiamento Comunitário) e **Cel Fernandes** (Relações Sociais e
   Institucionais no Brasil).
 
@@ -159,7 +184,7 @@ O curso começou. Junto com ele nasceu a aba [ESTUDOS.md](ESTUDOS.md), que respo
   primeiras aulas, com bloqueio de Google, formato, link e permissão todos descartados.
   Fora do quartel, o mesmo arquivo abre. Não dá para depender de nuvem em sala de aula.
 - **As duas primeiras disciplinas**: D01 Políticas Públicas (Cel Lucena) e D02 Planejamento
-  Estratégico (Cel Elgis), as duas com pasta criada e notas de 17/08 salvas.
+  Estratégico (Cel Eglis), as duas com pasta criada e notas de 17/08 salvas.
 - **Três etiquetas em toda anotação**: `#PROVA`, `#DISSERTA` e `#DUVIDA`. É o que evita
   reler doze meses de caderno em julho de 2027.
 - **Audio Overview do NotebookLM ouvido na estrada de quinta**, que hoje é tempo morto.

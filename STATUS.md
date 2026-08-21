@@ -1,7 +1,31 @@
 # STATUS — Central do CAO
 
 > Painel principal. Ler isso primeiro em qualquer sessão nova ("onde paramos?").
-> Atualizado em: 19/08/2026
+> Atualizado em: 21/08/2026
+
+## 21/08/2026: o QTS da semana 2 voltou alterado, e a semana não mudou
+
+Chegou o **`QTS_CAOII_2_Alterado_2.pdf`**, revisão da folha de 24 a 28/08 que já estava
+lançada na [Grade](GRADE.md). O arquivo foi gerado pela Coordenação em 20/08 às 20h39, um dia
+depois de a seção ter sido escrita, então tinha que ser conferido antes de valer.
+
+**Foi conferido célula a célula, e não mudou nada.** As 16 aulas do pelotão A estão iguais,
+uma a uma; o corpo docente continua com os mesmos 117 nomes; o rodapé mantém os embarques de
+07h50 nos pelotões C (24/08) e E (26/08), nenhum deles o meu; quinta 27/08 segue acabando às
+11h30 e sexta 28/08 segue vazia. Duas decisões que dependiam desta semana continuam de pé: a
+mala sem item de Ed. Física ([MALA.md](MALA.md)) e a abordagem ao orientador na terça 25/08,
+bloco 4 ([ESTUDOS.md](ESTUDOS.md)).
+
+**Sobrou uma pendência, e é do nome.** A revisão escreve o docente de D14 como **"Cel PM
+Eglis"**; este repositório escreve **"Elgis"** em todo lugar, inclusive na decisão de
+orientação. Uma das duas grafias está errada e a folha sozinha não diz qual. Está marcada
+como `[VERIFICAR]` na [Grade](GRADE.md) — vale resolver **antes** da conversa de terça, porque
+é o nome do orientador pretendido.
+
+**O que ficou de regra:** revisão de semana já lançada não se reescreve, se confere — e o
+resultado da conferência fica registrado mesmo quando dá "igual", com data e nome do arquivo.
+Sem isso, a próxima revisão obrigaria a reler a folha inteira do zero. A regra está no fim da
+[Grade](GRADE.md), junto com a manutenção semanal.
 
 ## 20/08/2026: o robô do painel estava comendo linha do TAREFAS.md
 

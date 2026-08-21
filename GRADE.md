@@ -5,7 +5,9 @@
 > Fonte: QTS CAO-II/26, **semana 2 (24 a 28/08/2026)**, assinado pelo Subten PM Rodrigo Desco
 > Milani (Aux Coord) e pelo Cap PM Diego Antonio Gonçalves de Almeida (Ch Sec Coord).
 > Os PDFs estão no Drive, em `08_CAO_2026/00_CURSO/QTS/` (um arquivo por semana).
-> Lançado em 19/08/2026.
+> Lançado em 19/08/2026 e **reconferido em 21/08/2026 contra a revisão "Alterado 2"**
+> da mesma semana (arquivo gerado em 20/08/2026, 20h39). O que está escrito abaixo já é
+> essa revisão.
 
 ## Duas coisas que a primeira folha do QTS entregou
 
@@ -118,6 +120,41 @@ a Ed. Física gira entre os pelotões.
 **A semana é pesada nos blocos.** São 16 aulas contra 14 da semana 1, com terça e quarta
 cheias até as 18h00 e segunda cheia de manhã. Cinco disciplinas diferentes por dia, na terça
 e na quarta.
+
+### O QTS voltou alterado, e para mim não mudou nada
+
+Em 21/08/2026 chegou o **`QTS_CAOII_2_Alterado_2.pdf`**, revisão da mesma semana 2, gerada
+pela Coordenação em 20/08/2026 às 20h39 — ou seja, **depois** de esta seção ter sido escrita,
+em 19/08. Foi conferido célula a célula contra o que já estava aqui:
+
+| O que se conferiu | Resultado |
+|---|---|
+| As 16 aulas do pelotão A, dia a dia e bloco a bloco | **Idênticas.** Nenhuma disciplina, docente ou horário mudou |
+| Corpo docente das 31 disciplinas | **Idêntico**, os mesmos 117 nomes |
+| Rodapé em vermelho (embarques às 07h50) | **Idêntico**: 24/08 pelotões C, 26/08 pelotões E. Continua não sendo o meu |
+| Quinta 27/08 nos blocos 3, 4 e 5, e a sexta 28/08 inteira | **Continuam vazias** para os cinco pelotões |
+| Disciplinas acionadas na semana (todos os pelotões) | **21 das 31**, com as mesmas 5 estreias |
+
+**Nada a corrigir nas tabelas acima, e nada a corrigir no painel.** Duas decisões que
+dependiam desta semana seguem de pé: a mala montada em [MALA.md](MALA.md) sem item de Ed.
+Física (o embarque antecipado continua sendo dos pelotões C e E) e a abordagem ao orientador
+na terça 25/08, bloco 4 — ver [ESTUDOS.md](ESTUDOS.md).
+
+**Uma divergência de grafia, essa sim.** Esta revisão escreve o primeiro nome do corpo docente
+de D14 como **"Cel PM Eglis"**, com o *g* antes do *l*. Este repositório escreve **"Elgis"** em
+todo lugar, inclusive na decisão de orientação em [CONTATOS.md](CONTATOS.md) e
+[ESTUDOS.md](ESTUDOS.md). Não dá para saber, só olhando esta folha, se a revisão corrigiu um
+erro anterior ou introduziu um novo. As tabelas daqui ficam como estão até a dúvida ser
+resolvida.
+
+*[VERIFICAR: confirmar a grafia do nome do Cel PM Elgis/Eglis antes de procurá-lo — é o
+orientador pretendido, e escrever o nome errado num pedido de orientação não pega bem. Dá para
+conferir na lista de presença da aula de 25/08 ou com o Cap Simões, que é a ponte.]*
+
+**Por que isso fica registrado mesmo sem ter mudado nada.** Se a semana 2 voltar numa terceira
+revisão, o trabalho é conferir a nova contra a "Alterado 2", e não refazer do zero a leitura
+das 80 marcações de bloco da folha. E se um dia uma revisão *mudar* alguma coisa, o registro
+de que esta não mudou é o que permite achar em qual delas a aula trocou.
 
 ## Semana anterior — 17 a 21/08/2026 (pelotão A)
 
@@ -333,6 +370,14 @@ para outros pelotões na segunda 24/08 e fica na fila para o A.
    sozinho**, dizendo qual aula está correndo agora e qual é a próxima.
 5. Se aparecer disciplina que não está na lista das 31, cria-se a pasta `D32_...` e a linha
    na tabela. Até a semana 2 isso não aconteceu: as 31 e os 117 docentes são os mesmos.
+
+**Quando chega uma revisão da semana que já está no ar** (arquivo "Alterado", como o de
+21/08/2026), o caminho é outro: **não se reescreve a seção, confere-se.** Lê-se a revisão
+contra a tabela que já está aqui, na ordem dia → bloco → letra "A", e depois o corpo docente e
+o rodapé. Se bater, registra-se que bateu, com a data e o nome do arquivo — é o que evita
+refazer a leitura inteira na revisão seguinte. Se não bater, corrige-se **só a célula que
+mudou** e a diferença vira um parágrafo, porque aula que troca de docente ou de horário em
+cima da hora é justamente o que o painel existe para não deixar passar.
 
 O domingo de 30 minutos previsto em [ESTUDOS.md](ESTUDOS.md) é a hora de fazer isso. É o
 passo que mantém o painel útil: sem QTS lançado, o cartão avisa que não sabe, em vez de

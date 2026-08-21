@@ -25,6 +25,7 @@
 - [ ] Falar com o Cap Simões e pegar o contato do Cel Elgis [19/08/2026] #dissertacao
 - [ ] Perguntar ao Cap Gobbo as REGRAS da orientação: o orientador precisa ser instrutor do curso? Quantos orientandos cada um aceita? Há prazo para escolher? Como é o pedido formal? [21/08/2026] #dissertacao
 - [ ] Procurar o Cel Elgis e sondar a orientação, levando o PP já aprovado [21/08/2026] #dissertacao
+- [ ] Confirmar a grafia do nome do orientador pretendido: o QTS revisado de 20/08 escreve "Cel PM Eglis" e a Central escreve "Elgis". Conferir na lista de presença de 25/08 ou com o Cap Simões antes do pedido de orientação [25/08/2026] #dissertacao
 - [ ] Montar o rol completo de disciplinas e instrutores conforme os QTS forem saindo, para ter o universo de candidatos [28/08/2026] #dissertacao
 
 ### Segunda semana (viagem em 23/08)

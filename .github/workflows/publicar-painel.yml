@@ -43,7 +43,16 @@ jobs:
       name: github-pages
       url: ${{ steps.deploy.outputs.page_url }}
     steps:
+      # fetch-depth: 0 e obrigatorio. O gerador embute no painel a hora do
+      # ultimo commit de cada .md (hora_do_md), e e ela que deixa o navegador
+      # decidir quem esta mais novo: o arquivo do repositorio ou a marcacao
+      # guardada naquele aparelho. Com o checkout raso (padrao, 1 commit) o
+      # `git log` do arquivo vem vazio, a hora cai para a mtime do checkout
+      # ("agora") e o arquivo passaria a ganhar sempre, apagando marcacao
+      # feita no painel. Mesma exigencia do sincronizar-tarefas.yml.
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - uses: actions/setup-python@v5
         with:

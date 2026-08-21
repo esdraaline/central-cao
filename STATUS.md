@@ -3,6 +3,44 @@
 > Painel principal. Ler isso primeiro em qualquer sessão nova ("onde paramos?").
 > Atualizado em: 21/08/2026
 
+## 21/08/2026: o painel não lia o repositório de volta
+
+Queixa do Josemar, com estas palavras: *"editei a Central do CAO em outro PC, fiz push e pull, mas as
+edições não aparecem no PC de casa; está uma sincronização burra local"*. Estava certo, e o problema
+era de desenho, não de git.
+
+**O painel só somava.** Ele sabia trazer do `.md` a tarefa nova e tirar a que sumiu, mas a tarefa que
+existe nos dois lados com valores diferentes ficava **congelada no que aquele navegador tinha
+gravado**. O mesmo valia para as caixinhas de Compras, Mala e Rotina, e ali era pior: a pintura
+inicial só olhava o `localStorage`, então item marcado dentro do `.md` abria **desmarcado** em
+qualquer aparelho que ainda não o tivesse marcado. Ou seja, o `git pull` trazia o arquivo certo e a
+tela mostrava o estado velho.
+
+**O que foi feito:**
+
+- **`hora_do_md()`** no `gerar_painel.py`: a hora do último commit de cada `.md` vai embutida no
+  painel (`window.ARQ_MOD` e `data-mod` em cada aba). É a mesma fonte de hora que o
+  `sincroniza_tarefas.py` já usava, de propósito: duas regras de conflito diferentes no mesmo
+  repositório seria pedir para errar.
+- **`reconciliarComArquivo()`** nas tarefas e **`mkReconcilia()`** nas caixinhas: decidem item a item
+  com um espelho do que o arquivo dizia na última abertura, separando "o arquivo mudou" de "eu mudei
+  aqui" antes de comparar horas. Quem nunca tocou no item não tem o que defender: vale o arquivo.
+- **`data-md` em cada caixinha**: o que o arquivo diz daquele item passou a chegar na tela.
+- **`fetch-depth: 0` no `publicar-painel.yml`**: sem histórico o `git log` do arquivo vem vazio, a
+  hora cairia na mtime do checkout (sempre "agora") e o arquivo ganharia de qualquer marcação feita
+  no navegador. O `sincronizar-tarefas.yml` já exigia isso pelo mesmo motivo.
+
+Detalhe do mecanismo em [PAINEL.md](PAINEL.md).
+
+**A segunda causa, que nenhum código conserta:** o painel de casa estava **"Somente neste aparelho"**,
+sem login. Sem entrar em **Tarefas → Entrar**, o que é marcado ali não sai daquele navegador — nem por
+git, porque `git` não carrega `localStorage`. A reconciliação faz o repositório chegar na tela; o
+login é o que faz o caminho de volta existir em minutos em vez de depender da Action de hora em hora.
+
+*Pendente de conferência no navegador: a validação visual não pôde ser feita na mesma sessão porque o
+servidor do Playwright travou (token da extensão é por perfil do Chrome, e a janela aberta era de
+outra conta).*
+
 ## 21/08/2026: o QTS da semana 2 voltou alterado, e a semana não mudou
 
 Chegou o **`QTS_CAOII_2_Alterado_2.pdf`**, revisão da folha de 24 a 28/08 que já estava

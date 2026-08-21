@@ -71,6 +71,17 @@ feita à mão no `.md` aparecer no celular, em vez de ficar só no arquivo.
 A própria barra de progresso mostra o estado: **Salvo na nuvem** (verde), *Salvando...*, **Sem conexão**
 (âmbar), **Sessão expirada** (vermelho) ou **Somente neste aparelho** quando não está logado.
 
+**E o painel agora enxerga o que o arquivo diz (21/08/2026).** Faltava a volta mais óbvia de todas: o
+que o `.md` já sabia não chegava na tela. A pintura inicial só olhava o que aquele navegador tinha
+ticado, então item marcado no `COMPRAS.md` abria **desmarcado** em qualquer aparelho que ainda não o
+tivesse marcado, e marcação feita no PC do trabalho não aparecia em casa nem depois de `git pull`.
+Cada item passou a carregar `data-md` (o que o arquivo diz dele) e cada aba, `data-mod` (a hora do
+último commit daquele `.md`). Com isso o navegador decide item a item, pela mesma regra de todo o
+resto: **quem mexeu por último ganha**, e quem nunca tocou no item não tem o que defender, vale o
+arquivo. A decisão usa um espelho do que o arquivo dizia na última abertura, para separar "o arquivo
+mudou" de "eu mudei aqui" antes de precisar comparar horas. As tarefas ganharam a mesma
+reconciliação, no mesmo dia (ver abaixo).
+
 ### Aba Tarefas (cadastro)
 Dá para cadastrar tarefa direto no painel, escrevendo em linguagem normal: *"entregar artigo sexta"*,
 *"prova dia 15"*, *"enviar ofício amanhã"*. Ele entende a data sozinho e agrupa por urgência
@@ -111,6 +122,35 @@ hora.
 **Limitação resolvida em 14/08/2026:** excluir no painel uma tarefa que veio do `.md` não
 grudava. Ao recarregar, ela voltava do arquivo. Agora a Action de sincronização tira a linha
 do `TAREFAS.md` na rodada seguinte, então a exclusão gruda sozinha (ver abaixo).
+
+### O painel lê o arquivo de volta (21/08/2026)
+
+O painel sempre soube trazer tarefa **nova** do `TAREFAS.md` e tirar a que **sumiu** dele. Faltava o
+meio: a tarefa que existe nos dois lados com valores diferentes ficava congelada no que aquele
+aparelho tinha gravado. Remarcar uma data no PC do trabalho, deixar isso chegar ao `TAREFAS.md` e
+abrir o painel em casa mostrava a data velha, para sempre — mesmo depois de `git pull`. Era o mesmo
+buraco das caixinhas, e os dois foram fechados juntos.
+
+A decisão não é chute. O painel guarda um **espelho** do que o arquivo dizia na última vez que abriu,
+e com ele separa três casos:
+
+| Situação | Quem vence |
+|---|---|
+| O arquivo mudou, aqui não | o arquivo |
+| Mudei aqui, o arquivo não | o meu (edição ainda não exportada) |
+| Os dois mudaram | quem mexeu por último: hora do commit do `.md` contra o `mod` da tarefa |
+
+Na primeira abertura ainda não existe espelho, então vale direto a regra de quem mexeu por último —
+a mesma do `sincroniza_tarefas.py`. É isso que faz a correção valer já na primeira vez sem descartar
+o que foi mexido no aparelho depois do último commit.
+
+Quando o arquivo vence, a tarefa fica com `sinc: true` e `mod` igual à hora do commit: ela **não**
+volta a subir para a nuvem. Reenviar faria o `mod` da nuvem regredir para uma hora antiga, e a rodada
+seguinte da Action desfaria a mudança.
+
+**A hora do commit vem do `git log` de cada `.md`**, embutida no painel pelo `hora_do_md()`. Por isso
+o `publicar-painel.yml` precisa de `fetch-depth: 0`: com o checkout raso o `git log` do arquivo vem
+vazio, a hora cairia na mtime do checkout (sempre "agora") e o arquivo passaria a ganhar de tudo.
 
 ### Quem manda em cada tarefa (corrigido em 12/08/2026)
 Tarefa que **nasceu no arquivo** tem id derivado do próprio texto (prefixo `md`). Tarefa criada

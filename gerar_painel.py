@@ -16,8 +16,9 @@ import hashlib
 import html
 import os
 import re
+import subprocess
 import sys
-from datetime import date
+from datetime import date, datetime, timezone
 
 RAIZ = os.path.dirname(os.path.abspath(__file__))
 SAIDA = os.path.join(RAIZ, "docs", "index.html")
@@ -297,9 +298,16 @@ def md_para_html(texto):
                 # ja foi ticado. Vem do texto, entao editar o texto zera aquele item.
                 chave = hashlib.md5(mk.group(2).strip().encode("utf-8")).hexdigest()[:10]
                 qtd = quantidade_do_item(mk.group(2))
-                saida.append('<li class="%s" data-mk="%s"%s><span class="box">%s</span>'
+                # data-md: o que o ARQUIVO diz deste item (0 = em aberto;
+                # N = quantas pecas ele considera prontas). Sem isto o painel
+                # so sabia o que o proprio aparelho ja tinha ticado, e uma
+                # marcacao feita em outro PC, mesmo ja dentro do .md, abria
+                # desmarcada aqui. Ver a reconciliacao no JS.
+                saida.append('<li class="%s" data-mk="%s" data-md="%d"%s>'
+                             '<span class="box">%s</span>'
                              '<span>%s</span></li>' % (
                                  "ok" if feito else "pend", chave,
+                                 (qtd or 1) if feito else 0,
                                  ' data-qtd="%d"' % qtd if qtd else "",
                                  svg("check", 12) if feito else "",
                                  _inline(mk.group(2))))
@@ -545,6 +553,37 @@ def extrai_qts(texto):
         pel = mp.group(1)
 
     return {"pelotao": pel, "dias": dias}
+
+
+def hora_do_md(arq):
+    """Quando este .md mudou pela ultima vez, em ISO UTC.
+
+    E a data do ultimo COMMIT que tocou o arquivo, nao a mtime: a Action faz
+    checkout novo a cada rodada e toda mtime nasce "agora", entao o arquivo
+    ganharia sempre de qualquer marcacao feita no navegador. Mesma regra e
+    mesma fonte de hora que o sincroniza_tarefas.py usa do lado do Python.
+
+    Exige historico no checkout (fetch-depth: 0 no publicar-painel.yml). Sem
+    historico cai na mtime, que so degrada a decisao de conflito, nunca quebra
+    o painel.
+    """
+    try:
+        r = subprocess.run(["git", "log", "-1", "--format=%cI", "--", arq],
+                           cwd=RAIZ, capture_output=True, text=True, timeout=30)
+        bruto = r.stdout.strip()
+        if bruto:
+            d = datetime.fromisoformat(bruto)
+            if d.tzinfo is None:
+                d = d.replace(tzinfo=timezone.utc)
+            return d.astimezone(timezone.utc).strftime("%Y-%m-%dT%H:%M:%S.000Z")
+    except Exception:
+        pass
+    try:
+        d = datetime.fromtimestamp(os.path.getmtime(os.path.join(RAIZ, arq)),
+                                   timezone.utc)
+        return d.strftime("%Y-%m-%dT%H:%M:%S.000Z")
+    except OSError:
+        return "1970-01-01T00:00:00.000Z"
 
 
 def escapa_js(obj):
@@ -1062,6 +1101,7 @@ JS_TAREFAS = r"""
                 orig:'md',mod:new Date().toISOString(),sinc:true};
       });
       gravarLS(CHAVE,tarefas);
+      gravarEspelho();
     }else{
       tarefas=locais;
       /* traz do .md o que ainda nao existe aqui (ex.: editei o .md na mao) */
@@ -1074,7 +1114,86 @@ JS_TAREFAS = r"""
         }
       });
       podarSumidasDoArquivo();
+      reconciliarComArquivo();
     }
+  }
+
+  /* ------------------ reconciliacao com o TAREFAS.md ---------------------
+     O painel sempre soube trazer tarefa NOVA do arquivo e tirar a que sumiu
+     dele. O que faltava era o meio: tarefa que existe nos dois lados com
+     valores diferentes. Ela ficava congelada no que este aparelho tinha
+     gravado, entao remarcar uma data no PC do trabalho, deixar isso chegar ao
+     TAREFAS.md e abrir o painel em casa mostrava a data velha, para sempre.
+     Era o mesmo desenho das caixinhas, e as duas pontas foram corrigidas
+     juntas (21/08/2026).
+
+     Como se decide sem chutar: guardamos um ESPELHO do que o arquivo dizia na
+     ultima vez que o painel abriu. Com ele da para separar "o arquivo mudou"
+     de "eu mudei aqui":
+
+       arquivo mudou, eu nao  -> vale o arquivo
+       eu mudei, o arquivo nao -> vale o meu (edicao ainda nao exportada)
+       os dois mudaram         -> quem mexeu por ultimo, comparando a hora do
+                                  commit do .md com o `mod` da tarefa
+
+     Sem espelho (primeira abertura depois desta versao) cai direto na regra de
+     quem mexeu por ultimo, que e a mesma do sincroniza_tarefas.py. Isso e o
+     que faz a correcao valer ja na primeira vez, sem descartar o que foi
+     mexido aqui depois do ultimo commit.
+
+     Quando o arquivo vence, a tarefa fica com `sinc:true` e `mod` igual a hora
+     do commit: ela nao volta a subir para a nuvem. Reenviar faria o `mod` da
+     nuvem REGREDIR para uma hora antiga e a rodada seguinte da Action
+     desfaria a mudanca.                                                    */
+  var K_ESPELHO='cao-espelho-md';
+
+  function fotoDoArquivo(){
+    var f={};
+    BASE.forEach(function(b){
+      f[idBase(b.t)]={d:b.d||null,c:b.c||'',f:!!b.f};
+    });
+    return f;
+  }
+  function gravarEspelho(){gravarLS(K_ESPELHO,fotoDoArquivo())}
+  function mesmoValor(a,b){
+    return !!a&&!!b&&(a.d||null)===(b.d||null)&&(a.c||'')===(b.c||'')&&!!a.f===!!b.f;
+  }
+  function horaDoArquivo(){
+    var m=(window.ARQ_MOD||{})['ab-tarefas'];
+    return m?(Date.parse(m)||0):0;
+  }
+
+  function reconciliarComArquivo(){
+    if(!BASE.length)return 0;          /* arquivo vazio ou ilegivel: nao mexe */
+    var espelho=lerLS(K_ESPELHO,null);
+    var tArq=horaDoArquivo();
+    var foto=fotoDoArquivo();
+    var porId={};
+    tarefas.forEach(function(t){porId[t.id]=t});
+    var mudou=0;
+    Object.keys(foto).forEach(function(id){
+      var arq=foto[id], t=porId[id];
+      if(!t)return;
+      var loc={d:t.data||null,c:t.cat||'',f:!!t.feito};
+      if(mesmoValor(loc,arq))return;
+      var base=espelho&&espelho[id], venceArquivo;
+      if(base){
+        var arqMudou=!mesmoValor(base,arq), locMudou=!mesmoValor(base,loc);
+        if(arqMudou&&!locMudou)venceArquivo=true;
+        else if(locMudou&&!arqMudou)venceArquivo=false;
+        else venceArquivo=tArq>(Date.parse(t.mod||'')||0);
+      }else{
+        venceArquivo=tArq>(Date.parse(t.mod||'')||0);
+      }
+      if(!venceArquivo)return;
+      t.data=arq.d;t.cat=arq.c;t.feito=arq.f;
+      t.mod=new Date(tArq||Date.now()).toISOString();
+      t.sinc=true;
+      mudou++;
+    });
+    gravarLS(K_ESPELHO,foto);
+    if(mudou)gravarLS(CHAVE,tarefas);
+    return mudou;
   }
 
   /* Tira daqui a tarefa que veio do TAREFAS.md e nao existe mais nele.
@@ -2123,6 +2242,81 @@ JS = r"""
     if(window.GUIA)GUIA.listas();
   }
 
+  /* ------------- reconciliacao das caixinhas com o .md -------------------
+     O estado do aparelho mandava sozinho: item marcado no COMPRAS.md abria
+     desmarcado em qualquer navegador que ainda nao o tivesse ticado, porque a
+     pintura inicial so olhava o localStorage. Marcar no PC do trabalho, deixar
+     a Action levar isso para o .md e abrir o painel em casa nao mostrava nada.
+     Era o mesmo desenho das tarefas, e as duas pontas foram corrigidas juntas
+     (21/08/2026).
+
+     Agora cada <li> carrega `data-md` (o que o arquivo diz do item) e cada aba
+     carrega `data-mod` (a hora do commit daquele .md). A decisao usa a mesma
+     regra de tres vias das tarefas, com um espelho do que o arquivo dizia na
+     ultima abertura:
+
+       arquivo mudou, eu nao   -> vale o arquivo
+       eu mudei, o arquivo nao -> vale o meu (marcacao ainda nao exportada)
+       os dois mudaram         -> quem mexeu por ultimo (hora do commit contra
+                                  o `m` da marcacao guardada aqui)
+
+     Item que este aparelho nunca tocou nao tem o que defender: vale o arquivo.
+
+     Quando o arquivo vence, a marcacao fica com `s:true` e `m` igual a hora do
+     commit, entao ela nao volta a subir. Reenviar faria o `mod` da nuvem
+     REGREDIR e a rodada seguinte da Action desfaria a mudanca. Quem sobe item
+     que a nuvem nunca viu e o sincroniza_ticados.py, do lado do Python.     */
+  var K_ESPMK='cao-espelho-mk';
+  var mkEspelho={};
+  try{mkEspelho=JSON.parse(localStorage.getItem(K_ESPMK)||'{}')||{}}catch(e){mkEspelho={}}
+
+  function mkDoArquivo(li){return parseInt(li.getAttribute('data-md')||'0',10)||0}
+  function mkHoraDaAba(sec){
+    var m=sec&&sec.getAttribute('data-mod');
+    return m?(Date.parse(m)||0):0;
+  }
+
+  function mkReconcilia(){
+    var foto={}, mudou=false;
+    pans.forEach(function(sec){
+      var itens=sec.querySelectorAll('ul.tarefas li[data-mk]');
+      if(!itens.length)return;
+      var tArq=mkHoraDaAba(sec);
+      [].forEach.call(itens,function(li){
+        var k=mkChave(li), arq=mkDoArquivo(li), atual=mkEstado[k];
+        foto[k]=arq;
+        if(!atual){
+          /* nunca ticado aqui: vale o arquivo. So grava quando ha o que
+             guardar, para nao encher o armazenamento de zeros. */
+          if(arq>0){
+            mkEstado[k]={n:arq,m:new Date(tArq||Date.now()).toISOString(),s:true};
+            mudou=true;
+          }
+          return;
+        }
+        if((atual.n||0)===arq)return;
+        var temBase=Object.prototype.hasOwnProperty.call(mkEspelho,k);
+        var venceArquivo;
+        if(temBase){
+          var base=mkEspelho[k]||0;
+          var arqMudou=base!==arq, locMudou=base!==(atual.n||0);
+          if(arqMudou&&!locMudou)venceArquivo=true;
+          else if(locMudou&&!arqMudou)venceArquivo=false;
+          else venceArquivo=tArq>(Date.parse(atual.m||'')||0);
+        }else{
+          venceArquivo=tArq>(Date.parse(atual.m||'')||0);
+        }
+        if(!venceArquivo)return;
+        mkEstado[k]={n:arq,m:new Date(tArq||Date.now()).toISOString(),s:true};
+        mudou=true;
+      });
+    });
+    mkEspelho=foto;
+    try{localStorage.setItem(K_ESPMK,JSON.stringify(foto))}catch(e){}
+    if(mudou)mkSalva();
+  }
+  mkReconcilia();
+
   /* monta o contador no topo e os steppers dos itens com quantidade */
   pans.forEach(function(sec){
     var itens=sec.querySelectorAll('ul.tarefas li[data-mk]');
@@ -2815,6 +3009,11 @@ def build():
     if faltando:
         print("Aviso: nao encontrei %s" % ", ".join(faltando))
 
+    # Hora do ultimo commit de cada .md, por aba. Vai embutida no painel e e o
+    # que permite ao navegador decidir, item a item, se quem esta mais novo e o
+    # arquivo do repositorio ou a marcacao guardada naquele aparelho.
+    arq_mod = {"ab-" + aba_id: hora_do_md(arq) for arq, aba_id, _, _ in ABAS}
+
     # Nada no painel gerado pode depender da data de hoje. O rodape mostrava a
     # data da geracao, e isso fazia a Action (que roda em UTC) e o PC (UTC-3)
     # produzirem arquivos diferentes perto da meia-noite, alem de reintroduzir
@@ -2884,8 +3083,12 @@ def build():
                        r"<\1 data-b", corpo)
         corpo = corpo.replace('<div class="tab-wrap">', '<div class="tab-wrap" data-b>')
         extra = "".join(home) if aba_id == "painel" else ""
-        paineis.append('<section class="aba" id="ab-%s" role="tabpanel">%s'
-                       '<div class="card">%s</div></section>' % (aba_id, extra, corpo))
+        # data-mod: quando este .md mudou pela ultima vez. A reconciliacao das
+        # caixinhas compara essa hora com a hora da marcacao guardada no
+        # aparelho para saber quem mexeu por ultimo.
+        paineis.append('<section class="aba" id="ab-%s" role="tabpanel" data-mod="%s">%s'
+                       '<div class="card">%s</div></section>'
+                       % (aba_id, arq_mod.get("ab-" + aba_id, ""), extra, corpo))
 
     doc = """<!DOCTYPE html>
 <html lang="pt-BR" prefix="og: http://ogp.me/ns#">
@@ -2936,6 +3139,7 @@ var ICO=%(ico)s;
 window.CURSO=%(curso)s;
 window.QTS=%(qts)s;
 window.SUPA_CFG=%(supa)s;
+window.ARQ_MOD=%(arqmod)s;
 %(js)s
 %(js_guia)s
 %(js_tarefas)s
@@ -2964,6 +3168,7 @@ window.SUPA_CFG=%(supa)s;
         "tarcab": escapa_js(extrai_cabecalho(docs.get("TAREFAS.md", ""))),
         "tarnotas": escapa_js(extrai_notas(docs.get("TAREFAS.md", ""))),
         "supa": escapa_js(le_config_supabase()),
+        "arqmod": escapa_js(arq_mod),
         "ico": escapa_js({
             "check": svg("check", 13),
             "lapis": svg("lapis", 15),

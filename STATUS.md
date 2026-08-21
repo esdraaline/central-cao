@@ -16,11 +16,12 @@ uma a uma; o corpo docente continua com os mesmos 117 nomes; o rodapé mantém o
 mala sem item de Ed. Física ([MALA.md](MALA.md)) e a abordagem ao orientador na terça 25/08,
 bloco 4 ([ESTUDOS.md](ESTUDOS.md)).
 
-**Sobrou uma pendência, e é do nome.** A revisão escreve o docente de D14 como **"Cel PM
-Eglis"**; este repositório escreve **"Elgis"** em todo lugar, inclusive na decisão de
-orientação. Uma das duas grafias está errada e a folha sozinha não diz qual. Está marcada
-como `[VERIFICAR]` na [Grade](GRADE.md) — vale resolver **antes** da conversa de terça, porque
-é o nome do orientador pretendido.
+**E o nome do orientador estava errado aqui dentro.** A revisão escreve o docente de D14 como
+**"Cel PM Eglis"**; este repositório vinha escrevendo **"Elgis"** desde 17/08, inclusive na
+decisão de orientação. **O Josemar confirmou no mesmo 21/08 que "Eglis" é o correto**, e a
+grafia foi acertada nos cinco arquivos que citavam o nome: [Grade](GRADE.md), este STATUS,
+[CONTATOS.md](CONTATOS.md), [ESTUDOS.md](ESTUDOS.md) e [TAREFAS.md](TAREFAS.md). Ia entrar
+assim no pedido formal de orientação, que é conversa da terça 25/08.
 
 **O que ficou de regra:** revisão de semana já lançada não se reescreve, se confere — e o
 resultado da conferência fica registrado mesmo quando dá "igual", com data e nome do arquivo.
@@ -112,7 +113,7 @@ sendo feito a conta-gotas desde 17/08.
   disciplinas correm em paralelo, então a data não ordenava nada. As sete pastas que já
   existiam foram renumeradas e as notas de 17 e 18/08 foram preservadas.
 - **A caça ao orientador destravou.** Ela esperava "o rol completo", que agora existe. O
-  Cel Elgis continua sendo o alvo, e apareceram dois nomes novos fortes para o tema:
+  Cel Eglis continua sendo o alvo, e apareceram dois nomes novos fortes para o tema:
   **Cel Barreto** (Policiamento Comunitário) e **Cel Fernandes** (Relações Sociais e
   Institucionais no Brasil).
 
@@ -183,7 +184,7 @@ O curso começou. Junto com ele nasceu a aba [ESTUDOS.md](ESTUDOS.md), que respo
   primeiras aulas, com bloqueio de Google, formato, link e permissão todos descartados.
   Fora do quartel, o mesmo arquivo abre. Não dá para depender de nuvem em sala de aula.
 - **As duas primeiras disciplinas**: D01 Políticas Públicas (Cel Lucena) e D02 Planejamento
-  Estratégico (Cel Elgis), as duas com pasta criada e notas de 17/08 salvas.
+  Estratégico (Cel Eglis), as duas com pasta criada e notas de 17/08 salvas.
 - **Três etiquetas em toda anotação**: `#PROVA`, `#DISSERTA` e `#DUVIDA`. É o que evita
   reler doze meses de caderno em julho de 2027.
 - **Audio Overview do NotebookLM ouvido na estrada de quinta**, que hoje é tempo morto.

@@ -84,7 +84,7 @@ pela abertura do curso.
 | 1 — 08h15 às 09h45 | D30 Criminologia e Fenomenologia do Crime | Ten Cel PM Giovani |
 | 2 — 10h00 às 11h30 | D17 Gestão do Conhecimento e Aprendizagem Organizacional | Cap PM Fernanda Nossa |
 | 3 — 13h00 às 14h30 | D04 Relações Sociais e Institucionais no Brasil | Cel PM Enio |
-| 4 — 14h45 às 16h15 | D14 Planejamento Estratégico | Cel PM Elgis |
+| 4 — 14h45 às 16h15 | D14 Planejamento Estratégico | Cel PM Eglis |
 | 5 — 16h30 às 18h00 | D15 Gestão de Projetos | Cel PM Massera |
 
 **Quarta-feira 26/08/2026**
@@ -140,16 +140,16 @@ dependiam desta semana seguem de pé: a mala montada em [MALA.md](MALA.md) sem i
 Física (o embarque antecipado continua sendo dos pelotões C e E) e a abordagem ao orientador
 na terça 25/08, bloco 4 — ver [ESTUDOS.md](ESTUDOS.md).
 
-**Uma divergência de grafia, essa sim.** Esta revisão escreve o primeiro nome do corpo docente
-de D14 como **"Cel PM Eglis"**, com o *g* antes do *l*. Este repositório escreve **"Elgis"** em
-todo lugar, inclusive na decisão de orientação em [CONTATOS.md](CONTATOS.md) e
-[ESTUDOS.md](ESTUDOS.md). Não dá para saber, só olhando esta folha, se a revisão corrigiu um
-erro anterior ou introduziu um novo. As tabelas daqui ficam como estão até a dúvida ser
-resolvida.
+**Uma divergência de grafia, e essa foi resolvida no mesmo dia.** A revisão escreve o primeiro
+nome do corpo docente de D14 como **"Cel PM Eglis"**, com o *g* antes do *l*, e este
+repositório vinha escrevendo **"Elgis"** desde 17/08. **O Josemar confirmou em 21/08/2026 que
+"Eglis" é o correto**, e a grafia foi acertada nos cinco arquivos que citavam o nome: aqui, o
+[STATUS.md](STATUS.md), o [CONTATOS.md](CONTATOS.md), o [ESTUDOS.md](ESTUDOS.md) e o
+[TAREFAS.md](TAREFAS.md).
 
-*[VERIFICAR: confirmar a grafia do nome do Cel PM Elgis/Eglis antes de procurá-lo — é o
-orientador pretendido, e escrever o nome errado num pedido de orientação não pega bem. Dá para
-conferir na lista de presença da aula de 25/08 ou com o Cap Simões, que é a ponte.]*
+Não é detalhe de digitação: ele é o **orientador pretendido** da dissertação, e o nome ia
+entrar escrito errado no pedido formal de orientação, que é conversa da terça 25/08. A revisão
+do QTS achou o erro; a confirmação de viva voz fechou.
 
 **Por que isso fica registrado mesmo sem ter mudado nada.** Se a semana 2 voltar numa terceira
 revisão, o trabalho é conferir a nova contra a "Alterado 2", e não refazer do zero a leitura
@@ -166,7 +166,7 @@ para trás. Quando a semana 3 entrar, esta seção sai e a da semana 2 desce par
 | Bloco | Disciplina | Docente |
 |---|---|---|
 | 3 — 13h00 às 14h30 | D01 Políticas Públicas | Cel PM Lucena |
-| 4 — 14h45 às 16h15 | D14 Planejamento Estratégico | Cel PM Elgis |
+| 4 — 14h45 às 16h15 | D14 Planejamento Estratégico | Cel PM Eglis |
 
 Os blocos 1 e 2 de segunda estão vazios para os cinco pelotões: foi a manhã de abertura do
 curso.
@@ -233,7 +233,7 @@ para mim.
 | D11 | Planejamento Financeiro e Orçamentário | Cel Bastos, Cel Assis, TC Fabrício, Maj Gustavo | |
 | D12 | Gestão de Pessoas | Cel Pereira Lima, Cel Tim, TC Cícero, Maj Isis, Maj Pane, Maj Isabela, Cap Camila | |
 | D13 | Gestão de Processos e Estrutura Organizacional | Cel Beatriz, Cel Possato | |
-| D14 | Planejamento Estratégico | Cel Elgis, Cel Ferraz, Cel Terra, TC Salomão, TC Junqueira, Cap Hiran | **Cel Elgis** (S1 e S2), **Cel Terra** (S2) |
+| D14 | Planejamento Estratégico | Cel Eglis, Cel Ferraz, Cel Terra, TC Salomão, TC Junqueira, Cap Hiran | **Cel Eglis** (S1 e S2), **Cel Terra** (S2) |
 | D15 | Gestão de Projetos | Cel Massera, Cel Carlos Eduardo, TC Fernandes | **Cel Carlos Eduardo** (S1), **TC Fernandes** e **Cel Massera** (S2) |
 | D16 | Gestão da Informação para Tomada de Decisão | TC Tamanaha, Maj Goulart | |
 | D17 | Gestão do Conhecimento e Aprendizagem Organizacional | Cel Renato Lopes, Cap Fernanda Nossa | |
@@ -291,7 +291,7 @@ e são os que dá para procurar em mais de um corredor.
 A missão do orientador ([ESTUDOS.md](ESTUDOS.md)) estava esperando "o rol completo". **O rol
 chegou.** Três coisas mudam:
 
-**O Cel Elgis continua de pé.** Ele é o primeiro nome do Planejamento Estratégico, que tem o
+**O Cel Eglis continua de pé.** Ele é o primeiro nome do Planejamento Estratégico, que tem o
 terceiro maior corpo docente do curso (seis oficiais, atrás só de Direitos Humanos e Gestão de Pessoas). Nada na grade contradiz a decisão de
 18/08. **E ele dá aula de novo na terça 25/08, bloco 4, das 14h45 às 16h15** — é a chance de
 abordagem da semana. Na quarta 26/08 e na quinta 27/08 quem entra em Planejamento Estratégico

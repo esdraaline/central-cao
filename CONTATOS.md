@@ -58,22 +58,22 @@ mandou citar a fonte oficial, porque a fonte oficial é que está velha.
 
 ## Dissertação — caminho até o orientador
 
-Decidido em 18/08/2026: **vou procurar o Cel PM Elgis para ser meu orientador.**
+Decidido em 18/08/2026: **vou procurar o Cel PM Eglis para ser meu orientador.**
 
 | Quem | Papel | Como chegar |
 |---|---|---|
-| **Cel PM Elgis** | Instrutor de Planejamento Estratégico. **Orientador pretendido** | Pelo Cap Simões |
-| **Cap PM Simões** | **Tem o contato do Cel Elgis.** É a ponte | Falar com ele primeiro |
+| **Cel PM Eglis** | Instrutor de Planejamento Estratégico. **Orientador pretendido** | Pelo Cap Simões |
+| **Cap PM Simões** | **Tem o contato do Cel Eglis.** É a ponte | Falar com ele primeiro |
 | Cap PM Gobbo | Seção de Pesquisa. Sabe as **regras** da orientação | caespesquisa@policiamilitar.sp.gov.br |
 
-**Por que o Elgis**: ele abriu a aula de 17/08 perguntando "nosso foco, visão de futuro, é
+**Por que o Eglis**: ele abriu a aula de 17/08 perguntando "nosso foco, visão de futuro, é
 polícia repressiva ou polícia comunitária?", que é exatamente a tensão que a minha
 dissertação sobre integração PM-Prefeituras enfrenta. Raciocínio completo em
 [ESTUDOS.md](ESTUDOS.md).
 
 **Ordem sugerida**: falar com o **Cap Simões** para conseguir o contato, e em paralelo
 confirmar com o **Cap Gobbo** as regras (se o orientador precisa ser instrutor, quantos
-orientandos ele pode aceitar, se há prazo). Chegar no Cel Elgis já sabendo as regras vale
+orientandos ele pode aceitar, se há prazo). Chegar no Cel Eglis já sabendo as regras vale
 mais do que chegar antes sem saber.
 
 ## Ordem para resolver demandas

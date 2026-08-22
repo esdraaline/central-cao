@@ -14,7 +14,6 @@
 - [ ] Comprar a camisa social cinza-claro do S-1 e a boina de reposição, que faltaram na ida à ConfecBell [19/08/2026] #pessoal
 - [ ] Mandar o QTS assim que sair, para eu lançar na aba Grade e o painel montar o dia sozinho [19/08/2026] #curso
 - [ ] Experimentar a farda social e ver os ajustes de caimento, depois de comprar a camisa social [20/08/2026] #pessoal
-- [ ] Atualizar STATUS.md e PRAZOS.md com a situação real do curso (módulo, disciplinas, entregas) [20/08/2026] #curso
 - [ ] Procurar o Cap Gobbo (Seção de Pesquisa) sobre a transformação do PP em dissertação [21/08/2026] #dissertacao
 
 ### Rodízio da mala (toda semana, ver MALA.md)
@@ -30,6 +29,7 @@
 ### Segunda semana (viagem em 23/08)
 - [ ] Decidir e comprar o energético zero: leva de casa ou compra perto do CAES na chegada (whey, creatina e coqueteleira já resolvidos) [22/08/2026] #pessoal
 - [ ] Levar na viagem: 5 cuecas, 5 pares de meia social preta, 3 pares de meia branca, 2 camisetas de serviço e 2 pijamas lavados, 2 toalhas de banho e 1 fronha, mais a carga da copa (whey, creatina, energético zero, Pepsi Black, lanches, marmitas prontas, porta-sabonete e shampoo). B-1 e EPI não vão (decisão de 20/08) [23/08/2026] #pessoal
+- [ ] Perguntar na Coordenação (Seç Avaliação, Cap Diego) quais disciplinas têm prova e quais têm trabalho, e se existe plano de disciplina com carga horária. É o que falta para o PRAZOS listar entrega de disciplina, porque o QTS não traz [25/08/2026] #curso
 
 ### Univesp — prova de 22/09 em conflito com o curso (pedido já protocolado)
 > Pedido enviado ao SAE em 19/08/2026, 20h02, com a Ata de Convocação anexada. Detalhes completos em `C:\projetos\mentor-univesp\STATUS.md`.
@@ -38,6 +38,7 @@
 - [ ] Vencimento dos 10 dias úteis do SAE: sem resposta, cobrar pelo 0800 051 3333 ou WhatsApp, citando o assunto do e-mail. A prova é 22/09 [03/09/2026] #admin
 
 ## Concluídas
+- [x] Atualizar STATUS.md e PRAZOS.md com a situação real do curso: módulo não existe (são 31 disciplinas em paralelo, QTS semanal), disciplinas e pelotão A lançados nos dois arquivos, e entregas não saem do QTS, viraram pergunta para a Coordenação [22/08/2026] #curso
 - [x] Confirmar a grafia do nome do orientador pretendido: é Cel PM Eglis, com o g antes do l, como traz o QTS revisado de 20/08. A Central escrevia Elgis desde 17/08 e foi corrigida [21/08/2026] #dissertacao
 - [x] Conferir se a mesa SEI 302090130 recebeu o ofício: recebeu. A cobrança do CAES aos faltantes (19/08) não traz meu nome nem o 2º BPM/I [19/08/2026] #admin
 - [x] Comprar na ConfecBell: 2 camisas de passeio, 2 camisetas de serviço, tarjeta operacional, Logomarca, 4 distintivos de OPM e tarjeta administrativa de acrílico [18/08/2026] #pessoal

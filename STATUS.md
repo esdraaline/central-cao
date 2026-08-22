@@ -1,7 +1,42 @@
 # STATUS — Central do CAO
 
 > Painel principal. Ler isso primeiro em qualquer sessão nova ("onde paramos?").
-> Atualizado em: 21/08/2026
+> Atualizado em: 22/08/2026
+
+## 22/08/2026: o STATUS e o PRAZOS pararam no domingo da viagem
+
+Tarefa escrita em 17/08 e vencida em 20/08: *"Atualizar STATUS.md e PRAZOS.md com a situação real
+do curso (módulo, disciplinas, entregas)"*. Ela nasceu antes de o QTS sair, quando o fundo deste
+arquivo ainda dizia "Módulo e disciplinas: saem no QTS de segunda, 17/08. Até lá não tem o que
+preencher".
+
+**O QTS saiu, e nada disso subiu para cá.** Entre 18 e 21/08 nasceram as 31 disciplinas, os 117
+docentes, a dedução do pelotão A e as duas semanas lançadas, tudo na [Grade](GRADE.md) e em
+[ESTUDOS.md](ESTUDOS.md). O fundo deste arquivo continuou dizendo que a viagem era domingo 16/08 e
+que a mala precisava ser arrumada no sábado 15/08.
+
+**Isso não é detalhe de arquivo, é a home do painel.** O `gerar_painel.py` renderiza o STATUS
+inteiro na aba de abertura. O cartão "hoje no CAES", que lê a Grade, mostrava a semana certa; o
+texto logo abaixo dele mostrava a semana anterior à viagem.
+
+**A causa: este arquivo tem duas naturezas e só uma vinha sendo mantida.** O topo é diário, cresce
+por cima, uma seção por dia, e está em dia. O fundo ("Onde estou agora" e "Próximo passo") é estado
+atual: precisa ser **reescrito**, não acrescentado. Ninguém reescrevia, então o cabeçalho podia
+dizer "atualizado em 21/08" e a mesma tela mentir logo abaixo.
+
+**Regra que fica:** "Onde estou agora" e "Próximo passo" entram na manutenção semanal do QTS, no
+mesmo passo em que a semana nova troca de lugar na [Grade](GRADE.md). Seção datada se acrescenta,
+seção de estado se reescreve.
+
+**"Módulo" era premissa morta.** A palavra não aparece em nenhum arquivo do repositório porque não
+existe no curso: são 31 disciplinas em paralelo, em blocos de 45 minutos, com QTS saindo semana a
+semana. Ficou escrito assim no [PRAZOS.md](PRAZOS.md), para a pergunta não voltar daqui a um mês.
+
+**"Entregas" não tinha como ser respondido, e continua sem.** O QTS não diz quem tem prova e quem
+tem trabalho, e a [Grade](GRADE.md) já registrava isso na lista do que não se sabe. Não é lacuna de
+preenchimento, é fonte que falta: a Seç Avaliação e Concurso do CAES, Cap PM Diego Almeida, que por
+sinal é quem assina o QTS como Ch Sec Coord. Virou tarefa com data para terça 25/08, dia em que já
+vou estar atrás do Cel Eglis e do Cap Gobbo.
 
 ## 21/08/2026: o painel não lia o repositório de volta
 
@@ -269,6 +304,8 @@ seção é reescrita e as pastas das disciplinas são criadas.
   porta-malas. A primeira semana vai de **P-1**, mais o **S-1** que fica guardado no CAES.
   *Risco assumido*: se o QTS de segunda marcar atividade externa já nesta semana, vai de P-1,
   avisa o chefe de turma e o B-1 sobe no domingo. Pelo bizu, o B-1 saiu 3 vezes no curso todo.
+  *Revertido em 20/08/2026: o conjunto não sobe no dia 23 e fica em casa sem data nova, porque o
+  QTS da semana 2 não traz Ed. Física nem atividade externa para o pelotão A ([MALA.md](MALA.md)).*
 - **A gravata cinza-bandeirante já está em casa** e vai na mala. Saiu da lista da ConfecBell:
   da compra de segunda o S-1 passa a depender só da **camisa social**.
 - **As 2 calças sociais também já existem em casa** (uma do P-1 e a do social), corrigindo o
@@ -342,48 +379,44 @@ de subir. Detalhe e o histórico do build quebrado do Pages estão em
 [ANOTACOES.md](ANOTACOES.md).
 
 ## Onde estou agora
-- Sou **Oficial-Aluno do CAO/II-2026** (2ª Turma) — **Programa de Mestrado Profissional em Ciências Policiais de Segurança e Ordem Pública**, no **CAES "Cel Nelson Freire Terra"**, **em frente à Praça Júlio Prestes, no centro de São Paulo** (Campos Elíseos / Santa Ifigênia). *Corrigido em 17/08/2026, no local: até então este arquivo dizia "região da Barra Funda", o que é outro bairro e chegou a produzir guia com a estação de metrô errada.* Estações a pé: **Luz** (Linhas 1-Azul e 4-Amarela), **Santa Cecília** (3-Vermelha) e **Júlio Prestes** (CPTM, na praça). Ver [ENTORNO.md](ENTORNO.md).
+- Sou **Oficial-Aluno do CAO-II/2026** (2ª Turma), do **Programa de Mestrado Profissional em Ciências Policiais de Segurança e Ordem Pública**, no **CAES "Cel Nelson Freire Terra"**, **em frente à Praça Júlio Prestes, no centro de São Paulo** (Campos Elíseos / Santa Ifigênia). *Corrigido em 17/08/2026, no local: até então este arquivo dizia "região da Barra Funda", o que é outro bairro e chegou a produzir guia com a estação de metrô errada.* Estações a pé: **Luz** (Linhas 1-Azul e 4-Amarela), **Santa Cecília** (3-Vermelha) e **Júlio Prestes** (CPTM, na praça). Ver [ENTORNO.md](ENTORNO.md).
+- **Estou entrando na semana 2 de um curso de um ano.** A semana 1 (17 a 21/08) está cumprida. Amanhã, **domingo 23/08**, é a viagem da semana 2, que leva a roupa lavada e a carga da copa. **O B-1 e o EPI ficam em casa**, por decisão de 20/08 que reverteu a de 14/08: o QTS da semana 2 não traz Ed. Física nem atividade externa para o pelotão A (ver [MALA.md](MALA.md)).
+- **O curso não tem módulo.** São **31 disciplinas correndo em paralelo**, em blocos de 45 minutos, várias por dia, e o **QTS sai semana a semana**, não por semestre. **24 das 31 já foram acionadas** em algum pelotão até a semana 2. A mesma disciplina volta em semanas diferentes, às vezes com outro docente. Rol completo, corpo docente e quadro da semana na [Grade](GRADE.md).
+- **Sou do pelotão A.** Deduzido em 18/08 cruzando as cinco aulas que assisti com as células marcadas "A" no QTS, cinco de cinco. *[VERIFICAR: falta ratificar de viva voz na Coordenação.]*
+- **Horário real do dia:** blocos 1 a 4 todo dia (08h15, 10h00, 13h00 e 14h45), e o bloco 5 (16h30 às 18h00) só na terça e na quarta. Segunda e sexta acabam 16h15, **quinta acaba 11h30**, que é quando pego a estrada para casa. Na semana 2 a sexta 28/08 está vazia no QTS, para todos os pelotões.
+- **A semana 2 é mais pesada que a 1:** 16 aulas contra 14, com terça e quarta cheias até as 18h00. Os dois embarques de 07h50 do rodapé do QTS são dos pelotões C e E, **nenhum é o meu**, então não tem Ed. Física para mim nesta semana e a mala vai sem item de educação física.
+- **Dissertação:** PP aprovado, tema mantido (integração PM-Prefeituras / governança participativa no 2º BPM/I), versão final em [CAO 2026/PP/Projeto Pesquisa Cap Josemar Final.doc](CAO%202026/PP/Projeto%20Pesquisa%20Cap%20Josemar%20Final.doc). Alvo de orientação decidido em 18/08: **Cel PM Eglis** (D14 Planejamento Estratégico), que dá aula na **terça 25/08, bloco 4**. Método e sequência das conversas em [ESTUDOS.md](ESTUDOS.md).
+- **O que ainda não sei do curso:** a carga horária de cada disciplina, quais têm prova e quais têm trabalho, e se as sete que nunca entraram são do segundo semestre. A lista está no fim da [Grade](GRADE.md), e nada disso sai do QTS: sai da Coordenação.
 - Curso roda de **ago/2026 a ago/2027** (conforme edital). Rotina 13 do SIPA liberada de **17/ago/26 a 22/jan/27** (1º bloco financeiro/administrativo).
-- Fase de seleção (inscrição, prova escrita, defesa do PP) já concluída — documentos arquivados em [CAO 2026/Inscrição](CAO%202026/Inscrição/).
-- Projeto de Pesquisa (PP) tem versão final entregue em [CAO 2026/PP/Projeto Pesquisa Cap Josemar Final.doc](CAO%202026/PP/Projeto%20Pesquisa%20Cap%20Josemar%20Final.doc) — tema: integração PM-Prefeituras / governança participativa no 2º BPM/I. Como agora é mestrado profissional, isso deve virar **dissertação** (ver contato de Pesquisa em [CONTATOS.md](CONTATOS.md)).
-- Contatos e organograma do CAES: ver [CONTATOS.md](CONTATOS.md).
-- Regras de rotina, uniforme, SIPA financeiro, formatura: ver [ROTINA.md](ROTINA.md).
-- **Primeira semana: viaja domingo 16/08 à tarde, chegando à noite.** Segunda 17/08 a recepção é **07h30**; da terça em diante entra 08h15 e sai 16h seg, 18h ter e qua, 11h30 qui. A conferência de armário está **feita** (06/08, 78 das 90 peças já em casa), então sobraram duas etapas: [COMPRAS.md](COMPRAS.md) (o que falta) → [MALA.md](MALA.md) (arrumar a mala no dia).
-- **Módulo e disciplinas**: saem no **QTS de segunda, 17/08**. Até lá não tem o que preencher.
+- Fase de seleção (inscrição, prova escrita, defesa do PP) concluída, documentos arquivados em [CAO 2026/Inscrição](CAO%202026/Inscrição/). Contatos e organograma do CAES: [CONTATOS.md](CONTATOS.md). Rotina, uniforme, SIPA financeiro e formatura: [ROTINA.md](ROTINA.md).
 
 ## Próximo passo
 
-O roteiro dia a dia até a viagem está em [TAREFAS.md](TAREFAS.md), com data, e é o
-que o painel cobra na abertura (por isso aqui é só leitura, para não ter duas listas
-dizendo a mesma coisa). O que trava tudo:
+O roteiro dia a dia está em [TAREFAS.md](TAREFAS.md), com data, e é o que o painel cobra na
+abertura (por isso aqui é só leitura, para não ter duas listas dizendo a mesma coisa). O que
+está de pé agora:
 
-Decidido em 12/08: **o fardamento inteiro fica para a tarde de segunda, na ConfecBell**,
-e a viagem é **domingo à tarde**. Isso esvaziou a correria da semana.
+1. **Domingo 23/08, viagem da semana 2.** Sobe a roupa lavada e a carga da copa; o **B-1** e o
+   **EPI** ficam em casa (decisão de 20/08). Faltam duas compras: o **energético zero** e, do
+   fardamento, a **camisa social cinza-claro do S-1** com a **boina de reposição**, que não
+   saíram na ida à ConfecBell. O rodízio da mala está em [MALA.md](MALA.md), e as duas linhas
+   dele já estão em [TAREFAS.md](TAREFAS.md), com data.
+2. **Terça 25/08, bloco 4, das 14h45 às 16h15: o Cel Eglis dá aula.** É a janela da semana para a
+   abordagem de orientação, com o PP aprovado na mão e uma pergunta objetiva, não um "o senhor me
+   orientaria?". A sequência completa está em [ESTUDOS.md](ESTUDOS.md).
+3. **Cap Gobbo (Seção de Pesquisa), as perguntas das regras:** o orientador precisa ser instrutor
+   do curso, quantos orientandos cada um aceita, se há prazo para escolher, como é o pedido formal
+   e se o Cel Siconeli ainda orienta. Ele dá aula em D05 e D20, então dá para achá-lo em sala em
+   vez de caçá-lo na seção.
+4. **Perguntar na Coordenação quais disciplinas têm prova e quais têm trabalho**, e se existe plano
+   de disciplina com carga horária. É o pedaço da situação do curso que o QTS não responde, e é o
+   que falta para o [PRAZOS.md](PRAZOS.md) deixar de ser calendário só de logística.
+5. **Univesp, 03/09:** vencem os 10 dias úteis do pedido protocolado no SAE em 19/08, às 20h02.
+   Sem resposta, cobrar pelo 0800 051 3333 ou pelo WhatsApp. A prova é 22/09 e cai em dia de curso.
 
-Até 14/08 já saíram do caminho: **a P/1 foi acionada** pelo Ofício de Apresentação e
-pela Rotina 13 do SIPA, **o cadeado e a etiqueta foram comprados**, **a carona está
-combinada** (espaço de bagagem incluído), a **camisa de passeio está engomada** e a
-conta do Banco do Brasil foi conferida. Sobrou:
-
-1. ~~Conferir se a mesa SEI 302090130 recebeu o ofício.~~ **Recebeu — fechado em
-   19/08/2026.** A cobrança do CAES aos capitães cujo Ofício de Apresentação ainda não
-   tinha chegado não traz meu nome nem o 2º BPM/I. Como é desse ato eletrônico da P/1 que
-   dependem matrícula, adição, Ajuda de Custo e Auxílio Financeiro a Estudantes, o assunto
-   sai da lista de pendências.
-2. **Sábado (15/08), separar e arrumar**: os documentos de mão, o S-1 que fica guardado no
-   CAES (com a gravata, que já está em casa) e a mala inteira, seguindo a [MALA.md](MALA.md).
-   O B-1 e o EPI **não** entram nessa mala: ficam separados em casa, para a viagem de 23/08.
-3. **Domingo (16/08), sair de casa às 15h00.** Chegada por volta das 22h.
-4. Depois do **QTS de segunda (17/08)**, me trazer módulo, entregas e avaliações
-   pra eu completar [PRAZOS.md](PRAZOS.md).
-
-Não é mais preciso escrever ao SAE: as quatro dúvidas foram fechadas em 12/08
-(ver [DUVIDAS.md](DUVIDAS.md)).
-
-**O que a mala cobra:** **boina reserva**, **camisa de passeio engomada** (é a que veste
-o primeiro dia), **lençol de solteiro**, **janta de domingo** e volume contido, porque a
-carona divide porta-malas. Sem coturno na mala, o **sapato preto é o único calçado de farda
-da semana** — confira antes de fechar.
+**O que o painel precisa de você durante a semana:** o QTS da semana 3, assim que sair. Com ele o
+cartão de abertura monta o dia sozinho; sem ele, o painel avisa que não sabe, em vez de dizer que
+o dia está livre.
 
 ## Prazos mais próximos
 Agosto inteiro, dia a dia, está em [PRAZOS.md](PRAZOS.md).

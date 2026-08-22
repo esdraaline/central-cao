@@ -94,6 +94,35 @@ Dá para cadastrar tarefa direto no painel, escrevendo em linguagem normal: *"en
 *"prova dia 15"*, *"enviar ofício amanhã"*. Ele entende a data sozinho e agrupa por urgência
 (atrasadas, hoje, amanhã, próximos 7 dias). Categorias: Curso, Dissertação, Administrativo, Pessoal.
 
+### Tarefa que se repete (22/08/2026)
+
+O rodízio da mala é a mesma coisa toda semana: quinta de manhã separa o que volta para casa,
+domingo arruma o que sobe. Antes disso, a tarefa vencia e ficava vermelha até alguém remarcar
+na mão.
+
+**Como escrever.** No `TAREFAS.md`, a marca vai no texto: `@semanal`, `@quinzenal` ou
+`@mensal`. Quem diz o dia é a data da tarefa, não a marca: `@semanal` numa quinta significa
+toda quinta. No painel dá para escrever direto *"toda quinta separar a roupa"*, *"todo domingo
+arrumar a mala"* ou *"todo mês pagar a mensalidade"*, que ele monta a data e a marca sozinho.
+
+**O que acontece ao ticar.** Ela **não vai para Concluídas**. Some da lista, volta com a data
+da próxima vez e aparece um recado: *"Feita desta vez. Volta na quinta, 03/09."* É de propósito:
+ir para Concluídas somaria uma linha por semana no arquivo e tiraria da lista justamente o
+lembrete que ela existe para dar.
+
+**A data nova é ancorada na anterior, não em hoje.** Somar 7 dias a partir de hoje jogaria a
+quinta para uma terça na primeira vez que você ticasse fora do dia. Se você pulou uma semana,
+ele avança de 7 em 7 até passar de hoje, e o dia da semana se mantém.
+
+**A etiqueta "toda quinta" é um botão**: clicada, desliga a repetição e a tarefa vira comum,
+na data em que já estava. Clicada de novo, volta a repetir toda semana.
+
+**Por que a marca fica no texto e não numa coluna nova.** A tarefa passa por três lugares: a
+linha do `TAREFAS.md`, a coluna `txt` do Supabase e a Action que sincroniza os dois. Estando
+dentro do texto, a recorrência atravessa os três de graça, sem migração no banco e sem mexer
+no `sincroniza_tarefas.py`. Quem esconde a marca na tela é o painel; o arquivo e a nuvem nunca
+precisam saber que ela existe.
+
 ### Remarcar uma tarefa (mudar a data)
 Toda tarefa tem **botão de calendário** ao lado do lápis, e **a própria etiqueta de data é
 clicável**. Abre um campo de data com atalhos: **Hoje**, **Amanhã**, **+1 semana**,

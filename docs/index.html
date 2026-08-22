@@ -9,7 +9,7 @@
 <!-- o painel e um arquivo unico que muda a cada geracao; sem isto o navegador
      serve a versao antiga do cache e correcoes nao chegam ate o usuario -->
 <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
-<meta name="gerado-em" content="8507290f28b91a14">
+<meta name="gerado-em" content="68991ee89695b907">
 <title>Central do CAO</title>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23c8102e'/%3E%3Ctext x='16' y='22' font-size='15' font-family='Arial' font-weight='bold' fill='white' text-anchor='middle'%3ECAO%3C/text%3E%3C/svg%3E">
 <style>
@@ -140,6 +140,12 @@ main{max-width:1080px;margin:0 auto;padding:24px 20px 64px}
 .guia-bloco.vencido .guia-cab .n{background:var(--vm);color:#fff}
 .guia-bloco.agora .guia-cab{color:var(--al)}
 .guia-bloco.agora .guia-cab .n{background:var(--al);color:#fff}
+.tf-tag.rep{background:var(--bd);color:var(--tx2);cursor:pointer}
+.tf-tag.rep svg{opacity:.9}
+.tf-aviso{display:none;align-items:center;gap:8px;margin:0 0 12px;padding:10px 14px;
+  border:1px solid var(--bd);border-left:3px solid var(--vd);border-radius:10px;
+  background:var(--card);color:var(--tx2);font-size:13.5px}
+.tf-aviso.on{display:flex}
 .guia-lista{list-style:none;margin:0}
 .guia-lista li{display:flex;gap:10px;align-items:flex-start;padding:9px 12px;margin:6px 0;
   border:1px solid var(--bd);border-left-width:3px;border-radius:9px;background:var(--card2);
@@ -495,6 +501,12 @@ mark{background:rgba(232,161,58,.35);color:inherit;border-radius:3px;padding:0 2
   </div>
 </header>
 <main><section class="aba" id="ab-painel" role="tabpanel" data-mod="2026-08-22T20:14:52.000Z"><section class="guia"><div class="guia-topo"><div><p class="guia-ola" id="guia-ola">Central do CAO</p><h2 class="guia-dia" id="guia-dia">Carregando o dia...</h2><p class="guia-fase" id="guia-fase"></p></div><div class="guia-conta" id="guia-conta"></div></div><div class="guia-aula" id="guia-aula"></div><div class="guia-corpo" id="guia-corpo"></div></section><div class="grade"><div class="kpi dest"><div class="rot" id="kpi-curso-rot">Curso</div><div class="val" id="kpi-curso-val">...</div><div class="sub" id="kpi-curso-sub">CAO-II/26</div><div class="barra"><i id="kpi-curso-barra" style="width:0%"></i></div></div><div class="kpi"><div class="rot">Tarefas pendentes</div><div class="val" id="kpi-tar-val">17</div><div class="sub" id="kpi-tar-sub">28 já concluídas</div></div><div class="kpi lista-kpi" data-aba="ab-compras" data-rot="Compras"><div class="rot">Compras</div><div class="val">...</div><div class="sub">antes de viajar</div><div class="barra"><i style="width:0%"></i></div></div><div class="kpi lista-kpi" data-aba="ab-mala" data-rot="Mala"><div class="rot">Mala</div><div class="val">...</div><div class="sub">itens separados</div><div class="barra"><i style="width:0%"></i></div></div></div><div class="card"><blockquote data-b>Painel principal. Ler isso primeiro em qualquer sessão nova ("onde paramos?"). Atualizado em: 22/08/2026</blockquote>
+<h2 data-b>22/08/2026: as tarefas do rodízio da mala passaram a se repetir sozinhas</h2>
+<p data-b>Pergunta do Josemar, olhando a tarefa da quinta vencida de novo: <em>"tem como cadastrar como recorrência, toda quinta de manhã? e aquilo que coloco na mala todo domingo também"</em>. As duas são rodízio semanal, e vinham envelhecendo como se fossem tarefa de uma vez só: venciam, ficavam vermelhas no guia de abertura e alguém tinha que remarcar na mão toda semana.</p>
+<p data-b><strong>A marca de recorrência vive no texto da tarefa</strong>, não numa coluna nova: <code>@semanal</code>, <code>@quinzenal</code> ou <code>@mensal</code>. A escolha é o ponto do desenho. A tarefa passa por três lugares (a linha do <code>TAREFAS.md</code>, a coluna <code>txt</code> do Supabase e a Action que sincroniza os dois), e estando dentro do texto ela atravessa os três sem migração no banco e sem uma linha nova no <code>sincroniza_tarefas.py</code>. Quem esconde a marca na tela e desenha a etiqueta "toda quinta" é o painel.</p>
+<p data-b><strong>Ticada, ela não vai para Concluídas</strong>: rola para a próxima vez e avisa <em>"Feita desta vez. Volta na quinta, 03/09."</em> Ir para Concluídas somaria uma linha por semana no arquivo e tiraria da lista justamente o lembrete que a tarefa existe para dar. A data nova é contada a partir da data anterior, e não de hoje, senão a primeira vez que ele ticasse fora do dia jogaria a quinta para uma terça.</p>
+<p data-b><strong>Conferido no navegador</strong>, nos dois temas e nos dois tamanhos: ticar rola a data e mantém as Concluídas em 28; a etiqueta liga e desliga a repetição; <em>"toda quinta"</em>, <em>"todo domingo"</em>,</p>
+<p data-b><em>"toda semana"</em> e <em>"todo mês"</em> escritos na caixa viram tarefa com data e marca certas; o guia de abertura e o Exportar não vazam o <code>@semanal</code> na tela; e o <code>TAREFAS.md</code> continua remontando byte a byte pelo robô da sincronização. Detalhe em <span class="arq" title="Arquivo na pasta local: PAINEL.md"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2h8l4 4v16H6z"/><path d="M14 2v4h4"/></svg>PAINEL.md</span>.</p>
 <h2 data-b>22/08/2026: o STATUS e o PRAZOS pararam no domingo da viagem</h2>
 <p data-b>Tarefa escrita em 17/08 e vencida em 20/08: <em>"Atualizar STATUS.md e PRAZOS.md com a situação real do curso (módulo, disciplinas, entregas)"</em>. Ela nasceu antes de o QTS sair, quando o fundo deste arquivo ainda dizia "Módulo e disciplinas: saem no QTS de segunda, 17/08. Até lá não tem o que preencher".</p>
 <p data-b><strong>O QTS saiu, e nada disso subiu para cá.</strong> Entre 18 e 21/08 nasceram as 31 disciplinas, os 117 docentes, a dedução do pelotão A e as duas semanas lançadas, tudo na <a href="#grade" class="lnk-aba">Grade</a> e em <a href="#estudos" class="lnk-aba">ESTUDOS.md</a>. O fundo deste arquivo continuou dizendo que a viagem era domingo 16/08 e que a mala precisava ser arrumada no sábado 15/08.</p>
@@ -834,7 +846,7 @@ mark{background:rgba(232,161,58,.35);color:inherit;border-radius:3px;padding:0 2
 
 <div class="tf-nova">
   <div class="tf-linha">
-    <input type="text" id="tf-txt" placeholder="O que precisa ser feito? Ex.: entregar artigo sexta"
+    <input type="text" id="tf-txt" placeholder="O que precisa ser feito? Ex.: entregar artigo sexta, ou toda quinta separar a roupa"
            autocomplete="off" spellcheck="false">
     <button class="tf-add" id="tf-add" title="Adicionar (Enter)" disabled><svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg></button>
   </div>
@@ -6028,14 +6040,77 @@ Ficou dúvida:           #DUVIDA</code></pre>
 <script>
 var SOL='<svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4"/></svg>',LUA='<svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z"/></svg>';
 var CATEGORIAS=[["curso", "Curso", "#3b7dd8"], ["dissertacao", "Dissertação", "#8b5cf6"], ["admin", "Administrativo", "#e8892b"], ["pessoal", "Pessoal", "#0f9d58"]];
-var BASE=[{"t": "Decidir opção de desconto SIPA: Alojamento (R$ 30,35) ou Vestiário (R$ 21,52), e cessar o equivalente na OPM de origem", "d": "2026-08-18", "c": "admin", "f": false, "s": "Segunda, 17/08 (é o dia de resolver o fardamento)"}, {"t": "Comprar a camisa social cinza-claro do S-1 e a boina de reposição, que faltaram na ida à ConfecBell", "d": "2026-08-19", "c": "pessoal", "f": false, "s": "Segunda, 17/08 (é o dia de resolver o fardamento)"}, {"t": "Mandar o QTS assim que sair, para eu lançar na aba Grade e o painel montar o dia sozinho", "d": "2026-08-19", "c": "curso", "f": false, "s": "Segunda, 17/08 (é o dia de resolver o fardamento)"}, {"t": "Experimentar a farda social e ver os ajustes de caimento, depois de comprar a camisa social", "d": "2026-08-20", "c": "pessoal", "f": false, "s": "Segunda, 17/08 (é o dia de resolver o fardamento)"}, {"t": "Procurar o Cap Gobbo (Seção de Pesquisa) sobre a transformação do PP em dissertação", "d": "2026-08-21", "c": "dissertacao", "f": false, "s": "Segunda, 17/08 (é o dia de resolver o fardamento)"}, {"t": "Quinta de manhã, separar para levar para casa: toalha de banho, fronha e roupa suja", "d": "2026-08-20", "c": "pessoal", "f": false, "s": "Rodízio da mala (toda semana, ver MALA.md)"}, {"t": "Domingo, arrumar para a volta: 2 toalhas, fronha limpa, roupa lavada (cuecas, meias, camisetas), whey e creatina", "d": "2026-08-23", "c": "pessoal", "f": false, "s": "Rodízio da mala (toda semana, ver MALA.md)"}, {"t": "Falar com o Cap Simões e pegar o contato do Cel Eglis", "d": "2026-08-19", "c": "dissertacao", "f": false, "s": "Orientador da dissertação — MISSÃO URGENTE"}, {"t": "Perguntar ao Cap Gobbo as REGRAS da orientação: o orientador precisa ser instrutor do curso? Quantos orientandos cada um aceita? Há prazo para escolher? Como é o pedido formal?", "d": "2026-08-21", "c": "dissertacao", "f": false, "s": "Orientador da dissertação — MISSÃO URGENTE"}, {"t": "Procurar o Cel Eglis e sondar a orientação, levando o PP já aprovado", "d": "2026-08-21", "c": "dissertacao", "f": false, "s": "Orientador da dissertação — MISSÃO URGENTE"}, {"t": "Montar o rol completo de disciplinas e instrutores conforme os QTS forem saindo, para ter o universo de candidatos", "d": "2026-08-28", "c": "dissertacao", "f": false, "s": "Orientador da dissertação — MISSÃO URGENTE"}, {"t": "Decidir e comprar o energético zero: leva de casa ou compra perto do CAES na chegada (whey, creatina e coqueteleira já resolvidos)", "d": "2026-08-22", "c": "pessoal", "f": false, "s": "Segunda semana (viagem em 23/08)"}, {"t": "Levar na viagem: 5 cuecas, 5 pares de meia social preta, 3 pares de meia branca, 2 camisetas de serviço e 2 pijamas lavados, 2 toalhas de banho e 1 fronha, mais a carga da copa (whey, creatina, energético zero, Pepsi Black, lanches, marmitas prontas, porta-sabonete e shampoo). B-1 e EPI não vão (decisão de 20/08)", "d": "2026-08-23", "c": "pessoal", "f": false, "s": "Segunda semana (viagem em 23/08)"}, {"t": "Perguntar na Coordenação (Seç Avaliação, Cap Diego) quais disciplinas têm prova e quais têm trabalho, e se existe plano de disciplina com carga horária. É o que falta para o PRAZOS listar entrega de disciplina, porque o QTS não traz", "d": "2026-08-25", "c": "curso", "f": false, "s": "Segunda semana (viagem em 23/08)"}, {"t": "Pedir ao CAES (Seç Apoio Escolar, mesa SEI 302090130) a declaração de matrícula e frequência do CAO-II/26, para ter em mãos se a Univesp exigir comprovação", "d": "2026-08-24", "c": "admin", "f": false, "s": "Univesp — prova de 22/09 em conflito com o curso (pedido já protocolado)"}, {"t": "Ver no WhatsApp da Univesp (11 4200-2982) se veio resposta ao pedido de prova em polo da capital", "d": "2026-08-24", "c": "admin", "f": false, "s": "Univesp — prova de 22/09 em conflito com o curso (pedido já protocolado)"}, {"t": "Vencimento dos 10 dias úteis do SAE: sem resposta, cobrar pelo 0800 051 3333 ou WhatsApp, citando o assunto do e-mail. A prova é 22/09", "d": "2026-09-03", "c": "admin", "f": false, "s": "Univesp — prova de 22/09 em conflito com o curso (pedido já protocolado)"}, {"t": "Atualizar STATUS.md e PRAZOS.md com a situação real do curso: módulo não existe (são 31 disciplinas em paralelo, QTS semanal), disciplinas e pelotão A lançados nos dois arquivos, e entregas não saem do QTS, viraram pergunta para a Coordenação", "d": "2026-08-22", "c": "curso", "f": true, "s": ""}, {"t": "Confirmar a grafia do nome do orientador pretendido: é Cel PM Eglis, com o g antes do l, como traz o QTS revisado de 20/08. A Central escrevia Elgis desde 17/08 e foi corrigida", "d": "2026-08-21", "c": "dissertacao", "f": true, "s": ""}, {"t": "Conferir se a mesa SEI 302090130 recebeu o ofício: recebeu. A cobrança do CAES aos faltantes (19/08) não traz meu nome nem o 2º BPM/I", "d": "2026-08-19", "c": "admin", "f": true, "s": ""}, {"t": "Comprar na ConfecBell: 2 camisas de passeio, 2 camisetas de serviço, tarjeta operacional, Logomarca, 4 distintivos de OPM e tarjeta administrativa de acrílico", "d": "2026-08-18", "c": "pessoal", "f": true, "s": ""}, {"t": "Conferir whey, creatina e coqueteleira — os três já em casa", "d": "2026-08-18", "c": "pessoal", "f": true, "s": ""}, {"t": "Pegar o QTS e lançar as disciplinas: sai dia a dia, 7 disciplinas até 18/08", "d": "2026-08-18", "c": "curso", "f": true, "s": ""}, {"t": "Perguntar ao pessoal do CAO-I/26 onde eles almoçam e jantam, e lançar em ENTORNO.md", "d": "2026-08-18", "c": "pessoal", "f": true, "s": ""}, {"t": "Chegar ao CAES até 07h30: café da manhã, assinar a lista de presença do pelotão e palestra", "d": "2026-08-17", "c": "curso", "f": true, "s": ""}, {"t": "Combinar o destino do 4º distintivo de OPM, o da gandola: trazer solto ou deixar na loja, porque a gandola só sobe em 23/08", "d": "2026-08-17", "c": "pessoal", "f": true, "s": ""}, {"t": "Se aplicável: pedir Ajuda de Custo (oficial de outro município)", "d": "2026-08-17", "c": "admin", "f": true, "s": ""}, {"t": "Sair de casa às 15h00 para São Paulo, de carona, chegada por volta das 22h", "d": "2026-08-16", "c": "pessoal", "f": true, "s": ""}, {"t": "Deixar separado em casa o que só sobe em 23/08: B-1 (gandola, calça operacional, coturno) e EPI (cinto, colete, bota)", "d": "2026-08-15", "c": "pessoal", "f": true, "s": ""}, {"t": "Separar o que já tenho do S-1 para deixar guardado no CAES: paletó, a segunda calça social, gravata, quepe e tarjeta administrativa (da compra de segunda falta só a camisa social)", "d": "2026-08-15", "c": "pessoal", "f": true, "s": ""}, {"t": "Arrumar a mala seguindo a aba Mala, compacta (é carona), sem esquecer a boina reserva, o lençol de solteiro e a janta de domingo", "d": "2026-08-15", "c": "pessoal", "f": true, "s": ""}, {"t": "Separar os documentos de mão: identidade funcional e o número do processo SEI", "d": "2026-08-15", "c": "admin", "f": true, "s": ""}, {"t": "Comprar o cadeado do armário (o do CAES não tem chave) e etiqueta + caneta permanente para as marmitas", "d": "2026-08-14", "c": "pessoal", "f": true, "s": ""}, {"t": "Engomar a camisa de passeio que já tenho: é a única garantida para segunda, porque as outras 2 só serão compradas à tarde", "d": "2026-08-14", "c": "pessoal", "f": true, "s": ""}, {"t": "Conferir se a conta do Banco do Brasil não é \"Conta Salário\" e se o nome não está no CADIN", "d": "2026-08-14", "c": "admin", "f": true, "s": ""}, {"t": "Combinar com o amigo quanto espaço de bagagem eu tenho (o horário já está fechado: saída 15h)", "d": "2026-08-13", "c": "pessoal", "f": true, "s": ""}, {"t": "Acionar a P/1 do 2º BPM/I para o Ofício de Apresentação (mesa SEI 302090130) e a liberação da Rotina 13 do SIPA (código 302090000)", "d": "2026-08-13", "c": "admin", "f": true, "s": ""}, {"t": "Fechar as dúvidas que iriam para o SAE: chegada às 22h sem restrição, passeio completo é P-1, EPI é cinto/colete/bota com B-1, ofício não precisa de via impressa", "d": "2026-08-12", "c": "curso", "f": true, "s": ""}, {"t": "Decidir como viajar: domingo 16/08 à tarde, de carona com um amigo, chegando à noite", "d": "2026-08-12", "c": "pessoal", "f": true, "s": ""}, {"t": "Decidir onde comprar o fardamento: tudo na ConfecBell, na tarde de segunda 17/08", "d": "2026-08-12", "c": "pessoal", "f": true, "s": ""}, {"t": "Conferência de armário: 78 das 90 peças já estavam em casa", "d": "2026-08-06", "c": "pessoal", "f": true, "s": ""}, {"t": "Organizar a pasta Central CAO (limpeza de duplicados, áudio/vídeo antigo, estrutura de pastas)", "d": "2026-08-04", "c": "pessoal", "f": true, "s": ""}, {"t": "Criar o painel visual em docs/index.html, gerado a partir dos .md", "d": "2026-08-04", "c": "pessoal", "f": true, "s": ""}, {"t": "Criar o cadastro de tarefas com data no painel", "d": "2026-08-04", "c": "pessoal", "f": true, "s": ""}, {"t": "Ficar de olho no Recadastramento Anual + Inspeção de Saúde (IAS) próximo do aniversário", "d": null, "c": "admin", "f": true, "s": ""}];
-var TAR_CAB="# TAREFAS — CAO 2026\n\n> Lista de tarefas correntes do curso. Marcar como feito, não apagar (histórico do que já foi cumprido).\n> Editável aqui ou pelo painel (aba Tarefas). Formato: `- [ ] texto [dd/mm/aaaa] #categoria`.\n> Categorias: `#curso` `#dissertacao` `#admin` `#pessoal`.\n>\n> **A data não é enfeite.** É ela que faz a tarefa aparecer no guia de abertura do painel\n> (\"hoje você precisa...\"). Tarefa sem data fica fora do guia e só aparece na aba Tarefas.";
-var TAR_NOTAS={"Univesp — prova de 22/09 em conflito com o curso (pedido já protocolado)": ["> Pedido enviado ao SAE em 19/08/2026, 20h02, com a Ata de Convocação anexada. Detalhes completos em `C:\\projetos\\mentor-univesp\\STATUS.md`."]};
-var ICO={"check": "<svg viewBox=\"0 0 24 24\" width=\"13\" height=\"13\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M20 6 9 17l-5-5\"/><\/svg>", "lapis": "<svg viewBox=\"0 0 24 24\" width=\"15\" height=\"15\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M4 20h4L20 8a2.8 2.8 0 0 0-4-4L4 16z\"/><\/svg>", "lixo": "<svg viewBox=\"0 0 24 24\" width=\"15\" height=\"15\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M4 7h16M10 11v6M14 11v6\"/><path d=\"M6 7l1 13h10l1-13\"/><path d=\"M9 7V4h6v3\"/><\/svg>", "cal": "<svg viewBox=\"0 0 24 24\" width=\"12\" height=\"12\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"3\" y=\"5\" width=\"18\" height=\"16\" rx=\"2\"/><path d=\"M8 3v4M16 3v4M3 11h18\"/><\/svg>", "calbt": "<svg viewBox=\"0 0 24 24\" width=\"15\" height=\"15\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"3\" y=\"5\" width=\"18\" height=\"16\" rx=\"2\"/><path d=\"M8 3v4M16 3v4M3 11h18\"/><\/svg>", "vazio": "<svg viewBox=\"0 0 24 24\" width=\"46\" height=\"46\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><path d=\"M8.5 13.5s1.2 1.5 3.5 1.5 3.5-1.5 3.5-1.5\"/><path d=\"M9 9.5h.01M15 9.5h.01\"/><\/svg>", "copiar": "<svg viewBox=\"0 0 24 24\" width=\"15\" height=\"15\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"9\" y=\"9\" width=\"12\" height=\"12\" rx=\"2\"/><path d=\"M5 15V5a2 2 0 0 1 2-2h10\"/><\/svg>"};
+var BASE=[{"t": "Decidir opção de desconto SIPA: Alojamento (R$ 30,35) ou Vestiário (R$ 21,52), e cessar o equivalente na OPM de origem", "d": "2026-08-18", "c": "admin", "f": false, "s": "Segunda, 17/08 (é o dia de resolver o fardamento)"}, {"t": "Comprar a camisa social cinza-claro do S-1 e a boina de reposição, que faltaram na ida à ConfecBell", "d": "2026-08-19", "c": "pessoal", "f": false, "s": "Segunda, 17/08 (é o dia de resolver o fardamento)"}, {"t": "Mandar o QTS assim que sair, para eu lançar na aba Grade e o painel montar o dia sozinho", "d": "2026-08-19", "c": "curso", "f": false, "s": "Segunda, 17/08 (é o dia de resolver o fardamento)"}, {"t": "Experimentar a farda social e ver os ajustes de caimento, depois de comprar a camisa social", "d": "2026-08-20", "c": "pessoal", "f": false, "s": "Segunda, 17/08 (é o dia de resolver o fardamento)"}, {"t": "Procurar o Cap Gobbo (Seção de Pesquisa) sobre a transformação do PP em dissertação", "d": "2026-08-21", "c": "dissertacao", "f": false, "s": "Segunda, 17/08 (é o dia de resolver o fardamento)"}, {"t": "Domingo, arrumar para a volta: 2 toalhas, fronha limpa, roupa lavada (cuecas, meias, camisetas), whey e creatina @semanal", "d": "2026-08-23", "c": "pessoal", "f": false, "s": "Rodízio da mala (toda semana, ver MALA.md)"}, {"t": "Quinta de manhã, separar para levar para casa: toalha de banho, fronha e roupa suja @semanal", "d": "2026-08-27", "c": "pessoal", "f": false, "s": "Rodízio da mala (toda semana, ver MALA.md)"}, {"t": "Falar com o Cap Simões e pegar o contato do Cel Eglis", "d": "2026-08-19", "c": "dissertacao", "f": false, "s": "Orientador da dissertação — MISSÃO URGENTE"}, {"t": "Perguntar ao Cap Gobbo as REGRAS da orientação: o orientador precisa ser instrutor do curso? Quantos orientandos cada um aceita? Há prazo para escolher? Como é o pedido formal?", "d": "2026-08-21", "c": "dissertacao", "f": false, "s": "Orientador da dissertação — MISSÃO URGENTE"}, {"t": "Procurar o Cel Eglis e sondar a orientação, levando o PP já aprovado", "d": "2026-08-21", "c": "dissertacao", "f": false, "s": "Orientador da dissertação — MISSÃO URGENTE"}, {"t": "Montar o rol completo de disciplinas e instrutores conforme os QTS forem saindo, para ter o universo de candidatos", "d": "2026-08-28", "c": "dissertacao", "f": false, "s": "Orientador da dissertação — MISSÃO URGENTE"}, {"t": "Decidir e comprar o energético zero: leva de casa ou compra perto do CAES na chegada (whey, creatina e coqueteleira já resolvidos)", "d": "2026-08-22", "c": "pessoal", "f": false, "s": "Segunda semana (viagem em 23/08)"}, {"t": "Levar na viagem: 5 cuecas, 5 pares de meia social preta, 3 pares de meia branca, 2 camisetas de serviço e 2 pijamas lavados, 2 toalhas de banho e 1 fronha, mais a carga da copa (whey, creatina, energético zero, Pepsi Black, lanches, marmitas prontas, porta-sabonete e shampoo). B-1 e EPI não vão (decisão de 20/08)", "d": "2026-08-23", "c": "pessoal", "f": false, "s": "Segunda semana (viagem em 23/08)"}, {"t": "Perguntar na Coordenação (Seç Avaliação, Cap Diego) quais disciplinas têm prova e quais têm trabalho, e se existe plano de disciplina com carga horária. É o que falta para o PRAZOS listar entrega de disciplina, porque o QTS não traz", "d": "2026-08-25", "c": "curso", "f": false, "s": "Segunda semana (viagem em 23/08)"}, {"t": "Pedir ao CAES (Seç Apoio Escolar, mesa SEI 302090130) a declaração de matrícula e frequência do CAO-II/26, para ter em mãos se a Univesp exigir comprovação", "d": "2026-08-24", "c": "admin", "f": false, "s": "Univesp — prova de 22/09 em conflito com o curso (pedido já protocolado)"}, {"t": "Ver no WhatsApp da Univesp (11 4200-2982) se veio resposta ao pedido de prova em polo da capital", "d": "2026-08-24", "c": "admin", "f": false, "s": "Univesp — prova de 22/09 em conflito com o curso (pedido já protocolado)"}, {"t": "Vencimento dos 10 dias úteis do SAE: sem resposta, cobrar pelo 0800 051 3333 ou WhatsApp, citando o assunto do e-mail. A prova é 22/09", "d": "2026-09-03", "c": "admin", "f": false, "s": "Univesp — prova de 22/09 em conflito com o curso (pedido já protocolado)"}, {"t": "Atualizar STATUS.md e PRAZOS.md com a situação real do curso: módulo não existe (são 31 disciplinas em paralelo, QTS semanal), disciplinas e pelotão A lançados nos dois arquivos, e entregas não saem do QTS, viraram pergunta para a Coordenação", "d": "2026-08-22", "c": "curso", "f": true, "s": ""}, {"t": "Confirmar a grafia do nome do orientador pretendido: é Cel PM Eglis, com o g antes do l, como traz o QTS revisado de 20/08. A Central escrevia Elgis desde 17/08 e foi corrigida", "d": "2026-08-21", "c": "dissertacao", "f": true, "s": ""}, {"t": "Conferir se a mesa SEI 302090130 recebeu o ofício: recebeu. A cobrança do CAES aos faltantes (19/08) não traz meu nome nem o 2º BPM/I", "d": "2026-08-19", "c": "admin", "f": true, "s": ""}, {"t": "Comprar na ConfecBell: 2 camisas de passeio, 2 camisetas de serviço, tarjeta operacional, Logomarca, 4 distintivos de OPM e tarjeta administrativa de acrílico", "d": "2026-08-18", "c": "pessoal", "f": true, "s": ""}, {"t": "Conferir whey, creatina e coqueteleira — os três já em casa", "d": "2026-08-18", "c": "pessoal", "f": true, "s": ""}, {"t": "Pegar o QTS e lançar as disciplinas: sai dia a dia, 7 disciplinas até 18/08", "d": "2026-08-18", "c": "curso", "f": true, "s": ""}, {"t": "Perguntar ao pessoal do CAO-I/26 onde eles almoçam e jantam, e lançar em ENTORNO.md", "d": "2026-08-18", "c": "pessoal", "f": true, "s": ""}, {"t": "Chegar ao CAES até 07h30: café da manhã, assinar a lista de presença do pelotão e palestra", "d": "2026-08-17", "c": "curso", "f": true, "s": ""}, {"t": "Combinar o destino do 4º distintivo de OPM, o da gandola: trazer solto ou deixar na loja, porque a gandola só sobe em 23/08", "d": "2026-08-17", "c": "pessoal", "f": true, "s": ""}, {"t": "Se aplicável: pedir Ajuda de Custo (oficial de outro município)", "d": "2026-08-17", "c": "admin", "f": true, "s": ""}, {"t": "Sair de casa às 15h00 para São Paulo, de carona, chegada por volta das 22h", "d": "2026-08-16", "c": "pessoal", "f": true, "s": ""}, {"t": "Deixar separado em casa o que só sobe em 23/08: B-1 (gandola, calça operacional, coturno) e EPI (cinto, colete, bota)", "d": "2026-08-15", "c": "pessoal", "f": true, "s": ""}, {"t": "Separar o que já tenho do S-1 para deixar guardado no CAES: paletó, a segunda calça social, gravata, quepe e tarjeta administrativa (da compra de segunda falta só a camisa social)", "d": "2026-08-15", "c": "pessoal", "f": true, "s": ""}, {"t": "Arrumar a mala seguindo a aba Mala, compacta (é carona), sem esquecer a boina reserva, o lençol de solteiro e a janta de domingo", "d": "2026-08-15", "c": "pessoal", "f": true, "s": ""}, {"t": "Separar os documentos de mão: identidade funcional e o número do processo SEI", "d": "2026-08-15", "c": "admin", "f": true, "s": ""}, {"t": "Comprar o cadeado do armário (o do CAES não tem chave) e etiqueta + caneta permanente para as marmitas", "d": "2026-08-14", "c": "pessoal", "f": true, "s": ""}, {"t": "Engomar a camisa de passeio que já tenho: é a única garantida para segunda, porque as outras 2 só serão compradas à tarde", "d": "2026-08-14", "c": "pessoal", "f": true, "s": ""}, {"t": "Conferir se a conta do Banco do Brasil não é \"Conta Salário\" e se o nome não está no CADIN", "d": "2026-08-14", "c": "admin", "f": true, "s": ""}, {"t": "Combinar com o amigo quanto espaço de bagagem eu tenho (o horário já está fechado: saída 15h)", "d": "2026-08-13", "c": "pessoal", "f": true, "s": ""}, {"t": "Acionar a P/1 do 2º BPM/I para o Ofício de Apresentação (mesa SEI 302090130) e a liberação da Rotina 13 do SIPA (código 302090000)", "d": "2026-08-13", "c": "admin", "f": true, "s": ""}, {"t": "Fechar as dúvidas que iriam para o SAE: chegada às 22h sem restrição, passeio completo é P-1, EPI é cinto/colete/bota com B-1, ofício não precisa de via impressa", "d": "2026-08-12", "c": "curso", "f": true, "s": ""}, {"t": "Decidir como viajar: domingo 16/08 à tarde, de carona com um amigo, chegando à noite", "d": "2026-08-12", "c": "pessoal", "f": true, "s": ""}, {"t": "Decidir onde comprar o fardamento: tudo na ConfecBell, na tarde de segunda 17/08", "d": "2026-08-12", "c": "pessoal", "f": true, "s": ""}, {"t": "Conferência de armário: 78 das 90 peças já estavam em casa", "d": "2026-08-06", "c": "pessoal", "f": true, "s": ""}, {"t": "Organizar a pasta Central CAO (limpeza de duplicados, áudio/vídeo antigo, estrutura de pastas)", "d": "2026-08-04", "c": "pessoal", "f": true, "s": ""}, {"t": "Criar o painel visual em docs/index.html, gerado a partir dos .md", "d": "2026-08-04", "c": "pessoal", "f": true, "s": ""}, {"t": "Criar o cadastro de tarefas com data no painel", "d": "2026-08-04", "c": "pessoal", "f": true, "s": ""}, {"t": "Ficar de olho no Recadastramento Anual + Inspeção de Saúde (IAS) próximo do aniversário", "d": null, "c": "admin", "f": true, "s": ""}];
+var TAR_CAB="# TAREFAS — CAO 2026\n\n> Lista de tarefas correntes do curso. Marcar como feito, não apagar (histórico do que já foi cumprido).\n> Editável aqui ou pelo painel (aba Tarefas). Formato: `- [ ] texto [dd/mm/aaaa] #categoria`.\n> Categorias: `#curso` `#dissertacao` `#admin` `#pessoal`.\n>\n> **A data não é enfeite.** É ela que faz a tarefa aparecer no guia de abertura do painel\n> (\"hoje você precisa...\"). Tarefa sem data fica fora do guia e só aparece na aba Tarefas.\n>\n> **Tarefa que se repete** leva `@semanal` (ou `@quinzenal`, `@mensal`) no texto, e a data diz\n> qual é o dia: `@semanal` numa quinta significa toda quinta. Ticada no painel, ela não vai para\n> Concluídas, some da lista e volta com a data da próxima vez. No painel dá para escrever direto\n> \"toda quinta separar a roupa\", que ele entende sozinho.";
+var TAR_NOTAS={"Rodízio da mala (toda semana, ver MALA.md)": ["> As duas se repetem sozinhas: ticadas, não vão para Concluídas, voltam com a data da semana seguinte."], "Univesp — prova de 22/09 em conflito com o curso (pedido já protocolado)": ["> Pedido enviado ao SAE em 19/08/2026, 20h02, com a Ata de Convocação anexada. Detalhes completos em `C:\\projetos\\mentor-univesp\\STATUS.md`."]};
+var ICO={"check": "<svg viewBox=\"0 0 24 24\" width=\"13\" height=\"13\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M20 6 9 17l-5-5\"/><\/svg>", "lapis": "<svg viewBox=\"0 0 24 24\" width=\"15\" height=\"15\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M4 20h4L20 8a2.8 2.8 0 0 0-4-4L4 16z\"/><\/svg>", "lixo": "<svg viewBox=\"0 0 24 24\" width=\"15\" height=\"15\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M4 7h16M10 11v6M14 11v6\"/><path d=\"M6 7l1 13h10l1-13\"/><path d=\"M9 7V4h6v3\"/><\/svg>", "cal": "<svg viewBox=\"0 0 24 24\" width=\"12\" height=\"12\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"3\" y=\"5\" width=\"18\" height=\"16\" rx=\"2\"/><path d=\"M8 3v4M16 3v4M3 11h18\"/><\/svg>", "calbt": "<svg viewBox=\"0 0 24 24\" width=\"15\" height=\"15\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"3\" y=\"5\" width=\"18\" height=\"16\" rx=\"2\"/><path d=\"M8 3v4M16 3v4M3 11h18\"/><\/svg>", "vazio": "<svg viewBox=\"0 0 24 24\" width=\"46\" height=\"46\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><path d=\"M8.5 13.5s1.2 1.5 3.5 1.5 3.5-1.5 3.5-1.5\"/><path d=\"M9 9.5h.01M15 9.5h.01\"/><\/svg>", "copiar": "<svg viewBox=\"0 0 24 24\" width=\"15\" height=\"15\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"9\" y=\"9\" width=\"12\" height=\"12\" rx=\"2\"/><path d=\"M5 15V5a2 2 0 0 1 2-2h10\"/><\/svg>", "repete": "<svg viewBox=\"0 0 24 24\" width=\"12\" height=\"12\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"m17 2 3.5 3.5L17 9\"/><path d=\"M3.5 12v-1.5a4 4 0 0 1 4-4h13\"/><path d=\"M7 22l-3.5-3.5L7 15\"/><path d=\"M20.5 12v1.5a4 4 0 0 1-4 4h-13\"/><\/svg>"};
 window.CURSO={"inicio": "2026-08-17", "fim": "2027-08-17", "viagem": "2026-08-16"};
 window.QTS={"pelotao": "A", "dias": {"2026-08-24": {"blocos": [{"n": 1, "ini": "08:15", "fim": "09:45", "disc": "D12 Gestão de Pessoas", "doc": "Cel PM Pereira Lima"}, {"n": 2, "ini": "10:00", "fim": "11:30", "disc": "D20 Liderança Organizacional", "doc": "Ten Cel PM Elieverson"}, {"n": 3, "ini": "13:00", "fim": "14:30", "disc": "D30 Criminologia e Fenomenologia do Crime", "doc": "Cap PM Fiuza"}, {"n": 4, "ini": "14:45", "fim": "16:15", "disc": "D15 Gestão de Projetos", "doc": "Ten Cel PM Fernandes"}], "aviso": ""}, "2026-08-25": {"blocos": [{"n": 1, "ini": "08:15", "fim": "09:45", "disc": "D30 Criminologia e Fenomenologia do Crime", "doc": "Ten Cel PM Giovani"}, {"n": 2, "ini": "10:00", "fim": "11:30", "disc": "D17 Gestão do Conhecimento e Aprendizagem Organizacional", "doc": "Cap PM Fernanda Nossa"}, {"n": 3, "ini": "13:00", "fim": "14:30", "disc": "D04 Relações Sociais e Institucionais no Brasil", "doc": "Cel PM Enio"}, {"n": 4, "ini": "14:45", "fim": "16:15", "disc": "D14 Planejamento Estratégico", "doc": "Cel PM Eglis"}, {"n": 5, "ini": "16:30", "fim": "18:00", "disc": "D15 Gestão de Projetos", "doc": "Cel PM Massera"}], "aviso": ""}, "2026-08-26": {"blocos": [{"n": 1, "ini": "08:15", "fim": "09:45", "disc": "D31 Gestão de Incidentes Policiais", "doc": "Cel PM Paulo Aguilar"}, {"n": 2, "ini": "10:00", "fim": "11:30", "disc": "D18 Excelência da Gestão", "doc": "Maj PM André Nogueira"}, {"n": 3, "ini": "13:00", "fim": "14:30", "disc": "D14 Planejamento Estratégico", "doc": "Cel PM Terra"}, {"n": 4, "ini": "14:45", "fim": "16:15", "disc": "D28 Policiamento Comunitário", "doc": "Cel PM Barreto"}, {"n": 5, "ini": "16:30", "fim": "18:00", "disc": "D26 Inteligência", "doc": "Cap PM Maurício"}], "aviso": ""}, "2026-08-27": {"blocos": [{"n": 1, "ini": "08:15", "fim": "09:45", "disc": "D02 Geopolítica", "doc": "Cel PM Roldan"}, {"n": 2, "ini": "10:00", "fim": "11:30", "disc": "D14 Planejamento Estratégico", "doc": "Cel PM Terra"}], "aviso": ""}, "2026-08-28": {"blocos": [], "aviso": ""}, "2026-08-17": {"blocos": [{"n": 3, "ini": "13:00", "fim": "14:30", "disc": "D01 Políticas Públicas", "doc": "Cel PM Lucena"}, {"n": 4, "ini": "14:45", "fim": "16:15", "disc": "D14 Planejamento Estratégico", "doc": "Cel PM Eglis"}], "aviso": ""}, "2026-08-18": {"blocos": [{"n": 1, "ini": "08:15", "fim": "09:45", "disc": "D02 Geopolítica", "doc": "Cel PM Komata"}, {"n": 2, "ini": "10:00", "fim": "11:30", "disc": "D22 Mídia Training", "doc": "Cap PM Anderson"}, {"n": 3, "ini": "13:00", "fim": "14:30", "disc": "D21 Gestão de Crises de Imagem", "doc": "Cel PM Massera"}, {"n": 4, "ini": "14:45", "fim": "16:15", "disc": "D07 Métodos Quantitativos de Pesquisa", "doc": "Cap PM Franco"}, {"n": 5, "ini": "16:30", "fim": "18:00", "disc": "D05 Fundamentos da Metodologia Científica", "doc": "Maj PM Zampronio"}], "aviso": ""}, "2026-08-19": {"blocos": [{"n": 1, "ini": "08:15", "fim": "09:45", "disc": "D23 Educação Física e Qualidade de Vida", "doc": "Cel PM Pollete"}, {"n": 2, "ini": "10:00", "fim": "11:30", "disc": "CAES (atividade da casa, sem matéria)", "doc": "—"}, {"n": 3, "ini": "13:00", "fim": "14:30", "disc": "D28 Policiamento Comunitário", "doc": "Cel PM Barreto"}, {"n": 4, "ini": "14:45", "fim": "16:15", "disc": "D26 Inteligência", "doc": "Cap PM Maurício"}, {"n": 5, "ini": "16:30", "fim": "18:00", "disc": "D08 Análise de Dados", "doc": "Maj PM Hudson"}], "aviso": "embarque às 07h50, 25 minutos antes do horário normal, para atividade externa de Ed Física."}, "2026-08-20": {"blocos": [{"n": 1, "ini": "08:15", "fim": "09:45", "disc": "D04 Relações Sociais e Institucionais no Brasil", "doc": "Cel PM Fernandes"}, {"n": 2, "ini": "10:00", "fim": "11:30", "disc": "D15 Gestão de Projetos", "doc": "Cel PM Carlos Eduardo"}], "aviso": ""}, "2026-08-21": {"blocos": [], "aviso": ""}}};
 window.SUPA_CFG={"url": "https://lmmxaaoqygarwxbwwhlp.supabase.co", "key": "sb_publishable_8_rZ9ygJvrEoSSlgEJ0IMQ_Qi8mvMT-"};
 window.ARQ_MOD={"ab-painel": "2026-08-22T20:14:52.000Z", "ab-prazos": "2026-08-22T20:14:52.000Z", "ab-tarefas": "2026-08-22T20:14:52.000Z", "ab-estudos": "2026-08-21T13:22:22.000Z", "ab-grade": "2026-08-21T13:22:22.000Z", "ab-rotina": "2026-08-18T12:07:39.000Z", "ab-contatos": "2026-08-21T13:22:22.000Z", "ab-duvidas": "2026-08-14T22:14:34.000Z", "ab-anotacoes": "2026-08-12T19:58:48.000Z", "ab-compras": "2026-08-19T21:03:35.000Z", "ab-mala": "2026-08-20T13:53:02.000Z", "ab-viagens": "2026-08-19T16:37:50.000Z", "ab-entorno": "2026-08-19T16:37:50.000Z"};
+
+/* ===================== tarefa que se repete =====================
+   A marca de recorrencia vive no PROPRIO TEXTO da tarefa ("@semanal",
+   "@quinzenal", "@mensal"), e nao numa coluna nova. E o que faz ela
+   atravessar de graca os tres lugares por onde a tarefa passa: a linha do
+   TAREFAS.md, a coluna txt do Supabase e a Action que sincroniza os dois.
+   Nenhum deles precisa saber que a recorrencia existe.
+
+   Quem esconde a marca na tela, quem desenha a etiqueta "toda quinta" e
+   quem rola a data quando a tarefa e ticada e o painel, aqui.            */
+window.REP=(function(){
+  var re=/\s*@(semanal|quinzenal|mensal)\b/i;
+  var DIAS=['domingo','segunda','terça','quarta','quinta','sexta','sábado'];
+
+  function de(t){var m=(t||'').match(re);return m?m[1].toLowerCase():''}
+  function sem(t){return (t||'').replace(re,'').replace(/\s{2,}/g,' ').trim()}
+  function com(t,tipo){return sem(t)+' @'+(tipo||'semanal')}
+
+  /* Proxima ocorrencia DEPOIS de hoje, ancorada na data que a tarefa ja
+     tem. E a ancora que mantem o dia da semana quando uma volta e pulada:
+     somar 7 dias a partir de hoje jogaria a quinta para uma terca.      */
+  function proxima(isoData,tipo){
+    var p=String(isoData||'').split('-');
+    if(p.length!==3)return null;
+    var d=new Date(+p[0],+p[1]-1,+p[2]); d.setHours(0,0,0,0);
+    if(isNaN(d))return null;
+    var h=new Date(); h.setHours(0,0,0,0);
+    var passo=function(){
+      if(tipo==='mensal')d.setMonth(d.getMonth()+1);
+      else d.setDate(d.getDate()+(tipo==='quinzenal'?14:7));
+    };
+    var giros=0;
+    do{ passo() }while(d<=h&&giros++<500);
+    return d;
+  }
+
+  function rotulo(isoData,tipo){
+    if(tipo==='mensal')return 'todo mês';
+    var p=String(isoData||'').split('-');
+    if(p.length!==3)return tipo==='quinzenal'?'a cada 15 dias':'toda semana';
+    var d=new Date(+p[0],+p[1]-1,+p[2]);
+    if(isNaN(d))return 'toda semana';
+    var g=d.getDay(), nome=DIAS[g], art=(g===0||g===6)?'todo ':'toda ';
+    return tipo==='quinzenal'?('a cada 15 dias, '+art+nome):(art+nome);
+  }
+
+  /* "toda quinta", "todo domingo", "toda semana", "todo mes" escritos na
+     caixa de cadastro. Devolve o tipo e, quando houver, o dia da semana. */
+  function doTexto(bruto){
+    var m=String(bruto||'').match(
+      /\b(toda|todo)s?\s+(?:as\s+|os\s+)?(semanas?|quinzenas?|m[eê]s(?:es)?|segundas?|ter[cç]as?|quartas?|quintas?|sextas?|s[aá]bados?|domingos?)(?:-feiras?)?\b/i);
+    if(!m)return null;
+    var alvo=m[2].toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'');
+    var tipo=alvo.indexOf('quinzena')===0?'quinzenal':
+             (alvo.indexOf('mes')===0?'mensal':'semanal');
+    var dia=-1;
+    ['domingo','segunda','terca','quarta','quinta','sexta','sabado']
+      .forEach(function(nm,i){if(alvo.indexOf(nm)===0)dia=i});
+    return {tipo:tipo,trecho:m[0],dia:dia};
+  }
+
+  return {de:de,sem:sem,com:com,proxima:proxima,rotulo:rotulo,doTexto:doTexto};
+})();
 
 (function(){
   var abas=[].slice.call(document.querySelectorAll('nav button'));
@@ -6561,8 +6636,9 @@ window.ARQ_MOD={"ab-painel": "2026-08-22T20:14:52.000Z", "ab-prazos": "2026-08-2
       quando='<span class="qd">'+SEM[d.getDay()].slice(0,3)+' '+curto(d)+'</span>';
       if(n<0)quando='<span class="qd">venceu '+curto(d)+'</span>';
     }
+    var txt=window.REP?REP.sem(t.txt):t.txt;
     return '<li><span class="pt"'+(cor?' style="background:'+cor+'"':'')+'></span>'+
-           '<span>'+esc(t.txt)+'</span>'+quando+'</li>';
+           '<span>'+esc(txt)+'</span>'+quando+'</li>';
   }
 
   function tarefas(g){
@@ -7046,13 +7122,27 @@ window.ARQ_MOD={"ab-painel": "2026-08-22T20:14:52.000Z", "ab-prazos": "2026-08-2
     btAdd.disabled=!inp.value.trim();
   }
 
+  /* proximo dia da semana pedido, a partir de hoje (hoje conta) */
+  function proximoDia(idx){
+    var d=hoje(); d.setDate(d.getDate()+((idx-d.getDay()+7)%7));
+    return d;
+  }
+
   function adicionar(){
     var bruto=inp.value.trim();
     if(!bruto)return;
-    var r=lerData(bruto);
+    /* "toda quinta separar a roupa" vira tarefa que se repete: o trecho sai
+       do texto antes da leitura da data, senao sobraria um "toda" solto. */
+    var rp=REP.doTexto(bruto);
+    var limpo=rp?bruto.replace(rp.trecho,' ').replace(/\s{2,}/g,' ').trim():bruto;
+    var r=lerData(limpo);
     var d=inData.value?deIso(inData.value):r.data;
-    var texto=r.data?r.texto:bruto;
-    if(!texto)texto=bruto;
+    var texto=r.data?r.texto:limpo;
+    if(!texto)texto=limpo||bruto;
+    if(rp){
+      if(!d)d=rp.dia>=0?proximoDia(rp.dia):hoje();
+      texto=REP.com(texto,rp.tipo);
+    }
     var nova={id:uid(),txt:texto,data:d?iso(d):null,cat:catSel,feito:false,
               orig:'local',mod:new Date().toISOString(),sinc:false};
     tarefas.unshift(nova);
@@ -7066,9 +7156,38 @@ window.ARQ_MOD={"ab-painel": "2026-08-22T20:14:52.000Z", "ab-prazos": "2026-08-2
   function alternar(id){
     var t=tarefas.filter(function(x){return x.id===id})[0];
     if(!t)return;
+    /* Tarefa que se repete nao vai para Concluidas: ela rola para a proxima
+       vez. Ir para Concluidas somaria uma linha por semana no TAREFAS.md e
+       tiraria da lista justamente o lembrete que ela existe para dar.     */
+    var rep=REP.de(t.txt);
+    if(rep&&!t.feito){
+      var prox=REP.proxima(t.data||iso(hoje()),rep);
+      if(prox){
+        t.data=iso(prox);t.mod=new Date().toISOString();t.sinc=false;
+        salvar();
+        if(window.SUPA&&SUPA.ativo())SUPA.enviar(t);
+        avisar('Feita desta vez. Volta ' + quandoVolta(prox) + '.');
+        return;
+      }
+    }
     t.feito=!t.feito;t.mod=new Date().toISOString();t.sinc=false;
     salvar();
     if(window.SUPA&&SUPA.ativo())SUPA.enviar(t);
+  }
+
+  /* Liga e desliga a repeticao pela etiqueta, sem passar pela edicao de
+     texto. Desligar nao mexe na data: a tarefa vira uma tarefa comum na
+     data em que ja estava.                                              */
+  function alternarRep(id){
+    var t=tarefas.filter(function(x){return x.id===id})[0];
+    if(!t)return;
+    var rep=REP.de(t.txt);
+    t.txt=rep?REP.sem(t.txt):REP.com(t.txt,'semanal');
+    t.mod=new Date().toISOString();t.sinc=false;
+    salvar();
+    if(window.SUPA&&SUPA.ativo())SUPA.enviar(t);
+    avisar(rep?'Não repete mais. Virou uma tarefa comum.':
+               'Passa a repetir '+REP.rotulo(t.data,'semanal')+'.');
   }
 
   function excluir(id){
@@ -7092,10 +7211,15 @@ window.ARQ_MOD={"ab-painel": "2026-08-22T20:14:52.000Z", "ab-prazos": "2026-08-2
     var antigo=corpo.innerHTML;
     corpo.innerHTML='<input class="tf-edit" type="text">';
     var campo=el('.tf-edit',corpo);
-    campo.value=t.txt;campo.focus();campo.select();
+    campo.value=REP.sem(t.txt);campo.focus();campo.select();
     var fim=function(ok){
       if(ok&&campo.value.trim()){
-        t.txt=campo.value.trim();t.mod=new Date().toISOString();t.sinc=false;
+        /* a marca de recorrencia nao aparece no campo, entao ela e devolvida
+           depois da edicao: sem isso, corrigir uma virgula desligaria a
+           repeticao sem ninguem pedir.                                    */
+        var novo=campo.value.trim(), rep=REP.de(t.txt);
+        if(rep&&!REP.de(novo))novo=REP.com(novo,rep);
+        t.txt=novo;t.mod=new Date().toISOString();t.sinc=false;
         salvar();
         if(window.SUPA&&SUPA.ativo())SUPA.enviar(t);
       }else{corpo.innerHTML=antigo;}
@@ -7118,7 +7242,7 @@ window.ARQ_MOD={"ab-painel": "2026-08-22T20:14:52.000Z", "ab-prazos": "2026-08-2
     if(!no||!t)return;
     var corpo=el('.tf-corpo',no);
     var antigo=corpo.innerHTML;
-    corpo.innerHTML='<div class="tf-txt">'+esc(t.txt)+'</div>'+
+    corpo.innerHTML='<div class="tf-txt">'+esc(REP.sem(t.txt))+'</div>'+
       '<div class="tf-dtbox">'+
         '<input type="date" class="tf-dtin" value="'+(t.data||'')+'">'+
         '<button class="chip" data-q="0">Hoje</button>'+
@@ -7232,6 +7356,12 @@ window.ARQ_MOD={"ab-painel": "2026-08-22T20:14:52.000Z", "ab-prazos": "2026-08-2
       meta+='<button class="tf-tag dt mud'+dc+'" data-ac="dt" '+
             'title="Mudar a data desta tarefa">'+ICO.cal+rotuloData(d)+'</button>';
     }
+    var rep=REP.de(t.txt);
+    if(rep){
+      meta+='<button class="tf-tag rep" data-ac="rep" '+
+            'title="Se repete. Clique para deixar de repetir">'+
+            (ICO.repete||'')+REP.rotulo(t.data,rep)+'</button>';
+    }
     if(t.cat&&CATS[t.cat]){
       meta+='<span class="tf-tag cat" style="background:'+CATS[t.cat].cor+'">'+
             CATS[t.cat].rot+'</span>';
@@ -7240,8 +7370,9 @@ window.ARQ_MOD={"ab-painel": "2026-08-22T20:14:52.000Z", "ab-prazos": "2026-08-2
       meta+='<span class="tf-tag dt" title="Ainda não sincronizada">•</span>';
     }
     return '<div class="'+cls+'" data-id="'+t.id+'">'+
-      '<button class="tf-check" data-ac="ok" title="Marcar como feita">'+ICO.check+'</button>'+
-      '<div class="tf-corpo"><div class="tf-txt">'+esc(t.txt)+'</div>'+
+      '<button class="tf-check" data-ac="ok" title="'+
+        (rep?'Marcar como feita desta vez':'Marcar como feita')+'">'+ICO.check+'</button>'+
+      '<div class="tf-corpo"><div class="tf-txt">'+esc(REP.sem(t.txt))+'</div>'+
       (meta?'<div class="tf-meta">'+meta+'</div>':'')+'</div>'+
       '<div class="tf-acoes">'+
         '<button class="tf-ac" data-ac="dt" title="'+
@@ -7249,6 +7380,37 @@ window.ARQ_MOD={"ab-painel": "2026-08-22T20:14:52.000Z", "ab-prazos": "2026-08-2
         '<button class="tf-ac" data-ac="ed" title="Editar o texto">'+ICO.lapis+'</button>'+
         '<button class="tf-ac del" data-ac="del" title="Excluir">'+ICO.lixo+'</button>'+
       '</div></div>';
+  }
+
+  function curtaData(d){
+    return String(d.getDate()).padStart(2,'0')+'/'+String(d.getMonth()+1).padStart(2,'0');
+  }
+
+  /* "na quinta, 03/09". O dia da semana entra por extenso porque e por ele
+     que o rodizio da mala e lembrado, nao pelo numero.                   */
+  function quandoVolta(d){
+    var g=d.getDay();
+    var nome=SEMANA[g].replace('terca','terça').replace('sabado','sábado');
+    return (g===0||g===6?'no ':'na ')+nome+', '+curtaData(d);
+  }
+
+  /* Recado curto acima da lista. Existe por causa da tarefa que se repete:
+     ticada, ela some da lista e volta com outra data, e sem uma palavra na
+     tela isso parece que o tique nao pegou.                              */
+  var avisoTempo=null;
+  function avisar(msg){
+    var cx=el('#tf-aviso');
+    if(!cx&&lista&&lista.parentNode){
+      cx=document.createElement('div');
+      cx.id='tf-aviso';cx.className='tf-aviso';
+      lista.parentNode.insertBefore(cx,lista);
+    }
+    if(!cx)return;
+    cx.innerHTML=(ICO.repete||'')+'<span></span>';
+    cx.querySelector('span').textContent=msg;
+    cx.classList.add('on');
+    clearTimeout(avisoTempo);
+    avisoTempo=setTimeout(function(){cx.classList.remove('on')},6000);
   }
 
   function esc(s){
@@ -7442,6 +7604,7 @@ window.ARQ_MOD={"ab-painel": "2026-08-22T20:14:52.000Z", "ab-prazos": "2026-08-2
     else if(b.dataset.ac==='del')excluir(id);
     else if(b.dataset.ac==='ed')editar(id);
     else if(b.dataset.ac==='dt')editarData(id);
+    else if(b.dataset.ac==='rep')alternarRep(id);
   };
 
   carregar();

@@ -6,6 +6,11 @@
 >
 > **A data não é enfeite.** É ela que faz a tarefa aparecer no guia de abertura do painel
 > ("hoje você precisa..."). Tarefa sem data fica fora do guia e só aparece na aba Tarefas.
+>
+> **Tarefa que se repete** leva `@semanal` (ou `@quinzenal`, `@mensal`) no texto, e a data diz
+> qual é o dia: `@semanal` numa quinta significa toda quinta. Ticada no painel, ela não vai para
+> Concluídas, some da lista e volta com a data da próxima vez. No painel dá para escrever direto
+> "toda quinta separar a roupa", que ele entende sozinho.
 
 ## Pendentes
 
@@ -17,8 +22,9 @@
 - [ ] Procurar o Cap Gobbo (Seção de Pesquisa) sobre a transformação do PP em dissertação [21/08/2026] #dissertacao
 
 ### Rodízio da mala (toda semana, ver MALA.md)
-- [ ] Quinta de manhã, separar para levar para casa: toalha de banho, fronha e roupa suja [20/08/2026] #pessoal
-- [ ] Domingo, arrumar para a volta: 2 toalhas, fronha limpa, roupa lavada (cuecas, meias, camisetas), whey e creatina [23/08/2026] #pessoal
+> As duas se repetem sozinhas: ticadas, não vão para Concluídas, voltam com a data da semana seguinte.
+- [ ] Domingo, arrumar para a volta: 2 toalhas, fronha limpa, roupa lavada (cuecas, meias, camisetas), whey e creatina @semanal [23/08/2026] #pessoal
+- [ ] Quinta de manhã, separar para levar para casa: toalha de banho, fronha e roupa suja @semanal [27/08/2026] #pessoal
 
 ### Orientador da dissertação — MISSÃO URGENTE
 - [ ] Falar com o Cap Simões e pegar o contato do Cel Eglis [19/08/2026] #dissertacao

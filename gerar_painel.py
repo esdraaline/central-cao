@@ -77,6 +77,7 @@ ICONES = {
     "vazio":    '<circle cx="12" cy="12" r="9"/><path d="M8.5 13.5s1.2 1.5 3.5 1.5 3.5-1.5 3.5-1.5"/><path d="M9 9.5h.01M15 9.5h.01"/>',
     "fechar":   '<path d="M6 6l12 12M18 6 6 18"/>',
     "copiar":   '<rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/>',
+    "repete":   '<path d="m17 2 3.5 3.5L17 9"/><path d="M3.5 12v-1.5a4 4 0 0 1 4-4h13"/><path d="M7 22l-3.5-3.5L7 15"/><path d="M20.5 12v1.5a4 4 0 0 1-4 4h-13"/>',
 }
 
 # Categorias das tarefas: (chave, rotulo, cor)
@@ -723,6 +724,12 @@ main{max-width:1080px;margin:0 auto;padding:24px 20px 64px}
 .guia-bloco.vencido .guia-cab .n{background:var(--vm);color:#fff}
 .guia-bloco.agora .guia-cab{color:var(--al)}
 .guia-bloco.agora .guia-cab .n{background:var(--al);color:#fff}
+.tf-tag.rep{background:var(--bd);color:var(--tx2);cursor:pointer}
+.tf-tag.rep svg{opacity:.9}
+.tf-aviso{display:none;align-items:center;gap:8px;margin:0 0 12px;padding:10px 14px;
+  border:1px solid var(--bd);border-left:3px solid var(--vd);border-radius:10px;
+  background:var(--card);color:var(--tx2);font-size:13.5px}
+.tf-aviso.on{display:flex}
 .guia-lista{list-style:none;margin:0}
 .guia-lista li{display:flex;gap:10px;align-items:flex-start;padding:9px 12px;margin:6px 0;
   border:1px solid var(--bd);border-left-width:3px;border-radius:9px;background:var(--card2);
@@ -1353,13 +1360,27 @@ JS_TAREFAS = r"""
     btAdd.disabled=!inp.value.trim();
   }
 
+  /* proximo dia da semana pedido, a partir de hoje (hoje conta) */
+  function proximoDia(idx){
+    var d=hoje(); d.setDate(d.getDate()+((idx-d.getDay()+7)%7));
+    return d;
+  }
+
   function adicionar(){
     var bruto=inp.value.trim();
     if(!bruto)return;
-    var r=lerData(bruto);
+    /* "toda quinta separar a roupa" vira tarefa que se repete: o trecho sai
+       do texto antes da leitura da data, senao sobraria um "toda" solto. */
+    var rp=REP.doTexto(bruto);
+    var limpo=rp?bruto.replace(rp.trecho,' ').replace(/\s{2,}/g,' ').trim():bruto;
+    var r=lerData(limpo);
     var d=inData.value?deIso(inData.value):r.data;
-    var texto=r.data?r.texto:bruto;
-    if(!texto)texto=bruto;
+    var texto=r.data?r.texto:limpo;
+    if(!texto)texto=limpo||bruto;
+    if(rp){
+      if(!d)d=rp.dia>=0?proximoDia(rp.dia):hoje();
+      texto=REP.com(texto,rp.tipo);
+    }
     var nova={id:uid(),txt:texto,data:d?iso(d):null,cat:catSel,feito:false,
               orig:'local',mod:new Date().toISOString(),sinc:false};
     tarefas.unshift(nova);
@@ -1373,9 +1394,38 @@ JS_TAREFAS = r"""
   function alternar(id){
     var t=tarefas.filter(function(x){return x.id===id})[0];
     if(!t)return;
+    /* Tarefa que se repete nao vai para Concluidas: ela rola para a proxima
+       vez. Ir para Concluidas somaria uma linha por semana no TAREFAS.md e
+       tiraria da lista justamente o lembrete que ela existe para dar.     */
+    var rep=REP.de(t.txt);
+    if(rep&&!t.feito){
+      var prox=REP.proxima(t.data||iso(hoje()),rep);
+      if(prox){
+        t.data=iso(prox);t.mod=new Date().toISOString();t.sinc=false;
+        salvar();
+        if(window.SUPA&&SUPA.ativo())SUPA.enviar(t);
+        avisar('Feita desta vez. Volta ' + quandoVolta(prox) + '.');
+        return;
+      }
+    }
     t.feito=!t.feito;t.mod=new Date().toISOString();t.sinc=false;
     salvar();
     if(window.SUPA&&SUPA.ativo())SUPA.enviar(t);
+  }
+
+  /* Liga e desliga a repeticao pela etiqueta, sem passar pela edicao de
+     texto. Desligar nao mexe na data: a tarefa vira uma tarefa comum na
+     data em que ja estava.                                              */
+  function alternarRep(id){
+    var t=tarefas.filter(function(x){return x.id===id})[0];
+    if(!t)return;
+    var rep=REP.de(t.txt);
+    t.txt=rep?REP.sem(t.txt):REP.com(t.txt,'semanal');
+    t.mod=new Date().toISOString();t.sinc=false;
+    salvar();
+    if(window.SUPA&&SUPA.ativo())SUPA.enviar(t);
+    avisar(rep?'Não repete mais. Virou uma tarefa comum.':
+               'Passa a repetir '+REP.rotulo(t.data,'semanal')+'.');
   }
 
   function excluir(id){
@@ -1399,10 +1449,15 @@ JS_TAREFAS = r"""
     var antigo=corpo.innerHTML;
     corpo.innerHTML='<input class="tf-edit" type="text">';
     var campo=el('.tf-edit',corpo);
-    campo.value=t.txt;campo.focus();campo.select();
+    campo.value=REP.sem(t.txt);campo.focus();campo.select();
     var fim=function(ok){
       if(ok&&campo.value.trim()){
-        t.txt=campo.value.trim();t.mod=new Date().toISOString();t.sinc=false;
+        /* a marca de recorrencia nao aparece no campo, entao ela e devolvida
+           depois da edicao: sem isso, corrigir uma virgula desligaria a
+           repeticao sem ninguem pedir.                                    */
+        var novo=campo.value.trim(), rep=REP.de(t.txt);
+        if(rep&&!REP.de(novo))novo=REP.com(novo,rep);
+        t.txt=novo;t.mod=new Date().toISOString();t.sinc=false;
         salvar();
         if(window.SUPA&&SUPA.ativo())SUPA.enviar(t);
       }else{corpo.innerHTML=antigo;}
@@ -1425,7 +1480,7 @@ JS_TAREFAS = r"""
     if(!no||!t)return;
     var corpo=el('.tf-corpo',no);
     var antigo=corpo.innerHTML;
-    corpo.innerHTML='<div class="tf-txt">'+esc(t.txt)+'</div>'+
+    corpo.innerHTML='<div class="tf-txt">'+esc(REP.sem(t.txt))+'</div>'+
       '<div class="tf-dtbox">'+
         '<input type="date" class="tf-dtin" value="'+(t.data||'')+'">'+
         '<button class="chip" data-q="0">Hoje</button>'+
@@ -1539,6 +1594,12 @@ JS_TAREFAS = r"""
       meta+='<button class="tf-tag dt mud'+dc+'" data-ac="dt" '+
             'title="Mudar a data desta tarefa">'+ICO.cal+rotuloData(d)+'</button>';
     }
+    var rep=REP.de(t.txt);
+    if(rep){
+      meta+='<button class="tf-tag rep" data-ac="rep" '+
+            'title="Se repete. Clique para deixar de repetir">'+
+            (ICO.repete||'')+REP.rotulo(t.data,rep)+'</button>';
+    }
     if(t.cat&&CATS[t.cat]){
       meta+='<span class="tf-tag cat" style="background:'+CATS[t.cat].cor+'">'+
             CATS[t.cat].rot+'</span>';
@@ -1547,8 +1608,9 @@ JS_TAREFAS = r"""
       meta+='<span class="tf-tag dt" title="Ainda não sincronizada">•</span>';
     }
     return '<div class="'+cls+'" data-id="'+t.id+'">'+
-      '<button class="tf-check" data-ac="ok" title="Marcar como feita">'+ICO.check+'</button>'+
-      '<div class="tf-corpo"><div class="tf-txt">'+esc(t.txt)+'</div>'+
+      '<button class="tf-check" data-ac="ok" title="'+
+        (rep?'Marcar como feita desta vez':'Marcar como feita')+'">'+ICO.check+'</button>'+
+      '<div class="tf-corpo"><div class="tf-txt">'+esc(REP.sem(t.txt))+'</div>'+
       (meta?'<div class="tf-meta">'+meta+'</div>':'')+'</div>'+
       '<div class="tf-acoes">'+
         '<button class="tf-ac" data-ac="dt" title="'+
@@ -1556,6 +1618,37 @@ JS_TAREFAS = r"""
         '<button class="tf-ac" data-ac="ed" title="Editar o texto">'+ICO.lapis+'</button>'+
         '<button class="tf-ac del" data-ac="del" title="Excluir">'+ICO.lixo+'</button>'+
       '</div></div>';
+  }
+
+  function curtaData(d){
+    return String(d.getDate()).padStart(2,'0')+'/'+String(d.getMonth()+1).padStart(2,'0');
+  }
+
+  /* "na quinta, 03/09". O dia da semana entra por extenso porque e por ele
+     que o rodizio da mala e lembrado, nao pelo numero.                   */
+  function quandoVolta(d){
+    var g=d.getDay();
+    var nome=SEMANA[g].replace('terca','terça').replace('sabado','sábado');
+    return (g===0||g===6?'no ':'na ')+nome+', '+curtaData(d);
+  }
+
+  /* Recado curto acima da lista. Existe por causa da tarefa que se repete:
+     ticada, ela some da lista e volta com outra data, e sem uma palavra na
+     tela isso parece que o tique nao pegou.                              */
+  var avisoTempo=null;
+  function avisar(msg){
+    var cx=el('#tf-aviso');
+    if(!cx&&lista&&lista.parentNode){
+      cx=document.createElement('div');
+      cx.id='tf-aviso';cx.className='tf-aviso';
+      lista.parentNode.insertBefore(cx,lista);
+    }
+    if(!cx)return;
+    cx.innerHTML=(ICO.repete||'')+'<span></span>';
+    cx.querySelector('span').textContent=msg;
+    cx.classList.add('on');
+    clearTimeout(avisoTempo);
+    avisoTempo=setTimeout(function(){cx.classList.remove('on')},6000);
   }
 
   function esc(s){
@@ -1749,6 +1842,7 @@ JS_TAREFAS = r"""
     else if(b.dataset.ac==='del')excluir(id);
     else if(b.dataset.ac==='ed')editar(id);
     else if(b.dataset.ac==='dt')editarData(id);
+    else if(b.dataset.ac==='rep')alternarRep(id);
   };
 
   carregar();
@@ -2105,6 +2199,69 @@ JS_SUPABASE = r"""
 """
 
 JS = r"""
+/* ===================== tarefa que se repete =====================
+   A marca de recorrencia vive no PROPRIO TEXTO da tarefa ("@semanal",
+   "@quinzenal", "@mensal"), e nao numa coluna nova. E o que faz ela
+   atravessar de graca os tres lugares por onde a tarefa passa: a linha do
+   TAREFAS.md, a coluna txt do Supabase e a Action que sincroniza os dois.
+   Nenhum deles precisa saber que a recorrencia existe.
+
+   Quem esconde a marca na tela, quem desenha a etiqueta "toda quinta" e
+   quem rola a data quando a tarefa e ticada e o painel, aqui.            */
+window.REP=(function(){
+  var re=/\s*@(semanal|quinzenal|mensal)\b/i;
+  var DIAS=['domingo','segunda','terça','quarta','quinta','sexta','sábado'];
+
+  function de(t){var m=(t||'').match(re);return m?m[1].toLowerCase():''}
+  function sem(t){return (t||'').replace(re,'').replace(/\s{2,}/g,' ').trim()}
+  function com(t,tipo){return sem(t)+' @'+(tipo||'semanal')}
+
+  /* Proxima ocorrencia DEPOIS de hoje, ancorada na data que a tarefa ja
+     tem. E a ancora que mantem o dia da semana quando uma volta e pulada:
+     somar 7 dias a partir de hoje jogaria a quinta para uma terca.      */
+  function proxima(isoData,tipo){
+    var p=String(isoData||'').split('-');
+    if(p.length!==3)return null;
+    var d=new Date(+p[0],+p[1]-1,+p[2]); d.setHours(0,0,0,0);
+    if(isNaN(d))return null;
+    var h=new Date(); h.setHours(0,0,0,0);
+    var passo=function(){
+      if(tipo==='mensal')d.setMonth(d.getMonth()+1);
+      else d.setDate(d.getDate()+(tipo==='quinzenal'?14:7));
+    };
+    var giros=0;
+    do{ passo() }while(d<=h&&giros++<500);
+    return d;
+  }
+
+  function rotulo(isoData,tipo){
+    if(tipo==='mensal')return 'todo mês';
+    var p=String(isoData||'').split('-');
+    if(p.length!==3)return tipo==='quinzenal'?'a cada 15 dias':'toda semana';
+    var d=new Date(+p[0],+p[1]-1,+p[2]);
+    if(isNaN(d))return 'toda semana';
+    var g=d.getDay(), nome=DIAS[g], art=(g===0||g===6)?'todo ':'toda ';
+    return tipo==='quinzenal'?('a cada 15 dias, '+art+nome):(art+nome);
+  }
+
+  /* "toda quinta", "todo domingo", "toda semana", "todo mes" escritos na
+     caixa de cadastro. Devolve o tipo e, quando houver, o dia da semana. */
+  function doTexto(bruto){
+    var m=String(bruto||'').match(
+      /\b(toda|todo)s?\s+(?:as\s+|os\s+)?(semanas?|quinzenas?|m[eê]s(?:es)?|segundas?|ter[cç]as?|quartas?|quintas?|sextas?|s[aá]bados?|domingos?)(?:-feiras?)?\b/i);
+    if(!m)return null;
+    var alvo=m[2].toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'');
+    var tipo=alvo.indexOf('quinzena')===0?'quinzenal':
+             (alvo.indexOf('mes')===0?'mensal':'semanal');
+    var dia=-1;
+    ['domingo','segunda','terca','quarta','quinta','sexta','sabado']
+      .forEach(function(nm,i){if(alvo.indexOf(nm)===0)dia=i});
+    return {tipo:tipo,trecho:m[0],dia:dia};
+  }
+
+  return {de:de,sem:sem,com:com,proxima:proxima,rotulo:rotulo,doTexto:doTexto};
+})();
+
 (function(){
   var abas=[].slice.call(document.querySelectorAll('nav button'));
   var pans=[].slice.call(document.querySelectorAll('.aba'));
@@ -2631,8 +2788,9 @@ JS_GUIA = r"""
       quando='<span class="qd">'+SEM[d.getDay()].slice(0,3)+' '+curto(d)+'</span>';
       if(n<0)quando='<span class="qd">venceu '+curto(d)+'</span>';
     }
+    var txt=window.REP?REP.sem(t.txt):t.txt;
     return '<li><span class="pt"'+(cor?' style="background:'+cor+'"':'')+'></span>'+
-           '<span>'+esc(t.txt)+'</span>'+quando+'</li>';
+           '<span>'+esc(txt)+'</span>'+quando+'</li>';
   }
 
   function tarefas(g){
@@ -2932,7 +3090,7 @@ def app_tarefas():
 
 <div class="tf-nova">
   <div class="tf-linha">
-    <input type="text" id="tf-txt" placeholder="O que precisa ser feito? Ex.: entregar artigo sexta"
+    <input type="text" id="tf-txt" placeholder="O que precisa ser feito? Ex.: entregar artigo sexta, ou toda quinta separar a roupa"
            autocomplete="off" spellcheck="false">
     <button class="tf-add" id="tf-add" title="Adicionar (Enter)" disabled>%(mais)s</button>
   </div>
@@ -3214,6 +3372,7 @@ window.ARQ_MOD=%(arqmod)s;
             "calbt": svg("calendar", 15),
             "vazio": svg("vazio", 46),
             "copiar": svg("copiar", 15),
+            "repete": svg("repete", 12),
         }),
     }
 

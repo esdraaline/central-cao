@@ -3,6 +3,32 @@
 > Painel principal. Ler isso primeiro em qualquer sessão nova ("onde paramos?").
 > Atualizado em: 22/08/2026
 
+## 22/08/2026: as tarefas do rodízio da mala passaram a se repetir sozinhas
+
+Pergunta do Josemar, olhando a tarefa da quinta vencida de novo: *"tem como cadastrar como
+recorrência, toda quinta de manhã? e aquilo que coloco na mala todo domingo também"*. As duas
+são rodízio semanal, e vinham envelhecendo como se fossem tarefa de uma vez só: venciam,
+ficavam vermelhas no guia de abertura e alguém tinha que remarcar na mão toda semana.
+
+**A marca de recorrência vive no texto da tarefa**, não numa coluna nova: `@semanal`,
+`@quinzenal` ou `@mensal`. A escolha é o ponto do desenho. A tarefa passa por três lugares (a
+linha do `TAREFAS.md`, a coluna `txt` do Supabase e a Action que sincroniza os dois), e estando
+dentro do texto ela atravessa os três sem migração no banco e sem uma linha nova no
+`sincroniza_tarefas.py`. Quem esconde a marca na tela e desenha a etiqueta "toda quinta" é o
+painel.
+
+**Ticada, ela não vai para Concluídas**: rola para a próxima vez e avisa *"Feita desta vez.
+Volta na quinta, 03/09."* Ir para Concluídas somaria uma linha por semana no arquivo e tiraria
+da lista justamente o lembrete que a tarefa existe para dar. A data nova é contada a partir da
+data anterior, e não de hoje, senão a primeira vez que ele ticasse fora do dia jogaria a quinta
+para uma terça.
+
+**Conferido no navegador**, nos dois temas e nos dois tamanhos: ticar rola a data e mantém as
+Concluídas em 28; a etiqueta liga e desliga a repetição; *"toda quinta"*, *"todo domingo"*,
+*"toda semana"* e *"todo mês"* escritos na caixa viram tarefa com data e marca certas; o guia
+de abertura e o Exportar não vazam o `@semanal` na tela; e o `TAREFAS.md` continua remontando
+byte a byte pelo robô da sincronização. Detalhe em [PAINEL.md](PAINEL.md).
+
 ## 22/08/2026: o STATUS e o PRAZOS pararam no domingo da viagem
 
 Tarefa escrita em 17/08 e vencida em 20/08: *"Atualizar STATUS.md e PRAZOS.md com a situação real

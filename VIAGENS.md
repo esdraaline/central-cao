@@ -26,17 +26,17 @@ carona a cada semana, não é fixo.]*
 
 ## Antes de sair, no domingo
 
-- [ ] **Mala arrumada** pelo rodízio de [MALA.md](MALA.md): roupa lavada, toalhas, fronha e a
+- [x] **Mala arrumada** pelo rodízio de [MALA.md](MALA.md): roupa lavada, toalhas, fronha e a
       carga da copa (whey, creatina, energético, lanches, marmitas). **O B-1 e o EPI ficam em
       casa**, decisão de 20/08.
-- [ ] **Combinar com o amigo da carona** o horário de saída e o espaço de bagagem. O
+- [x] **Combinar com o amigo da carona** o horário de saída e o espaço de bagagem. O
       porta-malas é dividido, então volume é moeda: leve compacto.
-- [ ] **Janta de domingo na mala.** A chegada é perto das 22h, não tem rancho e contar com o
+- [x] **Janta de domingo na mala.** A chegada é perto das 22h, não tem rancho e contar com o
       entorno aberto nesse horário é aposta. Os dois **Oxxo abrem 24 horas**, a uns 10 minutos
       a pé, como rede de segurança ([ENTORNO.md](ENTORNO.md)).
-- [ ] **Documentos em mãos, não na mala**: identidade funcional e o número do processo SEI do
+- [x] **Documentos em mãos, não na mala**: identidade funcional e o número do processo SEI do
       Ofício de Apresentação.
-- [ ] **Dinheiro ou cartão** para a divisão do combustível da carona e para as refeições da
+- [x] **Dinheiro ou cartão** para a divisão do combustível da carona e para as refeições da
       semana.
 
 Na semana em que eu for dirigindo, o **cartão de estacionamento do CAO se pede à AAp antes de

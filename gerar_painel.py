@@ -2072,8 +2072,8 @@ JS_SUPABASE = r"""
   function pintaConta(){
     /* o mesmo estado vai para a aba Tarefas e para a barra das abas de lista */
     if(ativo()){
-      estado('on','Sincronizado','Suas tarefas estão salvas na nuvem');
-      tic('on','Salvo na nuvem','Suas marcações estão sincronizadas');
+      estado('on','Salvo na nuvem','Tudo o que você marcou está salvo na nuvem');
+      tic('on','Salvo na nuvem','Tudo o que você marcou está salvo na nuvem');
     }else if(configurado()){
       estado('','Somente neste aparelho','Clique aqui para entrar e sincronizar');
       tic('','Somente neste aparelho',
@@ -2178,7 +2178,7 @@ JS_SUPABASE = r"""
       window.TAREFAS.salvar();
       window.TAREFAS.redesenhar();
     }).catch(function(e){
-      estado('off','Sem conexão','Vai sincronizar sozinho quando a rede voltar');
+      estado('off','Sem conexão','Sobe sozinho quando a rede voltar');
     });
   }
 
@@ -2229,12 +2229,12 @@ JS_SUPABASE = r"""
         window.TICADOS.salvar();
       });
     }).then(function(){
-      tic('on','Salvo na nuvem','Suas marcações estão sincronizadas');
+      tic('on','Salvo na nuvem','Tudo o que você marcou está salvo na nuvem');
     }).catch(function(e){
       if(e&&(e.status===401||e.status===403))
         tic('erro','Sessão expirada','Clique aqui para entrar de novo');
       else
-        tic('off','Sem conexão','As marcações sobem sozinhas quando a rede voltar');
+        tic('off','Sem conexão','Sobe sozinho quando a rede voltar');
       throw e;
     });
   }
@@ -2250,10 +2250,13 @@ JS_SUPABASE = r"""
     tmTic=setTimeout(function(){sincTicados().catch(function(){})},1200);
   };
 
+  var ultimaSinc=0;
+
   function sincronizar(){
     if(!ativo()||sincronizando)return Promise.resolve();
     sincronizando=true;
-    estado('','Sincronizando...');
+    ultimaSinc=Date.now();
+    estado('','Salvando...');
     return garantirSessao().then(function(){
       /* 1. apaga o que ficou pendente de exclusao */
       var mortas=lerLS(K_DEL,[]);
@@ -2305,9 +2308,9 @@ JS_SUPABASE = r"""
       sincronizando=false;
       if(e&&(e.status===401||e.status===403)){
         sair();
-        estado('erro','Sessão expirada','Entre na conta de novo');
+        estado('erro','Sessão expirada','Clique aqui para entrar de novo');
       }else{
-        estado('off','Sem conexão','As alterações ficam guardadas aqui até a rede voltar');
+        estado('off','Sem conexão','Fica guardado aqui até a rede voltar');
       }
     });
   }
@@ -2368,8 +2371,29 @@ JS_SUPABASE = r"""
   if(btSair)btSair.onclick=function(){sair();window.TAREFAS.modal.fechar('#modal-conta')};
 
   window.addEventListener('online',function(){if(ativo())sincronizar()});
+
+  /* -------------------- voltar para a aba busca a nuvem -------------------
+     O painel buscava a nuvem so quando a PAGINA abria. Aba deixada aberta no
+     celular desde ontem mostrava o estado velho ate alguem recarregar na mao,
+     e como ninguem recarrega uma aba que ja esta na tela, o aparelho ficava
+     mentindo o dia inteiro. Agora, ao voltar para a aba, ele busca de novo.
+
+     Duas travas, as duas por motivo concreto:
+
+       - 30 segundos entre uma busca e outra, senao cada alt-tab viraria uma
+         requisicao;
+       - nada acontece com uma edicao aberta na tela. Sincronizar redesenha a
+         lista inteira, e redesenhar por baixo de um campo de texto aberto
+         apagaria o que estava sendo digitado. Quem sai para copiar um dado e
+         volta para colar nao pode perder a frase no caminho.               */
+  document.addEventListener('visibilitychange',function(){
+    if(document.visibilityState!=='visible'||!ativo())return;
+    if(Date.now()-ultimaSinc<30000)return;
+    if(document.querySelector('.tf-edit,.tf-dtin'))return;
+    sincronizar();
+  });
   window.addEventListener('offline',function(){
-    if(ativo())estado('off','Sem conexão','As alterações ficam guardadas aqui');
+    if(ativo())estado('off','Sem conexão','Fica guardado aqui até a rede voltar');
   });
 
   window.SUPA={ativo:ativo,enviar:enviar,apagar:apagar,sincronizar:sincronizar};
@@ -2744,10 +2768,27 @@ window.REP=(function(){
   }
   /* estado da sincronizacao mostrado na barra de cada aba de lista.
      Quem chama e o bloco do Supabase; sem ele fica no texto inicial.       */
+  /* A linha de estado da aba TAREFAS entra aqui junto com as das listas.
+     Parece detalhe e nao e: desde 23/08/2026 uma tarefa pode ter lista de
+     conferencia por dentro, e o tique de cada item e guardado como caixinha
+     (cao_ticados), mas o clique acontece na aba Tarefas - que so ouvia o
+     estado das TAREFAS. Ticar os 15 itens da mala e desligar o PC nao dava
+     nenhuma confirmacao na tela de que aquilo tinha subido. Agora da.
+
+     Como os dois canais escrevem na mesma linha, eles falam a mesma lingua:
+     "Salvando...", "Salvo na nuvem", "Sem conexao". Ter dois nomes para o
+     mesmo estado ("Sincronizado" de um lado, "Salvo na nuvem" do outro) so
+     faria a linha trocar de palavra sozinha na frente de quem le.          */
   function mkEstadoSinc(cls,txt,tit){
-    [].forEach.call(document.querySelectorAll('.mk-sinc'),function(s){
-      s.className='tf-status mk-sinc'+(cls?' '+cls:'');
-      s.querySelector('.txt').textContent=txt;
+    var alvos=[].slice.call(document.querySelectorAll('.mk-sinc'));
+    var tf=document.getElementById('tf-status');
+    if(tf)alvos.push(tf);
+    alvos.forEach(function(s){
+      /* cada linha guarda a propria classe base: a da aba Tarefas nao e
+         .mk-sinc, e marca-la mudaria a fonte pelo CSS das listas */
+      s.className=(s.id==='tf-status'?'tf-status':'tf-status mk-sinc')+(cls?' '+cls:'');
+      var t=s.querySelector('.txt')||s.querySelector('#tf-status-txt');
+      if(t)t.textContent=txt;
       s.title=tit||'';
     });
   }

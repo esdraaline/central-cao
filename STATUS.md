@@ -3,6 +3,36 @@
 > Painel principal. Ler isso primeiro em qualquer sessão nova ("onde paramos?").
 > Atualizado em: 23/08/2026
 
+## 23/08/2026: duas frestas fechadas na sincronização
+
+Pergunta do Josemar, depois que a tarja saiu: *"se eu clicar numa tarefa e desligar o PC, ela vai
+estar sincronizada quando eu religar em outro aparelho?"*. Fui ler o caminho do clique em vez de
+responder de memória, e a resposta é sim — mas apareceram duas frestas, as duas fechadas agora.
+
+**Os números, medidos com um Supabase de mentira levantado só para isso:** a tarefa sobe **10 ms**
+depois do clique, sem fila. Os itens da lista de conferência esperam **1,23 s**, que é a pausa
+herdada das caixinhas: são 15 cliques em sequência, e ele aguarda o dedo parar para mandar tudo
+de uma vez em vez de disparar 15 requisições.
+
+**Fresta 1: o tique dos itens não tinha confirmação na tela.** A linha de estado da aba Tarefas
+só ouvia o canal das tarefas; o tique de um item é guardado como caixinha, no outro canal. Ticar
+os 15 itens da mala e desligar o PC não dava nenhum sinal de que aquilo tinha subido. Agora a
+linha ouve os dois, e os dois falam a mesma língua: "Salvando...", "Salvo na nuvem", "Sem
+conexão". Antes eram dois nomes para o mesmo estado, e a linha trocava de palavra sozinha.
+
+**Fresta 2: aba já aberta não se atualizava.** O painel buscava a nuvem só quando a página abria.
+Aba deixada aberta no celular desde ontem mostrava o estado velho até alguém recarregar na mão, e
+ninguém recarrega uma aba que já está na tela. Agora, ao voltar para a aba, ele busca de novo —
+com trava de 30 segundos entre buscas, e sem fazer nada se houver uma edição aberta, porque
+sincronizar redesenha a lista e apagaria o que estava sendo digitado.
+
+**Conferido de ponta a ponta**, com um Supabase de mentira e duas pontas simuladas: entrar na
+conta, ticar tarefa, ticar itens da lista, os POSTs chegando com a chave certa
+(`tf/<id da tarefa>/<item>`), a trava de 30 s segurando o segundo alt-tab, o campo de edição
+aberto bloqueando a busca e o texto digitado sobrevivendo, e — a prova que interessava — a aba
+já aberta pegando sozinha o que "o outro aparelho" tinha feito: a data pulou de 30/08 para 20/09
+e a lista foi de 3 para 5, com shampoo e Pepsi Black chegando ticados. Nenhum erro no console.
+
 ## 23/08/2026: a tarja "ainda não foi para o TAREFAS.md" saiu da tela
 
 Pedido do Josemar, direto: *"e esse aviso, odeio ele. Resolve esse bô de vez, eu fico angustiado

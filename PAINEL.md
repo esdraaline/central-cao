@@ -313,6 +313,45 @@ Para conferir sem escrever nada, rode a Action pela aba Actions marcando a opç�
 [TAREFAS.md](TAREFAS.md) pronto para colar, no mesmo formato que a Action escreve, para o
 caso de a automação estar fora do ar.
 
+### Quando o clique vira nuvem, e quando o outro aparelho vê (23/08/2026)
+
+Pergunta do Josemar: *"se eu clicar numa tarefa e desligar o PC, ela vai estar sincronizada
+quando eu religar em outro aparelho?"*. A resposta estava certa no código, mas faltava a
+confirmação na tela e faltava um caminho.
+
+**A tarefa sobe no instante do clique.** Sem fila e sem espera: `alternar()` grava no navegador
+e dispara o envio no mesmo instante. Medido com um Supabase de mentira: **10 ms** entre o
+clique e o POST. Enquanto o envio não volta, a tarefa mostra um pontinho ao lado da data.
+
+**Os itens da lista de conferência esperam 1,2 s.** É a mesma pausa das caixinhas das outras
+abas, e existe porque são 15 cliques em sequência: ele aguarda o dedo parar e manda tudo de uma
+vez, em vez de 15 requisições. Medido: **1,23 s** entre o último clique e o POST.
+
+**O que faltava (1): confirmação na tela.** A linha de estado da aba Tarefas só ouvia o canal
+das *tarefas*. O tique de um item da lista é guardado como *caixinha*, então ticar os 15 itens
+da mala e desligar o PC não dava nenhum sinal de que aquilo tinha subido. Agora a linha da aba
+Tarefas ouve os dois canais, e os dois passaram a falar a mesma língua — "Salvando...", "Salvo
+na nuvem", "Sem conexão". Ter dois nomes para o mesmo estado ("Sincronizado" de um lado, "Salvo
+na nuvem" do outro) só faria a linha trocar de palavra sozinha na frente de quem lê.
+
+**O que faltava (2): a aba já aberta não se atualizava.** O painel buscava a nuvem só quando a
+*página* abria. Aba deixada aberta no celular desde ontem mostrava o estado velho até alguém
+recarregar na mão — e ninguém recarrega uma aba que já está na tela. Agora, ao voltar para a
+aba, ele busca de novo, com duas travas:
+
+- **30 segundos** entre uma busca e outra, senão cada alt-tab viraria uma requisição;
+- **nada acontece com uma edição aberta.** Sincronizar redesenha a lista inteira, e redesenhar
+  por baixo de um campo de texto aberto apagaria o que estava sendo digitado. Quem sai para
+  copiar um dado e volta para colar não pode perder a frase no caminho.
+
+**Se faltar internet, não se perde, mas também não vai sozinho.** Fica guardado naquele
+aparelho com o pontinho aceso, e sobe quando a rede voltar (se a página continuar aberta) ou na
+próxima vez que o painel for aberto ali. Ou seja: cair a rede, ticar e desligar significa que
+aquilo só chega ao celular quando aquele PC for religado com o painel aberto.
+
+**E se não estiver logado, nada disso acontece:** a linha diz "Somente neste aparelho" e é
+clicável para entrar. Sem conta, o Exportar é o que garante que nada se perca.
+
 ### Dois consertos no Exportar (14/08/2026)
 
 **Copiar zerava a fila de upload.** O botão Copiar marcava todas as tarefas como já

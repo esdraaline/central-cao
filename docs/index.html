@@ -9,7 +9,7 @@
 <!-- o painel e um arquivo unico que muda a cada geracao; sem isto o navegador
      serve a versao antiga do cache e correcoes nao chegam ate o usuario -->
 <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
-<meta name="gerado-em" content="7c216ea255b98150">
+<meta name="gerado-em" content="94c34a086e73b777">
 <title>Central do CAO</title>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23c8102e'/%3E%3Ctext x='16' y='22' font-size='15' font-family='Arial' font-weight='bold' fill='white' text-anchor='middle'%3ECAO%3C/text%3E%3C/svg%3E">
 <style>
@@ -510,6 +510,12 @@ mark{background:rgba(232,161,58,.35);color:inherit;border-radius:3px;padding:0 2
   </div>
 </header>
 <main><section class="aba" id="ab-painel" role="tabpanel" data-mod="2026-08-23T12:36:44.000Z"><section class="guia"><div class="guia-topo"><div><p class="guia-ola" id="guia-ola">Central do CAO</p><h2 class="guia-dia" id="guia-dia">Carregando o dia...</h2><p class="guia-fase" id="guia-fase"></p></div><div class="guia-conta" id="guia-conta"></div></div><div class="guia-aula" id="guia-aula"></div><div class="guia-corpo" id="guia-corpo"></div></section><div class="grade"><div class="kpi dest"><div class="rot" id="kpi-curso-rot">Curso</div><div class="val" id="kpi-curso-val">...</div><div class="sub" id="kpi-curso-sub">CAO-II/26</div><div class="barra"><i id="kpi-curso-barra" style="width:0%"></i></div></div><div class="kpi"><div class="rot">Tarefas pendentes</div><div class="val" id="kpi-tar-val">30</div><div class="sub" id="kpi-tar-sub">29 já concluídas</div></div><div class="kpi lista-kpi" data-aba="ab-compras" data-rot="Compras"><div class="rot">Compras</div><div class="val">...</div><div class="sub">antes de viajar</div><div class="barra"><i style="width:0%"></i></div></div><div class="kpi lista-kpi" data-aba="ab-mala" data-rot="Mala"><div class="rot">Mala</div><div class="val">...</div><div class="sub">itens separados</div><div class="barra"><i style="width:0%"></i></div></div></div><div class="card"><blockquote data-b>Painel principal. Ler isso primeiro em qualquer sessão nova ("onde paramos?"). Atualizado em: 23/08/2026</blockquote>
+<h2 data-b>23/08/2026: duas frestas fechadas na sincronização</h2>
+<p data-b>Pergunta do Josemar, depois que a tarja saiu: <em>"se eu clicar numa tarefa e desligar o PC, ela vai estar sincronizada quando eu religar em outro aparelho?"</em>. Fui ler o caminho do clique em vez de responder de memória, e a resposta é sim — mas apareceram duas frestas, as duas fechadas agora.</p>
+<p data-b><strong>Os números, medidos com um Supabase de mentira levantado só para isso:</strong> a tarefa sobe <strong>10 ms</strong> depois do clique, sem fila. Os itens da lista de conferência esperam <strong>1,23 s</strong>, que é a pausa herdada das caixinhas: são 15 cliques em sequência, e ele aguarda o dedo parar para mandar tudo de uma vez em vez de disparar 15 requisições.</p>
+<p data-b><strong>Fresta 1: o tique dos itens não tinha confirmação na tela.</strong> A linha de estado da aba Tarefas só ouvia o canal das tarefas; o tique de um item é guardado como caixinha, no outro canal. Ticar os 15 itens da mala e desligar o PC não dava nenhum sinal de que aquilo tinha subido. Agora a linha ouve os dois, e os dois falam a mesma língua: "Salvando...", "Salvo na nuvem", "Sem conexão". Antes eram dois nomes para o mesmo estado, e a linha trocava de palavra sozinha.</p>
+<p data-b><strong>Fresta 2: aba já aberta não se atualizava.</strong> O painel buscava a nuvem só quando a página abria. Aba deixada aberta no celular desde ontem mostrava o estado velho até alguém recarregar na mão, e ninguém recarrega uma aba que já está na tela. Agora, ao voltar para a aba, ele busca de novo — com trava de 30 segundos entre buscas, e sem fazer nada se houver uma edição aberta, porque sincronizar redesenha a lista e apagaria o que estava sendo digitado.</p>
+<p data-b><strong>Conferido de ponta a ponta</strong>, com um Supabase de mentira e duas pontas simuladas: entrar na conta, ticar tarefa, ticar itens da lista, os POSTs chegando com a chave certa (<code>tf/&lt;id da tarefa&gt;/&lt;item&gt;</code>), a trava de 30 s segurando o segundo alt-tab, o campo de edição aberto bloqueando a busca e o texto digitado sobrevivendo, e — a prova que interessava — a aba já aberta pegando sozinha o que "o outro aparelho" tinha feito: a data pulou de 30/08 para 20/09 e a lista foi de 3 para 5, com shampoo e Pepsi Black chegando ticados. Nenhum erro no console.</p>
 <h2 data-b>23/08/2026: a tarja "ainda não foi para o TAREFAS.md" saiu da tela</h2>
 <p data-b>Pedido do Josemar, direto: <em>"e esse aviso, odeio ele. Resolve esse bô de vez, eu fico angustiado aflito em saber que tem pendência"</em>.</p>
 <p data-b><strong>Ele tinha razão, e não era só incômodo: a tarja estava velha.</strong> Ela nasceu em 12/08, quando levar o painel para o arquivo era trabalho dele — copiar do Exportar e colar no <code>.md</code>. A pendência era de verdade e a tarja era o lembrete. Em <strong>14/08 a Action passou a fazer isso sozinha</strong>, de hora em hora, e ninguém tirou o lembrete da tela. Resultado: bastava <strong>ticar uma tarefa</strong> para a tarja âmbar subir dizendo <em>"1 tarefa alterada ainda não foi para o TAREFAS.md"</em> e, no parágrafo seguinte, <em>"não precisa fazer nada"</em>. Um alarme que ele mesmo desmente não é informação, é barulho — e barulho com cara de pendência cobra quem lê, todo dia, por uma fila que é de robô.</p>
@@ -6427,10 +6433,27 @@ window.REP=(function(){
   }
   /* estado da sincronizacao mostrado na barra de cada aba de lista.
      Quem chama e o bloco do Supabase; sem ele fica no texto inicial.       */
+  /* A linha de estado da aba TAREFAS entra aqui junto com as das listas.
+     Parece detalhe e nao e: desde 23/08/2026 uma tarefa pode ter lista de
+     conferencia por dentro, e o tique de cada item e guardado como caixinha
+     (cao_ticados), mas o clique acontece na aba Tarefas - que so ouvia o
+     estado das TAREFAS. Ticar os 15 itens da mala e desligar o PC nao dava
+     nenhuma confirmacao na tela de que aquilo tinha subido. Agora da.
+
+     Como os dois canais escrevem na mesma linha, eles falam a mesma lingua:
+     "Salvando...", "Salvo na nuvem", "Sem conexao". Ter dois nomes para o
+     mesmo estado ("Sincronizado" de um lado, "Salvo na nuvem" do outro) so
+     faria a linha trocar de palavra sozinha na frente de quem le.          */
   function mkEstadoSinc(cls,txt,tit){
-    [].forEach.call(document.querySelectorAll('.mk-sinc'),function(s){
-      s.className='tf-status mk-sinc'+(cls?' '+cls:'');
-      s.querySelector('.txt').textContent=txt;
+    var alvos=[].slice.call(document.querySelectorAll('.mk-sinc'));
+    var tf=document.getElementById('tf-status');
+    if(tf)alvos.push(tf);
+    alvos.forEach(function(s){
+      /* cada linha guarda a propria classe base: a da aba Tarefas nao e
+         .mk-sinc, e marca-la mudaria a fonte pelo CSS das listas */
+      s.className=(s.id==='tf-status'?'tf-status':'tf-status mk-sinc')+(cls?' '+cls:'');
+      var t=s.querySelector('.txt')||s.querySelector('#tf-status-txt');
+      if(t)t.textContent=txt;
       s.title=tit||'';
     });
   }
@@ -7809,8 +7832,8 @@ window.REP=(function(){
   function pintaConta(){
     /* o mesmo estado vai para a aba Tarefas e para a barra das abas de lista */
     if(ativo()){
-      estado('on','Sincronizado','Suas tarefas estão salvas na nuvem');
-      tic('on','Salvo na nuvem','Suas marcações estão sincronizadas');
+      estado('on','Salvo na nuvem','Tudo o que você marcou está salvo na nuvem');
+      tic('on','Salvo na nuvem','Tudo o que você marcou está salvo na nuvem');
     }else if(configurado()){
       estado('','Somente neste aparelho','Clique aqui para entrar e sincronizar');
       tic('','Somente neste aparelho',
@@ -7915,7 +7938,7 @@ window.REP=(function(){
       window.TAREFAS.salvar();
       window.TAREFAS.redesenhar();
     }).catch(function(e){
-      estado('off','Sem conexão','Vai sincronizar sozinho quando a rede voltar');
+      estado('off','Sem conexão','Sobe sozinho quando a rede voltar');
     });
   }
 
@@ -7966,12 +7989,12 @@ window.REP=(function(){
         window.TICADOS.salvar();
       });
     }).then(function(){
-      tic('on','Salvo na nuvem','Suas marcações estão sincronizadas');
+      tic('on','Salvo na nuvem','Tudo o que você marcou está salvo na nuvem');
     }).catch(function(e){
       if(e&&(e.status===401||e.status===403))
         tic('erro','Sessão expirada','Clique aqui para entrar de novo');
       else
-        tic('off','Sem conexão','As marcações sobem sozinhas quando a rede voltar');
+        tic('off','Sem conexão','Sobe sozinho quando a rede voltar');
       throw e;
     });
   }
@@ -7987,10 +8010,13 @@ window.REP=(function(){
     tmTic=setTimeout(function(){sincTicados().catch(function(){})},1200);
   };
 
+  var ultimaSinc=0;
+
   function sincronizar(){
     if(!ativo()||sincronizando)return Promise.resolve();
     sincronizando=true;
-    estado('','Sincronizando...');
+    ultimaSinc=Date.now();
+    estado('','Salvando...');
     return garantirSessao().then(function(){
       /* 1. apaga o que ficou pendente de exclusao */
       var mortas=lerLS(K_DEL,[]);
@@ -8042,9 +8068,9 @@ window.REP=(function(){
       sincronizando=false;
       if(e&&(e.status===401||e.status===403)){
         sair();
-        estado('erro','Sessão expirada','Entre na conta de novo');
+        estado('erro','Sessão expirada','Clique aqui para entrar de novo');
       }else{
-        estado('off','Sem conexão','As alterações ficam guardadas aqui até a rede voltar');
+        estado('off','Sem conexão','Fica guardado aqui até a rede voltar');
       }
     });
   }
@@ -8105,8 +8131,29 @@ window.REP=(function(){
   if(btSair)btSair.onclick=function(){sair();window.TAREFAS.modal.fechar('#modal-conta')};
 
   window.addEventListener('online',function(){if(ativo())sincronizar()});
+
+  /* -------------------- voltar para a aba busca a nuvem -------------------
+     O painel buscava a nuvem so quando a PAGINA abria. Aba deixada aberta no
+     celular desde ontem mostrava o estado velho ate alguem recarregar na mao,
+     e como ninguem recarrega uma aba que ja esta na tela, o aparelho ficava
+     mentindo o dia inteiro. Agora, ao voltar para a aba, ele busca de novo.
+
+     Duas travas, as duas por motivo concreto:
+
+       - 30 segundos entre uma busca e outra, senao cada alt-tab viraria uma
+         requisicao;
+       - nada acontece com uma edicao aberta na tela. Sincronizar redesenha a
+         lista inteira, e redesenhar por baixo de um campo de texto aberto
+         apagaria o que estava sendo digitado. Quem sai para copiar um dado e
+         volta para colar nao pode perder a frase no caminho.               */
+  document.addEventListener('visibilitychange',function(){
+    if(document.visibilityState!=='visible'||!ativo())return;
+    if(Date.now()-ultimaSinc<30000)return;
+    if(document.querySelector('.tf-edit,.tf-dtin'))return;
+    sincronizar();
+  });
   window.addEventListener('offline',function(){
-    if(ativo())estado('off','Sem conexão','As alterações ficam guardadas aqui');
+    if(ativo())estado('off','Sem conexão','Fica guardado aqui até a rede voltar');
   });
 
   window.SUPA={ativo:ativo,enviar:enviar,apagar:apagar,sincronizar:sincronizar};

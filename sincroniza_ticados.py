@@ -9,9 +9,10 @@ unica saida era alguem reconciliar na mao, item por item. Foi o que aconteceu
 em 18/08/2026 com o COMPRAS.md, depois da ida a ConfecBell.
 
 Este script e a volta que faltava. Ele nao inventa identificador: usa a MESMA
-chave que o painel ja usa, md5 do texto do item, entao um item so muda de
-identidade se o texto mudar - que e exatamente a regra ja documentada em
-PAINEL.md.
+chave que o painel ja usa, "<id da aba>/<md5 do texto do item>", entao um item so
+muda de identidade se o texto mudar - que e exatamente a regra ja documentada em
+PAINEL.md. Ate 23/08/2026 a chave daqui saia sem a aba e nao batia com a do
+painel: veja o comentario em chave_do_item().
 
 Quem manda, quando arquivo e nuvem discordam do mesmo item: **quem mexeu por
 ultimo**. A hora da nuvem e a coluna `mod`; a hora do arquivo e a data do
@@ -52,12 +53,28 @@ ITEM = re.compile(r"^(\s*(?:[-*]|\d+[.)])\s+\[)([ xX])(\]\s*)(.*)$")
 
 # ------------------------------------------------------------------ leitura
 
-def chave_do_item(texto):
-    """A MESMA chave do painel (gerar_painel.py, geracao do data-mk)."""
-    return hashlib.md5(texto.strip().encode("utf-8")).hexdigest()[:10]
+def chave_do_item(texto, aba):
+    """A MESMA chave do painel (gerar_painel.py, funcao mkChave).
+
+    O painel identifica cada caixinha por "<id da aba>/<md5 do texto>", por
+    exemplo "ab-compras/2de055d428", e e assim que a linha sobe para o
+    cao_ticados. Ate 23/08/2026 este script usava so o md5, sem a aba, entao
+    NUNCA encontrava a linha que o painel tinha gravado. Duas consequencias, e
+    as duas silenciosas:
+
+      1. para o script, todo item era "a nuvem nunca viu este". O arquivo
+         vencia sempre e o tique feito no celular nao voltava para o .md - que
+         e a unica coisa que este script existe para fazer;
+      2. a cada rodada ele semeava uma segunda familia de linhas na tabela, so
+         com o md5, que nenhum painel le.
+
+    O `aba` e o id da secao no painel ("ab-compras"), montado a partir de ABAS.
+    """
+    h = hashlib.md5(texto.strip().encode("utf-8")).hexdigest()[:10]
+    return "%s/%s" % (aba, h)
 
 
-def itens_do_arquivo(caminho):
+def itens_do_arquivo(caminho, aba):
     """Devolve (indice_da_linha, chave, quantidade, feito, texto) por caixinha."""
     linhas = io.open(caminho, encoding="utf-8").read().split("\n")
     achados = []
@@ -66,7 +83,7 @@ def itens_do_arquivo(caminho):
         if not m:
             continue
         texto = m.group(4)
-        achados.append((i, chave_do_item(texto), quantidade_do_item(texto),
+        achados.append((i, chave_do_item(texto, aba), quantidade_do_item(texto),
                         m.group(2).lower() == "x", texto))
     return linhas, achados
 
@@ -129,11 +146,11 @@ def main():
     print("nuvem: %d itens ticados conhecidos" % len(nuvem))
 
     subir, tocados, vistos = [], 0, set()
-    for nome, _id, _rot, _ic in ABAS:
+    for nome, aba_id, _rot, _ic in ABAS:
         caminho = os.path.join(RAIZ, nome)
         if nome in FORA or not os.path.isfile(caminho):
             continue
-        linhas, itens = itens_do_arquivo(caminho)
+        linhas, itens = itens_do_arquivo(caminho, "ab-" + aba_id)
         if not itens:
             continue
         hora_arq = hora_do_arquivo(nome)
@@ -155,9 +172,18 @@ def main():
         print("%-14s %3d caixinhas, %d ajustada(s)" % (nome, len(itens), mudou))
 
     orfas = [c for c in nuvem if c not in vistos]
-    if orfas:
+    # Chave sem "/" e das rodadas anteriores a 23/08/2026, quando este script
+    # montava o id sem a aba e escrevia numa familia de linhas que nenhum painel
+    # le. Ficam la sem atrapalhar: apagar linha do banco e decisao do Josemar,
+    # nao de um robo que roda de hora em hora.
+    velhas = [c for c in orfas if "/" not in c]
+    if velhas:
+        print("nuvem tem %d linha(s) no formato antigo (chave sem a aba), das "
+              "rodadas anteriores ao conserto de 23/08/2026. Ninguem as le e "
+              "nao atrapalham." % len(velhas))
+    if len(orfas) - len(velhas):
         print("nuvem tem %d item(ns) que nenhum .md usa mais (texto editado). "
-              "Nao atrapalham, so ocupam linha." % len(orfas))
+              "Nao atrapalham, so ocupam linha." % (len(orfas) - len(velhas)))
 
     if subir:
         print("subir para a nuvem: %d item(ns)" % len(subir))

@@ -11,6 +11,12 @@
 > qual é o dia: `@semanal` numa quinta significa toda quinta. Ticada no painel, ela não vai para
 > Concluídas, some da lista e volta com a data da próxima vez. No painel dá para escrever direto
 > "toda quinta separar a roupa", que ele entende sozinho.
+>
+> **Lista de conferência dentro da tarefa.** Caixinha indentada logo abaixo de uma tarefa não é
+> tarefa nova: é item dela. No painel a tarefa continua sendo uma só, com uma etiqueta "3 de 15"
+> que abre a lista, e cada item é um clique. Serve para o que se confere peça por peça (a mala,
+> a carga da copa). O tique de cada item fica no painel e sincroniza entre os aparelhos; aqui no
+> arquivo o item fica sempre em aberto, porque a lista é o molde e não o diário de bordo.
 
 ## Pendentes
 
@@ -23,7 +29,25 @@
 
 ### Rodízio da mala (toda semana, ver MALA.md)
 > As duas se repetem sozinhas: ticadas, não vão para Concluídas, voltam com a data da semana seguinte.
-- [ ] Domingo, arrumar para a volta: 2 toalhas, fronha limpa, roupa lavada (cuecas, meias, camisetas), whey e creatina @semanal [23/08/2026] #pessoal
+> A de domingo leva a lista de conferência indentada abaixo dela. No painel cada item é um clique,
+> tudo dentro da mesma tarefa, e a lista volta zerada quando a tarefa rola para a semana seguinte.
+> No arquivo os itens ficam sempre em aberto: aqui a lista é o molde, o tique é do painel.
+- [ ] Domingo, arrumar a mala da semana antes de viajar. B-1 e EPI ficam em casa (decisão de 20/08) @semanal [23/08/2026] #pessoal
+  - [ ] 5 cuecas
+  - [ ] 5 pares de meia social preta
+  - [ ] 3 pares de meia branca
+  - [ ] 2 camisetas de serviço
+  - [ ] 2 pijamas
+  - [ ] 2 toalhas de banho
+  - [ ] 1 fronha limpa
+  - [ ] whey
+  - [ ] creatina
+  - [ ] energético zero
+  - [ ] Pepsi Black
+  - [ ] lanches
+  - [ ] marmitas prontas
+  - [ ] shampoo
+  - [ ] porta-sabonete
 - [ ] Quinta de manhã, separar para levar para casa: toalha de banho, fronha e roupa suja @semanal [27/08/2026] #pessoal
 
 ### Orientador da dissertação — MISSÃO URGENTE
@@ -34,7 +58,6 @@
 
 ### Segunda semana (viagem em 23/08)
 - [ ] Decidir e comprar o energético zero: leva de casa ou compra perto do CAES na chegada (whey, creatina e coqueteleira já resolvidos) [23/08/2026] #pessoal
-- [ ] Levar na viagem: 5 cuecas, 5 pares de meia social preta, 3 pares de meia branca, 2 camisetas de serviço e 2 pijamas lavados, 2 toalhas de banho e 1 fronha, mais a carga da copa (whey, creatina, energético zero, Pepsi Black, lanches, marmitas prontas, porta-sabonete e shampoo). B-1 e EPI não vão (decisão de 20/08) [23/08/2026] #pessoal
 - [ ] Perguntar na Coordenação (Seç Avaliação, Cap Diego) quais disciplinas têm prova e quais têm trabalho, e se existe plano de disciplina com carga horária. É o que falta para o PRAZOS listar entrega de disciplina, porque o QTS não traz [25/08/2026] #curso
 
 ### Univesp — prova de 22/09 em conflito com o curso (pedido já protocolado)

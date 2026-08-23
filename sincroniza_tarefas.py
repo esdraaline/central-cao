@@ -177,13 +177,19 @@ def iguais(a, b):
 
 def do_arquivo(t):
     return {"id": id_base(t["t"]), "txt": t["t"], "data": t["d"],
-            "cat": t["c"] or "", "feito": bool(t["f"]), "secao": t.get("s") or ""}
+            "cat": t["c"] or "", "feito": bool(t["f"]), "secao": t.get("s") or "",
+            "sub": t.get("sub") or []}
 
 
-def da_nuvem(r, secao=""):
+def da_nuvem(r, secao="", sub=None):
+    # `sub` (a lista de conferencia da tarefa) nao vem da nuvem: a tabela
+    # cao_tarefas tem uma coluna de texto, e os itens moram nas linhas
+    # indentadas do TAREFAS.md. Ela e sempre a do arquivo, do mesmo jeito que a
+    # secao. Sem carregar as duas aqui, a rodada em que a nuvem vence
+    # reescreveria a tarefa sem a lista e apagaria os itens em silencio.
     return {"id": r["id"], "txt": r["txt"], "data": r.get("data"),
             "cat": r.get("cat") or "", "feito": bool(r.get("feito")),
-            "secao": secao, "mod": r.get("mod")}
+            "secao": secao, "sub": sub or [], "mod": r.get("mod")}
 
 
 def juntar(arquivo, nuvem, estado, t_arquivo):
@@ -232,7 +238,7 @@ def juntar(arquivo, nuvem, estado, t_arquivo):
                 rel["subidas"] += 1
                 rel["det"].append(("sobe (arquivo mexeu depois)", a["txt"], da_nuvem(n), a))
             else:
-                novo = da_nuvem(n, a["secao"])         # o painel mexeu depois
+                novo = da_nuvem(n, a["secao"], a["sub"])  # o painel mexeu depois
                 final.append(novo)
                 rel["baixadas"] += 1
                 rel["det"].append(("desce (painel mexeu depois)", novo["txt"], a, novo))
@@ -331,6 +337,13 @@ def linha(t):
         s += " [%s/%s/%s]" % (d, m, a)
     if t["cat"]:
         s += " #" + t["cat"]
+    # A lista de conferencia volta indentada e SEMPRE em aberto. No arquivo ela
+    # e o molde da semana; o que ja foi separado esta gravado na tabela de
+    # ticados (cao_ticados), com a chave "tf/<id da tarefa>/<chave do item>", e
+    # nao aqui. Mesma regra do botao Exportar do painel, para os dois nunca
+    # brigarem pelo arquivo.
+    for x in t.get("sub") or []:
+        s += "\n  - [ ] %s" % x["t"]
     return s
 
 

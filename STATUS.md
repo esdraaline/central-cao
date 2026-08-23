@@ -1,7 +1,71 @@
 # STATUS — Central do CAO
 
 > Painel principal. Ler isso primeiro em qualquer sessão nova ("onde paramos?").
-> Atualizado em: 22/08/2026
+> Atualizado em: 23/08/2026
+
+## 23/08/2026: a volta das caixinhas estava quebrada desde o primeiro dia
+
+Achado enquanto se mexia na lista de conferência, e confirmado no HTML gerado: o
+`sincroniza_ticados.py` procurava cada caixinha na nuvem pela chave `2de055d428` (só o md5 do
+texto do item), mas o painel grava `ab-compras/2de055d428`, com o id da aba na frente. **As duas
+pontas nunca se encontraram: 0 de 93 chaves batiam.**
+
+**O erro era mudo, e é isso que o torna grave.** O script trata "não achei na nuvem" como *"a
+nuvem nunca viu este item"*, e nesse caso o arquivo manda. Então tudo parecia funcionar: a Action
+rodava verde de hora em hora, dizia quantas caixinhas leu, e o `.md` nunca mudava porque o arquivo
+vencia sempre. O tique feito no celular ia para a nuvem e morria lá — exatamente o problema que
+esse script foi escrito para resolver em 18/08. De quebra, cada rodada semeava na tabela uma
+segunda família de linhas, só com o md5, que nenhum painel lê.
+
+**Corrigido:** a chave passou a ser montada como o painel monta, `"ab-" + id da aba + "/" + md5`.
+Conferido contra o `docs/index.html` gerado: 93 de 93 chaves agora batem, nas três abas com
+caixinha (Rotina 7, Compras 17, Mala 69). As linhas velhas ficam onde estão, sem atrapalhar, e o
+script passou a contá-las à parte no relatório: apagar linha de banco é decisão sua, não de um robô
+de hora em hora.
+
+**Atenção na primeira rodada:** pode sair um diff grande nos `.md` com caixinha, com o acumulado
+de tudo que foi ticado no painel desde 18/08 e nunca desceu. É o esperado. Para olhar antes de
+deixar acontecer, dispare a Action "Sincronizar tarefas e caixinhas" à mão com a opção **"Só
+mostrar o que faria"** marcada.
+
+## 23/08/2026: a mala virou uma tarefa só, com lista de conferência por dentro
+
+Pedido do Josemar, olhando as duas tarefas do domingo na tela: *"só uma está como recorrente,
+a de cima é um complemento. Funde as duas, e cada item entra com um check list que eu vou
+clicando: shampoo um item um clique, energético outro item outro clique, mas tudo dentro de
+uma tarefa só"*.
+
+**Eram duas tarefas para o mesmo domingo.** Uma recorrente com metade da carga ("2 toalhas,
+fronha limpa, roupa lavada, whey e creatina") e outra de uma vez só com a lista inteira
+espremida numa linha de seis linhas de tela. Ninguém tica meia tarefa: ou ela ficava aberta a
+semana toda, ou era ticada com peça faltando.
+
+**Agora é uma tarefa `@semanal` no domingo, com 15 itens indentados abaixo dela.** No arquivo,
+caixinha indentada não é tarefa nova, é item da tarefa de cima. Na tela a tarefa continua sendo
+uma linha só, com a etiqueta **"3 de 15"** ao lado da data — botão que abre e fecha a lista e
+fica verde quando tudo foi separado.
+
+**A decisão que sustenta o resto: o tique de cada item não mora na tarefa.** Ele vai para a
+tabela de ticados (`cao_ticados`), a mesma das abas Compras e Mala, com a chave
+`tf/<id da tarefa>/<chave do item>`. O id de uma tarefa nascida no arquivo é derivado do texto
+dela; se o tique morasse no texto, cada clique geraria um id novo e arquivo, nuvem e painel
+parariam de se reconhecer — a duplicata em massa de 12/08/2026 de novo. De quebra, a
+sincronização entre aparelhos veio de graça: separou o shampoo no celular, o PC mostra separado.
+
+**No `TAREFAS.md` o item fica sempre em aberto.** Ali a lista é o molde da semana, não o diário
+de bordo. Mas ela **volta** na reescrita: o `linha()` do `sincroniza_tarefas.py` e o Exportar do
+painel devolvem os itens indentados. Sem isso, a primeira rodada da Action apagaria a lista
+inteira em silêncio, que foi o que aconteceu com as notas de seção em 20/08/2026. Tem teste de
+ida e volta: o arquivo remonta byte a byte.
+
+**Ticada, a tarefa rola para o domingo seguinte e zera a própria lista**, avisando *"Feita desta
+vez. Volta no domingo, 30/08, com a lista zerada."* Sem zerar, ela voltaria toda ticada e não
+serviria para nada.
+
+**Conferido no navegador**, tema claro e escuro, 1280 e 390 px: 15 itens desenhados, clique
+marca e desmarca, contador vira "15 de 15" em verde, ticar a tarefa rola para 30/08 e zera as 15
+chaves, a lista abre e fecha pela etiqueta, o Exportar devolve os itens indentados, nenhum erro
+no console e nenhum aviso falso de divergência com o arquivo. Detalhe em [PAINEL.md](PAINEL.md).
 
 ## 22/08/2026: as tarefas do rodízio da mala passaram a se repetir sozinhas
 

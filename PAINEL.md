@@ -89,6 +89,21 @@ arquivo. A decisão usa um espelho do que o arquivo dizia na última abertura, p
 mudou" de "eu mudei aqui" antes de precisar comparar horas. As tarefas ganharam a mesma
 reconciliação, no mesmo dia (ver abaixo).
 
+**A volta estava quebrada desde o primeiro dia (corrigido em 23/08/2026).** O
+`sincroniza_ticados.py` procurava cada caixinha na nuvem pela chave `2de055d428` (só o md5 do
+texto), mas o painel grava `ab-compras/2de055d428` — o id da aba na frente. As duas pontas nunca
+se encontravam. Como o script trata "não achei na nuvem" como *"a nuvem nunca viu este item"*, o
+resultado era mudo e parecia certo: **o arquivo vencia sempre**, o tique feito no celular nunca
+voltava para o `.md`, e a cada rodada o script ainda semeava na tabela uma segunda família de
+linhas, só com o md5, que nenhum painel lê. Ou seja, a volta que o script existe para fazer nunca
+aconteceu: as 93 chaves batem agora, batiam 0 antes. As linhas velhas ficam onde estão, sem
+atrapalhar — o script passou a contá-las à parte no relatório, e apagar linha de banco é decisão
+do Josemar, não de um robô que roda de hora em hora.
+
+**Na primeira rodada depois do conserto pode sair um diff grande** nos `.md` com caixinha, com o
+acumulado de tudo que foi ticado no painel e nunca desceu. É o esperado. Para olhar antes, a
+Action aceita ser disparada à mão com a opção **"Só mostrar o que faria"** (`--conferir`).
+
 ### Aba Tarefas (cadastro)
 Dá para cadastrar tarefa direto no painel, escrevendo em linguagem normal: *"entregar artigo sexta"*,
 *"prova dia 15"*, *"enviar ofício amanhã"*. Ele entende a data sozinho e agrupa por urgência
@@ -122,6 +137,54 @@ linha do `TAREFAS.md`, a coluna `txt` do Supabase e a Action que sincroniza os d
 dentro do texto, a recorrência atravessa os três de graça, sem migração no banco e sem mexer
 no `sincroniza_tarefas.py`. Quem esconde a marca na tela é o painel; o arquivo e a nuvem nunca
 precisam saber que ela existe.
+
+### Lista de conferência dentro de uma tarefa (23/08/2026)
+
+Arrumar a mala é **uma** tarefa, ticada uma vez por semana, mas por dentro ela é uma lista:
+shampoo é um clique, energético é outro. Até 22/08/2026 isso eram duas tarefas, uma com a
+lista inteira espremida numa linha só e outra recorrente com metade dos itens. Ninguém tica
+meia tarefa: ou ficava aberta a semana toda, ou era ticada com peça faltando.
+
+**Como escrever.** No `TAREFAS.md`, caixinha **indentada** logo abaixo de uma tarefa não é
+tarefa nova, é item dela:
+
+```
+- [ ] Domingo, arrumar a mala da semana antes de viajar @semanal [23/08/2026] #pessoal
+  - [ ] 5 cuecas
+  - [ ] shampoo
+```
+
+**Na tela.** A tarefa continua sendo uma linha só, com uma etiqueta **"3 de 15"** ao lado da
+data. A etiqueta é um botão que abre e fecha a lista, e fica verde quando tudo foi separado.
+Cada item é um clique, a linha inteira é o alvo — igual às caixinhas das abas Compras e Mala.
+A lista já abre aberta no que é para hoje ou está atrasado, e fechada no resto; clicou na
+etiqueta, a sua escolha manda daí em diante. Ticar um item **não redesenha a aba**: são 15
+cliques seguidos, e refazer a lista a cada um fazia a tela piscar e perdia a rolagem no celular.
+
+**Onde mora o tique de cada item — não na tarefa.** Ele vai para o mesmo lugar das caixinhas
+das outras abas (tabela `cao_ticados`), com a chave `tf/<id da tarefa>/<chave do item>`. Dois
+motivos, e o primeiro não tem volta:
+
+1. o id de uma tarefa nascida no arquivo é derivado do **texto** dela (`idBase`). Se o tique
+   morasse no texto, cada clique geraria um id novo e arquivo, nuvem e painel parariam de se
+   reconhecer — exatamente a duplicata em massa de 12/08/2026;
+2. de graça vem a sincronização entre aparelhos, que a tabela de ticados já faz desde
+   21/08/2026: separou o shampoo pelo celular, o PC mostra separado.
+
+**No arquivo o item fica sempre `- [ ]`.** Ali a lista é o molde da semana, não o diário de
+bordo. Quem guarda o que já foi separado é o navegador mais a nuvem. Por isso o `linha()` do
+`sincroniza_tarefas.py` e o Exportar do painel devolvem os itens sempre em aberto — mas
+devolvem: sem essa parte, a primeira reescrita do arquivo apagaria a lista inteira em silêncio,
+que foi o que aconteceu com as notas de seção em 20/08/2026.
+
+**Tarefa que se repete zera a própria lista** quando rola para a semana seguinte, e o recado
+avisa: *"Feita desta vez. Volta no domingo, 30/08, com a lista zerada."* Sem isso ela voltaria
+toda ticada e não serviria para nada.
+
+**A lista é do arquivo.** O painel tica, mas não cria nem apaga item, então não há conflito a
+resolver: a cada abertura ela é recopiada do `TAREFAS.md` por cima. Corrigir uma palavra no
+arquivo chega ao painel na carga seguinte, sem exportar nada. Mudar o texto de um item zera o
+tique dele, como já acontece nas outras abas.
 
 ### Remarcar uma tarefa (mudar a data)
 Toda tarefa tem **botão de calendário** ao lado do lápis, e **a própria etiqueta de data é

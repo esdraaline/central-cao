@@ -77,6 +77,8 @@ ICONES = {
     "vazio":    '<circle cx="12" cy="12" r="9"/><path d="M8.5 13.5s1.2 1.5 3.5 1.5 3.5-1.5 3.5-1.5"/><path d="M9 9.5h.01M15 9.5h.01"/>',
     "fechar":   '<path d="M6 6l12 12M18 6 6 18"/>',
     "copiar":   '<rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/>',
+    "lista":    '<path d="m3 6 1.5 1.5L7 5"/><path d="m3 12 1.5 1.5L7 11"/>'
+                '<path d="m3 18 1.5 1.5L7 17"/><path d="M11 6h10M11 12h10M11 18h10"/>',
     "repete":   '<path d="m17 2 3.5 3.5L17 9"/><path d="M3.5 12v-1.5a4 4 0 0 1 4-4h13"/><path d="M7 22l-3.5-3.5L7 15"/><path d="M20.5 12v1.5a4 4 0 0 1-4 4h-13"/>',
 }
 
@@ -152,6 +154,16 @@ def figura_svg(alt, caminho):
 _QTD_INICIO = re.compile(r"^(?:\*\*)?(\d{1,2})\s+[A-Za-zÀ-ÿ]")
 _QTD_FIM = re.compile(r"[—-]\s*(\d{1,2})\s*"
                       r"(?:conjuntos?|pares?|mudas?|unidades?|un\.?)?\s*$", re.I)
+
+
+def chave_item(texto):
+    """Chave estavel de um item ticavel: md5 do texto, cortado em 10.
+
+    E a mesma chave do `data-mk` das abas de lista e do `chave_do_item()` do
+    sincroniza_ticados.py. Item so muda de identidade se o texto mudar, e o
+    tique acompanha o texto em qualquer aparelho.
+    """
+    return hashlib.md5(texto.strip().encode("utf-8")).hexdigest()[:10]
 
 
 def quantidade_do_item(texto):
@@ -297,7 +309,7 @@ def md_para_html(texto):
                 feito = mk.group(1).lower() == "x"
                 # data-mk: chave estavel do item, para o navegador lembrar o que
                 # ja foi ticado. Vem do texto, entao editar o texto zera aquele item.
-                chave = hashlib.md5(mk.group(2).strip().encode("utf-8")).hexdigest()[:10]
+                chave = chave_item(mk.group(2))
                 qtd = quantidade_do_item(mk.group(2))
                 # data-md: o que o ARQUIVO diz deste item (0 = em aberto;
                 # N = quantas pecas ele considera prontas). Sem isto o painel
@@ -394,12 +406,29 @@ def extrai_notas(texto):
     return notas
 
 
+def _texto_puro(corpo):
+    """Tira a sintaxe de markdown: na aba Tarefas o texto e exibido puro."""
+    corpo = re.sub(r"\[([^\]]+)\]\([^)]*\)", r"\1", corpo)   # links
+    corpo = re.sub(r"\*\*([^*]+)\*\*", r"\1", corpo)         # negrito
+    corpo = re.sub(r"`([^`]+)`", r"\1", corpo)               # codigo
+    return re.sub(r"\s{2,}", " ", corpo).strip(" -—")
+
+
 def extrai_tarefas(texto):
     """Le as tarefas do TAREFAS.md em formato estruturado.
 
     Sintaxe reconhecida (a data e a categoria sao opcionais):
         - [ ] Entregar o artigo [15/09/2026] #dissertacao
         - [x] Tarefa ja concluida
+
+    Linha de caixinha INDENTADA nao e tarefa: e item da lista de conferencia da
+    tarefa logo acima ("5 cuecas", "shampoo"), e sai no campo "sub". E o que
+    permite uma tarefa so, ticada de uma vez, carregar dentro dela a lista que
+    se vai marcando item por item:
+
+        - [ ] Domingo, arrumar a mala @semanal [23/08/2026] #pessoal
+          - [ ] 5 cuecas
+          - [ ] shampoo
 
     O campo "s" guarda o subtitulo (###) sob o qual a linha estava. E o que
     permite ao Exportar devolver o arquivo com as mesmas secoes, em vez de
@@ -416,11 +445,20 @@ def extrai_tarefas(texto):
             secao = h.group(2).strip() if len(h.group(1)) >= 3 else ""
             continue
 
-        m = re.match(r"^\s*[-*]\s+\[([ xX])\]\s+(.*)$", linha)
+        m = re.match(r"^(\s*)[-*]\s+\[([ xX])\]\s+(.*)$", linha)
         if not m:
             continue
-        feito = m.group(1).lower() == "x"
-        corpo = m.group(2).strip()
+        recuo = len(m.group(1).expandtabs(4))
+        feito = m.group(2).lower() == "x"
+        corpo = m.group(3).strip()
+
+        # item da lista de conferencia da tarefa anterior
+        if recuo >= 2 and tarefas:
+            item = _texto_puro(corpo)
+            if item:
+                tarefas[-1].setdefault("sub", []).append(
+                    {"t": item, "k": chave_item(item)})
+            continue
 
         # data no formato [dd/mm/aaaa]
         iso = None
@@ -441,10 +479,7 @@ def extrai_tarefas(texto):
             corpo = corpo.replace(mc.group(0), "").strip()
 
         # tira a sintaxe de markdown: o texto da tarefa e exibido puro
-        corpo = re.sub(r"\[([^\]]+)\]\([^)]*\)", r"\1", corpo)   # links
-        corpo = re.sub(r"\*\*([^*]+)\*\*", r"\1", corpo)         # negrito
-        corpo = re.sub(r"`([^`]+)`", r"\1", corpo)               # codigo
-        corpo = re.sub(r"\s{2,}", " ", corpo).strip(" -—")
+        corpo = _texto_puro(corpo)
         if corpo:
             tarefas.append({"t": corpo, "d": iso, "c": cat, "f": feito, "s": secao})
 
@@ -968,6 +1003,23 @@ ul.tarefas li.parcial .mk-qtd .n{color:var(--al);font-weight:600}
   padding:5px 9px;color:var(--tx);font:600 12.5px/1.5 inherit;font-family:inherit}
 .tf-dtbox input[type=date]:focus{outline:none;box-shadow:0 0 0 3px rgba(200,16,46,.1)}
 .tf-dtbox .chip{padding:4px 10px;font-size:12px}
+/* lista de conferencia dentro de uma tarefa: um clique por item */
+.tf-tag.lista{background:var(--card2);border:1px solid var(--bd);color:var(--tx2);
+  font-family:inherit;cursor:pointer}
+.tf-tag.lista:hover{border-color:var(--vm);color:var(--vm)}
+.tf-tag.lista.cheia{background:rgba(15,157,88,.12);border-color:var(--ok);color:var(--ok)}
+.tf-sub{list-style:none;margin:9px 0 1px;padding:0;display:grid;gap:5px}
+.tf-sub.fechada{display:none}
+.tf-si{display:flex;align-items:center;gap:9px;padding:7px 11px;border-radius:9px;
+  border:1px solid var(--bd);background:var(--card2);font-size:13.5px;color:var(--tx2);
+  cursor:pointer;user-select:none;transition:border-color .12s,background .12s}
+.tf-si:hover{border-color:var(--vm);background:var(--card)}
+.tf-si:active{transform:scale(.995)}
+.tf-si .box{width:17px;height:17px;flex:none;border-radius:5px;
+  border:2px solid var(--bd);display:grid;place-items:center;color:#fff}
+.tf-si.ok{opacity:.6}
+.tf-si.ok .box{background:var(--ok);border-color:var(--ok)}
+.tf-si.ok>span:nth-child(2){text-decoration:line-through}
 .tf-edit{width:100%;background:var(--card2);border:1px solid var(--vm);border-radius:7px;
   padding:6px 9px;color:var(--tx);font:14.5px/1.4 inherit}
 .tf-edit:focus{outline:none}
@@ -1132,6 +1184,23 @@ JS_TAREFAS = r"""
       podarSumidasDoArquivo();
       reconciliarComArquivo();
     }
+    aplicarSub();
+  }
+
+  /* A lista de conferencia de uma tarefa (as linhas indentadas do TAREFAS.md)
+     e sempre do ARQUIVO. O painel tica os itens, mas nao cria nem apaga item,
+     entao nao existe conflito para resolver: a cada abertura ela e recopiada
+     por cima. Corrigir "shampo" para "shampoo" no .md chega ao painel na
+     proxima carga, sem exportar nada.                                      */
+  function aplicarSub(){
+    var doArquivo={};
+    BASE.forEach(function(b){
+      if(b.sub&&b.sub.length)doArquivo[idBase(b.t)]=b.sub;
+    });
+    tarefas.forEach(function(t){
+      var s=doArquivo[t.id];
+      if(s)t.sub=s; else if(t.sub)delete t.sub;
+    });
   }
 
   /* ------------------ reconciliacao com o TAREFAS.md ---------------------
@@ -1402,9 +1471,14 @@ JS_TAREFAS = r"""
       var prox=REP.proxima(t.data||iso(hoje()),rep);
       if(prox){
         t.data=iso(prox);t.mod=new Date().toISOString();t.sinc=false;
+        /* a lista de conferencia e da vez, nao da tarefa: ao rolar para a
+           semana seguinte ela volta zerada, senao voltaria toda ticada e nao
+           serviria para nada */
+        var zerados=subZera(t);
         salvar();
         if(window.SUPA&&SUPA.ativo())SUPA.enviar(t);
-        avisar('Feita desta vez. Volta ' + quandoVolta(prox) + '.');
+        avisar('Feita desta vez. Volta '+quandoVolta(prox)+
+               (zerados?', com a lista zerada.':'.'));
         return;
       }
     }
@@ -1583,6 +1657,121 @@ JS_TAREFAS = r"""
     return g;
   }
 
+  /* =============== lista de conferencia dentro de uma tarefa ==============
+     "Arrumar a mala" e UMA tarefa, ticada uma vez por semana, mas por dentro
+     ela e uma lista: shampoo e um clique, energetico e outro. Os itens vem
+     indentados no TAREFAS.md e o painel os mostra dentro da propria tarefa.
+
+     Onde mora o tique de cada item: NAO na tarefa. Ele vai para o mesmo lugar
+     das caixinhas das abas Compras e Mala (window.TICADOS, tabela
+     cao_ticados), com a chave 'tf/<id da tarefa>/<chave do item>'. Dois
+     motivos, e o primeiro nao tem volta:
+
+       1. o id de uma tarefa nascida no arquivo e derivado do TEXTO dela
+          (idBase). Se o tique morasse no texto, cada clique geraria um id
+          novo e o arquivo, a nuvem e o painel parariam de se reconhecer -
+          exatamente a duplicata em massa de 12/08/2026;
+       2. de graca vem a sincronizacao entre aparelhos, que a tabela de
+          ticados ja faz desde 21/08/2026.
+
+     No arquivo o item fica sempre "- [ ]": ali a lista e o molde, nao o
+     diario de bordo. Quem guarda o que ja foi separado nesta semana e o
+     navegador mais a nuvem, e a tarefa que se repete zera a propria lista
+     quando rola para a semana seguinte.                                   */
+  function subChave(t,s){return 'tf/'+t.id+'/'+s.k}
+  function subMapa(){
+    return (window.TICADOS&&TICADOS.todos&&TICADOS.todos())||{};
+  }
+  function subFeito(t,s){
+    var v=subMapa()[subChave(t,s)];
+    return !!(v&&v.n);
+  }
+  function subContagem(t){
+    var m=subMapa(), n=0;
+    (t.sub||[]).forEach(function(s){
+      var v=m[subChave(t,s)];
+      if(v&&v.n)n++;
+    });
+    return n;
+  }
+  function subPoe(t,s,valor){
+    if(!window.TICADOS)return;
+    var m=TICADOS.todos();
+    /* grava ate o zero, em vez de apagar a chave: sem a linha, a nuvem
+       devolveria na proxima sincronizacao o que voce acabou de desmarcar. */
+    m[subChave(t,s)]={n:valor?1:0,m:new Date().toISOString(),s:false};
+    TICADOS.salvar();
+    if(window.TICADOS_SYNC)TICADOS_SYNC();
+  }
+  function subZera(t){
+    if(!window.TICADOS||!(t.sub&&t.sub.length))return 0;
+    var m=TICADOS.todos(), agora=new Date().toISOString(), n=0;
+    t.sub.forEach(function(s){
+      var k=subChave(t,s);
+      if(m[k]&&m[k].n){m[k]={n:0,m:agora,s:false};n++}
+    });
+    if(n){TICADOS.salvar();if(window.TICADOS_SYNC)TICADOS_SYNC()}
+    return n;
+  }
+
+  /* Aberta ou fechada. Uma lista de 15 itens aberta em toda tarefa viraria
+     uma parede; fechada em toda tarefa esconderia justamente o que se veio
+     fazer. Entao o padrao e abrir a lista do que e para hoje ou esta
+     atrasado, e o clique na etiqueta manda mais que o padrao.             */
+  var K_ABERTAS='cao-tf-abertas';
+  var abertas=lerLS(K_ABERTAS,{})||{};
+  function subAberta(t){
+    if(Object.prototype.hasOwnProperty.call(abertas,t.id))return !!abertas[t.id];
+    if(!t.data||t.feito)return false;
+    return dias(hoje(),deIso(t.data))<=0;
+  }
+  function subAlternaAberta(t){
+    abertas[t.id]=!subAberta(t);
+    gravarLS(K_ABERTAS,abertas);
+  }
+
+  function subHTML(t){
+    var sub=t.sub||[];
+    if(!sub.length)return '';
+    var m=subMapa();
+    return '<ul class="tf-sub'+(subAberta(t)?'':' fechada')+'">'+
+      sub.map(function(s,i){
+        var v=m[subChave(t,s)], ok=!!(v&&v.n);
+        return '<li class="tf-si'+(ok?' ok':'')+'" data-si="'+i+'">'+
+               '<span class="box">'+(ok?ICO.check:'')+'</span>'+
+               '<span>'+esc(s.t)+'</span></li>';
+      }).join('')+'</ul>';
+  }
+
+  function alternarSub(id,i,no){
+    var t=tarefas.filter(function(x){return x.id===id})[0];
+    if(!t||!t.sub||!t.sub[i])return;
+    var s=t.sub[i], marca=!subFeito(t,s);
+    subPoe(t,s,marca);
+    /* pinta so a linha clicada e o contador, em vez de redesenhar a aba
+       inteira. A lista tem 15 itens e sao 15 cliques seguidos: refazer a
+       lista a cada um fazia a tela piscar e perdia a rolagem no celular. */
+    if(no){
+      no.classList.toggle('ok',marca);
+      no.firstChild.innerHTML=marca?ICO.check:'';
+      var cx=no.closest('.tf-item'), et=cx&&cx.querySelector('.tf-tag.lista');
+      if(et){
+        var q=subContagem(t);
+        et.innerHTML=(ICO.lista||'')+q+' de '+t.sub.length;
+        et.classList.toggle('cheia',q>=t.sub.length);
+      }
+      return;
+    }
+    desenhar();
+  }
+
+  function alternarLista(id){
+    var t=tarefas.filter(function(x){return x.id===id})[0];
+    if(!t)return;
+    subAlternaAberta(t);
+    desenhar();
+  }
+
   function itemHTML(t){
     var h=hoje(), d=t.data?deIso(t.data):null, n=d?dias(h,d):null;
     var cls='tf-item'+(t.feito?' feita':'')+
@@ -1600,6 +1789,12 @@ JS_TAREFAS = r"""
             'title="Se repete. Clique para deixar de repetir">'+
             (ICO.repete||'')+REP.rotulo(t.data,rep)+'</button>';
     }
+    if(t.sub&&t.sub.length){
+      var q=subContagem(t), aberta=subAberta(t);
+      meta+='<button class="tf-tag lista'+(q>=t.sub.length?' cheia':'')+'" '+
+            'data-ac="lista" title="'+(aberta?'Fechar a lista':'Abrir a lista')+
+            '">'+(ICO.lista||'')+q+' de '+t.sub.length+'</button>';
+    }
     if(t.cat&&CATS[t.cat]){
       meta+='<span class="tf-tag cat" style="background:'+CATS[t.cat].cor+'">'+
             CATS[t.cat].rot+'</span>';
@@ -1611,7 +1806,7 @@ JS_TAREFAS = r"""
       '<button class="tf-check" data-ac="ok" title="'+
         (rep?'Marcar como feita desta vez':'Marcar como feita')+'">'+ICO.check+'</button>'+
       '<div class="tf-corpo"><div class="tf-txt">'+esc(REP.sem(t.txt))+'</div>'+
-      (meta?'<div class="tf-meta">'+meta+'</div>':'')+'</div>'+
+      (meta?'<div class="tf-meta">'+meta+'</div>':'')+subHTML(t)+'</div>'+
       '<div class="tf-acoes">'+
         '<button class="tf-ac" data-ac="dt" title="'+
           (d?'Mudar a data':'Marcar uma data')+'">'+ICO.calbt+'</button>'+
@@ -1723,6 +1918,11 @@ JS_TAREFAS = r"""
            String(d.getMonth()+1).padStart(2,'0')+'/'+d.getFullYear()+']';
       }
       if(t.cat)s+=' #'+t.cat;
+      /* A lista de conferencia volta indentada e SEMPRE em aberto. No arquivo
+         ela e o molde da semana; o que ja foi separado esta gravado na nuvem
+         de ticados, e nao aqui. Sem esta parte, colar o exportado por cima do
+         TAREFAS.md apagaria a lista inteira em silencio.                   */
+      (t.sub||[]).forEach(function(x){s+='\n  - [ ] '+x.t});
       return s;
     };
     /* A secao (###) de cada tarefa vem do arquivo, procurada pelo texto. Sem
@@ -1835,6 +2035,13 @@ JS_TAREFAS = r"""
   });
 
   lista.onclick=function(e){
+    /* item da lista de conferencia: a linha inteira e o alvo do clique, do
+       jeito que ja funciona nas abas Compras e Mala */
+    var si=e.target.closest('.tf-si');
+    if(si){
+      alternarSub(si.closest('.tf-item').dataset.id,parseInt(si.dataset.si,10),si);
+      return;
+    }
     var b=e.target.closest('[data-ac]');
     if(!b)return;
     var id=b.closest('.tf-item').dataset.id;
@@ -1843,6 +2050,7 @@ JS_TAREFAS = r"""
     else if(b.dataset.ac==='ed')editar(id);
     else if(b.dataset.ac==='dt')editarData(id);
     else if(b.dataset.ac==='rep')alternarRep(id);
+    else if(b.dataset.ac==='lista')alternarLista(id);
   };
 
   carregar();
@@ -1852,7 +2060,11 @@ JS_TAREFAS = r"""
   /* exposto para a camada de sincronizacao */
   window.TAREFAS={
     todas:function(){return tarefas},
-    definir:function(novas){tarefas=novas;salvar()},
+    /* aplicarSub de novo porque a tarefa que desce da nuvem vem sem lista: a
+       coluna `txt` do Supabase nao carrega os itens, quem os tem e o
+       TAREFAS.md. Sem esta linha, sincronizar fazia a lista sumir da tela
+       ate a proxima vez que a pagina fosse aberta. */
+    definir:function(novas){tarefas=novas;aplicarSub();salvar()},
     redesenhar:desenhar,
     salvar:function(){gravarLS(CHAVE,tarefas)},
     modal:{abrir:abrirModal,fechar:fecharModal}
@@ -2554,6 +2766,11 @@ window.REP=(function(){
       [].forEach.call(itens,function(li){mkPinta(li,mkTenho(li))});
       mkConta(sec);mkArruma(sec);
     });
+    /* a lista de conferencia dentro de uma tarefa (aba Tarefas) guarda o
+       tique aqui tambem, com chave 'tf/...', mas quem a desenha e o app de
+       tarefas. Sem este aviso, o item marcado no celular so apareceria no PC
+       depois de recarregar a pagina. */
+    if(window.TAREFAS&&TAREFAS.redesenhar)TAREFAS.redesenhar();
   }
   /* estado da sincronizacao mostrado na barra de cada aba de lista.
      Quem chama e o bloco do Supabase; sem ele fica no texto inicial.       */
@@ -3373,6 +3590,7 @@ window.ARQ_MOD=%(arqmod)s;
             "vazio": svg("vazio", 46),
             "copiar": svg("copiar", 15),
             "repete": svg("repete", 12),
+            "lista": svg("lista", 12),
         }),
     }
 

@@ -437,12 +437,20 @@ def extrai_tarefas(texto):
     tarefas = []
     validas = {c[0] for c in CATEGORIAS}
     secao = ""
+    corrente = None            # a tarefa que esta recebendo itens indentados
 
     for linha in texto.splitlines():
         # "## Pendentes"/"## Concluidas" zeram a secao; "###" em diante define
         h = re.match(r"^(#{2,6})\s+(.*)$", linha)
         if h:
             secao = h.group(2).strip() if len(h.group(1)) >= 3 else ""
+            # Titulo novo zera a tarefa corrente: item indentado logo abaixo de
+            # um "###" nao pertence a ultima tarefa da secao ANTERIOR. Sem esta
+            # linha ele grudava nela, e a reescrita automatica levava o item
+            # junto, para outra secao do arquivo. Robo que muda linha de lugar
+            # sem avisar e a mesma classe de erro que apagou as notas de secao
+            # em 20/08/2026. Achado na auditoria de 23/08/2026.
+            corrente = None
             continue
 
         m = re.match(r"^(\s*)[-*]\s+\[([ xX])\]\s+(.*)$", linha)
@@ -453,10 +461,10 @@ def extrai_tarefas(texto):
         corpo = m.group(3).strip()
 
         # item da lista de conferencia da tarefa anterior
-        if recuo >= 2 and tarefas:
+        if recuo >= 2 and corrente is not None:
             item = _texto_puro(corpo)
             if item:
-                tarefas[-1].setdefault("sub", []).append(
+                corrente.setdefault("sub", []).append(
                     {"t": item, "k": chave_item(item)})
             continue
 
@@ -481,7 +489,8 @@ def extrai_tarefas(texto):
         # tira a sintaxe de markdown: o texto da tarefa e exibido puro
         corpo = _texto_puro(corpo)
         if corpo:
-            tarefas.append({"t": corpo, "d": iso, "c": cat, "f": feito, "s": secao})
+            corrente = {"t": corpo, "d": iso, "c": cat, "f": feito, "s": secao}
+            tarefas.append(corrente)
 
     return tarefas
 
@@ -2256,6 +2265,7 @@ JS_SUPABASE = r"""
     if(!ativo()||sincronizando)return Promise.resolve();
     sincronizando=true;
     ultimaSinc=Date.now();
+    var ticOk=true;
     estado('','Salvando...');
     return garantirSessao().then(function(){
       /* 1. apaga o que ficou pendente de exclusao */
@@ -2289,21 +2299,36 @@ JS_SUPABASE = r"""
       /* 3. sobe o que ainda nao esta la */
       var subir=juntas.filter(function(t){return !t.sinc}).map(paraLinha);
       if(!subir.length)return null;
+      /* Guarda QUEM entrou neste lote. Antes, ao terminar o POST, o codigo
+         marcava sinc=true em TODAS as tarefas. Parece detalhe e nao e: sinc
+         false e a fila de reenvio. Se uma tarefa fosse ticada durante a
+         requisicao, ou se o envio individual dela tivesse acabado de falhar,
+         ela era marcada como sincronizada sem nunca ter subido - e, sem
+         sinc=false, ninguem tentava de novo. A alteracao morria calada no
+         aparelho. (23/08/2026)                                             */
+      var noLote={};
+      subir.forEach(function(l){noLote[l.id]=1});
       return api('/rest/v1/cao_tarefas',{
         method:'POST',
         headers:{'Prefer':'resolution=merge-duplicates,return=minimal'},
         body:JSON.stringify(subir)
       }).then(function(){
-        window.TAREFAS.todas().forEach(function(t){t.sinc=true});
+        window.TAREFAS.todas().forEach(function(t){if(noLote[t.id])t.sinc=true});
         window.TAREFAS.salvar();
       });
     }).then(function(){
       /* 4. e, na mesma passada, os itens ticados das listas */
-      return sincTicados().catch(function(){});
+      return sincTicados().catch(function(){ticOk=false});
     }).then(function(){
       sincronizando=false;
       window.TAREFAS.redesenhar();
       pintaConta();
+      /* pintaConta pinta as duas linhas de verde so porque a sessao esta viva.
+         Se as MARCACOES nao subiram, verde e mentira - e e essa linha que ele
+         olha antes de desligar o PC ("ticou os 15 itens da mala, deu Salvo na
+         nuvem, pode desligar"). Entao o estado de falha volta por cima.
+         Achado da auditoria de 23/08/2026.                                 */
+      if(!ticOk)tic('off','Sem conexão','Sobe sozinho quando a rede voltar');
     }).catch(function(e){
       sincronizando=false;
       if(e&&(e.status===401||e.status===403)){

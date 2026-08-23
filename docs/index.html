@@ -9,7 +9,7 @@
 <!-- o painel e um arquivo unico que muda a cada geracao; sem isto o navegador
      serve a versao antiga do cache e correcoes nao chegam ate o usuario -->
 <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
-<meta name="gerado-em" content="71a0b1c49bd7660d">
+<meta name="gerado-em" content="1d05b199b1a64f58">
 <title>Central do CAO</title>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23c8102e'/%3E%3Ctext x='16' y='22' font-size='15' font-family='Arial' font-weight='bold' fill='white' text-anchor='middle'%3ECAO%3C/text%3E%3C/svg%3E">
 <style>
@@ -510,6 +510,17 @@ mark{background:rgba(232,161,58,.35);color:inherit;border-radius:3px;padding:0 2
   </div>
 </header>
 <main><section class="aba" id="ab-painel" role="tabpanel" data-mod="2026-08-23T12:51:57.000Z"><section class="guia"><div class="guia-topo"><div><p class="guia-ola" id="guia-ola">Central do CAO</p><h2 class="guia-dia" id="guia-dia">Carregando o dia...</h2><p class="guia-fase" id="guia-fase"></p></div><div class="guia-conta" id="guia-conta"></div></div><div class="guia-aula" id="guia-aula"></div><div class="guia-corpo" id="guia-corpo"></div></section><div class="grade"><div class="kpi dest"><div class="rot" id="kpi-curso-rot">Curso</div><div class="val" id="kpi-curso-val">...</div><div class="sub" id="kpi-curso-sub">CAO-II/26</div><div class="barra"><i id="kpi-curso-barra" style="width:0%"></i></div></div><div class="kpi"><div class="rot">Tarefas pendentes</div><div class="val" id="kpi-tar-val">30</div><div class="sub" id="kpi-tar-sub">29 já concluídas</div></div><div class="kpi lista-kpi" data-aba="ab-compras" data-rot="Compras"><div class="rot">Compras</div><div class="val">...</div><div class="sub">antes de viajar</div><div class="barra"><i style="width:0%"></i></div></div><div class="kpi lista-kpi" data-aba="ab-mala" data-rot="Mala"><div class="rot">Mala</div><div class="val">...</div><div class="sub">itens separados</div><div class="barra"><i style="width:0%"></i></div></div></div><div class="card"><blockquote data-b>Painel principal. Ler isso primeiro em qualquer sessão nova ("onde paramos?"). Atualizado em: 23/08/2026</blockquote>
+<h2 data-b>23/08/2026: auditoria do sistema — quatro defeitos achados e corrigidos</h2>
+<p data-b>Pedido dele: <em>"vamos fazer uma auditoria top, monte um exército, vasculhe código a código, linha a linha"</em>. O exército foi montado (7 frentes em paralelo, cada achado julgado por um adversário) e</p>
+<p data-b><strong>morreu antes de entregar</strong>: os sete agentes bateram no limite de sessão da conta. A auditoria foi refeita à mão, com teste executável para cada suspeita — nada aqui é opinião, tudo foi reproduzido.</p>
+<p data-b><strong>1. A linha "Salvo na nuvem" podia mentir. (o mais grave)</strong> Quando as TAREFAS subiam mas as MARCAÇÕES falhavam, o erro era engolido e o <code>pintaConta()</code> pintava a linha de verde assim mesmo. Grave porque essa linha virou, em 23/08, a confirmação que ele olha antes de desligar o PC: ela diria "salvo" com os 15 itens da mala ainda presos no navegador. Agora o estado de falha volta por cima do verde. Reproduzido derrubando só o POST das marcações: antes dizia "Salvo na nuvem", agora diz "Sem conexão".</p>
+<p data-b><strong>2. O lote marcava como sincronizado até o que não subiu.</strong> Ao terminar o POST em lote, o código fazia <code>sinc=true</code> em TODAS as tarefas. Como <code>sinc=false</code> É a fila de reenvio, uma tarefa ticada DURANTE a requisição (ou cujo envio individual tinha acabado de falhar) era marcada como salva sem nunca ter subido, e ninguém tentava de novo: a alteração morria calada no aparelho. Agora só quem entrou no lote é marcado. Reproduzido com a corrida exata: lote de 3 em voo, envio individual falhando, tarefa ticada no meio — antes era dada como salva, agora fica na fila.</p>
+<p data-b><strong>3. Emoji no texto gerava dois ids diferentes.</strong> O <code>charCodeAt()</code> do JS anda em unidades UTF-16 e o <code>ord()</code> do Python devolve o code point inteiro: para emoji, os dois divergiam, e a mesma linha do <code>TAREFAS.md</code> ganhava um id no painel e outro na Action. A tarefa aparecia duplicada, o painel podava a cópia "que sumiu do arquivo" e mandava a nuvem apagar, e só no ciclo seguinte o casamento por texto reconciliava. Comparados os dois algoritmos com <strong>66 textos</strong> (todos os reais do arquivo mais 24 adversariais): 65 batiam, o do emoji não. Corrigido no Python; agora batem 66 de 66.</p>
+<p data-b><strong>4. Item indentado migrava de seção na reescrita automática.</strong> Item de lista de conferência escrito logo abaixo de um <code>###</code> grudava na última tarefa da seção ANTERIOR, e a Action, ao remontar o arquivo, levava a linha junto — para outra seção. Mesma classe de erro que apagou as notas de seção em 20/08: robô mudando conteúdo de lugar sem avisar. Corrigido: título novo zera a tarefa corrente.</p>
+<p data-b><strong>O que foi conferido e estava certo:</strong> o <code>TAREFAS.md</code> remonta byte a byte; as 93 chaves de caixinha batem entre robô e painel; texto com <code>&lt;img onerror=...&gt;</code>, <code>&amp;</code> e aspas é escapado e não vira HTML na tela; nenhum dos 152 itens ticáveis dos <code>.md</code> tem texto repetido (texto repetido compartilharia o tique); as chaves <code>tf/</code> da lista de conferência sobrevivem à reconciliação e ao "Limpar marcações".</p>
+<p data-b><strong>Três coisas ficam registradas como limitação conhecida, sem conserto por enquanto:</strong> indentar um item com UM espaço em vez de dois faz dele uma tarefa solta (o limiar de 2 é o do markdown, e é o lado seguro: o contrário faria uma tarefa de verdade sumir para dentro de uma lista); dois itens de mesmo texto na mesma lista compartilhariam o tique (hoje não existe nenhum); e apagar uma tarefa deixa as chaves <code>tf/</code> órfãs na nuvem — recriar a tarefa com o mesmo texto faz os tiques antigos voltarem.</p>
+<p data-b><strong>Um achado de conteúdo, e este é decisão sua:</strong> o <code>TAREFAS.md</code> manda procurar o Cel Eglis em</p>
+<p data-b><strong>24/08 (segunda)</strong>, mas o <code>PRAZOS.md</code>, o <code>STATUS.md</code> e o <code>GRADE.md</code> dizem que a janela é <strong>25/08 (terça), bloco 4</strong> — é o único horário em que ele dá aula naquela semana. A remarcação em massa de 10 tarefas para segunda levou junto uma tarefa cuja data não era arbitrária. Do jeito que está, o guia do dia vai mandar procurar o Cel num dia em que ele não está lá.</p>
 <h2 data-b>23/08/2026: duas frestas fechadas na sincronização</h2>
 <p data-b>Pergunta do Josemar, depois que a tarja saiu: <em>"se eu clicar numa tarefa e desligar o PC, ela vai estar sincronizada quando eu religar em outro aparelho?"</em>. Fui ler o caminho do clique em vez de responder de memória, e a resposta é sim — mas apareceram duas frestas, as duas fechadas agora.</p>
 <p data-b><strong>Os números, medidos com um Supabase de mentira levantado só para isso:</strong> a tarefa sobe <strong>10 ms</strong> depois do clique, sem fila. Os itens da lista de conferência esperam <strong>1,23 s</strong>, que é a pausa herdada das caixinhas: são 15 cliques em sequência, e ele aguarda o dedo parar para mandar tudo de uma vez em vez de disparar 15 requisições.</p>
@@ -8016,6 +8027,7 @@ window.REP=(function(){
     if(!ativo()||sincronizando)return Promise.resolve();
     sincronizando=true;
     ultimaSinc=Date.now();
+    var ticOk=true;
     estado('','Salvando...');
     return garantirSessao().then(function(){
       /* 1. apaga o que ficou pendente de exclusao */
@@ -8049,21 +8061,36 @@ window.REP=(function(){
       /* 3. sobe o que ainda nao esta la */
       var subir=juntas.filter(function(t){return !t.sinc}).map(paraLinha);
       if(!subir.length)return null;
+      /* Guarda QUEM entrou neste lote. Antes, ao terminar o POST, o codigo
+         marcava sinc=true em TODAS as tarefas. Parece detalhe e nao e: sinc
+         false e a fila de reenvio. Se uma tarefa fosse ticada durante a
+         requisicao, ou se o envio individual dela tivesse acabado de falhar,
+         ela era marcada como sincronizada sem nunca ter subido - e, sem
+         sinc=false, ninguem tentava de novo. A alteracao morria calada no
+         aparelho. (23/08/2026)                                             */
+      var noLote={};
+      subir.forEach(function(l){noLote[l.id]=1});
       return api('/rest/v1/cao_tarefas',{
         method:'POST',
         headers:{'Prefer':'resolution=merge-duplicates,return=minimal'},
         body:JSON.stringify(subir)
       }).then(function(){
-        window.TAREFAS.todas().forEach(function(t){t.sinc=true});
+        window.TAREFAS.todas().forEach(function(t){if(noLote[t.id])t.sinc=true});
         window.TAREFAS.salvar();
       });
     }).then(function(){
       /* 4. e, na mesma passada, os itens ticados das listas */
-      return sincTicados().catch(function(){});
+      return sincTicados().catch(function(){ticOk=false});
     }).then(function(){
       sincronizando=false;
       window.TAREFAS.redesenhar();
       pintaConta();
+      /* pintaConta pinta as duas linhas de verde so porque a sessao esta viva.
+         Se as MARCACOES nao subiram, verde e mentira - e e essa linha que ele
+         olha antes de desligar o PC ("ticou os 15 itens da mala, deu Salvo na
+         nuvem, pode desligar"). Entao o estado de falha volta por cima.
+         Achado da auditoria de 23/08/2026.                                 */
+      if(!ticOk)tic('off','Sem conexão','Sobe sozinho quando a rede voltar');
     }).catch(function(e){
       sincronizando=false;
       if(e&&(e.status===401||e.status===403)){

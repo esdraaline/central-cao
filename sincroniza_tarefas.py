@@ -75,11 +75,36 @@ def id_base(texto):
     reconhecer e tudo vira duplicata, entao tem teste para ele.
     """
     h = 0
-    for ch in norm(texto):
-        h = (h * 31 + ord(ch)) & 0xFFFFFFFF
+    for cu in _unidades_utf16(norm(texto)):
+        h = (h * 31 + cu) & 0xFFFFFFFF
     if h >= 0x80000000:            # volta para inteiro com sinal, como o `|0`
         h -= 0x100000000
     return "md" + _base36(abs(h))
+
+
+def _unidades_utf16(s):
+    """Percorre a string como o JavaScript percorre: em unidades UTF-16.
+
+    O charCodeAt() do JS anda de 16 em 16 bits, entao um emoji (fora do plano
+    basico) conta como DUAS voltas, com os dois valores do par surrogado. O
+    ord() do Python devolve o code point inteiro, numa volta so. Para todo texto
+    normal os dois caminhos dao no mesmo; num texto com emoji eles divergiam, e
+    a mesma linha do TAREFAS.md ganhava um id aqui e outro no painel.
+
+    A consequencia media era feia: a tarefa aparecia duplicada na tela, o painel
+    podava a copia "que sumiu do arquivo" e mandava a nuvem apagar, e so no
+    ciclo seguinte o casamento por texto (o apelido, em juntar()) reconciliava.
+    Encontrado na auditoria de 23/08/2026, comparando os dois algoritmos com 66
+    textos - 65 batiam, o do emoji nao.
+    """
+    for ch in s:
+        o = ord(ch)
+        if o > 0xFFFF:                     # par surrogado, como no UTF-16
+            o -= 0x10000
+            yield 0xD800 + (o >> 10)
+            yield 0xDC00 + (o & 0x3FF)
+        else:
+            yield o
 
 
 def _base36(n):

@@ -3,6 +3,57 @@
 > Painel principal. Ler isso primeiro em qualquer sessão nova ("onde paramos?").
 > Atualizado em: 23/08/2026
 
+## 23/08/2026: auditoria do sistema — quatro defeitos achados e corrigidos
+
+Pedido dele: *"vamos fazer uma auditoria top, monte um exército, vasculhe código a código, linha a
+linha"*. O exército foi montado (7 frentes em paralelo, cada achado julgado por um adversário) e
+**morreu antes de entregar**: os sete agentes bateram no limite de sessão da conta. A auditoria foi
+refeita à mão, com teste executável para cada suspeita — nada aqui é opinião, tudo foi reproduzido.
+
+**1. A linha "Salvo na nuvem" podia mentir. (o mais grave)** Quando as TAREFAS subiam mas as
+MARCAÇÕES falhavam, o erro era engolido e o `pintaConta()` pintava a linha de verde assim mesmo.
+Grave porque essa linha virou, em 23/08, a confirmação que ele olha antes de desligar o PC: ela
+diria "salvo" com os 15 itens da mala ainda presos no navegador. Agora o estado de falha volta por
+cima do verde. Reproduzido derrubando só o POST das marcações: antes dizia "Salvo na nuvem", agora
+diz "Sem conexão".
+
+**2. O lote marcava como sincronizado até o que não subiu.** Ao terminar o POST em lote, o código
+fazia `sinc=true` em TODAS as tarefas. Como `sinc=false` É a fila de reenvio, uma tarefa ticada
+DURANTE a requisição (ou cujo envio individual tinha acabado de falhar) era marcada como salva sem
+nunca ter subido, e ninguém tentava de novo: a alteração morria calada no aparelho. Agora só quem
+entrou no lote é marcado. Reproduzido com a corrida exata: lote de 3 em voo, envio individual
+falhando, tarefa ticada no meio — antes era dada como salva, agora fica na fila.
+
+**3. Emoji no texto gerava dois ids diferentes.** O `charCodeAt()` do JS anda em unidades UTF-16 e
+o `ord()` do Python devolve o code point inteiro: para emoji, os dois divergiam, e a mesma linha do
+`TAREFAS.md` ganhava um id no painel e outro na Action. A tarefa aparecia duplicada, o painel podava
+a cópia "que sumiu do arquivo" e mandava a nuvem apagar, e só no ciclo seguinte o casamento por
+texto reconciliava. Comparados os dois algoritmos com **66 textos** (todos os reais do arquivo mais
+24 adversariais): 65 batiam, o do emoji não. Corrigido no Python; agora batem 66 de 66.
+
+**4. Item indentado migrava de seção na reescrita automática.** Item de lista de conferência escrito
+logo abaixo de um `###` grudava na última tarefa da seção ANTERIOR, e a Action, ao remontar o
+arquivo, levava a linha junto — para outra seção. Mesma classe de erro que apagou as notas de seção
+em 20/08: robô mudando conteúdo de lugar sem avisar. Corrigido: título novo zera a tarefa corrente.
+
+**O que foi conferido e estava certo:** o `TAREFAS.md` remonta byte a byte; as 93 chaves de caixinha
+batem entre robô e painel; texto com `<img onerror=...>`, `&` e aspas é escapado e não vira HTML na
+tela; nenhum dos 152 itens ticáveis dos `.md` tem texto repetido (texto repetido compartilharia o
+tique); as chaves `tf/` da lista de conferência sobrevivem à reconciliação e ao "Limpar marcações".
+
+**Três coisas ficam registradas como limitação conhecida, sem conserto por enquanto:** indentar um
+item com UM espaço em vez de dois faz dele uma tarefa solta (o limiar de 2 é o do markdown, e é o
+lado seguro: o contrário faria uma tarefa de verdade sumir para dentro de uma lista); dois itens de
+mesmo texto na mesma lista compartilhariam o tique (hoje não existe nenhum); e apagar uma tarefa
+deixa as chaves `tf/` órfãs na nuvem — recriar a tarefa com o mesmo texto faz os tiques antigos
+voltarem.
+
+**Um achado de conteúdo, e este é decisão sua:** o `TAREFAS.md` manda procurar o Cel Eglis em
+**24/08 (segunda)**, mas o `PRAZOS.md`, o `STATUS.md` e o `GRADE.md` dizem que a janela é **25/08
+(terça), bloco 4** — é o único horário em que ele dá aula naquela semana. A remarcação em massa de
+10 tarefas para segunda levou junto uma tarefa cuja data não era arbitrária. Do jeito que está, o
+guia do dia vai mandar procurar o Cel num dia em que ele não está lá.
+
 ## 23/08/2026: duas frestas fechadas na sincronização
 
 Pergunta do Josemar, depois que a tarja saiu: *"se eu clicar numa tarefa e desligar o PC, ela vai

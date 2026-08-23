@@ -15,11 +15,11 @@
 ## Pendentes
 
 ### Segunda, 17/08 (é o dia de resolver o fardamento)
-- [ ] Decidir opção de desconto SIPA: Alojamento (R$ 30,35) ou Vestiário (R$ 21,52), e cessar o equivalente na OPM de origem [18/08/2026] #admin
-- [ ] Comprar a camisa social cinza-claro do S-1 e a boina de reposição, que faltaram na ida à ConfecBell [19/08/2026] #pessoal
-- [ ] Mandar o QTS assim que sair, para eu lançar na aba Grade e o painel montar o dia sozinho [19/08/2026] #curso
-- [ ] Experimentar a farda social e ver os ajustes de caimento, depois de comprar a camisa social [20/08/2026] #pessoal
-- [ ] Procurar o Cap Gobbo (Seção de Pesquisa) sobre a transformação do PP em dissertação [21/08/2026] #dissertacao
+- [ ] Decidir opção de desconto SIPA: Alojamento (R$ 30,35) ou Vestiário (R$ 21,52), e cessar o equivalente na OPM de origem [24/08/2026] #admin
+- [ ] Comprar a camisa social cinza-claro do S-1 e a boina de reposição, que faltaram na ida à ConfecBell [24/08/2026] #pessoal
+- [ ] Mandar o QTS assim que sair, para eu lançar na aba Grade e o painel montar o dia sozinho [24/08/2026] #curso
+- [ ] Experimentar a farda social e ver os ajustes de caimento, depois de comprar a camisa social [24/08/2026] #pessoal
+- [ ] Procurar o Cap Gobbo (Seção de Pesquisa) sobre a transformação do PP em dissertação [24/08/2026] #dissertacao
 
 ### Rodízio da mala (toda semana, ver MALA.md)
 > As duas se repetem sozinhas: ticadas, não vão para Concluídas, voltam com a data da semana seguinte.
@@ -27,13 +27,13 @@
 - [ ] Quinta de manhã, separar para levar para casa: toalha de banho, fronha e roupa suja @semanal [27/08/2026] #pessoal
 
 ### Orientador da dissertação — MISSÃO URGENTE
-- [ ] Falar com o Cap Simões e pegar o contato do Cel Eglis [19/08/2026] #dissertacao
-- [ ] Perguntar ao Cap Gobbo as REGRAS da orientação: o orientador precisa ser instrutor do curso? Quantos orientandos cada um aceita? Há prazo para escolher? Como é o pedido formal? [21/08/2026] #dissertacao
-- [ ] Procurar o Cel Eglis e sondar a orientação, levando o PP já aprovado [21/08/2026] #dissertacao
+- [ ] Falar com o Cap Simões e pegar o contato do Cel Eglis [24/08/2026] #dissertacao
+- [ ] Perguntar ao Cap Gobbo as REGRAS da orientação: o orientador precisa ser instrutor do curso? Quantos orientandos cada um aceita? Há prazo para escolher? Como é o pedido formal? [24/08/2026] #dissertacao
+- [ ] Procurar o Cel Eglis e sondar a orientação, levando o PP já aprovado [24/08/2026] #dissertacao
 - [ ] Montar o rol completo de disciplinas e instrutores conforme os QTS forem saindo, para ter o universo de candidatos [28/08/2026] #dissertacao
 
 ### Segunda semana (viagem em 23/08)
-- [ ] Decidir e comprar o energético zero: leva de casa ou compra perto do CAES na chegada (whey, creatina e coqueteleira já resolvidos) [22/08/2026] #pessoal
+- [ ] Decidir e comprar o energético zero: leva de casa ou compra perto do CAES na chegada (whey, creatina e coqueteleira já resolvidos) [23/08/2026] #pessoal
 - [ ] Levar na viagem: 5 cuecas, 5 pares de meia social preta, 3 pares de meia branca, 2 camisetas de serviço e 2 pijamas lavados, 2 toalhas de banho e 1 fronha, mais a carga da copa (whey, creatina, energético zero, Pepsi Black, lanches, marmitas prontas, porta-sabonete e shampoo). B-1 e EPI não vão (decisão de 20/08) [23/08/2026] #pessoal
 - [ ] Perguntar na Coordenação (Seç Avaliação, Cap Diego) quais disciplinas têm prova e quais têm trabalho, e se existe plano de disciplina com carga horária. É o que falta para o PRAZOS listar entrega de disciplina, porque o QTS não traz [25/08/2026] #curso
 

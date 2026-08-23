@@ -8,18 +8,15 @@
 
 ## Domingo — o que sobe
 
-- [ ] Roupa lavada: cuecas, meias, camisetas
-- [ ] Fronha limpa
-- [ ] 2 toalhas de banho, para revezar
-- [ ] Pijamas lavados
-- [ ] Whey protein
-- [ ] Creatina
-- [ ] Energético zero
-- [ ] Pepsi Black
-- [ ] Lanches para deixar na geladeira
-- [ ] Marmitas prontas, só de esquentar
-- [ ] Porta-sabonete e shampoo
-- [ ] **Janta de domingo**, não só lanche: a chegada é por volta das 22h e contar com o entorno aberto nesse horário é aposta
+**Quem tica isso é a tarefa de domingo**, na aba Tarefas: ela abre com a lista dentro, item por
+item, e volta zerada toda semana. Aqui fica só a leitura, para você conferir de longe:
+
+roupa lavada (cuecas, meias, camisetas), fronha limpa, 2 toalhas de banho para revezar, pijamas
+lavados, e a carga da copa — whey, creatina, energético zero, Pepsi Black, lanches, marmitas
+prontas, shampoo e porta-sabonete.
+
+**A janta de domingo vai junto, e não é lanche.** A chegada é por volta das 22h, e contar com o
+entorno aberto nesse horário é aposta.
 
 **Etiqueta com o nome em tudo que for para a geladeira.** São muitas pessoas dividindo as
 mesmas duas geladeiras e os dois frigobares, e marmita sem nome vira marmita de todo mundo.
@@ -27,30 +24,23 @@ mesmas duas geladeiras e os dois frigobares, e marmita sem nome vira marmita de 
 **Whey**: fracione a porção da semana num pote menor e deixe o pote grande em casa, que é caro
 em volume no porta-malas. A creatina é o oposto, o pote já é pequeno e cabe em qualquer canto.
 
-### Quanto sobe nesta viagem
+### Estoque alvo no armário
 
-Conferido por ele no armário do CAES na quinta 20/08, antes de descer. **Refaça a última coluna
-toda quinta, no mesmo inventário**: o que já está na caixa não precisa subir de novo.
+Esta é a conta permanente: quanto tem que existir no CAES. **Quinta de manhã, ao guardar a roupa
+suja, olhe o armário e veja o que ficou abaixo do alvo. A diferença é o que sobe no domingo.**
 
-| Item | Estoque alvo | Na caixa em 20/08 | Sobe em 23/08 |
-|---|---|---|---|
-| Camisa de passeio | 3 a 4 | as que ficaram, nenhuma suja | nada |
-| Camiseta de serviço | 6 | 4 | 2, as lavadas |
-| Cueca | 8 | 3 | **5** |
-| Meia social preta (P-1) | 5 pares | 0 | **5 pares** |
-| Meia preta grossa (coturno) | 1 a 2 pares | 2 | nada |
-| Meia branca (EF) | 4 pares | 1 | **3 pares** |
-| Pijama | 2 conjuntos | 0 | os 2 lavados |
-| Polo e paisana | 2 mudas | 2 polos | calça ou bermuda à paisana, se não ficou lá |
-| Toalha de banho | 2 | 0 | **2** |
-| Fronha | 1 | 0 | **1** |
-
-**Meia social é o item mais crítico da lista.** As 2 pretas que ficaram lá são grossas, de
-coturno, e o P-1 pede meia social fina os quatro dias. O estoque de meia do dia a dia está
-zerado no CAES: se esquecer os 5 pares em casa, não tem como improvisar com o que está lá.
-
-**Camiseta de serviço não tem folga.** As 4 da caixa fecham exatamente os 4 dias de aula, uma
-por dia. Com as 2 lavadas subindo, o estoque volta a 6, que é a conta boa do Art. 74.
+| Item | Estoque alvo | Observação |
+|---|---|---|
+| Camisa de passeio | 3 a 4 | roda com o P-1 |
+| Camiseta de serviço | 6 | **não tem folga**: são 4 dias de aula, uma por dia, e ela vai por baixo do P-1 e do B-1. A conta boa do Art. 74 é 6 |
+| Cueca | 8 | |
+| Meia social preta (P-1) | 5 pares | **o item mais crítico da lista.** O P-1 pede meia social fina os quatro dias, e a meia preta grossa que fica lá é de coturno, não substitui. Se esquecer em casa, não tem como improvisar |
+| Meia preta grossa (coturno) | 1 a 2 pares | só serve com o B-1 |
+| Meia branca | 4 pares | é do T-1, sobe junto com o kit de Ed. Física e só quando o QTS marcar |
+| Pijama | 2 conjuntos | |
+| Polo e paisana | 2 mudas | |
+| Toalha de banho | 2 | para revezar |
+| Fronha | 1 | |
 
 ## Quinta de manhã, antes de pegar a estrada — o que desce
 
@@ -70,10 +60,9 @@ queira lavar), o **material de limpeza** e a **coqueteleira**.
 
 Nem é estoque de armário, nem volta sujo: simplesmente acompanha ele nos dois sentidos.
 
-- **Confirmado**: fone de ouvido.
-- **A confirmar com ele**: notebook e carregador, celular e carregador, a extensão com várias
-  saídas, os 2 cadernos e a identidade funcional. Enquanto não estiver confirmado aqui, não
-  entra na lista de domingo.
+Fone de ouvido, celular e carregador. O resto do material de estudo e eletrônico **mora no
+armário** e está na conferência de reposição, mais abaixo: notebook, extensão, os 2 cadernos e a
+identidade funcional não precisam ir e voltar toda semana.
 
 ## Uniforme — o que tem que estar no armário
 
@@ -193,8 +182,9 @@ branca, calção de treinamento azul-royal, meias brancas, tênis preto.
 
 ## Já está no CAES — reponha quando acabar
 
-Isto subiu na primeira viagem e mora no armário. Não é lista de arrumar mala: é a conferência
-de quando alguma coisa acabar ou você desconfiar que faltou.
+**Isto mora no armário e não viaja.** Não é lista de arrumar mala: é a conferência de quando
+alguma coisa acabar ou você desconfiar que faltou. Tique o que já conferiu; o que estiver em
+branco é o que ainda não passou pelo olho.
 
 ### Cama — o alojamento NÃO fornece
 > **Cama de solteiro.**
@@ -253,9 +243,8 @@ anotado no celular: mesa **SEI 302090130** (detalhe em [ROTINA.md](ROTINA.md)).
 
 ## Detalhes que mudam a mala
 
-- **Vou de carona.** O porta-malas é dividido, então volume é moeda: combine antes quanto cabe. Com o colete fora, o **balde** é o item mais caro em espaço; se apertar, é o primeiro a ficar (ou leve um dobrável). A extensão, o travesseiro e o cobertor vêm logo atrás.
+- **Vou de carona.** O porta-malas é dividido, então volume é moeda: combine antes quanto cabe. O grosso já está no armário, então o que sobe é caixa de comida e sacola de roupa.
 - **Armário**: provavelmente só **1 folha de armário padrão da PM** por aluno. Leve compacto e prefira mala que caiba embaixo da cama. **Ele não vem com chave: o cadeado é seu.**
-- **Alojamento e sala já vêm identificados com o seu nome**, e abrem **a partir de sábado à tarde**.
 - **Wi-fi**: tem intranet e funcionou bem (rede WCorp).
 - **Comes e bebes da turma**: os próprios alunos se organizam para deixar o ambiente melhor — separe um trocado.
 

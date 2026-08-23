@@ -1030,14 +1030,6 @@ ul.tarefas li.parcial .mk-qtd .n{color:var(--al);font-weight:600}
 .tf-vazio p{font-size:14.5px;margin:0 0 4px;color:var(--tx2)}
 .tf-vazio small{font-size:13px}
 
-/* aviso de nao sincronizado */
-.tf-pend{display:flex;gap:11px;align-items:flex-start;background:var(--al-bg);
-  border:1px solid var(--al);border-left-width:4px;border-radius:11px;padding:13px 16px;
-  margin-bottom:15px;font-size:13.5px;color:var(--tx2)}
-.tf-pend svg{color:var(--al);flex:none;margin-top:1px}
-.tf-pend b{color:var(--tx);display:block;margin-bottom:2px}
-.tf-pend button{margin-top:8px}
-
 /* botoes gerais */
 .btn{background:var(--card);border:1px solid var(--bd);border-radius:9px;padding:8px 14px;
   font:650 13px/1 inherit;color:var(--tx2);cursor:pointer;display:inline-flex;
@@ -1596,43 +1588,29 @@ JS_TAREFAS = r"""
     });
   }
 
-  /* ---------------------- divergencia com o TAREFAS.md -------------------
-     A BASE e exatamente o que o arquivo diz hoje. Comparar contra ela e o
-     unico jeito honesto de saber se o repositorio esta velho.
-     Nao confundir com t.sinc, que e a flag do Supabase: subir para a nuvem
-     nao escreve uma linha no .md. O aviso antigo usava t.sinc e por isso
-     mentia dos dois lados (sumia ao sincronizar, ficava aceso sem login). */
-  function divergencias(){
-    var doArquivo={};
-    BASE.forEach(function(b){doArquivo[norm(b.t)]=b});
-    var d={novas:0,remarcadas:0,alteradas:0,excluidas:0,total:0}, vistos={};
-    tarefas.forEach(function(t){
-      var k=norm(t.txt); vistos[k]=1;
-      var b=doArquivo[k];
-      if(!b){d.novas++;return}
-      if((b.d||null)!==(t.data||null))d.remarcadas++;
-      else if((b.c||'')!==(t.cat||'')||!!b.f!==!!t.feito)d.alteradas++;
-    });
-    BASE.forEach(function(b){if(!vistos[norm(b.t)])d.excluidas++});
-    d.total=d.novas+d.remarcadas+d.alteradas+d.excluidas;
-    return d;
-  }
+  /* -------------- o aviso de "ainda nao foi para o TAREFAS.md" -----------
+     Removido em 23/08/2026, com a contagem de divergencias que o alimentava.
 
-  function fraseDivergencia(d){
-    if(!d.total)return '';
-    var p=[], n=function(q,um,varios){if(q)p.push(q+' '+(q===1?um:varios))};
-    n(d.novas,'nova','novas');
-    n(d.remarcadas,'remarcada','remarcadas');
-    n(d.alteradas,'alterada','alteradas');
-    n(d.excluidas,'excluída aqui','excluídas aqui');
-    /* um tipo so: frase direta. Varios: total na frente e o detalhe atras. */
-    if(p.length===1){
-      return (d.total===1?'1 tarefa ':d.total+' tarefas ')+p[0].replace(/^\d+\s/,'')+
-             (d.total===1?' ainda não foi':' ainda não foram')+' para o TAREFAS.md';
-    }
-    var lista=p.slice(0,-1).join(', ')+' e '+p[p.length-1];
-    return d.total+' mudanças ainda não foram para o TAREFAS.md: '+lista;
-  }
+     Ele nasceu em 12/08, quando levar o painel para o arquivo era trabalho do
+     Josemar: copiar do Exportar e colar no .md. Nessa epoca a pendencia era
+     dele e o aviso fazia sentido. Em 14/08 a Action passou a fechar o ciclo
+     sozinha, de hora em hora, e o aviso virou o retrato de uma fila que nao e
+     mais de ninguem: bastava ticar uma tarefa para a tarja amarela subir na
+     tela, dizendo "1 tarefa alterada ainda nao foi" e, no paragrafo seguinte,
+     "nao precisa fazer nada". Alarme que ele mesmo desmente nao e informacao,
+     e barulho, e barulho com cara de pendencia cobra quem le.
+
+     Nada foi trocado por um aviso menor de proposito. O que sobra ja diz tudo,
+     sem cobrar: a linha de estado do topo ("Salvo na nuvem", "Sem conexao",
+     "Somente neste aparelho") mostra o unico ponto onde ainda pode haver
+     alguma coisa presa neste aparelho, e o botao Exportar continua ali do lado
+     como saida de emergencia. Depois que a alteracao chega a nuvem, levar isso
+     ao arquivo e servico de robo, e robo nao precisa de tarja.
+
+     Se um dia for preciso saber se o arquivo esta velho, a conta e comparar
+     `tarefas` com a BASE (o que o TAREFAS.md dizia quando o painel foi
+     gerado) - era isso que a funcao divergencias() fazia. Fica registrado
+     aqui para nao ser reinventado do zero, nao para voltar a tela.        */
 
   /* agrupa por urgencia */
   function agrupar(){
@@ -1876,14 +1854,6 @@ JS_TAREFAS = r"""
     }
     lista.innerHTML=out;
 
-    /* o que ainda nao foi para o TAREFAS.md */
-    var dv=divergencias();
-    var cx=el('#tf-pend');
-    if(cx){
-      cx.style.display=dv.total?'flex':'none';
-      var b=el('#tf-pend-n');
-      if(b)b.textContent=fraseDivergencia(dv);
-    }
     /* badge da aba */
     var pend=tarefas.filter(function(t){return !t.feito}).length;
     var atras=g.atrasadas.length;
@@ -3293,18 +3263,6 @@ def app_tarefas():
   </div>
 </div>
 
-<div class="tf-pend" id="tf-pend" style="display:none">
-  %(alerta)s
-  <div>
-    <b id="tf-pend-n"></b>
-    Não precisa fazer nada: a sincronização roda de hora em hora e leva isso sozinha
-    para o <code>TAREFAS.md</code>. Este aviso some quando ela rodar e o painel
-    republicar. Se estiver com pressa, dá para levar na mão agora.
-    <div><button class="btn" onclick="document.getElementById('tf-exportar').click()">
-      %(baixar)s Exportar na mão</button></div>
-  </div>
-</div>
-
 <div class="tf-nova">
   <div class="tf-linha">
     <input type="text" id="tf-txt" placeholder="O que precisa ser feito? Ex.: entregar artigo sexta, ou toda quinta separar a roupa"
@@ -3348,7 +3306,6 @@ def app_tarefas():
         "cats": chips_cat,
         "mais": svg("mais", 19),
         "baixar": svg("baixar", 15),
-        "alerta": svg("alerta", 18),
         "fechar": svg("fechar", 16),
         "copiar": svg("copiar", 15),
         "users": svg("users", 15),

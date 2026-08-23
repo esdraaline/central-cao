@@ -202,25 +202,34 @@ botão **Exportar**. A mescla é por texto da tarefa, então o `.md` com a data 
 sobrescreve o que você remarcou (testado: remarcada para 19/08 com o `.md` dizendo 11/08,
 sobreviveu ao recarregamento).
 
-### O aviso de "ainda não foi para o TAREFAS.md"
-A tarja âmbar no topo da aba compara, item a item, o que está no painel com o que o
-`TAREFAS.md` diz, e conta quatro tipos: **nova**, **remarcada** (mudou a data), **alterada**
-(mudou categoria ou o feito/não feito) e **excluída aqui**. Sem divergência, ela não aparece.
+### O aviso de "ainda não foi para o TAREFAS.md" foi removido (23/08/2026)
 
-**Ela olha o arquivo, não a nuvem.** Antes essa mesma tarja contava a flag do Supabase, e
-mentia dos dois lados: sumia quando a tarefa subia para a nuvem, mesmo sem nunca ter ido para
-o `.md`, e ficava acesa para sempre em aparelho sem login. Quem informa o estado da nuvem é a
-linha de status ("Salvo na nuvem", "Sem conexão"); a tarja é só sobre o arquivo do
-repositório. Corrigido em 12/08/2026.
+Não existe mais tarja âmbar no topo da aba Tarefas, nem a contagem de divergências que a
+alimentava.
 
-**A tarja não apaga na hora, e isso é de propósito.** Ela compara com o arquivo que estava no
-repositório quando o painel foi gerado. Só some depois que o `TAREFAS.md` novo subir e o
-painel for regerado. Com a sincronização automática ligada, isso acontece sozinho em até uma
-hora.
+**Ela nasceu certa e envelheceu errada.** Em 12/08, levar o painel para o arquivo era trabalho
+do Josemar: copiar do Exportar e colar no `.md`. A pendência era dele, e a tarja era o lembrete.
+Em 14/08 a Action passou a fechar o ciclo sozinha, de hora em hora, e a tarja virou o retrato de
+uma fila que não é mais de ninguém. Bastava **ticar uma tarefa** para ela subir na tela dizendo
+*"1 tarefa alterada ainda não foi para o TAREFAS.md"* e, no parágrafo seguinte, *"não precisa
+fazer nada"*. Alarme que ele mesmo desmente não é informação, é barulho — e barulho com cara de
+pendência cobra quem lê. Foi assim que o Josemar pediu para tirar: *"odeio ele, fico angustiado
+em saber que tem pendência"*.
 
-**Limitação resolvida em 14/08/2026:** excluir no painel uma tarefa que veio do `.md` não
-grudava. Ao recarregar, ela voltava do arquivo. Agora a Action de sincronização tira a linha
-do `TAREFAS.md` na rodada seguinte, então a exclusão gruda sozinha (ver abaixo).
+**Não entrou um aviso menor no lugar, de propósito.** O que sobrou já diz tudo sem cobrar: a
+**linha de estado** do topo ("Salvo na nuvem", "Sem conexão", "Somente neste aparelho") mostra o
+único ponto onde ainda pode haver algo preso naquele aparelho, e o botão **Exportar** continua ao
+lado como saída de emergência. Depois que a alteração chega à nuvem, levá-la ao arquivo é serviço
+de robô, e robô não precisa de tarja.
+
+**Se um dia for preciso saber se o arquivo está velho**, a conta é comparar as tarefas do painel
+com a `BASE` (o que o `TAREFAS.md` dizia quando o painel foi gerado). Era isso que a função
+`divergencias()` fazia, e a explicação ficou registrada no código, para não ser reinventada do
+zero — não para voltar à tela.
+
+**Uma limitação daquela época, resolvida em 14/08/2026 e que continua valendo:** excluir no
+painel uma tarefa que veio do `.md` não grudava, ela voltava do arquivo ao recarregar. A Action
+tira a linha do `TAREFAS.md` na rodada seguinte, então a exclusão gruda sozinha (ver abaixo).
 
 ### O painel lê o arquivo de volta (21/08/2026)
 

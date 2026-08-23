@@ -3,6 +3,29 @@
 > Painel principal. Ler isso primeiro em qualquer sessão nova ("onde paramos?").
 > Atualizado em: 23/08/2026
 
+## 23/08/2026: a tarja "ainda não foi para o TAREFAS.md" saiu da tela
+
+Pedido do Josemar, direto: *"e esse aviso, odeio ele. Resolve esse bô de vez, eu fico angustiado
+aflito em saber que tem pendência"*.
+
+**Ele tinha razão, e não era só incômodo: a tarja estava velha.** Ela nasceu em 12/08, quando
+levar o painel para o arquivo era trabalho dele — copiar do Exportar e colar no `.md`. A
+pendência era de verdade e a tarja era o lembrete. Em **14/08 a Action passou a fazer isso
+sozinha**, de hora em hora, e ninguém tirou o lembrete da tela. Resultado: bastava **ticar uma
+tarefa** para a tarja âmbar subir dizendo *"1 tarefa alterada ainda não foi para o TAREFAS.md"*
+e, no parágrafo seguinte, *"não precisa fazer nada"*. Um alarme que ele mesmo desmente não é
+informação, é barulho — e barulho com cara de pendência cobra quem lê, todo dia, por uma fila
+que é de robô.
+
+**Removida a tarja e a contagem de divergências que a alimentava**, sem colocar um aviso menor no
+lugar. O que sobra já diz tudo sem cobrar: a linha de estado do topo ("Salvo na nuvem", "Sem
+conexão", "Somente neste aparelho") mostra o único ponto onde ainda pode haver algo preso naquele
+aparelho, e o botão Exportar continua ao lado como saída de emergência. O raciocínio da conta
+ficou escrito no código, para não ser reinventado do zero se um dia fizer falta.
+
+**Conferido no navegador:** ticar tarefa, ticar a tarefa que se repete e criar tarefa nova — os
+gatilhos que faziam a tarja subir — não produzem mais nada na tela, e nenhum erro no console.
+
 ## 23/08/2026: a volta das caixinhas estava quebrada desde o primeiro dia
 
 Achado enquanto se mexia na lista de conferência, e confirmado no HTML gerado: o

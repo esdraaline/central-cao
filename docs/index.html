@@ -9,7 +9,7 @@
 <!-- o painel e um arquivo unico que muda a cada geracao; sem isto o navegador
      serve a versao antiga do cache e correcoes nao chegam ate o usuario -->
 <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
-<meta name="gerado-em" content="5284ce7f97875132">
+<meta name="gerado-em" content="65a660dc3818a5b8">
 <title>Central do CAO</title>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23c8102e'/%3E%3Ctext x='16' y='22' font-size='15' font-family='Arial' font-weight='bold' fill='white' text-anchor='middle'%3ECAO%3C/text%3E%3C/svg%3E">
 <style>
@@ -411,14 +411,6 @@ ul.tarefas li.parcial .mk-qtd .n{color:var(--al);font-weight:600}
 .tf-vazio p{font-size:14.5px;margin:0 0 4px;color:var(--tx2)}
 .tf-vazio small{font-size:13px}
 
-/* aviso de nao sincronizado */
-.tf-pend{display:flex;gap:11px;align-items:flex-start;background:var(--al-bg);
-  border:1px solid var(--al);border-left-width:4px;border-radius:11px;padding:13px 16px;
-  margin-bottom:15px;font-size:13.5px;color:var(--tx2)}
-.tf-pend svg{color:var(--al);flex:none;margin-top:1px}
-.tf-pend b{color:var(--tx);display:block;margin-bottom:2px}
-.tf-pend button{margin-top:8px}
-
 /* botoes gerais */
 .btn{background:var(--card);border:1px solid var(--bd);border-radius:9px;padding:8px 14px;
   font:650 13px/1 inherit;color:var(--tx2);cursor:pointer;display:inline-flex;
@@ -518,6 +510,11 @@ mark{background:rgba(232,161,58,.35);color:inherit;border-radius:3px;padding:0 2
   </div>
 </header>
 <main><section class="aba" id="ab-painel" role="tabpanel" data-mod="2026-08-23T12:10:55.000Z"><section class="guia"><div class="guia-topo"><div><p class="guia-ola" id="guia-ola">Central do CAO</p><h2 class="guia-dia" id="guia-dia">Carregando o dia...</h2><p class="guia-fase" id="guia-fase"></p></div><div class="guia-conta" id="guia-conta"></div></div><div class="guia-aula" id="guia-aula"></div><div class="guia-corpo" id="guia-corpo"></div></section><div class="grade"><div class="kpi dest"><div class="rot" id="kpi-curso-rot">Curso</div><div class="val" id="kpi-curso-val">...</div><div class="sub" id="kpi-curso-sub">CAO-II/26</div><div class="barra"><i id="kpi-curso-barra" style="width:0%"></i></div></div><div class="kpi"><div class="rot">Tarefas pendentes</div><div class="val" id="kpi-tar-val">31</div><div class="sub" id="kpi-tar-sub">28 já concluídas</div></div><div class="kpi lista-kpi" data-aba="ab-compras" data-rot="Compras"><div class="rot">Compras</div><div class="val">...</div><div class="sub">antes de viajar</div><div class="barra"><i style="width:0%"></i></div></div><div class="kpi lista-kpi" data-aba="ab-mala" data-rot="Mala"><div class="rot">Mala</div><div class="val">...</div><div class="sub">itens separados</div><div class="barra"><i style="width:0%"></i></div></div></div><div class="card"><blockquote data-b>Painel principal. Ler isso primeiro em qualquer sessão nova ("onde paramos?"). Atualizado em: 23/08/2026</blockquote>
+<h2 data-b>23/08/2026: a tarja "ainda não foi para o TAREFAS.md" saiu da tela</h2>
+<p data-b>Pedido do Josemar, direto: <em>"e esse aviso, odeio ele. Resolve esse bô de vez, eu fico angustiado aflito em saber que tem pendência"</em>.</p>
+<p data-b><strong>Ele tinha razão, e não era só incômodo: a tarja estava velha.</strong> Ela nasceu em 12/08, quando levar o painel para o arquivo era trabalho dele — copiar do Exportar e colar no <code>.md</code>. A pendência era de verdade e a tarja era o lembrete. Em <strong>14/08 a Action passou a fazer isso sozinha</strong>, de hora em hora, e ninguém tirou o lembrete da tela. Resultado: bastava <strong>ticar uma tarefa</strong> para a tarja âmbar subir dizendo <em>"1 tarefa alterada ainda não foi para o TAREFAS.md"</em> e, no parágrafo seguinte, <em>"não precisa fazer nada"</em>. Um alarme que ele mesmo desmente não é informação, é barulho — e barulho com cara de pendência cobra quem lê, todo dia, por uma fila que é de robô.</p>
+<p data-b><strong>Removida a tarja e a contagem de divergências que a alimentava</strong>, sem colocar um aviso menor no lugar. O que sobra já diz tudo sem cobrar: a linha de estado do topo ("Salvo na nuvem", "Sem conexão", "Somente neste aparelho") mostra o único ponto onde ainda pode haver algo preso naquele aparelho, e o botão Exportar continua ao lado como saída de emergência. O raciocínio da conta ficou escrito no código, para não ser reinventado do zero se um dia fizer falta.</p>
+<p data-b><strong>Conferido no navegador:</strong> ticar tarefa, ticar a tarefa que se repete e criar tarefa nova — os gatilhos que faziam a tarja subir — não produzem mais nada na tela, e nenhum erro no console.</p>
 <h2 data-b>23/08/2026: a volta das caixinhas estava quebrada desde o primeiro dia</h2>
 <p data-b>Achado enquanto se mexia na lista de conferência, e confirmado no HTML gerado: o <code>sincroniza_ticados.py</code> procurava cada caixinha na nuvem pela chave <code>2de055d428</code> (só o md5 do texto do item), mas o painel grava <code>ab-compras/2de055d428</code>, com o id da aba na frente. <strong>As duas pontas nunca se encontraram: 0 de 93 chaves batiam.</strong></p>
 <p data-b><strong>O erro era mudo, e é isso que o torna grave.</strong> O script trata "não achei na nuvem" como <em>"a nuvem nunca viu este item"</em>, e nesse caso o arquivo manda. Então tudo parecia funcionar: a Action rodava verde de hora em hora, dizia quantas caixinhas leu, e o <code>.md</code> nunca mudava porque o arquivo vencia sempre. O tique feito no celular ia para a nuvem e morria lá — exatamente o problema que esse script foi escrito para resolver em 18/08. De quebra, cada rodada semeava na tabela uma segunda família de linhas, só com o md5, que nenhum painel lê.</p>
@@ -859,18 +856,6 @@ mark{background:rgba(232,161,58,.35);color:inherit;border-radius:3px;padding:0 2
   <button class="btn" id="tf-exportar" title="Gerar o texto para colar no TAREFAS.md"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 11 5 5 5-5"/><path d="M4 20h16"/></svg> Exportar</button>
   <div class="tf-status" id="tf-status" title="Estado da sincronização">
     <span class="bola"></span><span id="tf-status-txt">Somente neste aparelho</span>
-  </div>
-</div>
-
-<div class="tf-pend" id="tf-pend" style="display:none">
-  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 2 20h20z"/><path d="M12 10v4M12 17h.01"/></svg>
-  <div>
-    <b id="tf-pend-n"></b>
-    Não precisa fazer nada: a sincronização roda de hora em hora e leva isso sozinha
-    para o <code>TAREFAS.md</code>. Este aviso some quando ela rodar e o painel
-    republicar. Se estiver com pressa, dá para levar na mão agora.
-    <div><button class="btn" onclick="document.getElementById('tf-exportar').click()">
-      <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 11 5 5 5-5"/><path d="M4 20h16"/></svg> Exportar na mão</button></div>
   </div>
 </div>
 
@@ -7341,43 +7326,29 @@ window.REP=(function(){
     });
   }
 
-  /* ---------------------- divergencia com o TAREFAS.md -------------------
-     A BASE e exatamente o que o arquivo diz hoje. Comparar contra ela e o
-     unico jeito honesto de saber se o repositorio esta velho.
-     Nao confundir com t.sinc, que e a flag do Supabase: subir para a nuvem
-     nao escreve uma linha no .md. O aviso antigo usava t.sinc e por isso
-     mentia dos dois lados (sumia ao sincronizar, ficava aceso sem login). */
-  function divergencias(){
-    var doArquivo={};
-    BASE.forEach(function(b){doArquivo[norm(b.t)]=b});
-    var d={novas:0,remarcadas:0,alteradas:0,excluidas:0,total:0}, vistos={};
-    tarefas.forEach(function(t){
-      var k=norm(t.txt); vistos[k]=1;
-      var b=doArquivo[k];
-      if(!b){d.novas++;return}
-      if((b.d||null)!==(t.data||null))d.remarcadas++;
-      else if((b.c||'')!==(t.cat||'')||!!b.f!==!!t.feito)d.alteradas++;
-    });
-    BASE.forEach(function(b){if(!vistos[norm(b.t)])d.excluidas++});
-    d.total=d.novas+d.remarcadas+d.alteradas+d.excluidas;
-    return d;
-  }
+  /* -------------- o aviso de "ainda nao foi para o TAREFAS.md" -----------
+     Removido em 23/08/2026, com a contagem de divergencias que o alimentava.
 
-  function fraseDivergencia(d){
-    if(!d.total)return '';
-    var p=[], n=function(q,um,varios){if(q)p.push(q+' '+(q===1?um:varios))};
-    n(d.novas,'nova','novas');
-    n(d.remarcadas,'remarcada','remarcadas');
-    n(d.alteradas,'alterada','alteradas');
-    n(d.excluidas,'excluída aqui','excluídas aqui');
-    /* um tipo so: frase direta. Varios: total na frente e o detalhe atras. */
-    if(p.length===1){
-      return (d.total===1?'1 tarefa ':d.total+' tarefas ')+p[0].replace(/^\d+\s/,'')+
-             (d.total===1?' ainda não foi':' ainda não foram')+' para o TAREFAS.md';
-    }
-    var lista=p.slice(0,-1).join(', ')+' e '+p[p.length-1];
-    return d.total+' mudanças ainda não foram para o TAREFAS.md: '+lista;
-  }
+     Ele nasceu em 12/08, quando levar o painel para o arquivo era trabalho do
+     Josemar: copiar do Exportar e colar no .md. Nessa epoca a pendencia era
+     dele e o aviso fazia sentido. Em 14/08 a Action passou a fechar o ciclo
+     sozinha, de hora em hora, e o aviso virou o retrato de uma fila que nao e
+     mais de ninguem: bastava ticar uma tarefa para a tarja amarela subir na
+     tela, dizendo "1 tarefa alterada ainda nao foi" e, no paragrafo seguinte,
+     "nao precisa fazer nada". Alarme que ele mesmo desmente nao e informacao,
+     e barulho, e barulho com cara de pendencia cobra quem le.
+
+     Nada foi trocado por um aviso menor de proposito. O que sobra ja diz tudo,
+     sem cobrar: a linha de estado do topo ("Salvo na nuvem", "Sem conexao",
+     "Somente neste aparelho") mostra o unico ponto onde ainda pode haver
+     alguma coisa presa neste aparelho, e o botao Exportar continua ali do lado
+     como saida de emergencia. Depois que a alteracao chega a nuvem, levar isso
+     ao arquivo e servico de robo, e robo nao precisa de tarja.
+
+     Se um dia for preciso saber se o arquivo esta velho, a conta e comparar
+     `tarefas` com a BASE (o que o TAREFAS.md dizia quando o painel foi
+     gerado) - era isso que a funcao divergencias() fazia. Fica registrado
+     aqui para nao ser reinventado do zero, nao para voltar a tela.        */
 
   /* agrupa por urgencia */
   function agrupar(){
@@ -7621,14 +7592,6 @@ window.REP=(function(){
     }
     lista.innerHTML=out;
 
-    /* o que ainda nao foi para o TAREFAS.md */
-    var dv=divergencias();
-    var cx=el('#tf-pend');
-    if(cx){
-      cx.style.display=dv.total?'flex':'none';
-      var b=el('#tf-pend-n');
-      if(b)b.textContent=fraseDivergencia(dv);
-    }
     /* badge da aba */
     var pend=tarefas.filter(function(t){return !t.feito}).length;
     var atras=g.atrasadas.length;

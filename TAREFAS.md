@@ -20,7 +20,7 @@
 
 ## Pendentes
 
-### Segunda, 17/08 (é o dia de resolver o fardamento)
+### Fardamento e pendências de secretaria
 - [ ] Decidir opção de desconto SIPA: Alojamento (R$ 30,35) ou Vestiário (R$ 21,52), e cessar o equivalente na OPM de origem [24/08/2026] #admin
 - [ ] Comprar a camisa social cinza-claro do S-1 e a boina de reposição, que faltaram na ida à ConfecBell [24/08/2026] #pessoal
 - [ ] Mandar o QTS assim que sair, para eu lançar na aba Grade e o painel montar o dia sozinho [24/08/2026] #curso
@@ -53,7 +53,7 @@
 ### Orientador da dissertação — MISSÃO URGENTE
 - [ ] Falar com o Cap Simões e pegar o contato do Cel Eglis [24/08/2026] #dissertacao
 - [ ] Perguntar ao Cap Gobbo as REGRAS da orientação: o orientador precisa ser instrutor do curso? Quantos orientandos cada um aceita? Há prazo para escolher? Como é o pedido formal? [24/08/2026] #dissertacao
-- [ ] Procurar o Cel Eglis e sondar a orientação, levando o PP já aprovado [24/08/2026] #dissertacao
+- [ ] Procurar o Cel Eglis e sondar a orientação, levando o PP já aprovado [25/08/2026] #dissertacao
 - [ ] Montar o rol completo de disciplinas e instrutores conforme os QTS forem saindo, para ter o universo de candidatos [28/08/2026] #dissertacao
 
 ### Segunda semana (viagem em 23/08)

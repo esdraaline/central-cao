@@ -1,23 +1,98 @@
 # ESTUDOS — método de estudo do CAO
 
 > Como eu estudo, onde eu salvo e onde eu escrevo, pelos 12 meses de curso.
-> Montado em 17/08/2026, no primeiro dia.
+> O quê e o quando (as 31 disciplinas, docentes e o quadro da semana) estão em
+> [GRADE.md](GRADE.md).
 
-## A regra que sustenta tudo: dois lugares, sem sobreposição
+## Missão da semana: fechar o orientador
+
+**O alvo é o Cel PM Eglis.** A janela desta semana é a **terça 25/08, bloco 4, das 14h45 às
+16h15**, na aula dele de D14 Planejamento Estratégico. Na semana 2 não há outra: quarta e
+quinta quem entra em Planejamento Estratégico é o Cel Terra.
+
+**A ponte até ele é o Cap PM Simões**, que tem o contato ([CONTATOS.md](CONTATOS.md)).
+
+**Por que ele**: abriu a aula de 17/08 perguntando "nosso foco, visão de futuro, é polícia
+repressiva ou polícia comunitária?". É exatamente a tensão que a minha dissertação sobre
+integração PM-Prefeituras tem que sustentar. Orientador que já formula o problema nos mesmos
+termos poupa meses de tradução.
+
+O orientador deve ser, preferencialmente, instrutor do curso. É a primeira coisa a confirmar.
+
+### A sequência, nesta ordem
+
+**1. As regras, antes de qualquer nome.** Com o **Cap PM Gobbo**, Seção de Pesquisa
+(caespesquisa@policiamilitar.sp.gov.br). Perguntar:
+
+- O orientador **precisa** ser instrutor do curso, ou é só preferência?
+- **Quantos orientandos** cada um pode aceitar?
+- Existe **prazo** para definir? Qual?
+- O pedido é **formal** ou é conversa direta com o oficial?
+- Cabe **coorientador**, por exemplo um para o tema e outro para o método?
+
+Uma dessas respostas pode eliminar metade das opções, e todas são mais baratas de obter do
+que desfazer uma escolha errada. Chegar no Cel Eglis sabendo as regras vale mais do que
+chegar antes e no escuro. As duas conversas podem correr em paralelo, mas a do Gobbo é a que
+protege a outra.
+
+**2. Sondar com o texto na mão.** Chegar com o PP aprovado e uma pergunta objetiva vale mais
+do que "o senhor me orientaria?". O PP está em `02_DISSERTACAO/02_texto/`.
+
+**3. Registrar na hora.** O que sair da conversa vai para `02_DISSERTACAO/00_orientacao/`, no
+mesmo dia, com data.
+
+### Se o Eglis não puder: a lista curta
+
+Meu tema é **integração PM-Prefeituras e governança participativa**. Isso é política pública
+e articulação interinstitucional, não é operacional puro.
+
+| Instrutor | Disciplina | Encaixe no tema |
+|---|---|---|
+| **Cel Eglis** | D14 Planejamento Estratégico | A decisão em vigor |
+| **Cel Barreto** | D28 Policiamento Comunitário | Forte. É o berço doutrinário da integração PM-comunidade. Dá aula na **quarta 26/08, bloco 4** |
+| **Cel Lucena** | D01 Políticas Públicas | Direto. Meu tema É política pública. Abriu a aula 1 com modelo reativo x pró-ativo, que é o eixo do meu argumento |
+| **Cel Fernandes / Cel Enio** | D04 Relações Sociais e Institucionais no Brasil | Articulação interinstitucional é a outra metade da pergunta de pesquisa |
+| Cel Beatriz / Cel Possato | D13 Gestão de Processos e Estrutura Organizacional | Serve se o trabalho descer para o "como se opera" a integração |
+| TC Tamanaha / Maj Goulart | D16 Gestão da Informação para Tomada de Decisão | Idem, pelo lado do dado que circula entre PM e Prefeitura |
+| Cap Franco / Cel Boggi | D07 Métodos Quantitativos de Pesquisa | Encaixe de **método**. Coorientador natural se o trabalho tiver survey |
+| Maj Daniela / Cap Fernando | D06 Métodos Qualitativos de Pesquisa | Coorientação de método se a pesquisa for por entrevista, que é o mais provável |
+| Maj Zampronio | D05 Fundamentos da Metodologia Científica | Método, e é quem avalia o rigor |
+
+### Uma pista da dissertação de referência
+
+A dissertação do **Cap PM José Fernando Ferrarez** (CAO/24, defendida em 2025), em
+`02_DISSERTACAO/01_referencias/`, nomeia quem o orientou:
+
+- **Cel PM Mario Luciano Siconeli** (orientador)
+- **Ten Cel PM Ivan Cesar Belentani** e **Cap PM Valdomiro Garcia Rafael Junior**, citados
+  nos agradecimentos como quem o orientou sobre os caminhos do estudo
+
+São oficiais que já orientaram no CAES e conhecem o processo. O Cel Siconeli não aparece como
+instrutor da minha turma, mas vale perguntar ao Cap Gobbo se ele segue orientando.
+
+## A dissertação começa agora, não em 2027
+
+PP aprovado, tema definido e uma dissertação-modelo em mãos. O erro clássico é tratar isso
+como "ano que vem".
+
+- **Esta semana**: criar o caderno "CAO Dissertação" no NotebookLM e rodar a sequência acima.
+- **Setembro**: instalar o **Zotero** (grátis, plugin do Word, gera ABNT sozinho). Todo PDF de
+  artigo entra nele com um clique. Sem isso, em maio serão 80 PDFs sem saber de onde veio cada
+  citação. Foi deixado para setembro de propósito: ferramenta nova em semana de curso novo é
+  ferramenta abandonada.
+- **O mês inteiro**: a etiqueta `#DISSERTA` trabalhando sozinha.
+
+## Onde salvo: dois lugares, sem sobreposição
 
 | Onde | O que vive lá |
 |---|---|
 | **Este repositório** (os `.md` e o painel) | Logística: prazos, tarefas, rotina, contatos, uniforme |
 | **Google Drive**, `10_JOSEMAR/02_TRABALHO/08_CAO_2026/` | Conteúdo: slides, minhas anotações, trabalhos, dissertação |
 
-Na dúvida sobre onde salvar, a pergunta é: **isso é data ou é conteúdo?** Data vem para cá.
-Conteúdo vai para o Drive. Conteúdo de aula nunca entra no repositório, que é público.
+Na dúvida: **isso é dado ou é conteúdo?** Dado vem para cá, conteúdo vai para o Drive.
+Conteúdo de aula nunca entra no repositório, que é público.
 
-## Estrutura no Drive
-
-Criada em 17/08/2026. Saiu de `02_TRABALHO/Outros/CAO 2026`, onde estava enterrada, e virou
-item de primeira linha junto com 5ª Cia e Operações. Os 848 arquivos que já existiam foram
-todos realocados.
+### Estrutura no Drive
 
 ```
 10_JOSEMAR/02_TRABALHO/08_CAO_2026/
@@ -37,87 +112,68 @@ todos realocados.
 │   ├── 03_campo/          dados, entrevistas, protocolos
 │   └── PP_original/       a pasta do PP como estava na seleção
 ├── 03_TURMA/              formatura, comissões, escalas
-├── 04_ARQUIVO_SELECAO/    inscrição, provas e material de estudo da seleção (encerrado)
+├── 04_ARQUIVO_SELECAO/    inscrição, provas e material da seleção (encerrado)
 └── 99_INBOX/              tudo que chega e ainda não foi arquivado
 ```
 
-Três detalhes que não são enfeite:
+Três regras que sustentam a estrutura:
 
-**O `99_INBOX` é o mais importante.** Slide chega no meio da aula, por WhatsApp, do Subchefe
-de Turma, com nome ruim. Se eu tiver que decidir na hora onde arquivar, não arquivo. Jogo no
-INBOX e esvazio na quinta. Estrutura sem lata de despejo morre na terceira semana.
+**Use o `99_INBOX`.** Slide chega no meio da aula, por WhatsApp, com nome ruim. Se eu tiver
+que decidir na hora onde arquivar, não arquivo. Jogo no INBOX e esvazio na quinta. Estrutura
+sem lata de despejo morre na terceira semana.
 
-**As 31 pastas já existem, numeradas na ordem do QTS.** Criadas de uma vez em 18/08/2026,
-quando o QTS trouxe a grade inteira (ver [GRADE.md](GRADE.md)). Cada uma nasce com as três
-subpastas e com o arquivo de notas já cabeçalhado, esperando a primeira aula. Assim o INBOX
-sempre tem para onde despejar, mesmo em disciplina que ainda não começou.
+**As 31 pastas já existem**, numeradas `D01_` a `D31_` na ordem do QTS, cada uma com as três
+subpastas e o arquivo de notas já cabeçalhado. O INBOX sempre tem para onde despejar, mesmo em
+disciplina que ainda não começou. Quem responde "quando foi aquilo" é a data dentro do arquivo
+de notas, não o nome da pasta.
 
-**A numeração mudou em 18/08 e o motivo é simples.** A primeira versão punha data na frente
-(`2026-08_D01_`) para ordenar na linha do tempo do curso. Isso pressupunha disciplina em
-bloco, uma terminando antes da outra começar. **O QTS mostrou que não é assim:** as 31 correm
-em paralelo, então todas nasceriam com `2026-08` e a data não ordenaria nada. Ficou
-`D01_` a `D31_`, na ordem da grade oficial, que é estável o curso inteiro. Quem responde
-"quando foi aquilo" é a data dentro do arquivo de notas.
+**`aulas/` é intocável.** Material do instrutor entra e não é editado nem renomeado. O que é
+meu vai para o documento de notas, separado. Assim sempre dá para saber o que é fonte e o que
+é meu.
 
-**`aulas/` é intocável.** O material do instrutor entra e não é editado nem renomeado por
-dentro. O que é meu vai para o documento de notas, separado. Assim sempre dá para saber o que
-é fonte e o que é meu.
+## Onde escrevo: um arquivo Markdown por disciplina
 
-## Onde escrevo: arquivo Markdown local, um por disciplina
+**Não é Word e não é Google Docs.** Dentro do CAES, na rede WCorp, o **Google Docs não abre
+documento que já existe** (testado à exaustão em 17/08; documento novo em branco abre, o que
+confunde). O mesmo arquivo, no wi-fi de fora, abre normal. Conclusão prática: **não dá para
+depender de nuvem para anotar em sala de aula.**
 
-**Decidido em 17/08/2026, depois de o Google Docs falhar na prática. Não é Word e não é
-Google Docs.**
+A anotação é **um arquivo `.md` por disciplina**, dentro da pasta da disciplina no Drive,
+editado em qualquer editor de texto (Bloco de Notas serve, VS Code é melhor). O Google Drive
+do computador sincroniza sozinho quando a rede permitir.
 
-A primeira versão deste documento, escrita na manhã do mesmo dia, mandava anotar em Google
-Docs. Estava errado, e o erro apareceu no mesmo dia, nas duas primeiras aulas.
+Nome: `NOTAS-D01-Nome-Da-Disciplina.md`.
 
-**O que aconteceu:** dentro do CAES, na rede WCorp, o Google Docs **não abre documento que
-já existe**. Foi testado à exaustão em 17/08. O que confunde é que um documento em branco
-criado ali na hora abre normal, porque ele nasce dentro do próprio navegador e não precisa
-buscar nada no servidor. Qualquer documento que já existe, a WCorp não deixa carregar. O
-mesmo arquivo, no wi-fi de fora, abre sem reclamar. Descartados no caminho: bloqueio geral
-do Google (o Drive abre), formato do arquivo (documento nativo vazio falhou igual), link
-errado (abrir pela pasta falhou igual) e permissão (os arquivos são meus).
-
-**Conclusão prática: não dá para depender de nuvem para anotar em sala de aula.**
-
-Então a anotação é **um arquivo `.md` por disciplina**, dentro da pasta da disciplina no
-Drive, editado em qualquer editor de texto (Bloco de Notas serve, VS Code é melhor). O
-Google Drive do computador sincroniza sozinho quando a rede permitir.
-
-Por que `.md` e não `.docx`:
+Por que assim:
 
 - **Funciona sem rede nenhuma.** É a única exigência que realmente importa em sala.
-- **O NotebookLM lê Markdown e `.txt` numa boa.** O que se perde em relação ao Docs é só a
-  sincronização automática da fonte: em vez de o NotebookLM se atualizar sozinho, eu reenvio
-  o arquivo quando quiser. Custo baixo.
-- Eu já escrevo Markdown o dia inteiro neste repositório, então não é ferramenta nova.
+- **O NotebookLM lê Markdown e `.txt` numa boa.** Perde-se só a atualização automática da
+  fonte: eu reenvio o arquivo quando quiser. Custo baixo.
+- **Um arquivo por disciplina, não um por aula.** Trinta aulas viram trinta arquivos e eu
+  nunca mais acho nada. Um arquivo contínuo cresce com o semestre e o Ctrl+F resolve. E é
+  1 fonte no NotebookLM em vez de 30.
 - Arquivo de texto não corrompe, não trava e abre em qualquer máquina.
+
+**O dia tem vários arquivos abertos.** As 31 disciplinas correm em paralelo, em blocos de 45
+minutos, e uma terça pode ter cinco matérias diferentes. Por isso o atalho abre a **pasta** no
+VS Code, não um arquivo: clico na matéria da vez na barra da esquerda.
 
 **Word continua existindo, só para entrega formal**: trabalho avaliado e a dissertação em
 ABNT. Formatação séria é Word, anotação do dia a dia é `.md`.
 
-Descartados: **Google Docs** pelo motivo acima; **OneNote**, porque o NotebookLM não lê e
-exportar de lá é sofrido; **Notion e Obsidian**, por serem ferramenta nova em semana de
-curso novo.
+Descartados: Google Docs pelo motivo acima; OneNote, porque o NotebookLM não lê e exportar de
+lá é sofrido; Notion e Obsidian, por serem ferramenta nova em semana de curso novo.
 
-**Um arquivo por disciplina, não um por aula.** Trinta aulas viram trinta arquivos e eu
-nunca mais acho nada. Um arquivo contínuo cresce com o semestre e o Ctrl+F resolve. E é
-**1 fonte** no NotebookLM em vez de 30.
-
-Nome: `NOTAS-D01-Nome-Da-Disciplina.md`, dentro da pasta da disciplina.
-
-*[VERIFICAR amanhã, 18/08: se o Google Drive do computador consegue sincronizar dentro da
-WCorp. Se não conseguir, os arquivos sobem sozinhos quando eu sair do quartel, o que não
-atrapalha nada, mas é bom saber. Vale também marcar a pasta 08_CAO_2026 como "disponível
-off-line" no Drive, para o arquivo morar no disco e não depender de streaming.]*
+**No Drive, deixar a pasta `08_CAO_2026` marcada como "disponível off-line"**, para o arquivo
+morar no disco e não depender de streaming.
 
 ### Modelo de anotação em aula
 
-Burro o suficiente para eu conseguir preencher enquanto o instrutor fala:
+Burro o suficiente para eu conseguir preencher enquanto o instrutor fala. A data e o tema
+abaixo são só exemplo de formato:
 
 ```
-## 18/08 — Tema da aula — Instrutor
+## dd/mm — Tema da aula — Instrutor
 
 Ideia central:
 Cai na prova:           #PROVA
@@ -128,10 +184,11 @@ Ficou dúvida:           #DUVIDA
 **As três etiquetas são o coração do método.** Eu não vou reler doze meses de anotação em
 julho de 2027. Vou buscar `#DISSERTA` e achar em dois minutos tudo que marquei como
 aproveitável no ano inteiro. Custa meio segundo por anotação. Mesma coisa com `#PROVA` na
-véspera da avaliação.
+véspera da avaliação. D05, D06, D07 e D08 são metodologia e análise de dados, ou seja, aula
+que existe para a minha dissertação: o que sair dali vai direto para o texto.
 
-Não transcrever aula. Anotação boa é a ideia com as minhas palavras. O slide eu já tenho
-salvo em `aulas/`.
+Não transcrever aula. Anotação boa é a ideia com as minhas palavras. O slide eu já tenho salvo
+em `aulas/`.
 
 ## NotebookLM: três tipos de caderno
 
@@ -139,21 +196,21 @@ Não um caderno gigante, porque misturar assunto piora a resposta e há limite d
 
 | Caderno | Fontes | Para quê |
 |---|---|---|
-| **Um por disciplina** (criado quando ela começa) | slides do instrutor + meu documento de notas + bibliografia | estudar para a prova, tirar dúvida sem abrir PDF |
+| **Um por disciplina** | slides do instrutor + meu documento de notas + bibliografia | estudar para a prova, tirar dúvida sem abrir PDF |
 | **CAO Dissertação** (permanente) | PP, dissertação do Cap Ferrarez, artigos, atas de orientação | pensar a dissertação o ano inteiro |
 | **CAO Normas** (permanente) | edital, QTS, regras do SAE, R-5-PM | responder "quantas faltas posso ter?" em dez segundos |
 
-### O uso que paga o esforço sozinho
+**Não vou ter 31 cadernos.** Um por disciplina funcionava com sete. Com 31, o caderno nasce
+quando a disciplina começa **e tem prova ou trabalho à vista**. As demais ficam só com o
+arquivo de notas.
 
-Guararapes ↔ São Paulo toda semana são umas 6 a 7 horas de estrada, hoje perdidas.
+**O uso que paga o esforço sozinho.** Guararapes ↔ São Paulo toda semana são umas 6 a 7 horas
+de estrada, hoje perdidas. Na quinta, antes de pegar a estrada, gerar o **Audio Overview** do
+caderno da disciplina da semana e ouvir na volta. Doze meses disso é o curso inteiro revisado
+de graça.
 
-Na quinta, antes de pegar a estrada, gerar o **Audio Overview** do caderno da disciplina da
-semana e ouvir na volta. Revisão semanal sem gastar um minuto a mais do dia. Doze meses disso
-é o curso inteiro revisado de graça.
-
-*[VERIFICAR: limite de fontes por caderno muda conforme o plano do NotebookLM.]*
-*[VERIFICAR com o Chefe de Turma: se pode gravar áudio de aula. Se puder, o NotebookLM aceita
-áudio como fonte e isso muda muita coisa. Se não puder, esquecer.]*
+Duas coisas ainda em aberto sobre isso (limite de fontes por caderno e se pode gravar áudio de
+aula) estão em [DUVIDAS.md](DUVIDAS.md).
 
 ## Ritmo semanal
 
@@ -169,109 +226,6 @@ Encaixado no horário real de segunda a quinta ([ROTINA.md](ROTINA.md)):
 
 O domingo de 30 minutos é o que amarra o Drive com o painel do celular.
 
-## A dissertação começa agora, não em 2027
-
-PP aprovado, tema definido (integração PM-Prefeituras / governança participativa no 2º BPM/I)
-e uma dissertação-modelo já em mãos. O erro clássico é tratar isso como "ano que vem".
-
-- **Semana 1 e 2**: criar o caderno "CAO Dissertação" no NotebookLM. Procurar o **Cap Gobbo**
-  (Seção de Pesquisa) sobre transformar o PP em dissertação.
-- **Setembro**: instalar o **Zotero** (grátis, plugin do Word, gera ABNT sozinho). Todo PDF de
-  artigo entra nele com um clique. Sem isso, em maio serão 80 PDFs sem saber de onde veio cada
-  citação. Foi deixado para setembro de propósito: ferramenta nova em semana de curso novo é
-  ferramenta abandonada.
-- **O mês inteiro**: a etiqueta `#DISSERTA` trabalhando sozinha.
-
-## Orientador da dissertação — missão urgente
-
-Aberta em 18/08/2026. **O orientador deve ser, preferencialmente, instrutor do curso.**
-
-### O problema é de tempo, não de escolha
-
-A informação de que preciso chega **devagar**: o QTS sai dia a dia, então o rol completo de
-disciplinas e instrutores só fecha depois de semanas. Mas o recurso que quero **acaba
-rápido**: bom orientador é procurado, e quem chega primeiro leva.
-
-**Conclusão: não dá para esperar a lista completa.** A ordem certa é agir sobre o que já se
-sabe e deixar o resto amadurecer.
-
-### DECIDIDO em 18/08: o alvo é o Cel PM Eglis
-
-Escolhido entre os sete instrutores conhecidos. **O caminho até ele é o Cap PM Simões**, que
-tem o contato. Ver [CONTATOS.md](CONTATOS.md).
-
-**Por quê**: na aula de 17/08 ele abriu perguntando *"nosso foco, visão de futuro, é polícia
-repressiva ou polícia comunitária?"*. É exatamente a tensão que a minha dissertação sobre
-integração PM-Prefeituras tem que sustentar. Um orientador que já formula o problema nos
-mesmos termos poupa meses de tradução.
-
-**O que não muda com a decisão:** as regras continuam sendo o primeiro passo. Chegar no Cel
-Eglis sabendo se ele pode aceitar, quantos orientandos já tem e qual o prazo vale mais do que
-chegar antes e no escuro. As duas conversas podem correr em paralelo, mas a do Gobbo é a que
-protege a outra.
-
-### A sequência, nesta ordem
-
-**1. As regras, antes de qualquer nome** (Cap Gobbo, Seção de Pesquisa)
-
-Sem isso, escolher é chute. Perguntar:
-
-- O orientador **precisa** ser instrutor do curso, ou é só preferência?
-- **Quantos orientandos** cada um pode aceitar?
-- Existe **prazo** para definir? Qual?
-- O pedido é **formal** ou é conversa direta com o oficial?
-- Cabe **coorientador**, por exemplo um para o tema e outro para o método?
-
-Uma dessas respostas pode eliminar metade das opções, e todas são mais baratas de obter do
-que desfazer uma escolha errada.
-
-**2. A lista curta, por afinidade com o tema**
-
-Meu tema é **integração PM-Prefeituras e governança participativa**. Isso é política pública
-e articulação interinstitucional, não é operacional puro. Refeita em 18/08, agora com a grade
-completa do QTS na mão (ver [GRADE.md](GRADE.md)):
-
-| Instrutor | Disciplina | Encaixe no meu tema |
-|---|---|---|
-| **Cel Barreto** | D28 Policiamento Comunitário | **Novo, e forte.** Apareceu com a grade completa. Policiamento comunitário é o berço doutrinário da integração PM-comunidade |
-| **Cel Lucena** | D01 Políticas Públicas | **O mais direto.** Meu tema É política pública. Na aula 1 ele abriu com modelo reativo x pró-ativo, que é o eixo do meu argumento |
-| **Cel Eglis** | D14 Planejamento Estratégico | **Forte, e é a decisão em vigor.** Ele perguntou "nosso foco é polícia repressiva ou comunitária?", que é exatamente a tensão que a dissertação enfrenta |
-| **Cel Fernandes** | D04 Relações Sociais e Institucionais no Brasil | **Novo.** Articulação interinstitucional é a outra metade da pergunta de pesquisa |
-| Cel Beatriz / Cel Possato | D13 Gestão de Processos e Estrutura Organizacional | Serve se o trabalho descer para o "como se opera" a integração |
-| TC Tamanaha / Maj Goulart | D16 Gestão da Informação para Tomada de Decisão | Idem, pelo lado do dado que circula entre PM e Prefeitura |
-| Cap Franco / Cel Boggi | D07 Métodos Quantitativos de Pesquisa | Encaixe de **método**, não de tema. Coorientador natural se o trabalho tiver survey |
-| Maj Zampronio | D05 Fundamentos da Metodologia Científica | Idem. E é quem vai avaliar o rigor do método |
-| Maj Daniela / Cap Fernando | D06 Métodos Qualitativos de Pesquisa | Coorientação de método se a pesquisa for por entrevista, que é o mais provável no meu tema |
-| Cel Komata, Cap Anderson, Cel Massera | D02, D22, D21 | Fracos para o tema |
-
-**3. Sondar cedo, com o texto na mão**
-
-Chegar com o PP aprovado e uma pergunta objetiva vale mais que "o senhor me orientaria?".
-O PP já existe e está em `02_DISSERTACAO/02_texto/`.
-
-### Uma pista que veio da dissertação de referência
-
-A dissertação do **Cap PM José Fernando Ferrarez** (CAO/24, defendida em 2025), que está em
-`02_DISSERTACAO/01_referencias/`, nomeia quem o orientou:
-
-- **Cel PM Mario Luciano Siconeli** — orientador
-- **Ten Cel PM Ivan Cesar Belentani** e **Cap PM Valdomiro Garcia Rafael Junior** —
-  citados nos agradecimentos como quem o orientou sobre os caminhos do estudo
-
-**Por que isso importa:** são oficiais que **já orientaram no CAES e conhecem o processo**.
-O Cel Siconeli não apareceu (ainda) como instrutor da minha turma, mas vale perguntar ao Cap
-Gobbo se ele segue orientando. Orientador experiente poupa meses.
-
-### O rol completo chegou em 18/08
-
-O que estava travando esta missão era esperar a lista fechar. **Fechou:** o QTS da semana 1
-trouxe as 31 disciplinas e todo o corpo docente de uma vez, e está na aba
-[Grade](GRADE.md). Não há mais motivo para esperar antes de procurar o Cap Gobbo.
-
-O que **continua** faltando não muda a decisão: carga horária por disciplina, ordem em que
-elas entram no ano e quem tem prova ou trabalho. Nada disso é pré-requisito para as conversas
-dos passos 1 e 3.
-
 ## O que não fazer
 
 - Pasta por aula ou documento por aula: vira lixo em um mês.
@@ -279,49 +233,7 @@ dos passos 1 e 3.
 - Anotar em três lugares "para garantir".
 - Copiar slide para dentro da anotação: o slide já está salvo.
 - Guardar conteúdo de aula neste repositório: é público e o git guarda para sempre.
-
-## Disciplinas do curso
-
-**São 31, e o rol completo está na aba [Grade](GRADE.md)**, com os docentes de cada uma, os
-horários por bloco e o quadro da semana. Aqui fica só o que o levantamento ensinou sobre o
-método, que é o assunto deste documento.
-
-**O QTS sai semana a semana, não por semestre.** Isso derrubou uma premissa que este documento
-tinha: eu supunha disciplina em bloco, uma terminando antes da outra começar. **Não é assim.**
-Elas correm em paralelo, em blocos de 45 minutos, várias por dia. Só a terça de 18/08 teve
-cinco disciplinas diferentes.
-
-**O que isso muda no método:** nada na estrutura, e muito no ritmo.
-
-- Um arquivo por disciplina continua certo, e fica ainda mais importante: sem isso, a anotação
-  de cinco matérias diferentes cairia tudo no mesmo lugar.
-- **Mas o arquivo do dia não é um só.** Numa terça você abre cinco arquivos, um por bloco. Por
-  isso o atalho abre a **pasta** no VS Code, e não um arquivo: você clica na matéria da vez na
-  barra da esquerda.
-- **A etiqueta `#DISSERTA` fica mais valiosa ainda.** D05, D06, D07 e D08 são metodologia e
-  análise de dados, ou seja, aula que existe para a sua dissertação. O que sair dali vai direto
-  para o texto.
-- **O NotebookLM não vai ter 31 cadernos.** Um por disciplina funcionava com sete. Com 31, o
-  caderno nasce quando a disciplina começa **e tem prova ou trabalho à vista**. As demais
-  ficam só com o arquivo de notas.
-
-### O levantamento de origem, encerrado em 18/08
-
-Fica registrado porque custou um dia de garimpo e porque explica por que o rol demorou.
-
-**O edital não traz a grade.** Vasculhado em 17/08/2026: o Edital DEC-005/24/25 é do processo
-seletivo, e o Anexo "B" ("Conteúdo Programático") é a bibliografia da prova escrita, não a
-matriz do curso. O slide de recepção do SAE também não traz. Nenhum dos 848 arquivos do Drive
-traz. Restaram duas fontes indiretas, as duas hoje **superadas pelo QTS**:
-
-1. **Disciplinas do CAO I/2024** citadas em notas de rodapé da dissertação do Cap PM Ferrarez
-   (Criminologia com o TC Maurício Alves Barbosa; Planejamento Operacional com o Maj Hudson
-   Arthur Rodrigues Rosa). As duas existem na grade de 2026, com outros docentes.
-2. **Grade do Mestrado Profissional** no *Manual e Código de Conduta do Aluno* do CAES,
-   **de 2012**. Serviu de esqueleto e errou bastante: nomes como "Tiro Defensivo Método
-   Giraldi", "Geografia do Crime" e "Justiça e Processo Penal Militares" não estão na grade
-   de 2026, enquanto Análise de Dados, Gestão de Crises de Imagem, Mídia Training e Excelência
-   da Gestão, que estão, não apareciam lá.
-
-**A lição, que vale para o resto do curso:** documento de origem indireta serve para não ficar
-parado, nunca para planejar em cima. **A fonte de verdade é o QTS**, e ele chega semanalmente.
+- **Planejar em cima de fonte indireta.** O Edital DEC-005/24/25 não traz a matriz do curso
+  (o Anexo "B" é a bibliografia da prova escrita da seleção) e a grade do Manual do Aluno do
+  CAES é de 2012, com disciplinas que não existem mais. **A fonte de verdade é o QTS**, e ele
+  chega semana a semana ([GRADE.md](GRADE.md)).

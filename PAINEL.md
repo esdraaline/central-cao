@@ -352,6 +352,25 @@ aquilo só chega ao celular quando aquele PC for religado com o painel aberto.
 **E se não estiver logado, nada disso acontece:** a linha diz "Somente neste aparelho" e é
 clicável para entrar. Sem conta, o Exportar é o que garante que nada se perca.
 
+### Item de lista quebrado em duas linhas (23/08/2026)
+
+Quebrar a linha no meio de um item de lista é coisa que qualquer um faz ao escrever, e o gerador
+não aguentava: a segunda linha virava parágrafo solto, fora da bolinha. Pior, um negrito aberto na
+primeira linha e fechado na segunda aparecia com os asteriscos na cara, porque a formatação inline
+roda por linha. Foi assim que o `**Mestrado Profissional em Ciências Policiais...**` apareceu cru
+na primeira tela do painel. Agora o gerador junta a continuação ao item, como manda o markdown.
+
+**Duas armadilhas dentro do conserto**, as duas encontradas ao conferir e não ao escrever:
+
+1. **A chave da caixinha continua saindo só da primeira linha.** A identidade de um item ticável é
+   o md5 do texto dele, e o `sincroniza_ticados.py` lê o arquivo linha a linha. Se a chave passasse
+   a incluir a continuação, as duas pontas parariam de se reconhecer e o tique voltaria a não
+   descer para o `.md` — exatamente o erro de 18/08, consertado horas antes. A contagem caiu de
+   81 para 76 chaves batendo e denunciou na hora.
+2. **Linha que começa em negrito não é marcador de lista.** O teste inicial cortava a continuação
+   sempre que ela começava com `*`, e `**Júlio Prestes** (CPTM, na praça)` saía partido. Agora só
+   marcador de verdade (`- `, `* `, `1. `, `#`, `>`, `|`) interrompe a junção.
+
 ### Dois consertos no Exportar (14/08/2026)
 
 **Copiar zerava a fila de upload.** O botão Copiar marcava todas as tarefas como já

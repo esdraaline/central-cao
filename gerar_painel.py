@@ -280,6 +280,37 @@ def md_para_html(texto):
             indent = len(m.group(1).replace("\t", "  "))
             numerada = m.group(2) is not None
             item = m.group(3)
+            # A chave e a quantidade do item ticavel saem SEMPRE desta primeira
+            # linha, nunca do texto ja juntado. A identidade de uma caixinha e o
+            # md5 do texto dela, e o sincroniza_ticados.py, do lado do Python, le
+            # o arquivo linha a linha: se a chave passasse a incluir a
+            # continuacao, as duas pontas parariam de se reconhecer e o tique
+            # voltaria a nao descer para o .md. Foi exatamente o erro de
+            # 18/08/2026, consertado em 23/08. Nao repetir.
+            item_chave = item
+
+            # Linha solta logo abaixo do item pertence AO ITEM (continuacao
+            # preguicosa do markdown). Sem juntar aqui, um item quebrado em duas
+            # linhas virava item + paragrafo solto, e um negrito aberto na
+            # primeira linha e fechado na segunda aparecia com os asteriscos na
+            # cara, porque o _inline roda por linha. Foi o que aconteceu com o
+            # "**Mestrado Profissional...**" do STATUS.md em 23/08/2026.
+            # Quebrar linha dentro de um item e coisa que qualquer um faz ao
+            # escrever, entao quem tem que aguentar e o gerador.
+            j = i + 1
+            while j < len(linhas):
+                seguinte = linhas[j].strip()
+                # So quebra em MARCADOR de verdade. Testar por startswith("*")
+                # cortava a continuacao que comeca em negrito ("**Julio
+                # Prestes** (CPTM...")), e o item saia partido na tela.
+                if (not seguinte
+                        or re.match(r"^(?:[-*+]\s|\d+[.)]\s|#{1,6}\s|>|\||```|-{3,}$)",
+                                    seguinte)):
+                    break
+                item += " " + seguinte
+                j += 1
+            i = j - 1                      # o i += 1 do fim do bloco fecha a conta
+
             mk = re.match(r"^\[([ xX])\]\s*(.*)$", item)
 
             if mk:
@@ -309,8 +340,10 @@ def md_para_html(texto):
                 feito = mk.group(1).lower() == "x"
                 # data-mk: chave estavel do item, para o navegador lembrar o que
                 # ja foi ticado. Vem do texto, entao editar o texto zera aquele item.
-                chave = chave_item(mk.group(2))
-                qtd = quantidade_do_item(mk.group(2))
+                mk1 = re.match(r"^\[([ xX])\]\s*(.*)$", item_chave)
+                base = mk1.group(2) if mk1 else mk.group(2)
+                chave = chave_item(base)
+                qtd = quantidade_do_item(base)
                 # data-md: o que o ARQUIVO diz deste item (0 = em aberto;
                 # N = quantas pecas ele considera prontas). Sem isto o painel
                 # so sabia o que o proprio aparelho ja tinha ticado, e uma

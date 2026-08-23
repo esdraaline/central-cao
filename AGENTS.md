@@ -13,7 +13,9 @@ O CAO vive em dois lugares, com papel fixo:
 | **Google Drive** (`G:\Meu Drive\10_JOSEMAR\02_TRABALHO\08_CAO_2026`) | **Conteúdo**: anotação de aula, slide, trabalho, avaliação, dissertação |
 
 **Este repositório é PÚBLICO.** Conteúdo de aula, slide, PDF de material e documento
-institucional nunca entram aqui.
+institucional nunca entram aqui. Na prática: a pasta `CAO 2026/` inteira está no `.gitignore` e
+não sobe para o GitHub. O que vira repositório são os `.md`, o `gerar_painel.py` e a pasta
+`docs/` (o painel publicado); o `docs/index.html` é gerado e nunca se edita à mão.
 
 O mapa completo, com a tabela de "qual pergunta se responde em qual arquivo", está em
 `08_CAO_2026/CLAUDE.md`, do lado do Drive. Skills: **`cao`** (situar no curso, logística) e

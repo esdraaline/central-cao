@@ -1,32 +1,42 @@
 # DÚVIDAS — CAO 2026
 
-> Perguntas em aberto sobre o curso (regras, rotina, SAE, orientador, colegas de turma) e as respostas já obtidas.
-> Formato: pergunta, contexto, resposta (quando resolvida), data.
+> O que eu ainda não sei, agrupado por quem responde. Quando a resposta chegar, ela vai para o
+> arquivo dono do assunto e some daqui.
 
 ## Em aberto
 
-### Para o SAE
-*(Nenhuma. As quatro que estavam aqui foram respondidas em 12/08/2026 — ver Resolvidas.)*
+### Coordenação e Seção de Avaliação (Cap PM Diego Almeida, caesaval@policiamilitar.sp.gov.br)
+- **Quais disciplinas têm prova e quais têm trabalho?** O QTS não diz uma palavra sobre isso. Enquanto não souber, [PRAZOS.md](PRAZOS.md) não tem como listar entrega de disciplina. Perguntar na terça 25/08 ([TAREFAS.md](TAREFAS.md)).
+- **Existe plano de disciplina com carga horária?** O QTS é semanal e não traz o total do curso, então não dá para saber quais matérias são pesadas.
+- **Sou mesmo do pelotão A?** A dedução de 18/08 bate cinco de cinco com as aulas que eu assisti, mas continua sendo dedução. Ratificar de viva voz na Coordenação ([GRADE.md](GRADE.md)).
+- As outras lacunas da grade (se a troca de docente é rodízio ou substituição, e se as sete disciplinas que nunca entraram são do segundo semestre) estão listadas em [GRADE.md](GRADE.md), na seção "O que ainda não sei".
 
-### Outras
-- **O QTS de segunda marca atividade externa já na primeira semana?** É o que decide se a aposta de deixar o B-1 e o EPI para 23/08 sai de graça. Se marcar, vai de P-1, avisa o chefe de turma e o B-1 sobe no domingo. *(aberta em 14/08/2026)*
-- **Restaurante e padaria do entorno abrem domingo à noite?** Chegando à noite, se não abrirem, a janta de domingo tem que sair de casa. Na dúvida, leve o lanche.
-- **Endereço e horário da ConfecBell** (loja do entorno). Vale conferir antes, para não descobrir na tarde de segunda que ela fecha cedo ou que fica longe a pé.
-- **Café da manhã de segunda é bancado pela turma do CAO-I/26** — vale confirmar com o chefe de turma se entra alguma vaquinha de retribuição.
+### Dissertação (Cap PM Gobbo, Seção de Pesquisa, caespesquisa@policiamilitar.sp.gov.br)
+- **As regras da orientação**: precisa ser instrutor do curso, quantos orientandos cada um aceita, se há prazo, se o pedido é formal e se cabe coorientador. As cinco perguntas, na ordem de perguntar, estão em [ESTUDOS.md](ESTUDOS.md). É a conversa que protege a abordagem ao Cel Eglis na terça 25/08.
+- **O Cel PM Mario Luciano Siconeli segue orientando no CAES?** Ele orientou a dissertação do Cap PM Ferrarez (CAO/24), que é a minha referência, e não aparece como instrutor da minha turma.
 
-## Resolvidas
-> Fonte das três primeiras: orientações do Cap Hiran (SAE), repassadas em 12/08/2026.
+### Chefe de Turma
+- **Pode gravar áudio de aula?** Se puder, o NotebookLM aceita áudio como fonte e isso muda muita coisa no método ([ESTUDOS.md](ESTUDOS.md)). Se não puder, esquecer.
+- **A turma retribui o café da manhã da recepção?** O CAO-I/26 bancou o nosso em 17/08. Confirmar se entra vaquinha para a turma seguinte, e quando.
+- **Formatura**: data, hora e local ainda a ratificar pela turma (checklist em [ROTINA.md](ROTINA.md)).
 
-> As quatro abaixo foram respondidas pelo próprio Josemar em 12/08/2026, não pelo SAE. Não
-> chegou a ser preciso escrever. Se alguma delas tiver consequência cara mais adiante, vale
-> confirmar com a Seção antes de agir.
+### SAE / Univesp
+- **Resposta ao pedido de prova em polo da capital**, protocolado em 19/08. O prazo de 10 dias úteis vence em **03/09**. Sem resposta, cobrar pelo **0800 051 3333** ou pelo WhatsApp **(11) 4200-2982**. A prova é 22/09 ([PRAZOS.md](PRAZOS.md)).
 
-- **Chegando por volta das 22h no domingo, tem restrição de horário no alojamento?** **Não.** *(Josemar, 12/08/2026)*
-- **"Passeio completo" na atividade externa é S-1 ou P-1?** **P-1.** A dúvida vinha de o R-5 chamar a seção dos uniformes sociais de "Passeio Completo" (Art. 49), mas na prática do curso o que vale é o P-1 completo. O quepe continua sendo peça de cerimônia, e o S-1 continua indo para o CAES por causa das visitas. *(Josemar, 12/08/2026)*
-- **Qual EPI levar?** **Cinto, colete e bota**, usados com o **B-1**. *(Josemar, 12/08/2026)*
-- **O SAE quer via impressa do Ofício de Apresentação no dia 17?** **Não.** Basta o envio pela mesa SEI 302090130. *(Josemar, 12/08/2026)*
-- **Qual o tamanho da cama do alojamento?** **Solteiro.** Levar lençol de solteiro. *(Josemar, 12/08/2026)*
-- **Cartão de estacionamento, peço a quem?** **Não se aplica**: vou de carona. O cartão é do veículo, então quem precisar pedir à AAp é o motorista. *(Josemar, 12/08/2026)*
-- **A partir de quando dá para chegar no alojamento?** A partir de **sábado à tarde**, não só no domingo. Alojamentos e salas já vêm identificados com o nome de cada aluno. Decidido viajar **domingo à tarde, chegando à noite**. *(12/08/2026)*
-- **Como funciona o armário?** Ele **não tem chave própria**: cada aluno leva o próprio **cadeado**. A tarde de segunda tem tempo reservado para organizar armário e alojamento. *(12/08/2026)*
-- **Como é a apresentação de segunda (17/08)?** Recepção no CAES **a partir das 07h30**, com café da manhã patrocinado pela turma do CAO-I/26, **lista de presença para assinar por pelotão** e, em seguida, uma palestra. **A farda social não é usada na segunda**, mas deve ser levada e deixada guardada no CAES para as visitas do curso. O **QTS com a programação das aulas sai nesta segunda**. *(12/08/2026)*
+### Estudo e entorno
+- **O Google Drive do computador sincroniza dentro da WCorp?** Se não sincronizar, os arquivos sobem sozinhos quando eu saio do quartel, o que não atrapalha, mas é bom saber. *[VERIFICAR]*
+- **Qual o limite de fontes por caderno no NotebookLM?** Muda conforme o plano. *[VERIFICAR]*
+- **Endereço e horário da ConfecBell.** Não estão anotados em lugar nenhum. Anotar em [ENTORNO.md](ENTORNO.md) quando voltar lá para comprar a camisa social cinza-claro e a boina ([COMPRAS.md](COMPRAS.md)).
+
+## Já respondidas
+
+> Fonte: Cap Hiran (SAE) e o próprio Josemar, em 12/08/2026. As que o Josemar respondeu não
+> passaram pela Seção: se alguma tiver consequência cara, vale confirmar antes de agir.
+
+- **Alojamento**: chegada por volta das 22h no domingo, **sem restrição de horário**. Cama de **solteiro**, e o armário **não tem chave** (o cadeado é meu). Ver [VIAGENS.md](VIAGENS.md) e [MALA.md](MALA.md).
+- **"Passeio completo" na atividade externa é o P-1**, não o S-1. O R-5 chama a seção dos uniformes sociais de "Passeio Completo" (Art. 49), daí a confusão. Ver [ROTINA.md](ROTINA.md).
+- **EPI é cinto, colete e bota**, usados com o B-1. Nesta semana nem um nem outro sobem ([MALA.md](MALA.md)).
+- **Atividade externa é toda semana?** Não. A Ed. Física gira entre os pelotões: na semana 1 o embarque antecipado foi do A, na semana 2 é dos pelotões C e E ([GRADE.md](GRADE.md)).
+- **Padaria aberta domingo à noite?** Sim: Cascatinha (dom a sex, 05h à meia-noite) e Padaria Caxias (todos os dias, até 22h30). Mesmo assim a janta de domingo vai na mala ([ENTORNO.md](ENTORNO.md)).
+- **Ofício de Apresentação em via impressa?** Não. Basta o envio pela mesa SEI 302090130, que já confirmou o recebimento.
+- **Cartão de estacionamento**: não se aplica, vou de carona. O cartão é do veículo, então quem pede à AAp é o motorista.

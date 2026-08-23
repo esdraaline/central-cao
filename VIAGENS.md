@@ -1,39 +1,56 @@
 # VIAGENS — CAO 2026
 
-> Deslocamentos ligados ao curso: módulos presenciais, provas, apresentação do PP/monografia etc.
+> Como é o deslocamento da semana de curso, e o que precisa estar resolvido antes de sair de
+> casa. O que vai na mala está em [MALA.md](MALA.md); o horário das aulas, em
+> [ROTINA.md](ROTINA.md).
 
-## Rotina semanal do curso
-Durante o curso a semana é **domingo a quinta**: desloca no domingo, dorme no alojamento do CAES, aulas de segunda a quinta e volta na quinta depois das 11h30. O que levar está em [MALA.md](MALA.md); os horários, em [ROTINA.md](ROTINA.md).
+## A semana, de ponta a ponta
 
 | Dia | Movimento |
 |---|---|
-| Domingo | Guararapes → São Paulo (CAES, Praça Júlio Prestes, centro). Instalação no alojamento |
-| Segunda a quinta | Aula. Entrada 08h15 todo dia |
-| Quinta | Saída às 11h30, São Paulo → Guararapes |
+| **Domingo** | Guararapes → São Paulo, de carona. Chegada de noite e instalação no alojamento |
+| **Segunda a quinta** | Aula, entrada 08h15 todo dia |
+| **Quinta** | Aula até 11h30, e aí São Paulo → Guararapes |
 
-## Programadas
+**Destino, para jogar no GPS:** CAES "Cel Nelson Freire Terra" — **Praça Júlio Prestes, 5005,
+Campos Elíseos, São Paulo/SP, CEP 01218-020**. Fica em frente à Praça Júlio Prestes, no centro.
+Dois endereços velhos ainda circulam e devem ser recusados (Água Fria e Rua Jorge Miranda):
+ver [CONTATOS.md](CONTATOS.md).
 
-### 16/08/2026 (domingo) — primeira ida
-Primeira semana do CAO-II/26. **Recepção na segunda, 17/08, a partir das 07h30** (não 08h15). Alojamento no próprio prédio do CAES.
+**Horário de referência:** saída de casa por volta das **15h00** e chegada por volta das
+**22h**, que foi como rodou na primeira ida. *[VERIFICAR: o horário é combinado com o amigo da
+carona a cada semana, não é fixo.]*
 
-> **Decidido em 12/08/2026: viaja domingo à tarde e chega à noite.** O alojamento abre desde
-> sábado à tarde, mas o sábado fica em casa. Duas consequências: a mala tem que estar pronta
-> no sábado, e a **janta de domingo vai na mala**, porque chegando à noite não dá para contar
-> com restaurante aberto.
+**Chegada no alojamento:** sem restrição de horário, e o alojamento está liberado desde sábado
+à tarde. O armário não tem chave, o cadeado é seu.
 
-- **Destino**: CAES "Cel Nelson Freire Terra" — **Praça Júlio Prestes, 5005, Campos Elíseos, São Paulo/SP, CEP 01218-020**. É esse o endereço para jogar no GPS. Fica **em frente à Praça Júlio Prestes**, no centro (Campos Elíseos / Santa Ifigênia, entorno de Av. Rio Branco / Av. Duque de Caxias). Duas correções: em 17/08/2026 saiu o "Barra Funda", que era outro bairro; em 19/08/2026 o número passou de 142 para o oficial 5005.
-- **Como vou**: **de carona com um amigo** (definido em 12/08/2026).
-- **Horário de saída**: **15h00, de casa** (fechado em 12/08/2026). Pela distância de Guararapes até o centro de São Paulo, a chegada cai por volta das 22h, salvo trânsito ou parada.
-- **Bagagem**: é carona, então o porta-malas é dividido. Combine o volume antes e leve compacto: a mala da semana já tem roupa de cama, material de limpeza e itens de copa. Se apertar, o balde é o primeiro a ficar.
-- **Estacionamento**: não se aplica a mim. O cartão do CAES é do veículo; se o amigo for parar lá dentro, é ele quem pede à AAp.
-- **Para quem dirige** (caso do amigo, ou de mim mesmo em outra semana): o estacionamento do CAO tem 40 vagas sinalizadas e **exige cartão de estacionamento visível**, pedido à AAp antes de viajar. Motocicleta tem espaço coberto atrás do prédio.
-- **Chegada no alojamento**: por volta das 22h, **sem restrição de horário** (confirmado em 12/08/2026). Liberado desde sábado à tarde e já identificado com o nome. Levar **cadeado**, o armário não tem chave.
-- **Cobertura**: a **boina reserva** resolve a segunda de manhã. A boina nova só será comprada à tarde.
-- **Levar em mãos** (não na mala): identidade funcional e o número do processo SEI do Ofício de Apresentação. O ofício é ato eletrônico da OPM, não papel de entregar na chegada (ver [ROTINA.md](ROTINA.md)).
-- **Primeira noite**: chegando perto das 22h e sem rancho, **a janta de domingo vai na mala**, ponto. Contar com Terraço ou padaria abertos nesse horário de domingo é aposta. Na segunda tem café da manhã no CAES, bancado pela turma do CAO-I/26.
+## Antes de sair, no domingo
 
-### 20/08/2026 (quinta) — primeira volta
-Saída depois das 11h30. Volta tudo sujo para casa (não tem lavanderia no alojamento).
+- [ ] **Mala arrumada** pelo rodízio de [MALA.md](MALA.md): roupa lavada, toalhas, fronha e a
+      carga da copa (whey, creatina, energético, lanches, marmitas). **O B-1 e o EPI ficam em
+      casa**, decisão de 20/08.
+- [ ] **Combinar com o amigo da carona** o horário de saída e o espaço de bagagem. O
+      porta-malas é dividido, então volume é moeda: leve compacto.
+- [ ] **Janta de domingo na mala.** A chegada é perto das 22h, não tem rancho e contar com o
+      entorno aberto nesse horário é aposta. Os dois **Oxxo abrem 24 horas**, a uns 10 minutos
+      a pé, como rede de segurança ([ENTORNO.md](ENTORNO.md)).
+- [ ] **Documentos em mãos, não na mala**: identidade funcional e o número do processo SEI do
+      Ofício de Apresentação.
+- [ ] **Dinheiro ou cartão** para a divisão do combustível da carona e para as refeições da
+      semana.
 
-## Realizadas
-- *(histórico de viagens já feitas, com data e motivo)*
+Na semana em que eu for dirigindo, o **cartão de estacionamento do CAO se pede à AAp antes de
+viajar** e tem que ficar visível no painel — 40 vagas sinalizadas, moto em espaço coberto
+atrás do prédio (ver [ROTINA.md](ROTINA.md)).
+
+## Na quinta, antes de pegar a estrada
+
+Separar para levar para casa: **toalha de banho usada, fronha usada e a roupa suja da semana**.
+Não tem lavanderia no alojamento, então tudo o que sujou volta. O que fica no armário do CAES
+está listado em [MALA.md](MALA.md).
+
+## Histórico
+
+- **16/08/2026 (domingo), primeira ida**: saída de casa às 15h00, de carona, chegada por volta
+  das 22h.
+- **20/08/2026 (quinta), primeira volta**: saída depois das 11h30, com a roupa da semana suja.

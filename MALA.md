@@ -6,41 +6,39 @@
 > 11h30 ([ROTINA.md](ROTINA.md) e [VIAGENS.md](VIAGENS.md)). O que ainda falta comprar está em
 > [COMPRAS.md](COMPRAS.md).
 
-## Domingo — o que sobe
+## Quinta de manhã — o inventário
 
-**Quem tica isso é a tarefa de domingo**, na aba Tarefas: ela abre com a lista dentro, item por
-item, e volta zerada toda semana. Aqui fica só a leitura, para você conferir de longe:
+**É este contador que decide a mala de domingo.** Antes de descer, abra o armário e ponha em cada
+item **quantas peças LIMPAS ficaram lá**. O painel calcula o resto sozinho: o que ele mostrar como
+**"faltam N"** é exatamente o que sobe no domingo.
 
-roupa lavada (cuecas, meias, camisetas), fronha limpa, 2 toalhas de banho para revezar, pijamas
-lavados, e a carga da copa — whey, creatina, energético zero, Pepsi Black, lanches, marmitas
-prontas, shampoo e porta-sabonete.
+Use o `−` e o `+`. Clicar no meio da linha marca "tenho tudo", que é o que você faz no domingo
+quando chegar e guardar a roupa nova.
 
-**A janta de domingo vai junto, e não é lanche.** A chegada é por volta das 22h, e contar com o
-entorno aberto nesse horário é aposta.
+- [ ] 8 cuecas
+- [ ] 5 pares de meia social preta
+- [ ] 6 camisetas de serviço
+- [ ] 4 camisas de passeio
+- [ ] 2 pijamas
+- [ ] 2 toalhas de banho
+- [ ] 1 fronha limpa
 
-**Etiqueta com o nome em tudo que for para a geladeira.** São muitas pessoas dividindo as
-mesmas duas geladeiras e os dois frigobares, e marmita sem nome vira marmita de todo mundo.
+Peça que zerou no armário aparece com o contador cheio de falta, e é ela que não pode ser esquecida.
+Peça que ficou completa some da lista sozinha, para a tela mostrar só o que precisa de você.
 
-**Whey**: fracione a porção da semana num pote menor e deixe o pote grande em casa, que é caro
-em volume no porta-malas. A creatina é o oposto, o pote já é pequeno e cabe em qualquer canto.
+### O número ao lado do item é o alvo, não o que você tem
 
-### Estoque alvo no armário
-
-Esta é a conta permanente: quanto tem que existir no CAES. **Quinta de manhã, ao guardar a roupa
-suja, olhe o armário e veja o que ficou abaixo do alvo. A diferença é o que sobe no domingo.**
-
-| Item | Estoque alvo | Observação |
+| Item | Alvo no armário | Por quê |
 |---|---|---|
-| Camisa de passeio | 3 a 4 | roda com o P-1 |
-| Camiseta de serviço | 6 | **não tem folga**: são 4 dias de aula, uma por dia, e ela vai por baixo do P-1 e do B-1. A conta boa do Art. 74 é 6 |
+| Camiseta de serviço | 6 | **não tem folga**: 4 dias de aula, uma por dia, e ela vai por baixo do P-1 e do B-1. A conta do Art. 74 é 6 |
+| Meia social preta | 5 pares | **o item mais crítico.** O P-1 pede meia social fina os quatro dias. A meia preta grossa que fica lá é de coturno e não substitui: se esquecer em casa, não tem como improvisar |
 | Cueca | 8 | |
-| Meia social preta (P-1) | 5 pares | **o item mais crítico da lista.** O P-1 pede meia social fina os quatro dias, e a meia preta grossa que fica lá é de coturno, não substitui. Se esquecer em casa, não tem como improvisar |
-| Meia preta grossa (coturno) | 1 a 2 pares | só serve com o B-1 |
-| Meia branca | 4 pares | é do T-1, sobe junto com o kit de Ed. Física e só quando o QTS marcar |
-| Pijama | 2 conjuntos | |
-| Polo e paisana | 2 mudas | |
+| Camisa de passeio | 4 | roda com o P-1 |
+| Pijama | 2 | |
 | Toalha de banho | 2 | para revezar |
 | Fronha | 1 | |
+| Meia preta grossa | 2 pares | só serve com o B-1, que hoje não sobe |
+| Meia branca | 4 pares | é do T-1: sobe junto com o kit de Ed. Física, e só quando o QTS marcar |
 
 ## Quinta de manhã, antes de pegar a estrada — o que desce
 
@@ -50,6 +48,29 @@ suja, olhe o armário e veja o que ficou abaixo do alvo. A diferença é o que s
 
 Aproveite e faça o inventário do armário nessa hora: é ele que monta a coluna "sobe" do
 domingo seguinte.
+
+## Domingo — o que sobe
+
+**A roupa não tem quantidade fixa. Ela sai do inventário de quinta**: abra a seção acima e leve o
+que estiver marcado como "faltam N". Se o contador diz que faltam 5 cuecas, são 5 cuecas.
+
+**A carga da copa é sempre a mesma**, essa sim uma lista fixa: whey, creatina, energético zero,
+Pepsi Black, lanches, marmitas prontas, shampoo e porta-sabonete.
+
+**Quem tica isso é a tarefa de domingo**, na aba Tarefas: ela abre com a lista dentro, item por
+item, e volta zerada toda semana. Aqui fica só a leitura.
+
+**Ao chegar e guardar tudo, volte ao inventário e clique no meio de cada linha de roupa.** Isso
+marca "tenho tudo" e zera a falta. É o que faz a conta da quinta seguinte começar limpa.
+
+**A janta de domingo vai junto, e não é lanche.** A chegada é por volta das 22h, e contar com o
+entorno aberto nesse horário é aposta.
+
+**Etiqueta com o nome em tudo que for para a geladeira.** São muitas pessoas dividindo as
+mesmas duas geladeiras e os dois frigobares, e marmita sem nome vira marmita de todo mundo.
+
+**Whey**: fracione a porção da semana num pote menor e deixe o pote grande em casa, que é caro
+em volume no porta-malas. A creatina é o oposto, o pote já é pequeno e cabe em qualquer canto.
 
 ## O que não entra no rodízio
 

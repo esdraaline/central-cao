@@ -352,6 +352,32 @@ aquilo só chega ao celular quando aquele PC for religado com o painel aberto.
 **E se não estiver logado, nada disso acontece:** a linha diz "Somente neste aparelho" e é
 clicável para entrar. Sem conta, o Exportar é o que garante que nada se perca.
 
+### O inventário de quinta vira a mala de domingo (23/08/2026)
+
+A carga do domingo deixou de ser lista fixa. Ela é **calculada**, e quem calcula é o contador que
+as caixinhas já tinham desde o começo.
+
+**Como funciona.** Na aba Mala, cada peça de roupa é um item com quantidade (`- [ ] 8 cuecas`), e o
+número é o **alvo no armário**, não o que ele tem. Quinta de manhã, antes de descer, ele abre o
+armário e põe no contador **quantas peças limpas ficaram lá**. O painel mostra o que falta para
+fechar o alvo, e esse "faltam N" é exatamente a carga do domingo: contador dizendo *faltam 5
+cuecas* significa cinco cuecas na mala.
+
+**Por que isso resolve a reclamação dele** (*"tem coisa que eu já tiquei e já está no CAES, não tem
+que ficar aparecendo todo domingo"*): item que fecha o alvo **some da lista sozinho**, porque a aba
+esconde o que está pronto. Só continua na tela o que precisa dele. No domingo, ao chegar e guardar
+a roupa nova, ele clica no meio de cada linha, que marca "tenho tudo" e deixa a conta da quinta
+seguinte começar limpa.
+
+**Nenhuma linha de código foi escrita para isso.** O stepper, a contagem por peça e o esconder o
+que está pronto existem desde as abas Compras e Mala. O que faltava era usar o número como *alvo* e
+não como *quantidade a levar*, e dizer isso em uma frase dentro do arquivo.
+
+**As duas tarefas do rodízio foram religadas ao ciclo.** A de quinta ganhou o inventário como
+primeiro passo, antes da roupa suja; a de domingo perdeu os números fixos ("5 cuecas" virou "cuecas,
+na quantidade que o inventário de quinta apontou"). Sem isso, o painel teria duas fontes brigando
+para dizer quanta cueca vai na mala.
+
 ### Item de lista quebrado em duas linhas (23/08/2026)
 
 Quebrar a linha no meio de um item de lista é coisa que qualquer um faz ao escrever, e o gerador

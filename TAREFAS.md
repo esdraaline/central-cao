@@ -29,18 +29,23 @@
 
 ### Rodízio da mala (toda semana, ver MALA.md)
 > As duas se repetem sozinhas: ticadas, não vão para Concluídas, voltam com a data da semana seguinte.
-> A de domingo leva a lista de conferência indentada abaixo dela. No painel cada item é um clique,
-> tudo dentro da mesma tarefa, e a lista volta zerada quando a tarefa rola para a semana seguinte.
-> No arquivo os itens ficam sempre em aberto: aqui a lista é o molde, o tique é do painel.
-- [ ] Quinta de manhã, separar para levar para casa: toalha de banho, fronha e roupa suja @semanal [27/08/2026] #pessoal
+> O ciclo é este: **quinta de manhã você conta o que ficou limpo no armário** e lança nos
+> contadores da aba Mala; o que o painel mostrar como "faltam N" é a carga de **domingo**. Por isso
+> a lista de domingo não traz número: a quantidade vem do inventário. No painel cada item é um
+> clique, tudo dentro da mesma tarefa, e a lista volta zerada na semana seguinte. No arquivo os
+> itens ficam sempre em aberto: aqui a lista é o molde, o tique é do painel.
+- [ ] Quinta de manhã, antes de descer: inventário do armário e roupa suja na mala @semanal [27/08/2026] #pessoal
+  - [ ] Contar o que ficou limpo: cuecas, meias sociais, camisetas de serviço, camisas de passeio
+  - [ ] Lançar os números nos contadores da aba Mala (o "faltam N" vira a carga de domingo)
+  - [ ] Toalha de banho e fronha usadas na mala
+  - [ ] Roupa suja da semana na mala
 - [ ] Domingo, arrumar a mala da semana antes de viajar. B-1 e EPI ficam em casa (decisão de 20/08) @semanal [30/08/2026] #pessoal
-  - [ ] 5 cuecas
-  - [ ] 5 pares de meia social preta
-  - [ ] 3 pares de meia branca
-  - [ ] 2 camisetas de serviço
-  - [ ] 2 pijamas
-  - [ ] 2 toalhas de banho
-  - [ ] 1 fronha limpa
+  - [ ] Cuecas, na quantidade que o inventário de quinta apontou
+  - [ ] Meias sociais pretas, na quantidade do inventário
+  - [ ] Camisetas de serviço, na quantidade do inventário
+  - [ ] Camisas de passeio, se o inventário apontou falta
+  - [ ] Pijamas lavados
+  - [ ] Toalhas de banho e fronha limpa
   - [ ] whey
   - [ ] creatina
   - [ ] energético zero

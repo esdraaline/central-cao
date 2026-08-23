@@ -368,8 +368,12 @@ def md_para_html(texto):
         i += 1
         while i < len(linhas):
             prox = linhas[i].strip()
-            if (not prox or prox.startswith(("#", "-", "*", ">", "|", "```"))
-                    or re.match(r"^\d+[.)]\s", prox)):
+            # Mesma correcao da lista: so MARCADOR de verdade quebra o
+            # paragrafo. Testar por startswith("*") cortava a continuacao que
+            # comeca em negrito, e a frase saia partida em duas na tela.
+            if (not prox
+                    or re.match(r"^(?:[-*+]\s|\d+[.)]\s|#{1,6}\s|>|\||```|-{3,}$)",
+                                prox)):
                 break
             buf.append(prox)
             i += 1

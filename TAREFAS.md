@@ -32,7 +32,8 @@
 > A de domingo leva a lista de conferência indentada abaixo dela. No painel cada item é um clique,
 > tudo dentro da mesma tarefa, e a lista volta zerada quando a tarefa rola para a semana seguinte.
 > No arquivo os itens ficam sempre em aberto: aqui a lista é o molde, o tique é do painel.
-- [ ] Domingo, arrumar a mala da semana antes de viajar. B-1 e EPI ficam em casa (decisão de 20/08) @semanal [23/08/2026] #pessoal
+- [ ] Quinta de manhã, separar para levar para casa: toalha de banho, fronha e roupa suja @semanal [27/08/2026] #pessoal
+- [ ] Domingo, arrumar a mala da semana antes de viajar. B-1 e EPI ficam em casa (decisão de 20/08) @semanal [30/08/2026] #pessoal
   - [ ] 5 cuecas
   - [ ] 5 pares de meia social preta
   - [ ] 3 pares de meia branca
@@ -48,7 +49,6 @@
   - [ ] marmitas prontas
   - [ ] shampoo
   - [ ] porta-sabonete
-- [ ] Quinta de manhã, separar para levar para casa: toalha de banho, fronha e roupa suja @semanal [27/08/2026] #pessoal
 
 ### Orientador da dissertação — MISSÃO URGENTE
 - [ ] Falar com o Cap Simões e pegar o contato do Cel Eglis [24/08/2026] #dissertacao

@@ -21,7 +21,7 @@ Nota de aplicativo não conta.
 | **Almoço, 3ª opção / jantar, 1ª** | **Boteco Flôr da Duque** — Av. Duque de Caxias, 892 | **241 m · 3 min** |
 | **Mercado da sua avenida** | **Duque Supermercados** — Av. Duque de Caxias, 812 · **06h às 22h** | **302 m · 3 min** |
 | **Mercado grande** | Dia — Al. Barão de Limeira, 513 · Extra — Av. Rio Branco, 452 | ~650 m · 8 min |
-| **Academia** | **Gaviões 24h** — Av. Rio Branco, 422 · **aberta 24 horas** | 730 m · 9 min |
+| **Academia** | **Gaviões 24h** — Av. Rio Branco, 422 · **24 horas** · entra pelo **Wellhub** | 730 m · 9 min |
 | **Padaria que abre 05h** | Cascatinha — R. Gen. Couto de Magalhães, 172 | 733 m · 9 min |
 | **Farmácia 24h** | Drogaria São Paulo — Pça. Júlio Mesquita, 131 | 1.020 m · 13 min |
 | **Conveniência 24h** | Oxxo — R. José Paulino, 592 | 893 m · 10 min |
@@ -360,7 +360,7 @@ eles não estão no OpenStreetMap. O que ele vê da calçada continua ganhando d
 | Banco 24Horas | Shop. Inter Continental — R. Santa Efigênia, 452 |
 | Lotérica | Lotérica Natal — Av. Duque de Caxias, 876 |
 | Cabeleireiro | Lissandra Cabeleireiros — Av. Duque de Caxias, 830 |
-| **Academia** | **Gaviões 24h** — Av. Rio Branco, ao lado do Extra do 452 · Evoque — Av. Rio Branco, 1457 (Gympass) |
+| **Academia** | **Gaviões 24h** — Av. Rio Branco, 422, entra pelo Wellhub · Evoque — Av. Rio Branco, 1457 |
 | Pronto-socorro | PS Barra Funda — R. Vitorino Carmilo, 717 |
 | Ônibus | Terminal Princesa Isabel — Av. Rio Branco |
 
@@ -400,12 +400,21 @@ anual R$ 129/mês com fidelidade e mensal sem fidelidade R$ 139, e o próprio si
 o valor muda por unidade. E cuidado com a manchete "Gaviões a partir de R$ 39": é de outra
 rede do mesmo grupo, a Fast Treino, cuja unidade é em Alphaville.]*
 
-**Wellhub (ex-Gympass): a unidade aceita, a partir do plano Basic+, R$ 99,99/mês.** O Basic de
-R$ 69,99 não cobre. A TotalPass também tem a unidade no catálogo, mas não publica a faixa.
-**O porém que decide:** os dois são benefício corporativo, não se assina como pessoa física.
-*[VERIFICAR: se a PMESP, a Caixa Beneficente ou alguma associação da qual você já participa
-oferece Wellhub ou TotalPass. Se oferecer, o Basic+ a R$ 99,99 provavelmente ganha de qualquer
-plano de balcão.]*
+**O caminho é o Wellhub, e você já tem.** O Josemar **tem Wellhub (ex-Gympass) pela PM**
+(confirmado por ele em 24/08/2026), e **a unidade Rio Branco é parceira**. Ou seja, o preço de
+balcão provavelmente nem entra na conta: é chegar e entrar pelo aplicativo.
+
+**A única coisa que falta conferir é a faixa do seu plano.** A Gaviões Rio Branco exige
+**Basic+ (R$ 99,99/mês) ou superior**. O **Basic, de R$ 69,99, não cobre esta academia**.
+*[VERIFICAR no app do Wellhub: qual plano a PM te dá. Se for Basic, dá para subir de faixa
+pagando a diferença, e aí compara com o preço de balcão da academia, que ninguém publica.]*
+
+A TotalPass também tem a unidade no catálogo, mas não publica a faixa. Não interessa enquanto
+o Wellhub resolver.
+
+**Antes de ir a primeira vez, confira no app** se a Gaviões Rio Branco aparece como disponível
+para o seu plano e se o check-in está liberado. Rede parceira entra e sai do catálogo, e o que
+vale é o que o aplicativo mostra no dia.
 
 **Não tem nada a ver com a torcida do Corinthians.** A rede nasceu da escola de karatê "Os
 Gaviões do Karatê", aberta em 1974 numa garagem no Tucuruvi. A quadra da Gaviões da Fiel é

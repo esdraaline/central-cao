@@ -387,6 +387,73 @@ comum (a TP-Link pede Classe 10/U1/V10 e recomenda **High Endurance**, some R$80
 nenhuma delas é a bateria, então **toda externa precisa de tomada no ponto**, o que costuma
 custar eletricista; a assinatura Tapo Care é **opcional**, grava tudo no cartão sem pagar nada.
 
+#### Tapo contra Intelbras, tendo a C520WS como referência
+
+Pesquisa de 24/08/2026, para a câmera da casa em **Guararapes**. Preços do Buscapé e da Amazon
+na mesma data.
+
+**A referência, ficha oficial confirmada na página da TP-Link Brasil:**
+**Tapo C520WS**, ~R$474 no Mercado Livre e **em ruptura nacional** (esgotada na Kabum, na
+Amazon e na AMZ Tech). 2K QHD 2560×1440 (4MP), sensor CMOS Starlight 1/3" F1.6, IP66, IR 850nm
+até 29,9 m, campo de 112° diagonal, detecção de pessoa, animal, **veículo**, violação de lente
+e cruzamento de linha, **porta RJ45** além do Wi-Fi, zoom digital 12x.
+
+**As rivais da Intelbras, linha Mibo iM7:**
+
+| Modelo | Resolução | Preço |
+|---|---|---|
+| **iM7 S Full Color** IP66 | Full HD (2MP) | **R$299,85** |
+| **iM7+ 3MP Full Color** | 3MP | **R$322,91** |
+| iM7 Full Color | Full HD | R$515,00 |
+| iM7+ Zoom Full Color | Full HD | R$620,91 |
+
+**O confronto direto, C520WS contra iM7+ 3MP:**
+
+| | Tapo C520WS | Intelbras iM7+ 3MP |
+|---|---|---|
+| Resolução | **4MP** | 3MP |
+| Preço | R$474 | **R$323** |
+| Disponibilidade | **em ruptura** | disponível |
+| Rede cabeada | **sim, RJ45** | não confirmado |
+| Detecção de veículo | **sim** | não confirmado |
+
+A Tapo ganha na ficha, a Intelbras ganha R$151 e o fato de existir na prateleira.
+
+**Dois fatores que a ficha não mostra:**
+
+1. **Assistência técnica, e isso pesa no interior.** A Intelbras tem rede nacional de
+   autorizadas; a TP-Link não tem nada equivalente fora das capitais. Câmera fica anos ligada
+   tomando sol e chuva: se der problema no terceiro ano, com Intelbras se resolve na região,
+   com Tapo se manda para a capital ou se compra outra.
+2. **Nuvem: empate, e nenhuma obriga.** A Mibo Cloud é pré-paga (3, 7 ou 30 dias, semestral ou
+   anual) e o Tapo Care é assinatura. **As duas gravam no cartão sem pagar nada** e as duas só
+   mostram o preço dentro do app. Não é critério de decisão.
+
+**O empate que realmente decide.** A C520WS não está à venda, então o confronto real é
+**Intelbras iM7+ 3MP a R$323 contra Tapo C320WS a R$308**, praticamente o mesmo dinheiro:
+
+- **Tapo C320WS**: 4MP e IP66, mas é **fixa, não gira**.
+- **Intelbras iM7+ 3MP**: 3MP e **gira 360°**.
+
+**É girar ou enxergar.** Para portão e entrada, câmera fixa e bem apontada costuma render mais
+que câmera girando, porque a que gira só olha para um lado por vez e é no outro que a coisa
+acontece. Para varrer um quintal grande, o giro paga. E se assistência técnica no interior for
+critério, a Intelbras ganha sozinha, independentemente da ficha.
+
+*[VERIFICAR: a página oficial da Intelbras devolveu HTTP 403 e a ficha completa da iM7+ 3MP não
+foi lida. Continuam em aberto o grau IP exato dela, se tem porta de rede e se detecta veículo.]*
+
+*[VERIFICAR: a Intelbras anuncia "**com o holofote ligado**, imagens coloridas 24h", e a Tapo
+anuncia "refletores integrados **e** o sensor Starlight". Isso sugere que a Tapo depende menos
+de acender o holofote à noite, o que importa porque holofote aceso denuncia a câmera. Mas é
+leitura de material de divulgação dos dois lados, ninguém mediu.]*
+
+*[VERIFICAR: onde a câmera vai ficar (portão, quintal ou dentro de casa). Sem isso a
+recomendação não fecha.]*
+
+*[VERIFICAR: autorizada Intelbras mais próxima de Guararapes. A busca não devolveu nenhuma
+específica da região; consultar em intelbras.com/pt-br/onde-encontrar/assistencia-tecnica/]*
+
 ### Estação Santa Cecília
 
 ![Do CAES até a Estação Santa Cecília: 1.164 m, cerca de 15 min.](mapas/santa-cecilia.svg)

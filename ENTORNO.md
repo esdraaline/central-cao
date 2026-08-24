@@ -305,6 +305,88 @@ esquerda na **Rua Mauá** e segue 392 m até a estação. É reto e simples.
 É onde você resolve cabo, carregador, fone e a **extensão de tomada**, porque a sala de aula
 tem poucas tomadas.
 
+### Câmera de segurança e CFTV na Santa Ifigênia [CANDIDATO]
+
+Levantamento de 24/08/2026, motivado pela busca de uma **câmera TP-Link Tapo** para a casa em
+Guararapes. Endereços conferidos um a um; **distâncias medidas** no roteador de pedestre a
+partir do portão da Dino Bueno.
+
+| Loja | Endereço | A pé | Contato | Horário |
+|---|---|---|---|---|
+| **RC CFTV** | R. Santa Ifigênia, 573, loja 7 | **402 m · 5 min** | não encontrado | **não publicado** |
+| **Megastore CFTV** | R. Santa Ifigênia, 485, lojas 02/04 | **492 m · 6 min** | não encontrado | **não publicado** |
+| **SAM Eletrônicos** | R. Santa Ifigênia, 485, lojas 1-3 | **492 m · 6 min** | WhatsApp (11) 98288-6349 | **não publicado** |
+| **InPower** | R. Santa Ifigênia, 348 | **630 m · 8 min** | (11) 3223-0050 | **não publicado** |
+| **Top Net** | R. Aurora, 182, loja 08 | **691 m · 8 min** | (11) 3337-7844 · zap (11) 98483-7628 | **seg-sex 9h-17h, sáb 9h-13h** |
+| **Kalunga** | R. Líbero Badaró, 309 | 1.725 m · 21 min | loja não atende telefone | **seg-sex 8h-19h, sáb 8h-16h** |
+
+**Os números 485 e 573 são galerias**, não lojas. Megastore nas lojas 02/04 e SAM nas lojas 1-3
+dentro do mesmo prédio é normal, e as numerações não se sobrepõem.
+
+**A ordem certa de bater perna é a inversa da intuitiva:** os números da Santa Ifigênia crescem
+se afastando do CAES. Saindo do portão: **RC CFTV → Megastore/SAM → InPower → Top Net**.
+
+| Circuito | Caminhada |
+|---|---|
+| **Só a Santa Ifigênia** (RC, Megastore/SAM, Top Net) | **1.392 m · 17 min** |
+| Incluindo a Kalunga | 3.525 m · 42 min |
+
+As quatro primeiras estão a menos de 300 m umas das outras: **é uma parada só**, e cabe em
+qualquer intervalo de almoço.
+
+**O horário é o gargalo.** A única loja da rua com horário publicado, a Top Net, **fecha 17h**.
+Terça e quarta a aula sai 18h00, então nesses dias a rua inteira já fechou. Sobram **segunda
+depois da aula** (16h15, chega 16h25, uns 35 min de loja) e **o almoço de qualquer dia**. A
+Kalunga, aberta até 19h, é a única que aguenta uma saída pós-aula de terça ou quarta.
+
+*[VERIFICAR: horário de RC CFTV, Megastore, SAM e InPower. Nenhuma publica, nem em site próprio,
+nem em diretório, nem nas cópias arquivadas do portal da região. O caminho é perguntar no
+WhatsApp da SAM, (11) 98288-6349, que é o único número de loja confirmado da galeria 485.]*
+
+#### O que a pesquisa de fora acertou e o que ela inventou
+
+O levantamento inicial destas lojas veio de uma IA e foi auditado em 24/08/2026. **Nenhuma loja
+era fantasma e nenhum endereço estava errado**, inclusive o da RC CFTV, que parecia duvidoso e
+se confirmou no HTML arquivado do portal (snapshot de 10/05/2026).
+
+**Mas um preço foi inventado.** A alegação era "Tapo C200C por R$200, ou R$186 no Pix, na Top
+Net". A página existe, só que é a **C200** (a C200C nem é vendida no Brasil, é variante
+asiática) e custa **R$290,00**, ou **R$269,70 no Pix**. O que denuncia: 200 × 0,93 = 186, ou
+seja, o desconto de 7% da loja é real e foi lido do site, mas o preço-base foi inventado e o
+Pix saiu de aplicar o desconto verdadeiro sobre um número falso. **Todos os preços da Kalunga,
+em contraste, estavam corretos na vírgula.** Lição: conferir preço na fonte, sempre.
+
+#### Preços de referência, consultados em 24/08/2026
+
+| Modelo | Uso | Melhor preço achado | Onde evitar |
+|---|---|---|---|
+| **C200** interna, gira 360° | interno | **R$173,79** Amazon | Top Net R$290 (60% acima) · Kalunga R$199,90 |
+| **C100** interna, fixa | interno | R$169,90 Kalunga | custa quase igual à C200 e **não gira** |
+| **C500** externa 1080p, IP65 | externo básico | **R$225,90** Magalu | Kalunga R$299,90 · Fast Shop R$379 |
+| **C320WS** externa 2K, IP66, fixa | externo | **R$308,90** Amazon | Kalunga R$380,60 (indisponível) |
+| **C510W** externa 2K, gira, IP65 | externo | **R$376,20** Magalu | |
+| **C520WS** externa 4K*, gira, IP66 | externo | ~R$474 Mercado Livre | **em ruptura nacional** |
+| **C530WS** externa 3K 5MP, gira, IP66 | externo top | **R$490,13** Amazon | **Kabum R$891,06**, 82% acima |
+
+*A C520WS é 4MP (2K QHD), não 4K.
+
+**A conclusão que economiza a viagem:** a Santa Ifigênia é forte em **Intelbras e CFTV
+profissional**, não na linha residencial Tapo. A única loja da rua com Tapo no catálogo é a
+**InPower** (C530WS), e mesmo assim marcada sem previsão. **Comprando pela Amazon sai mais
+barato que qualquer preço de balcão levantado aqui.** Só vale a perna se for para ver o produto
+na mão ou levar no mesmo dia, e aí convém ligar antes: estoque de balcão da região raramente
+aparece na internet.
+
+**Se for comprar, a escolha:** externa, a **C510W a R$376** é o ponto de equilíbrio (2K, gira,
+noturna colorida 30 m, e **disponível**, ao contrário da C520WS). Sem precisar girar, a
+**C320WS a R$308** entrega 2K com IP66 por menos. Interna, **C200 a R$173**. E na faixa alta a
+**C530WS da Amazon a R$490** custa praticamente o mesmo que a C520WS e é superior.
+
+**Três custos que não aparecem na etiqueta:** o **microSD não vem incluso** e não serve cartão
+comum (a TP-Link pede Classe 10/U1/V10 e recomenda **High Endurance**, some R$80 a R$150);
+nenhuma delas é a bateria, então **toda externa precisa de tomada no ponto**, o que costuma
+custar eletricista; a assinatura Tapo Care é **opcional**, grava tudo no cartão sem pagar nada.
+
 ### Estação Santa Cecília
 
 ![Do CAES até a Estação Santa Cecília: 1.164 m, cerca de 15 min.](mapas/santa-cecilia.svg)

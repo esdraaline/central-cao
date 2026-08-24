@@ -16,9 +16,12 @@ Nota de aplicativo não conta.
 
 | Preciso de | Onde | A pé |
 |---|---|---|
-| **Almoço mais perto** | S S Self Service — Av. Duque de Caxias, 839 | **265 m · 3 min** |
-| **Almoço a quilo barato** | Terraço Aurora — R. Vitória, 365, 1º andar · R$ 28,90 | 616 m · 8 min |
+| **Almoço, 1ª opção** | **Marmita da Chef Marianne**, entregue no CAES · **R$ 20,50** · pedir até **10h30**, zap (11) 95393-7489 | **zero** |
+| **Almoço, 2ª opção** | Terraço Aurora — R. Vitória, 365, 1º andar · R$ 28,90 | 616 m · 8 min |
+| **Almoço, 3ª opção / jantar, 1ª** | **Boteco Flór da Duque** — Av. Duque de Caxias | *[VERIFICAR]* |
 | **Mercado** | Dia — Al. Barão de Limeira, 513 · Extra — Av. Rio Branco, 452 | ~650 m · 8 min |
+| **Mercadinho de emergência** | **Duque Supermercados** — Av. Duque de Caxias, ao lado da Lissandra (830) | *[VERIFICAR]* |
+| **Academia** | **Gaviões 24h Rio Branco** (o Extra fica ao lado) | ~650 m · 8 min |
 | **Padaria que abre 05h** | Cascatinha — R. Gen. Couto de Magalhães, 172 | 733 m · 9 min |
 | **Farmácia 24h** | Drogaria São Paulo — Pça. Júlio Mesquita, 131 | 1.020 m · 13 min |
 | **Conveniência 24h** | Oxxo — R. José Paulino, 592 | 893 m · 10 min |
@@ -30,6 +33,55 @@ quarta **18h00**, quinta **11h30** e você pega a estrada. Terça e quarta são 
 que sobram de verdade.
 
 ## Almoço entre aulas
+
+### A ordem de preferência (decisão do Josemar, 24/08/2026)
+
+Não é ranking de nota de aplicativo, é a ordem em que ele resolve o almoço na prática:
+
+| # | Opção | Preço | Por quê |
+|---|---|---|---|
+| **1º** | **Marmita Gourmet Marianne**, entregue no CAES | **R$ 20,50** | Não precisa sair, não gasta o intervalo e é o mais barato dos três |
+| **2º** | **Terraço Aurora** — R. Vitória, 365, 1º andar | R$ 28,90 | Melhor custo entre os de sentar, 8 min a pé |
+| **3º** | **Boteco Flór da Duque** — Av. Duque de Caxias | *[VERIFICAR]* | Quase na porta, e é a **1ª opção do jantar** de terça e quarta |
+
+### Marmitas Gourmet Marianne — a 1ª opção
+
+**Chef Marianne Siqueira** — pedido pelo **WhatsApp (11) 95393-7489** — **[TESTADO]**, é a
+marmita que o Josemar usa (registrado em 24/08/2026, cardápio e valores da própria chef)
+
+| | |
+|---|---|
+| **Marmita** | **R$ 20,50**, 500 gramas, fresca (não é congelada) |
+| **Refrigerante** | R$ 6,00 |
+| **Encomenda** | **até as 10h30** do mesmo dia |
+| **Entrega** | no CAES |
+
+**O padrão do cardápio:** duas opções de prato por dia, mais os acompanhamentos do dia
+(arroz, feijão, uma guarnição e salada). A **opção 1 é filé de frango grelhado todo dia**, e a
+opção 2 é que varia. Ela manda o menu da semana pelo zap.
+
+**Cardápio da semana 2 (24 a 27/08/2026), para você ver o padrão:**
+
+| Dia | Opção 2 (a que varia) | Acompanhamentos |
+|---|---|---|
+| Segunda 24/08 | Carne moída refogada com alho-poró | Arroz, feijão, batata gratinada com parmesão e gorgonzola, salada |
+| Terça 25/08 | Pernil desfiado na cerveja | Arroz, feijão, purê de mandioquinha, salada |
+| Quarta 26/08 | Picadinho de carne com cenoura | Arroz, feijão, farofa, batata-doce assada, salada |
+| Quinta 27/08 | Macarrão ao molho bolonhesa com filé de frango | Batata rústica e salada |
+
+**O horário do pedido é o que pode te derrubar.** O limite é **10h30**, e às 10h00 você já
+entrou no bloco 2, que só solta **11h30** ([ROTINA.md](ROTINA.md)). Ou seja: **o pedido tem
+que sair no intervalo das 09h45, ou antes de entrar em aula**. Pedir na hora do almoço é
+tarde, não existe mais marmita naquele dia.
+
+**Na quinta a aula acaba 11h30 e você pega a estrada**, então a marmita de quinta só faz
+sentido se for comer ali antes de sair, ou se for na estrada.
+
+Ela também faz **marmita congelada e marmita fitness com menu personalizado**, e atende
+**buffet de evento** (churrasco, coffee-break, banquete, aniversário, feijoada, casamento).
+Fica registrado para quando precisar de festa de família ou confraternização de turma.
+
+### Os mais perto, com distância medida
 
 Levantamento de 18/08/2026: **99 restaurantes, lanchonetes e cafés com nome** a até 15 min a
 pé, todos com a distância medida. Os mais perto:
@@ -54,7 +106,8 @@ antes.
 
 ### Terraço Aurora — o melhor custo perto
 
-**R. Vitória, 365, 1º andar, Santa Ifigênia** — (11) 3331-8532 — **[BIZU]**
+**R. Vitória, 365, 1º andar, Santa Ifigênia** — (11) 3331-8532 — **[BIZU]** — **2ª opção de
+almoço**, quando não tem marmita
 
 Restaurante a quilo e à vontade, **comida caseira**, ambiente agradável, com Wi-Fi e convênio
 com lojista. **R$ 28,90, sirva-se uma vez**, das **11h às 15h35**. No almoço, **um suco do dia
@@ -105,9 +158,10 @@ não consta em lugar nenhum.*
 
 ## Café
 
-**Padaria Flor da Duque** — Av. Duque de Caxias — **[BIZU]**
-Faz café, almoço e janta. Indicação de colega que já fez o curso. Não está mapeada; confere a
-fachada ao passar que eu meço e incluo.
+**Boteco Flór da Duque** — Av. Duque de Caxias — verbete completo em "Jantar de terça e quarta"
+Era o que este guia chamava de "Padaria Flor da Duque", indicação de colega do CAO-I. **É
+boteco, não padaria**, e o nome na fachada leva acento: **Flór da Duque**. Faz café, almoço e
+janta. O verbete dono dele agora é o do jantar.
 
 **Corada** — Al. Ribeiro da Silva, 932, Campos Elíseos — **[CANDIDATO]**
 Mesas na calçada, lanches e cafés. Citam o pão de queijo recheado com chutney de cenoura com
@@ -119,6 +173,18 @@ Cafeteria junto com loja de chás. Café, drinks, salgados e pratos.
 ## Jantar de terça e quarta
 
 Nesses dias a saída é **18h00**, então dá tempo de sair da bolha do quartel.
+
+**Boteco Flór da Duque** — Av. Duque de Caxias — **1ª opção de jantar** (Josemar, 24/08/2026)
+É o lugar padrão da janta nos dias que sobram, e também a **3ª opção do almoço**. Fica na
+própria avenida do CAES, no mesmo quarteirão do **Duque Supermercados** e da **Lissandra
+Cabeleireiros (nº 830)**, quase na porta. Fachada preta, letreiro com uma flor.
+
+**É o mesmo lugar que este guia chamava de "Padaria Flor da Duque"**, que veio como [BIZU] de
+colega do CAO-I. Não é padaria, é boteco, e o nome tem acento: **Flór**. Fica valendo um
+verbete só, este aqui.
+
+*[VERIFICAR: número na Duque, horário e faixa de preço. Sem o número não dá para medir a
+distância a pé no roteador e entrar nas tabelas.]*
 
 **Ama.Zo** — peruano, matriz nos Campos Elíseos — **[CANDIDATO]**
 Cresceu por boca a boca e já abriu segunda casa em Higienópolis. É a melhor aposta de "jantar
@@ -171,6 +237,7 @@ slide do SAE listava só como "Padaria, Alameda Barão de Limeira, 872".
 
 | Lugar | Endereço | A pé | Horário |
 |---|---|---|---|
+| **Duque Supermercados** | Av. Duque de Caxias, ao lado da Lissandra (830) | *[VERIFICAR]* | *[VERIFICAR]* |
 | **Dia** | Al. Barão de Limeira, 513 | **647 m · 8 min** | **Seg-Sex 07h-21h · Dom 07h-18h** |
 | **Extra** | Av. Rio Branco, 452 | **650 m · 8 min** | não localizado |
 | Casa de Carnes Bom Boi | Av. Ipiranga, 1290 | 849 m · 12 min | não localizado |
@@ -183,6 +250,17 @@ slide do SAE listava só como "Padaria, Alameda Barão de Limeira, 872".
 
 Para a marmita da semana, **Dia e Extra resolvem em 8 minutos**. O CAES tem 2 geladeiras,
 2 frigobares e micro-ondas, e **o pote precisa de nome**.
+
+**Duas referências do Josemar (24/08/2026):**
+
+- **Duque Supermercados, na própria Av. Duque de Caxias**, é o mais perto de todos: fica no
+  mesmo quarteirão do Boteco Flór da Duque e da Lissandra Cabeleireiros (nº 830), a poucos
+  minutos do portão. Supermercado de rua, cartaz amarelo de oferta na fachada, telefone
+  **(11) 3222-7294** lido no letreiro. Não é para compra de semana, é para o que faltou sem
+  gastar meia hora de caminhada. **Nenhuma tabela deste guia tinha ele**, porque a Duque quase
+  não existe no OpenStreetMap. *[VERIFICAR: número e horário.]*
+- **O Extra da Av. Rio Branco, 452, fica ao lado da Academia Gaviões.** Junta as duas coisas
+  na mesma saída: treina e já traz a compra, **650 m, 8 min** do CAES.
 
 A **Feira do Bom Retiro é de sábado**, então não serve para a sua semana. Fica registrada para
 o caso de algum sábado em São Paulo.
@@ -232,9 +310,25 @@ tinham horário cadastrado; "não localizado" nas tabelas é literal, eu procure
 | Banco 24Horas | Shop. Inter Continental — R. Santa Efigênia, 452 |
 | Lotérica | Lotérica Natal — Av. Duque de Caxias, 876 |
 | Cabeleireiro | Lissandra Cabeleireiros — Av. Duque de Caxias, 830 |
-| Academia | Evoque — Av. Rio Branco, 1457 (aceita Gympass) |
+| **Academia** | **Gaviões 24h** — Av. Rio Branco, ao lado do Extra do 452 · Evoque — Av. Rio Branco, 1457 (Gympass) |
 | Pronto-socorro | PS Barra Funda — R. Vitorino Carmilo, 717 |
 | Ônibus | Terminal Princesa Isabel — Av. Rio Branco |
+
+### Academia
+
+**Academia Gaviões 24h — Rio Branco** é a referência (Josemar, 24/08/2026). Fica na
+**Av. Rio Branco, ao lado do Extra do nº 452**, ou seja, na mesma caminhada de **650 m,
+8 min** já medida para o mercado. Treina e volta com a compra.
+
+**O nome não é enfeite: abre 24 horas.** Isso muda o planejamento da semana, porque com aula
+até 18h00 na terça e na quarta e até 16h15 na segunda, qualquer horário serve, inclusive antes
+da entrada das 08h15.
+
+*[VERIFICAR: número exato na Rio Branco, se tem diária ou plano avulso para quem fica só de
+segunda a quinta, e se aceita Gympass. Com o número eu meço a rota a pé de verdade e ela entra
+na tabela dos trajetos.]*
+
+A **Evoque, Av. Rio Branco, 1457**, continua registrada como alternativa: aceita Gympass.
 
 ## Como sair daqui
 

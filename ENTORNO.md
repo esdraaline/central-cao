@@ -482,8 +482,36 @@ lado; comprar mais de uma e negociar volume. **Quando não compensa:** uma unida
 Comprando pela internet com frete grátis, ela chega em casa e ninguém carrega nada. Comprando
 na Santa Ifigênia, a caixa volta na mala na quinta-feira.
 
-*[VERIFICAR: onde a câmera vai ficar (portão, quintal ou dentro de casa). Sem isso a
-recomendação não fecha.]*
+#### Decidido em 24/08/2026: muro externo, e a escolha é a Intelbras
+
+**Intelbras iM7+ 3MP Full Color, R$322,90 no Pix na loja oficial, frete grátis para
+Guararapes.** Ganha no preço (R$151 abaixo da Tapo C520WS, que além disso está em ruptura),
+empata na ficha (IP66, RJ45, detecção de veículo) e tem assistência técnica no interior, que a
+TP-Link não tem.
+
+*Também avaliada e descartada: a **iM5+ Full Color** tem IP67, vedação melhor, mas é só **2MP**
+e fixa. Não vale trocar resolução por um grau de vedação que um muro não exige, IP66 já aguarda
+chuva de vento.*
+
+**Quatro pontos específicos de instalação em muro:**
+
+1. **Passar cabo de rede junto com o cabo de força.** É o conselho que mais vale. O muro é o
+   ponto mais distante do roteador, e Wi-Fi 2.4 GHz atravessando alvenaria até lá é onde essas
+   instalações falham: a câmera cai, o vídeo trava, e se culpa a câmera quando o problema é o
+   sinal. A iM7+ 3MP tem **RJ45 fêmea**, e como o eletricista vai puxar energia até o muro de
+   qualquer jeito, **o cabo de rede vai no mesmo eletroduto**. Custa quase nada a mais.
+2. **O 360° vale metade em muro.** Montada em parede, metade do giro olha para o próprio muro.
+   Contar com uns 180° úteis, não 360.
+3. **Detecção de veículo ajustável importa se o muro pega a rua.** Sem filtro, o celular apita
+   a cada carro. Item que parecia detalhe de ficha e aqui é uso diário.
+4. **Não é bateria.** Precisa de tomada no muro, e **o eletricista custa mais que a diferença
+   entre qualquer um dos modelos comparados aqui**. É o custo escondido de verdade.
+
+**Orçamento total:** câmera R$322,90 + **microSD High Endurance R$80 a R$150** (não vem
+incluso, aceita até 256 GB, e cartão comum de celular queima em gravação contínua) + eletricista.
+
+**Instalação:** parte alta do muro e, se possível, fiação por dentro. Câmera de muro é a mais
+fácil de alcançar.
 
 *[VERIFICAR: autorizada Intelbras mais próxima de Guararapes. A busca não devolveu nenhuma
 específica da região; consultar em intelbras.com/pt-br/onde-encontrar/assistencia-tecnica/]*

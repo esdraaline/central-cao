@@ -21,11 +21,8 @@
 ## Pendentes
 
 ### Fardamento e pendências de secretaria
-- [ ] Decidir opção de desconto SIPA: Alojamento (R$ 30,35) ou Vestiário (R$ 21,52), e cessar o equivalente na OPM de origem [24/08/2026] #admin
 - [ ] Comprar a camisa social cinza-claro do S-1 e a boina de reposição, que faltaram na ida à ConfecBell [24/08/2026] #pessoal
 - [ ] Mandar o QTS assim que sair, para eu lançar na aba Grade e o painel montar o dia sozinho [24/08/2026] #curso
-- [ ] Experimentar a farda social e ver os ajustes de caimento, depois de comprar a camisa social [24/08/2026] #pessoal
-- [ ] Procurar o Cap Gobbo (Seção de Pesquisa) sobre a transformação do PP em dissertação [24/08/2026] #dissertacao
 
 ### Rodízio da mala (toda semana, ver MALA.md)
 > As duas se repetem sozinhas: ticadas, não vão para Concluídas, voltam com a data da semana seguinte.
@@ -71,6 +68,9 @@
 - [ ] Vencimento dos 10 dias úteis do SAE: sem resposta, cobrar pelo 0800 051 3333 ou WhatsApp, citando o assunto do e-mail. A prova é 22/09 [03/09/2026] #admin
 
 ## Concluídas
+- [x] Decidir opção de desconto SIPA: Alojamento (R$ 30,35) ou Vestiário (R$ 21,52), e cessar o equivalente na OPM de origem [24/08/2026] #admin
+- [x] Experimentar a farda social e ver os ajustes de caimento, depois de comprar a camisa social [24/08/2026] #pessoal
+- [x] Procurar o Cap Gobbo (Seção de Pesquisa) sobre a transformação do PP em dissertação [24/08/2026] #dissertacao
 - [x] Decidir e comprar o energético zero: leva de casa ou compra perto do CAES na chegada (whey, creatina e coqueteleira já resolvidos) [23/08/2026] #pessoal
 - [x] Atualizar STATUS.md e PRAZOS.md com a situação real do curso: módulo não existe (são 31 disciplinas em paralelo, QTS semanal), disciplinas e pelotão A lançados nos dois arquivos, e entregas não saem do QTS, viraram pergunta para a Coordenação [22/08/2026] #curso
 - [x] Confirmar a grafia do nome do orientador pretendido: é Cel PM Eglis, com o g antes do l, como traz o QTS revisado de 20/08. A Central escrevia Elgis desde 17/08 e foi corrigida [21/08/2026] #dissertacao

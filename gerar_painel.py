@@ -3139,9 +3139,12 @@ JS_GUIA = r"""
       });
       var falta=total-tem, pct=total?Math.round(tem*100/total):0;
       k.querySelector('.val').textContent=falta?falta:'ok';
+      /* cada aba pode dar o proprio rotulo (data-sub-falta / data-sub-ok);
+         sem isso vale o texto generico de lista a zerar */
+      var rf=k.getAttribute('data-sub-falta'), ro=k.getAttribute('data-sub-ok');
       k.querySelector('.sub').textContent=falta?
-        (falta===1?'item ainda falta':'itens ainda faltam'):
-        ('tudo marcado, '+total+' itens');
+        (rf||(falta===1?'item ainda falta':'itens ainda faltam')):
+        (ro||('tudo marcado, '+total+' itens'));
       k.querySelector('.barra i').style.width=pct+'%';
       k.classList.toggle('dest',falta>0&&k.getAttribute('data-aba')==='ab-compras');
     });
@@ -3527,9 +3530,15 @@ def build():
                 '<div class="rot">Compras</div><div class="val">...</div>'
                 '<div class="sub">antes de viajar</div>'
                 '<div class="barra"><i style="width:0%"></i></div></div>')
-    home.append('<div class="kpi lista-kpi" data-aba="ab-mala" data-rot="Mala">'
+    # O cartao da Mala nao conta "item de lista": conta PECA DE ROUPA que falta
+    # no armario, que e a mala de domingo. Por isso ele tem rotulo proprio: dizer
+    # "12 itens ainda faltam" para uma lista de rodizio semanal soa a pendencia
+    # atrasada, quando e so a carga da proxima viagem.
+    home.append('<div class="kpi lista-kpi" data-aba="ab-mala" data-rot="Mala"'
+                ' data-sub-falta="peças na mala de domingo"'
+                ' data-sub-ok="armário completo">'
                 '<div class="rot">Mala</div><div class="val">...</div>'
-                '<div class="sub">itens separados</div>'
+                '<div class="sub">peças na mala de domingo</div>'
                 '<div class="barra"><i style="width:0%"></i></div></div>')
     home.append("</div>")
 

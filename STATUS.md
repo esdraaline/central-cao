@@ -6,10 +6,11 @@
 ## O domingo de viagem
 
 Todo domingo sobem a roupa lavada e a carga da copa (whey, creatina, energético zero, Pepsi Black,
-lanches e marmitas). **O B-1 e o EPI ficam em casa** enquanto o QTS não trouxer Ed. Física nem
-atividade externa para o pelotão A (decisão de 20/08). A conferência item por item é a tarefa de
-domingo em [TAREFAS.md](TAREFAS.md), que já vem com a lista dentro; o rodízio completo, com as
-quantidades, está em [MALA.md](MALA.md).
+lanches e marmitas). **A quantidade de roupa não é fixa: sai do inventário do armário, feito na
+quinta de manhã** antes de descer. O que a aba [Mala](MALA.md) mostrar como "faltam N" é a carga do
+domingo. **O B-1 e o EPI ficam em casa** enquanto o QTS não trouxer Ed. Física nem atividade externa
+para o pelotão A (decisão de 20/08). A conferência item por item é a tarefa de domingo em
+[TAREFAS.md](TAREFAS.md), que já vem com a lista dentro.
 
 Destino: CAES "Cel Nelson Freire Terra", **Praça Júlio Prestes, 5005, Campos Elíseos, São Paulo/SP,
 CEP 01218-020**. Alojamento no próprio prédio.
@@ -82,6 +83,10 @@ Agosto inteiro, dia a dia: [PRAZOS.md](PRAZOS.md).
   não traz Ed. Física nem atividade externa para o pelotão A. Detalhe em [MALA.md](MALA.md).
 - **O S-1 fica guardado no CAES** (paletó, segunda calça social, gravata, quepe e tarjeta
   administrativa). Falta só a camisa social.
+- **A aba Mala é só o rodízio da semana** (inventário de quinta, o que desce para lavar, o que sobe
+  domingo). A doutrina de uniforme, com composição e insígnia por peça, é do [ROTINA.md](ROTINA.md):
+  um assunto, um dono. Decidido em 23/08, junto com a correção do alvo de camisa de passeio, que
+  eram 4 no inventário e são 3 de verdade.
 - **Passeio completo em atividade externa é o P-1**, não o S-1. O quepe segue sendo peça de cerimônia.
 - **EPI do curso é cinto, colete e bota**, sempre com o B-1.
 - **Anotação de aula não entra neste repositório**, que é público: este lado guarda logística (prazo,

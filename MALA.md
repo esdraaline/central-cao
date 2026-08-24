@@ -1,275 +1,148 @@
-# MALA — rodízio semanal do CAES
+# MALA — o rodízio da semana
 
-> **A mala não é montada do zero.** O grosso mora no armário do CAES. Toda semana sobe roupa
-> lavada e a carga da copa; toda quinta de manhã desce a roupa suja. Não tem lavanderia lá.
-> Semana padrão: viaja domingo à tarde, aula de segunda a quinta, volta quinta depois das
-> 11h30 ([ROTINA.md](ROTINA.md) e [VIAGENS.md](VIAGENS.md)). O que ainda falta comprar está em
-> [COMPRAS.md](COMPRAS.md).
+> **A mala não é montada do zero.** O grosso mora no armário do CAES. Toda quinta desce roupa
+> suja para lavar em casa, todo domingo sobe roupa limpa e a carga da copa. Não tem lavanderia
+> lá. Semana padrão: viaja domingo à tarde, aula de segunda a quinta, volta quinta depois das
+> 11h30 ([ROTINA.md](ROTINA.md) e [VIAGENS.md](VIAGENS.md)).
 
-## Quinta de manhã — o inventário
+## O ciclo, em três lugares
 
-**É este contador que decide a mala de domingo.** Antes de descer, abra o armário e ponha em cada
-item **quantas peças LIMPAS ficaram lá**. O painel calcula o resto sozinho: o que ele mostrar como
-**"faltam N"** é exatamente o que sobe no domingo.
+Toda peça está sempre em um destes três estados. A semana é o giro entre eles.
 
-Use o `−` e o `+`. Clicar no meio da linha marca "tenho tudo", que é o que você faz no domingo
-quando chegar e guardar a roupa nova.
+| Onde | O que está lá | O que faz |
+|---|---|---|
+| **Armário do CAES** | farda, roupa limpa, cama, higiene, copa e estudo | vai esvaziando ao longo da semana |
+| **Casa** | o que desceu sujo na quinta | volta limpo no domingo |
+| **Mala de domingo** | o que faltou no armário, mais a carga da copa | zera quando você guarda tudo lá |
+
+**A única conta que existe é o inventário de quinta.** O que ele apontar como falta é exatamente
+o que sobe no domingo. Não há segunda lista de quantidade em lugar nenhum deste painel.
+
+## 1. Quinta de manhã — o inventário do armário
+
+Antes de descer, abra o armário e lance em cada linha **quantas peças LIMPAS ficaram lá**, no
+`−` e no `+`. O que a tela mostrar como **"faltam N"** é a mala de domingo, peça por peça.
 
 - [ ] 8 cuecas
 - [ ] 5 pares de meia social preta
 - [ ] 6 camisetas de serviço
-- [ ] 4 camisas de passeio
+- [ ] 3 camisas de passeio
 - [ ] 2 pijamas
 - [ ] 2 toalhas de banho
 - [ ] 1 fronha limpa
 
-Peça que zerou no armário aparece com o contador cheio de falta, e é ela que não pode ser esquecida.
-Peça que ficou completa some da lista sozinha, para a tela mostrar só o que precisa de você.
+Peça que fechou o alvo some da lista sozinha, para sobrar na tela só o que precisa de você. Peça
+que zerou aparece com a falta cheia, e é a que não pode ser esquecida.
 
-### O número ao lado do item é o alvo, não o que você tem
+**De onde vêm esses alvos:**
 
-| Item | Alvo no armário | Por quê |
+| Peça | Alvo | Por quê |
 |---|---|---|
-| Camiseta de serviço | 6 | **não tem folga**: 4 dias de aula, uma por dia, e ela vai por baixo do P-1 e do B-1. A conta do Art. 74 é 6 |
-| Meia social preta | 5 pares | **o item mais crítico.** O P-1 pede meia social fina os quatro dias. A meia preta grossa que fica lá é de coturno e não substitui: se esquecer em casa, não tem como improvisar |
-| Cueca | 8 | |
-| Camisa de passeio | 4 | roda com o P-1 |
-| Pijama | 2 | |
-| Toalha de banho | 2 | para revezar |
-| Fronha | 1 | |
-| Meia preta grossa | 2 pares | só serve com o B-1, que hoje não sobe |
-| Meia branca | 4 pares | é do T-1: sobe junto com o kit de Ed. Física, e só quando o QTS marcar |
+| Meia social preta | 5 pares | **a mais crítica.** O P-1 pede meia social fina os quatro dias, e a meia grossa que fica no armário é de coturno, não substitui. Esquecer em casa não tem improviso |
+| Camiseta de serviço | 6 | **não tem folga**: uma por dia de aula, por baixo do P-1 e do B-1, mais reserva |
+| Camisa de passeio | 3 | é o jogo que existe (1 antiga + 2 da ConfecBell em 18/08). Em quatro dias, uma repete |
 
-## Quinta de manhã, antes de pegar a estrada — o que desce
+**Fora da conta**: os 2 pares de meia preta grossa ficam no armário e só servem com o B-1; os 4
+pares de meia branca ficam em casa junto com o kit de Ed. Física.
+
+## 2. Quinta, antes de pegar a estrada — o que desce para lavar
 
 - [ ] Toalha de banho usada
 - [ ] Fronha usada
 - [ ] Roupa suja da semana
 
-Aproveite e faça o inventário do armário nessa hora: é ele que monta a coluna "sobe" do
-domingo seguinte.
+Faça o inventário antes de fechar a sacola. Contar o que ficou no armário com ele aberto na sua
+frente é fácil; lembrar disso em casa, na quinta à noite, não é.
 
-## Domingo — o que sobe
+## 3. Domingo — o que sobe
 
-**A roupa não tem quantidade fixa. Ela sai do inventário de quinta**: abra a seção acima e leve o
-que estiver marcado como "faltam N". Se o contador diz que faltam 5 cuecas, são 5 cuecas.
+**A roupa não tem quantidade fixa.** Ela é o "faltam N" da quinta: se o contador diz que faltam
+5 cuecas, são 5 cuecas.
 
-**A carga da copa é sempre a mesma**, essa sim uma lista fixa: whey, creatina, energético zero,
-Pepsi Black, lanches, marmitas prontas, shampoo e porta-sabonete.
+**A carga da copa é sempre a mesma**, essa sim fixa: whey, creatina, energético zero, Pepsi
+Black, lanches, marmitas prontas, shampoo e porta-sabonete.
 
-**Quem tica isso é a tarefa de domingo**, na aba Tarefas: ela abre com a lista dentro, item por
-item, e volta zerada toda semana. Aqui fica só a leitura.
+**Quem tica isso é a tarefa de domingo**, na aba Tarefas, que abre com a lista dentro e volta
+zerada toda semana. Aqui é só a leitura.
 
 **Ao chegar e guardar tudo, volte ao inventário e clique no meio de cada linha de roupa.** Isso
-marca "tenho tudo" e zera a falta. É o que faz a conta da quinta seguinte começar limpa.
+marca "tenho tudo" e zera a falta, que é o que faz a conta da quinta seguinte começar limpa.
 
 **A janta de domingo vai junto, e não é lanche.** A chegada é por volta das 22h, e contar com o
 entorno aberto nesse horário é aposta.
 
-**Etiqueta com o nome em tudo que for para a geladeira.** São muitas pessoas dividindo as
-mesmas duas geladeiras e os dois frigobares, e marmita sem nome vira marmita de todo mundo.
+**Etiqueta com o nome em tudo que for para a geladeira.** São muitas pessoas dividindo duas
+geladeiras e dois frigobares, e marmita sem nome vira marmita de todo mundo.
 
-**Whey**: fracione a porção da semana num pote menor e deixe o pote grande em casa, que é caro
-em volume no porta-malas. A creatina é o oposto, o pote já é pequeno e cabe em qualquer canto.
+**Whey**: fracione a porção da semana num pote menor e deixe o pote grande em casa, que é caro em
+volume no porta-malas. A creatina é o oposto, o pote já é pequeno.
 
 ## O que não entra no rodízio
 
-Fica no CAES e não viaja: o **S-1 guardado**, a farda do dia a dia, o **lençol** (a não ser que
-queira lavar), o **material de limpeza** e a **coqueteleira**.
+### Fica no armário do CAES e nunca desce
 
-## O que vai e volta toda semana
+O **S-1 guardado** (com o quepe e a segunda calça social), a farda do dia a dia, o **lençol** (a
+não ser que queira lavar), o travesseiro e o cobertor, o **material de limpeza**, a
+**coqueteleira**, o notebook, a extensão, os 2 cadernos e a identidade funcional.
 
-Nem é estoque de armário, nem volta sujo: simplesmente acompanha ele nos dois sentidos.
+### Fica em casa e não sobe
 
-Fone de ouvido, celular e carregador. O resto do material de estudo e eletrônico **mora no
-armário** e está na conferência de reposição, mais abaixo: notebook, extensão, os 2 cadernos e a
-identidade funcional não precisam ir e voltar toda semana.
+**B-1 e EPI: gandola, calça operacional, coturno, cinto, colete e bota não sobem** (decisão de
+20/08, sem data nova). Pelo bizu do colega, o B-1 saiu umas 3 vezes no curso inteiro.
 
-## Uniforme — o que tem que estar no armário
+- **O que muda a regra**: QTS que traga Ed. Física ou atividade externa para o pelotão A. Aí o
+  conjunto sobe na viagem do domingo anterior, junto com o kit T-1 (camiseta branca, calção
+  azul-royal, agasalho de EF, tênis preto e as meias brancas).
+- **O risco que fica**: se o QTS marcar atividade externa de véspera, o B-1 não está lá. Nesse
+  caso vai de P-1, avisa o chefe de turma e o conjunto sobe na viagem seguinte.
+- **Antes de a gandola subir, costure nela o 4º distintivo de OPM do CAES**, comprado em 17/08 e
+  ainda solto em casa. Senão a peça chega sem distintivo justamente no dia em que for exigida.
 
-Referência: **R-5-PM, 6ª Ed. v.2** (Regulamento de Uniformes). O do dia a dia é o **P-1**; a
-**instrução e a missão externa** pedem o **B-1**; o **S-1** fica guardado no CAES para visitas.
+Como não há coturno no armário, **o sapato preto é o único calçado de farda lá**: mantenha ele
+inteiro e engraxado.
 
-> **Regra do SAE**: na aula vale o fardamento que o QTS orientar; em passeio e atividade
-> externa, **passeio completo, que aqui é o P-1** com todas as peças, não o S-1; nas missões, o
-> **EPI** (cinto, colete e bota) com o B-1.
+### Vai e volta toda semana
 
-### P-1 — uniforme do dia a dia (Art. 45)
+Fone de ouvido, celular e carregador, e só. O resto do material de estudo mora no armário.
 
-Composição: quepe, camisa de passeio cinza-claro, camiseta de serviço cinza-bandeirante, calça
-social cinza-bandeirante, cinto de serviço cinza-bandeirante, meias sociais pretas, sapatos pretos.
+## A farda que tem que estar no armário
 
-> **O quepe é substituído pela boina cinza-bandeirante** em trânsito e nas atividades
-> administrativas (Art. 45, § 1º, item 2). No curso é isso que vale, o quepe só em cerimônia.
-> Por isso a boina fica guardada no alojamento e você só põe ao sair para área descoberta.
+Quantidades e estado das peças. Qual uniforme se usa em qual ocasião, a composição de cada um e
+a insígnia peça por peça estão em [ROTINA.md](ROTINA.md), que é o dono desse assunto.
 
-- [ ] 3 camisas de passeio cinza-claro
-- [ ] 2 calças sociais cinza-bandeirante — uma roda a semana com o P-1, a outra fica guardada no CAES com o social
-- [ ] Cinto de serviço cinza-bandeirante
-- [ ] Sapatos pretos (engraxados)
-- [ ] 5 pares de meias sociais pretas
-- [ ] Boina cinza-bandeirante
-- [ ] Quepe cinza-bandeirante — cobertura do S-1, guardado junto com ele
-
-### Camiseta de serviço (Art. 74)
-
-Ela entra **por baixo do P-1 e do B-1**, então é a peça que mais roda. Não é camiseta cinza
-comum. O R-5 exige:
-
-- Cor **cinza-bandeirante**, malha, **gola careca** na cor da camiseta, **meia manga com barra**
-- **Identificação nominal operacional** no peito direito — retângulo preto 15 × 80 mm, letras brancas de 6 mm: `CAP PM JOSEMAR`
-- **Distintivo da Logomarca da PMESP** no peito esquerdo, tamanho normal, alinhado com a tarjeta
-
-- [ ] 6 camisetas de serviço cinza-bandeirante, gola careca, já com tarjeta e logomarca
-
-### Agasalho — qual peça é a certa
-
-A **japona cinza-bandeirante é restrita ao efetivo do TOR** (Art. 124), não serve aqui. Para o
-P-1 as peças previstas são:
-
-| Peça | Artigo | Detalhe |
+| Peça | Quantas | Situação |
 |---|---|---|
-| **Jaqueta de passeio** | Art. 127 | tecido panamá cinza-bandeirante (o mesmo da calça), insígnias de posto **em metal** nas platinas, tarjeta administrativa no peito direito |
-| Blusa de lã | Art. 117 | cinza-bandeirante, gola em V, mesmas insígnias de metal nas platinas |
-| Capote | Art. 121 | cinza-bandeirante, para frio forte |
+| Camisa de passeio cinza-claro | 3 | entram no inventário de quinta |
+| Camiseta de serviço | 6 | entram no inventário de quinta |
+| Calça social cinza-bandeirante | 2 | uma roda a semana com o P-1, a outra fica guardada com o S-1 |
+| Meia social preta | 5 pares | entram no inventário de quinta |
+| Sapato preto | 1 par | único calçado de farda no armário |
+| Cinto de serviço | 1 | serve o P-1, o S-1 e o B-1 |
+| Boina cinza-bandeirante | 1 | cobertura do dia a dia. Uma de reposição está em [COMPRAS.md](COMPRAS.md) |
+| Jaqueta de passeio | 1 | agasalho do P-1, com as 3 estrelas de metal nas platinas |
+| Paletó, gravata e quepe do S-1 | 1 de cada | guardados, para visita |
+| Tarjeta administrativa de acrílico | 1 | imantada, roda entre camisa, jaqueta e paletó |
 
-- [ ] Jaqueta de passeio cinza-bandeirante, com as 3 estrelas de Capitão em metal nas platinas
-- [ ] Blusa de lã cinza-bandeirante *(opcional, se o frio apertar)*
+**Falta a camisa social cinza-claro** para o S-1 fechar (Art. 49). É a única peça pendente e está
+em [COMPRAS.md](COMPRAS.md).
 
-### S-1 — farda social, guardada no CAES
+## Estoque do armário — reponha quando acabar
 
-Não se usa no dia a dia, mas pode ser exigida durante o curso, principalmente em visitas. Por
-isso fica lá, para não depender de ir buscar em casa. Composição do S-1 (Art. 49, § 2º) — repare
-que aqui a cobertura é o **quepe**, não a boina:
+Isto mora lá e não viaja. **Não é lista de arrumar mala**: é a memória do que tem, para você
+reconhecer o que acabou. Conferido item a item em 06/08. O que faltar vira item em
+[COMPRAS.md](COMPRAS.md), que é onde a compra é cobrada.
 
-- [ ] Paletó cinza-bandeirante (tecido panamá, Art. 93)
-- [ ] Calça social cinza-bandeirante — **a segunda calça**, a que fica guardada aqui com o social. É a mesma peça do P-1 (mesmo tecido panamá), então as duas se cobrem se precisar
-- [ ] **Gravata cinza-bandeirante**
-- [ ] Cinto de serviço, meias sociais pretas e sapatos pretos *(os mesmos do P-1)*
-- [ ] **Quepe cinza-bandeirante** — vai porque é a cobertura do S-1, mesmo não sendo usado no dia a dia
-- [ ] Tarjeta administrativa de acrílico (a mesma imantada que roda entre as peças)
-
-**Falta a camisa social cinza-claro** para o conjunto fechar. É a única peça pendente do Art. 49
-e está em [COMPRAS.md](COMPRAS.md). O que vai montado em cada peça do social (paletó, camisa,
-quepe, cinto) está detalhado em [ROTINA.md](ROTINA.md).
-
-### B-1 e EPI — ficam em casa
-
-**A regra, decidida em 20/08: gandola, calça operacional, coturno, cinto, colete e bota não
-sobem.** Sem data nova.
-
-**A condição que muda a regra**: QTS que traga **Ed. Física ou atividade externa para o pelotão
-A**. Aí o conjunto sobe na viagem do domingo anterior. Na semana 2 (24 a 27/08) não traz
-([GRADE.md](GRADE.md)); pelo bizu do colega, o B-1 saiu umas 3 vezes no curso inteiro.
-
-**O risco que fica**: se o QTS marcar atividade externa de véspera, o B-1 não está no CAES.
-Nesse caso vai de P-1, avisa o chefe de turma e o conjunto sobe na viagem seguinte.
-
-Composição do B-1 (Art. 23): boina cinza-bandeirante, gandola cinza-bandeirante, camiseta de
-serviço cinza-bandeirante, calça operacional cinza-bandeirante, cinto de serviço
-cinza-bandeirante, meias pretas, coturnos pretos. **Boina e cinto de serviço não entram nessa
-conta**: são os mesmos do P-1 e já estão lá. Sem coturno no armário, **o sapato preto é o único
-calçado de farda**, então mantenha ele inteiro e engraxado.
-
-**O 4º distintivo de OPM do CAES está solto em casa.** Foi comprado em 17/08 para a gandola.
-Costure nele antes de a gandola subir, senão a peça chega sem distintivo justamente no dia em
-que for exigida.
-
-### Educação física (T-1)
-
-Só sobe quando o QTS marcar Ed. Física para o pelotão A. Composição: camiseta de treinamento
-branca, calção de treinamento azul-royal, meias brancas, tênis preto.
-
-- [ ] Camiseta de treinamento branca + calção azul-royal
-- [ ] Agasalho de EF completo (jaqueta + calça)
-- [ ] Tênis preto + 2 pares de meia branca
-
-### Checagem das insígnias, peça por peça
-
-| Peça | Gola / platina | Manga direita | Manga esquerda | Peito direito |
-|---|---|---|---|---|
-| Camisa de passeio | distintivo de atividade (dir.) + insígnia de Cap (esq.) | Bandeira SP + **distintivo de OPM do CAES** 20 mm abaixo | Logomarca PMESP | tarjeta **administrativa** (acrílico) sobre a pestana do bolso |
-| Gandola B-1 | distintivo de atividade + insígnia de Cap (miniatura PVC) | Bandeira SP + distintivo de OPM | Logomarca PMESP | tarjeta **operacional** |
-| Camiseta de serviço | — | — | — | tarjeta **operacional** + Logomarca no peito esquerdo |
-| Jaqueta de passeio | insígnia de Cap **em metal** nas platinas | Bandeira SP | Logomarca PMESP | tarjeta **administrativa** |
-
-> **São dois tipos de tarjeta** (Art. 151): a **operacional** é de tecido/PVC; a
-> **administrativa** é de **acrílico** com pino ou ímã. Confira se você tem as duas.
-
-### O que não se aplica
-
-- **B-2 e B-3** — o B-2 é da Corregedoria (boina azul-celeste, Art. 24) e o B-3 é de patrulha montada, com culote e botas de cavalaria (Art. 25). Para curso e missão externa o uniforme é o **B-1**.
-- **Japona** — restrita ao efetivo do TOR (Art. 124). O agasalho do P-1 é a jaqueta de passeio.
-
-## Já está no CAES — reponha quando acabar
-
-**Isto mora no armário e não viaja.** Não é lista de arrumar mala: é a conferência de quando
-alguma coisa acabar ou você desconfiar que faltou. Tique o que já conferiu; o que estiver em
-branco é o que ainda não passou pelo olho.
-
-### Cama — o alojamento NÃO fornece
-> **Cama de solteiro.**
-
-- [ ] Lençol de solteiro
-- [ ] Fronha
-- [ ] Travesseiro
-- [ ] Cobertor ou manta leve
-
-### Higiene
-- [ ] Toalha de banho + toalha de rosto
-- [ ] Sabonete, shampoo, escova e pasta de dente
-- [ ] Desodorante, barbeador, cortador de unha
-- [ ] **Papel higiênico** (leva o seu)
-- [ ] Remédios de uso contínuo + analgésico básico
-- [ ] Kit de costura (linha, agulha, botão reserva) — salva farda em emergência
-
-### Limpeza do alojamento
-A conservação de salas e alojamento é por escala dos próprios alunos. Leve o material, não conte
-com o que tem lá.
-
-- [ ] Saco de lixo grande
-- [ ] Saco de lixo pequeno
-- [ ] Pano de chão
-- [ ] Balde
-- [ ] Veja / desinfetante
-- [ ] Papel toalha
-
-### Copa
-Não tem rancho, mas a estrutura ajuda: copa e refeitório à disposição, os dois com
-eletrodomésticos, **1 geladeira na copa, 1 no refeitório e 2 frigobares**, mesas, cadeiras e
-cafeteiras.
-
-- [ ] Caneca, prato, talheres
-- [ ] Pote/marmita que possa ir ao micro-ondas
-- [ ] **Etiqueta ou fita crepe + caneta permanente** para identificar os potes na geladeira
-- [ ] Detergente, esponja e pano de prato
-- [ ] Café, açúcar/adoçante e filtro (se for usar a cafeteira)
-- [ ] Garrafa de água
-- [ ] Dinheiro/cartão para as refeições e para a vaquinha da turma
-
-### Estudo e eletrônicos
-- [ ] **2 cadernos** — é bastante matéria e bastante instrutor
-- [ ] Canetas, marca-texto, pasta
-- [ ] Notebook + carregador
-- [ ] **Extensão com várias saídas** — tem poucas tomadas na sala de aula, esse é o bizu que mais salva
-- [ ] Celular + carregador
-- [ ] Fone de ouvido
-
-### Documentos
-- [ ] Carteira de identidade funcional
-- [ ] Dinheiro/cartão para a divisão do combustível da carona
-
-O Ofício de Apresentação é ato eletrônico, não vai impresso. Vale ter o número do processo
-anotado no celular: mesa **SEI 302090130** (detalhe em [ROTINA.md](ROTINA.md)).
+- **Cama** (o alojamento não fornece, e é cama de solteiro): lençol, fronha, travesseiro, cobertor ou manta leve.
+- **Higiene**: toalha de banho e de rosto, sabonete, shampoo, escova e pasta, desodorante, barbeador, cortador de unha, papel higiênico, remédio de uso contínuo e analgésico, kit de costura para salvar farda.
+- **Limpeza** (a conservação da sala e do alojamento é por escala dos próprios alunos): saco de lixo grande e pequeno, pano de chão, balde, desinfetante, papel toalha.
+- **Copa** (1 geladeira na copa, 1 no refeitório, 2 frigobares, micro-ondas e cafeteira): caneca, prato, talheres, marmita que vá ao micro-ondas, etiqueta e caneta permanente, detergente, esponja, pano de prato, café, açúcar e filtro, garrafa de água.
+- **Estudo**: 2 cadernos, canetas, marca-texto, pasta, notebook e carregador, e a extensão com várias saídas, que é o bizu que mais salva por causa da falta de tomada na sala.
+- **Documentos**: identidade funcional e dinheiro ou cartão para as refeições, para o combustível da carona e para a vaquinha da turma. O Ofício de Apresentação é ato eletrônico, não vai impresso: guarde só o número da mesa **SEI 302090130** no celular.
 
 ## Detalhes que mudam a mala
 
-- **Vou de carona.** O porta-malas é dividido, então volume é moeda: combine antes quanto cabe. O grosso já está no armário, então o que sobe é caixa de comida e sacola de roupa.
-- **Armário**: provavelmente só **1 folha de armário padrão da PM** por aluno. Leve compacto e prefira mala que caiba embaixo da cama. **Ele não vem com chave: o cadeado é seu.**
-- **Wi-fi**: tem intranet e funcionou bem (rede WCorp).
-- **Comes e bebes da turma**: os próprios alunos se organizam para deixar o ambiente melhor — separe um trocado.
+- **Vou de carona.** O porta-malas é dividido, então volume é moeda: combine antes quanto cabe. Como o grosso já está no armário, o que sobe é uma sacola de roupa e uma caixa de comida.
+- **Armário**: cerca de 1 folha de armário padrão da PM por aluno, e **ele não vem com chave, o cadeado é seu**. Prefira mala que caiba embaixo da cama.
+- **Wi-fi**: rede WCorp, funcionou bem.
 
-## Onde comer
-
-Restaurante, padaria, mercado, farmácia e o resto do entorno, com distância a pé e horário:
-[ENTORNO.md](ENTORNO.md).
+Onde comer, mercado, farmácia e o resto do entorno: [ENTORNO.md](ENTORNO.md).

@@ -378,6 +378,36 @@ primeiro passo, antes da roupa suja; a de domingo perdeu os números fixos ("5 c
 na quantidade que o inventário de quinta apontou"). Sem isso, o painel teria duas fontes brigando
 para dizer quanta cueca vai na mala.
 
+### A aba Mala vira o ciclo de três lugares (23/08/2026)
+
+O inventário já calculava a mala de domingo (seção acima), mas ele estava afogado. A aba tinha
+**60 caixinhas e 94 peças** no contador, e só 30 dessas peças eram do rodízio semanal. As outras
+64 eram a conferência de armário concluída em 06/08 (cama, higiene, limpeza, copa, estudo,
+documentos) e a doutrina de uniforme do R-5. Toda semana o painel cobrava tudo isso de novo, e o
+cartão da abertura mostrava um número que não queria dizer nada.
+
+**A aba passou a ser o ciclo dele**, na ordem em que a semana acontece: quinta conta o armário,
+quinta desce o que vai lavar, domingo sobe o que faltou. Só essas três listas continuam ticáveis,
+e o contador caiu para **30 peças**, que é exatamente o rodízio. O resto virou texto de consulta:
+o estoque do armário é *"a memória do que tem, para reconhecer o que acabou"*, e o que faltar vira
+item em `COMPRAS.md`, que é quem cobra compra.
+
+**A doutrina de uniforme saiu daqui e foi para o `ROTINA.md`.** Os dois arquivos descreviam P-1,
+B-1, S-1 e agasalho, cada um mandando ler o outro. Agora `ROTINA.md` é dono de *qual uniforme em
+qual ocasião e o que vai montado em cada peça* (a tabela de insígnias foi junto), e `MALA.md`
+guarda só *quantas peças e onde elas estão*. É a regra de fonte única do `AGENTS.md`, aplicada ao
+assunto que mais tinha cópia no repositório.
+
+**Um erro de número apareceu na limpeza:** o inventário pedia **4 camisas de passeio**, mas o jogo
+é de **3** (a antiga mais as 2 da ConfecBell, como o próprio `COMPRAS.md` registra, e como a seção
+do P-1 dizia três linhas abaixo). O painel ia cobrar para sempre uma camisa que não existe. Alvo
+corrigido para 3. Duplicata não confunde só a leitura: ela inventa falta.
+
+**O cartão da Mala na abertura ganhou rótulo próprio** (`data-sub-falta` / `data-sub-ok`). Dizer
+"12 itens ainda faltam" soava a pendência atrasada; agora diz **"12 peças na mala de domingo"**,
+que é o que o número significa. Sem rótulo, o cartão continua com o texto genérico das listas a
+zerar, como o de Compras.
+
 ### Item de lista quebrado em duas linhas (23/08/2026)
 
 Quebrar a linha no meio de um item de lista é coisa que qualquer um faz ao escrever, e o gerador
@@ -433,7 +463,7 @@ Central CAO/
 ├── TAREFAS.md        <- lista de tarefas correntes
 ├── ANOTACOES.md      <- notas soltas, recados, ideias
 ├── COMPRAS.md        <- o que sobrou da conferência e precisa comprar
-├── MALA.md           <- lista do dia de arrumar a mala (o que levar)
+├── MALA.md           <- rodízio semanal: armário do CAES, roupa para lavar, mala de domingo
 ├── VIAGENS.md         <- deslocamentos (módulos presenciais, provas etc.)
 ├── SUPABASE.md       <- como ligar a sincronização das tarefas
 ├── gerar_painel.py   <- gera o painel a partir dos .md acima

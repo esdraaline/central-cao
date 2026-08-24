@@ -33,8 +33,9 @@ falta ratificar de viva voz na Coordenação]*.
 
 ## Uniforme
 
-Referência oficial: **R-5-PM, 6ª Ed. v.2** (Regulamento de Uniformes). Lista de peças,
-quantidades e checagem de insígnia por peça: [MALA.md](MALA.md).
+Referência oficial: **R-5-PM, 6ª Ed. v.2** (Regulamento de Uniformes). Aqui está o que se usa
+em cada ocasião e o que vai montado em cada peça. **Quantas peças e o rodízio semanal** (o que
+fica no armário, o que desce para lavar e o que sobe na mala) estão em [MALA.md](MALA.md).
 
 - **Na aula vale o fardamento que o QTS orientar.**
 - **Dia a dia do curso: P-1** (Art. 45) — camisa de passeio cinza-claro, calça social
@@ -46,9 +47,10 @@ quantidades e checagem de insígnia por peça: [MALA.md](MALA.md).
   é obrigatória nas áreas descobertas do CAES**.
 - **Passeio e atividade externa: passeio completo, que aqui é o P-1** com todas as peças, não
   o S-1. O R-5 chama a seção dos sociais de "Passeio Completo", daí a confusão possível.
-- **Instrução e missão externa: B-1** (Art. 23) — gandola e calça operacional
-  cinza-bandeirante, coturnos pretos — com **EPI: cinto, colete e bota**. Sai pouco, umas 3
-  vezes no curso inteiro pelo bizu do colega.
+- **Instrução e missão externa: B-1** (Art. 23) — boina, gandola, camiseta de serviço, calça
+  operacional e cinto de serviço cinza-bandeirante, meias pretas e coturnos pretos — com
+  **EPI: cinto, colete e bota**. Boina e cinto são os mesmos do P-1. Sai pouco, umas 3 vezes no
+  curso inteiro pelo bizu do colega.
   **O B-1 e o EPI ficam em casa** (decisão de 20/08, ver [MALA.md](MALA.md)). Se o QTS marcar
   atividade externa de véspera, vai de P-1, avisa o chefe de turma e o conjunto sobe na
   viagem seguinte.
@@ -61,10 +63,24 @@ quantidades e checagem de insígnia por peça: [MALA.md](MALA.md).
   (Art. 25).
 - **Distintivo de OPM do CAES**: manga direita, 20 mm abaixo do distintivo da Bandeira de São
   Paulo (Art. 70, § 1º, item 3).
-- **Camiseta de serviço** (Art. 74): cinza-bandeirante, gola careca, meia manga, tarjeta
-  operacional no peito direito e Logomarca da PMESP no peito esquerdo. Serve no P-1 e no B-1.
+- **Camiseta de serviço** (Art. 74): cinza-bandeirante, malha, gola careca na cor da camiseta,
+  meia manga com barra, tarjeta operacional no peito direito (retângulo preto 15 x 80 mm, letras
+  brancas de 6 mm, `CAP PM JOSEMAR`) e Logomarca da PMESP no peito esquerdo, alinhada com a
+  tarjeta. Não é camiseta cinza comum. Serve no P-1 e no B-1, por isso é a peça que mais roda.
 - **EF (T-1)**: camiseta de treinamento branca, calção azul-royal, meias brancas e tênis
   preto.
+
+### Checagem das insígnias, peça por peça
+
+| Peça | Gola / platina | Manga direita | Manga esquerda | Peito direito |
+|---|---|---|---|---|
+| Camisa de passeio | distintivo de atividade (dir.) + insígnia de Cap (esq.) | Bandeira SP + **distintivo de OPM do CAES** 20 mm abaixo | Logomarca PMESP | tarjeta **administrativa** (acrílico) sobre a pestana do bolso |
+| Gandola B-1 | distintivo de atividade + insígnia de Cap (miniatura PVC) | Bandeira SP + distintivo de OPM | Logomarca PMESP | tarjeta **operacional** |
+| Camiseta de serviço | — | — | — | tarjeta **operacional** + Logomarca no peito esquerdo |
+| Jaqueta de passeio | insígnia de Cap **em metal** nas platinas | Bandeira SP | Logomarca PMESP | tarjeta **administrativa** |
+
+> **São dois tipos de tarjeta** (Art. 151): a **operacional** é de tecido ou PVC; a
+> **administrativa** é de **acrílico**, com pino ou ímã. Confira se você tem as duas.
 
 ### Como se monta o S-1, peça por peça (R-5-PM)
 

@@ -18,10 +18,10 @@ Nota de aplicativo não conta.
 |---|---|---|
 | **Almoço, 1ª opção** | **Marmita da Chef Marianne**, entregue no CAES · **R$ 20,50** · pedir até **10h30**, zap (11) 95393-7489 | **zero** |
 | **Almoço, 2ª opção** | Terraço Aurora — R. Vitória, 365, 1º andar · R$ 28,90 | 616 m · 8 min |
-| **Almoço, 3ª opção / jantar, 1ª** | **Boteco Flór da Duque** — Av. Duque de Caxias | *[VERIFICAR]* |
-| **Mercado** | Dia — Al. Barão de Limeira, 513 · Extra — Av. Rio Branco, 452 | ~650 m · 8 min |
-| **Mercadinho de emergência** | **Duque Supermercados** — Av. Duque de Caxias, ao lado da Lissandra (830) | *[VERIFICAR]* |
-| **Academia** | **Gaviões 24h Rio Branco** (o Extra fica ao lado) | ~650 m · 8 min |
+| **Almoço, 3ª opção / jantar, 1ª** | **Boteco Flôr da Duque** — Av. Duque de Caxias, 892 | **241 m · 3 min** |
+| **Mercado da sua avenida** | **Duque Supermercados** — Av. Duque de Caxias, 812 · **06h às 22h** | **302 m · 3 min** |
+| **Mercado grande** | Dia — Al. Barão de Limeira, 513 · Extra — Av. Rio Branco, 452 | ~650 m · 8 min |
+| **Academia** | **Gaviões 24h** — Av. Rio Branco, 422 · **aberta 24 horas** | 730 m · 9 min |
 | **Padaria que abre 05h** | Cascatinha — R. Gen. Couto de Magalhães, 172 | 733 m · 9 min |
 | **Farmácia 24h** | Drogaria São Paulo — Pça. Júlio Mesquita, 131 | 1.020 m · 13 min |
 | **Conveniência 24h** | Oxxo — R. José Paulino, 592 | 893 m · 10 min |
@@ -42,7 +42,7 @@ Não é ranking de nota de aplicativo, é a ordem em que ele resolve o almoço n
 |---|---|---|---|
 | **1º** | **Marmita Gourmet Marianne**, entregue no CAES | **R$ 20,50** | Não precisa sair, não gasta o intervalo e é o mais barato dos três |
 | **2º** | **Terraço Aurora** — R. Vitória, 365, 1º andar | R$ 28,90 | Melhor custo entre os de sentar, 8 min a pé |
-| **3º** | **Boteco Flór da Duque** — Av. Duque de Caxias | *[VERIFICAR]* | Quase na porta, e é a **1ª opção do jantar** de terça e quarta |
+| **3º** | **Boteco Flôr da Duque** — Av. Duque de Caxias, 892 | *não publicado* | **241 m, é o lugar de comer mais perto do CAES**, e é a **1ª opção do jantar** de terça e quarta |
 
 ### Marmitas Gourmet Marianne — a 1ª opção
 
@@ -88,7 +88,8 @@ pé, todos com a distância medida. Os mais perto:
 
 | Lugar | Endereço | A pé | O que é |
 |---|---|---|---|
-| **S S Self Service** | Av. Duque de Caxias, 839 | **265 m · 3 min** | Self-service. **O mais perto de todos** |
+| **Boteco Flôr da Duque** | Av. Duque de Caxias, 892 | **241 m · 3 min** | Bar. **O mais perto de todos** (medido em 24/08/2026) |
+| **S S Self Service** | Av. Duque de Caxias, 839 | **265 m · 3 min** | Self-service. O segundo mais perto |
 | Churrascaria | Pça. Princesa Isabel, 28 | 359 m · 4 min | restaurante |
 | Bar e Lanches Cantinho da Princesa | Pça. Princesa Isabel | 365 m · 4 min | lanchonete |
 | Snooker Café e Bar | Pça. Princesa Isabel, 50 | 373 m · 4 min | café e bar |
@@ -158,10 +159,11 @@ não consta em lugar nenhum.*
 
 ## Café
 
-**Boteco Flór da Duque** — Av. Duque de Caxias — verbete completo em "Jantar de terça e quarta"
-Era o que este guia chamava de "Padaria Flor da Duque", indicação de colega do CAO-I. **É
-boteco, não padaria**, e o nome na fachada leva acento: **Flór da Duque**. Faz café, almoço e
-janta. O verbete dono dele agora é o do jantar.
+**Boteco Flôr da Duque** — Av. Duque de Caxias, 892 — **abre 06h** (na segunda; ver o verbete
+completo em "Jantar de terça e quarta", que é o dono deste assunto)
+Era o que este guia chamava de "Padaria Flor da Duque", indicação de colega do CAO-I. **É bar,
+não padaria**, e o nome leva acento: **Flôr da Duque**. Abrindo às 06h, resolve o café antes
+da formatura sem sair da avenida.
 
 **Corada** — Al. Ribeiro da Silva, 932, Campos Elíseos — **[CANDIDATO]**
 Mesas na calçada, lanches e cafés. Citam o pão de queijo recheado com chutney de cenoura com
@@ -174,17 +176,31 @@ Cafeteria junto com loja de chás. Café, drinks, salgados e pratos.
 
 Nesses dias a saída é **18h00**, então dá tempo de sair da bolha do quartel.
 
-**Boteco Flór da Duque** — Av. Duque de Caxias — **1ª opção de jantar** (Josemar, 24/08/2026)
-É o lugar padrão da janta nos dias que sobram, e também a **3ª opção do almoço**. Fica na
-própria avenida do CAES, no mesmo quarteirão do **Duque Supermercados** e da **Lissandra
-Cabeleireiros (nº 830)**, quase na porta. Fachada preta, letreiro com uma flor.
+### Boteco Flôr da Duque — a 1ª opção de jantar
+
+**Av. Duque de Caxias, 892, Santa Ifigênia, CEP 01214-000** — **(11) 3331-2820** —
+**241 m, 3 min a pé** — nota 4,3 no Google — **1ª opção de jantar** (Josemar, 24/08/2026)
+
+É o lugar padrão da janta nos dias que sobram, e também a **3ª opção do almoço**. Funciona
+**dentro do Hotel Minho SP** (o hotel é o nº 888), no mesmo quarteirão do **Duque
+Supermercados (812)** e da **Lissandra Cabeleireiros (830)**. Fachada preta, letreiro branco
+com uma flor, mesas na calçada.
+
+**É o lugar de comer mais perto do CAES que existe.** Os 241 m medidos em 24/08/2026 batem o
+S S Self Service, que era o recordista com 265 m. Você desce a Duque e chegou.
 
 **É o mesmo lugar que este guia chamava de "Padaria Flor da Duque"**, que veio como [BIZU] de
-colega do CAO-I. Não é padaria, é boteco, e o nome tem acento: **Flór**. Fica valendo um
-verbete só, este aqui.
+colega do CAO-I. **Não é padaria, é bar**, e o nome tem acento: **Flôr**, como o Google
+registra. Os dois verbetes viraram este aqui.
 
-*[VERIFICAR: número na Duque, horário e faixa de preço. Sem o número não dá para medir a
-distância a pé no roteador e entrar nas tabelas.]*
+**Horário: segunda das 06h às 23h**, confirmado na ficha do Google em 24/08/2026.
+*[VERIFICAR: o horário de terça e quarta, que é justamente o que interessa para o jantar. O
+Google só mostra o dia corrente sem login, e não existe outra fonte na internet. Uma ligação
+no (11) 3331-2820 resolve.]*
+
+*[VERIFICAR: preço. Não existe nada publicado, em fonte nenhuma: sem cardápio, sem iFood, sem
+Rappi, e o Google não atribui nem a faixa de R$ ao lugar. Quando você for, anota o que pediu e
+quanto pagou que eu ponho aqui e ele vira [TESTADO].]*
 
 **Ama.Zo** — peruano, matriz nos Campos Elíseos — **[CANDIDATO]**
 Cresceu por boca a boca e já abriu segunda casa em Higienópolis. É a melhor aposta de "jantar
@@ -237,7 +253,7 @@ slide do SAE listava só como "Padaria, Alameda Barão de Limeira, 872".
 
 | Lugar | Endereço | A pé | Horário |
 |---|---|---|---|
-| **Duque Supermercados** | Av. Duque de Caxias, ao lado da Lissandra (830) | *[VERIFICAR]* | *[VERIFICAR]* |
+| **Duque Supermercados** | Av. Duque de Caxias, 812 | **302 m · 3 min** | **Seg-Sáb 06h-22h · Dom e feriado 06h-14h** |
 | **Dia** | Al. Barão de Limeira, 513 | **647 m · 8 min** | **Seg-Sex 07h-21h · Dom 07h-18h** |
 | **Extra** | Av. Rio Branco, 452 | **650 m · 8 min** | não localizado |
 | Casa de Carnes Bom Boi | Av. Ipiranga, 1290 | 849 m · 12 min | não localizado |
@@ -248,19 +264,46 @@ slide do SAE listava só como "Padaria, Alameda Barão de Limeira, 872".
 | Best Market | Largo do Arouche, 175 | 1.194 m · 15 min | Todos os dias, 09h às 23h |
 | Mercado Extra | R. das Palmeiras, 187 | 1.199 m · 15 min | Todos os dias, 07h às 22h |
 
-Para a marmita da semana, **Dia e Extra resolvem em 8 minutos**. O CAES tem 2 geladeiras,
-2 frigobares e micro-ondas, e **o pote precisa de nome**.
+**O mais perto agora é disparado o Duque Supermercados, a 302 m**, na própria avenida do CAES,
+e ele só entrou nesta lista em 24/08/2026 porque o Josemar viu na rua. Para compra grande,
+**Dia e Extra resolvem em 8 minutos**. O CAES tem 2 geladeiras, 2 frigobares e micro-ondas, e
+**o pote precisa de nome**.
 
 **Duas referências do Josemar (24/08/2026):**
 
-- **Duque Supermercados, na própria Av. Duque de Caxias**, é o mais perto de todos: fica no
-  mesmo quarteirão do Boteco Flór da Duque e da Lissandra Cabeleireiros (nº 830), a poucos
-  minutos do portão. Supermercado de rua, cartaz amarelo de oferta na fachada, telefone
-  **(11) 3222-7294** lido no letreiro. Não é para compra de semana, é para o que faltou sem
-  gastar meia hora de caminhada. **Nenhuma tabela deste guia tinha ele**, porque a Duque quase
-  não existe no OpenStreetMap. *[VERIFICAR: número e horário.]*
-- **O Extra da Av. Rio Branco, 452, fica ao lado da Academia Gaviões.** Junta as duas coisas
-  na mesma saída: treina e já traz a compra, **650 m, 8 min** do CAES.
+- **Duque Supermercados, Av. Duque de Caxias, 812**, é o mais perto de todos. Verbete logo
+  abaixo.
+- **O Extra da Av. Rio Branco fica ao lado da Academia Gaviões.** Junta as duas coisas na
+  mesma saída: treina e já traz a compra, cerca de **700 m, 9 min** do CAES.
+
+#### Duque Supermercados — o da sua avenida
+
+**Av. Duque de Caxias, 812, Campos Elíseos** — WhatsApp de pedido **(11) 98173-0032** —
+**302 m, 3 min a pé** — **Seg a Sáb 06h às 22h · Domingo e feriado 06h às 14h** — nota 4,1 no
+Google (179 avaliações)
+
+**Nenhuma tabela deste guia tinha ele até 24/08/2026**, porque a Av. Duque de Caxias quase não
+existe no OpenStreetMap, que é a base de tudo aqui. Ele apareceu porque o Josemar viu na rua.
+Fica no mesmo quarteirão da **Lissandra Cabeleireiros (830)** e do **Boteco Flôr da Duque
+(892)**, a **302 m do portão, 3 minutos**, medidos em 24/08/2026.
+
+**Não é mercadinho de esquina.** Tem **açougue com corte no balcão, hortifruti, padaria, adega
+e mercearia**, e é a **matriz de uma rede de três lojas** (as outras são na Liberdade e na
+Mooca, esta com o nome de Mercado Ipanema). Dá para fazer compra de semana aqui, sem ir até o
+Dia ou o Extra.
+
+**O horário é o que decide.** Abre **06h**, duas horas antes da entrada das 08h15, e fecha
+**22h**, quatro horas depois da saída mais tardia. Serve nas duas pontas do dia. **Mas no
+domingo fecha 14h**, e domingo é o dia em que você chega em São Paulo: se a chegada for à
+noite, ele já fechou, e a rede de segurança continua sendo o **Oxxo 24h**.
+
+*[VERIFICAR: o telefone **(11) 3222-7294** do letreiro não aparece em fonte nenhuma na
+internet. O número que a loja divulga é o WhatsApp acima. Provavelmente é o fixo antigo, mas
+não está confirmado.]*
+
+*[VERIFICAR: o CEP. O Google cadastra a loja como **01214-100**, que pelos Correios é o CEP do
+**lado ímpar** da avenida. O 812 é par, e o lado par é **01214-000**. Para carta ou entrega,
+conferir qual o Correios aceita.]*
 
 A **Feira do Bom Retiro é de sábado**, então não serve para a sua semana. Fica registrada para
 o caso de algum sábado em São Paulo.
@@ -292,8 +335,15 @@ Para emergência de madrugada, a **Drogaria São Paulo da Praça Júlio Mesquita
 
 **O olho na calçada vale mais que ela para o que está bem perto.** A **Av. Duque de Caxias**,
 a avenida do CAES, tem só **2 registros no OpenStreetMap** em toda a extensão, e os dois
-lugares que o colega indicou (Terraço e Flor da Duque) são exatamente isso. Só **41 dos 102**
+lugares que o colega indicou (Terraço e Flôr da Duque) são exatamente isso. Só **41 dos 102**
 tinham horário cadastrado; "não localizado" nas tabelas é literal, eu procurei e não achei.
+
+**Em 24/08/2026 a regra se provou de novo.** Os dois lugares que o Josemar apontou olhando a
+rua, o **Boteco Flôr da Duque (892)** e o **Duque Supermercados (812)**, não estavam em lista
+nenhuma deste guia. Medidos depois, deram **241 m e 302 m**: o boteco é o lugar de comer mais
+perto do CAES que existe, e o mercado bate o Dia e o Extra por mais de 300 metros. **O
+levantamento de 99 restaurantes e 102 estabelecimentos não achou nenhum dos dois**, porque
+eles não estão no OpenStreetMap. O que ele vê da calçada continua ganhando da base de dados.
 
 **Dois endereços divergem entre o OpenStreetMap e a busca.** *[VERIFICAR ao passar na rua.]*
 
@@ -314,21 +364,63 @@ tinham horário cadastrado; "não localizado" nas tabelas é literal, eu procure
 | Pronto-socorro | PS Barra Funda — R. Vitorino Carmilo, 717 |
 | Ônibus | Terminal Princesa Isabel — Av. Rio Branco |
 
-### Academia
+### Academia Gaviões 24h — Rio Branco
 
-**Academia Gaviões 24h — Rio Branco** é a referência (Josemar, 24/08/2026). Fica na
-**Av. Rio Branco, ao lado do Extra do nº 452**, ou seja, na mesma caminhada de **650 m,
-8 min** já medida para o mercado. Treina e volta com a compra.
+**Av. Rio Branco, 422, Campos Elíseos, CEP 01206-000** — **730 m, 9 min a pé** —
+**aberta 24 horas, todos os dias** — 4,4 no Google (176 avaliações), 4,94 no Wellhub (1.225)
 
-**O nome não é enfeite: abre 24 horas.** Isso muda o planejamento da semana, porque com aula
-até 18h00 na terça e na quarta e até 16h15 na segunda, qualquer horário serve, inclusive antes
-da entrada das 08h15.
+É a referência do Josemar (24/08/2026). Fica **colada no Extra da Av. Rio Branco**, então
+treino e compra saem na mesma caminhada.
 
-*[VERIFICAR: número exato na Rio Branco, se tem diária ou plano avulso para quem fica só de
-segunda a quinta, e se aceita Gympass. Com o número eu meço a rota a pé de verdade e ela entra
-na tabela dos trajetos.]*
+**O 24h não é enfeite, e é o que faz ela caber na sua semana.** Segunda a aula solta 16h15,
+terça e quarta 18h00, e ainda assim sobra a madrugada e o antes da entrada das 08h15. Não
+existe horário em que ela esteja fechada. *[VERIFICAR: em feriado o próprio Wellhub avisa que
+pode mudar.]*
+
+**Tem vestiário com chuveiro e armário**, que é o que decide se dá para treinar e voltar para
+o quartel. Além de musculação, cárdio e peso livre, tem aula coletiva (spinning, funcional,
+pilates solo, boxe, muay thai, jiu-jítsu, jump, fitdance) e **2 horas de estacionamento
+grátis**.
+
+**O preço é o buraco, e só telefonema resolve.** Nenhuma fonte publica o valor desta unidade, e
+o site oficial da rede estava fora do ar em 24/08/2026. **Não existe diária nem plano semanal
+publicado.** O que dá para ligar e perguntar, em três itens:
+
+1. Tem treino avulso ou diária aqui, e quanto custa hoje?
+2. Existe plano semanal, ou de 4 dias?
+3. No mensal sem fidelidade, qual o valor cheio, e cobra matrícula ou anuidade?
+
+**Telefone (11) 94074-7584.** *[Ressalva: esse número aparece igual nas fichas das unidades
+Marginal, Braz Leme, Vila Maria, Perdizes e Pinheiros, então é a central da rede, e pode ser
+que não saibam o preço desta unidade. O caminho melhor é a DM do Instagram
+**@academiagavioes24hriobranco**, que cai na unidade e fica registrado por escrito.]*
+
+*[Referência de ordem de grandeza, NÃO é o preço daqui: a franquia do Ipiranga publica plano
+anual R$ 129/mês com fidelidade e mensal sem fidelidade R$ 139, e o próprio site dela avisa que
+o valor muda por unidade. E cuidado com a manchete "Gaviões a partir de R$ 39": é de outra
+rede do mesmo grupo, a Fast Treino, cuja unidade é em Alphaville.]*
+
+**Wellhub (ex-Gympass): a unidade aceita, a partir do plano Basic+, R$ 99,99/mês.** O Basic de
+R$ 69,99 não cobre. A TotalPass também tem a unidade no catálogo, mas não publica a faixa.
+**O porém que decide:** os dois são benefício corporativo, não se assina como pessoa física.
+*[VERIFICAR: se a PMESP, a Caixa Beneficente ou alguma associação da qual você já participa
+oferece Wellhub ou TotalPass. Se oferecer, o Basic+ a R$ 99,99 provavelmente ganha de qualquer
+plano de balcão.]*
+
+**Não tem nada a ver com a torcida do Corinthians.** A rede nasceu da escola de karatê "Os
+Gaviões do Karatê", aberta em 1974 numa garagem no Tucuruvi. A quadra da Gaviões da Fiel é
+outra coisa, fica no Bom Retiro. Vale saber para não procurar endereço errado.
+
+**As outras unidades do centro**, se um dia o trajeto mudar: Consolação (R. da Consolação,
+2037), Paulista (R. Treze de Maio, 812) e Marginal (Av. Thomas Edison, 1340). **Não existe
+unidade em Santa Ifigênia, Luz, Bom Retiro ou República**: a Rio Branco é a do miolo central.
 
 A **Evoque, Av. Rio Branco, 1457**, continua registrada como alternativa: aceita Gympass.
+
+*[VERIFICAR: o número do Extra vizinho. Este guia mediu o Extra como **Av. Rio Branco, 452**,
+que é como o OpenStreetMap cadastra o ponto (651 m). As fontes consultadas em 24/08/2026 dizem
+**436**. Os dois números ficam a menos de 100 m um do outro, no mesmo trecho da avenida, então
+nenhuma decisão muda: é a mesma caminhada.]*
 
 ## Como sair daqui
 
@@ -370,6 +462,9 @@ sobrar do que faltar.
 
 | Destino | Distância | Tempo | Ruas principais |
 |---|---|---|---|
+| **Boteco Flôr da Duque** (Duque de Caxias, 892) | **241 m** | **3 min** | Duque de Caxias |
+| **Duque Supermercados** (Duque de Caxias, 812) | **302 m** | **3 min** | Duque de Caxias |
+| **Academia Gaviões 24h** (Rio Branco, 422) | **730 m** | **9 min** | Rio Branco |
 | **Rua Santa Ifigênia** | 684 m | 8 min | Duque de Caxias → Santa Ifigênia |
 | **Estação da Luz** | 807 m | 10 min | Dino Bueno → Rua Mauá |
 | **Estação Santa Cecília** | 1.164 m | 15 min | Rua Helvétia |
@@ -381,6 +476,16 @@ sobrar do que faltar.
 | **Feira da Madrugada** | 3.122 m | 37 min | Mauá → Tiradentes → Ribeiro de Lima |
 | **Irmãos Haga** (uniformes) | 1.331 m | 16 min | Mauá → Praça da Luz → Av. Tiradentes |
 | **Confex Bel** (fardamento) | 1.372 m | 16 min | Mauá → Rua Prates |
+
+**Como as três medições de 24/08/2026 foram feitas**, porque elas fogem do procedimento
+normal e precisam ser reconferíveis: o roteador foi o mesmo de sempre, **Valhalla com
+costing=pedestrian**, saindo do portão da Dino Bueno. **O que mudou foi o geocodificador.** O
+Nominatim, que o `mapas/gerar_mapas.py` usa, respondeu **429 (excesso de requisições)** o dia
+inteiro. Então o boteco e o mercado foram medidos pela **coordenada da ficha do Google**
+(-23,535877/-46,641280 e -23,536286/-46,641859), e a academia pelo **nó de endereço do próprio
+OpenStreetMap** (Av. Rio Branco, 422, achado via Overpass). O Photon, testado como substituto
+do Nominatim, **ignorou o número da casa e devolveu o Palácio dos Campos Elíseos, no 1269**,
+que é a armadilha 2 descrita no cabeçalho do gerador. Não use Photon para número de rua aqui.
 
 ### Estação da Luz
 

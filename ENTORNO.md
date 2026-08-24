@@ -273,6 +273,7 @@ praça que o Google devolve.
 | **CCB Bom Retiro** | 1.282 m | 15 min | Dino Bueno → Nothmann → Anhaia |
 | **Terraço Aurora** | 616 m | 8 min | Duque de Caxias → Santa Ifigênia → Vitória |
 | **25 de Março** | 2.480 m | 32 min | Mauá → Gen. Osório → Senador Queirós |
+| **Senador Shopping** (Av. Senador Queirós, 295) | 1.892 m | 23 min | Mauá → Gen. Osório → Triunfo → Prestes Maia → 25 de Março |
 | **Feira da Madrugada** | 3.122 m | 37 min | Mauá → Tiradentes → Ribeiro de Lima |
 
 ### Estação da Luz
@@ -308,6 +309,37 @@ Tatuapé). Para o resto, Luz.
 **Largo General Osório** → **Rua dos Timbiras** → **Avenida Senador Queirós** → **Rua 25 de
 Março**. Meia hora de caminhada. De metrô pela Luz, descendo na Sé ou São Bento, é mais
 rápido.
+
+### Senador Shopping — fornecedor da Esdra Cosméticos [CANDIDATO]
+
+**1.892 m, cerca de 23 min.** **J O Santos Perfumaria e Estética**, Av. Senador Queirós, 295,
+**Senador Shopping, loja 10, térreo**, Centro, CEP 01026-001. Filial paulista aberta em
+20/01/2026 (CNPJ 47.820.749/0002-20); a matriz é em Vila Velha/ES.
+
+Rota medida em 24/08/2026 no mesmo roteador de pedestre das demais: **Praça Júlio Prestes** →
+**Alameda Dino Bueno** → **Rua Mauá** → **Largo General Osório** → **Rua do Triunfo** → **Rua
+Washington Luís** → **Avenida Prestes Maia** → **Rua 25 de Março** → **Avenida Senador
+Queirós**. A loja fica **logo depois do cruzamento com a Rua Florêncio de Abreu**.
+
+O trecho confuso é o entroncamento da Prestes Maia. Se perder o fio ali, a referência é
+simples: descer até a **25 de Março** e virar à direita, a Senador Queirós é a próxima.
+
+Não é ponto do curso, é fornecedor da loja de casa. Entra neste guia porque fica na mesma
+direção da 25 de Março e a janela para ir é a mesma: o almoço entre blocos. **Ida e volta a pé
+consomem cerca de 46 min** dos 90 min do intervalo de segunda, então sobra pouco para a loja e
+quase nada para comer.
+
+**Na volta, a Cascatinha** (R. General Couto de Magalhães, 172) cai praticamente em cima da
+Rua do Triunfo. É o único ponto do trajeto onde dá para almoçar sem desviar.
+
+*[VERIFICAR: esta linha contradiz a da 25 de Março na tabela acima. Lá constam 2.480 m e 32
+min; esta medição, até a Senador Queirós 295, deu 1.892 m e 23 min, e os dois destinos são
+praticamente vizinhos. Causa provável: pontos de partida diferentes (esta rota partiu da
+coordenada da Praça Júlio Prestes, e não do portão da Alameda Dino Bueno, que é a convenção
+desta seção) e roteamentos distintos (Prestes Maia contra Rua dos Timbiras). Remedir as duas
+a partir do mesmo portão antes de confiar em qualquer uma.]*
+
+*Sem mapa SVG ainda, ao contrário dos outros trajetos desta seção.*
 
 ### Feira da Madrugada — só cabe de madrugada
 

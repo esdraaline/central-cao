@@ -265,6 +265,15 @@ e travessia). **Distância e tempo são medidos, não estimados**, e o ponto de 
 **portão do lado da Alameda Dino Bueno**, com coordenada conferida no local, não o centro da
 praça que o Google devolve.
 
+**Calibragem do passo (24/08/2026).** O roteador calcula os tempos a cerca de **4,8 km/h**,
+que é o pedestre médio. O passo real medido no trajeto do Senador Shopping foi de **6,1 km/h**,
+27% mais rápido. Na prática: **multiplique os tempos desta seção por 0,8**. Luz vira 8 min,
+Santa Ifigênia 6 min, Santa Cecília e CCB Bom Retiro 12 min, 25 de Março 25 min. O número
+cheio do doc volta a valer quando estiver **carregando compra pesada**.
+
+*[VERIFICAR: a calibragem vem de uma medição só, ida e volta no mesmo dia. Confirmar em um
+segundo trajeto antes de tratar o fator 0,8 como regra.]*
+
 | Destino | Distância | Tempo | Ruas principais |
 |---|---|---|---|
 | **Rua Santa Ifigênia** | 684 m | 8 min | Duque de Caxias → Santa Ifigênia |
@@ -273,7 +282,7 @@ praça que o Google devolve.
 | **CCB Bom Retiro** | 1.282 m | 15 min | Dino Bueno → Nothmann → Anhaia |
 | **Terraço Aurora** | 616 m | 8 min | Duque de Caxias → Santa Ifigênia → Vitória |
 | **25 de Março** | 2.480 m | 32 min | Mauá → Gen. Osório → Senador Queirós |
-| **Senador Shopping** (Av. Senador Queirós, 295) | 1.892 m | 23 min | Mauá → Gen. Osório → Triunfo → Prestes Maia → 25 de Março |
+| **Senador Shopping** (Av. Senador Queirós, 295) | 1.892 m | 23 min (**18 min medidos a pé**) | Mauá → Gen. Osório → Triunfo → Prestes Maia → 25 de Março |
 | **Feira da Madrugada** | 3.122 m | 37 min | Mauá → Tiradentes → Ribeiro de Lima |
 
 ### Estação da Luz
@@ -310,7 +319,7 @@ Tatuapé). Para o resto, Luz.
 Março**. Meia hora de caminhada. De metrô pela Luz, descendo na Sé ou São Bento, é mais
 rápido.
 
-### Senador Shopping — fornecedor da Esdra Cosméticos [CANDIDATO]
+### Senador Shopping — fornecedor da Esdra Cosméticos [TESTADO]
 
 **1.892 m, cerca de 23 min.** **J O Santos Perfumaria e Estética**, Av. Senador Queirós, 295,
 **Senador Shopping, loja 10, térreo**, Centro, CEP 01026-001. Filial paulista aberta em
@@ -338,6 +347,13 @@ praticamente vizinhos. Causa provável: pontos de partida diferentes (esta rota 
 coordenada da Praça Júlio Prestes, e não do portão da Alameda Dino Bueno, que é a convenção
 desta seção) e roteamentos distintos (Prestes Maia contra Rua dos Timbiras). Remedir as duas
 a partir do mesmo portão antes de confiar em qualquer uma.]*
+
+**[TESTADO] 24/08/2026, no almoço da segunda.** Saiu 11h50, voltou 12h30: **40 min porta a
+porta**, dos quais **3 min dentro da loja** e **37 min de caminhada**, cerca de **18 min e 30 s
+por trecho**. Retirada de pedido já separado, sem espera. Deu tempo com folga no intervalo de
+90 min, e ainda sobraram 30 min para almoçar na volta.
+
+**O dado que vale para o guia todo: o passo medido foi de 6,1 km/h.**
 
 *Sem mapa SVG ainda, ao contrário dos outros trajetos desta seção.*
 

@@ -83,10 +83,11 @@ Agosto inteiro, dia a dia: [PRAZOS.md](PRAZOS.md).
   não traz Ed. Física nem atividade externa para o pelotão A. Detalhe em [MALA.md](MALA.md).
 - **O S-1 fica guardado no CAES** (paletó, segunda calça social, gravata, quepe e tarjeta
   administrativa). Falta só a camisa social.
-- **A aba Mala é só o rodízio da semana** (inventário de quinta, o que desce para lavar, o que sobe
-  domingo). A doutrina de uniforme, com composição e insígnia por peça, é do [ROTINA.md](ROTINA.md):
-  um assunto, um dono. Decidido em 23/08, junto com a correção do alvo de camisa de passeio, que
-  eram 4 no inventário e são 3 de verdade.
+- **A aba Mala abre só com o rodízio da semana**: contar o armário na quinta, o que desce para
+  lavar, o que sobe no domingo. Consulta (alvos, farda, estoque do armário, detalhes de viagem)
+  fica recolhida no fim da aba, a um clique. A doutrina de uniforme, com composição e insígnia por
+  peça, é do [ROTINA.md](ROTINA.md): um assunto, um dono. Decidido em 23/08, junto com a correção
+  do alvo de camisa de passeio, que eram 4 no inventário e são 3 de verdade.
 - **Passeio completo em atividade externa é o P-1**, não o S-1. O quepe segue sendo peça de cerimônia.
 - **EPI do curso é cinto, colete e bota**, sempre com o B-1.
 - **Anotação de aula não entra neste repositório**, que é público: este lado guarda logística (prazo,

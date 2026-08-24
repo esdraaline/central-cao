@@ -104,6 +104,30 @@ do Josemar, não de um robô que roda de hora em hora.
 acumulado de tudo que foi ticado no painel e nunca desceu. É o esperado. Para olhar antes, a
 Action aceita ser disparada à mão com a opção **"Só mostrar o que faria"** (`--conferir`).
 
+### Seção recolhida (`<!-- extra -->`)
+
+Uma aba tem duas naturezas de conteúdo: **o que eu tenho que fazer** e **o que eu preciso
+consultar**. Misturar as duas afoga a primeira, que é o motivo de o painel existir.
+
+Para recolher uma seção, escreva `<!-- extra -->` na linha logo abaixo do título `##`:
+
+```
+## Estoque do armário — reponha quando acabar
+<!-- extra -->
+
+Isto mora lá e não viaja...
+```
+
+Aquele título vira uma barra clicável, fechada quando a aba abre, e a seção inteira (até o
+próximo `##`) fica dentro dela. É comentário de HTML, então em qualquer outro leitor de markdown
+ele é invisível e o texto continua no lugar.
+
+**A busca enxerga o que está recolhido.** Procurar "papel higiênico" abre sozinha a seção que tem
+a resposta, realça o trecho e conta na pílula da aba. Ao limpar a busca, tudo se fecha de novo.
+
+Regra de bolso: **caixinha é ação, seção recolhida é consulta.** Se você não faz nada com aquilo
+nesta semana, ou é `<!-- extra -->` ou é assunto de outro arquivo.
+
 ### Aba Tarefas (cadastro)
 Dá para cadastrar tarefa direto no painel, escrevendo em linguagem normal: *"entregar artigo sexta"*,
 *"prova dia 15"*, *"enviar ofício amanhã"*. Ele entende a data sozinho e agrupa por urgência
@@ -402,6 +426,15 @@ assunto que mais tinha cópia no repositório.
 é de **3** (a antiga mais as 2 da ConfecBell, como o próprio `COMPRAS.md` registra, e como a seção
 do P-1 dizia três linhas abaixo). O painel ia cobrar para sempre uma camisa que não existe. Alvo
 corrigido para 3. Duplicata não confunde só a leitura: ela inventa falta.
+
+**Segundo passo, no mesmo dia: o que sobrou foi recolhido.** Enxugar não bastou. Ao ver a aba
+pronta, o Josemar apontou que a referência ainda estava em primeiro plano: *"isso tudo tem que
+ficar escondido numa aba, informações extras, não em primeiro plano na mala"*. A aba agora abre
+com **três listas e mais nada** (contar o armário, o que desce para lavar, o que sobe domingo), e
+as seis seções de consulta viraram barras recolhidas no fim: como o ciclo funciona, de onde vêm os
+alvos, o que não entra no rodízio, a farda do armário, o estoque e os detalhes de viagem. A aba
+inteira cabe em uma tela. Foi para isso que o gerador ganhou o `<!-- extra -->`, documentado mais
+acima, que agora serve qualquer aba.
 
 **O cartão da Mala na abertura ganhou rótulo próprio** (`data-sub-falta` / `data-sub-ok`). Dizer
 "12 itens ainda faltam" soava a pendência atrasada; agora diz **"12 peças na mala de domingo"**,

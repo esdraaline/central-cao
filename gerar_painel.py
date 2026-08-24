@@ -195,10 +195,38 @@ def md_para_html(texto):
         while pilha:
             fecha_uma()
 
+    # Secao recolhida: um "<!-- extra -->" na linha logo abaixo de um "## Titulo"
+    # transforma aquela secao inteira (ate o proximo "##") num <details> fechado.
+    # Nasceu da aba Mala: as tres listas do que fazer nesta semana estavam
+    # afogadas em referencia (tabela de alvo, estoque do armario, farda), e o que
+    # ele quer ver ao abrir e o que tem que fazer. O resto continua ali, a um
+    # clique, em vez de virar arquivo separado que ninguem le.
+    aberto = [False]          # ha um <details> esperando fechamento?
+    ultimo_h2 = [None]        # indice, em `saida`, do ultimo <h2> emitido
+
+    def fecha_extra():
+        if aberto[0]:
+            saida.append("</details>")
+            aberto[0] = False
+
     while i < len(linhas):
         ln = linhas[i]
         cru = ln.rstrip()
         strip = cru.strip()
+
+        # marcador de secao recolhida (comentario HTML, invisivel em qualquer
+        # outro leitor de markdown)
+        if strip == "<!-- extra -->":
+            if ultimo_h2[0] is not None:
+                m2 = re.match(r"^<h2>(.*)</h2>$", saida[ultimo_h2[0]])
+                if m2:
+                    fecha_lista()
+                    saida[ultimo_h2[0]] = ('<details class="extra">'
+                                           '<summary data-b>%s</summary>' % m2.group(1))
+                    aberto[0] = True
+                    ultimo_h2[0] = None
+            i += 1
+            continue
 
         # bloco de codigo
         if strip.startswith("```"):
@@ -270,7 +298,11 @@ def md_para_html(texto):
             if n == 1:
                 i += 1
                 continue  # o H1 vira o titulo da aba, nao repete no corpo
+            if n <= 2:
+                fecha_extra()     # secao recolhida vai ate o proximo "##"
             saida.append("<h%d>%s</h%d>" % (n, _inline(conteudo), n))
+            if n == 2:
+                ultimo_h2[0] = len(saida) - 1
             i += 1
             continue
 
@@ -380,6 +412,7 @@ def md_para_html(texto):
         saida.append("<p>%s</p>" % _inline(" ".join(buf)))
 
     fecha_lista()
+    fecha_extra()
     return "\n".join(saida)
 
 
@@ -873,6 +906,26 @@ main{max-width:1080px;margin:0 auto;padding:24px 20px 64px}
 .card strong{color:var(--tx);font-weight:650}
 .card a{color:var(--vm-cl);text-decoration:none;border-bottom:1px solid transparent}
 .card a:hover{border-bottom-color:currentColor}
+/* secao recolhida (<details class="extra">): referencia que nao pode disputar
+   espaco com a lista do que fazer hoje. Fechada por padrao. */
+.card details.extra{border:1px solid var(--bd);border-radius:11px;background:var(--card2);
+  margin:11px 0;overflow:hidden}
+.card details.extra>summary{cursor:pointer;list-style:none;padding:12px 15px;
+  font-size:14px;font-weight:650;color:var(--tx2);display:flex;align-items:center;gap:9px;
+  user-select:none}
+.card details.extra>summary::-webkit-details-marker{display:none}
+.card details.extra>summary::before{content:"";width:7px;height:7px;flex:none;
+  border-right:2px solid var(--vm-cl);border-bottom:2px solid var(--vm-cl);
+  transform:rotate(-45deg);margin-left:2px;transition:transform .15s}
+.card details.extra[open]>summary::before{transform:rotate(45deg)}
+.card details.extra>summary:hover{color:var(--tx)}
+.card details.extra[open]>summary{border-bottom:1px solid var(--bd);color:var(--tx)}
+.card details.extra>*:not(summary){margin-left:15px;margin-right:15px}
+.card details.extra>*:last-child{margin-bottom:14px}
+.card details.extra h3:first-of-type{margin-top:13px}
+.card details.extra>ul,.card details.extra>ol{margin-left:36px}
+/* a marca "extras" so aparece no primeiro <details> de uma sequencia */
+.card details.extra+details.extra{margin-top:-4px}
 blockquote{border-left:3px solid var(--vm);background:var(--card2);padding:11px 16px;
   border-radius:0 9px 9px 0;margin:13px 0;font-size:13.5px;color:var(--tx2)}
 del{color:var(--tx3);text-decoration-thickness:1px}
@@ -2893,6 +2946,8 @@ window.REP=(function(){
       el.style.display='';
       if(el.dataset.orig){el.innerHTML=el.dataset.orig;delete el.dataset.orig;}
     });
+    /* secoes recolhidas voltam a ficar fechadas quando a busca sai da tela */
+    document.querySelectorAll('details.extra').forEach(function(d){d.open=false});
     document.querySelectorAll('.sem-res').forEach(function(n){n.remove()});
     document.querySelectorAll('.card').forEach(function(c){c.style.display=''});
   }
@@ -2930,8 +2985,16 @@ window.REP=(function(){
         var n=0;
         pan.querySelectorAll('.card [data-b]').forEach(function(el){
           var bate=el.textContent.toLowerCase().indexOf(alvo)>=0;
-          el.style.display=bate?'':'none';
+          /* o titulo de uma secao recolhida nunca some: sem ele o <details>
+             fica sem cabecalho e o resultado dentro dele vira bloco orfao */
+          if(el.tagName!=='SUMMARY')el.style.display=bate?'':'none';
           if(bate){realca(el,termo);n++;}
+        });
+        /* resultado dentro de secao recolhida so aparece se ela abrir */
+        pan.querySelectorAll('details.extra').forEach(function(d){
+          d.open=[].slice.call(d.querySelectorAll('[data-b]')).some(function(e){
+            return e.tagName!=='SUMMARY'&&e.style.display!=='none'})
+            ||d.querySelector('summary').textContent.toLowerCase().indexOf(alvo)>=0;
         });
         pan.querySelectorAll('.card').forEach(function(c){
           var vis=[].slice.call(c.querySelectorAll('[data-b]')).some(function(e){

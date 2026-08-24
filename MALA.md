@@ -1,27 +1,12 @@
 # MALA — o rodízio da semana
 
-> **A mala não é montada do zero.** O grosso mora no armário do CAES. Toda quinta desce roupa
-> suja para lavar em casa, todo domingo sobe roupa limpa e a carga da copa. Não tem lavanderia
-> lá. Semana padrão: viaja domingo à tarde, aula de segunda a quinta, volta quinta depois das
-> 11h30 ([ROTINA.md](ROTINA.md) e [VIAGENS.md](VIAGENS.md)).
-
-## O ciclo, em três lugares
-
-Toda peça está sempre em um destes três estados. A semana é o giro entre eles.
-
-| Onde | O que está lá | O que faz |
-|---|---|---|
-| **Armário do CAES** | farda, roupa limpa, cama, higiene, copa e estudo | vai esvaziando ao longo da semana |
-| **Casa** | o que desceu sujo na quinta | volta limpo no domingo |
-| **Mala de domingo** | o que faltou no armário, mais a carga da copa | zera quando você guarda tudo lá |
-
-**A única conta que existe é o inventário de quinta.** O que ele apontar como falta é exatamente
-o que sobe no domingo. Não há segunda lista de quantidade em lugar nenhum deste painel.
+> **Esta aba é só o giro da semana**: quinta de manhã você conta o armário, quinta desce o que
+> vai lavar, domingo sobe o que faltou. Tudo o mais é consulta e está recolhido no fim.
 
 ## 1. Quinta de manhã — o inventário do armário
 
-Antes de descer, abra o armário e lance em cada linha **quantas peças LIMPAS ficaram lá**, no
-`−` e no `+`. O que a tela mostrar como **"faltam N"** é a mala de domingo, peça por peça.
+Abra o armário e lance em cada linha **quantas peças LIMPAS ficaram lá**, no `−` e no `+`. O que
+a tela mostrar como **"faltam N"** é a mala de domingo, peça por peça.
 
 - [ ] 8 cuecas
 - [ ] 5 pares de meia social preta
@@ -31,45 +16,41 @@ Antes de descer, abra o armário e lance em cada linha **quantas peças LIMPAS f
 - [ ] 2 toalhas de banho
 - [ ] 1 fronha limpa
 
-Peça que fechou o alvo some da lista sozinha, para sobrar na tela só o que precisa de você. Peça
-que zerou aparece com a falta cheia, e é a que não pode ser esquecida.
-
-**De onde vêm esses alvos:**
-
-| Peça | Alvo | Por quê |
-|---|---|---|
-| Meia social preta | 5 pares | **a mais crítica.** O P-1 pede meia social fina os quatro dias, e a meia grossa que fica no armário é de coturno, não substitui. Esquecer em casa não tem improviso |
-| Camiseta de serviço | 6 | **não tem folga**: uma por dia de aula, por baixo do P-1 e do B-1, mais reserva |
-| Camisa de passeio | 3 | é o jogo que existe (1 antiga + 2 da ConfecBell em 18/08). Em quatro dias, uma repete |
-
-**Fora da conta**: os 2 pares de meia preta grossa ficam no armário e só servem com o B-1; os 4
-pares de meia branca ficam em casa junto com o kit de Ed. Física.
-
 ## 2. Quinta, antes de pegar a estrada — o que desce para lavar
 
 - [ ] Toalha de banho usada
 - [ ] Fronha usada
 - [ ] Roupa suja da semana
 
-Faça o inventário antes de fechar a sacola. Contar o que ficou no armário com ele aberto na sua
-frente é fácil; lembrar disso em casa, na quinta à noite, não é.
-
 ## 3. Domingo — o que sobe
 
-**A roupa não tem quantidade fixa.** Ela é o "faltam N" da quinta: se o contador diz que faltam
-5 cuecas, são 5 cuecas.
+- **A roupa**, na quantidade que a seção 1 apontou. Se diz que faltam 5 cuecas, são 5 cuecas.
+- **A carga da copa**, sempre a mesma: whey, creatina, energético zero, Pepsi Black, lanches, marmitas prontas, shampoo e porta-sabonete.
+- **A janta, que não é lanche**: a chegada é por volta das 22h, e o entorno aberto nessa hora é aposta.
 
-**A carga da copa é sempre a mesma**, essa sim fixa: whey, creatina, energético zero, Pepsi
-Black, lanches, marmitas prontas, shampoo e porta-sabonete.
+A conferência item por item é a tarefa de domingo, na aba Tarefas. **Ao chegar e guardar tudo,
+volte à seção 1 e clique no meio de cada linha de roupa**: é isso que zera a falta e faz a conta
+da quinta seguinte começar limpa.
 
-**Quem tica isso é a tarefa de domingo**, na aba Tarefas, que abre com a lista dentro e volta
-zerada toda semana. Aqui é só a leitura.
+## Como o ciclo funciona
+<!-- extra -->
 
-**Ao chegar e guardar tudo, volte ao inventário e clique no meio de cada linha de roupa.** Isso
-marca "tenho tudo" e zera a falta, que é o que faz a conta da quinta seguinte começar limpa.
+Toda peça está sempre em um destes três lugares, e a semana é o giro entre eles.
 
-**A janta de domingo vai junto, e não é lanche.** A chegada é por volta das 22h, e contar com o
-entorno aberto nesse horário é aposta.
+| Onde | O que está lá | O que faz |
+|---|---|---|
+| **Armário do CAES** | farda, roupa limpa, cama, higiene, copa e estudo | vai esvaziando ao longo da semana |
+| **Casa** | o que desceu sujo na quinta | volta limpo no domingo |
+| **Mala de domingo** | o que faltou no armário, mais a carga da copa | zera quando você guarda tudo lá |
+
+**A única conta que existe é o inventário de quinta.** Não há segunda lista de quantidade em
+lugar nenhum deste painel: a mala de domingo é o que ele apontou como falta.
+
+**Faça o inventário com o armário aberto na sua frente**, na quinta de manhã, antes de fechar a
+sacola. Lembrar disso em casa, à noite, não funciona.
+
+**Peça que fecha o alvo some da lista sozinha**, para sobrar na tela só o que precisa de você.
+Peça que zerou aparece com a falta cheia, e é a que não pode ser esquecida.
 
 **Etiqueta com o nome em tudo que for para a geladeira.** São muitas pessoas dividindo duas
 geladeiras e dois frigobares, e marmita sem nome vira marmita de todo mundo.
@@ -77,7 +58,24 @@ geladeiras e dois frigobares, e marmita sem nome vira marmita de todo mundo.
 **Whey**: fracione a porção da semana num pote menor e deixe o pote grande em casa, que é caro em
 volume no porta-malas. A creatina é o oposto, o pote já é pequeno.
 
+## De onde vêm os alvos do inventário
+<!-- extra -->
+
+| Peça | Alvo | Por quê |
+|---|---|---|
+| Meia social preta | 5 pares | **a mais crítica.** O P-1 pede meia social fina os quatro dias, e a meia grossa que fica no armário é de coturno, não substitui. Esquecer em casa não tem improviso |
+| Camiseta de serviço | 6 | **não tem folga**: uma por dia de aula, por baixo do P-1 e do B-1, mais reserva |
+| Camisa de passeio | 3 | é o jogo que existe (1 antiga + 2 da ConfecBell em 18/08). Em quatro dias, uma repete |
+| Cueca | 8 | uma por dia, com folga para imprevisto |
+| Pijama | 2 | para revezar |
+| Toalha de banho | 2 | para revezar |
+| Fronha | 1 | a de casa fica com a roupa de cama |
+
+**Fora da conta**: os 2 pares de meia preta grossa ficam no armário e só servem com o B-1; os 4
+pares de meia branca ficam em casa junto com o kit de Ed. Física.
+
 ## O que não entra no rodízio
+<!-- extra -->
 
 ### Fica no armário do CAES e nunca desce
 
@@ -106,6 +104,7 @@ inteiro e engraxado.
 Fone de ouvido, celular e carregador, e só. O resto do material de estudo mora no armário.
 
 ## A farda que tem que estar no armário
+<!-- extra -->
 
 Quantidades e estado das peças. Qual uniforme se usa em qual ocasião, a composição de cada um e
 a insígnia peça por peça estão em [ROTINA.md](ROTINA.md), que é o dono desse assunto.
@@ -127,6 +126,7 @@ a insígnia peça por peça estão em [ROTINA.md](ROTINA.md), que é o dono dess
 em [COMPRAS.md](COMPRAS.md).
 
 ## Estoque do armário — reponha quando acabar
+<!-- extra -->
 
 Isto mora lá e não viaja. **Não é lista de arrumar mala**: é a memória do que tem, para você
 reconhecer o que acabou. Conferido item a item em 06/08. O que faltar vira item em
@@ -140,9 +140,11 @@ reconhecer o que acabou. Conferido item a item em 06/08. O que faltar vira item 
 - **Documentos**: identidade funcional e dinheiro ou cartão para as refeições, para o combustível da carona e para a vaquinha da turma. O Ofício de Apresentação é ato eletrônico, não vai impresso: guarde só o número da mesa **SEI 302090130** no celular.
 
 ## Detalhes que mudam a mala
+<!-- extra -->
 
 - **Vou de carona.** O porta-malas é dividido, então volume é moeda: combine antes quanto cabe. Como o grosso já está no armário, o que sobe é uma sacola de roupa e uma caixa de comida.
 - **Armário**: cerca de 1 folha de armário padrão da PM por aluno, e **ele não vem com chave, o cadeado é seu**. Prefira mala que caiba embaixo da cama.
 - **Wi-fi**: rede WCorp, funcionou bem.
+- **Semana padrão**: viaja domingo à tarde, aula de segunda a quinta, volta quinta depois das 11h30 ([ROTINA.md](ROTINA.md) e [VIAGENS.md](VIAGENS.md)). Não tem lavanderia no CAES.
 
 Onde comer, mercado, farmácia e o resto do entorno: [ENTORNO.md](ENTORNO.md).

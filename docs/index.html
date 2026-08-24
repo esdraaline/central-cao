@@ -9,7 +9,7 @@
 <!-- o painel e um arquivo unico que muda a cada geracao; sem isto o navegador
      serve a versao antiga do cache e correcoes nao chegam ate o usuario -->
 <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
-<meta name="gerado-em" content="e0f22208c51bf6ec">
+<meta name="gerado-em" content="50c66e31ba4ac17d">
 <title>Central do CAO</title>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23c8102e'/%3E%3Ctext x='16' y='22' font-size='15' font-family='Arial' font-weight='bold' fill='white' text-anchor='middle'%3ECAO%3C/text%3E%3C/svg%3E">
 <style>
@@ -208,6 +208,26 @@ main{max-width:1080px;margin:0 auto;padding:24px 20px 64px}
 .card strong{color:var(--tx);font-weight:650}
 .card a{color:var(--vm-cl);text-decoration:none;border-bottom:1px solid transparent}
 .card a:hover{border-bottom-color:currentColor}
+/* secao recolhida (<details class="extra">): referencia que nao pode disputar
+   espaco com a lista do que fazer hoje. Fechada por padrao. */
+.card details.extra{border:1px solid var(--bd);border-radius:11px;background:var(--card2);
+  margin:11px 0;overflow:hidden}
+.card details.extra>summary{cursor:pointer;list-style:none;padding:12px 15px;
+  font-size:14px;font-weight:650;color:var(--tx2);display:flex;align-items:center;gap:9px;
+  user-select:none}
+.card details.extra>summary::-webkit-details-marker{display:none}
+.card details.extra>summary::before{content:"";width:7px;height:7px;flex:none;
+  border-right:2px solid var(--vm-cl);border-bottom:2px solid var(--vm-cl);
+  transform:rotate(-45deg);margin-left:2px;transition:transform .15s}
+.card details.extra[open]>summary::before{transform:rotate(45deg)}
+.card details.extra>summary:hover{color:var(--tx)}
+.card details.extra[open]>summary{border-bottom:1px solid var(--bd);color:var(--tx)}
+.card details.extra>*:not(summary){margin-left:15px;margin-right:15px}
+.card details.extra>*:last-child{margin-bottom:14px}
+.card details.extra h3:first-of-type{margin-top:13px}
+.card details.extra>ul,.card details.extra>ol{margin-left:36px}
+/* a marca "extras" so aparece no primeiro <details> de uma sequencia */
+.card details.extra+details.extra{margin-top:-4px}
 blockquote{border-left:3px solid var(--vm);background:var(--card2);padding:11px 16px;
   border-radius:0 9px 9px 0;margin:13px 0;font-size:13.5px;color:var(--tx2)}
 del{color:var(--tx3);text-decoration-thickness:1px}
@@ -543,7 +563,7 @@ mark{background:rgba(232,161,58,.35);color:inherit;border-radius:3px;padding:0 2
 <ul data-b>
 <li><strong>B-1 e EPI não sobem</strong> e ficam em casa sem data nova (decisão de 20/08), porque o QTS da semana 2 não traz Ed. Física nem atividade externa para o pelotão A. Detalhe em <a href="#mala" class="lnk-aba">MALA.md</a>.</li>
 <li><strong>O S-1 fica guardado no CAES</strong> (paletó, segunda calça social, gravata, quepe e tarjeta administrativa). Falta só a camisa social.</li>
-<li><strong>A aba Mala é só o rodízio da semana</strong> (inventário de quinta, o que desce para lavar, o que sobe domingo). A doutrina de uniforme, com composição e insígnia por peça, é do <a href="#rotina" class="lnk-aba">ROTINA.md</a>: um assunto, um dono. Decidido em 23/08, junto com a correção do alvo de camisa de passeio, que eram 4 no inventário e são 3 de verdade.</li>
+<li><strong>A aba Mala abre só com o rodízio da semana</strong>: contar o armário na quinta, o que desce para lavar, o que sobe no domingo. Consulta (alvos, farda, estoque do armário, detalhes de viagem) fica recolhida no fim da aba, a um clique. A doutrina de uniforme, com composição e insígnia por peça, é do <a href="#rotina" class="lnk-aba">ROTINA.md</a>: um assunto, um dono. Decidido em 23/08, junto com a correção do alvo de camisa de passeio, que eram 4 no inventário e são 3 de verdade.</li>
 <li><strong>Passeio completo em atividade externa é o P-1</strong>, não o S-1. O quepe segue sendo peça de cerimônia.</li>
 <li><strong>EPI do curso é cinto, colete e bota</strong>, sempre com o B-1.</li>
 <li><strong>Anotação de aula não entra neste repositório</strong>, que é público: este lado guarda logística (prazo, tarefa, rotina) e o Google Drive guarda conteúdo (slide, anotação, trabalho, dissertação). Um arquivo <code>.md</code> por disciplina, com as etiquetas <code>#PROVA</code>, <code>#DISSERTA</code> e <code>#DUVIDA</code>. Método em <a href="#estudos" class="lnk-aba">ESTUDOS.md</a>.</li>
@@ -1046,13 +1066,9 @@ Ficou dúvida:           #DUVIDA</code></pre>
 <p data-b><strong>Em casa, conferido em 18/08</strong>: whey protein, creatina e coqueteleira.</p>
 <p data-b><strong>Fora da conta</strong>: gravata e segunda calça social já estavam em casa e foram para o CAES; o Ofício de Apresentação foi enviado pela P/1 à mesa <strong>SEI 302090130</strong> em 19/08, é ato eletrônico e não custa nada.</p>
 <p data-b><strong>Pendência que sobrou da compra</strong>: dos 4 distintivos de OPM, 3 foram aplicados nas camisas de passeio e <strong>o 4º ficou solto</strong>, porque é o da gandola, que está em casa. Detalhe em <a href="#mala" class="lnk-aba">MALA.md</a>.</p></div></section>
-<section class="aba" id="ab-mala" role="tabpanel" data-mod="2026-08-24T02:56:38.000Z"><div class="card"><blockquote data-b><strong>A mala não é montada do zero.</strong> O grosso mora no armário do CAES. Toda quinta desce roupa suja para lavar em casa, todo domingo sobe roupa limpa e a carga da copa. Não tem lavanderia lá. Semana padrão: viaja domingo à tarde, aula de segunda a quinta, volta quinta depois das 11h30 (<a href="#rotina" class="lnk-aba">ROTINA.md</a> e <a href="#viagens" class="lnk-aba">VIAGENS.md</a>).</blockquote>
-<h2 data-b>O ciclo, em três lugares</h2>
-<p data-b>Toda peça está sempre em um destes três estados. A semana é o giro entre eles.</p>
-<div class="tab-wrap" data-b><table><thead><tr><th>Onde</th><th>O que está lá</th><th>O que faz</th></tr></thead><tbody><tr><td><strong>Armário do CAES</strong></td><td>farda, roupa limpa, cama, higiene, copa e estudo</td><td>vai esvaziando ao longo da semana</td></tr><tr><td><strong>Casa</strong></td><td>o que desceu sujo na quinta</td><td>volta limpo no domingo</td></tr><tr><td><strong>Mala de domingo</strong></td><td>o que faltou no armário, mais a carga da copa</td><td>zera quando você guarda tudo lá</td></tr></tbody></table></div>
-<p data-b><strong>A única conta que existe é o inventário de quinta.</strong> O que ele apontar como falta é exatamente o que sobe no domingo. Não há segunda lista de quantidade em lugar nenhum deste painel.</p>
+<section class="aba" id="ab-mala" role="tabpanel" data-mod="2026-08-24T02:56:38.000Z"><div class="card"><blockquote data-b><strong>Esta aba é só o giro da semana</strong>: quinta de manhã você conta o armário, quinta desce o que vai lavar, domingo sobe o que faltou. Tudo o mais é consulta e está recolhido no fim.</blockquote>
 <h2 data-b>1. Quinta de manhã — o inventário do armário</h2>
-<p data-b>Antes de descer, abra o armário e lance em cada linha <strong>quantas peças LIMPAS ficaram lá</strong>, no <code>−</code> e no <code>+</code>. O que a tela mostrar como <strong>"faltam N"</strong> é a mala de domingo, peça por peça.</p>
+<p data-b>Abra o armário e lance em cada linha <strong>quantas peças LIMPAS ficaram lá</strong>, no <code>−</code> e no <code>+</code>. O que a tela mostrar como <strong>"faltam N"</strong> é a mala de domingo, peça por peça.</p>
 <ul data-b class="tarefas">
 <li class="pend" data-mk="bfb97a593d" data-md="0" data-qtd="8"><span class="box"></span><span>8 cuecas</span></li>
 <li class="pend" data-mk="abe7e2f957" data-md="0" data-qtd="5"><span class="box"></span><span>5 pares de meia social preta</span></li>
@@ -1062,26 +1078,33 @@ Ficou dúvida:           #DUVIDA</code></pre>
 <li class="pend" data-mk="52aae0e4c6" data-md="0" data-qtd="2"><span class="box"></span><span>2 toalhas de banho</span></li>
 <li class="pend" data-mk="40cf9a5173" data-md="0"><span class="box"></span><span>1 fronha limpa</span></li>
 </ul>
-<p data-b>Peça que fechou o alvo some da lista sozinha, para sobrar na tela só o que precisa de você. Peça que zerou aparece com a falta cheia, e é a que não pode ser esquecida.</p>
-<p data-b><strong>De onde vêm esses alvos:</strong></p>
-<div class="tab-wrap" data-b><table><thead><tr><th>Peça</th><th>Alvo</th><th>Por quê</th></tr></thead><tbody><tr><td>Meia social preta</td><td>5 pares</td><td><strong>a mais crítica.</strong> O P-1 pede meia social fina os quatro dias, e a meia grossa que fica no armário é de coturno, não substitui. Esquecer em casa não tem improviso</td></tr><tr><td>Camiseta de serviço</td><td>6</td><td><strong>não tem folga</strong>: uma por dia de aula, por baixo do P-1 e do B-1, mais reserva</td></tr><tr><td>Camisa de passeio</td><td>3</td><td>é o jogo que existe (1 antiga + 2 da ConfecBell em 18/08). Em quatro dias, uma repete</td></tr></tbody></table></div>
-<p data-b><strong>Fora da conta</strong>: os 2 pares de meia preta grossa ficam no armário e só servem com o B-1; os 4 pares de meia branca ficam em casa junto com o kit de Ed. Física.</p>
 <h2 data-b>2. Quinta, antes de pegar a estrada — o que desce para lavar</h2>
 <ul data-b class="tarefas">
 <li class="pend" data-mk="a5e9f6c76e" data-md="0"><span class="box"></span><span>Toalha de banho usada</span></li>
 <li class="pend" data-mk="74d4fcb220" data-md="0"><span class="box"></span><span>Fronha usada</span></li>
 <li class="pend" data-mk="1524575963" data-md="0"><span class="box"></span><span>Roupa suja da semana</span></li>
 </ul>
-<p data-b>Faça o inventário antes de fechar a sacola. Contar o que ficou no armário com ele aberto na sua frente é fácil; lembrar disso em casa, na quinta à noite, não é.</p>
 <h2 data-b>3. Domingo — o que sobe</h2>
-<p data-b><strong>A roupa não tem quantidade fixa.</strong> Ela é o "faltam N" da quinta: se o contador diz que faltam 5 cuecas, são 5 cuecas.</p>
-<p data-b><strong>A carga da copa é sempre a mesma</strong>, essa sim fixa: whey, creatina, energético zero, Pepsi Black, lanches, marmitas prontas, shampoo e porta-sabonete.</p>
-<p data-b><strong>Quem tica isso é a tarefa de domingo</strong>, na aba Tarefas, que abre com a lista dentro e volta zerada toda semana. Aqui é só a leitura.</p>
-<p data-b><strong>Ao chegar e guardar tudo, volte ao inventário e clique no meio de cada linha de roupa.</strong> Isso marca "tenho tudo" e zera a falta, que é o que faz a conta da quinta seguinte começar limpa.</p>
-<p data-b><strong>A janta de domingo vai junto, e não é lanche.</strong> A chegada é por volta das 22h, e contar com o entorno aberto nesse horário é aposta.</p>
+<ul data-b>
+<li><strong>A roupa</strong>, na quantidade que a seção 1 apontou. Se diz que faltam 5 cuecas, são 5 cuecas.</li>
+<li><strong>A carga da copa</strong>, sempre a mesma: whey, creatina, energético zero, Pepsi Black, lanches, marmitas prontas, shampoo e porta-sabonete.</li>
+<li><strong>A janta, que não é lanche</strong>: a chegada é por volta das 22h, e o entorno aberto nessa hora é aposta.</li>
+</ul>
+<p data-b>A conferência item por item é a tarefa de domingo, na aba Tarefas. <strong>Ao chegar e guardar tudo, volte à seção 1 e clique no meio de cada linha de roupa</strong>: é isso que zera a falta e faz a conta da quinta seguinte começar limpa.</p>
+<details class="extra"><summary data-b>Como o ciclo funciona</summary>
+<p data-b>Toda peça está sempre em um destes três lugares, e a semana é o giro entre eles.</p>
+<div class="tab-wrap" data-b><table><thead><tr><th>Onde</th><th>O que está lá</th><th>O que faz</th></tr></thead><tbody><tr><td><strong>Armário do CAES</strong></td><td>farda, roupa limpa, cama, higiene, copa e estudo</td><td>vai esvaziando ao longo da semana</td></tr><tr><td><strong>Casa</strong></td><td>o que desceu sujo na quinta</td><td>volta limpo no domingo</td></tr><tr><td><strong>Mala de domingo</strong></td><td>o que faltou no armário, mais a carga da copa</td><td>zera quando você guarda tudo lá</td></tr></tbody></table></div>
+<p data-b><strong>A única conta que existe é o inventário de quinta.</strong> Não há segunda lista de quantidade em lugar nenhum deste painel: a mala de domingo é o que ele apontou como falta.</p>
+<p data-b><strong>Faça o inventário com o armário aberto na sua frente</strong>, na quinta de manhã, antes de fechar a sacola. Lembrar disso em casa, à noite, não funciona.</p>
+<p data-b><strong>Peça que fecha o alvo some da lista sozinha</strong>, para sobrar na tela só o que precisa de você. Peça que zerou aparece com a falta cheia, e é a que não pode ser esquecida.</p>
 <p data-b><strong>Etiqueta com o nome em tudo que for para a geladeira.</strong> São muitas pessoas dividindo duas geladeiras e dois frigobares, e marmita sem nome vira marmita de todo mundo.</p>
 <p data-b><strong>Whey</strong>: fracione a porção da semana num pote menor e deixe o pote grande em casa, que é caro em volume no porta-malas. A creatina é o oposto, o pote já é pequeno.</p>
-<h2 data-b>O que não entra no rodízio</h2>
+</details>
+<details class="extra"><summary data-b>De onde vêm os alvos do inventário</summary>
+<div class="tab-wrap" data-b><table><thead><tr><th>Peça</th><th>Alvo</th><th>Por quê</th></tr></thead><tbody><tr><td>Meia social preta</td><td>5 pares</td><td><strong>a mais crítica.</strong> O P-1 pede meia social fina os quatro dias, e a meia grossa que fica no armário é de coturno, não substitui. Esquecer em casa não tem improviso</td></tr><tr><td>Camiseta de serviço</td><td>6</td><td><strong>não tem folga</strong>: uma por dia de aula, por baixo do P-1 e do B-1, mais reserva</td></tr><tr><td>Camisa de passeio</td><td>3</td><td>é o jogo que existe (1 antiga + 2 da ConfecBell em 18/08). Em quatro dias, uma repete</td></tr><tr><td>Cueca</td><td>8</td><td>uma por dia, com folga para imprevisto</td></tr><tr><td>Pijama</td><td>2</td><td>para revezar</td></tr><tr><td>Toalha de banho</td><td>2</td><td>para revezar</td></tr><tr><td>Fronha</td><td>1</td><td>a de casa fica com a roupa de cama</td></tr></tbody></table></div>
+<p data-b><strong>Fora da conta</strong>: os 2 pares de meia preta grossa ficam no armário e só servem com o B-1; os 4 pares de meia branca ficam em casa junto com o kit de Ed. Física.</p>
+</details>
+<details class="extra"><summary data-b>O que não entra no rodízio</summary>
 <h3 data-b>Fica no armário do CAES e nunca desce</h3>
 <p data-b>O <strong>S-1 guardado</strong> (com o quepe e a segunda calça social), a farda do dia a dia, o <strong>lençol</strong> (a não ser que queira lavar), o travesseiro e o cobertor, o <strong>material de limpeza</strong>, a <strong>coqueteleira</strong>, o notebook, a extensão, os 2 cadernos e a identidade funcional.</p>
 <h3 data-b>Fica em casa e não sobe</h3>
@@ -1094,11 +1117,13 @@ Ficou dúvida:           #DUVIDA</code></pre>
 <p data-b>Como não há coturno no armário, <strong>o sapato preto é o único calçado de farda lá</strong>: mantenha ele inteiro e engraxado.</p>
 <h3 data-b>Vai e volta toda semana</h3>
 <p data-b>Fone de ouvido, celular e carregador, e só. O resto do material de estudo mora no armário.</p>
-<h2 data-b>A farda que tem que estar no armário</h2>
+</details>
+<details class="extra"><summary data-b>A farda que tem que estar no armário</summary>
 <p data-b>Quantidades e estado das peças. Qual uniforme se usa em qual ocasião, a composição de cada um e a insígnia peça por peça estão em <a href="#rotina" class="lnk-aba">ROTINA.md</a>, que é o dono desse assunto.</p>
 <div class="tab-wrap" data-b><table><thead><tr><th>Peça</th><th>Quantas</th><th>Situação</th></tr></thead><tbody><tr><td>Camisa de passeio cinza-claro</td><td>3</td><td>entram no inventário de quinta</td></tr><tr><td>Camiseta de serviço</td><td>6</td><td>entram no inventário de quinta</td></tr><tr><td>Calça social cinza-bandeirante</td><td>2</td><td>uma roda a semana com o P-1, a outra fica guardada com o S-1</td></tr><tr><td>Meia social preta</td><td>5 pares</td><td>entram no inventário de quinta</td></tr><tr><td>Sapato preto</td><td>1 par</td><td>único calçado de farda no armário</td></tr><tr><td>Cinto de serviço</td><td>1</td><td>serve o P-1, o S-1 e o B-1</td></tr><tr><td>Boina cinza-bandeirante</td><td>1</td><td>cobertura do dia a dia. Uma de reposição está em <a href="#compras" class="lnk-aba">COMPRAS.md</a></td></tr><tr><td>Jaqueta de passeio</td><td>1</td><td>agasalho do P-1, com as 3 estrelas de metal nas platinas</td></tr><tr><td>Paletó, gravata e quepe do S-1</td><td>1 de cada</td><td>guardados, para visita</td></tr><tr><td>Tarjeta administrativa de acrílico</td><td>1</td><td>imantada, roda entre camisa, jaqueta e paletó</td></tr></tbody></table></div>
 <p data-b><strong>Falta a camisa social cinza-claro</strong> para o S-1 fechar (Art. 49). É a única peça pendente e está em <a href="#compras" class="lnk-aba">COMPRAS.md</a>.</p>
-<h2 data-b>Estoque do armário — reponha quando acabar</h2>
+</details>
+<details class="extra"><summary data-b>Estoque do armário — reponha quando acabar</summary>
 <p data-b>Isto mora lá e não viaja. <strong>Não é lista de arrumar mala</strong>: é a memória do que tem, para você reconhecer o que acabou. Conferido item a item em 06/08. O que faltar vira item em <a href="#compras" class="lnk-aba">COMPRAS.md</a>, que é onde a compra é cobrada.</p>
 <ul data-b>
 <li><strong>Cama</strong> (o alojamento não fornece, e é cama de solteiro): lençol, fronha, travesseiro, cobertor ou manta leve.</li>
@@ -1108,13 +1133,16 @@ Ficou dúvida:           #DUVIDA</code></pre>
 <li><strong>Estudo</strong>: 2 cadernos, canetas, marca-texto, pasta, notebook e carregador, e a extensão com várias saídas, que é o bizu que mais salva por causa da falta de tomada na sala.</li>
 <li><strong>Documentos</strong>: identidade funcional e dinheiro ou cartão para as refeições, para o combustível da carona e para a vaquinha da turma. O Ofício de Apresentação é ato eletrônico, não vai impresso: guarde só o número da mesa <strong>SEI 302090130</strong> no celular.</li>
 </ul>
-<h2 data-b>Detalhes que mudam a mala</h2>
+</details>
+<details class="extra"><summary data-b>Detalhes que mudam a mala</summary>
 <ul data-b>
 <li><strong>Vou de carona.</strong> O porta-malas é dividido, então volume é moeda: combine antes quanto cabe. Como o grosso já está no armário, o que sobe é uma sacola de roupa e uma caixa de comida.</li>
 <li><strong>Armário</strong>: cerca de 1 folha de armário padrão da PM por aluno, e <strong>ele não vem com chave, o cadeado é seu</strong>. Prefira mala que caiba embaixo da cama.</li>
 <li><strong>Wi-fi</strong>: rede WCorp, funcionou bem.</li>
+<li><strong>Semana padrão</strong>: viaja domingo à tarde, aula de segunda a quinta, volta quinta depois das 11h30 (<a href="#rotina" class="lnk-aba">ROTINA.md</a> e <a href="#viagens" class="lnk-aba">VIAGENS.md</a>). Não tem lavanderia no CAES.</li>
 </ul>
-<p data-b>Onde comer, mercado, farmácia e o resto do entorno: <a href="#entorno" class="lnk-aba">ENTORNO.md</a>.</p></div></section>
+<p data-b>Onde comer, mercado, farmácia e o resto do entorno: <a href="#entorno" class="lnk-aba">ENTORNO.md</a>.</p>
+</details></div></section>
 <section class="aba" id="ab-viagens" role="tabpanel" data-mod="2026-08-23T18:46:00.000Z"><div class="card"><blockquote data-b>Como é o deslocamento da semana de curso, e o que precisa estar resolvido antes de sair de casa. O que vai na mala está em <a href="#mala" class="lnk-aba">MALA.md</a>; o horário das aulas, em <a href="#rotina" class="lnk-aba">ROTINA.md</a>.</blockquote>
 <h2 data-b>A semana, de ponta a ponta</h2>
 <div class="tab-wrap" data-b><table><thead><tr><th>Dia</th><th>Movimento</th></tr></thead><tbody><tr><td><strong>Domingo</strong></td><td>Guararapes → São Paulo, de carona. Chegada de noite e instalação no alojamento</td></tr><tr><td><strong>Segunda a quinta</strong></td><td>Aula, entrada 08h15 todo dia</td></tr><tr><td><strong>Quinta</strong></td><td>Aula até 11h30, e aí São Paulo → Guararapes</td></tr></tbody></table></div>
@@ -5769,6 +5797,8 @@ window.REP=(function(){
       el.style.display='';
       if(el.dataset.orig){el.innerHTML=el.dataset.orig;delete el.dataset.orig;}
     });
+    /* secoes recolhidas voltam a ficar fechadas quando a busca sai da tela */
+    document.querySelectorAll('details.extra').forEach(function(d){d.open=false});
     document.querySelectorAll('.sem-res').forEach(function(n){n.remove()});
     document.querySelectorAll('.card').forEach(function(c){c.style.display=''});
   }
@@ -5806,8 +5836,16 @@ window.REP=(function(){
         var n=0;
         pan.querySelectorAll('.card [data-b]').forEach(function(el){
           var bate=el.textContent.toLowerCase().indexOf(alvo)>=0;
-          el.style.display=bate?'':'none';
+          /* o titulo de uma secao recolhida nunca some: sem ele o <details>
+             fica sem cabecalho e o resultado dentro dele vira bloco orfao */
+          if(el.tagName!=='SUMMARY')el.style.display=bate?'':'none';
           if(bate){realca(el,termo);n++;}
+        });
+        /* resultado dentro de secao recolhida so aparece se ela abrir */
+        pan.querySelectorAll('details.extra').forEach(function(d){
+          d.open=[].slice.call(d.querySelectorAll('[data-b]')).some(function(e){
+            return e.tagName!=='SUMMARY'&&e.style.display!=='none'})
+            ||d.querySelector('summary').textContent.toLowerCase().indexOf(alvo)>=0;
         });
         pan.querySelectorAll('.card').forEach(function(c){
           var vis=[].slice.call(c.querySelectorAll('[data-b]')).some(function(e){

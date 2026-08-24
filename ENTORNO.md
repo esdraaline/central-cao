@@ -318,6 +318,8 @@ partir do portão da Dino Bueno.
 | **SAM Eletrônicos** | R. Santa Ifigênia, 485, lojas 1-3 | **492 m · 6 min** | WhatsApp (11) 98288-6349 | **não publicado** |
 | **InPower** | R. Santa Ifigênia, 348 | **630 m · 8 min** | (11) 3223-0050 | **não publicado** |
 | **Top Net** | R. Aurora, 182, loja 08 | **691 m · 8 min** | (11) 3337-7844 · zap (11) 98483-7628 | **seg-sex 9h-17h, sáb 9h-13h** |
+| **Distribuidor CFTV** | R. Santa Ifigênia, 295, loja 204 | **681 m · 8 min** | (11) 3337-3049 · zap (11) 94721-0029 | **seg-sex 8h30-17h, sáb 8h30-13h30** |
+| **Central das Câmeras** | R. Aurora, 52 | **696 m · 8 min** | (11) 3333-3183 | **seg-sex 8h30-17h30, sáb 8h-13h** |
 | **Kalunga** | R. Líbero Badaró, 309 | 1.725 m · 21 min | loja não atende telefone | **seg-sex 8h-19h, sáb 8h-16h** |
 
 **Os números 485 e 573 são galerias**, não lojas. Megastore nas lojas 02/04 e SAM nas lojas 1-3
@@ -440,13 +442,45 @@ que câmera girando, porque a que gira só olha para um lado por vez e é no out
 acontece. Para varrer um quintal grande, o giro paga. E se assistência técnica no interior for
 critério, a Intelbras ganha sozinha, independentemente da ficha.
 
-*[VERIFICAR: a página oficial da Intelbras devolveu HTTP 403 e a ficha completa da iM7+ 3MP não
-foi lida. Continuam em aberto o grau IP exato dela, se tem porta de rede e se detecta veículo.]*
+*RESPONDIDO em 24/08/2026, pela loja oficial da Intelbras:* a iM7+ 3MP tem **IP66**, tem
+**rede cabeada RJ45 fêmea** e tem **detecção de veículos ajustável**. Ou seja, ela **empata com
+a C520WS nesses três pontos**, e a tabela acima está desatualizada nas duas últimas linhas. A
+única vantagem real que sobra para a Tapo é a **resolução, 4MP contra 3MP**, por R$151 a mais.
 
 *[VERIFICAR: a Intelbras anuncia "**com o holofote ligado**, imagens coloridas 24h", e a Tapo
 anuncia "refletores integrados **e** o sensor Starlight". Isso sugere que a Tapo depende menos
 de acender o holofote à noite, o que importa porque holofote aceso denuncia a câmera. Mas é
 leitura de material de divulgação dos dois lados, ninguém mediu.]*
+
+#### Comprar na rua ou pela internet?
+
+**Pela internet, e na loja oficial da Intelbras.** Conferido em 24/08/2026.
+
+| Onde | iM7+ 3MP | Observação |
+|---|---|---|
+| **Loja oficial Intelbras** | **R$322,90 no Pix**, 6x de R$56,65, **frete grátis** | garantia direto com o fabricante |
+| Menor preço do Buscapé | R$322,91 | ou seja, **o oficial já é o piso do mercado** |
+
+**Não há o que ganhar procurando.** A fábrica vende pelo menor preço que existe, com frete
+grátis e sem intermediário na garantia.
+
+**E os preços publicados das lojas de rua são piores, não melhores:**
+
+| Produto | Loja de rua | Internet | Diferença |
+|---|---|---|---|
+| Intelbras iM7+ Zoom | R$831,37 (Distribuidor CFTV) | R$620,91 (Buscapé) | **+34%** |
+| Tapo C200 | R$290,00 (Top Net) | R$173,79 (Amazon) | **+60%** |
+
+*Ressalva justa: preço de site de loja de rua não é preço de balcão. Na Santa Ifigênia se
+negocia no dinheiro ou no Pix e o valor cai. Mas o piso é o mesmo R$323 da fábrica, e para
+bater isso o lojista teria que vender quase sem margem.*
+
+**Quando a rua compensa:** levar no mesmo dia; ver o produto na mão e comparar modelos lado a
+lado; comprar mais de uma e negociar volume. **Quando não compensa:** uma unidade, pelo preço.
+
+**O argumento que decide neste caso:** a câmera é para **Guararapes**, não para o CAES.
+Comprando pela internet com frete grátis, ela chega em casa e ninguém carrega nada. Comprando
+na Santa Ifigênia, a caixa volta na mala na quinta-feira.
 
 *[VERIFICAR: onde a câmera vai ficar (portão, quintal ou dentro de casa). Sem isso a
 recomendação não fecha.]*

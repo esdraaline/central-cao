@@ -265,14 +265,14 @@ e travessia). **Distância e tempo são medidos, não estimados**, e o ponto de 
 **portão do lado da Alameda Dino Bueno**, com coordenada conferida no local, não o centro da
 praça que o Google devolve.
 
-**Calibragem do passo (24/08/2026).** O roteador calcula os tempos a cerca de **4,8 km/h**,
-que é o pedestre médio. O passo real medido no trajeto do Senador Shopping foi de **6,1 km/h**,
-27% mais rápido. Na prática: **multiplique os tempos desta seção por 0,8**. Luz vira 8 min,
-Santa Ifigênia 6 min, Santa Cecília e CCB Bom Retiro 12 min, 25 de Março 25 min. O número
-cheio do doc volta a valer quando estiver **carregando compra pesada**.
+**Velocidade adotada: 5 km/h** (decisão de 24/08/2026). O roteador calcula a cerca de
+**4,8 km/h**, então **os tempos desta tabela valem como estão**: a diferença para 5 km/h é de
+menos de meio minuto nos trajetos curtos e de no máximo dois minutos nos longos.
 
-*[VERIFICAR: a calibragem vem de uma medição só, ida e volta no mesmo dia. Confirmar em um
-segundo trajeto antes de tratar o fator 0,8 como regra.]*
+Na medição real do Senador Shopping, em 24/08/2026, o passo deu **6,1 km/h**, mas foi
+caminhada apressada com hora de aula marcada. **Não é o número de planejamento**, e sim a
+margem de compressão: apertando o passo, dá para tirar cerca de **4 min a cada 2 km**. Melhor
+sobrar do que faltar.
 
 | Destino | Distância | Tempo | Ruas principais |
 |---|---|---|---|
@@ -282,7 +282,7 @@ segundo trajeto antes de tratar o fator 0,8 como regra.]*
 | **CCB Bom Retiro** | 1.282 m | 15 min | Dino Bueno → Nothmann → Anhaia |
 | **Terraço Aurora** | 616 m | 8 min | Duque de Caxias → Santa Ifigênia → Vitória |
 | **25 de Março** | 2.480 m | 32 min | Mauá → Gen. Osório → Senador Queirós |
-| **Senador Shopping** (Av. Senador Queirós, 295) | 1.892 m | 23 min (**18 min medidos a pé**) | Mauá → Gen. Osório → Triunfo → Prestes Maia → 25 de Março |
+| **Senador Shopping** (Av. Senador Queirós, 295) | 1.892 m | 23 min | Mauá → Gen. Osório → Triunfo → Prestes Maia → 25 de Março |
 | **Feira da Madrugada** | 3.122 m | 37 min | Mauá → Tiradentes → Ribeiro de Lima |
 
 ### Estação da Luz
@@ -353,7 +353,8 @@ porta**, dos quais **3 min dentro da loja** e **37 min de caminhada**, cerca de 
 por trecho**. Retirada de pedido já separado, sem espera. Deu tempo com folga no intervalo de
 90 min, e ainda sobraram 30 min para almoçar na volta.
 
-**O dado que vale para o guia todo: o passo medido foi de 6,1 km/h.**
+O passo medido nesse trajeto foi de **6,1 km/h**, mas com hora de aula marcada. Para
+planejar, vale a média adotada de **5 km/h**, ou seja, os 23 min da tabela.
 
 *Sem mapa SVG ainda, ao contrário dos outros trajetos desta seção.*
 

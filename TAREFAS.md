@@ -21,8 +21,7 @@
 ## Pendentes
 
 ### Fardamento e pendências de secretaria
-- [ ] Comprar a camisa social cinza-claro do S-1 e a boina de reposição, que faltaram na ida à ConfecBell [24/08/2026] #pessoal
-- [ ] Mandar o QTS assim que sair, para eu lançar na aba Grade e o painel montar o dia sozinho [24/08/2026] #curso
+- [ ] Comprar a camisa social cinza-claro do S-1 e a boina de reposição, que faltaram na ida à ConfecBell [25/08/2026] #pessoal
 
 ### Rodízio da mala (toda semana, ver MALA.md)
 > As duas se repetem sozinhas: ticadas, não vão para Concluídas, voltam com a data da semana seguinte.
@@ -53,8 +52,8 @@
   - [ ] porta-sabonete
 
 ### Orientador da dissertação — MISSÃO URGENTE
-- [ ] Falar com o Cap Simões e pegar o contato do Cel Eglis [24/08/2026] #dissertacao
-- [ ] Perguntar ao Cap Gobbo as REGRAS da orientação: o orientador precisa ser instrutor do curso? Quantos orientandos cada um aceita? Há prazo para escolher? Como é o pedido formal? [24/08/2026] #dissertacao
+- [ ] Falar com o Cap Simões e pegar o contato do Cel Eglis [25/08/2026] #dissertacao
+- [ ] Perguntar ao Cap Gobbo as REGRAS da orientação: o orientador precisa ser instrutor do curso? Quantos orientandos cada um aceita? Há prazo para escolher? Como é o pedido formal? [25/08/2026] #dissertacao
 - [ ] Procurar o Cel Eglis e sondar a orientação, levando o PP já aprovado [25/08/2026] #dissertacao
 - [ ] Montar o rol completo de disciplinas e instrutores conforme os QTS forem saindo, para ter o universo de candidatos [28/08/2026] #dissertacao
 
@@ -63,11 +62,12 @@
 
 ### Univesp — prova de 22/09 em conflito com o curso (pedido já protocolado)
 > Pedido enviado ao SAE em 19/08/2026, 20h02, com a Ata de Convocação anexada. Detalhes completos em `C:\projetos\mentor-univesp\STATUS.md`.
-- [ ] Pedir ao CAES (Seç Apoio Escolar, mesa SEI 302090130) a declaração de matrícula e frequência do CAO-II/26, para ter em mãos se a Univesp exigir comprovação [24/08/2026] #admin
-- [ ] Ver no WhatsApp da Univesp (11 4200-2982) se veio resposta ao pedido de prova em polo da capital [24/08/2026] #admin
+- [ ] Pedir ao CAES (Seç Apoio Escolar, mesa SEI 302090130) a declaração de matrícula e frequência do CAO-II/26, para ter em mãos se a Univesp exigir comprovação [25/08/2026] #admin
+- [ ] Ver no WhatsApp da Univesp (11 4200-2982) se veio resposta ao pedido de prova em polo da capital [25/08/2026] #admin
 - [ ] Vencimento dos 10 dias úteis do SAE: sem resposta, cobrar pelo 0800 051 3333 ou WhatsApp, citando o assunto do e-mail. A prova é 22/09 [03/09/2026] #admin
 
 ## Concluídas
+- [x] Mandar o QTS assim que sair, para eu lançar na aba Grade e o painel montar o dia sozinho [24/08/2026] #curso
 - [x] Decidir opção de desconto SIPA: Alojamento (R$ 30,35) ou Vestiário (R$ 21,52), e cessar o equivalente na OPM de origem [24/08/2026] #admin
 - [x] Experimentar a farda social e ver os ajustes de caimento, depois de comprar a camisa social [24/08/2026] #pessoal
 - [x] Procurar o Cap Gobbo (Seção de Pesquisa) sobre a transformação do PP em dissertação [24/08/2026] #dissertacao

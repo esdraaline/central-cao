@@ -285,6 +285,8 @@ sobrar do que faltar.
 | **25 de Março** (onde a rua começa) | 1.381 m | 17 min | idem, entrando pela Senador Queirós |
 | **Senador Shopping** (Av. Senador Queirós, 295) | 1.185 m | 15 min | Mauá → Gen. Osório → Timbiras → Senador Queirós |
 | **Feira da Madrugada** | 3.122 m | 37 min | Mauá → Tiradentes → Ribeiro de Lima |
+| **Irmãos Haga** (uniformes) | 1.331 m | 16 min | Mauá → Praça da Luz → Av. Tiradentes |
+| **Confex Bel** (fardamento) | 1.372 m | 16 min | Mauá → Rua Prates |
 
 ### Estação da Luz
 
@@ -363,6 +365,38 @@ errada por dois motivos, e os dois já estavam avisados dentro de `mapas/gerar_m
 
 Remedido no Valhalla, a partir do portão: **1.185 m**. O número antigo estava **707 m
 inflado**, 60% a mais.
+
+### Fardamento: Confex Bel e Irmãos Haga [CANDIDATO]
+
+As duas lojas de uniforme do entorno, praticamente à mesma distância e no mesmo rumo (Bom
+Retiro, saindo pela Rua Mauá).
+
+| Loja | Endereço | A pé | Contato |
+|---|---|---|---|
+| **Irmãos Haga** | Av. Tiradentes, 308, Luz, CEP 01102-000 | **1.331 m · 16 min** | (11) 3227-0411 e (11) 3227-0950 |
+| **Confex Bel** | Rua Prates, 704, Bom Retiro, CEP 01121-000 | **1.372 m · 16 min** | WhatsApp (11) 98149-7812 · (11) 99920-7813 |
+
+**Haga:** Rua Mauá (392 m) → Praça da Luz → Avenida Tiradentes. Passa pela Estação da Luz.
+**Confex Bel:** Rua Mauá (537 m) → **Rua Prates**, que sozinha tem 694 m e é reta.
+
+**Faça as duas num circuito só.** Entre elas são **894 m, 11 min**. O circuito CAES → Haga →
+Confex Bel → CAES dá **3.585 m, cerca de 43 min de caminhada**, contra 64 min se forem duas
+idas separadas.
+
+**O horário é o gargalo, não a distância.** A Haga funciona de **segunda a sexta, 8h30 às
+17h30** (sábado até 12h30, o que não serve, porque a volta para casa é na quinta). Cruzando com
+a grade: terça e quarta a aula sai **18h00** e as lojas já fecharam; segunda sai 16h15 e dá
+para **uma** loja; quinta a aula acaba 11h30 mas é dia de estrada. **A janela boa é o almoço de
+terça ou quarta**, das 11h30 às 13h00: os 43 min do circuito cabem nos 90 min, com folga para
+as duas lojas.
+
+*[VERIFICAR: horário de funcionamento da Confex Bel. O site só publica WhatsApp. Mandar
+mensagem antes de subir a Rua Prates.]*
+
+*[VERIFICAR: a loja da compra de 18/08 é esta Confex Bel? O guia a chamava de "ConfecBell", mas
+a razão social é **Confex Bel** (com x, separado), casa de 1959 da família Totaro. Bate o ramo
+(fardamento militar com aplicação de distintivo) e bate o entorno, mas quem confirma o nome é
+quem esteve lá.]*
 
 ### Feira da Madrugada — só cabe de madrugada
 

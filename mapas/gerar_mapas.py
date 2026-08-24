@@ -121,6 +121,14 @@ MEDICOES = [
     # 25 de Marco e o guia publica a distancia. Entra aqui para ser reprodutivel.
     ("senador-shopping", None,
      "Avenida Senador Queirós, 295, São Paulo"),
+    # As duas lojas de fardamento do entorno, e a perna entre elas, que decide
+    # se vale fazer as duas numa saida so.
+    ("irmaos-haga", None,
+     "Avenida Tiradentes, 308, Luz, São Paulo"),
+    ("confex-bel", None,
+     "Rua Prates, 704, Bom Retiro, São Paulo"),
+    ("haga-ate-confex-bel", "Avenida Tiradentes, 308, Luz, São Paulo",
+     "Rua Prates, 704, Bom Retiro, São Paulo"),
 ]
 
 # Caixa pequena leva rua residencial; as grandes so via principal, senao a

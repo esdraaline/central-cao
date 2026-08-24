@@ -117,6 +117,10 @@ MEDICOES = [
      "Rua Brigadeiro Galvão, 683, São Paulo"),
     ("tatuape-estacao-ao-shopping", "Estação Tatuapé, São Paulo",
      "Shopping Metrô Tatuapé, São Paulo"),
+    # Fornecedor da loja de casa, nao e ponto do curso, mas fica no caminho da
+    # 25 de Marco e o guia publica a distancia. Entra aqui para ser reprodutivel.
+    ("senador-shopping", None,
+     "Avenida Senador Queirós, 295, São Paulo"),
 ]
 
 # Caixa pequena leva rua residencial; as grandes so via principal, senao a

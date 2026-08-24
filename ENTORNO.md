@@ -281,8 +281,9 @@ sobrar do que faltar.
 | **Estação Santa Cecília** | 1.164 m | 15 min | Rua Helvétia |
 | **CCB Bom Retiro** | 1.282 m | 15 min | Dino Bueno → Nothmann → Anhaia |
 | **Terraço Aurora** | 616 m | 8 min | Duque de Caxias → Santa Ifigênia → Vitória |
-| **25 de Março** | 2.480 m | 32 min | Mauá → Gen. Osório → Senador Queirós |
-| **Senador Shopping** (Av. Senador Queirós, 295) | 1.892 m | 23 min | Mauá → Gen. Osório → Triunfo → Prestes Maia → 25 de Março |
+| **25 de Março** (fim da rua, Glicério) | 2.480 m | 32 min | Mauá → Gen. Osório → Timbiras → Senador Queirós |
+| **25 de Março** (onde a rua começa) | 1.381 m | 17 min | idem, entrando pela Senador Queirós |
+| **Senador Shopping** (Av. Senador Queirós, 295) | 1.185 m | 15 min | Mauá → Gen. Osório → Timbiras → Senador Queirós |
 | **Feira da Madrugada** | 3.122 m | 37 min | Mauá → Tiradentes → Ribeiro de Lima |
 
 ### Estação da Luz
@@ -314,6 +315,14 @@ Tatuapé). Para o resto, Luz.
 
 ![Do CAES até a 25 de Março: 2.480 m, cerca de 32 min.](mapas/25-de-marco.svg)
 
+**Atenção ao que este número mede.** A 25 de Março tem cerca de 1,3 km de extensão, e a
+medição do guia vai até o **extremo do Glicério**, a ponta oposta de onde você entra. Chegando
+pela Senador Queirós, você **pisa na rua aos 1.381 m, cerca de 17 min**, e os 1.099 m restantes
+são a rua inteira andada de ponta a ponta. Para "ir à 25 de Março" o número útil é o de 17 min;
+os 32 min só valem se o destino for o outro extremo. *(Conferido em 24/08/2026: o portão da
+Dino Bueno até o destino do Glicério dá exatamente os 2.480 m, o número da tabela está certo,
+o que faltava era dizer até onde ele mede.)*
+
 **2.480 m, cerca de 32 min**, passando pela Luz: **Av. Duque de Caxias** → **Rua Mauá** →
 **Largo General Osório** → **Rua dos Timbiras** → **Avenida Senador Queirós** → **Rua 25 de
 Março**. Meia hora de caminhada. De metrô pela Luz, descendo na Sé ou São Bento, é mais
@@ -321,42 +330,39 @@ rápido.
 
 ### Senador Shopping — fornecedor da Esdra Cosméticos [TESTADO]
 
-**1.892 m, cerca de 23 min.** **J O Santos Perfumaria e Estética**, Av. Senador Queirós, 295,
+**1.185 m, cerca de 15 min.** **J O Santos Perfumaria e Estética**, Av. Senador Queirós, 295,
 **Senador Shopping, loja 10, térreo**, Centro, CEP 01026-001. Filial paulista aberta em
 20/01/2026 (CNPJ 47.820.749/0002-20); a matriz é em Vila Velha/ES.
 
-Rota medida em 24/08/2026 no mesmo roteador de pedestre das demais: **Praça Júlio Prestes** →
-**Alameda Dino Bueno** → **Rua Mauá** → **Largo General Osório** → **Rua do Triunfo** → **Rua
-Washington Luís** → **Avenida Prestes Maia** → **Rua 25 de Março** → **Avenida Senador
-Queirós**. A loja fica **logo depois do cruzamento com a Rua Florêncio de Abreu**.
+**É o mesmo caminho da 25 de Março**, só que parando antes: **Rua Mauá** → **Largo General
+Osório** → **Rua dos Timbiras** → **Avenida Senador Queirós**, e a loja aparece 136 m depois de
+entrar na Senador Queirós, **logo antes do cruzamento com a Rua Florêncio de Abreu**. O Largo
+General Osório sozinho é 479 m, quase metade do trajeto, e é reto.
 
-O trecho confuso é o entroncamento da Prestes Maia. Se perder o fio ali, a referência é
-simples: descer até a **25 de Março** e virar à direita, a Senador Queirós é a próxima.
+Não é ponto do curso, é fornecedor da loja de casa. Entra neste guia porque está no meio do
+caminho da 25 de Março e a janela para ir é o almoço entre blocos. **Ida e volta são cerca de
+30 min**, o que cabe folgado nos 90 min do intervalo de segunda, com tempo de almoçar depois.
 
-Não é ponto do curso, é fornecedor da loja de casa. Entra neste guia porque fica na mesma
-direção da 25 de Março e a janela para ir é a mesma: o almoço entre blocos. **Ida e volta a pé
-consomem cerca de 46 min** dos 90 min do intervalo de segunda, então sobra pouco para a loja e
-quase nada para comer.
+**[TESTADO] 24/08/2026.** Saiu 11h50, voltou 12h30: 40 min porta a porta, dos quais **3 min
+dentro da loja** (retirada de pedido já separado, sem espera) e 37 min de caminhada.
 
-**Na volta, a Cascatinha** (R. General Couto de Magalhães, 172) cai praticamente em cima da
-Rua do Triunfo. É o único ponto do trajeto onde dá para almoçar sem desviar.
+*Ressalva honesta sobre esse teste: ele andou por um trajeto errado. A rota que eu tinha
+passado de manhã descia pela **Avenida Prestes Maia** e tinha 1.892 m, porque foi medida no
+roteador errado (ver a nota de método abaixo). São **707 m a mais por trecho, 1,4 km no total**.
+Os 37 min medidos valem para aquele caminho, não para este. Pelo caminho certo, a 5 km/h, são
+cerca de 14 min por trecho.*
 
-*[VERIFICAR: esta linha contradiz a da 25 de Março na tabela acima. Lá constam 2.480 m e 32
-min; esta medição, até a Senador Queirós 295, deu 1.892 m e 23 min, e os dois destinos são
-praticamente vizinhos. Causa provável: pontos de partida diferentes (esta rota partiu da
-coordenada da Praça Júlio Prestes, e não do portão da Alameda Dino Bueno, que é a convenção
-desta seção) e roteamentos distintos (Prestes Maia contra Rua dos Timbiras). Remedir as duas
-a partir do mesmo portão antes de confiar em qualquer uma.]*
+**Nota de método, 24/08/2026.** A primeira medição publicada aqui, de 1.892 m e 23 min, estava
+errada por dois motivos, e os dois já estavam avisados dentro de `mapas/gerar_mapas.py`:
 
-**[TESTADO] 24/08/2026, no almoço da segunda.** Saiu 11h50, voltou 12h30: **40 min porta a
-porta**, dos quais **3 min dentro da loja** e **37 min de caminhada**, cerca de **18 min e 30 s
-por trecho**. Retirada de pedido já separado, sem espera. Deu tempo com folga no intervalo de
-90 min, e ainda sobraram 30 min para almoçar na volta.
+1. Foi medida no **OSRM público**, que roteia como **carro** mesmo no perfil "foot". Daí a
+   Prestes Maia, que é viaduto. O guia usa **Valhalla com `costing=pedestrian`**.
+2. Partiu do **centro da praça**, e não do **portão da Alameda Dino Bueno** (`-23.53437,
+   -46.64168`), que é a origem conferida no local em 17/08/2026 e usada por todas as outras
+   rotas desta seção.
 
-O passo medido nesse trajeto foi de **6,1 km/h**, mas com hora de aula marcada. Para
-planejar, vale a média adotada de **5 km/h**, ou seja, os 23 min da tabela.
-
-*Sem mapa SVG ainda, ao contrário dos outros trajetos desta seção.*
+Remedido no Valhalla, a partir do portão: **1.185 m**. O número antigo estava **707 m
+inflado**, 60% a mais.
 
 ### Feira da Madrugada — só cabe de madrugada
 

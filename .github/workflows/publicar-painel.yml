@@ -81,12 +81,32 @@ jobs:
             # fast-forward. Foi o que derrubou a rodada de 24/08/2026 as 22:29,
             # que passou de primeira quando rerodada 13 segundos depois. Mesmo
             # laco do sincronizar-tarefas.yml.
+            # Por que NAO se faz rebase aqui (licao de 25/08/2026):
+            # docs/index.html e arquivo GERADO, nao fonte. Quando duas rodadas
+            # se cruzam, as duas produzem um HTML diferente do mesmo lugar, e
+            # pedir ao git para mesclar dois arquivos gerados nao tem sentido:
+            # conflita e a Action morre. Pior, se por acaso NAO conflitar, sai
+            # um HTML costurado de duas metades, publicado sem ninguem notar.
+            #
+            # O painel e funcao pura dos .md, entao a saida certa nao e mesclar:
+            # e pegar o topo novo e REGERAR. Converge sempre, em uma passada.
+            # Foram 5 falhas em 30 rodadas ate este conserto.
             for TENTATIVA in 1 2 3; do
               if git push; then
                 exit 0
               fi
-              echo "Push rejeitado (tentativa $TENTATIVA). Rebase e tenta de novo."
-              git pull --rebase origin main
+              echo "Push rejeitado (tentativa $TENTATIVA). Regenera sobre o topo novo."
+              git fetch origin main
+              # seguro: descarta so o commit de painel que esta rodada acabou de
+              # criar, num runner descartavel. Nada do Josemar passa por aqui.
+              git reset --hard origin/main
+              python gerar_painel.py
+              git add docs/
+              if git diff --cached --quiet; then
+                echo "Outra rodada ja publicou este mesmo painel. Nada a fazer."
+                exit 0
+              fi
+              git commit -m "Regenera o painel ($(date -u +'%Y-%m-%d %H:%M') UTC)"
             done
             echo "::error::Nao consegui empurrar o painel depois de 3 tentativas."
             exit 1

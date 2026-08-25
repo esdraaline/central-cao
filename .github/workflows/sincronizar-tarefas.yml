@@ -80,6 +80,12 @@ jobs:
       - name: Guardar o resultado
         id: guardar
         if: ${{ !inputs.conferir }}
+        # As credenciais precisam existir tambem aqui, e nao so nos dois passos
+        # de cima: se o push for rejeitado, este passo refaz a reconciliacao
+        # rodando os scripts de novo sobre o topo novo (ver o laco abaixo).
+        env:
+          SUPABASE_EMAIL: ${{ secrets.SUPABASE_EMAIL }}
+          SUPABASE_SENHA: ${{ secrets.SUPABASE_SENHA }}
         run: |
           git config user.name "painel-cao-bot"
           git config user.email "actions@users.noreply.github.com"
@@ -96,13 +102,35 @@ jobs:
             # de concorrencia diferentes. Se ela empurrar primeiro, o push daqui
             # e rejeitado por nao ser fast-forward. Rebase e tenta de novo, em
             # vez de deixar a Action vermelha por uma corrida de segundos.
+            # Aqui tambem nao se faz rebase (mesma licao de 25/08/2026, aplicada
+            # ao caso irmao). O rebase mesclaria o .md que esta rodada escreveu
+            # com o que chegou no meio do caminho, e o resultado seria um arquivo
+            # que nenhum dos dois lados decidiu: a nuvem diria uma coisa e o
+            # arquivo outra, justamente o que estes scripts existem para evitar.
+            #
+            # A saida certa e refazer a reconciliacao sobre o topo novo. Os dois
+            # scripts sao idempotentes e decidem por "quem mexeu por ultimo
+            # ganha", entao rodar de novo com o .md atualizado da o mesmo
+            # resultado que teria dado se esta rodada tivesse comecado agora.
             for TENTATIVA in 1 2 3; do
               if git push; then
                 echo "mudou=sim" >> "$GITHUB_OUTPUT"
                 exit 0
               fi
-              echo "Push rejeitado (tentativa $TENTATIVA). Rebase e tenta de novo."
-              git pull --rebase origin main
+              echo "Push rejeitado (tentativa $TENTATIVA). Refaz sobre o topo novo."
+              git fetch origin main
+              # seguro: descarta so o commit que esta rodada acabou de criar,
+              # num runner descartavel.
+              git reset --hard origin/main
+              python sincroniza_tarefas.py
+              python sincroniza_ticados.py
+              git add -A -- '*.md' estado_tarefas.json
+              if git diff --cached --quiet; then
+                echo "Com o topo novo nao ha mais nada a reconciliar."
+                echo "mudou=nao" >> "$GITHUB_OUTPUT"
+                exit 0
+              fi
+              git commit -m "Painel para os .md: tarefas e caixinhas ($(date -u +'%Y-%m-%d %H:%M') UTC)"
             done
             echo "::error::Nao consegui empurrar os .md depois de 3 tentativas."
             exit 1

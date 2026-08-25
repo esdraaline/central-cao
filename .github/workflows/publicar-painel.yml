@@ -50,11 +50,11 @@ jobs:
       # `git log` do arquivo vem vazio, a hora cai para a mtime do checkout
       # ("agora") e o arquivo passaria a ganhar sempre, apagando marcacao
       # feita no painel. Mesma exigencia do sincronizar-tarefas.yml.
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           fetch-depth: 0
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
 
@@ -75,7 +75,21 @@ jobs:
             echo "Painel ja estava atualizado, nada a commitar."
           else
             git commit -m "Regenera o painel ($(date -u +'%Y-%m-%d %H:%M') UTC)"
-            git push
+            # O checkout traz o commit que DISPAROU o evento, nao o topo do
+            # branch. Se main andou desde entao (o sincronizar-tarefas commitando,
+            # ou um push seu logo em seguida), este push e recusado por nao ser
+            # fast-forward. Foi o que derrubou a rodada de 24/08/2026 as 22:29,
+            # que passou de primeira quando rerodada 13 segundos depois. Mesmo
+            # laco do sincronizar-tarefas.yml.
+            for TENTATIVA in 1 2 3; do
+              if git push; then
+                exit 0
+              fi
+              echo "Push rejeitado (tentativa $TENTATIVA). Rebase e tenta de novo."
+              git pull --rebase origin main
+            done
+            echo "::error::Nao consegui empurrar o painel depois de 3 tentativas."
+            exit 1
           fi
 
       - uses: actions/configure-pages@v5

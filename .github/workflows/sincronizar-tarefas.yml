@@ -55,11 +55,11 @@ jobs:
       # fetch-depth: 0 e obrigatorio. O script decide quem manda (arquivo ou
       # nuvem) pela data do ultimo commit que tocou o TAREFAS.md, e com o
       # checkout raso essa data nao existe.
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           fetch-depth: 0
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
 

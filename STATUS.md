@@ -47,7 +47,7 @@ CEP 01218-020**. Alojamento no próprio prédio.
 | Dia | Como fica |
 |---|---|
 | Segunda 24/08 | Quatro blocos, entrada 08h15, saída 16h15 |
-| Terça 25/08 | Dia cheio até as 18h00. **Bloco 4: aula do Cel PM Eglis** |
+| Terça 25/08 | Dia cheio até as 18h00. Bloco 4: Planejamento Estratégico, Cel Eglis |
 | Quarta 26/08 | Dia cheio até as 18h00. Bloco 4: Policiamento Comunitário, Cel Barreto |
 | Quinta 27/08 | Só blocos 1 e 2. **Acaba 11h30**, é a volta para casa |
 | Sexta 28/08 | **Vazia no QTS**, para todos os pelotões |
@@ -62,9 +62,10 @@ docentes de cada bloco estão na [Grade](GRADE.md).
 O roteiro dia a dia, com data, é o [TAREFAS.md](TAREFAS.md), que é o que o painel cobra na abertura.
 Aqui é só a vista de cima.
 
-1. **Terça 25/08, bloco 4, das 14h45 às 16h15: o Cel PM Eglis dá aula.** É a janela da semana para
-   a abordagem de orientação, com o PP aprovado na mão e uma pergunta objetiva, não um "o senhor me
-   orientaria?". Sequência completa em [ESTUDOS.md](ESTUDOS.md).
+1. **Quarta 26/08, bloco 4: o Cel PM Barreto dá Policiamento Comunitário.** Virou a janela da
+   semana para a abordagem de orientação, depois que o alvo de 18/08 saiu da lista em 25/08. Com
+   o PP aprovado na mão e uma pergunta objetiva, não um "o senhor me orientaria?". Sequência
+   completa em [ESTUDOS.md](ESTUDOS.md).
 2. **Cap Gobbo (Seção de Pesquisa), as regras da orientação:** o orientador precisa ser instrutor do
    curso, quantos orientandos cada um aceita, se há prazo para escolher, como é o pedido formal e se
    o Cel Siconeli ainda orienta. Ele dá aula em D05 e D20, dá para achá-lo em sala.
@@ -114,10 +115,17 @@ Agosto inteiro, dia a dia: [PRAZOS.md](PRAZOS.md).
 PP aprovado, tema mantido: integração PM-Prefeituras / governança participativa no 2º BPM/I. Versão
 final em [CAO 2026/PP/Projeto Pesquisa Cap Josemar Final.doc](CAO%202026/PP/Projeto%20Pesquisa%20Cap%20Josemar%20Final.doc).
 
-Alvo de orientação decidido em 18/08: **Cel PM Eglis** (D14 Planejamento Estratégico). O caminho até
-ele passa pelo **Cap PM Simões**. Alternativas fortes para o tema: **Cel Barreto** (D28 Policiamento
-Comunitário) e **Cel Fernandes** (Relações Sociais e Institucionais no Brasil). Quadro de candidatos,
-perguntas e ordem das conversas em [ESTUDOS.md](ESTUDOS.md).
+**Orientação em aberto desde 25/08.** O alvo definido em 18/08 saiu da lista e a escolha voltou
+à mesa. Candidatos mais fortes pelo tema: **Cel Barreto** (D28 Policiamento Comunitário),
+**Cel Lucena** (D01 Políticas Públicas), **Cel Fernandes / Cel Enio** (D04 Relações Sociais) e
+**Maj Ciampone**, que é o único instrutor a cruzar três matérias e dá aula em Policiamento
+Comunitário. Quadro completo, com encaixe de tema e de método, em [ESTUDOS.md](ESTUDOS.md).
+
+**A primeira conversa continua sendo a do Cap Gobbo**, da Seção de Pesquisa: as regras antes do
+nome. O currículo já respondeu parte delas ([CURRICULO.md](CURRICULO.md)): a indicação do
+orientador é **do aluno**, referendada pelo Cmt CAES, e cada docente compõe no máximo **3
+bancas**. Uma eletiva do 2º ciclo pode valer mais que uma conversa de corredor: lá o encontro é
+garantido, e o rol sai até **18/09** ([PRAZOS.md](PRAZOS.md)).
 
 ## O que ainda não sei
 

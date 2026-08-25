@@ -6,18 +6,23 @@
 
 ## Missão da semana: fechar o orientador
 
-**O alvo é o Cel PM Eglis.** A janela desta semana é a **terça 25/08, bloco 4, das 14h45 às
-16h15**, na aula dele de D14 Planejamento Estratégico. Na semana 2 não há outra: quarta e
-quinta quem entra em Planejamento Estratégico é o Cel Terra.
+**Decisão de 25/08/2026: o Cel PM Eglis saiu da lista de alvos.** A abordagem da aula dele, no
+bloco 4 daquela terça, não seguiu adiante. A busca segue com os demais nomes do quadro abaixo.
 
-**A ponte até ele é o Cap PM Simões**, que tem o contato ([CONTATOS.md](CONTATOS.md)).
+**O que o currículo mudou nesta conversa** ([CURRICULO.md](CURRICULO.md)), e é a favor:
 
-**Por que ele**: abriu a aula de 17/08 perguntando "nosso foco, visão de futuro, é polícia
-repressiva ou polícia comunitária?". É exatamente a tensão que a minha dissertação sobre
-integração PM-Prefeituras tem que sustentar. Orientador que já formula o problema nos mesmos
-termos poupa meses de tradução.
+- **O orientador é indicado pelo aluno**, e a indicação é referendada pelo Cmt CAES. Não é
+  designação de cima para baixo.
+- Ele é **preferencialmente professor do programa**, e precisa ter **titulação mínima de
+  mestre**, como os outros dois membros da banca.
+- **"A eventual orientação no projeto de pesquisa não vincula a orientação na dissertação."**
+  Ou seja, trocar é previsto na norma, e ninguém fica preso a uma conversa inicial.
+- Cada membro pode compor no máximo **3 bancas por programa**, o que é o limite real de quantos
+  orientandos cada nome absorve.
 
-O orientador deve ser, preferencialmente, instrutor do curso. É a primeira coisa a confirmar.
+**Continua valendo a ordem: as regras antes do nome.** A conversa com o **Cap PM Gobbo** (Seção
+de Pesquisa) responde o que a norma não diz, e ele dá aula em **duas matérias**, então dá para
+encontrá-lo em sala ([GRADE.md](GRADE.md)).
 
 ### A sequência, nesta ordem
 
@@ -31,9 +36,9 @@ O orientador deve ser, preferencialmente, instrutor do curso. É a primeira cois
 - Cabe **coorientador**, por exemplo um para o tema e outro para o método?
 
 Uma dessas respostas pode eliminar metade das opções, e todas são mais baratas de obter do
-que desfazer uma escolha errada. Chegar no Cel Eglis sabendo as regras vale mais do que
-chegar antes e no escuro. As duas conversas podem correr em paralelo, mas a do Gobbo é a que
-protege a outra.
+que desfazer uma escolha errada. **Chegar em qualquer nome sabendo as regras vale mais do que
+chegar antes e no escuro** — a troca de alvo de 25/08 mostrou isso na prática. As conversas
+podem correr em paralelo, mas a do Gobbo é a que protege as outras.
 
 **2. Sondar com o texto na mão.** Chegar com o PP aprovado e uma pergunta objetiva vale mais
 do que "o senhor me orientaria?". O PP está em `02_DISSERTACAO/02_texto/`.
@@ -41,22 +46,38 @@ do que "o senhor me orientaria?". O PP está em `02_DISSERTACAO/02_texto/`.
 **3. Registrar na hora.** O que sair da conversa vai para `02_DISSERTACAO/00_orientacao/`, no
 mesmo dia, com data.
 
-### Se o Eglis não puder: a lista curta
+### A lista curta de orientador
 
 Meu tema é **integração PM-Prefeituras e governança participativa**. Isso é política pública
 e articulação interinstitucional, não é operacional puro.
 
-| Instrutor | Disciplina | Encaixe no tema |
-|---|---|---|
-| **Cel Eglis** | D14 Planejamento Estratégico | A decisão em vigor |
-| **Cel Barreto** | D28 Policiamento Comunitário | Forte. É o berço doutrinário da integração PM-comunidade. Dá aula na **quarta 26/08, bloco 4** |
-| **Cel Lucena** | D01 Políticas Públicas | Direto. Meu tema É política pública. Abriu a aula 1 com modelo reativo x pró-ativo, que é o eixo do meu argumento |
-| **Cel Fernandes / Cel Enio** | D04 Relações Sociais e Institucionais no Brasil | Articulação interinstitucional é a outra metade da pergunta de pesquisa |
-| Cel Beatriz / Cel Possato | D13 Gestão de Processos e Estrutura Organizacional | Serve se o trabalho descer para o "como se opera" a integração |
-| TC Tamanaha / Maj Goulart | D16 Gestão da Informação para Tomada de Decisão | Idem, pelo lado do dado que circula entre PM e Prefeitura |
-| Cap Franco / Cel Boggi | D07 Métodos Quantitativos de Pesquisa | Encaixe de **método**. Coorientador natural se o trabalho tiver survey |
-| Maj Daniela / Cap Fernando | D06 Métodos Qualitativos de Pesquisa | Coorientação de método se a pesquisa for por entrevista, que é o mais provável |
-| Maj Zampronio | D05 Fundamentos da Metodologia Científica | Método, e é quem avalia o rigor |
+Revisto em 25/08/2026 com o elenco completo de instrutores da turma (117 vínculos, 97 nomes) e
+com a carga horária de cada disciplina, que agora se conhece. **A coluna de carga importa**:
+disciplina de 10 horas-aula com cinco nomes no elenco dá pouquíssima chance de encontro em
+sala, e quem é do elenco de uma disciplina grande aparece mais.
+
+| Instrutor | Disciplina | h-a | Encaixe no tema |
+|---|---|---|---|
+| **Cel Barreto** | D28 Policiamento Comunitário | 10 | **O mais forte.** É o berço doutrinário da integração PM-comunidade, e foi o único docente que se repetiu na matéria nas duas primeiras semanas |
+| **Cel Lucena** | D01 Políticas Públicas | 20 | Direto: meu tema **é** política pública. Abriu a aula 1 com modelo reativo x pró-ativo, que é o eixo do meu argumento. Disciplina grande, mais chance de reencontro |
+| **Cel Fernandes / Cel Enio** | D04 Relações Sociais e Institucionais | 20 | Articulação interinstitucional é a outra metade da pergunta de pesquisa. Disciplina grande |
+| **Maj Ciampone** | D28 Policiamento Comunitário (+ D24 e D23) | 50 somadas | **Novidade do levantamento.** É o **único instrutor que cruza três matérias**, e uma delas é Policiamento Comunitário. Visão larga do curso e presença alta |
+| Cel Beatriz / Cel Possato | D13 Gestão de Processos e Estrutura | 10 | Serve se o trabalho descer para o "como se opera" a integração |
+| TC Tamanaha / Maj Goulart | D16 Gestão da Informação para Decisão | 10 | Idem, pelo lado do dado que circula entre PM e Prefeitura |
+| **Maj Zampronio** | D05 Metodologia + D30 Criminologia | 30 somadas | Método, e **é quem avalia rigor**. Cruza duas matérias, o que amplia as chances de encontrá-lo |
+| Maj Daniela / Cap Fernando | D06 Métodos Qualitativos | 10 | Coorientação de método, se a pesquisa for por entrevista (o mais provável) |
+| Cap Franco / Cel Boggi | D07 Métodos Quantitativos | 10 | Coorientação de método, se o trabalho tiver survey |
+
+**Como ler esta lista.** As quatro primeiras linhas são encaixe de **tema**: quem já pensa o
+problema. As últimas são encaixe de **método**: quem garante que o trabalho passe na Banca de
+Metodologia, que vale peso 2 da nota ([CURRICULO.md](CURRICULO.md)). O currículo não fala em
+coorientador, então **confirmar com o Cap Gobbo se cabe**, antes de contar com essa divisão.
+
+**Uma disciplina eletiva pode valer mais que uma conversa.** Nas semanas 17 a 19 eu escolho
+eletivas, e **Avaliação de Políticas de Segurança Pública**, **Movimentos Sociais e Segurança
+Pública** e **Mediação e Resolução de Conflitos** são do meu tema. Quem der essas aulas é
+candidato natural, e ali o encontro é garantido, não casual. O rol sai até **18/09**
+([PRAZOS.md](PRAZOS.md)).
 
 ### Uma pista da dissertação de referência
 

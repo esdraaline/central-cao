@@ -52,10 +52,9 @@
   - [ ] porta-sabonete
 
 ### Orientador da dissertação — MISSÃO URGENTE
-- [ ] Falar com o Cap Simões e pegar o contato do Cel Eglis [25/08/2026] #dissertacao
-- [ ] Perguntar ao Cap Gobbo as REGRAS da orientação: o orientador precisa ser instrutor do curso? Quantos orientandos cada um aceita? Há prazo para escolher? Como é o pedido formal? [25/08/2026] #dissertacao
-- [ ] Procurar o Cel Eglis e sondar a orientação, levando o PP já aprovado [25/08/2026] #dissertacao
-- [ ] Montar o rol completo de disciplinas e instrutores conforme os QTS forem saindo, para ter o universo de candidatos [28/08/2026] #dissertacao
+- [ ] Perguntar ao Cap Gobbo as REGRAS da orientação: precisa ser instrutor do curso? Quantos orientandos cada um aceita? Há prazo para escolher? Como é o pedido formal? Cabe coorientador? [26/08/2026] #dissertacao
+- [ ] Sondar o Cel Barreto na aula de Policiamento Comunitário, levando o PP aprovado e uma pergunta objetiva [26/08/2026] #dissertacao
+- [x] Montar o rol completo de disciplinas e instrutores para ter o universo de candidatos: pronto em 25/08, 117 vínculos e 97 instrutores, consolidado na aba Grade [25/08/2026] #dissertacao
 
 ### Segunda semana (viagem em 23/08)
 - [ ] Perguntar na Coordenação (Seç Avaliação, Cap Diego) quais disciplinas têm prova e quais têm trabalho, e se existe plano de disciplina com carga horária. É o que falta para o PRAZOS listar entrega de disciplina, porque o QTS não traz [25/08/2026] #curso

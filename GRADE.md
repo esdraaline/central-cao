@@ -34,9 +34,6 @@ células "A".
 | 4 — 14h45 às 16h15 | D14 Planejamento Estratégico | Cel PM Eglis |
 | 5 — 16h30 às 18h00 | D15 Gestão de Projetos | Cel PM Massera |
 
-**Aviso 25/08/2026:** o bloco 4 é a aula do Cel PM Eglis, a janela da semana para falar de
-orientação. Levar o PP aprovado.
-
 **Quarta-feira 26/08/2026**
 
 | Bloco | Disciplina | Docente |
@@ -46,6 +43,9 @@ orientação. Levar o PP aprovado.
 | 3 — 13h00 às 14h30 | D14 Planejamento Estratégico | Cel PM Terra |
 | 4 — 14h45 às 16h15 | D28 Policiamento Comunitário | Cel PM Barreto |
 | 5 — 16h30 às 18h00 | D26 Inteligência | Cap PM Maurício |
+
+**Aviso 26/08/2026:** o bloco 4 é a aula do Cel PM Barreto, em Policiamento Comunitário. É a
+janela da semana para falar de orientação. Levar o PP aprovado.
 
 **Quinta-feira 27/08/2026**
 
@@ -93,14 +93,12 @@ disciplinas está mais presente no curso do que o nome sugere.
 
 ## Esta semana, para a dissertação
 
-- **Terça 25/08, bloco 4 (14h45 às 16h15): Cel PM Eglis**, D14 Planejamento Estratégico. É a
-  única aula dele na semana e a janela para a abordagem de orientação ([ESTUDOS.md](ESTUDOS.md)).
-  O nome é **Eglis**, com o *g* antes do *l*, como traz o QTS: vai escrito assim no pedido formal.
+- **Quarta 26/08, bloco 4: D28 Policiamento Comunitário, com o Cel Barreto.** Passou a ser a
+  janela mais importante da semana para orientação, depois que o alvo definido em 18/08 saiu da
+  lista em 25/08 ([ESTUDOS.md](ESTUDOS.md)). É o encaixe mais forte no tema e o único docente
+  que se repetiu na matéria nas duas semanas.
 - **Terça 25/08, bloco 3: D04 Relações Sociais e Institucionais no Brasil**, com o Cel Enio.
   Articulação interinstitucional é metade da pergunta de pesquisa.
-- **Quarta 26/08, bloco 4: D28 Policiamento Comunitário**, com o Cel Barreto. É literalmente o
-  assunto da dissertação, e ele é o único docente que se repetiu na matéria entre as duas
-  semanas.
 - **Cap Gobbo** (Seção de Pesquisa), que é a conversa das regras, dá aula em duas disciplinas,
   D05 Metodologia Científica e D20 Liderança. Duas chances de encontrá-lo em sala em vez de
   procurá-lo na seção.
@@ -199,6 +197,41 @@ entrada a mais nem a menos. Nenhuma pasta `D32_...` precisa ser criada.
 Para o **pelotão A**, seis disciplinas entraram pela primeira vez na semana 2: D12 Gestão de
 Pessoas, D17 Gestão do Conhecimento, D18 Excelência da Gestão, D20 Liderança Organizacional,
 D30 Criminologia e D31 Gestão de Incidentes Policiais.
+
+## O corpo docente por matéria
+
+> Consolidado em 25/08/2026, cruzando o QTS com a estrutura curricular. São **117 vínculos
+> instrutor x disciplina**, distribuídos entre **97 instrutores distintos**. A estrutura das
+> matérias e a carga horária de cada disciplina estão em [CURRICULO.md](CURRICULO.md).
+> A planilha de origem fica no Drive, em `00_CURSO/CAOII2026_instrutores e matérias_com
+> filtros.xlsx`, e confere campo a campo com o currículo oficial: 31 disciplinas, 450
+> horas-aula e as mesmas 6 matérias.
+
+**Quase todo instrutor dá uma disciplina só.** Dos 97, apenas 12 aparecem em mais de uma, e
+**somente 7 transitam entre matérias diferentes**. Esses 7 são os nomes com visão mais larga do
+curso, e é uma informação de caça ao orientador, não de curiosidade:
+
+| Instrutor | Matérias | Disciplinas |
+|---|---|---|
+| **Maj PM Ciampone** | **3**: Atualização Jurídica, Ciências Policiais I, Gestão Estratégica | Direitos Humanos; Policiamento Comunitário; Ed. Física |
+| Cap PM Casagrandi | 2: Ciência Política, Gestão Estratégica | Relações Sociais; Ética e Cidadania; Liderança |
+| Ten Cel PM Elieverson | 2: Ciência Política, Gestão Estratégica | Ética e Cidadania; Comportamento Organizacional; Liderança |
+| **Cap PM Gobbo** | 2: Metodologia Científica I, Gestão Estratégica | Fundamentos da Metodologia; Liderança |
+| Cel PM Komata | 2: Ciência Política, Ciências Policiais I | Geopolítica; Sistemas Comparados |
+| **Maj PM Zampronio** | 2: Metodologia Científica I, Ciências Policiais I | Fundamentos da Metodologia; Criminologia |
+| Ten Cel PM Salomão | 2: Ciência Política, Gestão Estratégica | Ética e Cidadania; Planejamento Estratégico |
+
+**Três deles importam de imediato.** O **Cap Gobbo** é a Seção de Pesquisa, ou seja, quem
+responde as regras de orientação, e dá aula em duas matérias: dá para encontrá-lo em sala. O
+**Maj Zampronio** liga metodologia com criminologia, que é a dobradinha de quem avalia rigor. E
+o **Maj Ciampone** é o único que cruza três matérias, incluindo **Policiamento Comunitário**.
+
+**Quem tem mais carga somada**, contando as disciplinas em que aparece: Cel PM Salomão e Maj PM
+Ciampone (50 h-a cada), depois Cap PM Casagrandi (40 h-a).
+
+**Não é escala de aula, é elenco.** A planilha lista quem *pode* dar cada disciplina; quem
+efetivamente entra em cada semana só o QTS diz. Uma disciplina de 10 horas-aula com sete nomes
+no elenco, como Gestão de Pessoas, não vai ver todos eles.
 
 ## Respondido em 25/08 pelo currículo do programa
 

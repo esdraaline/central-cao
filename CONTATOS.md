@@ -58,23 +58,22 @@ mandou citar a fonte oficial, porque a fonte oficial é que está velha.
 
 ## Dissertação — caminho até o orientador
 
-Decidido em 18/08/2026: **vou procurar o Cel PM Eglis para ser meu orientador.**
+**Em aberto desde 25/08/2026.** O alvo definido em 18/08 saiu da lista e a escolha voltou à
+mesa. O quadro de candidatos, com encaixe de tema e de método, está em
+[ESTUDOS.md](ESTUDOS.md).
 
 | Quem | Papel | Como chegar |
 |---|---|---|
-| **Cel PM Eglis** | Instrutor de Planejamento Estratégico. **Orientador pretendido** | Pelo Cap Simões |
-| **Cap PM Simões** | **Tem o contato do Cel Eglis.** É a ponte | Falar com ele primeiro |
-| Cap PM Gobbo | Seção de Pesquisa. Sabe as **regras** da orientação | caespesquisa@policiamilitar.sp.gov.br |
+| **Cap PM Gobbo** | **Seção de Pesquisa. Sabe as regras da orientação.** É a primeira conversa | caespesquisa@policiamilitar.sp.gov.br, e dá aula em duas matérias |
+| Cel PM Barreto | Instrutor de Policiamento Comunitário. Encaixe mais forte no tema | Em sala |
+| Cel PM Lucena | Instrutor de Políticas Públicas | Em sala |
+| Maj PM Ciampone | Único instrutor que cruza três matérias, uma delas Policiamento Comunitário | Em sala |
+| Cap PM Simões | Ponte para contatos do corpo docente | Falar direto |
 
-**Por que o Eglis**: ele abriu a aula de 17/08 perguntando "nosso foco, visão de futuro, é
-polícia repressiva ou polícia comunitária?", que é exatamente a tensão que a minha
-dissertação sobre integração PM-Prefeituras enfrenta. Raciocínio completo em
-[ESTUDOS.md](ESTUDOS.md).
-
-**Ordem sugerida**: falar com o **Cap Simões** para conseguir o contato, e em paralelo
-confirmar com o **Cap Gobbo** as regras (se o orientador precisa ser instrutor, quantos
-orientandos ele pode aceitar, se há prazo). Chegar no Cel Eglis já sabendo as regras vale
-mais do que chegar antes sem saber.
+**A ordem não mudou: as regras antes do nome.** Confirmar com o **Cap Gobbo** se o orientador
+precisa ser instrutor, quantos orientandos cada um aceita, se há prazo e se cabe coorientador.
+O currículo já respondeu parte: a indicação é **do aluno**, referendada pelo Cmt CAES, e cada
+docente compõe no máximo **3 bancas por programa** ([CURRICULO.md](CURRICULO.md)).
 
 ## Ordem para resolver demandas
 1. Chefe de Turma

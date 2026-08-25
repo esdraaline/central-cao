@@ -9,7 +9,7 @@
 | Data | Dia | O que |
 |---|---|---|
 | 24/08 | segunda | Entrada 08h15, quatro blocos, saída 16h15. Os dois embarques de 07h50 do QTS são dos pelotões C e E, nenhum é o meu |
-| **25/08** | **terça** | **Bloco 4, das 14h45 às 16h15: aula do Cel PM Eglis** (D14 Planejamento Estratégico). É a janela da semana para a abordagem de orientação. Também é o dia de perguntar na Coordenação o que tem prova e o que tem trabalho. Dia cheio até as 18h00 |
+| **25/08** | **terça** | Dia cheio até as 18h00. Saiu o **currículo do programa** ([CURRICULO.md](CURRICULO.md)) e a orientação voltou a ficar em aberto |
 | 26/08 | quarta | Bloco 4: D28 Policiamento Comunitário com o Cel Barreto, que é o assunto da dissertação. Dia cheio até as 18h00 |
 | 27/08 | quinta | Fim da semana 2, aula até 11h30, volta para casa |
 | 28/08 | sexta | Sem nenhuma marcação no QTS, para nenhum pelotão |
@@ -78,8 +78,10 @@ mais "o que tem prova", é **"quando cai a VC de cada uma das seis matérias"**.
 - **Disciplinas**: 31 no total, **24 já acionadas** em algum pelotão até a semana 2. Sou do
   **pelotão A** (dedução de 18/08, falta ratificar na Coordenação).
 - **Rotina 13 do SIPA**: liberada de 17/ago/26 a 22/jan/27 (1º bloco financeiro/administrativo).
-- **Dissertação**: PP aprovado. Alvo de orientação é o **Cel PM Eglis**, abordagem na terça
-  25/08, bloco 4. Sequência em [ESTUDOS.md](ESTUDOS.md).
+- **Dissertação**: PP aprovado. **Orientação em aberto desde 25/08**, quando o alvo definido em
+  18/08 saiu da lista. Próxima janela é a aula do **Cel Barreto** (D28 Policiamento
+  Comunitário), na **quarta 26/08, bloco 4**. Quadro de candidatos e sequência das conversas em
+  [ESTUDOS.md](ESTUDOS.md).
 
 ## Histórico — agosto de 2026
 

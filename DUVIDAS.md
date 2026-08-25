@@ -12,7 +12,7 @@
 - As outras lacunas da grade (se a troca de docente é rodízio ou substituição, e se as sete disciplinas que nunca entraram são do segundo semestre) estão listadas em [GRADE.md](GRADE.md), na seção "O que ainda não sei".
 
 ### Dissertação (Cap PM Gobbo, Seção de Pesquisa, caespesquisa@policiamilitar.sp.gov.br)
-- **As regras da orientação**: precisa ser instrutor do curso, quantos orientandos cada um aceita, se há prazo, se o pedido é formal e se cabe coorientador. As cinco perguntas, na ordem de perguntar, estão em [ESTUDOS.md](ESTUDOS.md). É a conversa que protege a abordagem ao Cel Eglis na terça 25/08.
+- **As regras da orientação**: precisa ser instrutor do curso, quantos orientandos cada um aceita, se há prazo, se o pedido é formal e se cabe coorientador. As cinco perguntas, na ordem de perguntar, estão em [ESTUDOS.md](ESTUDOS.md). É a conversa que protege qualquer abordagem: as regras antes do nome. O currículo já respondeu parte (indicação é do aluno, máximo de 3 bancas por docente), ver CURRICULO.md.
 - **O Cel PM Mario Luciano Siconeli segue orientando no CAES?** Ele orientou a dissertação do Cap PM Ferrarez (CAO/24), que é a minha referência, e não aparece como instrutor da minha turma.
 
 ### Chefe de Turma

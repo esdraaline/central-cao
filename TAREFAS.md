@@ -54,7 +54,6 @@
 ### Orientador da dissertação — MISSÃO URGENTE
 - [ ] Perguntar ao Cap Gobbo as REGRAS da orientação: precisa ser instrutor do curso? Quantos orientandos cada um aceita? Há prazo para escolher? Como é o pedido formal? Cabe coorientador? [26/08/2026] #dissertacao
 - [ ] Sondar o Cel Barreto na aula de Policiamento Comunitário, levando o PP aprovado e uma pergunta objetiva [26/08/2026] #dissertacao
-- [x] Montar o rol completo de disciplinas e instrutores para ter o universo de candidatos: pronto em 25/08, 117 vínculos e 97 instrutores, consolidado na aba Grade [25/08/2026] #dissertacao
 
 ### Segunda semana (viagem em 23/08)
 - [ ] Perguntar na Coordenação (Seç Avaliação, Cap Diego) quais disciplinas têm prova e quais têm trabalho, e se existe plano de disciplina com carga horária. É o que falta para o PRAZOS listar entrega de disciplina, porque o QTS não traz [25/08/2026] #curso
@@ -66,6 +65,7 @@
 - [ ] Vencimento dos 10 dias úteis do SAE: sem resposta, cobrar pelo 0800 051 3333 ou WhatsApp, citando o assunto do e-mail. A prova é 22/09 [03/09/2026] #admin
 
 ## Concluídas
+- [x] Montar o rol completo de disciplinas e instrutores para ter o universo de candidatos: pronto em 25/08, 117 vínculos e 97 instrutores, consolidado na aba Grade [25/08/2026] #dissertacao
 - [x] Mandar o QTS assim que sair, para eu lançar na aba Grade e o painel montar o dia sozinho [24/08/2026] #curso
 - [x] Decidir opção de desconto SIPA: Alojamento (R$ 30,35) ou Vestiário (R$ 21,52), e cessar o equivalente na OPM de origem [24/08/2026] #admin
 - [x] Experimentar a farda social e ver os ajustes de caimento, depois de comprar a camisa social [24/08/2026] #pessoal

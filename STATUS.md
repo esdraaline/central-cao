@@ -152,7 +152,9 @@ ciclo**, que acaba na semana 16. Elas vão cair até lá.
 - **19 a 22/08:** pedido da Univesp protocolado no SAE e QTS da semana 2 lançado.
 - **25/08:** apareceu o **currículo oficial do programa**, e com ele a matriz que faltava desde o
   primeiro dia. O curso deixou de ser lido semana a semana pelo QTS e passou a ter mapa até
-  agosto de 2027 ([CURRICULO.md](CURRICULO.md)).
+  agosto de 2027 ([CURRICULO.md](CURRICULO.md)). No mesmo dia entrou o elenco completo de
+  instrutores por matéria, a orientação voltou a ficar em aberto, e as cinco aulas do dia foram
+  anotadas no Drive.
 
 ---
 

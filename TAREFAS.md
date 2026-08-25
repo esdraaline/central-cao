@@ -52,8 +52,11 @@
   - [ ] porta-sabonete
 
 ### Orientador da dissertação — MISSÃO URGENTE
-- [ ] Perguntar ao Cap Gobbo as REGRAS da orientação: precisa ser instrutor do curso? Quantos orientandos cada um aceita? Há prazo para escolher? Como é o pedido formal? Cabe coorientador? [26/08/2026] #dissertacao
-- [ ] Sondar o Cel Barreto na aula de Policiamento Comunitário, levando o PP aprovado e uma pergunta objetiva [26/08/2026] #dissertacao
+- [ ] Perguntar ao Cap Gobbo as REGRAS da orientação: precisa ser instrutor do curso? Quantos orientandos cada um aceita? Há prazo? O pedido é formal? Cabe coorientador? E se o Cel/Maj Carlos Henrique Lourenço Rovina orienta no programa (não é instrutor da turma) [26/08/2026] #dissertacao
+- [ ] Sondar o Cel Barreto na aula de Policiamento Comunitário, bloco 4. A abordagem está pronta no Drive, em 02_DISSERTACAO/00_orientacao/2026-08-26_abordagem-Cel-Barreto.md: o gancho é a PEC 514/1997, que ele deu em aula [26/08/2026] #dissertacao
+  - [ ] Levar o PP aprovado impresso
+  - [ ] Fazer a pergunta da PEC 514, sem pedir orientação de saída
+  - [ ] Registrar o resultado no mesmo arquivo, no mesmo dia
 
 ### Segunda semana (viagem em 23/08)
 - [ ] Perguntar na Coordenação (Seç Avaliação, Cap Diego) quais disciplinas têm prova e quais têm trabalho, e se existe plano de disciplina com carga horária. É o que falta para o PRAZOS listar entrega de disciplina, porque o QTS não traz [25/08/2026] #curso

@@ -1,7 +1,9 @@
 # GRADE — as 31 disciplinas, os docentes e o quadro da semana
 
-> A grade oficial do CAO-II/26, transcrita do QTS. Aqui é o **quê** e o **quando**;
-> como eu estudo está em [ESTUDOS.md](ESTUDOS.md).
+> A grade oficial do CAO-II/26, transcrita do QTS. Aqui é o **quê** e o **quando** desta
+> semana; a **estrutura permanente do curso** (ciclos, matérias, carga horária de cada
+> disciplina, avaliação, eletivas) é do [CURRICULO.md](CURRICULO.md); como eu estudo está em
+> [ESTUDOS.md](ESTUDOS.md).
 > Fonte: QTS CAO-II/26, semana de 24 a 27/08/2026 (a sexta 28/08 está vazia para todos os pelotões), assinado pelo Subten PM Rodrigo Desco
 > Milani (Aux Coord) e pelo Cap PM Diego Antonio Gonçalves de Almeida (Ch Sec Coord).
 > Os PDFs estão no Drive, em `08_CAO_2026/00_CURSO/QTS/`, um arquivo por semana.
@@ -198,21 +200,38 @@ Para o **pelotão A**, seis disciplinas entraram pela primeira vez na semana 2: 
 Pessoas, D17 Gestão do Conhecimento, D18 Excelência da Gestão, D20 Liderança Organizacional,
 D30 Criminologia e D31 Gestão de Incidentes Policiais.
 
+## Respondido em 25/08 pelo currículo do programa
+
+Três perguntas que moravam aqui saíram desta lista quando apareceu o
+[CURRICULO.md](CURRICULO.md):
+
+- **A carga horária de cada disciplina** agora é conhecida, e com ela **quantos blocos de cada
+  uma ainda faltam**. As pesadas são **D24 Direitos Humanos** (30 h-a, a maior do curso) e as
+  seis de 20 h-a: D01, D04, D08, D11, D12, D14, D15, D26, D29, D30 e D31. As demais têm 10 h-a,
+  ou seja **cinco blocos no curso inteiro**.
+- **Como se é avaliado**: não há prova por disciplina. São **seis provas, uma por matéria
+  curricular**, com peso proporcional à carga horária de cada disciplina dentro dela.
+- **O destino das sete que nunca entraram.** Elas **não são do segundo semestre**: as 31 são
+  todas do 1º ciclo, que vai até a semana 16. Vão cair até lá. São elas D11 Planejamento
+  Financeiro, D16 Gestão da Informação, D19 Comportamento Organizacional, D24 Direitos Humanos,
+  D25 Atualização Jurídica, D27 Sistemas Comparados e D29 Planejamento Operacional.
+
+**Duas correções de nome** que o currículo trouxe: a **D08** se chama **Análise Espacial de
+Dados** (o QTS abrevia para "Análise de Dados"), e a **D09 Teoria das Ciências Policiais**
+pertence à matéria **Metodologia Científica I**, não a Ciências Policiais.
+
 ## O que ainda não sei
 
-- **A carga horária de cada disciplina.** O QTS é semanal e não traz o total do curso. Sem
-  isso não dá para saber quais são as matérias pesadas. Perguntar na Coordenação (Seç
-  Avaliação, Cap PM Diego Almeida, `caesaval@policiamilitar.sp.gov.br`).
-- **Quais têm prova e quais têm trabalho.** Nada disso está no QTS. Mesma pergunta, mesmo
-  destinatário ([PRAZOS.md](PRAZOS.md)).
+- **As datas das seis provas**, e quais disciplinas cobram trabalho além da prova. Perguntar na
+  Coordenação (Seç Avaliação, Cap PM Diego Almeida, `caesaval@policiamilitar.sp.gov.br`).
+- **Se o bloco das 16h30 às 18h00 é permanente.** O currículo prevê **8 tempos por dia,
+  terminando 16h15**, o que fecha as 32 horas-aula semanais. O QTS da semana 2 traz bloco 5 na
+  terça e na quarta, o que estoura essa conta. Ou é reposição, ou é ajuste não refletido no
+  currículo ([CURRICULO.md](CURRICULO.md)).
 - **Se o docente muda de propósito ou é só escala.** D02 veio com o Cel Komata na semana 1 e
   com o Cel Roldan na semana 2; D04 trocou o Cel Fernandes pelo Cel Enio; D15 teve três
   docentes diferentes em duas semanas. Só o Cel Barreto (D28) e o Cap Maurício (D26) se
   repetiram. Parece rodízio dentro do corpo docente da disciplina, não substituição.
-- **Se as sete que nunca entraram são do segundo semestre.** D11 Planejamento Financeiro,
-  D16 Gestão da Informação, D19 Comportamento Organizacional, D24 Direitos Humanos,
-  D25 Atualização Jurídica, D27 Sistemas Comparados e D29 Planejamento Operacional não
-  apareceram em nenhuma das duas semanas, para nenhum pelotão.
 
 ## Semana anterior — 17 a 20/08/2026 (pelotão A)
 

@@ -1,7 +1,7 @@
 # STATUS — Central do CAO
 
 > Aba de abertura do painel: onde estou no curso, o que tem esta semana e o que está pendurado.
-> Atualizado em: 23/08/2026
+> Atualizado em: 25/08/2026
 
 ## O domingo de viagem
 
@@ -20,12 +20,17 @@ CEP 01218-020**. Alojamento no próprio prédio.
 - Oficial-Aluno do **CAO-II/2026** (2ª Turma), do **Mestrado Profissional em Ciências Policiais de
   Segurança e Ordem Pública**, no CAES, em frente à Praça Júlio Prestes, centro de São Paulo
   (Campos Elíseos / Santa Ifigênia). Curso de **ago/2026 a ago/2027**.
-- **Semana 1 (17 a 20/08) cumprida. Entrando na semana 2 (24 a 27/08).**
+- **Semana 2 de 53** (24 a 27/08). A semana 1 (17 a 20/08) está cumprida.
 - **Semana padrão:** viaja domingo, aula de segunda a quinta, volta quinta depois das 11h30.
-- **O curso não tem módulo.** São **31 disciplinas correndo em paralelo**, em blocos de 45 minutos,
-  várias por dia, e o **QTS sai semana a semana**. **24 das 31 já foram acionadas.** A mesma
-  disciplina volta em semanas diferentes, às vezes com outro docente. Rol completo, corpo docente e
-  quadro da semana na [Grade](GRADE.md).
+  São **32 horas-aula por semana**, e a **sexta é do currículo, para pesquisa acadêmica**.
+- **O curso tem três ciclos, e eu estou no primeiro.** Semanas 1 a 16: as 31 disciplinas
+  obrigatórias, presencial. Semanas 17 a 19: eletivas de livre escolha. Semanas 20 a 53:
+  dissertação, a distância, de volta na OPM. Mapa completo no [Currículo](CURRICULO.md).
+- **Dentro do 1º ciclo não há módulo.** As **31 disciplinas correm em paralelo**, em blocos de 45
+  minutos, várias por dia, e o **QTS sai semana a semana**. **24 das 31 já foram acionadas.** A
+  mesma disciplina volta em semanas diferentes, às vezes com outro docente. Elas se agrupam em
+  **6 matérias curriculares, que são a unidade de prova**. Rol completo, corpo docente e quadro
+  da semana na [Grade](GRADE.md).
 - **Sou do pelotão A.** Deduzido em 18/08, cruzando as cinco aulas assistidas com as células
   marcadas "A" no QTS, cinco de cinco. *[VERIFICAR: falta ratificar de viva voz na Coordenação.]*
 - **Rotina 13 do SIPA liberada de 17/ago/26 a 22/jan/27** (1º bloco financeiro/administrativo).
@@ -63,10 +68,11 @@ Aqui é só a vista de cima.
 2. **Cap Gobbo (Seção de Pesquisa), as regras da orientação:** o orientador precisa ser instrutor do
    curso, quantos orientandos cada um aceita, se há prazo para escolher, como é o pedido formal e se
    o Cel Siconeli ainda orienta. Ele dá aula em D05 e D20, dá para achá-lo em sala.
-3. **Coordenação (Seç Avaliação, Cap PM Diego Almeida): quais disciplinas têm prova e quais têm
-   trabalho**, e se existe plano de disciplina com carga horária. É o pedaço da situação do curso
-   que o QTS não responde, e é o que falta para o [PRAZOS.md](PRAZOS.md) deixar de ser calendário só
-   de logística.
+3. **Coordenação (Seç Avaliação, Cap PM Diego Almeida): as datas das seis provas.** A pergunta
+   encolheu em 25/08, quando apareceu o currículo do programa ([CURRICULO.md](CURRICULO.md)):
+   carga horária de cada disciplina, como se é avaliado e o que reprova já estão respondidos.
+   Sobra o calendário: **quando cai a VC de cada uma das seis matérias**, e quais disciplinas
+   cobram trabalho além da prova.
 4. **Fardamento que faltou na ConfecBell:** a **camisa social cinza-claro do S-1** e a **boina de
    reposição**. Ver [COMPRAS.md](COMPRAS.md).
 5. **Univesp, 03/09:** vencem os 10 dias úteis do pedido protocolado no SAE em 19/08, às 20h02. Sem
@@ -94,6 +100,12 @@ Agosto inteiro, dia a dia: [PRAZOS.md](PRAZOS.md).
   tarefa, rotina) e o Google Drive guarda conteúdo (slide, anotação, trabalho, dissertação). Um
   arquivo `.md` por disciplina, com as etiquetas `#PROVA`, `#DISSERTA` e `#DUVIDA`. Método em
   [ESTUDOS.md](ESTUDOS.md).
+- **O currículo do programa virou arquivo próprio, o [CURRICULO.md](CURRICULO.md)** (decisão de
+  25/08). Ele é o dono da **estrutura permanente** do curso: ciclos, matérias, carga horária,
+  avaliação, eletivas e regras da dissertação. O [GRADE.md](GRADE.md) continua dono da
+  **semana**, que é o que muda toda segunda. O **PDF do currículo fica no Drive**, em
+  `00_CURSO/`, porque este repositório é público: aqui entrou só a logística, sem conteúdo de
+  aula, sem bibliografia e sem nome ou RE de oficial.
 - **Dentro do CAES, na WCorp, o Google Docs não abre documento que já existe.** Testado em 17/08.
   Não dá para depender de nuvem em sala de aula.
 
@@ -109,11 +121,20 @@ perguntas e ordem das conversas em [ESTUDOS.md](ESTUDOS.md).
 
 ## O que ainda não sei
 
-- A carga horária de cada disciplina, quais têm prova e quais têm trabalho, e se as sete que nunca
-  entraram no QTS são do segundo semestre. Nada disso sai do QTS: sai da Coordenação. A lista está no
-  fim da [Grade](GRADE.md).
+- **As datas das seis provas** e quais disciplinas cobram trabalho além da prova. Sai da
+  Coordenação, não do QTS.
+- **O calendário escolar com as datas reais das 19 semanas presenciais.** As semanas 17 a 19 e
+  tudo que vem depois estão calculados por contagem corrida, e o recesso de fim de ano deve
+  empurrar as datas ([CURRICULO.md](CURRICULO.md)).
+- **Se o bloco das 16h30 às 18h00 é permanente.** O currículo prevê 8 tempos por dia, até as
+  16h15, mas o QTS da semana 2 traz aula até as 18h00 na terça e na quarta.
 - Data, hora e local da formatura, a ratificar pela turma ([ROTINA.md](ROTINA.md)).
 - Se sou mesmo do pelotão A, de viva voz.
+
+**Três perguntas saíram desta lista em 25/08**, respondidas pelo currículo do programa: a carga
+horária de cada disciplina, como funciona a avaliação, e o destino das sete disciplinas que
+ainda não entraram no QTS. **As sete não são "do segundo semestre": as 31 são todas do 1º
+ciclo**, que acaba na semana 16. Elas vão cair até lá.
 
 ## Histórico, em quatro linhas
 
@@ -121,6 +142,9 @@ perguntas e ordem das conversas em [ESTUDOS.md](ESTUDOS.md).
 - **17/08:** primeiro dia, recepção às 07h30, método de estudo e divisão de território definidos.
 - **18/08:** o primeiro QTS completo entregou as 31 disciplinas e permitiu deduzir o pelotão A.
 - **19 a 22/08:** pedido da Univesp protocolado no SAE e QTS da semana 2 lançado.
+- **25/08:** apareceu o **currículo oficial do programa**, e com ele a matriz que faltava desde o
+  primeiro dia. O curso deixou de ser lido semana a semana pelo QTS e passou a ter mapa até
+  agosto de 2027 ([CURRICULO.md](CURRICULO.md)).
 
 ---
 

@@ -23,19 +23,56 @@
 | **22/01/2027** | Fim do 1º bloco da Rotina 13 do SIPA. Precisa ser renovada para o 2º ([ROTINA.md](ROTINA.md)) |
 | **ago/2027** | Fim do curso e formatura. Data, hora e local ainda a ratificar pela turma ([ROTINA.md](ROTINA.md)) |
 
-**Entrega e prova de disciplina ainda não entram aqui.** Não é falta de preenchimento, é falta
-de fonte: o QTS diz disciplina, docente, dia e bloco, e não diz uma palavra sobre avaliação.
-Quem responde é a **Seç Avaliação e Concurso do CAES, Cap PM Diego Almeida**
-(`caesaval@policiamilitar.sp.gov.br`), que assina o QTS como Ch Sec Coord
-([CONTATOS.md](CONTATOS.md)). Pergunta marcada para 25/08.
+## Prazos do currículo (novos em 25/08/2026)
+
+Saíram do **currículo oficial do programa** ([CURRICULO.md](CURRICULO.md)), que apareceu em
+25/08. São datas de regra, calculadas pela contagem corrida de semanas a partir de 17/08/2026.
+**Nenhuma foi confirmada em calendário escolar**: recesso de fim de ano deve empurrar as do 2º
+e 3º ciclos.
+
+| Quando | O que | Confiança |
+|---|---|---|
+| **até 18/09/2026** (fim da 5ª semana) | **O CAES divulga o rol de disciplinas eletivas** do 2º ciclo, para inscrição. São 18 créditos de livre escolha, e **turma só se forma com 14 inscritos**. Ter 2ª e 3ª opção prontas. As cinco que servem à dissertação estão em [ESTUDOS.md](ESTUDOS.md) | Regra do currículo |
+| **28/09 a 01/10/2026** (7ª semana) | **Segunda chamada de escolha de eletiva**, para quem ficou em turma que não fechou | Regra do currículo |
+| **~07 a 24/12/2026** (semanas 17 a 19) | **2º CENS**: as três semanas finais da etapa presencial, já com as eletivas. Fim das 19 semanas no CAES | Contagem corrida |
+| **a partir de ~jan/2027** (semana 20) | **3º CENS**: volta para a OPM de origem e a dissertação passa a ser a atividade principal, a distância. **Aqui também entra a Jornada de Pesquisa Comparada** | Contagem corrida |
+| **a partir de ~jan/2027** | **Qualificação da dissertação**: apresentação oral perante a banca, sem nota, com conceito apto / apto com restrições / inapto | Regra do currículo |
+| **~abril/2027** (120 dias antes do fim) | **Data-limite para obter o conceito "apto" na qualificação.** Passar disso sem apto significa **não estar autorizado a prosseguir na pesquisa e levar nota zero** na dissertação | Regra do currículo |
+
+**Prazos que não têm data, mas têm contagem** e valem quando a hora chegar:
+
+- **Entrega do artigo científico e da dissertação: 10% da nota por dia de atraso.**
+- **Verificação Final do artigo:** reentregar corrigido em **10 dias corridos** da divulgação da
+  nota; perder o prazo zera a VF.
+- **Impugnar membro de banca:** 7 dias corridos da divulgação dos nomes.
+- **Recorrer de nota de banca:** 2 dias úteis da ciência.
+
+## As provas: existem seis, e as datas ainda não
+
+O currículo respondeu **como** se é avaliado: **uma prova (VC) por matéria curricular**, seis no
+1º ciclo, com questões de todas as disciplinas daquela matéria proporcionais à carga horária.
+Nota 7,0 isenta da final; abaixo de 5,0 na segunda época é reprovação e desligamento. Os pesos
+de cada disciplina estão em [CURRICULO.md](CURRICULO.md), e o que isso muda no estudo está em
+[ESTUDOS.md](ESTUDOS.md).
+
+**O que continua faltando é a data de cada uma.** Quem responde é a **Seç Avaliação e Concurso
+do CAES, Cap PM Diego Almeida** (`caesaval@policiamilitar.sp.gov.br`), que assina o QTS como Ch
+Sec Coord ([CONTATOS.md](CONTATOS.md)). Pergunta marcada para 25/08, agora mais precisa: não é
+mais "o que tem prova", é **"quando cai a VC de cada uma das seis matérias"**.
 
 ## Como o curso corre
 
-- **Duração**: agosto/2026 a agosto/2027, no CAES "Cel Nelson Freire Terra".
+- **Duração**: **53 semanas**, agosto/2026 a agosto/2027, no CAES "Cel Nelson Freire Terra",
+  com **1.368 horas-aula** no total ([CURRICULO.md](CURRICULO.md)).
 - **Semana padrão**: viaja domingo, aula de segunda a quinta, volta quinta depois das 11h30
-  ([ROTINA.md](ROTINA.md)).
-- **Não existe módulo.** São **31 disciplinas em paralelo**, em blocos de 45 minutos, várias
-  por dia, e a mesma disciplina volta em semanas diferentes, às vezes com outro docente.
+  ([ROTINA.md](ROTINA.md)). **32 horas-aula por semana**, e a **sexta é do currículo, destinada
+  a pesquisa acadêmica** — é por isso que ela aparece vazia no QTS.
+- **Existem três ciclos (CENS), e só o primeiro é o que estou vivendo.** Semanas 1 a 16:
+  as 31 disciplinas obrigatórias. Semanas 17 a 19: eletivas. Semanas 20 a 53: dissertação, a
+  distância, de volta na OPM.
+- **Dentro do 1º ciclo não existe módulo.** As **31 disciplinas correm em paralelo**, em blocos
+  de 45 minutos, várias por dia, e a mesma disciplina volta em semanas diferentes, às vezes com
+  outro docente. Elas se agrupam em **6 matérias curriculares**, que são a unidade de prova.
 - **QTS**: sai **semana a semana**, com 8 a 10 aulas de 45 minutos por dia. É dele que saem as
   próximas datas deste arquivo, então **sem o QTS da semana seguinte este calendário não anda**.
 - **Disciplinas**: 31 no total, **24 já acionadas** em algum pelotão até a semana 2. Sou do

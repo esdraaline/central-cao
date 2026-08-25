@@ -235,5 +235,70 @@ O domingo de 30 minutos é o que amarra o Drive com o painel do celular.
 - Guardar conteúdo de aula neste repositório: é público e o git guarda para sempre.
 - **Planejar em cima de fonte indireta.** O Edital DEC-005/24/25 não traz a matriz do curso
   (o Anexo "B" é a bibliografia da prova escrita da seleção) e a grade do Manual do Aluno do
-  CAES é de 2012, com disciplinas que não existem mais. **A fonte de verdade é o QTS**, e ele
-  chega semana a semana ([GRADE.md](GRADE.md)).
+  CAES é de 2012, com disciplinas que não existem mais.
+
+**Isso mudou em 25/08/2026.** Apareceu o **currículo oficial do programa** (PDM, Bol G PM nº
+227), e com ele a matriz que faltava: carga horária de cada disciplina, como as 31 se agrupam
+em 6 matérias, como funciona a prova, o calendário das eletivas e as regras da dissertação.
+Está tudo em [CURRICULO.md](CURRICULO.md). **O QTS continua sendo o dono do "que aula é
+amanhã", mas deixou de ser a única fonte sobre o curso.**
+
+## Estudar para a prova certa: são seis, não trinta e uma
+
+A descoberta mais útil do currículo para quem estuda: **não existe prova de disciplina.
+Existe uma prova por matéria**, com questões de todas as disciplinas dela, **proporcionais à
+carga horária de cada uma**. Ver [CURRICULO.md](CURRICULO.md) para os pesos exatos.
+
+| Prova | Disciplinas dentro | O que isso significa |
+|---|---|---|
+| **Ciência Política** | D01 a D04 | D01 e D04 valem 33% cada. As duas juntas são dois terços da prova |
+| **Metodologia Científica I** | D05 a D09 | **D08 Análise Espacial de Dados** vale 33%, o dobro das outras. E a **D09 Teoria das Ciências Policiais cai aqui**, não em Policiais |
+| **Gestão Pública** | D10 a D13 | D11 e D12 valem 33% cada |
+| **Gestão Estratégica** | dez disciplinas, D14 a D23 | A maior matéria do curso. D14 e D15 valem 17% cada, as outras oito valem 8% cada |
+| **Atualização Jurídica** | D24 e D25 | **D24 Direitos Humanos sozinha vale 60%.** É a maior disciplina do curso |
+| **Ciências Policiais I** | D26 a D31 | Quatro delas valem 20% cada; Sistemas Comparados e Policiamento Comunitário, 10% |
+
+**Três consequências práticas para o método:**
+
+1. **A etiqueta `#PROVA` passa a ter endereço.** Marcar já sabendo em qual das seis provas
+   aquilo cai, e com que peso, muda o que vale a pena decorar. Oito por cento de uma prova não
+   merece o mesmo esforço que sessenta.
+2. **O caderno do NotebookLM deveria ser por matéria, não por disciplina.** A regra atual
+   ("um caderno por disciplina, quando tiver prova à vista") pode virar **um caderno por MC**,
+   juntando as disciplinas que caem na mesma prova. São seis cadernos fixos em vez de trinta e
+   um eventuais, e cada um espelha exatamente uma prova.
+3. **Nota 7,0 na primeira prova isenta da final.** O esforço concentrado na VC economiza a VF
+   inteira.
+
+## As eletivas do 2º ciclo: escolher com o tema na mão
+
+Nas semanas 17 a 19 a turma se desfaz e cada um cursa **eletivas de livre escolha**, 18
+créditos. **O rol é divulgado até o fim da 5ª semana, que cai em 18/09/2026**
+([PRAZOS.md](PRAZOS.md)), e turma só se forma com 14 inscritos, então convém ter segunda e
+terceira opção.
+
+Das 25 previstas, **cinco conversam direto com integração PM-Prefeituras e governança
+participativa**, e é por elas que a escolha deve começar:
+
+| Eletiva | Por que serve ao tema |
+|---|---|
+| **Avaliação de Políticas de Segurança Pública** | Métodos de avaliação de impacto. É o "como eu provo que funcionou" da dissertação |
+| **Movimentos Sociais e Segurança Pública** | Participação social é metade da governança participativa |
+| **Mediação e Resolução de Conflitos** | Polícia democrática e mecanismos de mediação, com avaliação de resultados |
+| **Paradigmas da Segurança Pública no Brasil** | Segurança cidadã e defesa social: o vocabulário em que o argumento é escrito |
+| **Criminologia ambiental e das escolhas racionais** | Amarra com a D30, que já rendeu #DISSERTA na semana 2 |
+
+**Também cabe pedir aproveitamento de até 12 dos 18 créditos**, se houver pós stricto sensu
+concluída até 24 meses antes da matrícula. Vale conferir se algo já cursado se aproveita: são
+créditos que deixam de ocupar as semanas 17 a 19.
+
+## O artigo científico não é trabalho extra
+
+A nota do 2º ciclo é um **artigo de 8 a 20 laudas sobre tema ligado ao próprio Projeto de
+Pesquisa**, sob coordenação do orientador, avaliado pela **mesma banca da dissertação**. Ou
+seja: **é um capítulo da dissertação sendo escrito com um ano de antecedência e corrigido pela
+banca que vai julgar o trabalho final.** Tratar como ensaio da defesa, não como tarefa avulsa.
+
+E a advertência que vale para o artigo e para a dissertação: **40% da nota é português e
+metodologia** (peso 2 + peso 2, contra peso 6 do conteúdo). São os pontos mais baratos de
+garantir e os mais bobos de perder. Reforça a decisão de instalar o **Zotero** em setembro.

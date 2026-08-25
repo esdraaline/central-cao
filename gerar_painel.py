@@ -30,6 +30,25 @@ CURSO_FIM = date(2027, 8, 17)
 # aula de segunda a quinta, volta quinta depois das 11h30 (ver ROTINA.md).
 PRIMEIRA_VIAGEM = date(2026, 8, 16)
 
+# Estrutura do curso, do curriculo oficial do programa (ver CURRICULO.md).
+# O curso tem 53 semanas em tres Ciclos de Ensino (CENS). O que muda de um
+# para o outro nao e so o conteudo: e ONDE se fica. Ate a semana 19 e
+# presencial no CAES; da 20 em diante volta para a OPM e a dissertacao passa
+# a ser a atividade principal.
+#
+# As fronteiras abaixo sao contagem corrida a partir de CURSO_INICIO. O
+# calendario escolar com as datas reais (recesso de fim de ano) ainda nao
+# saiu, entao 17/19/53 sao o previsto, nao o confirmado. Quando sair, e aqui
+# que se corrige, num lugar so.
+CURSO_SEMANAS = 53
+# O rotulo tem que caber em duas linhas de KPI: manter curto.
+CICLOS = [
+    # (semana em que comeca, rotulo curto, onde)
+    (1,  "1º ciclo", "presencial"),
+    (17, "2º ciclo", "eletivas"),
+    (20, "3º ciclo", "dissertação"),
+]
+
 # Ordem das abas. (arquivo, id, rotulo, icone)
 ABAS = [
     ("STATUS.md",    "painel",    "Painel",     "home"),
@@ -37,6 +56,7 @@ ABAS = [
     ("TAREFAS.md",   "tarefas",   "Tarefas",    "check"),
     ("ESTUDOS.md",   "estudos",   "Estudos",    "livro"),
     ("GRADE.md",     "grade",     "Grade",      "grade"),
+    ("CURRICULO.md", "curriculo", "Currículo",  "prancheta"),
     ("ROTINA.md",    "rotina",    "Rotina",     "clock"),
     ("CONTATOS.md",  "contatos",  "Contatos",   "users"),
     ("DUVIDAS.md",   "duvidas",   "Dúvidas",    "help"),
@@ -3051,6 +3071,8 @@ JS_GUIA = r"""
   var INICIO=C.inicio?dt(C.inicio):null;
   var FIM=C.fim?dt(C.fim):null;
   var VIAGEM1=C.viagem?dt(C.viagem):null;
+  var SEMANAS=C.semanas||0;
+  var CICLOS=C.ciclos||[];
 
   /* ---- onde estou na semana do curso ----
      A semana se repete: viaja domingo, aula de segunda a quinta, volta
@@ -3120,6 +3142,26 @@ JS_GUIA = r"""
         var pct=Math.round(dias(INICIO,h)*100/dias(INICIO,FIM));
         kr.textContent='Curso em andamento';kv.textContent=pct+'%';
         ks.textContent='faltam '+dias(h,FIM)+' dias';kb.style.width=pct+'%';
+      }
+    }
+    /* KPI da semana do curso e do ciclo. O curriculo (CURRICULO.md) diz que
+       sao 53 semanas em tres ciclos, e que o que muda de um para o outro e
+       ONDE se fica: ate a 19 e presencial no CAES, da 20 em diante e a
+       distancia, na OPM. Semana 1 comeca em CURSO_INICIO.                */
+    var sv=el('#kpi-sem-val'),ss=el('#kpi-sem-sub'),sb=el('#kpi-sem-barra');
+    if(sv&&INICIO&&SEMANAS){
+      if(h<INICIO){
+        sv.textContent='—';ss.textContent='o curso ainda não começou';
+        sb.style.width='0%';
+      }else{
+        var sem=Math.floor(dias(INICIO,h)/7)+1;
+        if(sem>SEMANAS)sem=SEMANAS;
+        sv.textContent=sem;
+        /* ciclo atual: o ultimo cuja semana de inicio ja passou */
+        var ci=null,k;
+        for(k=0;k<CICLOS.length;k++){if(sem>=CICLOS[k].de)ci=CICLOS[k];}
+        ss.textContent='de '+SEMANAS+(ci?' · '+ci.rot+', '+ci.onde:'');
+        sb.style.width=Math.round(sem*100/SEMANAS)+'%';
       }
     }
   }
@@ -3584,6 +3626,15 @@ def build():
                 '<div class="val" id="kpi-curso-val">...</div>'
                 '<div class="sub" id="kpi-curso-sub">CAO-II/26</div>'
                 '<div class="barra"><i id="kpi-curso-barra" style="width:0%"></i></div></div>')
+    # Semana do curso e ciclo. Nasceu em 25/08/2026, quando o curriculo do
+    # programa entregou o numero total de semanas e as fronteiras dos ciclos.
+    # Ate entao o painel so sabia medir tempo decorrido em porcentagem, que
+    # nao diz onde a pessoa esta. "Semana 2 de 53" diz.
+    home.append('<div class="kpi"><div class="rot">Semana do curso</div>'
+                '<div class="val" id="kpi-sem-val">...</div>'
+                '<div class="sub" id="kpi-sem-sub">de %d</div>'
+                '<div class="barra"><i id="kpi-sem-barra" style="width:0%%"></i></div></div>'
+                % CURSO_SEMANAS)
     home.append('<div class="kpi"><div class="rot">Tarefas pendentes</div>'
                 '<div class="val" id="kpi-tar-val">%d</div>'
                 '<div class="sub" id="kpi-tar-sub">%s</div></div>'
@@ -3696,7 +3747,10 @@ window.ARQ_MOD=%(arqmod)s;
         "js_tarefas": JS_TAREFAS,
         "curso": escapa_js({"inicio": CURSO_INICIO.isoformat(),
                             "fim": CURSO_FIM.isoformat(),
-                            "viagem": PRIMEIRA_VIAGEM.isoformat()}),
+                            "viagem": PRIMEIRA_VIAGEM.isoformat(),
+                            "semanas": CURSO_SEMANAS,
+                            "ciclos": [{"de": d, "rot": r, "onde": o}
+                                       for d, r, o in CICLOS]}),
         "qts": escapa_js(qts),
         "js_supabase": JS_SUPABASE,
         "nav": "".join(nav),

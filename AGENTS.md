@@ -22,11 +22,24 @@ O mapa completo, com a tabela de "qual pergunta se responde em qual arquivo", es
 **`aula-cao`** (anotar aula, no Drive).
 
 **Fonte única por assunto.** Quando a mesma informação existir dos dois lados, um é dono e o
-outro é ponteiro de uma linha. Donos atuais: casas de oração e mapas SVG são deste repositório;
-o PDF do QTS (`00_CURSO/QTS/`, no Drive) é a fonte primária da grade e o `GRADE.md` é a
-transcrição de trabalho. Duplicar não confunde só a IA, apaga decisão: em 17/08/2026 uma cópia
-órfã ficou dois dias afirmando que as casas de oração tinham saído do repositório público,
-quando a decisão havia sido revertida no mesmo dia.
+outro é ponteiro de uma linha. Duplicar não confunde só a IA, apaga decisão: em 17/08/2026 uma
+cópia órfã ficou dois dias afirmando que as casas de oração tinham saído do repositório
+público, quando a decisão havia sido revertida no mesmo dia.
+
+Donos atuais:
+
+| Assunto | Dono | Ponteiro |
+|---|---|---|
+| Casas de oração da CCB, mapas SVG | Este repositório | `00_CURSO/` no Drive |
+| **Grade da semana** (que aula, que dia, que docente) | **`GRADE.md`**, transcrição de trabalho | Fonte primária é o **PDF do QTS**, em `00_CURSO/QTS/` no Drive |
+| **Estrutura permanente do curso** (ciclos, matérias, carga horária, avaliação, eletivas, regras da dissertação) | **`CURRICULO.md`**, transcrição de trabalho | Fonte primária é o **PDF do currículo/PDM** (Bol G PM nº 227), em `00_CURSO/` no Drive |
+| Conteúdo programático e bibliografia de cada disciplina | As notas `NOTAS-DNN-*.md`, no Drive | — |
+
+**A regra do currículo, decidida em 25/08/2026.** O PDF do PDM é documento institucional e fica
+no Drive. Para cá veio só a **logística**: estrutura, carga horária, avaliação e prazos. Não
+vieram, e não devem vir, o **conteúdo programático de cada disciplina**, as **bibliografias** e
+os **nomes e RE dos oficiais** que elaboraram os planos, porque este repositório é público e RE
+é dado pessoal.
 
 ## Regulamento de uniformes (R-5-PM)
 

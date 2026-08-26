@@ -115,6 +115,8 @@ MEDICOES = [
      "Rua Afonso Arinos, 91, São Paulo"),
     ("ccb-barra-funda-a-pe-do-caes", None,
      "Rua Brigadeiro Galvão, 683, São Paulo"),
+    ("ccb-bras-por-bresser-mooca", "Estação Bresser-Mooca, São Paulo",
+     "Rua Visconde de Parnaíba, 1616, São Paulo"),
     ("tatuape-estacao-ao-shopping", "Estação Tatuapé, São Paulo",
      "Shopping Metrô Tatuapé, São Paulo"),
     # Fornecedor da loja de casa, nao e ponto do curso, mas fica no caminho da
@@ -333,6 +335,67 @@ def _dentro(pts, caixa):
 def _traco(pts, proj):
     return " ".join(("M" if i == 0 else "L") + "%.1f %.1f" % proj(p[0], p[1])
                     for i, p in enumerate(pts))
+
+
+def desenha_duas(arquivo, titulo, org, rot_org, pernas, vias):
+    """Duas rotas saindo do mesmo ponto, cada uma com cor e legenda proprias.
+
+    pernas: lista de (rota, rotulo, cor_var) ex: ("var(--vm-cl)", "var(--ok)").
+    Existe porque comparar Luz x Santa Cecilia lado a lado so faz sentido
+    com as duas linhas no mesmo mapa (duvida real de 26/08/2026: qual
+    estacao serve a Linha 3, ja que a Luz e a mais perto mas nao serve).
+    """
+    todos_geo = [g for rota, _, _ in pernas for g in rota["geo"]] + [[org[1], org[0]]]
+    cx = _caixa_da_rota(todos_geo)
+    proj, k = _projetor(cx)
+    em_vista = [v for v in vias if _dentro(v["pts"], cx)]
+
+    out = ['<svg viewBox="0 0 %d %d" role="img" aria-label="%s">' % (L, A, _esc(titulo)),
+           ESTILO,
+           '<style>.rota2{fill:none;stroke-linecap:round;stroke-linejoin:round}</style>',
+           '<rect class="fundo" x="0" y="0" width="%d" height="%d"/>' % (L, A)]
+
+    for v in em_vista:
+        out.append('<path class="%s" d="%s" stroke-width="%.1f"/>'
+                   % ("viaf" if v["tipo"] in GRANDES else "via",
+                      _traco(v["pts"], proj), ESPESSURA.get(v["tipo"], 1.3)))
+
+    for rota, _rotulo, cor in pernas:
+        d = _traco(rota["geo"], proj)
+        out.append('<path class="capa" d="%s"/>' % d)
+        out.append('<path class="rota2" d="%s" stroke="%s" stroke-width="5"/>' % (d, cor))
+
+    ox, oy = proj(org[1], org[0])
+    out.append('<circle class="pin" cx="%.0f" cy="%.0f" r="8"/>' % (ox, oy))
+    anc0 = "start" if ox < L / 2 else "end"
+    out.append('<text class="marc" x="%.0f" y="%.0f" text-anchor="%s" paint-order="stroke" '
+               'stroke="var(--card)" stroke-width="4">%s</text>'
+               % (ox + (12 if anc0 == "start" else -12), oy + 4, anc0, _esc(rot_org)))
+
+    for rota, rotulo, cor in pernas:
+        dx_, dy_ = proj(rota["lon"], rota["lat"])
+        out.append('<circle cx="%.0f" cy="%.0f" r="8" fill="var(--card)" stroke="%s" '
+                   'stroke-width="3.5"/>' % (dx_, dy_, cor))
+        anc = "start" if dx_ < L / 2 else "end"
+        out.append('<text class="marc" x="%.0f" y="%.0f" text-anchor="%s" paint-order="stroke" '
+                   'stroke="var(--card)" stroke-width="4">%s</text>'
+                   % (dx_ + (12 if anc == "start" else -12), dy_ + 4, anc, _esc(rotulo)))
+
+    out.append('<text class="tit" x="16" y="22">%s</text>' % _esc(titulo))
+    ly = 40
+    for rota, rotulo, cor in pernas:
+        metros = rota["m"]
+        txt = "%d" % metros if metros < 1000 else "%d.%03d" % (metros // 1000, metros % 1000)
+        out.append('<circle cx="20" cy="%d" r="4.5" fill="%s"/>' % (ly - 4, cor))
+        out.append('<text class="sub" x="30" y="%d">%s: %s m, cerca de %d min</text>'
+                   % (ly, _esc(rotulo), txt, rota["min"]))
+        ly += 17
+
+    out.append('<text class="esc" x="16" y="%d">Dados: OpenStreetMap · rota a pé Valhalla</text>'
+               % (A - 12))
+    out.append("</svg>")
+
+    io.open(os.path.join(AQUI, arquivo + ".svg"), "w", encoding="utf-8").write("\n".join(out))
 
 
 def desenha(arquivo, rotulo, titulo, rota, vias, org, rot_org):
@@ -638,6 +701,15 @@ def main():
         r = rotas[arq]
         desenha(arq, rotulo, titulo, r, malhas[grupo], r.get("org", ORIGEM), rot_org)
         print("  mapa  %s.svg" % arq)
+
+    # mapa comparativo: Luz x Santa Cecilia, as duas rotas saindo do CAES
+    # (duvida de 26/08/2026: a Luz e mais perto mas nao serve a Linha 3)
+    desenha_duas(
+        "saida-caes", "Do CAES até a Luz e até a Santa Cecília", ORIGEM, "CAES",
+        [(rotas["estacao-da-luz"], "Luz", "var(--ok)"),
+         (rotas["santa-cecilia"], "Santa Cecília", "var(--vm-cl)")],
+        malhas["perto"])
+    print("  mapa  saida-caes.svg")
 
     # mapa do abastecimento (padaria, mercado, feira, acougue)
     pois = None if refazer else cache_le("pois.json")

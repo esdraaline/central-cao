@@ -433,9 +433,11 @@ nenhuma decisão muda: é a mesma caminhada.]*
 
 ## Como sair daqui
 
+![Do CAES até a Luz e até a Santa Cecília: 807 m/10 min contra 1.164 m/15 min.](mapas/saida-caes.svg)
+
 | Estação | Linha | A pé | Serve para |
 |---|---|---|---|
-| **Luz** | Metrô **1-Azul** + **4-Amarela** + CPTM | **807 m, 10 min** | **A mais útil de todas** |
+| **Luz** | Metrô **1-Azul** + **4-Amarela** + CPTM **10-Turquesa** e **11-Coral** (+ 13-Jade, só Expresso Aeroporto) | **807 m, 10 min** | **A mais útil de todas** |
 | **Santa Cecília** | Metrô 3-Vermelha | **1.164 m, 15 min** | A Linha 3, pros dois lados |
 | **Júlio Prestes** | CPTM **8-Diamante** apenas | **na praça, em frente** | É trem, não metrô. Ver ressalva |
 | República | Metrô 3 + 4 | mais longe | Só se for conveniente no trajeto |
@@ -445,7 +447,18 @@ baldeação**, a Higienópolis, Paulista, Faria Lima e Pinheiros. E a **Linha 1-
 Center Norte e ao Shopping D.
 
 A **Santa Cecília** cobre o que a Luz não cobre: a **Linha 3-Vermelha**, que de um lado vai
-para Barra Funda e do outro para o Tatuapé.
+para Barra Funda e do outro para o Tatuapé. `#PROVA` **A Linha 3 não passa pela Luz.** Se uma
+busca qualquer (Google Maps, Moovit) apontar a Luz como "estação mais próxima" para um destino
+da Linha 3, ela está respondendo qual estação está mais perto da origem, não qual é a certa
+para embarcar na linha que serve aquele destino. Da Luz dá pra chegar na Linha 3 fazendo Linha
+4-Amarela até a **República** (1 estação) e baldeando lá dentro, mas isso é mais baldeação e
+mais tempo do que simplesmente caminhar os 15 min até a Santa Cecília e embarcar direto.
+*(Confirmado por pesquisa em 26/08/2026: fonte oficial do Metrô de SP, a Estação Luz não consta
+na lista de estações da Linha 3-Vermelha.)*
+
+*Nota sobre a composição da CPTM na Luz: a Linha 7-Rubi deixou de ter ponta final na Luz em
+2026, substituída pela 10-Turquesa nesse papel. `[VERIFICAR: confirmar a data exata da mudança e
+se a 7-Rubi ainda passa por lá em outro trecho ou saiu de vez.]`*
 
 **Ressalva sobre a Júlio Prestes**: é terminal da **Linha 8-Diamante e só dela** (a 11-Coral
 não passa lá, apesar do projeto futuro no Bom Retiro). **Houve descarrilamento na Linha 8 em
@@ -889,7 +902,7 @@ volta.
 | Casa | Endereço | Culto | Como chegar | A pé no fim |
 |---|---|---|---|---|
 | **Barra Funda** | R. Brigadeiro Galvão, 683 | 19h30 | 1.164 m até **Santa Cecília** → **Linha 3** até Marechal Deodoro (1 est.) | **680 m, 8 min** |
-| Brás | R. Visconde de Parnaíba, 1616 | 19h30 | Sta. Cecília → Linha 3 até Bresser-Mooca | a medir |
+| Brás | R. Visconde de Parnaíba, 1616 | 19h30 | 1.164 m até **Santa Cecília** → **Linha 3** até Bresser-Mooca | **463 m, 6 min** |
 | Santana | R. Daniel Rossi, 194 | **20h00** | Luz → Linha 1-Azul até Santana | 939 m, 14 min |
 | Vila Maria | R. Filipe Bandeira, 571 | 19h30 | Luz → Linha 1 até Portuguesa-Tietê + ônibus | a medir |
 
@@ -897,6 +910,13 @@ volta.
 
 **Uma estação de metrô e 8 minutos a pé.** Dá para ir inteiramente a pé do CAES, mas são
 **2.131 m e 26 min**, então o metrô compensa.
+
+**Brás, medido em 26/08/2026 (Nominatim + Valhalla, mesmo método do guia):** embarca também na
+**Santa Cecília** (é a estação de Linha 3 mais perto do CAES, a República fica mais longe), desce
+umas cinco estações depois, na **Bresser-Mooca**, e a caminhada final é a mais curta das duas
+opções de quarta, **463 m, 6 min**, quase toda pela própria Rua Visconde de Parnaíba. Contra a
+Barra Funda, a diferença está só no trecho de trem: mais estações até a Bresser-Mooca do que até
+a Marechal Deodoro. Nominatim confirmou o endereço como sendo da Congregação Cristã no Brasil.
 
 ⚠ **Água Branca e Lapa dependem da Linha 8**, que está sob ressalva, e as duas ainda estão
 **sem a caminhada final medida**. Não conte com elas até resolver os dois pontos.

@@ -49,6 +49,23 @@ Separar para levar para casa: **toalha de banho usada, fronha usada e a roupa su
 Não tem lavanderia no alojamento, então tudo o que sujou volta. O que fica no armário do CAES
 está listado em [MALA.md](MALA.md).
 
+## As duas últimas viagens: janeiro/2027
+
+A fase presencial acaba em **17/01/2027**, que cai num domingo. Como a semana vai de segunda a
+quinta, **a última subida é o domingo 10/01/2027 e a última descida é a quinta 14/01/2027**.
+Depois disso o curso é a distância e não há mais viagem semanal
+([ROTINA.md](ROTINA.md)).
+
+| Data | Movimento |
+|---|---|
+| **quinta 07/01/2027** | descida com **a maior parte da bagagem do armário**, uma semana antes |
+| **domingo 10/01/2027** | última subida, com o mínimo para quatro dias |
+| **quinta 14/01/2027** | **última descida**, com o que restou. Armário vazio e alojamento limpo |
+
+**Combinar a carona com antecedência para essas duas quintas.** O volume é muito maior que o de
+uma semana normal, e o porta-malas é dividido. Se não couber, o plano B é dividir em três
+viagens (começando na quinta 17/12/2026, antes do recesso) ou levar o carro próprio numa delas.
+
 ## Histórico
 
 - **16/08/2026 (domingo), primeira ida**: saída de casa às 15h00, de carona, chegada por volta

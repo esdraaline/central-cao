@@ -139,6 +139,47 @@ reconhecer o que acabou. Conferido item a item em 06/08. O que faltar vira item 
 - **Estudo**: 2 cadernos, canetas, marca-texto, pasta, notebook e carregador, e a extensão com várias saídas, que é o bizu que mais salva por causa da falta de tomada na sala.
 - **Documentos**: identidade funcional e dinheiro ou cartão para as refeições, para o combustível da carona e para a vaquinha da turma. O Ofício de Apresentação é ato eletrônico, não vai impresso: guarde só o número da mesa **SEI 302090130** no celular.
 
+## Desmobilização: esvaziar o armário em janeiro/2027
+<!-- extra -->
+
+A fase presencial acaba em **17/01/2027** e o **último dia útil no CAES é a quinta 14/01/2027**
+([ROTINA.md](ROTINA.md)). Tudo que está no armário e no alojamento tem que estar em casa até
+lá, e **não cabe numa viagem só**, ainda mais de carona. Por isso, duas descidas.
+
+### Quinta 07/01/2027 — a viagem de alívio
+
+Desce o que **não faz falta na última semana**. É volume puro saindo da frente:
+
+- **S-1 inteiro**: paletó, gravata, quepe e a segunda calça social. Se não houver visita
+  marcada para a última semana, não serve para mais nada ali.
+- **Copa**: prato, talheres, marmita, caneca, coqueteleira, café, açúcar e filtro, detergente,
+  esponja, pano de prato. Guardar só o mínimo para comer na última semana.
+- **Limpeza**: balde, pano de chão, desinfetante e o que sobrou de saco de lixo e papel toalha.
+- **Higiene**: o estoque excedente (shampoo, sabonete, papel higiênico de reserva). Fica só o
+  que se usa em quatro dias.
+- **Estudo**: cadernos já encerrados e material impresso acumulado.
+- Peças de farda em excesso: as camisas de passeio e camisetas de serviço além das necessárias
+  para segunda a quinta.
+
+### Quinta 14/01/2027 — a última descida
+
+Sai o que restou. **Conferir o armário vazio e o alojamento limpo antes de sair.**
+
+- **Cama**: lençol, fronha, travesseiro, cobertor ou manta. O alojamento não fornece, é tudo
+  seu.
+- **Toalhas** de banho e de rosto.
+- **Farda do dia e o resto dela**: sapato preto, boina, jaqueta de passeio, cinto de serviço,
+  tarjeta administrativa, o que ficou de camisa e camiseta.
+- **Estudo**: notebook, carregador e a **extensão**.
+- **Documentos**: identidade funcional.
+- **O cadeado.** O armário não tem chave, o cadeado é seu, e é a coisa mais fácil de esquecer
+  pendurada na porta.
+- O que sobrou de higiene, copa e limpeza.
+
+*[VERIFICAR mais perto da data: se a semana de 11 a 14/01/2027 tem aula normal, se há
+solenidade de encerramento presencial depois do dia 14 (que exigiria manter o S-1 no CAES até
+lá), e se o alojamento e o armário passam por vistoria ou entrega formal.]*
+
 ## Detalhes que mudam a mala
 <!-- extra -->
 

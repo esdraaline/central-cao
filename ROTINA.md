@@ -5,6 +5,41 @@
 > procurar em [CONTATOS.md](CONTATOS.md) e o entorno em [ENTORNO.md](ENTORNO.md).
 > Fonte: slide de Recepção aos Oficiais-Alunos ([CAO 2026/Curso/SAE - Recepcao dos Discentes CAO II 26.pdf](CAO%202026/Curso/SAE%20-%20Recepcao%20dos%20Discentes%20CAO%20II%2026.pdf)) + bizu de colega que já fez o curso.
 
+## Período do curso: presencial até 17/01/2027, depois EAD
+
+**A fase presencial vai de 17/08/2026 a 17/01/2027**, com aulas de segunda a quinta. Passado o
+dia 17/01/2027, **o curso segue a distância**: acaba a viagem semanal para Campos Elíseos e
+acaba o alojamento.
+
+Fonte: **Declaração nº CAES-017/130/26**, de 26/08/2026, assinada pelo Cap PM Pedro Hiran
+Esteves Ornelas, Chefe da Seção de Administração Escolar. O PDF está no Drive, em `00_CURSO/`.
+Serve para comprovar matrícula onde for preciso.
+
+**Não confundir com o fim do programa.** O mestrado vai até **agosto/2027**
+([CURRICULO.md](CURRICULO.md)), e é dessa data que saem os prazos da dissertação, inclusive a
+regra dos 120 dias da qualificação. O 17/01/2027 é o fim das aulas presenciais, não o fim do
+curso.
+
+### As duas últimas viagens
+
+O dia 17/01/2027 **cai num domingo**, que é dia de subir, não de descer. Como a semana de aula
+vai de segunda a quinta, **o último dia útil no CAES é a quinta 14/01/2027**, e é nela que o
+armário e o alojamento têm que ficar vazios.
+
+| Data | Dia | O que é |
+|---|---|---|
+| **quinta 07/01/2027** | quinta | **viagem de alívio**: desce a maior parte das coisas, uma semana antes |
+| **quinta 14/01/2027** | quinta | **última descida**: sai o que restou, com o armário zerado |
+
+**Por que em duas viagens:** um semestre inteiro de armário não cabe numa mala só, ainda mais
+indo de carona, onde o porta-malas é dividido. Descer tudo de uma vez na última quinta é
+receita para deixar coisa para trás ou para não caber. A lista do que desce em cada uma está em
+[MALA.md](MALA.md).
+
+*[VERIFICAR na Coordenação, mais perto da data: se a semana de 11 a 14/01/2027 tem aula normal,
+se há solenidade de encerramento presencial depois do dia 14, e se o alojamento e o armário
+passam por vistoria ou entrega formal.]*
+
 ## Horário das aulas
 
 Entrada às **08h15** todo dia. O dia tem cinco blocos de 1h30, cada um com duas aulas de 45

@@ -13,6 +13,10 @@ a tela mostrar como **"faltam N"** é a mala de domingo, peça por peça.
 - [ ] 5 pares de meia branca
 - [ ] 6 camisetas de serviço
 - [ ] 3 camisas de passeio
+- [ ] 4 camisetas de treino
+- [ ] 1 calça tectel
+- [ ] 1 calça jeans
+- [ ] 1 cinto social
 - [ ] 2 pijamas
 - [ ] 2 toalhas de banho
 - [ ] 1 fronha limpa
@@ -69,6 +73,10 @@ volume no porta-malas. A creatina é o oposto, o pote já é pequeno.
 | Camiseta de serviço | 6 | **não tem folga**: uma por dia de aula, por baixo do P-1 e do B-1, mais reserva |
 | Camisa de passeio | 3 | é o jogo que existe (1 antiga + 2 da ConfecBell em 18/08). Em quatro dias, uma repete |
 | Cueca | 8 | uma por dia, com folga para imprevisto |
+| Camiseta de treino | 4 | kit de Ed. Física. Passou para o armário e entrou no inventário (decisão de 27/08/2026) |
+| Calça tectel | 1 | idem. Peça única: aqui o inventário é conferência de presença, não rodízio |
+| Calça jeans | 1 | roupa civil. Mesma lógica da tectel, uma peça só |
+| Cinto social | 1 | serve o P-1 e o S-1. Peça única, conferência de presença |
 | Pijama | 2 | para revezar |
 | Toalha de banho | 2 | para revezar |
 | Fronha | 1 | a de casa fica com a roupa de cama |
@@ -91,8 +99,8 @@ não ser que queira lavar), o travesseiro e o cobertor, o **material de limpeza*
 
 - **O que muda a regra**: QTS que traga Ed. Física ou atividade externa para o pelotão A. Aí o
   conjunto sobe na viagem do domingo anterior, junto com o kit T-1 (camiseta branca, calção
-  azul-royal, agasalho de EF e tênis preto). As meias brancas já estão no armário e entram no
-  inventário de quinta.
+  azul-royal, agasalho de EF e tênis preto). **A camiseta de treino, a meia branca e a calça
+  tectel já estão no armário** e entram no inventário de quinta.
 - **O risco que fica**: se o QTS marcar atividade externa de véspera, o B-1 não está lá. Nesse
   caso vai de P-1, avisa o chefe de turma e o conjunto sobe na viagem seguinte.
 - **Antes de a gandola subir, costure nela o 4º distintivo de OPM do CAES**, comprado em 17/08 e
@@ -119,6 +127,7 @@ a insígnia peça por peça estão em [ROTINA.md](ROTINA.md), que é o dono dess
 | Meia social preta | 5 pares | entram no inventário de quinta |
 | Sapato preto | 1 par | único calçado de farda no armário |
 | Cinto de serviço | 1 | serve o P-1, o S-1 e o B-1 |
+| Cinto social | 1 | entra no inventário de quinta |
 | Boina cinza-bandeirante | 1 | cobertura do dia a dia. Uma de reposição está em [COMPRAS.md](COMPRAS.md) |
 | Jaqueta de passeio | 1 | agasalho do P-1, com as 3 estrelas de metal nas platinas |
 | Paletó, gravata e quepe do S-1 | 1 de cada | guardados, para visita |

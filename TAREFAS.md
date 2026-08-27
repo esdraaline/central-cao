@@ -31,7 +31,7 @@
 > clique, tudo dentro da mesma tarefa, e a lista volta zerada na semana seguinte. No arquivo os
 > itens ficam sempre em aberto: aqui a lista é o molde, o tique é do painel.
 - [ ] Quinta de manhã, antes de descer: inventário do armário e roupa suja na mala @semanal [27/08/2026] #pessoal
-  - [ ] Contar o que ficou limpo: cuecas, meias sociais, meias brancas, camisetas de serviço, camisas de passeio
+  - [ ] Contar o que ficou limpo: cuecas, meias sociais, meias brancas, camisetas de serviço, camisas de passeio, camisetas de treino, calça tectel, calça jeans e cinto social
   - [ ] Lançar os números nos contadores da aba Mala (o "faltam N" vira a carga de domingo)
   - [ ] Toalha de banho e fronha usadas na mala
   - [ ] Roupa suja da semana na mala
@@ -41,6 +41,8 @@
   - [ ] Meias brancas, na quantidade do inventário
   - [ ] Camisetas de serviço, na quantidade do inventário
   - [ ] Camisas de passeio, se o inventário apontou falta
+  - [ ] Camisetas de treino, na quantidade do inventário
+  - [ ] Calça tectel, calça jeans e cinto social, se o inventário apontou falta
   - [ ] Pijamas lavados
   - [ ] Toalhas de banho e fronha limpa
   - [ ] whey

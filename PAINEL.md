@@ -490,7 +490,7 @@ qual ocasião e o que vai montado em cada peça* (a tabela de insígnias foi jun
 guarda só *quantas peças e onde elas estão*. É a regra de fonte única do `AGENTS.md`, aplicada ao
 assunto que mais tinha cópia no repositório.
 
-**Um erro de número apareceu na limpeza:** o inventário pedia **4 camisetas de passeio**, mas o jogo
+**Um erro de número apareceu na limpeza:** o inventário pedia **4 camisas de passeio**, mas o jogo
 é de **3** (a antiga mais as 2 da ConfecBell, como o próprio `COMPRAS.md` registra, e como a seção
 do P-1 dizia três linhas abaixo). O painel ia cobrar para sempre uma camisa que não existe. Alvo
 corrigido para 3. Duplicata não confunde só a leitura: ela inventa falta.

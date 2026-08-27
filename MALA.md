@@ -14,7 +14,7 @@ a tela mostrar como **"faltam N"** é a mala de domingo, peça por peça.
 - [ ] 5 pares de meia social preta
 - [ ] 5 pares de meia branca
 - [ ] 6 camisetas de serviço
-- [ ] 3 camisetas de passeio
+- [ ] 3 camisetas de sair
 - [ ] 4 camisetas de treino
 - [ ] 1 calça tectel
 - [x] 1 calça jeans
@@ -82,7 +82,7 @@ volume no porta-malas. A creatina é o oposto, o pote já é pequeno.
 | Meia social preta | 5 pares | **a mais crítica.** O P-1 pede meia social fina os quatro dias, e a meia grossa que fica no armário é de coturno, não substitui. Esquecer em casa não tem improviso |
 | Meia branca | 5 pares | entraram no inventário em 27/08/2026 |
 | Camiseta de serviço | 6 | **não tem folga**: uma por dia de aula, por baixo do P-1 e do B-1, mais reserva |
-| Camiseta de passeio | 3 | é o jogo que existe (1 antiga + 2 da ConfecBell em 18/08). Em quatro dias, uma repete |
+| Camiseta de sair | 3 | **roupa civil**, para sair do CAES. Entrou no inventário chamada de "camisa de passeio" e foi corrigida em 27/08/2026 |
 | Cueca | 8 | uma por dia, com folga para imprevisto |
 | Camiseta de treino | 4 | **treino à paisana**, roupa civil, não é o T-1. Entrou no inventário em 27/08/2026 |
 | Calça tectel | 1 | **treino à paisana**, roupa civil, não é agasalho de EF. Peça única: aqui o inventário é conferência de presença, não rodízio |
@@ -133,7 +133,7 @@ a insígnia peça por peça estão em [ROTINA.md](ROTINA.md), que é o dono dess
 
 | Peça | Quantas | Situação |
 |---|---|---|
-| Camiseta de passeio cinza-claro | 3 | entram no inventário de quinta |
+| Camisa de passeio cinza-claro | 3 | **[VERIFICAR: 27/08/2026]** deixou de ser contada na quinta: a linha do inventário era esta e virou "camiseta de sair", que é roupa civil. Falta decidir se a camisa de passeio volta como linha própria |
 | Camiseta de serviço | 6 | entram no inventário de quinta |
 | Calça social cinza-bandeirante | 2 | uma roda a semana com o P-1, a outra fica guardada com o S-1 |
 | Meia social preta | 5 pares | entram no inventário de quinta |
@@ -181,7 +181,7 @@ Desce o que **não faz falta na última semana**. É volume puro saindo da frent
 - **Higiene**: o estoque excedente (shampoo, sabonete, papel higiênico de reserva). Fica só o
   que se usa em quatro dias.
 - **Estudo**: cadernos já encerrados e material impresso acumulado.
-- Peças de farda em excesso: as camisetas de passeio e camisetas de serviço além das necessárias
+- Peças de farda em excesso: as camisas de passeio e camisetas de serviço além das necessárias
   para segunda a quinta.
 
 ### Quinta 14/01/2027 — a última descida

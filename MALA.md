@@ -92,15 +92,16 @@ O **S-1 guardado** (com o quepe e a segunda calça social), a farda do dia a dia
 não ser que queira lavar), o travesseiro e o cobertor, o **material de limpeza**, a
 **coqueteleira**, o notebook, a extensão, os 2 cadernos e a identidade funcional.
 
+O **kit T-1 de Ed. Física também já está no alojamento**: camiseta branca, calção
+azul-royal, agasalho de EF, tênis preto e as meias brancas do uniforme. Não sobe nem desce.
+
 ### Fica em casa e não sobe
 
 **B-1 e EPI: gandola, calça operacional, coturno, cinto, colete e bota não sobem** (decisão de
 20/08, sem data nova). Pelo bizu do colega, o B-1 saiu umas 3 vezes no curso inteiro.
 
-- **O que muda a regra**: QTS que traga Ed. Física ou atividade externa para o pelotão A. Aí o
-  conjunto sobe na viagem do domingo anterior, junto com o kit T-1 (camiseta branca, calção
-  azul-royal, agasalho de EF, tênis preto e as meias brancas). **A roupa de treino do inventário
-  é à paisana e não substitui o T-1.**
+- **O que muda a regra**: QTS que traga atividade externa para o pelotão A. Aí o conjunto sobe
+  na viagem do domingo anterior. **Ed. Física não muda nada**: o T-1 já está no armário.
 - **O risco que fica**: se o QTS marcar atividade externa de véspera, o B-1 não está lá. Nesse
   caso vai de P-1, avisa o chefe de turma e o conjunto sobe na viagem seguinte.
 - **Antes de a gandola subir, costure nela o 4º distintivo de OPM do CAES**, comprado em 17/08 e

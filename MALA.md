@@ -14,8 +14,8 @@ a tela mostrar como **"faltam N"** é a mala de domingo, peça por peça.
 - [ ] 5 pares de meia social preta
 - [ ] 5 pares de meia branca
 - [ ] 6 camisetas de serviço
-- [ ] 1 camisa de passeio
-- [ ] 1 calça de passeio
+- [ ] 2 camisas de passeio
+- [ ] 2 calças de passeio
 - [ ] 3 camisetas de sair
 - [ ] 4 camisetas de treino
 - [ ] 1 calça tectel
@@ -84,8 +84,8 @@ volume no porta-malas. A creatina é o oposto, o pote já é pequeno.
 | Meia social preta | 5 pares | **a mais crítica.** O P-1 pede meia social fina os quatro dias, e a meia grossa que fica no armário é de coturno, não substitui. Esquecer em casa não tem improviso |
 | Meia branca | 5 pares | entraram no inventário em 27/08/2026 |
 | Camiseta de serviço | 6 | **não tem folga**: uma por dia de aula, por baixo do P-1 e do B-1, mais reserva |
-| Camisa de passeio | 1 | **farda parada**: fica no armário e quase não sai. Não roda, o inventário só confirma que ela está lá |
-| Calça de passeio | 1 | idem. É a calça social cinza-bandeirante que faz par com a camisa de passeio no P-1 |
+| Camisa de passeio | 2 | **farda parada**: fica no armário e quase não sai. Não roda, o inventário só confirma que as duas estão lá |
+| Calça de passeio | 2 | idem. É a calça social cinza-bandeirante que faz par com a camisa de passeio no P-1 |
 | Camiseta de sair | 3 | **roupa civil**, para sair do CAES. Entrou no inventário chamada de "camisa de passeio" e foi corrigida em 27/08/2026 |
 | Cueca | 8 | uma por dia, com folga para imprevisto |
 | Camiseta de treino | 4 | **treino à paisana**, roupa civil, não é o T-1. Entrou no inventário em 27/08/2026 |
@@ -137,9 +137,9 @@ a insígnia peça por peça estão em [ROTINA.md](ROTINA.md), que é o dono dess
 
 | Peça | Quantas | Situação |
 |---|---|---|
-| Camisa de passeio cinza-claro | 3 | entra no inventário de quinta como **conferência de presença**: fica no armário e quase não sai |
+| Camisa de passeio cinza-claro | 2 | entram no inventário de quinta como **conferência de presença**: ficam no armário e quase não saem. Eram 3 no arquivo até 27/08/2026, quando ele conferiu e são 2 |
 | Camiseta de serviço | 6 | entram no inventário de quinta |
-| Calça social cinza-bandeirante | 2 | uma roda a semana com o P-1 e entra no inventário como **calça de passeio**, a outra fica guardada com o S-1 |
+| Calça social cinza-bandeirante | 2 | as duas ficam no armário e entram no inventário como **calça de passeio**: uma sai com o P-1, a outra fica guardada com o S-1 |
 | Meia social preta | 5 pares | entram no inventário de quinta |
 | Sapato preto | 1 par | único calçado de farda no armário |
 | Cinto de serviço | 1 | serve o P-1, o S-1 e o B-1 |

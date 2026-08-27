@@ -42,7 +42,8 @@
   - [ ] Camisetas de serviço, na quantidade do inventário
   - [ ] Camisetas de sair, se o inventário apontou falta
   - [ ] Camisetas de treino, na quantidade do inventário
-  - [ ] Calça tectel, calça jeans, cinto social, camisa e calça de passeio, se o inventário apontou falta
+  - [ ] Camisas e calças de passeio, na quantidade do inventário
+  - [ ] Calça tectel, calça jeans e cinto social, se o inventário apontou falta
   - [ ] Pijamas lavados
   - [ ] Toalhas de banho e fronha limpa
   - [ ] whey

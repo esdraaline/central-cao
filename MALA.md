@@ -103,7 +103,7 @@ volume no porta-malas. A creatina é o oposto, o pote já é pequeno.
 
 ### Fica no armário do CAES e nunca desce
 
-O **S-1 guardado** (com o quepe e a segunda calça social), a farda do dia a dia, o **lençol** (a
+O **S-1 guardado** (com o quepe e a segunda calça social, que roda com ele), a farda do dia a dia, o **lençol** (a
 não ser que queira lavar), o travesseiro e o cobertor, o **material de limpeza**, a
 **coqueteleira**, o notebook, a extensão, os 2 cadernos e a identidade funcional.
 
@@ -137,9 +137,9 @@ a insígnia peça por peça estão em [ROTINA.md](ROTINA.md), que é o dono dess
 
 | Peça | Quantas | Situação |
 |---|---|---|
-| Camisa de passeio cinza-claro | 2 | entram no inventário de quinta como **conferência de presença**: ficam no armário e quase não saem. Eram 3 no arquivo até 27/08/2026, quando ele conferiu e são 2 |
+| Camisa de passeio cinza-claro | 2 no armário | entram no inventário de quinta. Ficam lá e quase não saem. O jogo comprado é de 3 (1 antiga + 2 da ConfecBell em 18/08); **a terceira está em casa**, conferido em 27/08/2026 |
 | Camiseta de serviço | 6 | entram no inventário de quinta |
-| Calça social cinza-bandeirante | 2 | as duas ficam no armário e entram no inventário como **calça de passeio**: uma sai com o P-1, a outra fica guardada com o S-1 |
+| Calça social cinza-bandeirante | 2 | as duas ficam no armário e entram no inventário como **calça de passeio**: uma roda com o P-1 e a outra **roda com o S-1** |
 | Meia social preta | 5 pares | entram no inventário de quinta |
 | Sapato preto | 1 par | único calçado de farda no armário |
 | Cinto de serviço | 1 | serve o P-1, o S-1 e o B-1 |

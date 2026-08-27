@@ -15,7 +15,9 @@ a tela mostrar como **"faltam N"** é a mala de domingo, peça por peça.
 - [ ] 5 pares de meia branca
 - [ ] 6 camisetas de serviço
 - [ ] 2 camisas de passeio
-- [ ] 2 calças de passeio
+- [ ] 1 calça de passeio
+- [ ] 1 gandola do S-1
+- [ ] 1 calça do S-1
 - [ ] 3 camisetas de sair
 - [ ] 4 camisetas de treino
 - [ ] 1 calça tectel
@@ -85,7 +87,8 @@ volume no porta-malas. A creatina é o oposto, o pote já é pequeno.
 | Meia branca | 5 pares | entraram no inventário em 27/08/2026 |
 | Camiseta de serviço | 6 | **não tem folga**: uma por dia de aula, por baixo do P-1 e do B-1, mais reserva |
 | Camisa de passeio | 2 | **farda parada**: fica no armário e quase não sai. Não roda, o inventário só confirma que as duas estão lá |
-| Calça de passeio | 2 | idem. É a calça social cinza-bandeirante que faz par com a camisa de passeio no P-1 |
+| Calça de passeio | 1 | idem. É a calça social cinza-bandeirante do P-1. A segunda calça não entra aqui: ela é do S-1 e é contada na linha dele |
+| S-1: gandola e calça | 1 de cada | **farda de visita**, parada no armário. O inventário só confirma que as duas peças estão lá. *[VERIFICAR: ROTINA.md descreve o S-1 com paletó e usa "gandola" para o B-1; falta acertar qual termo o painel adota]* |
 | Camiseta de sair | 3 | **roupa civil**, para sair do CAES. Entrou no inventário chamada de "camisa de passeio" e foi corrigida em 27/08/2026 |
 | Cueca | 8 | uma por dia, com folga para imprevisto |
 | Camiseta de treino | 4 | **treino à paisana**, roupa civil, não é o T-1. Entrou no inventário em 27/08/2026 |
@@ -139,7 +142,7 @@ a insígnia peça por peça estão em [ROTINA.md](ROTINA.md), que é o dono dess
 |---|---|---|
 | Camisa de passeio cinza-claro | 2 no armário | entram no inventário de quinta. Ficam lá e quase não saem. O jogo comprado é de 3 (1 antiga + 2 da ConfecBell em 18/08); **a terceira está em casa**, conferido em 27/08/2026 |
 | Camiseta de serviço | 6 | entram no inventário de quinta |
-| Calça social cinza-bandeirante | 2 | as duas ficam no armário e entram no inventário como **calça de passeio**: uma roda com o P-1 e a outra **roda com o S-1** |
+| Calça social cinza-bandeirante | 2 | as duas ficam no armário e as duas entram no inventário, em linhas separadas: uma roda com o P-1 (**calça de passeio**), a outra roda com o S-1 (**calça do S-1**) |
 | Meia social preta | 5 pares | entram no inventário de quinta |
 | Sapato preto | 1 par | único calçado de farda no armário |
 | Cinto de serviço | 1 | serve o P-1, o S-1 e o B-1 |

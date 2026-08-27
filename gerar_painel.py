@@ -1066,9 +1066,20 @@ ul.tarefas li.parcial .mk-qtd .n{color:var(--al);font-weight:600}
   text-transform:uppercase;color:var(--tx3);margin:0 0 9px}
 .mala-dom-li{list-style:none;margin:0 0 9px;padding:0;display:flex;
   flex-wrap:wrap;gap:7px}
-.mala-dom-li li{background:var(--card2);border:1px solid var(--bd);
-  border-radius:9px;padding:7px 12px;font-size:14px;font-weight:600;color:var(--tx)}
+.mala-dom-li li{display:flex;align-items:center;gap:6px;background:var(--card2);
+  border:1px solid var(--bd);border-radius:9px;padding:7px 12px;font-size:14px;
+  font-weight:600;color:var(--tx);cursor:pointer;user-select:none;
+  transition:border-color .12s,opacity .12s}
 .mala-dom-li li b{color:var(--vm);font-weight:800}
+.mala-dom-li li:hover{border-color:var(--vm)}
+.mala-dom-li li:focus-visible{outline:2px solid var(--vm);outline-offset:2px}
+/* ja guardada na mala: continua na tela, e nao some como nas outras listas,
+   porque aqui o clique errado tem de poder ser desfeito na hora. */
+.mala-dom-li li.ok{opacity:.62;border-color:var(--ok);background:transparent}
+.mala-dom-li li.ok b{color:var(--ok)}
+.mala-dom-li li.ok .md-t{text-decoration:line-through}
+.mala-dom-li li .md-c{display:grid;place-items:center;width:16px;height:16px;
+  flex:none;border-radius:50%;background:var(--ok);color:#fff}
 .mala-dom-ok{font-size:14px;font-weight:600;color:var(--ok);margin:0}
 .mala-dom-av{font-size:12.5px;color:var(--tx2);margin:0}
 
@@ -3014,24 +3025,75 @@ window.REP=(function(){
      desta linha, e um "var mdEsc = function" ainda estaria indefinido ali. */
   function mdEsc(s){return s.replace(/[&<>]/g,function(c){
     return {'&':'&amp;','<':'&lt;','>':'&gt;'}[c]})}
+  /* ------- a peca ja guardada na mala -------
+     Clicar num card e dizer "esta ja esta dentro". Guardar isso precisa de
+     memoria propria, senao ele se apagaria sozinho: guardar a peca ZERA a
+     linha do inventario, e uma lista que so calculasse "total menos o que ha
+     no armario" mandaria a peca de volta para a mala no instante seguinte.
+
+     A memoria e a MESMA tabela cao_ticados, com o prefixo "md/" na chave,
+     como a aba Tarefas ja faz com "tf/". De graca, isso viaja entre os
+     aparelhos junto com o resto - uma tabela nova exigiria migracao no banco
+     para guardar meia duzia de numeros.
+
+     O que fica guardado e a QUANTIDADE que foi para a mala. Com ela da para
+     desfazer sem guardar mais nada: o inventario volta para "alvo menos o que
+     foi", que e exatamente onde estava antes do clique.                    */
+  function mdChaveMala(li){return 'md/'+mkChave(li)}
+  function mdNaMala(li){var v=mkEstado[mdChaveMala(li)];return (v&&v.n)||0}
+
+  /* Uma peca guardada com o inventario JA contando de novo (n > 0) e resto da
+     semana passada: quinta seguinte comecou, a contagem recomecou do zero e
+     subiu. Limpar aqui e o que faz a lista se renovar sozinha, sem ele ter de
+     lembrar de zerar nada. */
+  function mdLimpaVelhas(inv){
+    var mudou=false;
+    [].forEach.call(inv.querySelectorAll('li[data-mk]'),function(li){
+      if(mdNaMala(li)>0&&mkTenho(li)>0){
+        mkEstado[mdChaveMala(li)]={n:0,m:mkAgora(),s:false};
+        mudou=true;
+      }
+    });
+    if(mudou)mkSalva();
+    return mudou;
+  }
+
+  function mdCard(li,q,naMala){
+    var txt=mdEsc(mdUm(mdTexto(li,q)));
+    var m=txt.match(/^(\d{1,2})(\s+)([\s\S]*)$/);
+    var corpo=m?('<b>'+m[1]+'</b>'+m[2]+'<span class="md-t">'+m[3]+'</span>')
+               :('<span class="md-t">'+txt+'</span>');
+    return '<li data-mk="'+li.getAttribute('data-mk')+'" tabindex="0"'+
+      (naMala?' class="ok" aria-pressed="true"':' aria-pressed="false"')+
+      ' role="button">'+(naMala?'<span class="md-c">'+CHECK+'</span>':'')+corpo+'</li>';
+  }
+
   function malaDom(){
     var cx=document.getElementById('mala-dom');
     if(!cx)return;
     var inv=document.querySelector('#ab-mala ul.tarefas.inv');
     if(!inv){cx.innerHTML='';return}
-    var faltas=[],contou=0;
+    mdLimpaVelhas(inv);
+    var cards=[],contou=0,faltando=0;
     [].forEach.call(inv.querySelectorAll('li[data-mk]'),function(li){
       if(mkTenho(li)>0)contou++;
+      var naMala=mdNaMala(li);
+      if(naMala>0){cards.push(mdCard(li,naMala,true));return}
       var f=mdFalta(li);
-      /* destaca a quantidade, que e o que ele le de relance ao encher a mala */
-      if(f>0)faltas.push(mdEsc(mdUm(mdTexto(li,f)))
-        .replace(/^(\d{1,2})(?=\s)/,'<b>$1</b>'));
+      if(f>0){cards.push(mdCard(li,f,false));faltando++}
     });
     var h='<p class="mala-dom-tit">A roupa da mala</p>';
-    if(!faltas.length){
+    if(!cards.length){
       h+='<p class="mala-dom-ok">Nada de roupa para levar: o inventário fechou completo.</p>';
     }else{
-      h+='<ul class="mala-dom-li"><li>'+faltas.join('</li><li>')+'</li></ul>';
+      h+='<ul class="mala-dom-li">'+cards.join('')+'</ul>';
+      if(!faltando){
+        h+='<p class="mala-dom-ok">Mala fechada: tudo o que faltava já está dentro.</p>';
+      }else{
+        h+='<p class="mala-dom-av">Clique na peça ao pôr na mala: ela fica marcada e a '+
+          'linha dela volta a zero no inventário, pronta para a contagem da quinta que '+
+          'vem. Clique de novo para desfazer.</p>';
+      }
       /* sem nenhuma peca lancada, o que aparece e o jogo inteiro - o que e
          verdade, mas parece conta feita. Dizer isso evita ele sair de casa
          com a mala cheia achando que o painel calculou. */
@@ -3040,6 +3102,34 @@ window.REP=(function(){
     }
     cx.innerHTML=h;
   }
+
+  /* clique no card: guarda na mala, ou desfaz */
+  function mdAlterna(mk){
+    var li=document.querySelector('#ab-mala ul.tarefas.inv li[data-mk="'+mk+'"]');
+    if(!li)return;
+    var tot=mkTotal(li)||1, naMala=mdNaMala(li);
+    if(naMala>0){
+      /* desfaz: a peca sai da mala e o inventario volta para onde estava */
+      mkEstado[mdChaveMala(li)]={n:0,m:mkAgora(),s:false};
+      mkPoe(li,Math.max(0,tot-naMala));
+    }else{
+      var f=mdFalta(li);
+      if(f<=0)return;
+      mkEstado[mdChaveMala(li)]={n:f,m:mkAgora(),s:false};
+      mkPoe(li,0);          /* mkPoe salva, redesenha a mala e sobe para a nuvem */
+    }
+  }
+  document.addEventListener('click',function(e){
+    var c=e.target.closest('#mala-dom .mala-dom-li li[data-mk]');
+    if(c)mdAlterna(c.getAttribute('data-mk'));
+  });
+  document.addEventListener('keydown',function(e){
+    if(e.key!=='Enter'&&e.key!==' ')return;
+    var c=e.target.closest&&e.target.closest('#mala-dom .mala-dom-li li[data-mk]');
+    if(!c)return;
+    e.preventDefault();
+    mdAlterna(c.getAttribute('data-mk'));
+  });
 
   function mkRepintaTudo(){
     pans.forEach(function(sec){

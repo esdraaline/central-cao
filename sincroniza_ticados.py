@@ -181,9 +181,22 @@ def main():
         print("nuvem tem %d linha(s) no formato antigo (chave sem a aba), das "
               "rodadas anteriores ao conserto de 23/08/2026. Ninguem as le e "
               "nao atrapalham." % len(velhas))
-    if len(orfas) - len(velhas):
+    # Nem toda chave sem .md correspondente e orfa: o painel guarda mais duas
+    # familias nesta tabela, e nenhuma delas vira caixinha de arquivo.
+    #   tf/  itens de conferencia de dentro de uma tarefa (quem escreve o
+    #        TAREFAS.md e o sincroniza_tarefas.py, nao este script)
+    #   md/  quanto de cada peca ja foi para a mala de domingo (27/08/2026)
+    # Sem esta separacao o log dizia que elas eram "item que nenhum .md usa
+    # mais (texto editado)", que e falso e convida a apagar o que esta em uso.
+    outras = [c for c in orfas if c.startswith(("tf/", "md/"))]
+    if outras:
+        print("nuvem tem %d linha(s) do painel que nao viram caixinha de .md "
+              "(tf/ = item dentro de tarefa, md/ = mala de domingo). Em uso, "
+              "nao sao orfas." % len(outras))
+    restantes = len(orfas) - len(velhas) - len(outras)
+    if restantes:
         print("nuvem tem %d item(ns) que nenhum .md usa mais (texto editado). "
-              "Nao atrapalham, so ocupam linha." % (len(orfas) - len(velhas)))
+              "Nao atrapalham, so ocupam linha." % restantes)
 
     if subir:
         print("subir para a nuvem: %d item(ns)" % len(subir))

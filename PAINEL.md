@@ -442,6 +442,34 @@ de banho*, não *1 toalhas*; *1 par*, não *1 pares*), porque essa lista é lida
 nada foi contado ainda, ele mostra o jogo inteiro **com um aviso**: sem isso, o painel pareceria ter
 calculado uma mala que na verdade é só o alvo de todas as peças.
 
+**A ficha virou clique, e o clique fecha o ciclo (27/08/2026).** Clicar numa ficha é dizer "esta já
+está dentro da mala". Ela fica marcada, riscada, e **a linha dela no inventário de quinta volta a
+zero**, já pronta para a contagem da semana seguinte. Clicar de novo desfaz tudo, inclusive o
+inventário, que volta exatamente para onde estava: erro de dedo não pode custar a contagem inteira.
+
+Com isso a instrução antiga saiu do `MALA.md`. Ela mandava, no domingo, *"voltar à seção 1 e clicar
+no meio de cada linha"*, que marcava a peça como **completa** no armário. Fazia sentido antes de a
+mala existir escrita; agora seriam dois caminhos para a mesma coisa, apontando para lados opostos.
+
+**Onde isso fica guardado, e por que não numa tabela nova.** Guardar a peça **zera** a linha do
+inventário, então uma lista que só calculasse "alvo menos o que há no armário" mandaria a peça de
+volta para a mala no instante seguinte. Ela precisa de memória própria: a **quantidade** que foi
+para a mala, gravada na mesma tabela `cao_ticados`, com o prefixo `md/` na chave, do mesmo jeito que
+a aba Tarefas já usa `tf/` para os itens de conferência. De graça, isso sincroniza entre os
+aparelhos junto com o resto; uma tabela nova exigiria migração no banco para meia dúzia de números.
+
+Só a quantidade basta para desfazer: o inventário volta para *alvo menos o que foi*, que é onde
+estava antes do clique. Não há segundo número guardado.
+
+**Como a lista se renova sozinha na quinta seguinte.** Peça guardada **com o inventário já contando
+de novo** (`n > 0`) é resto da semana passada, e o registro dela é apagado na hora de desenhar. Ou
+seja: o primeiro clique no contador da quinta já limpa a mala do domingo anterior. Ele não precisa
+lembrar de zerar nada, e não existe botão de "começar semana nova" para ele esquecer de apertar.
+
+**A ficha guardada não some**, ao contrário de toda outra lista do painel, onde item pronto se
+esconde. Aqui sumir seria o mesmo que travar: ficha escondida não dá para clicar de novo, e o
+desfazer é justamente o que ele pediu ("posso errar no clique").
+
 ### A aba Mala vira o ciclo de três lugares (23/08/2026)
 
 O inventário já calculava a mala de domingo (seção acima), mas ele estava afogado. A aba tinha

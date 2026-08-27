@@ -38,9 +38,11 @@ a tela mostrar como **"faltam N"** é a mala de domingo, peça por peça.
 - **A carga da copa**, sempre a mesma: whey, creatina, energético zero, Pepsi Black, lanches, marmitas prontas, shampoo e porta-sabonete.
 - **A janta, que não é lanche**: a chegada é por volta das 22h, e o entorno aberto nessa hora é aposta.
 
-A conferência item por item é a tarefa de domingo, na aba Tarefas. **Ao chegar e guardar tudo,
-volte à seção 1 e clique no meio de cada linha de roupa**: é isso que zera a falta e faz a conta
-da quinta seguinte começar limpa.
+**Ao pôr cada peça na mala, clique na ficha dela**, no painel: ela fica marcada e a linha volta
+a zero no inventário, já pronta para a contagem da quinta que vem. Errou o clique, clique de novo
+que desfaz. Não é mais preciso voltar à seção 1 para zerar nada.
+
+A conferência item por item da carga da copa continua sendo a tarefa de domingo, na aba Tarefas.
 
 ## Como o ciclo funciona
 <!-- extra -->
@@ -61,6 +63,10 @@ sacola. Lembrar disso em casa, à noite, não funciona.
 
 **Peça que fecha o alvo some da lista sozinha**, para sobrar na tela só o que precisa de você.
 Peça que zerou aparece com a falta cheia, e é a que não pode ser esquecida.
+
+**Na mala de domingo é ao contrário**: a ficha que você guardou continua na tela, riscada, em vez
+de sumir. É de propósito. Ali o clique errado tem de poder ser desfeito na hora, e ficha que some
+não dá para clicar de novo.
 
 **Etiqueta com o nome em tudo que for para a geladeira.** São muitas pessoas dividindo duas
 geladeiras e dois frigobares, e marmita sem nome vira marmita de todo mundo.

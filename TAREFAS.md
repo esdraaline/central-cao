@@ -43,7 +43,7 @@
   - [ ] Camisetas de sair, se o inventário apontou falta
   - [ ] Camisetas de treino, na quantidade do inventário
   - [ ] Camisas e calça de passeio, na quantidade do inventário
-  - [ ] Gandola e calça do S-1, se o inventário apontou falta
+  - [ ] Paletó e calça do S-1, se o inventário apontou falta
   - [ ] Calça tectel, calça jeans e cinto social, se o inventário apontou falta
   - [ ] Pijamas lavados
   - [ ] Toalhas de banho e fronha limpa

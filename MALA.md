@@ -16,7 +16,7 @@ a tela mostrar como **"faltam N"** é a mala de domingo, peça por peça.
 - [ ] 6 camisetas de serviço
 - [ ] 2 camisas de passeio
 - [ ] 1 calça de passeio
-- [ ] 1 gandola do S-1
+- [ ] 1 paletó do S-1
 - [ ] 1 calça do S-1
 - [ ] 3 camisetas de sair
 - [ ] 4 camisetas de treino
@@ -88,7 +88,7 @@ volume no porta-malas. A creatina é o oposto, o pote já é pequeno.
 | Camiseta de serviço | 6 | **não tem folga**: uma por dia de aula, por baixo do P-1 e do B-1, mais reserva |
 | Camisa de passeio | 2 | **farda parada**: fica no armário e quase não sai. Não roda, o inventário só confirma que as duas estão lá |
 | Calça de passeio | 1 | idem. É a calça social cinza-bandeirante do P-1. A segunda calça não entra aqui: ela é do S-1 e é contada na linha dele |
-| S-1: gandola e calça | 1 de cada | **farda de visita**, parada no armário. O inventário só confirma que as duas peças estão lá. *[VERIFICAR: ROTINA.md descreve o S-1 com paletó e usa "gandola" para o B-1; falta acertar qual termo o painel adota]* |
+| S-1: paletó e calça | 1 de cada | **farda de visita**, parada no armário. O inventário só confirma que as duas peças estão lá. A composição do S-1 está no Art. 49, § 2º, e quem é dono dela é o [ROTINA.md](ROTINA.md) |
 | Camiseta de sair | 3 | **roupa civil**, para sair do CAES. Entrou no inventário chamada de "camisa de passeio" e foi corrigida em 27/08/2026 |
 | Cueca | 8 | uma por dia, com folga para imprevisto |
 | Camiseta de treino | 4 | **treino à paisana**, roupa civil, não é o T-1. Entrou no inventário em 27/08/2026 |
@@ -149,7 +149,7 @@ a insígnia peça por peça estão em [ROTINA.md](ROTINA.md), que é o dono dess
 | Cinto social | 1 | entra no inventário de quinta |
 | Boina cinza-bandeirante | 1 | cobertura do dia a dia. Uma de reposição está em [COMPRAS.md](COMPRAS.md) |
 | Jaqueta de passeio | 1 | agasalho do P-1, com as 3 estrelas de metal nas platinas |
-| Paletó, gravata e quepe do S-1 | 1 de cada | guardados, para visita |
+| Paletó, gravata e quepe do S-1 | 1 de cada | para visita. O paletó entra no inventário de quinta; gravata e quepe ficam guardados e não são contados |
 | Tarjeta administrativa de acrílico | 1 | imantada, roda entre camisa, jaqueta e paletó |
 
 **Falta a camisa social cinza-claro** para o S-1 fechar (Art. 49). É a única peça pendente e está

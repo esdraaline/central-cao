@@ -10,6 +10,7 @@ a tela mostrar como **"faltam N"** é a mala de domingo, peça por peça.
 
 - [ ] 8 cuecas
 - [ ] 5 pares de meia social preta
+- [ ] 5 pares de meia branca
 - [ ] 6 camisetas de serviço
 - [ ] 3 camisas de passeio
 - [ ] 2 pijamas
@@ -64,6 +65,7 @@ volume no porta-malas. A creatina é o oposto, o pote já é pequeno.
 | Peça | Alvo | Por quê |
 |---|---|---|
 | Meia social preta | 5 pares | **a mais crítica.** O P-1 pede meia social fina os quatro dias, e a meia grossa que fica no armário é de coturno, não substitui. Esquecer em casa não tem improviso |
+| Meia branca | 5 pares | do kit de Ed. Física. Passaram a ficar no armário e a contar no inventário (decisão de 27/08/2026); antes ficavam em casa |
 | Camiseta de serviço | 6 | **não tem folga**: uma por dia de aula, por baixo do P-1 e do B-1, mais reserva |
 | Camisa de passeio | 3 | é o jogo que existe (1 antiga + 2 da ConfecBell em 18/08). Em quatro dias, uma repete |
 | Cueca | 8 | uma por dia, com folga para imprevisto |
@@ -71,8 +73,7 @@ volume no porta-malas. A creatina é o oposto, o pote já é pequeno.
 | Toalha de banho | 2 | para revezar |
 | Fronha | 1 | a de casa fica com a roupa de cama |
 
-**Fora da conta**: os 2 pares de meia preta grossa ficam no armário e só servem com o B-1; os 4
-pares de meia branca ficam em casa junto com o kit de Ed. Física.
+**Fora da conta**: os 2 pares de meia preta grossa ficam no armário e só servem com o B-1.
 
 ## O que não entra no rodízio
 <!-- extra -->
@@ -90,7 +91,8 @@ não ser que queira lavar), o travesseiro e o cobertor, o **material de limpeza*
 
 - **O que muda a regra**: QTS que traga Ed. Física ou atividade externa para o pelotão A. Aí o
   conjunto sobe na viagem do domingo anterior, junto com o kit T-1 (camiseta branca, calção
-  azul-royal, agasalho de EF, tênis preto e as meias brancas).
+  azul-royal, agasalho de EF e tênis preto). As meias brancas já estão no armário e entram no
+  inventário de quinta.
 - **O risco que fica**: se o QTS marcar atividade externa de véspera, o B-1 não está lá. Nesse
   caso vai de P-1, avisa o chefe de turma e o conjunto sobe na viagem seguinte.
 - **Antes de a gandola subir, costure nela o 4º distintivo de OPM do CAES**, comprado em 17/08 e

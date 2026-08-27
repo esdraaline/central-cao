@@ -423,6 +423,25 @@ primeiro passo, antes da roupa suja; a de domingo perdeu os números fixos ("5 c
 na quantidade que o inventário de quinta apontou"). Sem isso, o painel teria duas fontes brigando
 para dizer quanta cueca vai na mala.
 
+**A mala de domingo passou a aparecer escrita (27/08/2026).** Até aqui ela existia só como leitura
+do "faltam N", linha por linha, na seção 1. Funcionava, mas obrigava a fazer a conta com o olho
+enquanto enchia a sacola. Agora a seção 3 mostra a lista pronta, em fichas: *3 cuecas*, *1 par de
+meia social preta*, *2 camisetas de serviço*.
+
+**Continua não sendo uma segunda lista.** Não há nada novo para manter, nem no arquivo nem no
+banco: o bloco é montado no navegador a cada clique no contador e a cada chegada da nuvem. Se o
+inventário fecha completo, ele diz *"nada de roupa para levar"* e pronto. É a mesma regra de sempre,
+só que dita em voz alta em vez de deduzida.
+
+**Como se liga no `.md`.** Dois comentários HTML, invisíveis em qualquer outro leitor de markdown:
+`<!-- inventario -->` marca a lista que o painel lê, `<!-- mala-domingo -->` marca onde a mala
+aparece. Nada de achar a lista "pela posição", que quebraria no dia em que alguém reordenasse a aba.
+
+**Dois cuidados que o bloco toma.** Quando falta uma peça só, o nome vai para o singular (*1 toalha
+de banho*, não *1 toalhas*; *1 par*, não *1 pares*), porque essa lista é lida de relance. E quando
+nada foi contado ainda, ele mostra o jogo inteiro **com um aviso**: sem isso, o painel pareceria ter
+calculado uma mala que na verdade é só o alvo de todas as peças.
+
 ### A aba Mala vira o ciclo de três lugares (23/08/2026)
 
 O inventário já calculava a mala de domingo (seção acima), mas ele estava afogado. A aba tinha

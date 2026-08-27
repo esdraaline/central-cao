@@ -223,6 +223,10 @@ def md_para_html(texto):
     # clique, em vez de virar arquivo separado que ninguem le.
     aberto = [False]          # ha um <details> esperando fechamento?
     ultimo_h2 = [None]        # indice, em `saida`, do ultimo <h2> emitido
+    # "<!-- inventario -->" marca a lista que o painel le para montar a mala de
+    # domingo; "<!-- mala-domingo -->" e o lugar onde essa mala aparece. Os dois
+    # sao comentarios HTML: em qualquer outro leitor de markdown, sao invisiveis.
+    marca_inv = [False]
 
     def fecha_extra():
         if aberto[0]:
@@ -245,6 +249,17 @@ def md_para_html(texto):
                                            '<summary data-b>%s</summary>' % m2.group(1))
                     aberto[0] = True
                     ultimo_h2[0] = None
+            i += 1
+            continue
+
+        if strip == "<!-- inventario -->":
+            marca_inv[0] = True
+            i += 1
+            continue
+
+        if strip == "<!-- mala-domingo -->":
+            fecha_lista()
+            saida.append('<div class="mala-dom" id="mala-dom"></div>')
             i += 1
             continue
 
@@ -367,6 +382,9 @@ def md_para_html(texto):
 
             if mk:
                 tag, classe = "ul", ' class="tarefas"'
+                if marca_inv[0] and not pilha:
+                    classe = ' class="tarefas inv"'
+                    marca_inv[0] = False
             else:
                 tag, classe = ("ol", "") if numerada else ("ul", "")
 
@@ -1038,6 +1056,21 @@ ul.tarefas li.parcial .mk-qtd .n{color:var(--al);font-weight:600}
 .oculto{display:none!important}
 .mk-topo .mk-ver{color:var(--vm);border-color:transparent}
 .mk-topo .mk-ver:hover{border-color:var(--vm)}
+
+/* ------- a mala de domingo -------
+   Nao e uma segunda lista para manter: e a leitura do inventario da secao 1,
+   mostrando o que FALTA em cada linha. Se o armario esta completo, ela some.  */
+.mala-dom{margin:0 0 16px}
+.mala-dom:empty{display:none}
+.mala-dom-tit{font-size:12px;font-weight:700;letter-spacing:.05em;
+  text-transform:uppercase;color:var(--tx3);margin:0 0 9px}
+.mala-dom-li{list-style:none;margin:0 0 9px;padding:0;display:flex;
+  flex-wrap:wrap;gap:7px}
+.mala-dom-li li{background:var(--card2);border:1px solid var(--bd);
+  border-radius:9px;padding:7px 12px;font-size:14px;font-weight:600;color:var(--tx)}
+.mala-dom-li li b{color:var(--vm);font-weight:800}
+.mala-dom-ok{font-size:14px;font-weight:600;color:var(--ok);margin:0}
+.mala-dom-av{font-size:12.5px;color:var(--tx2);margin:0}
 
 /* ============================ app de tarefas ============================ */
 .tf-topo{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:14px}
@@ -2791,6 +2824,7 @@ window.REP=(function(){
     mkPinta(li,n);mkSalva();
     var sec=li.closest('.aba');
     if(sec){mkConta(sec);mkArruma(sec);}
+    malaDom();
     if(window.TICADOS_SYNC)window.TICADOS_SYNC();
   }
   function mkConta(sec){
@@ -2910,7 +2944,7 @@ window.REP=(function(){
         mkEstado[mkChave(li)]={n:0,m:agora,s:false};
         mkPinta(li,0);
       });
-      mkSalva();mkConta(sec);mkArruma(sec);
+      mkSalva();mkConta(sec);mkArruma(sec);malaDom();
       if(window.TICADOS_SYNC)window.TICADOS_SYNC();
     };
     [].forEach.call(itens,function(li){
@@ -2926,6 +2960,7 @@ window.REP=(function(){
     });
     mkConta(sec);mkArruma(sec);
   });
+  malaDom();
 
   document.addEventListener('click',function(e){
     var bt=e.target.closest('.mk-qtd button');
@@ -2944,6 +2979,68 @@ window.REP=(function(){
   });
 
   /* usado pela sincronizacao para redesenhar tudo depois de baixar da nuvem */
+  /* ---------------- a mala de domingo, tirada do inventario ----------------
+     Nao existe segunda lista de quantidade neste painel, e esta nao inaugura
+     uma: e a leitura do inventario da secao 1, linha por linha, mostrando o
+     que falta. Recalcula a cada clique no contador e a cada chegada da nuvem,
+     e some quando o armario fecha completo.                                */
+  function mdFalta(li){
+    var tot=mkTotal(li)||1;
+    return Math.max(0,tot-Math.min(mkTenho(li),tot));
+  }
+  /* troca a quantidade escrita no item pela que falta: "5 pares de meia social
+     preta" com 2 no armario vira "3 pares de meia social preta". Espelha os
+     dois formatos que o gerador aceita, numero no inicio e "- N" no fim. */
+  function mdTexto(li,falta){
+    var t=(li.children[1]?li.children[1].textContent:'').trim();
+    if(/^\d{1,2}\s+\S/.test(t))return t.replace(/^\d{1,2}/,falta);
+    var f=t.match(/([—-]\s*)(\d{1,2})(\s*(?:conjuntos?|pares?|mudas?|unidades?|un\.?)?\s*)$/i);
+    if(f)return t.slice(0,f.index)+f[1]+falta+f[3];
+    return falta>1?(falta+' x '+t):t;
+  }
+  /* "2 toalhas de banho" com uma so faltando vira "1 toalha de banho", nao
+     "1 toalhas". So mexe na primeira palavra depois do numero, que e o nome da
+     peca; o resto da frase ("de banho", "social preta") fica como esta. As
+     terminacoes em -es so perdem as duas letras quando vem depois de r, l, n,
+     z ou s (pares -> par), senao "lanches" viraria "lanch".              */
+  function mdUm(txt){
+    return txt.replace(/^(1\s+)([A-Za-zÀ-ÿ]+)/,function(tudo,num,pal){
+      if(/[rlnzs]es$/i.test(pal))return num+pal.slice(0,-2);
+      if(/s$/i.test(pal))return num+pal.slice(0,-1);
+      return num+pal;
+    });
+  }
+  /* declaracao, nao expressao: malaDom() roda na montagem da pagina, antes
+     desta linha, e um "var mdEsc = function" ainda estaria indefinido ali. */
+  function mdEsc(s){return s.replace(/[&<>]/g,function(c){
+    return {'&':'&amp;','<':'&lt;','>':'&gt;'}[c]})}
+  function malaDom(){
+    var cx=document.getElementById('mala-dom');
+    if(!cx)return;
+    var inv=document.querySelector('#ab-mala ul.tarefas.inv');
+    if(!inv){cx.innerHTML='';return}
+    var faltas=[],contou=0;
+    [].forEach.call(inv.querySelectorAll('li[data-mk]'),function(li){
+      if(mkTenho(li)>0)contou++;
+      var f=mdFalta(li);
+      /* destaca a quantidade, que e o que ele le de relance ao encher a mala */
+      if(f>0)faltas.push(mdEsc(mdUm(mdTexto(li,f)))
+        .replace(/^(\d{1,2})(?=\s)/,'<b>$1</b>'));
+    });
+    var h='<p class="mala-dom-tit">A roupa da mala</p>';
+    if(!faltas.length){
+      h+='<p class="mala-dom-ok">Nada de roupa para levar: o inventário fechou completo.</p>';
+    }else{
+      h+='<ul class="mala-dom-li"><li>'+faltas.join('</li><li>')+'</li></ul>';
+      /* sem nenhuma peca lancada, o que aparece e o jogo inteiro - o que e
+         verdade, mas parece conta feita. Dizer isso evita ele sair de casa
+         com a mala cheia achando que o painel calculou. */
+      if(!contou)h+='<p class="mala-dom-av">Você ainda não lançou o inventário de '+
+        'quinta. Enquanto não contar, esta lista mostra o jogo inteiro.</p>';
+    }
+    cx.innerHTML=h;
+  }
+
   function mkRepintaTudo(){
     pans.forEach(function(sec){
       var itens=sec.querySelectorAll('ul.tarefas li[data-mk]');
@@ -2956,6 +3053,7 @@ window.REP=(function(){
        tarefas. Sem este aviso, o item marcado no celular so apareceria no PC
        depois de recarregar a pagina. */
     if(window.TAREFAS&&TAREFAS.redesenhar)TAREFAS.redesenhar();
+    malaDom();
   }
   /* estado da sincronizacao mostrado na barra de cada aba de lista.
      Quem chama e o bloco do Supabase; sem ele fica no texto inicial.       */

@@ -8,6 +8,8 @@
 Abra o armário e lance em cada linha **quantas peças LIMPAS ficaram lá**, no `−` e no `+`. O que
 a tela mostrar como **"faltam N"** é a mala de domingo, peça por peça.
 
+<!-- inventario -->
+
 - [ ] 8 cuecas
 - [ ] 5 pares de meia social preta
 - [ ] 5 pares de meia branca
@@ -29,7 +31,10 @@ a tela mostrar como **"faltam N"** é a mala de domingo, peça por peça.
 
 ## 3. Domingo — o que sobe
 
-- **A roupa**, na quantidade que a seção 1 apontou. Se diz que faltam 5 cuecas, são 5 cuecas.
+<!-- mala-domingo -->
+
+- **A roupa**: no painel, a lista acima sai sozinha do inventário da seção 1, já com a
+  quantidade que falta. Aqui no arquivo ela não aparece, porque a conta é do painel.
 - **A carga da copa**, sempre a mesma: whey, creatina, energético zero, Pepsi Black, lanches, marmitas prontas, shampoo e porta-sabonete.
 - **A janta, que não é lanche**: a chegada é por volta das 22h, e o entorno aberto nessa hora é aposta.
 

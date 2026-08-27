@@ -15,9 +15,9 @@ a tela mostrar como **"faltam N"** é a mala de domingo, peça por peça.
 - [ ] 5 pares de meia branca
 - [ ] 6 camisetas de serviço
 - [ ] 2 camisas de passeio
-- [ ] 1 calça de passeio
-- [ ] 1 paletó do S-1
-- [ ] 1 calça do S-1
+- [x] 1 calça de passeio
+- [x] 1 paletó do S-1
+- [x] 1 calça do S-1
 - [ ] 3 camisetas de sair
 - [ ] 4 camisetas de treino
 - [ ] 1 calça tectel

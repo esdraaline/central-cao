@@ -94,7 +94,7 @@ Agosto inteiro, dia a dia: [PRAZOS.md](PRAZOS.md).
   lavar, o que sobe no domingo. Consulta (alvos, farda, estoque do armário, detalhes de viagem)
   fica recolhida no fim da aba, a um clique. A doutrina de uniforme, com composição e insígnia por
   peça, é do [ROTINA.md](ROTINA.md): um assunto, um dono. Decidido em 23/08, junto com a correção
-  do alvo de camisa de passeio, que eram 4 no inventário e são 3 de verdade.
+  do alvo de camiseta de passeio, que eram 4 no inventário e são 3 de verdade.
 - **Passeio completo em atividade externa é o P-1**, não o S-1. O quepe segue sendo peça de cerimônia.
 - **EPI do curso é cinto, colete e bota**, sempre com o B-1.
 - **Anotação de aula não entra neste repositório**, que é público: este lado guarda logística (prazo,

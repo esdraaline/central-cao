@@ -12,7 +12,7 @@ combine o prazo de retirada já na ida, porque você volta para casa na quinta �
 
 - [ ] **1 camisa social cinza-claro** — manga longa, gola social, sem bolsos. É a última peça do S-1 (Art. 49): o resto já está guardado no CAES
 - [ ] **Boina cinza-bandeirante** com distintivo de cobertura — reposição, a que está em uso não corre risco. É a cobertura do dia a dia do curso, o quepe só em cerimônia
-- [ ] Nas 2 camisas de passeio novas: conferir se já vêm com **distintivo de atividade, insígnia de gola, Bandeira de São Paulo e Logomarca**. A que já tenho está completa; as novas provavelmente vão precisar
+- [ ] Nas 2 camisetas de passeio novas: conferir se já vêm com **distintivo de atividade, insígnia de gola, Bandeira de São Paulo e Logomarca**. A que já tenho está completa; as novas provavelmente vão precisar
 
 Depois que a camisa social chegar, dá para experimentar o social inteiro e ver o ajuste de
 caimento na própria loja.
@@ -28,7 +28,7 @@ caimento na própria loja.
 
 ## Já resolvido
 
-**ConfecBell, 18/08**: 2 camisas de passeio cinza-claro (fecham o jogo de 3), 2 camisetas de
+**ConfecBell, 18/08**: 2 camisetas de passeio cinza-claro (fecham o jogo de 3), 2 camisetas de
 serviço (fecham as 6), tarjeta operacional e Logomarca da PMESP aplicadas nas duas camisetas
 novas, 4 distintivos de OPM do CAES e a tarjeta administrativa de acrílico imantada
 (`CAP PM JOSEMAR`, retângulo preto 15 × 80 mm, letras brancas de 6 mm), que roda entre a camisa

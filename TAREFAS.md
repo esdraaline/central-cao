@@ -31,7 +31,7 @@
 > clique, tudo dentro da mesma tarefa, e a lista volta zerada na semana seguinte. No arquivo os
 > itens ficam sempre em aberto: aqui a lista é o molde, o tique é do painel.
 - [ ] Quinta de manhã, antes de descer: inventário do armário e roupa suja na mala @semanal [27/08/2026] #pessoal
-  - [ ] Contar o que ficou limpo: cuecas, meias sociais, meias brancas, camisetas de serviço, camisas de passeio, camisetas de treino, calça tectel, calça jeans e cinto social
+  - [ ] Contar o que ficou limpo: cuecas, meias sociais, meias brancas, camisetas de serviço, camisetas de passeio, camisetas de treino, calça tectel, calça jeans e cinto social
   - [ ] Lançar os números nos contadores da aba Mala (o "faltam N" vira a carga de domingo)
   - [ ] Toalha de banho e fronha usadas na mala
   - [ ] Roupa suja da semana na mala
@@ -40,7 +40,7 @@
   - [ ] Meias sociais pretas, na quantidade do inventário
   - [ ] Meias brancas, na quantidade do inventário
   - [ ] Camisetas de serviço, na quantidade do inventário
-  - [ ] Camisas de passeio, se o inventário apontou falta
+  - [ ] Camisetas de passeio, se o inventário apontou falta
   - [ ] Camisetas de treino, na quantidade do inventário
   - [ ] Calça tectel, calça jeans e cinto social, se o inventário apontou falta
   - [ ] Pijamas lavados
@@ -80,7 +80,7 @@
 - [x] Atualizar STATUS.md e PRAZOS.md com a situação real do curso: módulo não existe (são 31 disciplinas em paralelo, QTS semanal), disciplinas e pelotão A lançados nos dois arquivos, e entregas não saem do QTS, viraram pergunta para a Coordenação [22/08/2026] #curso
 - [x] Confirmar a grafia do nome do orientador pretendido: é Cel PM Eglis, com o g antes do l, como traz o QTS revisado de 20/08. A Central escrevia Elgis desde 17/08 e foi corrigida [21/08/2026] #dissertacao
 - [x] Conferir se a mesa SEI 302090130 recebeu o ofício: recebeu. A cobrança do CAES aos faltantes (19/08) não traz meu nome nem o 2º BPM/I [19/08/2026] #admin
-- [x] Comprar na ConfecBell: 2 camisas de passeio, 2 camisetas de serviço, tarjeta operacional, Logomarca, 4 distintivos de OPM e tarjeta administrativa de acrílico [18/08/2026] #pessoal
+- [x] Comprar na ConfecBell: 2 camisetas de passeio, 2 camisetas de serviço, tarjeta operacional, Logomarca, 4 distintivos de OPM e tarjeta administrativa de acrílico [18/08/2026] #pessoal
 - [x] Conferir whey, creatina e coqueteleira — os três já em casa [18/08/2026] #pessoal
 - [x] Pegar o QTS e lançar as disciplinas: sai dia a dia, 7 disciplinas até 18/08 [18/08/2026] #curso
 - [x] Perguntar ao pessoal do CAO-I/26 onde eles almoçam e jantam, e lançar em ENTORNO.md [18/08/2026] #pessoal
@@ -93,7 +93,7 @@
 - [x] Arrumar a mala seguindo a aba Mala, compacta (é carona), sem esquecer a boina reserva, o lençol de solteiro e a janta de domingo [15/08/2026] #pessoal
 - [x] Separar os documentos de mão: identidade funcional e o número do processo SEI [15/08/2026] #admin
 - [x] Comprar o cadeado do armário (o do CAES não tem chave) e etiqueta + caneta permanente para as marmitas [14/08/2026] #pessoal
-- [x] Engomar a camisa de passeio que já tenho: é a única garantida para segunda, porque as outras 2 só serão compradas à tarde [14/08/2026] #pessoal
+- [x] Engomar a camiseta de passeio que já tenho: é a única garantida para segunda, porque as outras 2 só serão compradas à tarde [14/08/2026] #pessoal
 - [x] Conferir se a conta do Banco do Brasil não é "Conta Salário" e se o nome não está no CADIN [14/08/2026] #admin
 - [x] Combinar com o amigo quanto espaço de bagagem eu tenho (o horário já está fechado: saída 15h) [13/08/2026] #pessoal
 - [x] Acionar a P/1 do 2º BPM/I para o Ofício de Apresentação (mesa SEI 302090130) e a liberação da Rotina 13 do SIPA (código 302090000) [13/08/2026] #admin

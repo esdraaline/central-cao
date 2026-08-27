@@ -15,8 +15,8 @@ a tela mostrar como **"faltam N"** é a mala de domingo, peça por peça.
 - [ ] 3 camisas de passeio
 - [ ] 4 camisetas de treino
 - [ ] 1 calça tectel
-- [ ] 1 calça jeans
-- [ ] 1 cinto social
+- [x] 1 calça jeans
+- [x] 1 cinto social
 - [ ] 2 pijamas
 - [ ] 2 toalhas de banho
 - [ ] 1 fronha limpa

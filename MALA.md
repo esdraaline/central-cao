@@ -69,12 +69,12 @@ volume no porta-malas. A creatina é o oposto, o pote já é pequeno.
 | Peça | Alvo | Por quê |
 |---|---|---|
 | Meia social preta | 5 pares | **a mais crítica.** O P-1 pede meia social fina os quatro dias, e a meia grossa que fica no armário é de coturno, não substitui. Esquecer em casa não tem improviso |
-| Meia branca | 5 pares | do kit de Ed. Física. Passaram a ficar no armário e a contar no inventário (decisão de 27/08/2026); antes ficavam em casa |
+| Meia branca | 5 pares | entraram no inventário em 27/08/2026 |
 | Camiseta de serviço | 6 | **não tem folga**: uma por dia de aula, por baixo do P-1 e do B-1, mais reserva |
 | Camisa de passeio | 3 | é o jogo que existe (1 antiga + 2 da ConfecBell em 18/08). Em quatro dias, uma repete |
 | Cueca | 8 | uma por dia, com folga para imprevisto |
-| Camiseta de treino | 4 | kit de Ed. Física. Passou para o armário e entrou no inventário (decisão de 27/08/2026) |
-| Calça tectel | 1 | idem. Peça única: aqui o inventário é conferência de presença, não rodízio |
+| Camiseta de treino | 4 | **treino à paisana**, roupa civil, não é o T-1. Entrou no inventário em 27/08/2026 |
+| Calça tectel | 1 | **treino à paisana**, roupa civil, não é agasalho de EF. Peça única: aqui o inventário é conferência de presença, não rodízio |
 | Calça jeans | 1 | roupa civil. Mesma lógica da tectel, uma peça só |
 | Cinto social | 1 | serve o P-1 e o S-1. Peça única, conferência de presença |
 | Pijama | 2 | para revezar |
@@ -99,8 +99,8 @@ não ser que queira lavar), o travesseiro e o cobertor, o **material de limpeza*
 
 - **O que muda a regra**: QTS que traga Ed. Física ou atividade externa para o pelotão A. Aí o
   conjunto sobe na viagem do domingo anterior, junto com o kit T-1 (camiseta branca, calção
-  azul-royal, agasalho de EF e tênis preto). **A camiseta de treino, a meia branca e a calça
-  tectel já estão no armário** e entram no inventário de quinta.
+  azul-royal, agasalho de EF, tênis preto e as meias brancas). **A roupa de treino do inventário
+  é à paisana e não substitui o T-1.**
 - **O risco que fica**: se o QTS marcar atividade externa de véspera, o B-1 não está lá. Nesse
   caso vai de P-1, avisa o chefe de turma e o conjunto sobe na viagem seguinte.
 - **Antes de a gandola subir, costure nela o 4º distintivo de OPM do CAES**, comprado em 17/08 e

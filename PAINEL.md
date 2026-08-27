@@ -376,6 +376,27 @@ aquilo só chega ao celular quando aquele PC for religado com o painel aberto.
 **E se não estiver logado, nada disso acontece:** a linha diz "Somente neste aparelho" e é
 clicável para entrar. Sem conta, o Exportar é o que garante que nada se perca.
 
+### A tarja vermelha de contagem presa (27/08/2026)
+
+A linha de estado do topo é discreta de propósito, e num aparelho novo ela é discreta demais.
+O caso concreto: o Josemar contou o armário no celular, dentro do CAES, e domingo ia arrumar a
+mala olhando o painel no notebook de casa, que nunca entrou na conta. O notebook mostraria a
+lista zerada, como se faltasse tudo, sem nada na tela dizendo por quê.
+
+Agora existe uma **tarja vermelha grande no topo de qualquer aba**, com botão **Entrar**, que
+abre o mesmo modal de conta.
+
+**Ela só acende quando as duas coisas são verdade ao mesmo tempo:** não há sessão neste
+navegador **e** existe marcação feita aqui que nunca subiu (`n > 0` e `s !== true` em
+`cao-ticados`). Aparelho novo com painel zerado não vê nada; aparelho já logado nunca vê. Ela
+se apaga sozinha assim que o login sobe as marcações.
+
+**Por que esta pode ser vermelha e a âmbar de 12/08 não podia** (acima, "O aviso de ainda não
+foi para o TAREFAS.md"): aquela anunciava uma fila que um robô já esvaziava, e se desmentia no
+parágrafo seguinte. Esta anuncia uma pendência real, que **só o Josemar resolve**, com um
+clique, e some no instante em que ele clica. Alarme que some quando resolvido é informação;
+alarme que fica é barulho.
+
 ### O inventário de quinta vira a mala de domingo (23/08/2026)
 
 A carga do domingo deixou de ser lista fixa. Ela é **calculada**, e quem calcula é o contador que

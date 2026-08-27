@@ -9,7 +9,7 @@
 <!-- o painel e um arquivo unico que muda a cada geracao; sem isto o navegador
      serve a versao antiga do cache e correcoes nao chegam ate o usuario -->
 <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
-<meta name="gerado-em" content="33985e8390ab1a24">
+<meta name="gerado-em" content="69e10ad9bef7fd39">
 <title>Central do CAO</title>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23c8102e'/%3E%3Ctext x='16' y='22' font-size='15' font-family='Arial' font-weight='bold' fill='white' text-anchor='middle'%3ECAO%3C/text%3E%3C/svg%3E">
 <style>
@@ -330,6 +330,32 @@ ul.tarefas li.parcial .mk-qtd .n{color:var(--al);font-weight:600}
 .tf-status.off .bola{background:var(--al)}
 .tf-status.erro .bola{background:var(--vm)}
 
+/* ------- aviso de contagem presa neste aparelho -------
+   So acende quando as DUAS coisas sao verdade ao mesmo tempo: nao ha sessao
+   neste navegador E existe marcacao feita aqui que nunca subiu para a nuvem.
+   Aparelho novo, com painel zerado, nao ve nada; aparelho ja logado tambem
+   nao. E o contrario da tarja amarela de 12/08 (ver PAINEL.md), que anunciava
+   uma pendencia que nao era de ninguem: esta e real e so o Josemar resolve,
+   clicando. Por isso pode ser vermelha e grande.                          */
+.sinc-al{display:none;width:100%;align-items:center;gap:12px;flex-wrap:wrap;
+  text-align:left;margin:0 0 16px;padding:13px 15px;border-radius:12px;
+  font:inherit;cursor:pointer;background:var(--vm);border:1px solid var(--vm);
+  color:#fff;box-shadow:0 2px 12px rgba(200,16,46,.3)}
+.sinc-al.on{display:flex}
+.sinc-al:hover{background:var(--vm-cl);border-color:var(--vm-cl)}
+.sinc-al-ic{flex:none;width:26px;height:26px;border-radius:50%;
+  background:rgba(255,255,255,.2);display:grid;place-items:center;
+  font-size:16px;font-weight:800;line-height:1}
+.sinc-al-tx{flex:1 1 200px;min-width:0}
+.sinc-al-tx b{display:block;font-size:14.5px;font-weight:700}
+.sinc-al-tx span{display:block;font-size:12.5px;opacity:.93;margin-top:2px}
+.sinc-al-bt{flex:none;border-radius:8px;padding:7px 15px;font-size:13px;
+  font-weight:700;background:#fff;color:var(--vm)}
+@media(max-width:560px){
+  .sinc-al{align-items:flex-start}
+  .sinc-al-bt{width:100%;text-align:center}
+}
+
 /* caixa de entrada */
 .tf-nova{background:var(--card);border:1px solid var(--bd);border-radius:13px;
   padding:14px 16px;box-shadow:var(--sh);margin-bottom:16px;transition:border-color .15s}
@@ -529,7 +555,13 @@ mark{background:rgba(232,161,58,.35);color:inherit;border-radius:3px;padding:0 2
     <nav role="tablist"><button data-aba="painel" role="tab" aria-selected="false"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/></svg>Painel<span class="pill pill-b" style="display:none"></span></button><button data-aba="prazos" role="tab" aria-selected="false"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4M16 3v4M3 11h18"/></svg>Prazos<span class="pill pill-b" style="display:none"></span></button><button data-aba="tarefas" role="tab" aria-selected="false"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Tarefas<span class="pill">32</span><span class="pill pill-b" style="display:none"></span></button><button data-aba="estudos" role="tab" aria-selected="false"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4.5A2.5 2.5 0 0 1 6.5 2H20v16H6.5A2.5 2.5 0 0 0 4 20.5z"/><path d="M4 20.5A2.5 2.5 0 0 1 6.5 18H20v4H6.5A2.5 2.5 0 0 1 4 19.5z"/><path d="M9 7h7"/></svg>Estudos<span class="pill pill-b" style="display:none"></span></button><button data-aba="grade" role="tab" aria-selected="false"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 9h18M3 14h18M9 4v17M15 4v17"/></svg>Grade<span class="pill pill-b" style="display:none"></span></button><button data-aba="curriculo" role="tab" aria-selected="false"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="17" rx="2"/><path d="M9 3h6v3H9z"/><path d="m8.5 13 2 2 4-4"/></svg>Currículo<span class="pill pill-b" style="display:none"></span></button><button data-aba="rotina" role="tab" aria-selected="false"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Rotina<span class="pill pill-b" style="display:none"></span></button><button data-aba="contatos" role="tab" aria-selected="false"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 20v-1a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v1"/><circle cx="9.5" cy="8" r="3.5"/><path d="M21 20v-1a4 4 0 0 0-3-3.8"/><path d="M16 4.2a3.5 3.5 0 0 1 0 6.8"/></svg>Contatos<span class="pill pill-b" style="display:none"></span></button><button data-aba="duvidas" role="tab" aria-selected="false"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.2 2.4c-.7.2-1.2.9-1.2 1.6v.5"/><path d="M12 17.5h.01"/></svg>Dúvidas<span class="pill pill-b" style="display:none"></span></button><button data-aba="anotacoes" role="tab" aria-selected="false"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3h9l5 5v13H5z"/><path d="M14 3v5h5"/><path d="M9 13h6M9 17h4"/></svg>Anotações<span class="pill pill-b" style="display:none"></span></button><button data-aba="compras" role="tab" aria-selected="false"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4h2l2.4 11.2a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.5L21 8H6"/><circle cx="10" cy="20" r="1.2"/><circle cx="18" cy="20" r="1.2"/></svg>Compras<span class="pill pill-b" style="display:none"></span></button><button data-aba="mala" role="tab" aria-selected="false"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="14" rx="2"/><path d="M9 7V4h6v3"/><path d="M3 12h18"/></svg>Mala<span class="pill pill-b" style="display:none"></span></button><button data-aba="viagens" role="tab" aria-selected="false"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4 3 6.5v14L9 18l6 2.5 6-2.5v-14L15 6.5 9 4z"/><path d="M9 4v14M15 6.5v14"/></svg>Viagens<span class="pill pill-b" style="display:none"></span></button><button data-aba="entorno" role="tab" aria-selected="false"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2v7a2 2 0 0 0 4 0V2"/><path d="M8 9v13"/><path d="M17 2c-1.7 1.4-2.5 3.3-2.5 5.5 0 1.9.8 3 2.5 3.5v11"/></svg>Entorno<span class="pill pill-b" style="display:none"></span></button></nav>
   </div>
 </header>
-<main><section class="aba" id="ab-painel" role="tabpanel" data-mod="2026-08-25T21:19:18.000Z"><section class="guia"><div class="guia-topo"><div><p class="guia-ola" id="guia-ola">Central do CAO</p><h2 class="guia-dia" id="guia-dia">Carregando o dia...</h2><p class="guia-fase" id="guia-fase"></p></div><div class="guia-conta" id="guia-conta"></div></div><div class="guia-aula" id="guia-aula"></div><div class="guia-corpo" id="guia-corpo"></div></section><div class="grade"><div class="kpi dest"><div class="rot" id="kpi-curso-rot">Curso</div><div class="val" id="kpi-curso-val">...</div><div class="sub" id="kpi-curso-sub">CAO-II/26</div><div class="barra"><i id="kpi-curso-barra" style="width:0%"></i></div></div><div class="kpi"><div class="rot">Semana do curso</div><div class="val" id="kpi-sem-val">...</div><div class="sub" id="kpi-sem-sub">de 53</div><div class="barra"><i id="kpi-sem-barra" style="width:0%"></i></div></div><div class="kpi"><div class="rot">Tarefas pendentes</div><div class="val" id="kpi-tar-val">32</div><div class="sub" id="kpi-tar-sub">35 já concluídas</div></div><div class="kpi lista-kpi" data-aba="ab-compras" data-rot="Compras"><div class="rot">Compras</div><div class="val">...</div><div class="sub">antes de viajar</div><div class="barra"><i style="width:0%"></i></div></div><div class="kpi lista-kpi" data-aba="ab-mala" data-rot="Mala" data-sub-falta="peças na mala de domingo" data-sub-ok="armário completo"><div class="rot">Mala</div><div class="val">...</div><div class="sub">peças na mala de domingo</div><div class="barra"><i style="width:0%"></i></div></div></div><div class="card"><blockquote data-b>Aba de abertura do painel: onde estou no curso, o que tem esta semana e o que está pendurado. Atualizado em: 25/08/2026</blockquote>
+<main>
+  <button class="sinc-al" id="sinc-al" type="button"
+          title="Entrar na conta para sincronizar entre aparelhos">
+    <span class="sinc-al-ic">!</span>
+    <span class="sinc-al-tx"><b>Esta contagem só existe neste aparelho</b><span id="sinc-al-sub"></span></span>
+    <span class="sinc-al-bt">Entrar</span></button>
+<section class="aba" id="ab-painel" role="tabpanel" data-mod="2026-08-25T21:19:18.000Z"><section class="guia"><div class="guia-topo"><div><p class="guia-ola" id="guia-ola">Central do CAO</p><h2 class="guia-dia" id="guia-dia">Carregando o dia...</h2><p class="guia-fase" id="guia-fase"></p></div><div class="guia-conta" id="guia-conta"></div></div><div class="guia-aula" id="guia-aula"></div><div class="guia-corpo" id="guia-corpo"></div></section><div class="grade"><div class="kpi dest"><div class="rot" id="kpi-curso-rot">Curso</div><div class="val" id="kpi-curso-val">...</div><div class="sub" id="kpi-curso-sub">CAO-II/26</div><div class="barra"><i id="kpi-curso-barra" style="width:0%"></i></div></div><div class="kpi"><div class="rot">Semana do curso</div><div class="val" id="kpi-sem-val">...</div><div class="sub" id="kpi-sem-sub">de 53</div><div class="barra"><i id="kpi-sem-barra" style="width:0%"></i></div></div><div class="kpi"><div class="rot">Tarefas pendentes</div><div class="val" id="kpi-tar-val">32</div><div class="sub" id="kpi-tar-sub">35 já concluídas</div></div><div class="kpi lista-kpi" data-aba="ab-compras" data-rot="Compras"><div class="rot">Compras</div><div class="val">...</div><div class="sub">antes de viajar</div><div class="barra"><i style="width:0%"></i></div></div><div class="kpi lista-kpi" data-aba="ab-mala" data-rot="Mala" data-sub-falta="peças na mala de domingo" data-sub-ok="armário completo"><div class="rot">Mala</div><div class="val">...</div><div class="sub">peças na mala de domingo</div><div class="barra"><i style="width:0%"></i></div></div></div><div class="card"><blockquote data-b>Aba de abertura do painel: onde estou no curso, o que tem esta semana e o que está pendurado. Atualizado em: 25/08/2026</blockquote>
 <h2 data-b>O domingo de viagem</h2>
 <p data-b>Todo domingo sobem a roupa lavada e a carga da copa (whey, creatina, energético zero, Pepsi Black, lanches e marmitas). <strong>A quantidade de roupa não é fixa: sai do inventário do armário, feito na quinta de manhã</strong> antes de descer. O que a aba <a href="#mala" class="lnk-aba">Mala</a> mostrar como "faltam N" é a carga do domingo. <strong>O B-1 e o EPI ficam em casa</strong> enquanto o QTS não trouxer Ed. Física nem atividade externa para o pelotão A (decisão de 20/08). A conferência item por item é a tarefa de domingo em <a href="#tarefas" class="lnk-aba">TAREFAS.md</a>, que já vem com a lista dentro.</p>
 <p data-b>Destino: CAES "Cel Nelson Freire Terra", <strong>Praça Júlio Prestes, 5005, Campos Elíseos, São Paulo/SP, CEP 01218-020</strong>. Alojamento no próprio prédio.</p>
@@ -7945,6 +7977,34 @@ window.REP=(function(){
     el('#tf-status-txt').textContent=txt;
     s.title=tit||'';
   }
+  /* ------- aviso de contagem presa neste aparelho -------
+     Conta as marcacoes que tem peca lancada e ainda nao subiram. Le o
+     localStorage direto, e nao window.TICADOS, para nao depender da ordem em
+     que os dois modulos carregam. Aceita tambem o formato antigo (numero
+     solto), que ainda pode estar guardado num aparelho que nao abriu o painel
+     desde 21/08. */
+  function presasAqui(){
+    var m={};
+    try{m=JSON.parse(localStorage.getItem('cao-ticados')||'{}')||{}}catch(e){return 0}
+    var n=0;
+    Object.keys(m).forEach(function(k){
+      var v=m[k];
+      if(typeof v==='number'){if(v>0)n++;return}
+      if(v&&v.n>0&&v.s!==true)n++;
+    });
+    return n;
+  }
+  function pintaAlerta(){
+    var b=el('#sinc-al');
+    if(!b)return;
+    var n=(configurado()&&!ativo())?presasAqui():0;
+    b.classList.toggle('on',n>0);
+    var s=el('#sinc-al-sub');
+    if(n>0&&s)s.textContent=(n===1?'1 marcação vai ficar':n+' marcações vão ficar')+
+      ' só aqui. No seu outro aparelho, a lista de domingo aparece zerada.'+
+      ' Toque para entrar, e daí em diante sincroniza sozinho.';
+  }
+
   function pintaConta(){
     /* o mesmo estado vai para a aba Tarefas e para a barra das abas de lista */
     if(ativo()){
@@ -7962,6 +8022,7 @@ window.REP=(function(){
     }
     var rot=el('#tf-conta-rot');
     if(rot)rot.textContent=ativo()?(ses.email||'Conta').split('@')[0]:'Entrar';
+    pintaAlerta();
   }
 
   /* ------------------------------- rede ---------------------------------- */
@@ -8119,6 +8180,7 @@ window.REP=(function(){
   window.TICADOS_SYNC=function(){
     if(!ativo()){
       tic('','Somente neste aparelho','Clique aqui para entrar e sincronizar');
+      pintaAlerta();
       return;
     }
     tic('','Salvando...');
@@ -8233,7 +8295,7 @@ window.REP=(function(){
     if(!logado&&configurado())setTimeout(function(){el('#conta-email').focus()},80);
   }
   document.addEventListener('click',function(e){
-    if(e.target.closest('#topo-conta,#tf-status,.mk-sinc'))abrirConta();
+    if(e.target.closest('#topo-conta,#tf-status,.mk-sinc,#sinc-al'))abrirConta();
   });
   var btEntrar=el('#conta-entrar');
   if(btEntrar){

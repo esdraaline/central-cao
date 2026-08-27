@@ -1048,6 +1048,32 @@ ul.tarefas li.parcial .mk-qtd .n{color:var(--al);font-weight:600}
 .tf-status.off .bola{background:var(--al)}
 .tf-status.erro .bola{background:var(--vm)}
 
+/* ------- aviso de contagem presa neste aparelho -------
+   So acende quando as DUAS coisas sao verdade ao mesmo tempo: nao ha sessao
+   neste navegador E existe marcacao feita aqui que nunca subiu para a nuvem.
+   Aparelho novo, com painel zerado, nao ve nada; aparelho ja logado tambem
+   nao. E o contrario da tarja amarela de 12/08 (ver PAINEL.md), que anunciava
+   uma pendencia que nao era de ninguem: esta e real e so o Josemar resolve,
+   clicando. Por isso pode ser vermelha e grande.                          */
+.sinc-al{display:none;width:100%;align-items:center;gap:12px;flex-wrap:wrap;
+  text-align:left;margin:0 0 16px;padding:13px 15px;border-radius:12px;
+  font:inherit;cursor:pointer;background:var(--vm);border:1px solid var(--vm);
+  color:#fff;box-shadow:0 2px 12px rgba(200,16,46,.3)}
+.sinc-al.on{display:flex}
+.sinc-al:hover{background:var(--vm-cl);border-color:var(--vm-cl)}
+.sinc-al-ic{flex:none;width:26px;height:26px;border-radius:50%;
+  background:rgba(255,255,255,.2);display:grid;place-items:center;
+  font-size:16px;font-weight:800;line-height:1}
+.sinc-al-tx{flex:1 1 200px;min-width:0}
+.sinc-al-tx b{display:block;font-size:14.5px;font-weight:700}
+.sinc-al-tx span{display:block;font-size:12.5px;opacity:.93;margin-top:2px}
+.sinc-al-bt{flex:none;border-radius:8px;padding:7px 15px;font-size:13px;
+  font-weight:700;background:#fff;color:var(--vm)}
+@media(max-width:560px){
+  .sinc-al{align-items:flex-start}
+  .sinc-al-bt{width:100%;text-align:center}
+}
+
 /* caixa de entrada */
 .tf-nova{background:var(--card);border:1px solid var(--bd);border-radius:13px;
   padding:14px 16px;box-shadow:var(--sh);margin-bottom:16px;transition:border-color .15s}
@@ -2188,6 +2214,34 @@ JS_SUPABASE = r"""
     el('#tf-status-txt').textContent=txt;
     s.title=tit||'';
   }
+  /* ------- aviso de contagem presa neste aparelho -------
+     Conta as marcacoes que tem peca lancada e ainda nao subiram. Le o
+     localStorage direto, e nao window.TICADOS, para nao depender da ordem em
+     que os dois modulos carregam. Aceita tambem o formato antigo (numero
+     solto), que ainda pode estar guardado num aparelho que nao abriu o painel
+     desde 21/08. */
+  function presasAqui(){
+    var m={};
+    try{m=JSON.parse(localStorage.getItem('cao-ticados')||'{}')||{}}catch(e){return 0}
+    var n=0;
+    Object.keys(m).forEach(function(k){
+      var v=m[k];
+      if(typeof v==='number'){if(v>0)n++;return}
+      if(v&&v.n>0&&v.s!==true)n++;
+    });
+    return n;
+  }
+  function pintaAlerta(){
+    var b=el('#sinc-al');
+    if(!b)return;
+    var n=(configurado()&&!ativo())?presasAqui():0;
+    b.classList.toggle('on',n>0);
+    var s=el('#sinc-al-sub');
+    if(n>0&&s)s.textContent=(n===1?'1 marcação vai ficar':n+' marcações vão ficar')+
+      ' só aqui. No seu outro aparelho, a lista de domingo aparece zerada.'+
+      ' Toque para entrar, e daí em diante sincroniza sozinho.';
+  }
+
   function pintaConta(){
     /* o mesmo estado vai para a aba Tarefas e para a barra das abas de lista */
     if(ativo()){
@@ -2205,6 +2259,7 @@ JS_SUPABASE = r"""
     }
     var rot=el('#tf-conta-rot');
     if(rot)rot.textContent=ativo()?(ses.email||'Conta').split('@')[0]:'Entrar';
+    pintaAlerta();
   }
 
   /* ------------------------------- rede ---------------------------------- */
@@ -2362,6 +2417,7 @@ JS_SUPABASE = r"""
   window.TICADOS_SYNC=function(){
     if(!ativo()){
       tic('','Somente neste aparelho','Clique aqui para entrar e sincronizar');
+      pintaAlerta();
       return;
     }
     tic('','Salvando...');
@@ -2476,7 +2532,7 @@ JS_SUPABASE = r"""
     if(!logado&&configurado())setTimeout(function(){el('#conta-email').focus()},80);
   }
   document.addEventListener('click',function(e){
-    if(e.target.closest('#topo-conta,#tf-status,.mk-sinc'))abrirConta();
+    if(e.target.closest('#topo-conta,#tf-status,.mk-sinc,#sinc-al'))abrirConta();
   });
   var btEntrar=el('#conta-entrar');
   if(btEntrar){
@@ -3718,7 +3774,13 @@ def build():
     <nav role="tablist">%(nav)s</nav>
   </div>
 </header>
-<main>%(paineis)s
+<main>
+  <button class="sinc-al" id="sinc-al" type="button"
+          title="Entrar na conta para sincronizar entre aparelhos">
+    <span class="sinc-al-ic">!</span>
+    <span class="sinc-al-tx"><b>Esta contagem só existe neste aparelho</b><span id="sinc-al-sub"></span></span>
+    <span class="sinc-al-bt">Entrar</span></button>
+%(paineis)s
   <p class="rodape">Gerado a partir dos arquivos <code>.md</code>. Para atualizar: edite o .md e rode <code>python gerar_painel.py</code>.</p>
 </main>
 %(modalconta)s

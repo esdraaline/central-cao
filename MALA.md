@@ -14,7 +14,7 @@ a tela mostrar como **"faltam N"** é a mala de domingo, peça por peça.
 - [ ] 5 pares de meia social preta
 - [ ] 5 pares de meia branca
 - [ ] 6 camisetas de serviço
-- [ ] 2 camisas de passeio
+- [x] 2 camisas de passeio
 - [x] 1 calça de passeio
 - [x] 1 paletó do S-1
 - [x] 1 calça do S-1
@@ -29,9 +29,9 @@ a tela mostrar como **"faltam N"** é a mala de domingo, peça por peça.
 
 ## 2. Quinta, antes de pegar a estrada — o que desce para lavar
 
-- [ ] Toalha de banho usada
-- [ ] Fronha usada
-- [ ] Roupa suja da semana
+- [x] Toalha de banho usada
+- [x] Fronha usada
+- [x] Roupa suja da semana
 
 ## 3. Domingo — o que sobe
 

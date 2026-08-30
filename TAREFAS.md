@@ -21,7 +21,7 @@
 ## Pendentes
 
 ### Fardamento e pendências de secretaria
-- [ ] Comprar a camisa social cinza-claro do S-1 e a boina de reposição, que faltaram na ida à ConfecBell [25/08/2026] #pessoal
+- [ ] Comprar a camisa social cinza-claro do S-1 e a boina de reposição, que faltaram na ida à ConfecBell [31/08/2026] #pessoal
 
 ### Rodízio da mala (toda semana, ver MALA.md)
 > As duas se repetem sozinhas: ticadas, não vão para Concluídas, voltam com a data da semana seguinte.
@@ -30,11 +30,6 @@
 > a lista de domingo não traz número: a quantidade vem do inventário. No painel cada item é um
 > clique, tudo dentro da mesma tarefa, e a lista volta zerada na semana seguinte. No arquivo os
 > itens ficam sempre em aberto: aqui a lista é o molde, o tique é do painel.
-- [ ] Quinta de manhã, antes de descer: inventário do armário e roupa suja na mala @semanal [27/08/2026] #pessoal
-  - [ ] Contar o que ficou limpo: cuecas, meias sociais, meias brancas, camisetas de serviço, camisetas de sair, camisetas de treino, calça tectel, calça jeans, cinto social, camisa e calça de passeio e o S-1
-  - [ ] Lançar os números nos contadores da aba Mala (o "faltam N" vira a carga de domingo)
-  - [ ] Toalha de banho e fronha usadas na mala
-  - [ ] Roupa suja da semana na mala
 - [ ] Domingo, arrumar a mala da semana antes de viajar. B-1 e EPI ficam em casa (decisão de 20/08) @semanal [30/08/2026] #pessoal
   - [ ] Cuecas, na quantidade que o inventário de quinta apontou
   - [ ] Meias sociais pretas, na quantidade do inventário
@@ -55,20 +50,25 @@
   - [ ] marmitas prontas
   - [ ] shampoo
   - [ ] porta-sabonete
+- [ ] Quinta de manhã, antes de descer: inventário do armário e roupa suja na mala @semanal [03/09/2026] #pessoal
+  - [ ] Contar o que ficou limpo: cuecas, meias sociais, meias brancas, camisetas de serviço, camisetas de sair, camisetas de treino, calça tectel, calça jeans, cinto social, camisa e calça de passeio e o S-1
+  - [ ] Lançar os números nos contadores da aba Mala (o "faltam N" vira a carga de domingo)
+  - [ ] Toalha de banho e fronha usadas na mala
+  - [ ] Roupa suja da semana na mala
 
 ### Orientador da dissertação — MISSÃO URGENTE
-- [ ] Perguntar ao Cap Gobbo as REGRAS da orientação: precisa ser instrutor do curso? Quantos orientandos cada um aceita? Há prazo? O pedido é formal? Cabe coorientador? E se o Cel/Maj Carlos Henrique Lourenço Rovina orienta no programa (não é instrutor da turma) [26/08/2026] #dissertacao
-- [ ] Sondar o Cel Barreto na aula de Policiamento Comunitário, bloco 4. A abordagem está pronta no Drive, em 02_DISSERTACAO/00_orientacao/2026-08-26_abordagem-Cel-Barreto.md: o gancho é a PEC 514/1997, que ele deu em aula [26/08/2026] #dissertacao
+- [ ] Perguntar ao Cap Gobbo as REGRAS da orientação: precisa ser instrutor do curso? Quantos orientandos cada um aceita? Há prazo? O pedido é formal? Cabe coorientador? E se o Cel/Maj Carlos Henrique Lourenço Rovina orienta no programa (não é instrutor da turma) [31/08/2026] #dissertacao
+- [ ] Sondar o Cel Barreto na aula de Policiamento Comunitário, bloco 4. A abordagem está pronta no Drive, em 02_DISSERTACAO/00_orientacao/2026-08-26_abordagem-Cel-Barreto.md: o gancho é a PEC 514/1997, que ele deu em aula [31/08/2026] #dissertacao
   - [ ] Levar o PP aprovado impresso
   - [ ] Fazer a pergunta da PEC 514, sem pedir orientação de saída
   - [ ] Registrar o resultado no mesmo arquivo, no mesmo dia
 
 ### Segunda semana (viagem em 23/08)
-- [ ] Perguntar na Coordenação (Seç Avaliação, Cap Diego) quais disciplinas têm prova e quais têm trabalho, e se existe plano de disciplina com carga horária. É o que falta para o PRAZOS listar entrega de disciplina, porque o QTS não traz [25/08/2026] #curso
+- [ ] Perguntar na Coordenação (Seç Avaliação, Cap Diego) quais disciplinas têm prova e quais têm trabalho, e se existe plano de disciplina com carga horária. É o que falta para o PRAZOS listar entrega de disciplina, porque o QTS não traz [31/08/2026] #curso
 
 ### Univesp — prova de 22/09 em conflito com o curso (pedido já protocolado)
 > Pedido enviado ao SAE em 19/08/2026, 20h02, com a Ata de Convocação anexada. Detalhes completos em `C:\projetos\mentor-univesp\STATUS.md`.
-- [ ] Ver no WhatsApp da Univesp (11 4200-2982) se veio resposta ao pedido de prova em polo da capital [25/08/2026] #admin
+- [ ] Ver no WhatsApp da Univesp (11 4200-2982) se veio resposta ao pedido de prova em polo da capital [31/08/2026] #admin
 - [ ] Vencimento dos 10 dias úteis do SAE: sem resposta, cobrar pelo 0800 051 3333 ou WhatsApp, citando o assunto do e-mail. A prova é 22/09 [03/09/2026] #admin
 
 ## Concluídas

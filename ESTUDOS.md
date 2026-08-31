@@ -108,7 +108,7 @@ como "ano que vem".
 | Onde | O que vive lá |
 |---|---|
 | **Este repositório** (os `.md` e o painel) | Logística: prazos, tarefas, rotina, contatos, uniforme |
-| **Google Drive**, `10_JOSEMAR/02_TRABALHO/08_CAO_2026/` | Conteúdo: slides, minhas anotações, trabalhos, dissertação |
+| **Google Drive**, `20_JOSEMAR_PM/08_CAO_2026/` | Conteúdo: slides, minhas anotações, trabalhos, dissertação |
 
 Na dúvida: **isso é dado ou é conteúdo?** Dado vem para cá, conteúdo vai para o Drive.
 Conteúdo de aula nunca entra no repositório, que é público.
@@ -116,7 +116,7 @@ Conteúdo de aula nunca entra no repositório, que é público.
 ### Estrutura no Drive
 
 ```
-10_JOSEMAR/02_TRABALHO/08_CAO_2026/
+20_JOSEMAR_PM/08_CAO_2026/
 ├── 00_CURSO/              edital, normas, calendário
 │   └── QTS/               o quadro de trabalho de cada semana, em PDF
 ├── 01_DISCIPLINAS/        as 31 disciplinas, D01 a D31 (ver aba Grade)

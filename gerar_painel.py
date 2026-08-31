@@ -65,6 +65,7 @@ ABAS = [
     ("MALA.md",      "mala",      "Mala",       "mala"),
     ("VIAGENS.md",   "viagens",   "Viagens",    "map"),
     ("ENTORNO.md",   "entorno",   "Entorno",    "garfo"),
+    ("PASSEIOS.md",  "passeios",  "Passeios",   "pin"),
 ]
 
 MD_PARA_ABA = {arq: aba_id for arq, aba_id, _, _ in ABAS}
@@ -100,6 +101,7 @@ ICONES = {
     "lista":    '<path d="m3 6 1.5 1.5L7 5"/><path d="m3 12 1.5 1.5L7 11"/>'
                 '<path d="m3 18 1.5 1.5L7 17"/><path d="M11 6h10M11 12h10M11 18h10"/>',
     "repete":   '<path d="m17 2 3.5 3.5L17 9"/><path d="M3.5 12v-1.5a4 4 0 0 1 4-4h13"/><path d="M7 22l-3.5-3.5L7 15"/><path d="M20.5 12v1.5a4 4 0 0 1-4 4h-13"/>',
+    "pin":      '<path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/>',
 }
 
 # Categorias das tarefas: (chave, rotulo, cor)

@@ -212,6 +212,15 @@ disciplina ainda não entrou para mim.
 Além das 31, o QTS tem uma linha **CAES**, sem matéria e sem docente. É o espaço reservado
 para atividade da casa (formatura, palestra, solenidade). Não é disciplina e não tem pasta.
 
+## Docentes — nome completo e lotação
+
+> Só o que fica de pé em sala, quando o docente se apresenta. Cresce aula a aula; disciplina
+> sem linha aqui é porque ainda não anotei.
+
+| Disciplina | Docente (QTS) | Nome completo | Lotação | WhatsApp |
+|---|---|---|---|---|
+| D05 Fundamentos da Metodologia Científica | Cap PM O'Brien | Cap PM O'Brien Pineda Teixeira | DP — Seção de Pesquisa e Estudo de Pessoal | (11) 98259-1435 |
+
 ## Quem dá aula em mais de uma disciplina
 
 Sai dos nomes com pontinho. São os oficiais mais presentes no curso, e os que dá para procurar

@@ -18,7 +18,7 @@ Nota de aplicativo não conta.
 |---|---|---|
 | **Almoço, 1ª opção** | **Marmita da Chef Marianne**, entregue no CAES · **R$ 20,50** · pedir até **10h30**, zap (11) 95393-7489 | **zero** |
 | **Almoço, 2ª opção** | Terraço Aurora — R. Vitória, 365, 1º andar · R$ 28,90 | 616 m · 8 min |
-| **Almoço, 3ª opção / jantar, 1ª** | **Boteco Flôr da Duque** — Av. Duque de Caxias, 892 | **241 m · 3 min** |
+| **Almoço, 3ª opção / jantar, 1ª** | **Boteco Flôr da Duque** — Av. Duque de Caxias, 892 · **06h às 23h30, todo dia** · delivery sem taxa, zap (11) 98415-4067 | **241 m · 3 min** |
 | **Mercado da sua avenida** | **Duque Supermercados** — Av. Duque de Caxias, 812 · **06h às 22h** | **302 m · 3 min** |
 | **Mercado grande** | Dia — Al. Barão de Limeira, 513 · Extra — Av. Rio Branco, 452 | ~650 m · 8 min |
 | **Academia** | **Gaviões 24h** — Av. Rio Branco, 422 · **24 horas** · entra pelo **Wellhub** | 730 m · 9 min |
@@ -159,11 +159,11 @@ não consta em lugar nenhum.*
 
 ## Café
 
-**Boteco Flôr da Duque** — Av. Duque de Caxias, 892 — **abre 06h** (na segunda; ver o verbete
+**Boteco Flôr da Duque** — Av. Duque de Caxias, 892 — **abre 06h, todo dia** (ver o verbete
 completo em "Jantar de terça e quarta", que é o dono deste assunto)
 Era o que este guia chamava de "Padaria Flor da Duque", indicação de colega do CAO-I. **É bar,
-não padaria**, e o nome leva acento: **Flôr da Duque**. Abrindo às 06h, resolve o café antes
-da formatura sem sair da avenida.
+não padaria**, e o nome leva acento: **Flôr da Duque**. Abrindo às 06h todo dia, resolve o
+café antes da formatura sem sair da avenida.
 
 **Corada** — Al. Ribeiro da Silva, 932, Campos Elíseos — **[CANDIDATO]**
 Mesas na calçada, lanches e cafés. Citam o pão de queijo recheado com chutney de cenoura com
@@ -193,14 +193,17 @@ S S Self Service, que era o recordista com 265 m. Você desce a Duque e chegou.
 colega do CAO-I. **Não é padaria, é bar**, e o nome tem acento: **Flôr**, como o Google
 registra. Os dois verbetes viraram este aqui.
 
-**Horário: segunda das 06h às 23h**, confirmado na ficha do Google em 24/08/2026.
-*[VERIFICAR: o horário de terça e quarta, que é justamente o que interessa para o jantar. O
-Google só mostra o dia corrente sem login, e não existe outra fonte na internet. Uma ligação
-no (11) 3331-2820 resolve.]*
+**Cardápio: lanches (hambúrguer) e beirutes.** Fonte: panfleto do próprio Boteco, fotografado
+por Josemar em 31/08/2026.
 
-*[VERIFICAR: preço. Não existe nada publicado, em fonte nenhuma: sem cardápio, sem iFood, sem
-Rappi, e o Google não atribui nem a faixa de R$ ao lugar. Quando você for, anota o que pediu e
-quanto pagou que eu ponho aqui e ele vira [TESTADO].]*
+**Horário: domingo a domingo, das 06h00 às 23h30.** Resolve o [VERIFICAR] de terça e quarta
+que este guia carregava desde 24/08: não é só segunda, é todo dia. Fonte: mesmo panfleto.
+
+**Delivery, sem taxa de entrega:** WhatsApp **(11) 98415-4067** ou telefone **(11) 3331-2820**
+(o mesmo da ficha do Google). Fonte: panfleto, 31/08/2026.
+
+*[VERIFICAR: preço. O panfleto não traz valores. Quando você for, anota o que pediu e quanto
+pagou que eu ponho aqui e ele vira [TESTADO].]*
 
 **Ama.Zo** — peruano, matriz nos Campos Elíseos — **[CANDIDATO]**
 Cresceu por boca a boca e já abriu segunda casa em Higienópolis. É a melhor aposta de "jantar
@@ -313,11 +316,49 @@ o caso de algum sábado em São Paulo.
 | Lugar | Endereço | A pé | Horário |
 |---|---|---|---|
 | RS Musical | R. General Osório, 46 | **379 m · 4 min** | não localizado |
+| **Oxxo — Largo General Osorio** [TESTADO] | Largo General Osório, 165, Loja A, Santa Ifigênia, CEP **01213-010** | **270 m · 4 min** | ver quadro abaixo, **domingo é 24h** |
 | **Oxxo** | R. José Paulino, 592 | 893 m · 10 min | **24 horas** |
 | **Oxxo** | Al. Barão de Limeira, 897 | 976 m · 12 min | **24 horas** |
 | Mini Mercado Extra | Av. Rio Branco, 212 | 918 m · 12 min | não localizado |
 
-Os dois **Oxxo abrem 24 horas**. É a rede de segurança da madrugada.
+**A loja do Largo General Osório é a mais perto de todas, e existe de fato — [TESTADO]: o
+Josemar passou e viu aberta, em 31/08/2026.** Antes disso já tinha sido confirmado por dois
+caminhos independentes: a ficha do Google Maps (nota 4,0, 9 avaliações, categoria Mercado) e
+o CNPJ da filial — **26.563.652/0873-04**, nome fantasia "OXXO LARGO
+GENERAL OSORIO", situação **ativa**, aberta em **15/01/2026** (por isso é recente: pouca
+avaliação, sem Instagram próprio ainda). O endereço do CNPJ bate exato: Largo Gal Osorio,
+165, **Loja A**, CEP **01213-010** — esse é o CEP correto, não o 01213-001 que o Google
+mostra (o Google confundiu com a Rua General Osório, que é uma via diferente da praça/largo).
+
+**Rota a pé, medida no Google Maps em 31/08/2026: 270 m, 4 min**, via Praça Júlio Prestes e
+R. Mauá — sai da Praça Júlio Prestes 5005, segue pela própria praça, entra na R. Mauá por
+120 m e vira à direita no Largo General Osório, destino à direita em 25 m. É bem mais perto
+que os outros dois Oxxo.
+
+**Horário semanal, confirmado no Google Maps em 31/08/2026:**
+
+| Dia | Horário |
+|---|---|
+| Segunda | 06:00–00:00 |
+| Terça | 06:00–00:00 |
+| Quarta | 06:00–**23:00** (fecha mais cedo) |
+| Quinta | 06:00–00:00 |
+| Sexta | 06:00–00:00 |
+| Sábado | 06:00–00:00 |
+| **Domingo** | **24 horas** |
+
+**Não é 24h todo dia, só domingo.** Segunda a sábado fecha à meia-noite (quarta fecha às
+23h). Pra madrugada de verdade, continua sendo os dois Oxxo já confirmados (José Paulino e
+Barão de Limeira) as opções certas — este daqui é o mais perto pra qualquer coisa **até meia-
+noite**, e é o único **270 m** dos três.
+
+**Telefone/WhatsApp: não existe linha direta da loja.** O único contato é o 0800 747 6996,
+central nacional da rede (mesmo número em formato WhatsApp: wa.me/558007476996), atendimento
+seg-sex 9h-18h. Pra emergência fora desse horário, é ir até lá mesmo, não adianta ligar.
+
+*Verificação feita pelo Codex a pedido do Josemar, 31/08/2026, cruzando Google Maps com
+CNPJ da filial (BrasilAPI, CNPJ.biz, CNPJA) — por isso já sai como dado consolidado, sem
+`[VERIFICAR]` em aberto.*
 
 ### Farmácias
 
@@ -465,6 +506,14 @@ não passa lá, apesar do projeto futuro no Bom Retiro). **Houve descarrilamento
 13/08/2026 e a estação chegou a ficar fechada**, e existe plano estadual, anunciado em 2024,
 de desativá-la na revitalização do centro. *[VERIFICAR se está operando antes de contar com
 ela.]* Na prática, **conte com a Luz e a Santa Cecília**, que são metrô.
+
+**Passeio depois da aula tem dono próprio:** [PASSEIOS.md](PASSEIOS.md). Aqui ficam os
+trajetos de base, estação certa e serviços do entorno; roteiro cultural, horário de museu,
+mirante e jantar fora da bolha ficam lá, para não duplicar decisão.
+
+Regra de bolso para qualquer saída noturna: depois das 19h, a volta manda no roteiro. Use
+eixos com movimento e metrô; evite cortar caminho por rua miúda no quadrilátero de Santa
+Ifigênia/Campos Elíseos.
 
 ## Os trajetos a pé, medidos
 
@@ -1027,28 +1076,11 @@ final é **1.197 m, 18 minutos**. As três estações possíveis são todas ruin
 Higienópolis-Mackenzie 1.197 m, Santa Cecília 1.382 m, Marechal Deodoro 1.478 m. Algumas
 páginas afirmam "157 m, 3 minutos", **e isso está errado**.
 
-## Cultura na porta
+## Passeio fora da bolha
 
-Vantagem de estar no centro, e some se você não reparar. Vale principalmente **terça e quarta,
-que a saída é 18h00**.
-
-**Sala São Paulo** — na Estação Júlio Prestes, **do outro lado da praça** — **[CANDIDATO]**
-Sede da Osesp, uma das melhores salas de concerto do país. Literalmente na sua frente. Vale
-olhar a programação e o preço do ingresso avulso.
-
-**Pinacoteca de São Paulo** e **Museu da Língua Portuguesa** — região da Luz, no caminho da
-estação — **[CANDIDATO]**
-
-## Vale a viagem
-
-**Mercado Municipal (Mercadão)** — Luz → Linha 1 até São Bento, ou a pé — **[CANDIDATO]**
-Bom para levar coisa pra casa: queijo, castanha, bacalhau, tempero.
-
-**Rua 25 de Março** — a pé ou 1 estação — **[CANDIDATO]**
-Bugiganga, armarinho e presente barato.
-
-**Santa Ifigênia** — **é o próprio bairro, a pé** — **[CANDIDATO]**
-Rua de eletrônico. Cabo, carregador, fone, adaptador, extensão.
+Roteiros culturais e gastronômicos para segunda, terça e quarta à noite agora ficam em
+[PASSEIOS.md](PASSEIOS.md), que é o dono desse assunto. Use este `ENTORNO.md` para resolver
+comida de rotina, mercado, farmácia, academia, estação certa e distância a pé.
 
 **Sobre a região:** Luz e Santa Ifigênia têm trechos pesados, sobretudo à noite. Fica
 registrado para planejar rota; seu juízo sobre horário e caminho vale mais que qualquer nota

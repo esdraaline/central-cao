@@ -566,6 +566,7 @@ Central CAO/
 ├── COMPRAS.md        <- o que sobrou da conferência e precisa comprar
 ├── MALA.md           <- rodízio semanal: armário do CAES, roupa para lavar, mala de domingo
 ├── VIAGENS.md         <- deslocamentos (módulos presenciais, provas etc.)
+├── PASSEIOS.md        <- guia turístico/gastronômico para a janela livre da semana
 ├── SUPABASE.md       <- como ligar a sincronização das tarefas
 ├── gerar_painel.py   <- gera o painel a partir dos .md acima
 ├── sincroniza_tarefas.py  <- traz as tarefas da nuvem de volta para o TAREFAS.md

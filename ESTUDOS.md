@@ -91,6 +91,11 @@ A dissertação do **Cap PM José Fernando Ferrarez** (CAO/24, defendida em 2025
 São oficiais que já orientaram no CAES e conhecem o processo. O Cel Siconeli não aparece como
 instrutor da minha turma, mas vale perguntar ao Cap Gobbo se ele segue orientando.
 
+**Onde buscar mais dissertações de referência, além dessa:** intranet do CAES, em **Teses e
+Dissertações**. Se alguma não estiver disponível lá, pedir por e-mail em
+**caespesquisa@policiamilitar.sp.gov.br** (o mesmo e-mail do Cap Gobbo, Seção de Pesquisa —
+[CONTATOS.md](CONTATOS.md)).
+
 ## A dissertação começa agora, não em 2027
 
 PP aprovado, tema definido e uma dissertação-modelo em mãos. O erro clássico é tratar isso
@@ -137,6 +142,13 @@ Conteúdo de aula nunca entra no repositório, que é público.
 └── 99_INBOX/              tudo que chega e ainda não foi arquivado
 ```
 
+**Exceção que fica registrada para não estranhar depois:** o material do Cap Gobbo (Seção de
+Pesquisa) sobre normas ABNT, manual de metodologia, relatórios de orientação, ética em
+pesquisa, qualificação e defesa final está em `D05_FUNDAMENTOS-METODOLOGIA-CIENTIFICA/aulas/`,
+não em `02_DISSERTACAO/`, mesmo servindo o trabalho inteiro e não só essa disciplina. Foi onde
+caiu na sincronização de 31/08 e ficou assim por decisão do Josemar (mais simples de achar tudo
+num lugar só).
+
 Três regras que sustentam a estrutura:
 
 **Use o `99_INBOX`.** Slide chega no meio da aula, por WhatsApp, com nome ruim. Se eu tiver
@@ -151,6 +163,39 @@ de notas, não o nome da pasta.
 **`aulas/` é intocável.** Material do instrutor entra e não é editado nem renomeado. O que é
 meu vai para o documento de notas, separado. Assim sempre dá para saber o que é fonte e o que
 é meu.
+
+### Pasta do pelotão (fonte externa, não é minha)
+
+**"Materiais CAO Pel A"**, https://drive.google.com/drive/folders/1tejUS2nN0QusbYCpJtsrlviPRg4OpRZE
+— dono é um colega de turma (`markus21512@gmail.com`), alimentada a cada dia de aula por quem
+quer que suba o material que pegou. Estrutura: **Matéria > Disciplina > Instrutor > arquivos**
+(as 6 matérias curriculares, não as pastas D01-D31 daqui).
+
+**Por que não é só registrar o link e esquecer:** é pasta de terceiro. Se ele sair do curso,
+apagar a conta ou parar de alimentar, some — o mesmo risco que fez copiar as pastas do Cap
+O'Brien e do Cap Gobbo para o meu Drive em 31/08.
+
+**Por que também não vale um script rodando sozinho (testado em 31/08):** cogitei duas formas
+de automação e as duas esbarram numa trava real, não é só cautela:
+
+1. **GitHub Actions com credencial de robô** (como os workflows deste repositório já fazem com
+   o Supabase): não serve para Google Drive porque uma credencial de robô (service account)
+   **não tem espaço no Drive pessoal de ninguém** — trava do próprio Google, existe só para
+   conta de empresa (Workspace).
+2. **Agente agendado na nuvem (Claude), com o conector Google Drive already conectado**: parecia
+   viável, mas **testei e não funciona para este caso**. Descobrir arquivo novo na pasta de um
+   colega depende de "visitar" a pasta pelo navegador pelo menos uma vez — só depois disso o
+   Google deixa o arquivo aparecer nas buscas por API. Confirmei isso na prática em 31/08: uma
+   subpasta que eu já tinha visitado ficava buscável, uma que eu não tinha visitado, não. Um
+   agente na nuvem não tem navegador (só existe na minha máquina), então ele nunca ia
+   **descobrir** o arquivo do dia seguinte sozinho — só re-consultaria o que já é conhecido.
+
+**O que fica valendo:** puxar o que há de novo nessa pasta do pelotão **toda quinta, por volta
+das 11h**, quando a aula da semana termina e ainda estou no CAES, antes de pegar a estrada de
+volta ([Ritmo semanal](#ritmo-semanal)/[ROTINA.md](ROTINA.md)). Eu abro uma sessão, comparo a
+pasta do pelotão com o que já foi copiado e trago só o que mudou, para as pastas
+`D0X_.../aulas/` certas. Sem token, sem robô — depende de eu pedir, mas pelo menos funciona de
+verdade.
 
 ## Onde escrevo: um arquivo Markdown por disciplina
 
@@ -240,7 +285,7 @@ Encaixado no horário real de segunda a quinta ([ROTINA.md](ROTINA.md)):
 | Quando | Quanto | O quê |
 |---|---|---|
 | Todo dia, últimos 10 min | 10 min | Fechar o documento do dia, jogar slide e foto no `99_INBOX` |
-| Quinta, depois das 11h30 | 15 min | Esvaziar o INBOX para as pastas certas. Gerar o Audio Overview |
+| Quinta, 11h30 às 11h40 | 10 min | Esvaziar o INBOX para as pastas certas. Puxar o que há de novo na pasta do pelotão para as `aulas/` certas. Gerar o Audio Overview |
 | Quinta, na estrada | grátis | Ouvir o resumo da semana |
 | Domingo à tarde, antes de sair | 30 min | Ler as notas da semana, conferir o QTS da semana seguinte, atualizar [PRAZOS.md](PRAZOS.md) |
 | 1x por mês | 1 h | Buscar `#DISSERTA` em todos os documentos e mover o que prestou para `02_DISSERTACAO` |

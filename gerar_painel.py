@@ -265,6 +265,32 @@ def md_para_html(texto):
             i += 1
             continue
 
+        # bloco recolhivel de destino/passeio:
+        #
+        # ::: passeio Nome do lugar — resumo curto
+        # markdown comum aqui dentro
+        # :::
+        #
+        # O PASSEIOS.md precisa de uma linha clicavel por destino, mas com
+        # conteudo bem mais rico do que cabe em tabela. Usar uma marca propria
+        # preserva o arquivo legivel fora do painel e evita escrever HTML bruto.
+        m_passeio = re.match(r"^:::\s+passeio\s+(.+)$", strip)
+        if m_passeio:
+            fecha_lista()
+            titulo = m_passeio.group(1).strip()
+            i += 1
+            buf = []
+            while i < len(linhas) and linhas[i].strip() != ":::":
+                buf.append(linhas[i])
+                i += 1
+            if i < len(linhas) and linhas[i].strip() == ":::":
+                i += 1
+            corpo = md_para_html("\n".join(buf).strip())
+            saida.append('<details class="local"><summary data-b>%s</summary>'
+                         '<div class="local-corpo">%s</div></details>'
+                         % (_inline(titulo), corpo))
+            continue
+
         # bloco de codigo
         if strip.startswith("```"):
             fecha_lista()
@@ -373,7 +399,7 @@ def md_para_html(texto):
                 # cortava a continuacao que comeca em negrito ("**Julio
                 # Prestes** (CPTM...")), e o item saia partido na tela.
                 if (not seguinte
-                        or re.match(r"^(?:[-*+]\s|\d+[.)]\s|#{1,6}\s|>|\||```|-{3,}$)",
+                        or re.match(r"^(?:[-*+]\s|\d+[.)]\s|#{1,6}\s|>|\||```|:::|-{3,}$)",
                                     seguinte)):
                     break
                 item += " " + seguinte
@@ -444,7 +470,7 @@ def md_para_html(texto):
             # paragrafo. Testar por startswith("*") cortava a continuacao que
             # comeca em negrito, e a frase saia partida em duas na tela.
             if (not prox
-                    or re.match(r"^(?:[-*+]\s|\d+[.)]\s|#{1,6}\s|>|\||```|-{3,}$)",
+                    or re.match(r"^(?:[-*+]\s|\d+[.)]\s|#{1,6}\s|>|\||```|:::|-{3,}$)",
                                 prox)):
                 break
             buf.append(prox)
@@ -966,6 +992,25 @@ main{max-width:1080px;margin:0 auto;padding:24px 20px 64px}
 .card details.extra>ul,.card details.extra>ol{margin-left:36px}
 /* a marca "extras" so aparece no primeiro <details> de uma sequencia */
 .card details.extra+details.extra{margin-top:-4px}
+.card details.local{border:1px solid var(--bd);border-radius:10px;background:var(--card2);
+  margin:10px 0;overflow:hidden}
+.card details.local>summary{cursor:pointer;list-style:none;padding:12px 14px;
+  display:flex;gap:9px;align-items:flex-start;color:var(--tx);font-size:14px;
+  font-weight:650;line-height:1.35;user-select:none}
+.card details.local>summary::-webkit-details-marker{display:none}
+.card details.local>summary::before{content:"";width:7px;height:7px;flex:none;margin-top:5px;
+  border-right:2px solid var(--vm-cl);border-bottom:2px solid var(--vm-cl);
+  transform:rotate(-45deg);transition:transform .15s}
+.card details.local[open]>summary::before{transform:rotate(45deg)}
+.card details.local>summary:hover{color:var(--vm-cl)}
+.card details.local[open]>summary{border-bottom:1px solid var(--bd);background:var(--card)}
+.card .local-corpo{padding:3px 15px 14px}
+.card .local-corpo h3{font-size:13px;text-transform:uppercase;color:var(--tx3);
+  letter-spacing:0;margin:14px 0 6px}
+.card .local-corpo p{font-size:13.5px}
+.card .local-corpo ul,.card .local-corpo ol{font-size:13.5px}
+.card .local-corpo .tab-wrap{margin:8px 0}
+.card .local-corpo table{font-size:13px}
 blockquote{border-left:3px solid var(--vm);background:var(--card2);padding:11px 16px;
   border-radius:0 9px 9px 0;margin:13px 0;font-size:13.5px;color:var(--tx2)}
 del{color:var(--tx3);text-decoration-thickness:1px}

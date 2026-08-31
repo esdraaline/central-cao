@@ -77,6 +77,9 @@ DESTINOS = [
      "perto", "Do CAES até a Rua Santa Ifigênia", None, "CAES"),
     ("santa-cecilia", "Santa Cecília", "Estação Santa Cecília, São Paulo",
      "perto", "Do CAES até a Estação Santa Cecília", None, "CAES"),
+    ("polo-santa-cecilia", "Polo Sta. Cecília",
+     "Rua Fortunato, 50, Santa Cecília, São Paulo",
+     "perto", "Do CAES até o polo Santa Cecília/Vila Buarque", None, "CAES"),
     ("ccb-bom-retiro", "CCB Bom Retiro", "Rua Anhaia, 613, Bom Retiro, São Paulo",
      "perto", "Do CAES até a CCB do Bom Retiro", None, "CAES"),
     ("terraco-aurora", "Terraço Aurora", "Rua Vitória, 365, São Paulo",
@@ -652,7 +655,14 @@ def main():
     rotas = None if refazer else cache_le("rotas.json")
     if rotas is None:
         rotas = {}
+    faltantes = [d for d in DESTINOS if d[0] not in rotas]
+    faltantes += [d for d in MEDICOES if d[0] not in rotas]
+    if refazer or faltantes:
+        if refazer:
+            rotas = {}
         for arq, _rot, consulta, _g, _t, org, _ro in DESTINOS:
+            if arq in rotas:
+                continue
             partida = resolve_origem(org)
             lat, lon, achou = geocodifica(consulta)
             time.sleep(1.2)                      # Nominatim pede 1 req/s
@@ -663,6 +673,8 @@ def main():
             print("  rota  %-16s %5d m  %2d min  |  %s" % (arq, r["m"], r["min"], achou[:38]))
             time.sleep(0.8)
         for chave, de, para in MEDICOES:
+            if chave in rotas:
+                continue
             partida = resolve_origem(de)
             lat, lon, achou = geocodifica(para)
             time.sleep(1.2)

@@ -59,11 +59,8 @@ Toda peça está sempre em um destes três lugares, e a semana é o giro entre e
 | **Casa** | o que desceu sujo na quinta | volta limpo no domingo |
 | **Mala de domingo** | o que faltou no armário, mais a carga da copa | zera quando você guarda tudo lá |
 
-**A única conta que existe é o inventário de quinta.** Não há segunda lista de quantidade em
-lugar nenhum deste painel: a mala de domingo é o que ele apontou como falta.
-
-**Faça o inventário com o armário aberto na sua frente**, na quinta de manhã, antes de fechar a
-sacola. Lembrar disso em casa, à noite, não funciona.
+**A única conta que existe é o inventário de quinta.** Faça com o armário aberto na sua frente;
+lembrar disso em casa não funciona.
 
 **Peça que fecha o alvo some da lista sozinha**, para sobrar na tela só o que precisa de você.
 Peça que zerou aparece com a falta cheia, e é a que não pode ser esquecida.
@@ -140,7 +137,7 @@ a insígnia peça por peça estão em [ROTINA.md](ROTINA.md), que é o dono dess
 
 | Peça | Quantas | Situação |
 |---|---|---|
-| Camisa de passeio cinza-claro | 2 no armário | entram no inventário de quinta. Ficam lá e quase não saem. O jogo comprado é de 3 (1 antiga + 2 da ConfecBell em 18/08); **a terceira está em casa**, conferido em 27/08/2026 |
+| Camisa de passeio cinza-claro | 2 no armário | entram no inventário de quinta. Ficam lá e quase não saem. O jogo comprado é de 3 (1 antiga + 2 da ConfecBell/Confex Bel em 18/08); **a terceira está em casa**, conferido em 27/08/2026 |
 | Camiseta de serviço | 6 | entram no inventário de quinta |
 | Calça social cinza-bandeirante | 2 | as duas ficam no armário e as duas entram no inventário, em linhas separadas: uma roda com o P-1 (**calça de passeio**), a outra roda com o S-1 (**calça do S-1**) |
 | Meia social preta | 5 pares | entram no inventário de quinta |
@@ -216,6 +213,6 @@ lá), e se o alojamento e o armário passam por vistoria ou entrega formal.]*
 - **Vou de carona.** O porta-malas é dividido, então volume é moeda: combine antes quanto cabe. Como o grosso já está no armário, o que sobe é uma sacola de roupa e uma caixa de comida.
 - **Armário**: cerca de 1 folha de armário padrão da PM por aluno, e **ele não vem com chave, o cadeado é seu**. Prefira mala que caiba embaixo da cama.
 - **Wi-fi**: rede WCorp, funcionou bem.
-- **Semana padrão**: viaja domingo à tarde, aula de segunda a quinta, volta quinta depois das 11h30 ([ROTINA.md](ROTINA.md) e [VIAGENS.md](VIAGENS.md)). Não tem lavanderia no CAES.
+- **Semana padrão**: viaja domingo, aula de segunda a quinta, volta quinta depois das 11h30. Detalhes em [ROTINA.md](ROTINA.md) e [VIAGENS.md](VIAGENS.md). Não tem lavanderia no CAES.
 
 Onde comer, mercado, farmácia e o resto do entorno: [ENTORNO.md](ENTORNO.md).

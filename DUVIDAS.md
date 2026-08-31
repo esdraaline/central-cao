@@ -6,13 +6,13 @@
 ## Em aberto
 
 ### Coordenação e Seção de Avaliação (Cap PM Diego Almeida, caesaval@policiamilitar.sp.gov.br)
-- **Quais disciplinas têm prova e quais têm trabalho?** O QTS não diz uma palavra sobre isso. Enquanto não souber, [PRAZOS.md](PRAZOS.md) não tem como listar entrega de disciplina. Perguntar na terça 25/08 ([TAREFAS.md](TAREFAS.md)).
-- **Existe plano de disciplina com carga horária?** O QTS é semanal e não traz o total do curso, então não dá para saber quais matérias são pesadas.
+- **Quando cai a VC de cada uma das seis matérias?** O currículo respondeu o modelo de prova; falta o calendário.
+- **Quais disciplinas cobram trabalho além da VC?** O QTS não diz uma palavra sobre isso. Enquanto não souber, [PRAZOS.md](PRAZOS.md) não tem como listar entrega de disciplina.
 - **Sou mesmo do pelotão A?** A dedução de 18/08 bate cinco de cinco com as aulas que eu assisti, mas continua sendo dedução. Ratificar de viva voz na Coordenação ([GRADE.md](GRADE.md)).
-- As outras lacunas da grade (se a troca de docente é rodízio ou substituição, e se as sete disciplinas que nunca entraram são do segundo semestre) estão listadas em [GRADE.md](GRADE.md), na seção "O que ainda não sei".
+- As outras lacunas da grade, como troca de docente e bloco das 18h00, estão em [GRADE.md](GRADE.md), na seção "O que ainda não sei".
 
 ### Dissertação (Cap PM Gobbo, Seção de Pesquisa, caespesquisa@policiamilitar.sp.gov.br)
-- **As regras da orientação**: precisa ser instrutor do curso, quantos orientandos cada um aceita, se há prazo, se o pedido é formal e se cabe coorientador. As cinco perguntas, na ordem de perguntar, estão em [ESTUDOS.md](ESTUDOS.md). É a conversa que protege qualquer abordagem: as regras antes do nome. O currículo já respondeu parte (indicação é do aluno, máximo de 3 bancas por docente), ver CURRICULO.md.
+- **As regras da orientação**: precisa ser instrutor do curso, quantos orientandos cada um aceita, se há prazo, se o pedido é formal e se cabe coorientador. As cinco perguntas estão em [ESTUDOS.md](ESTUDOS.md). O currículo já respondeu parte: indicação do aluno e máximo de 3 bancas por docente.
 - **O Cel PM Mario Luciano Siconeli segue orientando no CAES?** Ele orientou a dissertação do Cap PM Ferrarez (CAO/24), que é a minha referência, e não aparece como instrutor da minha turma.
 
 ### Chefe de Turma

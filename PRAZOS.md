@@ -4,15 +4,15 @@
 > [TAREFAS.md](TAREFAS.md), que é de onde sai o guia de abertura do painel.
 > Disciplinas, docentes e o quadro de cada dia estão em [GRADE.md](GRADE.md).
 
-## Semana 2 — 24 a 27/08/2026
+## Semana 3 — 31/08 a 03/09/2026
 
 | Data | Dia | O que |
 |---|---|---|
-| 24/08 | segunda | Entrada 08h15, quatro blocos, saída 16h15. Os dois embarques de 07h50 do QTS são dos pelotões C e E, nenhum é o meu |
-| **25/08** | **terça** | Dia cheio até as 18h00. Saiu o **currículo do programa** ([CURRICULO.md](CURRICULO.md)) e a orientação voltou a ficar em aberto |
-| 26/08 | quarta | Bloco 4: D28 Policiamento Comunitário com o Cel Barreto, que é o assunto da dissertação. Dia cheio até as 18h00 |
-| 27/08 | quinta | Fim da semana 2, aula até 11h30, volta para casa |
-| 28/08 | sexta | Sem nenhuma marcação no QTS, para nenhum pelotão |
+| **31/08** | **segunda** | Quatro blocos, saída 16h15. D06, D19, D05 e D24 |
+| **01/09** | **terça** | Dia cheio até 18h00. D30, D02, D04, D05 e D26 |
+| **02/09** | **quarta** | Dia cheio até 18h00. D03, D25, D11, D18 e D24 |
+| **03/09** | **quinta** | Blocos 1 e 2, saída 11h30. Vence o prazo do SAE da Univesp |
+| 04/09 | sexta | Sem nenhuma marcação no QTS, para nenhum pelotão |
 
 ## Depois disso
 
@@ -57,8 +57,8 @@ de cada disciplina estão em [CURRICULO.md](CURRICULO.md), e o que isso muda no 
 
 **O que continua faltando é a data de cada uma.** Quem responde é a **Seç Avaliação e Concurso
 do CAES, Cap PM Diego Almeida** (`caesaval@policiamilitar.sp.gov.br`), que assina o QTS como Ch
-Sec Coord ([CONTATOS.md](CONTATOS.md)). Pergunta marcada para 25/08, agora mais precisa: não é
-mais "o que tem prova", é **"quando cai a VC de cada uma das seis matérias"**.
+Sec Coord ([CONTATOS.md](CONTATOS.md)). A pergunta agora é direta: **quando cai a VC de cada
+uma das seis matérias**.
 
 ## Como o curso corre
 
@@ -75,13 +75,11 @@ mais "o que tem prova", é **"quando cai a VC de cada uma das seis matérias"**.
   outro docente. Elas se agrupam em **6 matérias curriculares**, que são a unidade de prova.
 - **QTS**: sai **semana a semana**, com 8 a 10 aulas de 45 minutos por dia. É dele que saem as
   próximas datas deste arquivo, então **sem o QTS da semana seguinte este calendário não anda**.
-- **Disciplinas**: 31 no total, **24 já acionadas** em algum pelotão até a semana 2. Sou do
-  **pelotão A** (dedução de 18/08, falta ratificar na Coordenação).
+- **Disciplinas**: 31 no total. O acumulado de disciplinas acionadas fica em [GRADE.md](GRADE.md).
+  Sou do **pelotão A** (dedução de 18/08, falta ratificar na Coordenação).
 - **Rotina 13 do SIPA**: liberada de 17/ago/26 a 22/jan/27 (1º bloco financeiro/administrativo).
 - **Dissertação**: PP aprovado. **Orientação em aberto desde 25/08**, quando o alvo definido em
-  18/08 saiu da lista. Próxima janela é a aula do **Cel Barreto** (D28 Policiamento
-  Comunitário), na **quarta 26/08, bloco 4**. Quadro de candidatos e sequência das conversas em
-  [ESTUDOS.md](ESTUDOS.md).
+  18/08 saiu da lista. Quadro de candidatos e sequência das conversas em [ESTUDOS.md](ESTUDOS.md).
 
 ## Histórico — agosto de 2026
 
@@ -92,9 +90,9 @@ mais "o que tem prova", é **"quando cai a VC de cada uma das seis matérias"**.
 | 15/08 | Mala montada e documentos de mão separados ([MALA.md](MALA.md)) |
 | 16/08 | Saída de casa às 15h00, de carona, chegada por volta das 22h ([VIAGENS.md](VIAGENS.md)) |
 | 17/08 | Primeiro dia: recepção às 07h30, saiu o primeiro QTS, fardamento na ConfecBell, alojamento montado. Início da Rotina 13 |
+| 18/08 | Whey, creatina e coqueteleira conferidos, os três já em casa ([COMPRAS.md](COMPRAS.md)) |
 | 19/08 | Pedido de prova em polo da capital protocolado no SAE da Univesp, às 20h02 |
 | 20/08 | Fim da semana 1, volta depois das 11h30 |
-| 18/08 | Whey, creatina e coqueteleira conferidos, os três já em casa ([COMPRAS.md](COMPRAS.md)) |
 | 23/08 | Volta para São Paulo com a roupa lavada e a carga da copa. O B-1 e o EPI ficam em casa ([MALA.md](MALA.md)) |
 
 ## Histórico — processo seletivo (concluído)

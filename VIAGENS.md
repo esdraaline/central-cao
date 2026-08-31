@@ -26,17 +26,17 @@ carona a cada semana, não é fixo.]*
 
 ## Antes de sair, no domingo
 
-- [x] **Mala arrumada** pelo rodízio de [MALA.md](MALA.md): roupa lavada, toalhas, fronha e a
+- [ ] **Mala arrumada** pelo rodízio de [MALA.md](MALA.md): roupa lavada, toalhas, fronha e a
       carga da copa (whey, creatina, energético, lanches, marmitas). **O B-1 e o EPI ficam em
       casa**, decisão de 20/08.
-- [x] **Combinar com o amigo da carona** o horário de saída e o espaço de bagagem. O
+- [ ] **Combinar com o amigo da carona** o horário de saída e o espaço de bagagem. O
       porta-malas é dividido, então volume é moeda: leve compacto.
-- [x] **Janta de domingo na mala.** A chegada é perto das 22h, não tem rancho e contar com o
-      entorno aberto nesse horário é aposta. Os dois **Oxxo abrem 24 horas**, a uns 10 minutos
-      a pé, como rede de segurança ([ENTORNO.md](ENTORNO.md)).
-- [x] **Documentos em mãos, não na mala**: identidade funcional e o número do processo SEI do
+- [ ] **Janta de domingo na mala.** A chegada é perto das 22h, não tem rancho e contar com o
+      entorno aberto nesse horário é aposta. O Oxxo do Largo General Osório abre 24h no domingo;
+      os Oxxo da José Paulino e da Barão de Limeira são 24h todos os dias ([ENTORNO.md](ENTORNO.md)).
+- [ ] **Documentos em mãos, não na mala**: identidade funcional e o número do processo SEI do
       Ofício de Apresentação.
-- [x] **Dinheiro ou cartão** para a divisão do combustível da carona e para as refeições da
+- [ ] **Dinheiro ou cartão** para a divisão do combustível da carona e para as refeições da
       semana.
 
 Na semana em que eu for dirigindo, o **cartão de estacionamento do CAO se pede à AAp antes de
@@ -53,8 +53,8 @@ está listado em [MALA.md](MALA.md).
 
 A fase presencial acaba em **17/01/2027**, que cai num domingo. Como a semana vai de segunda a
 quinta, **a última subida é o domingo 10/01/2027 e a última descida é a quinta 14/01/2027**.
-Depois disso o curso é a distância e não há mais viagem semanal
-([ROTINA.md](ROTINA.md)).
+Depois disso o curso é a distância e não há mais viagem semanal. A lista de desmobilização fica
+em [MALA.md](MALA.md).
 
 | Data | Movimento |
 |---|---|
@@ -62,9 +62,8 @@ Depois disso o curso é a distância e não há mais viagem semanal
 | **domingo 10/01/2027** | última subida, com o mínimo para quatro dias |
 | **quinta 14/01/2027** | **última descida**, com o que restou. Armário vazio e alojamento limpo |
 
-**Combinar a carona com antecedência para essas duas quintas.** O volume é muito maior que o de
-uma semana normal, e o porta-malas é dividido. Se não couber, o plano B é dividir em três
-viagens (começando na quinta 17/12/2026, antes do recesso) ou levar o carro próprio numa delas.
+**Combinar a carona com antecedência para essas duas quintas.** O volume é maior que o normal e
+o porta-malas é dividido.
 
 ## Histórico
 

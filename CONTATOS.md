@@ -7,15 +7,10 @@
 **CAES — Centro de Altos Estudos de Segurança "Cel Nelson Freire Terra"**
 **Praça Júlio Prestes, 5005 — Campos Elíseos, São Paulo/SP, CEP 01218-020.**
 
-É o endereço oficial, e é a forma de escrever em documento, cadastro e aplicativo de mapa.
-Fica **em frente à Praça Júlio Prestes**, no centro (Campos Elíseos / Santa Ifigênia, entorno
-de Av. Rio Branco / Av. Duque de Caxias / Largo General Osório). O guia da região, com os
-trajetos a pé medidos, está em [ENTORNO.md](ENTORNO.md).
+É o endereço oficial para documento, cadastro e aplicativo de mapa. Fica em frente à Praça
+Júlio Prestes, no centro. O guia da região, com trajetos a pé, está em [ENTORNO.md](ENTORNO.md).
 
-Duas correções já feitas neste endereço, para ninguém desandar de novo:
-
-- **17/08/2026**: antes constava "região da Barra Funda", que é outro bairro. Corrigido no local pelo Josemar.
-- **19/08/2026**: o número passou de 142 para **5005**, que é o oficial. Praça, bairro e CEP não mudaram, então **nenhum trajeto e nenhum mapa do [ENTORNO.md](ENTORNO.md) muda**: as distâncias continuam valendo.
+Correções já feitas: não é Barra Funda, é Campos Elíseos; e o número oficial é **5005**, não 142.
 
 ### Dois endereços que ainda circulam e estão desatualizados
 
@@ -58,9 +53,8 @@ mandou citar a fonte oficial, porque a fonte oficial é que está velha.
 
 ## Dissertação — caminho até o orientador
 
-**Em aberto desde 25/08/2026.** O alvo definido em 18/08 saiu da lista e a escolha voltou à
-mesa. O quadro de candidatos, com encaixe de tema e de método, está em
-[ESTUDOS.md](ESTUDOS.md).
+**Em aberto desde 25/08/2026.** O quadro de candidatos e a ordem das conversas estão em
+[ESTUDOS.md](ESTUDOS.md). Aqui fica só o caminho de contato.
 
 | Quem | Papel | Como chegar |
 |---|---|---|
@@ -70,10 +64,7 @@ mesa. O quadro de candidatos, com encaixe de tema e de método, está em
 | Maj PM Ciampone | Único instrutor que cruza três matérias, uma delas Policiamento Comunitário | Em sala |
 | Cap PM Simões | Ponte para contatos do corpo docente | Falar direto |
 
-**A ordem não mudou: as regras antes do nome.** Confirmar com o **Cap Gobbo** se o orientador
-precisa ser instrutor, quantos orientandos cada um aceita, se há prazo e se cabe coorientador.
-O currículo já respondeu parte: a indicação é **do aluno**, referendada pelo Cmt CAES, e cada
-docente compõe no máximo **3 bancas por programa** ([CURRICULO.md](CURRICULO.md)).
+**Primeira conversa: Cap PM Gobbo.** Regras antes do nome.
 
 ## Ordem para resolver demandas
 1. Chefe de Turma

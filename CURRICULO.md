@@ -12,14 +12,9 @@
 >
 > **Este arquivo é o dono da estrutura permanente do curso.** O GRADE.md é o dono da semana.
 
-## Por que este documento muda o jogo
+## O que este documento responde
 
-Até 25/08/2026 o [ESTUDOS.md](ESTUDOS.md) registrava, com razão, que **não havia matriz do
-curso**: o edital não traz, o Manual do Aluno do CAES é de 2012 com disciplinas extintas, e a
-única fonte era o **QTS, que chega semana a semana**. O planejamento andava no escuro, um
-degrau por vez.
-
-O PDM acaba com isso. Agora dá para saber, sem esperar o QTS:
+Desde 25/08/2026, o PDM é a fonte de estrutura do curso. Ele responde, sem esperar o QTS:
 
 - **quantas horas-aula tem cada disciplina** e, portanto, quantos blocos dela ainda faltam;
 - **quantas provas existem** (seis, não trinta e uma) e **qual o peso de cada disciplina**
@@ -28,8 +23,7 @@ O PDM acaba com isso. Agora dá para saber, sem esperar o QTS:
 - **como se calcula a nota final** e o que reprova;
 - **as regras da dissertação**: qualificação, banca, prazos e o que zera o trabalho.
 
-O [PRAZOS.md](PRAZOS.md) também registrava que prova e entrega não entravam nele por falta de
-fonte. Essa fonte é esta.
+O QTS continua dono da semana em [GRADE.md](GRADE.md); o PDM é dono da estrutura permanente.
 
 ## Os números do curso
 
@@ -46,10 +40,8 @@ fonte. Essa fonte é esta.
 | **Sexta-feira** | **destinada a atividades de pesquisa acadêmica** |
 | **Conclusão exige** | no mínimo **75%** da carga horária curricular |
 
-**A sexta vazia no QTS não é folga nem falha do quadro: é previsão do currículo.** O
-[GRADE.md](GRADE.md) estranhou a sexta 28/08 em branco para todos os pelotões. O currículo
-responde: "por regra, serão executadas 32 horas-aula semanais, entre segunda e quinta-feira,
-sendo as sextas-feiras destinadas para atividades de pesquisa acadêmica".
+**A sexta vazia no QTS não é folga nem falha do quadro:** é previsão do currículo, destinada a
+atividades de pesquisa acadêmica.
 
 ## Os três ciclos (CENS)
 
@@ -193,10 +185,9 @@ de Jurídicas.
 **São 8 tempos por dia, terminando às 16h15**, o que dá as 32 horas-aula semanais previstas.
 Os "blocos" do QTS são pares desses tempos: bloco 1 = 1º e 2º tempo, e assim por diante.
 
-**Divergência com o QTS, a conferir.** O currículo **não prevê um 5º bloco** (16h30 às 18h00),
-mas o QTS da semana 2 traz aula até as 18h00 na terça e na quarta, o que estoura as 32 h-a. Ou
-é reposição, ou é ajuste da Coordenação não refletido no currículo.
-*[VERIFICAR na Coordenação: o bloco das 16h30 às 18h00 é permanente ou excepcional?]*
+*[VERIFICAR na Coordenação: o QTS já trouxe 5º bloco, das 16h30 às 18h00, na terça e na
+quarta. O currículo prevê 8 tempos por dia, até 16h15. Confirmar se é reposição, ajuste
+permanente ou exceção.]*
 
 ## Avaliação: como se é aprovado
 

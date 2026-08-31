@@ -212,20 +212,6 @@ que vale a pena" perto.
 **Higienópolis** (Luz → Linha 4-Amarela) — **[CANDIDATO]**
 Região de restaurante bom, concentrada e segura para andar à noite.
 
-## Quinta, antes de pegar a estrada
-
-Saída **11h30** e viagem longa pela frente. O critério muda: **velocidade**. Comer rápido e
-bem, sem sentar duas horas. As opções de almoço acima servem.
-
-*(A preencher depois da primeira quinta.)*
-
-## Levar pra casa na quinta
-
-A carona divide porta-malas. Lógica: coisa pequena, que não existe em Guararapes e que não
-estraga na viagem.
-
-*(A preencher.)*
-
 ## Abastecimento: padaria, mercado e farmácia
 
 Levantamento de 17/08/2026: **102 estabelecimentos a até 20 minutos a pé** do CAES, com
@@ -316,7 +302,7 @@ o caso de algum sábado em São Paulo.
 | Lugar | Endereço | A pé | Horário |
 |---|---|---|---|
 | RS Musical | R. General Osório, 46 | **379 m · 4 min** | não localizado |
-| **Oxxo — Largo General Osorio** [TESTADO] | Largo General Osório, 165, Loja A, Santa Ifigênia, CEP **01213-010** | **270 m · 4 min** | ver quadro abaixo, **domingo é 24h** |
+| **Oxxo — Largo General Osório** [TESTADO] | Largo General Osório, 165, Loja A, Santa Ifigênia, CEP **01213-010** | **270 m · 4 min** | ver quadro abaixo, **domingo é 24h** |
 | **Oxxo** | R. José Paulino, 592 | 893 m · 10 min | **24 horas** |
 | **Oxxo** | Al. Barão de Limeira, 897 | 976 m · 12 min | **24 horas** |
 | Mini Mercado Extra | Av. Rio Branco, 212 | 918 m · 12 min | não localizado |
@@ -356,9 +342,7 @@ noite**, e é o único **270 m** dos três.
 central nacional da rede (mesmo número em formato WhatsApp: wa.me/558007476996), atendimento
 seg-sex 9h-18h. Pra emergência fora desse horário, é ir até lá mesmo, não adianta ligar.
 
-*Verificação feita pelo Codex a pedido do Josemar, 31/08/2026, cruzando Google Maps com
-CNPJ da filial (BrasilAPI, CNPJ.biz, CNPJA) — por isso já sai como dado consolidado, sem
-`[VERIFICAR]` em aberto.*
+*Consolidado em 31/08/2026, cruzando Google Maps com CNPJ da filial.*
 
 ### Farmácias
 
@@ -548,15 +532,8 @@ sobrar do que faltar.
 | **Irmãos Haga** (uniformes) | 1.331 m | 16 min | Mauá → Praça da Luz → Av. Tiradentes |
 | **Confex Bel** (fardamento) | 1.372 m | 16 min | Mauá → Rua Prates |
 
-**Como as três medições de 24/08/2026 foram feitas**, porque elas fogem do procedimento
-normal e precisam ser reconferíveis: o roteador foi o mesmo de sempre, **Valhalla com
-costing=pedestrian**, saindo do portão da Dino Bueno. **O que mudou foi o geocodificador.** O
-Nominatim, que o `mapas/gerar_mapas.py` usa, respondeu **429 (excesso de requisições)** o dia
-inteiro. Então o boteco e o mercado foram medidos pela **coordenada da ficha do Google**
-(-23,535877/-46,641280 e -23,536286/-46,641859), e a academia pelo **nó de endereço do próprio
-OpenStreetMap** (Av. Rio Branco, 422, achado via Overpass). O Photon, testado como substituto
-do Nominatim, **ignorou o número da casa e devolveu o Palácio dos Campos Elíseos, no 1269**,
-que é a armadilha 2 descrita no cabeçalho do gerador. Não use Photon para número de rua aqui.
+**Medições de 24/08/2026:** boteco, mercado e academia foram conferidos com coordenadas
+específicas, porque a base comum não trazia esses pontos direito.
 
 ### Estação da Luz
 
@@ -576,6 +553,7 @@ esquerda na **Rua Mauá** e segue 392 m até a estação. É reto e simples.
 tem poucas tomadas.
 
 ### Câmera de segurança e CFTV na Santa Ifigênia [CANDIDATO]
+<!-- extra -->
 
 Levantamento de 24/08/2026, motivado pela busca de uma **câmera TP-Link Tapo** para a casa em
 Guararapes. Endereços conferidos um a um; **distâncias medidas** no roteador de pedestre a
@@ -829,23 +807,8 @@ caminho da 25 de Março e a janela para ir é o almoço entre blocos. **Ida e vo
 **[TESTADO] 24/08/2026.** Saiu 11h50, voltou 12h30: 40 min porta a porta, dos quais **3 min
 dentro da loja** (retirada de pedido já separado, sem espera) e 37 min de caminhada.
 
-*Ressalva honesta sobre esse teste: ele andou por um trajeto errado. A rota que eu tinha
-passado de manhã descia pela **Avenida Prestes Maia** e tinha 1.892 m, porque foi medida no
-roteador errado (ver a nota de método abaixo). São **707 m a mais por trecho, 1,4 km no total**.
-Os 37 min medidos valem para aquele caminho, não para este. Pelo caminho certo, a 5 km/h, são
-cerca de 14 min por trecho.*
-
-**Nota de método, 24/08/2026.** A primeira medição publicada aqui, de 1.892 m e 23 min, estava
-errada por dois motivos, e os dois já estavam avisados dentro de `mapas/gerar_mapas.py`:
-
-1. Foi medida no **OSRM público**, que roteia como **carro** mesmo no perfil "foot". Daí a
-   Prestes Maia, que é viaduto. O guia usa **Valhalla com `costing=pedestrian`**.
-2. Partiu do **centro da praça**, e não do **portão da Alameda Dino Bueno** (`-23.53437,
-   -46.64168`), que é a origem conferida no local em 17/08/2026 e usada por todas as outras
-   rotas desta seção.
-
-Remedido no Valhalla, a partir do portão: **1.185 m**. O número antigo estava **707 m
-inflado**, 60% a mais.
+*Ressalva sobre esse teste: ele andou por uma rota antiga, mais longa. A rota correta tem
+**1.185 m**; pelo caminho certo, a 5 km/h, são cerca de 14 min por trecho.*
 
 ### Fardamento: Confex Bel e Irmãos Haga [CANDIDATO]
 

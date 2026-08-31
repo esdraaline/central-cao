@@ -154,18 +154,14 @@ disciplinas está mais presente no curso do que o nome sugere.
 
 ## Esta semana, para a dissertação
 
-- **Quarta 26/08, bloco 4: D28 Policiamento Comunitário, com o Cel Barreto.** Passou a ser a
-  janela mais importante da semana para orientação, depois que o alvo definido em 18/08 saiu da
-  lista em 25/08 ([ESTUDOS.md](ESTUDOS.md)). É o encaixe mais forte no tema e o único docente
-  que se repetiu na matéria nas duas semanas.
-- **Terça 25/08, bloco 3: D04 Relações Sociais e Institucionais no Brasil**, com o Cel Enio.
-  Articulação interinstitucional é metade da pergunta de pesquisa.
-- **Cap Gobbo** (Seção de Pesquisa), que é a conversa das regras, dá aula em duas disciplinas,
-  D05 Metodologia Científica e D20 Liderança. Duas chances de encontrá-lo em sala em vez de
-  procurá-lo na seção.
-- **D13 Gestão de Processos** e **D16 Gestão da Informação** servem para o "como se opera" da
-  integração. D13 já estreou no curso, mas ainda não caiu no pelotão A; D16 não apareceu em
-  nenhuma das duas semanas.
+- **Terça 01/09, bloco 3: D04 Relações Sociais e Institucionais**, com o Cel Enio. Articulação
+  interinstitucional é metade da pergunta de pesquisa.
+- **Segunda 31/08 e terça 01/09: D05 Metodologia**, com Cap O'Brien e Maj Zampronio. Bom
+  caminho para rigor metodológico e banca.
+- **D24 Direitos Humanos**, segunda e quarta, pode render ponte com grupos vulneráveis e
+  participação social, se a aula abrir esse flanco.
+- **Cap Gobbo** continua sendo a conversa das regras. Ele aparece no corpo docente de D05 e D20;
+  se surgir em sala, a pergunta é sobre prazo, forma do pedido e coorientação.
 
 ## As 31 disciplinas
 
@@ -304,25 +300,15 @@ Ciampone (50 h-a cada), depois Cap PM Casagrandi (40 h-a).
 efetivamente entra em cada semana só o QTS diz. Uma disciplina de 10 horas-aula com sete nomes
 no elenco, como Gestão de Pessoas, não vai ver todos eles.
 
-## Respondido em 25/08 pelo currículo do programa
+## Ponteiros do currículo
 
-Três perguntas que moravam aqui saíram desta lista quando apareceu o
-[CURRICULO.md](CURRICULO.md):
+O [CURRICULO.md](CURRICULO.md) responde carga horária, provas, eletivas, ciclos e regras da
+dissertação. Para a Grade, ficam só estes reflexos:
 
-- **A carga horária de cada disciplina** agora é conhecida, e com ela **quantos blocos de cada
-  uma ainda faltam**. As pesadas são **D24 Direitos Humanos** (30 h-a, a maior do curso) e as
-  seis de 20 h-a: D01, D04, D08, D11, D12, D14, D15, D26, D29, D30 e D31. As demais têm 10 h-a,
-  ou seja **cinco blocos no curso inteiro**.
-- **Como se é avaliado**: não há prova por disciplina. São **seis provas, uma por matéria
-  curricular**, com peso proporcional à carga horária de cada disciplina dentro dela.
-- **O destino das sete que nunca entraram.** Elas **não são do segundo semestre**: as 31 são
-  todas do 1º ciclo, que vai até a semana 16. Vão cair até lá. São elas D11 Planejamento
-  Financeiro, D16 Gestão da Informação, D19 Comportamento Organizacional, D24 Direitos Humanos,
-  D25 Atualização Jurídica, D27 Sistemas Comparados e D29 Planejamento Operacional.
-
-**Duas correções de nome** que o currículo trouxe: a **D08** se chama **Análise Espacial de
-Dados** (o QTS abrevia para "Análise de Dados"), e a **D09 Teoria das Ciências Policiais**
-pertence à matéria **Metodologia Científica I**, não a Ciências Policiais.
+- As 31 disciplinas são todas do 1º CENS, mesmo que ainda não tenham aparecido no meu pelotão.
+- A **D08** se chama **Análise Espacial de Dados** no currículo; o QTS abrevia para "Análise de
+  Dados".
+- A **D09 Teoria das Ciências Policiais** pertence à matéria **Metodologia Científica I**.
 
 ## O que ainda não sei
 
@@ -336,32 +322,3 @@ pertence à matéria **Metodologia Científica I**, não a Ciências Policiais.
   com o Cel Roldan na semana 2; D04 trocou o Cel Fernandes pelo Cel Enio; D15 teve três
   docentes diferentes em duas semanas. Só o Cel Barreto (D28) e o Cap Maurício (D26) se
   repetiram. Parece rodízio dentro do corpo docente da disciplina, não substituição.
-
-
-## Regra de manutenção, toda semana
-
-O QTS novo costuma sair no começo da semana. Domingo à tarde, nos 30 minutos previstos em
-[ESTUDOS.md](ESTUDOS.md), é a hora de lançar.
-
-1. Guardar o PDF em `08_CAO_2026/00_CURSO/QTS/`, no padrão
-   `QTS_CAO-II-26_SEMnn_dd-ddMESaaaa.pdf`.
-2. **Duas semanas ficam no ar ao mesmo tempo.** A semana nova entra no topo e a que estava lá
-   desce para "Semana anterior"; a antiga sai. Isso existe porque o QTS às vezes chega no meio
-   da semana corrente.
-3. **Formato fixo do dia**, que é o que o painel lê: o dia em negrito com a data completa
-   (`**Quarta-feira 26/08/2026**`), a tabela com `Bloco | Disciplina | Docente` e o bloco
-   escrito como `4 — 14h45 às 16h15`. Aviso do dia é um parágrafo que começa com
-   `**Aviso 26/08/2026:**`. Dia sem aula entra declarado ("sem marcação no QTS"), e não
-   apagado: dia ausente faz o painel dizer que não sabe.
-4. A coluna "Meu" da tabela das 31 é **cumulativa**: acrescenta o docente da semana nova com a
-   marca (S3), (S4) e por aí, sem apagar as anteriores. É o que mostra o rodízio.
-5. Se aparecer disciplina fora da lista das 31, criar a pasta `D32_...` e a linha na tabela.
-6. **Não copiar os RE dos docentes.** É dado pessoal de terceiro e este repositório é público.
-   Ficam só posto e nome.
-7. Rodar `python gerar_painel.py`.
-
-**Quando chega uma revisão da semana que já está no ar** (arquivo "Alterado"), não se reescreve
-a seção: confere-se. Lê-se a revisão contra a tabela, na ordem dia → bloco → letra "A", e
-depois o corpo docente e o rodapé. Se não bater, corrige-se só a célula que mudou e a
-diferença vira um parágrafo, porque aula que troca de docente ou de horário em cima da hora é
-o que o painel existe para não deixar passar.

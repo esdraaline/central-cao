@@ -7,29 +7,19 @@
 > **A data não é enfeite.** É ela que faz a tarefa aparecer no guia de abertura do painel
 > ("hoje você precisa..."). Tarefa sem data fica fora do guia e só aparece na aba Tarefas.
 >
-> **Tarefa que se repete** leva `@semanal` (ou `@quinzenal`, `@mensal`) no texto, e a data diz
-> qual é o dia: `@semanal` numa quinta significa toda quinta. Ticada no painel, ela não vai para
-> Concluídas, some da lista e volta com a data da próxima vez. No painel dá para escrever direto
-> "toda quinta separar a roupa", que ele entende sozinho.
+> **Tarefa que se repete** leva `@semanal`, `@quinzenal` ou `@mensal`. A data diz o dia da
+> repetição.
 >
-> **Lista de conferência dentro da tarefa.** Caixinha indentada logo abaixo de uma tarefa não é
-> tarefa nova: é item dela. No painel a tarefa continua sendo uma só, com uma etiqueta "3 de 15"
-> que abre a lista, e cada item é um clique. Serve para o que se confere peça por peça (a mala,
-> a carga da copa). O tique de cada item fica no painel e sincroniza entre os aparelhos; aqui no
-> arquivo o item fica sempre em aberto, porque a lista é o molde e não o diário de bordo.
+> **Caixinha indentada** logo abaixo de uma tarefa é item de conferência dela, não tarefa nova.
 
 ## Pendentes
 
 ### Fardamento e pendências de secretaria
-- [ ] Comprar a camisa social cinza-claro do S-1 e a boina de reposição, que faltaram na ida à ConfecBell [31/08/2026] #pessoal
+- [ ] Comprar a camisa social cinza-claro do S-1 e a boina de reposição, que faltaram na ida à ConfecBell/Confex Bel [31/08/2026] #pessoal
 
 ### Rodízio da mala (toda semana, ver MALA.md)
-> As duas se repetem sozinhas: ticadas, não vão para Concluídas, voltam com a data da semana seguinte.
-> O ciclo é este: **quinta de manhã você conta o que ficou limpo no armário** e lança nos
-> contadores da aba Mala; o que o painel mostrar como "faltam N" é a carga de **domingo**. Por isso
-> a lista de domingo não traz número: a quantidade vem do inventário. No painel cada item é um
-> clique, tudo dentro da mesma tarefa, e a lista volta zerada na semana seguinte. No arquivo os
-> itens ficam sempre em aberto: aqui a lista é o molde, o tique é do painel.
+> Quinta conta o armário na aba Mala; domingo sobe o que o inventário apontou como falta.
+> As tarefas se repetem toda semana e a lista indentada é só molde de conferência.
 - [ ] Domingo, arrumar a mala da semana antes de viajar. B-1 e EPI ficam em casa (decisão de 20/08) @semanal [30/08/2026] #pessoal
   - [ ] Cuecas, na quantidade que o inventário de quinta apontou
   - [ ] Meias sociais pretas, na quantidade do inventário
@@ -63,8 +53,8 @@
   - [ ] Fazer a pergunta da PEC 514, sem pedir orientação de saída
   - [ ] Registrar o resultado no mesmo arquivo, no mesmo dia
 
-### Segunda semana (viagem em 23/08)
-- [ ] Perguntar na Coordenação (Seç Avaliação, Cap Diego) quais disciplinas têm prova e quais têm trabalho, e se existe plano de disciplina com carga horária. É o que falta para o PRAZOS listar entrega de disciplina, porque o QTS não traz [31/08/2026] #curso
+### Avaliações e trabalhos
+- [ ] Perguntar na Coordenação (Seç Avaliação, Cap Diego) as datas das seis VCs e quais disciplinas cobram trabalho além da prova [31/08/2026] #curso
 
 ### Univesp — prova de 22/09 em conflito com o curso (pedido já protocolado)
 > Pedido enviado ao SAE em 19/08/2026, 20h02, com a Ata de Convocação anexada. Detalhes completos em `C:\projetos\mentor-univesp\STATUS.md`.
@@ -82,7 +72,7 @@
 - [x] Atualizar STATUS.md e PRAZOS.md com a situação real do curso: módulo não existe (são 31 disciplinas em paralelo, QTS semanal), disciplinas e pelotão A lançados nos dois arquivos, e entregas não saem do QTS, viraram pergunta para a Coordenação [22/08/2026] #curso
 - [x] Confirmar a grafia do nome do orientador pretendido: é Cel PM Eglis, com o g antes do l, como traz o QTS revisado de 20/08. A Central escrevia Elgis desde 17/08 e foi corrigida [21/08/2026] #dissertacao
 - [x] Conferir se a mesa SEI 302090130 recebeu o ofício: recebeu. A cobrança do CAES aos faltantes (19/08) não traz meu nome nem o 2º BPM/I [19/08/2026] #admin
-- [x] Comprar na ConfecBell: 2 camisas de passeio, 2 camisetas de serviço, tarjeta operacional, Logomarca, 4 distintivos de OPM e tarjeta administrativa de acrílico [18/08/2026] #pessoal
+- [x] Comprar na ConfecBell/Confex Bel: 2 camisas de passeio, 2 camisetas de serviço, tarjeta operacional, Logomarca, 4 distintivos de OPM e tarjeta administrativa de acrílico [18/08/2026] #pessoal
 - [x] Conferir whey, creatina e coqueteleira — os três já em casa [18/08/2026] #pessoal
 - [x] Pegar o QTS e lançar as disciplinas: sai dia a dia, 7 disciplinas até 18/08 [18/08/2026] #curso
 - [x] Perguntar ao pessoal do CAO-I/26 onde eles almoçam e jantam, e lançar em ENTORNO.md [18/08/2026] #pessoal
@@ -101,7 +91,7 @@
 - [x] Acionar a P/1 do 2º BPM/I para o Ofício de Apresentação (mesa SEI 302090130) e a liberação da Rotina 13 do SIPA (código 302090000) [13/08/2026] #admin
 - [x] Fechar as dúvidas que iriam para o SAE: chegada às 22h sem restrição, passeio completo é P-1, EPI é cinto/colete/bota com B-1, ofício não precisa de via impressa [12/08/2026] #curso
 - [x] Decidir como viajar: domingo 16/08 à tarde, de carona com um amigo, chegando à noite [12/08/2026] #pessoal
-- [x] Decidir onde comprar o fardamento: tudo na ConfecBell, na tarde de segunda 17/08 [12/08/2026] #pessoal
+- [x] Decidir onde comprar o fardamento: tudo na ConfecBell/Confex Bel, na tarde de segunda 17/08 [12/08/2026] #pessoal
 - [x] Conferência de armário: 78 das 90 peças já estavam em casa [06/08/2026] #pessoal
 - [x] Organizar a pasta Central CAO (limpeza de duplicados, áudio/vídeo antigo, estrutura de pastas) [04/08/2026] #pessoal
 - [x] Criar o painel visual em docs/index.html, gerado a partir dos .md [04/08/2026] #pessoal

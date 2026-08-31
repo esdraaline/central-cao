@@ -175,27 +175,10 @@ quer que suba o material que pegou. Estrutura: **Matéria > Disciplina > Instrut
 apagar a conta ou parar de alimentar, some — o mesmo risco que fez copiar as pastas do Cap
 O'Brien e do Cap Gobbo para o meu Drive em 31/08.
 
-**Por que também não vale um script rodando sozinho (testado em 31/08):** cogitei duas formas
-de automação e as duas esbarram numa trava real, não é só cautela:
-
-1. **GitHub Actions com credencial de robô** (como os workflows deste repositório já fazem com
-   o Supabase): não serve para Google Drive porque uma credencial de robô (service account)
-   **não tem espaço no Drive pessoal de ninguém** — trava do próprio Google, existe só para
-   conta de empresa (Workspace).
-2. **Agente agendado na nuvem (Claude), com o conector Google Drive already conectado**: parecia
-   viável, mas **testei e não funciona para este caso**. Descobrir arquivo novo na pasta de um
-   colega depende de "visitar" a pasta pelo navegador pelo menos uma vez — só depois disso o
-   Google deixa o arquivo aparecer nas buscas por API. Confirmei isso na prática em 31/08: uma
-   subpasta que eu já tinha visitado ficava buscável, uma que eu não tinha visitado, não. Um
-   agente na nuvem não tem navegador (só existe na minha máquina), então ele nunca ia
-   **descobrir** o arquivo do dia seguinte sozinho — só re-consultaria o que já é conhecido.
-
 **O que fica valendo:** puxar o que há de novo nessa pasta do pelotão **toda quinta, por volta
 das 11h**, quando a aula da semana termina e ainda estou no CAES, antes de pegar a estrada de
-volta ([Ritmo semanal](#ritmo-semanal)/[ROTINA.md](ROTINA.md)). Eu abro uma sessão, comparo a
-pasta do pelotão com o que já foi copiado e trago só o que mudou, para as pastas
-`D0X_.../aulas/` certas. Sem token, sem robô — depende de eu pedir, mas pelo menos funciona de
-verdade.
+volta ([Ritmo semanal](#ritmo-semanal)/[ROTINA.md](ROTINA.md)). Eu comparo a pasta do pelotão
+com o que já foi copiado e trago só o que mudou, para as pastas `D0X_.../aulas/` certas.
 
 ## Onde escrevo: um arquivo Markdown por disciplina
 
@@ -303,17 +286,15 @@ O domingo de 30 minutos é o que amarra o Drive com o painel do celular.
   (o Anexo "B" é a bibliografia da prova escrita da seleção) e a grade do Manual do Aluno do
   CAES é de 2012, com disciplinas que não existem mais.
 
-**Isso mudou em 25/08/2026.** Apareceu o **currículo oficial do programa** (PDM, Bol G PM nº
-227), e com ele a matriz que faltava: carga horária de cada disciplina, como as 31 se agrupam
-em 6 matérias, como funciona a prova, o calendário das eletivas e as regras da dissertação.
-Está tudo em [CURRICULO.md](CURRICULO.md). **O QTS continua sendo o dono do "que aula é
-amanhã", mas deixou de ser a única fonte sobre o curso.**
+**Isso mudou em 25/08/2026.** O currículo oficial passou a responder matriz, avaliação,
+eletivas e dissertação. Está tudo em [CURRICULO.md](CURRICULO.md). O QTS continua dono do que
+tem aula amanhã.
 
 ## Estudar para a prova certa: são seis, não trinta e uma
 
 A descoberta mais útil do currículo para quem estuda: **não existe prova de disciplina.
-Existe uma prova por matéria**, com questões de todas as disciplinas dela, **proporcionais à
-carga horária de cada uma**. Ver [CURRICULO.md](CURRICULO.md) para os pesos exatos.
+Existe uma prova por matéria**, com questões proporcionais à carga horária de cada disciplina.
+Pesos exatos em [CURRICULO.md](CURRICULO.md).
 
 | Prova | Disciplinas dentro | O que isso significa |
 |---|---|---|
@@ -326,15 +307,11 @@ carga horária de cada uma**. Ver [CURRICULO.md](CURRICULO.md) para os pesos exa
 
 **Três consequências práticas para o método:**
 
-1. **A etiqueta `#PROVA` passa a ter endereço.** Marcar já sabendo em qual das seis provas
-   aquilo cai, e com que peso, muda o que vale a pena decorar. Oito por cento de uma prova não
-   merece o mesmo esforço que sessenta.
-2. **O caderno do NotebookLM deveria ser por matéria, não por disciplina.** A regra atual
-   ("um caderno por disciplina, quando tiver prova à vista") pode virar **um caderno por MC**,
-   juntando as disciplinas que caem na mesma prova. São seis cadernos fixos em vez de trinta e
-   um eventuais, e cada um espelha exatamente uma prova.
-3. **Nota 7,0 na primeira prova isenta da final.** O esforço concentrado na VC economiza a VF
-   inteira.
+1. **A etiqueta `#PROVA` passa a ter endereço.** Marcar a matéria e o peso muda o que vale
+   decorar.
+2. **O NotebookLM pode virar um caderno por matéria curricular**, não por disciplina: seis
+   cadernos fixos, cada um espelhando uma prova.
+3. **Nota 7,0 na VC isenta da final.** O esforço concentrado economiza a VF inteira.
 
 ## As eletivas do 2º ciclo: escolher com o tema na mão
 

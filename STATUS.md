@@ -158,5 +158,12 @@ ciclo**, que acaba na semana 16. Elas vão cair até lá.
 
 ---
 
-Esta Central é gerada a partir dos arquivos `.md`, que são a fonte de verdade. Como ela funciona por
-dentro e as regras da pasta: [PAINEL.md](PAINEL.md) e [AGENTS.md](AGENTS.md).
+## Notas de manutenção do painel
+
+- As abas do painel vêm dos `.md` da raiz; depois de editar qualquer uma, rodar
+  `python gerar_painel.py`.
+- O `docs/index.html` é gerado e não deve ser editado à mão.
+- Ao lançar QTS novo, manter duas semanas na `GRADE.md`: a nova no topo e a anterior logo
+  abaixo. A coluna "Meu" das 31 disciplinas é cumulativa, com marcas S1, S2, S3.
+- Não copiar RE de docentes para o repositório público.
+- Regras permanentes da pasta e divisão entre repositório e Drive ficam no `AGENTS.md`.

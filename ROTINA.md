@@ -42,8 +42,8 @@ passam por vistoria ou entrega formal.]*
 
 ## Horário das aulas
 
-Entrada às **08h15** todo dia. O dia tem cinco blocos de 1h30, cada um com duas aulas de 45
-minutos:
+Entrada às **08h15** todo dia. O currículo prevê quatro blocos de 1h30, cada um com duas aulas
+de 45 minutos:
 
 | Bloco | Horário |
 |---|---|
@@ -51,15 +51,15 @@ minutos:
 | 2 | 10h00 às 11h30 |
 | 3 | 13h00 às 14h30 |
 | 4 | 14h45 às 16h15 |
-| 5 | 16h30 às 18h00 |
+| 5 | 16h30 às 18h00, quando o QTS marcar |
 
-Os blocos 1 a 4 caem todo dia. **O bloco 5 só cai na terça e na quarta.** Na prática:
+Os blocos 1 a 4 são a base do dia. O bloco 5 apareceu no QTS da semana 2 e da semana 3 em
+terça e quarta, mas ainda está em verificação no currículo. Na prática, leia o QTS da semana:
 
 - **Segunda**: 08h15 às 16h15
-- **Terça e quarta**: 08h15 às 18h00
+- **Terça e quarta**: podem ir até 18h00
 - **Quinta**: 08h15 às 11h30, e é o dia de pegar a estrada para casa
-- **Sexta**: quando tem aula, acaba 16h15. Na semana 2, a sexta 28/08 está sem nenhuma
-  marcação no QTS, para nenhum pelotão
+- **Sexta**: destinada a pesquisa acadêmica, salvo QTS em contrário
 
 Quem manda no dia é o QTS da semana, lançado em [GRADE.md](GRADE.md) — inclusive embarque
 antecipado (07h50) quando houver atividade externa para o meu pelotão. **Sou do pelotão A**
@@ -236,7 +236,7 @@ informática (Coord).
 
 - **Programa Copa**: não será sacado.
 - **Alojamento (pernoite) R$ 30,35 ou Vestiário R$ 21,52**, conforme a opção — nunca os dois
-  juntos. *A opção ainda precisa ser feita (tarefa em aberto).*
+  juntos. *[VERIFICAR: opção decidida em 24/08, mas o arquivo não registra qual foi.]*
 - **Fundo Escolar**: R$ 76,84.
 - Pedir na OPM de origem para **cessar os descontos** de Alojamento/Vestiário/Programa Copa,
   para não cobrar em duplicidade.
@@ -245,8 +245,7 @@ informática (Coord).
 
 - Processados via DA; todos os Oficiais-Alunos são adidos ao CAES (função: Oficial-Aluno).
 - Oficiais de outro município recebem **Ajuda de Custo** (conforme legislação).
-- Todos recebem **Auxílio Financeiro a Estudantes** direto na conta do Banco do Brasil — **a
-  conta não pode ser "Conta Salário"** e o nome **não pode estar no CADIN**.
+- Todos recebem **Auxílio Financeiro a Estudantes** direto na conta do Banco do Brasil.
 - Aniversário (Recadastramento Anual e Inspeção de Saúde — IAS): pode ser feita na UIS da
   CORREG, CPA/M-1, ou na própria UIS do interessado; sem médico na UIS da CORREG, pode ser no
   CCB ou no CMed.

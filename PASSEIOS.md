@@ -95,7 +95,7 @@ ideia; para retorno noturno, prefira República -> Luz pela Linha 4-Amarela.
 | Endereço-base | Rua Fortunato, 50, como ponto de chegada do mapa |
 | Deslocamento | **1.371 m/17 min** a pé até o miolo prático do polo |
 | Janela | Segunda, terça e quarta |
-| Fonte | Pesquisa de bairro em guias gastronômicos e rota medida pelo gerador local |
+| Fonte | Pesquisa de bairro em guias gastronômicos e rota medida |
 
 ![Do CAES até o polo gastronômico Santa Cecília/Vila Buarque: 1.371 m, cerca de 17 min.](mapas/polo-santa-cecilia.svg)
 

@@ -135,7 +135,7 @@ push na main.
 - [x] 30. Passeios
 
 ### Fechamento
-- [ ] Commit e push finais
+- [x] Commit e push finais
 
 ---
 

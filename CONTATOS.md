@@ -51,17 +51,15 @@ Ambos são anteriores à mudança. Corrigir documentos para Praça Júlio Preste
 | Dissertação, Artigo e JNPC | Cap PM Gobbo | caespesquisa@policiamilitar.sp.gov.br |
 | Divisão de Ensino e Pesquisa (geral) | Maj PM Ciampone | — |
 
-## Dissertação — caminho até o orientador
+## Dissertação — orientador e formalização
 
-**Em aberto desde 25/08/2026.** O quadro de candidatos e a ordem das conversas estão em
-[ESTUDOS.md](ESTUDOS.md). Aqui fica só o caminho de contato.
+**Orientador definido em 01/09/2026: Maj PM Carlos Henrique Lourenço Rovina**, sondado por
+WhatsApp. Falta formalizar com a Seção de Pesquisa, em [ESTUDOS.md](ESTUDOS.md).
 
 | Quem | Papel | Como chegar |
 |---|---|---|
-| **Cap PM Gobbo** | **Seção de Pesquisa. Sabe as regras da orientação.** É a primeira conversa | caespesquisa@policiamilitar.sp.gov.br, e dá aula em duas matérias |
-| Cel PM Barreto | Instrutor de Policiamento Comunitário | Em sala |
-| Cel PM Lucena | Instrutor de Políticas Públicas | Em sala |
-| Maj PM Ciampone | Divisão de Ensino e Pesquisa; instrutor | Em sala |
+| **Maj PM Rovina** | **Orientador da dissertação**, aceitou em 01/09. Não é instrutor da turma | WhatsApp |
+| **Cap PM Gobbo** | **Seção de Pesquisa. Sabe as regras da orientação.** Falta fechar a formalização com ele | caespesquisa@policiamilitar.sp.gov.br, e dá aula em duas matérias |
 | Cap PM Simões | Ponte para contatos do corpo docente | Falar direto |
 
 **Primeira conversa: Cap PM Gobbo.** Regras antes do nome.

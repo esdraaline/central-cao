@@ -77,8 +77,8 @@ uma das seis matérias**.
 - **Disciplinas**: 31 no total. O acumulado de disciplinas acionadas fica em [GRADE.md](GRADE.md).
   Sou do **pelotão A** (dedução de 18/08, falta ratificar na Coordenação).
 - **Rotina 13 do SIPA**: liberada de 17/ago/26 a 22/jan/27 (1º bloco financeiro/administrativo).
-- **Dissertação**: PP aprovado. **Orientação em aberto desde 25/08**, quando o alvo definido em
-  18/08 saiu da lista. Quadro de candidatos e sequência das conversas em [ESTUDOS.md](ESTUDOS.md).
+- **Dissertação**: PP aprovado. **Orientador definido em 01/09: Maj PM Rovina**, falta formalizar
+  com o Cap Gobbo. Detalhe em [ESTUDOS.md](ESTUDOS.md).
 
 ## Histórico — agosto de 2026
 

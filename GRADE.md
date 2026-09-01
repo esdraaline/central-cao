@@ -144,14 +144,12 @@ disciplinas está mais presente no curso do que o nome sugere.
 
 ## Esta semana, para a dissertação
 
-- **Terça 01/09, bloco 3: D04 Relações Sociais e Institucionais**, com o Cel Enio. Articulação
-  interinstitucional é metade da pergunta de pesquisa.
-- **Segunda 31/08 e terça 01/09: D05 Metodologia**, com Cap O'Brien e Maj Zampronio. Bom
-  caminho para rigor metodológico e banca.
-- **D24 Direitos Humanos**, segunda e quarta, pode render ponte com grupos vulneráveis e
-  participação social, se a aula abrir esse flanco.
-- **Cap Gobbo** continua sendo a conversa das regras. Ele aparece no corpo docente de D05 e D20;
-  se surgir em sala, a pergunta é sobre prazo, forma do pedido e coorientação.
+**Orientador fechado em 01/09: Maj PM Rovina** (detalhe em [ESTUDOS.md](ESTUDOS.md)). O que
+resta é formalização, não mais caça a candidato.
+
+- **Cap Gobbo** continua sendo a conversa das regras, agora para formalizar: ele não é instrutor
+  da turma, então falta confirmar se cabe, prazo, forma do pedido e o referendo do Cmt CAES. Ele
+  aparece no corpo docente de D05 e D20; se surgir em sala, a pergunta é essa.
 
 ## As 31 disciplinas
 

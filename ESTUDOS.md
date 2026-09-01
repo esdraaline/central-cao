@@ -4,11 +4,9 @@
 > O quê e o quando (as 31 disciplinas, docentes e o quadro da semana) estão em
 > [GRADE.md](GRADE.md).
 
-## Missão da semana: fechar o orientador
+## Orientador definido: Maj PM Carlos Henrique Lourenço Rovina
 
-::: extra Alvo retirado em 25/08: Cel PM Eglis
-A abordagem não seguiu adiante. A busca continua com os nomes da lista curta.
-:::
+**Aceitou em 01/09/2026**, sondado por WhatsApp. Falta só a formalização.
 
 ::: extra Regras de orientação já confirmadas pelo currículo
 **Fonte:** [CURRICULO.md](CURRICULO.md).
@@ -19,73 +17,37 @@ A abordagem não seguiu adiante. A busca continua com os nomes da lista curta.
 - Cada membro pode compor no máximo 3 bancas por programa.
 :::
 
-**Continua valendo a ordem: as regras antes do nome.** A conversa com o **Cap PM Gobbo** (Seção
-de Pesquisa) responde o que a norma não diz, e ele dá aula em **duas matérias**, então dá para
-encontrá-lo em sala ([GRADE.md](GRADE.md)).
+**O que falta fechar com o Cap PM Gobbo** (Seção de Pesquisa,
+caespesquisa@policiamilitar.sp.gov.br): o Maj Rovina **não é instrutor da turma**, o que muda a
+pergunta — a regra diz "preferencialmente professor do programa", não que seja obrigatório, mas
+falta confirmar se cabe orientador fora do elenco de instrutores, quantos orientandos ele aceita,
+se há prazo e como corre o referendo do Cmt CAES. Perguntas completas em [TAREFAS.md](TAREFAS.md).
 
-### A sequência, nesta ordem
+**Registrar.** O aceite por WhatsApp de 01/09 vai para `02_DISSERTACAO/00_orientacao/`, com data.
 
-**1. As regras, antes de qualquer nome.** Com o **Cap PM Gobbo**, Seção de Pesquisa
-(caespesquisa@policiamilitar.sp.gov.br). Perguntar:
-
-- O orientador **precisa** ser instrutor do curso, ou é só preferência?
-- **Quantos orientandos** cada um pode aceitar?
-- Existe **prazo** para definir? Qual?
-- O pedido é **formal** ou é conversa direta com o oficial?
-- Cabe **coorientador**, por exemplo um para o tema e outro para o método?
-
-As conversas podem correr em paralelo, mas a do Cap Gobbo define as regras das demais.
-
-**2. Sondar com o texto na mão.** Chegar com o PP aprovado e uma pergunta objetiva vale mais
-do que "o senhor me orientaria?". O PP está em `02_DISSERTACAO/02_texto/`.
-
-**3. Registrar na hora.** O que sair da conversa vai para `02_DISSERTACAO/00_orientacao/`, no
-mesmo dia, com data.
-
-### A lista curta de orientador
-
-Meu tema é **integração PM-Prefeituras e governança participativa**. Isso é política pública
-e articulação interinstitucional, não é operacional puro.
-
-Revisto em 25/08/2026 com o elenco completo de instrutores da turma (117 vínculos, 97 nomes) e
-com a carga horária de cada disciplina, que agora se conhece. **A coluna de carga importa**:
-disciplina de 10 horas-aula com cinco nomes no elenco dá pouquíssima chance de encontro em
-sala, e quem é do elenco de uma disciplina grande aparece mais.
+::: extra Histórico da escolha: alvos anteriores e a lista curta que não seguiu adiante
+**Cel PM Eglis**, alvo definido em 18/08, saiu da lista em 25/08. A busca seguiu pela lista curta
+abaixo, revista em 25/08 com o elenco completo de instrutores da turma (117 vínculos, 97 nomes) e
+a carga horária de cada disciplina. Nenhum nome dela chegou a ser sondado: o Maj Rovina, que não é
+instrutor da turma, entrou na lista em 01/09 e fechou a escolha no mesmo dia.
 
 | Instrutor | Disciplina | h-a | Encaixe no tema |
 |---|---|---|---|
-| **Cel Barreto** | D28 Policiamento Comunitário | 10 | **O mais forte.** É o berço doutrinário da integração PM-comunidade, e foi o único docente que se repetiu na matéria nas duas primeiras semanas |
-| **Cel Lucena** | D01 Políticas Públicas | 20 | Direto: meu tema **é** política pública. Abriu a aula 1 com modelo reativo x pró-ativo, que é o eixo do meu argumento. Disciplina grande, mais chance de reencontro |
-| **Cel Fernandes / Cel Enio** | D04 Relações Sociais e Institucionais | 20 | Articulação interinstitucional é a outra metade da pergunta de pesquisa. Disciplina grande |
-| **Maj Ciampone** | D28 Policiamento Comunitário (+ D24 e D23) | 50 somadas | **Novidade do levantamento.** É o **único instrutor que cruza três matérias**, e uma delas é Policiamento Comunitário. Visão larga do curso e presença alta |
-| Cel Beatriz / Cel Possato | D13 Gestão de Processos e Estrutura | 10 | Serve se o trabalho descer para o "como se opera" a integração |
+| Cel Barreto | D28 Policiamento Comunitário | 10 | O mais forte na leitura da época: berço doutrinário da integração PM-comunidade |
+| Cel Lucena | D01 Políticas Públicas | 20 | Direto: o tema é política pública |
+| Cel Fernandes / Cel Enio | D04 Relações Sociais e Institucionais | 20 | Articulação interinstitucional é a outra metade da pergunta de pesquisa |
+| Maj Ciampone | D28 Policiamento Comunitário (+ D24 e D23) | 50 somadas | Único instrutor que cruza três matérias, uma delas Policiamento Comunitário |
+| Cel Beatriz / Cel Possato | D13 Gestão de Processos e Estrutura | 10 | Serviria se o trabalho descesse para o "como se opera" a integração |
 | TC Tamanaha / Maj Goulart | D16 Gestão da Informação para Decisão | 10 | Idem, pelo lado do dado que circula entre PM e Prefeitura |
-| **Maj Zampronio** | D05 Metodologia + D30 Criminologia | 30 somadas | Método, e **é quem avalia rigor**. Cruza duas matérias, o que amplia as chances de encontrá-lo |
-| Maj Daniela / Cap Fernando | D06 Métodos Qualitativos | 10 | Coorientação de método, se a pesquisa for por entrevista (o mais provável) |
-| Cap Franco / Cel Boggi | D07 Métodos Quantitativos | 10 | Coorientação de método, se o trabalho tiver survey |
+| Maj Zampronio | D05 Metodologia + D30 Criminologia | 30 somadas | Método; quem avalia rigor |
+| Maj Daniela / Cap Fernando | D06 Métodos Qualitativos | 10 | Coorientação de método, se a pesquisa fosse por entrevista |
+| Cap Franco / Cel Boggi | D07 Métodos Quantitativos | 10 | Coorientação de método, se o trabalho tivesse survey |
 
-**Como ler esta lista.** As quatro primeiras linhas são encaixe de **tema**: quem já pensa o
-problema. As últimas são encaixe de **método**: quem garante que o trabalho passe na Banca de
-Metodologia, que vale peso 2 da nota ([CURRICULO.md](CURRICULO.md)). O currículo não fala em
-coorientador, então **confirmar com o Cap Gobbo se cabe**, antes de contar com essa divisão.
-
-**Uma disciplina eletiva pode valer mais que uma conversa.** A escolha começa quando o rol sair,
-até 18/09; as eletivas serão cursadas nas semanas 17 a 19. **Avaliação de Políticas de Segurança
-Pública**, **Movimentos Sociais e Segurança Pública** e **Mediação e Resolução de Conflitos** são
-do meu tema. Quem der essas aulas é
-candidato natural, e ali o encontro é garantido, não casual. O rol sai até **18/09**
-([PRAZOS.md](PRAZOS.md)).
-
-::: extra Orientadores que aparecem na dissertação do Cap Ferrarez
 A dissertação do **Cap PM José Fernando Ferrarez** (CAO/24, defendida em 2025), em
-`02_DISSERTACAO/01_referencias/`, nomeia quem o orientou:
-
-- **Cel PM Mario Luciano Siconeli** (orientador)
-- **Ten Cel PM Ivan Cesar Belentani** e **Cap PM Valdomiro Garcia Rafael Junior**, citados
-  nos agradecimentos como quem o orientou sobre os caminhos do estudo
-
-São oficiais que já orientaram no CAES e conhecem o processo. O Cel Siconeli não aparece como
-instrutor da minha turma, mas vale perguntar ao Cap Gobbo se ele segue orientando.
+`02_DISSERTACAO/01_referencias/`, nomeia quem o orientou: **Cel PM Mario Luciano Siconeli**
+(orientador), e **Ten Cel PM Ivan Cesar Belentani** e **Cap PM Valdomiro Garcia Rafael Junior**
+nos agradecimentos, como quem o orientou sobre os caminhos do estudo. Nenhum dos três chegou a
+ser sondado.
 
 **Onde buscar mais dissertações de referência, além dessa:** intranet do CAES, em **Teses e
 Dissertações**. Se alguma não estiver disponível lá, pedir por e-mail em
@@ -98,7 +60,8 @@ Dissertações**. Se alguma não estiver disponível lá, pedir por e-mail em
 PP aprovado, tema definido e uma dissertação-modelo em mãos. O erro clássico é tratar isso
 como "ano que vem".
 
-- **Esta semana**: criar o caderno "CAO Dissertação" no NotebookLM e rodar a sequência acima.
+- **Esta semana**: criar o caderno "CAO Dissertação" no NotebookLM e registrar o aceite do Maj
+  Rovina em `02_DISSERTACAO/00_orientacao/`.
 - **Setembro**: instalar o **Zotero** (grátis, plugin do Word, gera ABNT sozinho). Todo PDF de
   artigo entra nele com um clique. Sem isso, em maio serão 80 PDFs sem saber de onde veio cada
   citação. Foi deixado para setembro de propósito: ferramenta nova em semana de curso novo é

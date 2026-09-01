@@ -22,10 +22,10 @@ inteiro: [Prazos](PRAZOS.md).
 
 As prioridades detalhadas, com data, estão em [TAREFAS.md](TAREFAS.md). Aqui fica a vista de cima.
 
-1. **Fechar as regras e o nome do orientador da dissertação.** Pergunta ao Cap Gobbo (Seção de
-   Pesquisa): precisa ser instrutor do curso, quantos orientandos aceita, há prazo, cabe
-   coorientador, e se o Cel/Maj Rovina orienta no programa. Em paralelo, sondar o Cel Barreto na
-   aula de Policiamento Comunitário, com o gancho da PEC 514/1997. Sequência completa em
+1. **Formalizar a orientação da dissertação.** Nome fechado: **Maj PM Carlos Henrique Lourenço
+   Rovina aceitou em 01/09**. Falta a parte de secretaria: perguntar ao Cap Gobbo (Seção de
+   Pesquisa) se cabe orientador fora do elenco de instrutores da turma (ele não dá aula nesta
+   turma), quantos orientandos aceita, há prazo, e como corre o referendo do Cmt CAES. Detalhe em
    [ESTUDOS.md](ESTUDOS.md).
 2. **Coordenação (Seç Avaliação, Cap PM Diego Almeida): as datas das seis provas**, e quais
    disciplinas cobram trabalho além da prova.
@@ -77,8 +77,8 @@ CEP 01218-020**. Alojamento no próprio prédio.
 PP aprovado, tema mantido: integração PM-Prefeituras / governança participativa no 2º BPM/I. Versão
 final em [CAO 2026/PP/Projeto Pesquisa Cap Josemar Final.doc](CAO%202026/PP/Projeto%20Pesquisa%20Cap%20Josemar%20Final.doc).
 
-**Orientação em aberto desde 25/08.** O alvo definido em 18/08 saiu da lista e a escolha voltou
-à mesa. Quadro de candidatos e ordem das conversas em [ESTUDOS.md](ESTUDOS.md).
+**Orientador definido em 01/09: Maj PM Carlos Henrique Lourenço Rovina.** Sondado por WhatsApp,
+aceitou. Falta só a formalização (regras e referendo do Cmt CAES), em [ESTUDOS.md](ESTUDOS.md).
 
 ## O que ainda não sei
 

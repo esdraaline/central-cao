@@ -37,13 +37,9 @@
   - [ ] shampoo
   - [ ] porta-sabonete
 
-### Orientador da dissertação — MISSÃO URGENTE
-- [ ] Perguntar ao Cap Gobbo as REGRAS da orientação: precisa ser instrutor do curso? Quantos orientandos cada um aceita? Há prazo? O pedido é formal? Cabe coorientador? E se o Cel/Maj Carlos Henrique Lourenço Rovina orienta no programa (não é instrutor da turma) [31/08/2026] #dissertacao
-- [ ] Sondar o Cel Barreto na próxima aula dele em Policiamento Comunitário. A abordagem está no Drive, em 02_DISSERTACAO/00_orientacao/2026-08-26_abordagem-Cel-Barreto.md #dissertacao
-  - [ ] [VERIFICAR: reagendar quando um novo QTS trouxer o Cel Barreto; 31/08 não corresponde à Grade]
-  - [ ] Levar o PP aprovado impresso
-  - [ ] Fazer a pergunta da PEC 514, sem pedir orientação de saída
-  - [ ] Registrar o resultado no mesmo arquivo, no mesmo dia
+### Orientador da dissertação — formalizar com o Cap Gobbo
+- [ ] Perguntar ao Cap Gobbo as REGRAS da orientação, já com o nome fechado: cabe orientador fora do elenco de instrutores (o Maj Rovina não dá aula nesta turma)? Quantos orientandos ele aceita? Há prazo para o pedido? É formal? Como corre o referendo do Cmt CAES? [01/09/2026] #dissertacao
+- [ ] Registrar o aceite do Maj Rovina em `02_DISSERTACAO/00_orientacao/`, no Drive, com a data de 01/09 #dissertacao
 
 ### Univesp — prova de 22/09 em conflito com o curso (pedido já protocolado)
 > Pedido enviado ao SAE em 19/08/2026, 20h02, com a Ata de Convocação anexada. Detalhes completos em `C:\projetos\mentor-univesp\STATUS.md`.
@@ -51,6 +47,7 @@
 - [ ] Vencimento dos 10 dias úteis do SAE: sem resposta, cobrar pelo 0800 051 3333 ou WhatsApp, citando o assunto do e-mail. A prova é 22/09 [03/09/2026] #admin
 
 ## Concluídas
+- [x] Escolher orientador da dissertação: sondado por WhatsApp, o Maj PM Carlos Henrique Lourenço Rovina aceitou. Ele não é instrutor da turma, falta formalizar com o Cap Gobbo [01/09/2026] #dissertacao
 - [x] Registrar qual opção de desconto SIPA foi escolhida em 24/08: Alojamento ou Vestiário; depois conferir a cessação do equivalente na OPM de origem [31/08/2026] #admin
 - [x] Perguntar na Coordenação (Seç Avaliação, Cap Diego) as datas das seis VCs e quais disciplinas cobram trabalho além da prova [31/08/2026] #curso
 - [x] Pedir ao CAES (Seç Apoio Escolar, mesa SEI 302090130) a declaração de matrícula e frequência do CAO-II/26, para ter em mãos se a Univesp exigir comprovação [25/08/2026] #admin

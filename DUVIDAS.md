@@ -12,8 +12,7 @@
 - As outras lacunas da grade, como troca de docente e bloco das 18h00, estão em [GRADE.md](GRADE.md), na seção "O que ainda não sei".
 
 ### Dissertação (Cap PM Gobbo, Seção de Pesquisa, caespesquisa@policiamilitar.sp.gov.br)
-- **Quais regras práticas ainda faltam para escolher o orientador?** Obrigatoriedade de ser instrutor, limite de orientandos, prazo, forma do pedido e coorientação. Roteiro em [ESTUDOS.md](ESTUDOS.md).
-- **O Cel PM Mario Luciano Siconeli segue orientando no CAES?** Ele orientou a dissertação do Cap PM Ferrarez (CAO/24), que é a minha referência, e não aparece como instrutor da minha turma.
+- **Orientador já definido (Maj PM Rovina), mas ele não é instrutor da turma: cabe?** A regra diz "preferencialmente professor do programa", não obrigatório, mas falta confirmar. Junto: limite de orientandos, prazo, forma do pedido e o referendo do Cmt CAES. Roteiro em [ESTUDOS.md](ESTUDOS.md).
 
 ### Chefe de Turma
 - **Pode gravar áudio de aula?** Se puder, o NotebookLM aceita áudio como fonte e isso muda muita coisa no método ([ESTUDOS.md](ESTUDOS.md)). Se não puder, esquecer.

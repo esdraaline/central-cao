@@ -28,6 +28,13 @@ script para o mapa real aba → arquivo). Ao lançar QTS novo, manter duas seman
 a nova no topo, a anterior logo abaixo. A coluna "Meu" das 31 disciplinas é cumulativa, com
 marcas S1, S2, S3.
 
+**Formato do `TAREFAS.md`.** Uma tarefa é `- [ ] texto [dd/mm/aaaa] #categoria`, com categorias
+`#curso` `#dissertacao` `#admin` `#pessoal`. A data não é enfeite: é ela que faz a tarefa aparecer
+no guia de abertura do painel ("hoje você precisa..."); sem data, a tarefa só aparece na aba
+Tarefas. Tarefa que se repete leva `@semanal`, `@quinzenal` ou `@mensal`, e a data marca o dia da
+próxima repetição. Uma caixinha indentada logo abaixo de uma tarefa é item de conferência dela,
+não tarefa nova. Marcar como feito, nunca apagar: concluídas viram histórico.
+
 **Fonte única por assunto.** Quando a mesma informação existir dos dois lados, um é dono e o
 outro é ponteiro de uma linha. Duplicar não confunde só a IA, apaga decisão: em 17/08/2026 uma
 cópia órfã ficou dois dias afirmando que as casas de oração tinham saído do repositório

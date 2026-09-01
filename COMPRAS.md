@@ -14,16 +14,18 @@ aplicação. *[VERIFICAR: o nome correto da loja da compra de 18/08 é ConfecBel
 Depois que a camisa social chegar, dá para experimentar o social inteiro e ver o ajuste de
 caimento na própria loja.
 
-## Mercado
-
-- [x] **Energético zero** — dá para levar de casa ou comprar chegando: é o item mais pesado por unidade, e o **Duque Supermercados** (Av. Duque de Caxias, 812) e o **OXXO** (Largo General Osório, 153) ficam a pé do CAES
-
 ## Onde comprar
+
+<!-- extra -->
 
 - **Fardamento, distintivos e aplicação**: ConfecBell/Confex Bel, no entorno do CAES. É a compra que precisa de prazo.
 - **Mercado, farmácia e conveniência 24h**, com distância a pé e horário: [ENTORNO.md](ENTORNO.md). Aqui perto de casa também resolve, e sai sem o risco de tamanho.
 
 ## Já resolvido
+
+<!-- extra -->
+
+**Energético zero:** resolvido; pode subir de casa ou ser reposto no entorno do CAES.
 
 **ConfecBell/Confex Bel, 18/08**: 2 camisas de passeio cinza-claro (fecham o jogo de 3), 2 camisetas de
 serviço (fecham as 6), tarjeta operacional e Logomarca da PMESP aplicadas nas duas camisetas

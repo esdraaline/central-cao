@@ -3,29 +3,20 @@
 > **O mapa do CAO, do primeiro dia à defesa da dissertação.** Enquanto o
 > [GRADE.md](GRADE.md) responde "o que tem esta semana", este arquivo responde "como o curso
 > é montado, quanto dura cada coisa, como se é avaliado e o que precisa ser entregue".
->
-> **Fonte:** Currículo do **Programa de Mestrado Profissional em Ciências Policiais de
-> Segurança e Ordem Pública (PMPCPSOP)**, aprovado pelo **Despacho nº PM3-025/03/23, de
-> 04NOV24**, com os **Planos Didáticos de Matéria (PDM) atualizados em 30OUT24**, publicado no
-> **Bol G PM nº 227**. O PDF fica no Drive, em `00_CURSO/`. Aqui vai só a **logística**: nada
-> de conteúdo de aula, bibliografia ou nome/RE de oficial, porque este repositório é público.
->
-> **Este arquivo é o dono da estrutura permanente do curso.** O GRADE.md é o dono da semana.
 
-## O que este documento responde
+::: extra Fonte do currículo
+Currículo do PMPCPSOP, aprovado pelo Despacho nº PM3-025/03/23, com PDM atualizado em 30OUT24 e
+publicado no Bol G PM nº 227. PDF no Drive, em `00_CURSO/`.
+:::
 
-Desde 25/08/2026, o PDM é a fonte de estrutura do curso. Ele responde, sem esperar o QTS:
+## Consulta rápida
 
-- **quantas horas-aula tem cada disciplina** e, portanto, quantos blocos dela ainda faltam;
-- **quantas provas existem** (seis, não trinta e uma) e **qual o peso de cada disciplina**
-  dentro da sua prova;
-- **quando escolher as disciplinas eletivas** do 2º ciclo, e quais são as 25 opções;
-- **como se calcula a nota final** e o que reprova;
-- **as regras da dissertação**: qualificação, banca, prazos e o que zera o trabalho.
-
-O QTS continua dono da semana em [GRADE.md](GRADE.md); o PDM é dono da estrutura permanente.
+Aqui estão duração, carga horária, avaliação, eletivas e regras da dissertação. A agenda da
+semana está em [GRADE.md](GRADE.md).
 
 ## Os números do curso
+
+<!-- extra -->
 
 | | |
 |---|---|
@@ -45,13 +36,15 @@ atividades de pesquisa acadêmica.
 
 ## Os três ciclos (CENS)
 
+<!-- extra -->
+
 O curso não é corrido: são **três Ciclos de Ensino**, com naturezas diferentes.
 
 | Ciclo | Quando | Onde | O que é | Carga |
 |---|---|---|---|---|
 | **1º CENS** | Semanas **1 a 16** | Presencial, no CAES | As **6 matérias obrigatórias**, com as 31 disciplinas dentro delas | 450 h-a |
 | **2º CENS** | Semanas **17 a 19** (as 3 finais da etapa presencial) | Presencial, no CAES | **Ciências Policiais II**: disciplinas **eletivas**, de livre escolha | 90 h-a |
-| **3º CENS** | Semanas **20 a 53** (as últimas 34) | **A distância, na OPM de origem** | Metodologia Científica II: pesquisa, elaboração e **defesa da dissertação** | 10 h-a |
+| **3º CENS** | Semanas **20 a 53** (as últimas 34) | **A distância, na OPM de origem** | Metodologia Científica II: pesquisa, elaboração e **defesa da dissertação** | 10 h-a de aula + 190 h-a de estudo e pesquisa |
 
 **O 1º e o 2º CENS ocupam as 19 semanas iniciais.** Depois disso o oficial-aluno **volta a
 trabalhar na sua OPM** e toca a dissertação a distância, com material em plataforma própria e
@@ -61,6 +54,8 @@ orientação do orientador.
 fim de ano provavelmente empurra as datas. Confirmar o calendário escolar com a Coordenação.]*
 
 ## AENS, MC e UD: os três níveis
+
+<!-- extra -->
 
 Aqui está a fonte de metade da confusão de vocabulário do curso. **O que se chama de
 "disciplina" no dia a dia é, no currículo, uma Unidade Didática (UD).** Ela não tem prova
@@ -77,6 +72,8 @@ própria: quem tem prova é a **Matéria Curricular (MC)** que a contém.
 como nome de eixo é erro fácil de cometer.
 
 ## As 6 matérias e as 31 disciplinas
+
+<!-- extra -->
 
 Coluna **Blocos** = horas-aula ÷ 2, porque cada bloco do QTS vale **2 horas-aula** (dois tempos
 de 45 minutos). É com ela que se sabe quanto de cada disciplina ainda falta.
@@ -166,30 +163,17 @@ de Jurídicas.
 | 7. Policiais | 190 | | 190 |
 | **Total** | **540** | **10** | **550** |
 
-## Quadro de trabalho diário (segunda a quinta)
+## Horário diário
 
-| Sequência | Horário |
-|---|---|
-| 1º tempo | 08h15 às 09h00 |
-| 2º tempo | 09h00 às 09h45 |
-| **Intervalo** | 09h45 às 10h00 |
-| 3º tempo | 10h00 às 10h45 |
-| 4º tempo | 10h45 às 11h30 |
-| **Almoço** | 11h30 às 13h00 |
-| 5º tempo | 13h00 às 13h45 |
-| 6º tempo | 13h45 às 14h30 |
-| **Intervalo** | 14h30 às 14h45 |
-| 7º tempo | 14h45 às 15h30 |
-| 8º tempo | 15h30 às 16h15 |
+O currículo prevê 8 tempos de 45 minutos, de segunda a quinta, totalizando 32 horas-aula por
+semana. Horários de uso e blocos do QTS em [ROTINA.md](ROTINA.md).
 
-**São 8 tempos por dia, terminando às 16h15**, o que dá as 32 horas-aula semanais previstas.
-Os "blocos" do QTS são pares desses tempos: bloco 1 = 1º e 2º tempo, e assim por diante.
-
-*[VERIFICAR na Coordenação: o QTS já trouxe 5º bloco, das 16h30 às 18h00, na terça e na
-quarta. O currículo prevê 8 tempos por dia, até 16h15. Confirmar se é reposição, ajuste
-permanente ou exceção.]*
+*[VERIFICAR: o QTS das semanas 2 e 3 trouxe bloco das 16h30 às 18h00 na terça e na quarta;
+confirmar se é reposição, ajuste permanente ou exceção.]*
 
 ## Avaliação: como se é aprovado
+
+<!-- extra -->
 
 ### 1º CENS: uma prova por matéria
 
@@ -258,6 +242,8 @@ Ou seja: **as seis provas mais o artigo pesam 70%; a dissertação pesa 30%.**
 
 ## Dissertação: regras que valem prazo
 
+<!-- extra -->
+
 ### Qualificação
 
 - Ocorre em período definido pela Seç Pesq Proj Ens, **preferencialmente depois das 19 semanas
@@ -298,6 +284,8 @@ Ou seja: **as seis provas mais o artigo pesam 70%; a dissertação pesa 30%.**
 - Mesmo aprovado, **entregar a versão corrigida é obrigatório**, sob pena de sanção disciplinar.
 
 ## 2º CENS: as eletivas, e o prazo para escolher
+
+<!-- extra -->
 
 No 2º ciclo a turma se desfaz e se reagrupa por disciplina escolhida. **São 18 créditos a
 cumprir**, e a escolha é livre dentro do rol que o CAES ofertar.
@@ -361,6 +349,8 @@ eletivas são de bombeiros e não servem ao tema. A escolha está em [ESTUDOS.md
 
 ## Atividades Complementares de Ensino (ACE)
 
+<!-- extra -->
+
 | Atividade | h-a | O que é |
 |---|---|---|
 | Visitas / Palestras | 20 | Em órgãos ligados aos objetivos do curso, sem ônus para o Estado |
@@ -372,6 +362,8 @@ eletivas são de bombeiros e não servem ao tema. A escolha está em [ESTUDOS.md
 remuneradas**.
 
 ## Sistema de créditos
+
+<!-- extra -->
 
 - **10 horas-aula = 1 crédito-aula** ou **1 crédito-trabalho**.
 - Para equiparação com outras instituições de ensino superior, **1 crédito = 15 horas** de 60
@@ -392,16 +384,13 @@ remuneradas**.
 
 ## Objetivo geral do curso
 
-> Capacitar o oficial intermediário à prática profissional avançada e transformadora de
-> procedimentos e processos aplicados, por meio da incorporação do método científico,
-> habilitando-o para atuar em atividades técnico-científicas, de pesquisa aplicada, análise,
-> planejamento, desenvolvimento, inovação, solução de problemas em polícia ostensiva e ordem
-> pública, de bombeiro e defesa civil, visando atender às demandas sociais e institucionais.
+<!-- extra -->
 
-A leitura destrinchada, com o que cada palavra exige da dissertação, está na nota de aula da
-D17, no Drive.
+Consulta no currículo/PDM do programa, mantido no Drive em `00_CURSO/`.
 
 ## Base legal do ensino
+
+<!-- extra -->
 
 | Norma | O que é |
 |---|---|

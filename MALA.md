@@ -29,22 +29,16 @@ a tela mostrar como **"faltam N"** é a mala de domingo, peça por peça.
 
 ## 2. Quinta, antes de pegar a estrada — o que desce para lavar
 
-- [x] Toalha de banho usada
-- [x] Fronha usada
-- [x] Roupa suja da semana
+- [ ] Toalha de banho usada
+- [ ] Fronha usada
+- [ ] Roupa suja da semana
 
 ## 3. Domingo — o que sobe
 
 <!-- mala-domingo -->
 
-- **A roupa**: no painel, a lista acima sai sozinha do inventário da seção 1, já com a
-  quantidade que falta. Aqui no arquivo ela não aparece, porque a conta é do painel.
-- **A carga da copa**, sempre a mesma: whey, creatina, energético zero, Pepsi Black, lanches, marmitas prontas, shampoo e porta-sabonete.
-- **A janta, que não é lanche**: a chegada é por volta das 22h, e o entorno aberto nessa hora é aposta.
-
-**Ao pôr cada peça na mala, clique na ficha dela**, no painel: ela fica marcada e a linha volta
-a zero no inventário, já pronta para a contagem da quinta que vem. Errou o clique, clique de novo
-que desfaz. Não é mais preciso voltar à seção 1 para zerar nada.
+- **Carga fixa:** whey, creatina, energético zero, Pepsi Black, lanches, marmitas, shampoo e porta-sabonete.
+- **Janta de domingo:** levar pronta; a chegada é por volta das 22h.
 
 A conferência item por item da carga da copa continua sendo a tarefa de domingo, na aba Tarefas.
 
@@ -61,13 +55,6 @@ Toda peça está sempre em um destes três lugares, e a semana é o giro entre e
 
 **A única conta que existe é o inventário de quinta.** Faça com o armário aberto na sua frente;
 lembrar disso em casa não funciona.
-
-**Peça que fecha o alvo some da lista sozinha**, para sobrar na tela só o que precisa de você.
-Peça que zerou aparece com a falta cheia, e é a que não pode ser esquecida.
-
-**Na mala de domingo é ao contrário**: a ficha que você guardou continua na tela, riscada, em vez
-de sumir. É de propósito. Ali o clique errado tem de poder ser desfeito na hora, e ficha que some
-não dá para clicar de novo.
 
 **Etiqueta com o nome em tudo que for para a geladeira.** São muitas pessoas dividindo duas
 geladeiras e dois frigobares, e marmita sem nome vira marmita de todo mundo.

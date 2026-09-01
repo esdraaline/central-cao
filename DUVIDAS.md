@@ -7,12 +7,12 @@
 
 ### Coordenação e Seção de Avaliação (Cap PM Diego Almeida, caesaval@policiamilitar.sp.gov.br)
 - **Quando cai a VC de cada uma das seis matérias?** O currículo respondeu o modelo de prova; falta o calendário.
-- **Quais disciplinas cobram trabalho além da VC?** O QTS não diz uma palavra sobre isso. Enquanto não souber, [PRAZOS.md](PRAZOS.md) não tem como listar entrega de disciplina.
+- **Quais disciplinas cobram trabalho além da VC?** Sem essa resposta, [PRAZOS.md](PRAZOS.md) não consegue listar as entregas.
 - **Sou mesmo do pelotão A?** A dedução de 18/08 bate cinco de cinco com as aulas que eu assisti, mas continua sendo dedução. Ratificar de viva voz na Coordenação ([GRADE.md](GRADE.md)).
 - As outras lacunas da grade, como troca de docente e bloco das 18h00, estão em [GRADE.md](GRADE.md), na seção "O que ainda não sei".
 
 ### Dissertação (Cap PM Gobbo, Seção de Pesquisa, caespesquisa@policiamilitar.sp.gov.br)
-- **As regras da orientação**: precisa ser instrutor do curso, quantos orientandos cada um aceita, se há prazo, se o pedido é formal e se cabe coorientador. As cinco perguntas estão em [ESTUDOS.md](ESTUDOS.md). O currículo já respondeu parte: indicação do aluno e máximo de 3 bancas por docente.
+- **Quais regras práticas ainda faltam para escolher o orientador?** Obrigatoriedade de ser instrutor, limite de orientandos, prazo, forma do pedido e coorientação. Roteiro em [ESTUDOS.md](ESTUDOS.md).
 - **O Cel PM Mario Luciano Siconeli segue orientando no CAES?** Ele orientou a dissertação do Cap PM Ferrarez (CAO/24), que é a minha referência, e não aparece como instrutor da minha turma.
 
 ### Chefe de Turma
@@ -39,7 +39,7 @@
 - **Alojamento**: chegada por volta das 22h no domingo, **sem restrição de horário**. Cama de **solteiro**, e o armário **não tem chave** (o cadeado é meu). Ver [VIAGENS.md](VIAGENS.md) e [MALA.md](MALA.md).
 - **"Passeio completo" na atividade externa é o P-1**, não o S-1. O R-5 chama a seção dos uniformes sociais de "Passeio Completo" (Art. 49), daí a confusão. Ver [ROTINA.md](ROTINA.md).
 - **EPI é cinto, colete e bota**, usados com o B-1. Nesta semana nem um nem outro sobem ([MALA.md](MALA.md)).
-- **Atividade externa é toda semana?** Não. A Ed. Física gira entre os pelotões: na semana 1 o embarque antecipado foi do A, na semana 2 é dos pelotões C e E ([GRADE.md](GRADE.md)).
+- **Atividade externa é toda semana?** Não. Na semana 1 houve embarque antecipado do A; na semana 2, dos pelotões C e E. O QTS define cada semana ([GRADE.md](GRADE.md)).
 - **Padaria aberta domingo à noite?** Sim: Cascatinha (dom a sex, 05h à meia-noite) e Padaria Caxias (todos os dias, até 22h30). Mesmo assim a janta de domingo vai na mala ([ENTORNO.md](ENTORNO.md)).
 - **Ofício de Apresentação em via impressa?** Não. Basta o envio pela mesa SEI 302090130, que já confirmou o recebimento.
 - **Cartão de estacionamento**: não se aplica, vou de carona. O cartão é do veículo, então quem pede à AAp é o motorista.

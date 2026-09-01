@@ -1,6 +1,6 @@
 # STATUS — Central do CAO
 
-> Aba de abertura do painel: onde estou no curso, o que tem esta semana e o que está pendurado.
+> Semana atual, prioridades, decisões e dúvidas do curso.
 > Atualizado em: 31/08/2026
 
 ## A semana 3 (31/08 a 03/09)
@@ -12,7 +12,7 @@
 | Segunda 31/08 | Quatro blocos, saída 16h15. D06, D19, D05 e D24 |
 | Terça 01/09 | Dia cheio até as 18h00. D30, D02, D04, D05 e D26 |
 | Quarta 02/09 | Dia cheio até as 18h00. D03, D25, D11, D18 e D24 |
-| Quinta 03/09 | Só blocos 1 e 2. **Acaba 11h30**, é a volta para casa. Vence o prazo do SAE da Univesp |
+| Quinta 03/09 | Só blocos 1 e 2. **Acaba 11h30**, é a volta para casa |
 | Sexta 04/09 | **Vazia no QTS**, para todos os pelotões |
 
 Docentes de cada bloco e o rol completo das 31 disciplinas: [Grade](GRADE.md). Calendário do mês
@@ -20,8 +20,7 @@ inteiro: [Prazos](PRAZOS.md).
 
 ## O que está de pé
 
-O roteiro dia a dia, com data, é o [TAREFAS.md](TAREFAS.md), que é o que o painel cobra na abertura.
-Aqui é só a vista de cima.
+As prioridades detalhadas, com data, estão em [TAREFAS.md](TAREFAS.md). Aqui fica a vista de cima.
 
 1. **Fechar as regras e o nome do orientador da dissertação.** Pergunta ao Cap Gobbo (Seção de
    Pesquisa): precisa ser instrutor do curso, quantos orientandos aceita, há prazo, cabe
@@ -79,19 +78,7 @@ PP aprovado, tema mantido: integração PM-Prefeituras / governança participati
 final em [CAO 2026/PP/Projeto Pesquisa Cap Josemar Final.doc](CAO%202026/PP/Projeto%20Pesquisa%20Cap%20Josemar%20Final.doc).
 
 **Orientação em aberto desde 25/08.** O alvo definido em 18/08 saiu da lista e a escolha voltou
-à mesa. Quadro completo de candidatos, com encaixe de tema e de método, em [ESTUDOS.md](ESTUDOS.md).
-
-::: extra Candidatos mais fortes e as regras da orientação
-Candidatos mais fortes pelo tema: **Cel Barreto** (D28 Policiamento Comunitário), **Cel Lucena**
-(D01 Políticas Públicas), **Cel Fernandes / Cel Enio** (D04 Relações Sociais) e **Maj Ciampone**,
-que é o único instrutor a cruzar três matérias e dá aula em Policiamento Comunitário.
-
-**A primeira conversa continua sendo a do Cap Gobbo**, da Seção de Pesquisa: as regras antes do
-nome. O currículo já respondeu parte delas ([CURRICULO.md](CURRICULO.md)): a indicação do
-orientador é **do aluno**, referendada pelo Cmt CAES, e cada docente compõe no máximo **3
-bancas**. Uma eletiva do 2º ciclo pode valer mais que uma conversa de corredor: lá o encontro é
-garantido, e o rol sai até **18/09** ([PRAZOS.md](PRAZOS.md)).
-:::
+à mesa. Quadro de candidatos e ordem das conversas em [ESTUDOS.md](ESTUDOS.md).
 
 ## O que ainda não sei
 
@@ -113,23 +100,8 @@ garantido, e o rol sai até **18/09** ([PRAZOS.md](PRAZOS.md)).
   trouxer Ed. Física nem atividade externa para o pelotão A. Detalhe em [MALA.md](MALA.md).
 - **O S-1 fica guardado no CAES** (paletó, segunda calça social, gravata, quepe e tarjeta
   administrativa). Falta só a camisa social.
-- **A aba Mala abre só com o rodízio da semana**: contar o armário na quinta, o que desce para
-  lavar, o que sobe no domingo. Consulta (alvos, farda, estoque do armário, detalhes de viagem)
-  fica recolhida no fim da aba, a um clique. A doutrina de uniforme, com composição e insígnia por
-  peça, é do [ROTINA.md](ROTINA.md): um assunto, um dono. Decidido em 23/08, junto com a correção
-  do alvo de camisa de passeio, que eram 4 no inventário e são 3 de verdade.
 - **Passeio completo em atividade externa é o P-1**, não o S-1. O quepe segue sendo peça de cerimônia.
 - **EPI do curso é cinto, colete e bota**, sempre com o B-1.
-- **Anotação de aula não entra neste repositório**, que é público: este lado guarda logística (prazo,
-  tarefa, rotina) e o Google Drive guarda conteúdo (slide, anotação, trabalho, dissertação). Um
-  arquivo `.md` por disciplina, com as etiquetas `#PROVA`, `#DISSERTA` e `#DUVIDA`. Método em
-  [ESTUDOS.md](ESTUDOS.md).
-- **O currículo do programa virou arquivo próprio, o [CURRICULO.md](CURRICULO.md)** (decisão de
-  25/08). Ele é o dono da **estrutura permanente** do curso: ciclos, matérias, carga horária,
-  avaliação, eletivas e regras da dissertação. O [GRADE.md](GRADE.md) continua dono da
-  **semana**, que é o que muda toda segunda. O **PDF do currículo fica no Drive**, em
-  `00_CURSO/`, porque este repositório é público: aqui entrou só a logística, sem conteúdo de
-  aula, sem bibliografia e sem nome ou RE de oficial.
 - **Dentro do CAES, na WCorp, o Google Docs não abre documento que já existe.** Testado em 17/08.
   Não dá para depender de nuvem em sala de aula.
 

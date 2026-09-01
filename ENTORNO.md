@@ -1,14 +1,15 @@
-# ENTORNO — comer, comprar e passear a partir do CAES
+# ENTORNO — comer, comprar e se deslocar a partir do CAES
 
 > Guia da região do CAES — **Praça Júlio Prestes, 5005, Campos Elíseos, São Paulo/SP,
 > CEP 01218-020** (endereço oficial, ver [CONTATOS.md](CONTATOS.md)).
 > O Google resolve horário e "está aberto agora". Aqui está o que o Google não sabe:
 > qual presta, quanto custou e se vale voltar.
 
-**As marcas:** **[TESTADO]** alguém foi e aprovou (diz quem, quando, o que pediu e quanto
-pagou) · **[BIZU]** indicação de colega de turma, confiança alta mas não conferida ·
-**[CANDIDATO]** veio de busca, ninguém foi ainda. Candidato só vira testado depois de ir.
-Nota de aplicativo não conta.
+::: extra O que significam TESTADO, BIZU e CANDIDATO
+- **[TESTADO]**: alguém foi e aprovou, com data, pedido e preço.
+- **[BIZU]**: indicação de colega, ainda não conferida.
+- **[CANDIDATO]**: resultado de pesquisa, ainda sem visita.
+:::
 
 **Saio à paisana** no almoço e no jantar, via de regra. Fardado é exceção.
 
@@ -19,9 +20,9 @@ Nota de aplicativo não conta.
 | **Almoço, 1ª opção** | **Marmita da Chef Marianne**, entregue no CAES · **R$ 20,50** · pedir até **10h30**, zap (11) 95393-7489 | **zero** |
 | **Almoço, 2ª opção** | Terraço Aurora — R. Vitória, 365, 1º andar · R$ 28,90 | 616 m · 8 min |
 | **Almoço, 3ª opção / jantar, 1ª** | **Boteco Flôr da Duque** — Av. Duque de Caxias, 892 · **06h às 23h30, todo dia** · delivery sem taxa, zap (11) 98415-4067 | **241 m · 3 min** |
-| **Mercado da sua avenida** | **Duque Supermercados** — Av. Duque de Caxias, 812 · **06h às 22h** | **302 m · 3 min** |
+| **Mercado da sua avenida** | **Duque Supermercados** — Av. Duque de Caxias, 812 · seg-sáb 06h-22h · dom/fer 06h-14h | **302 m · 3 min** |
 | **Mercado grande** | Dia — Al. Barão de Limeira, 513 · Extra — Av. Rio Branco, 452 | ~650 m · 8 min |
-| **Academia** | **Gaviões 24h** — Av. Rio Branco, 422 · **24 horas** · entra pelo **Wellhub** | 730 m · 9 min |
+| **Academia** | **Gaviões 24h** — Av. Rio Branco, 422 · **24 horas** · parceira Wellhub, confirmar faixa do plano (Basic não cobre) | 730 m · 9 min |
 | **Padaria que abre 05h** | Cascatinha — R. Gen. Couto de Magalhães, 172 | 733 m · 9 min |
 | **Farmácia 24h** | Drogaria São Paulo — Pça. Júlio Mesquita, 131 | 1.020 m · 13 min |
 | **Conveniência 24h** | Oxxo — R. José Paulino, 592 | 893 m · 10 min |
@@ -33,16 +34,6 @@ quarta **18h00**, quinta **11h30** e você pega a estrada. Terça e quarta são 
 que sobram de verdade.
 
 ## Almoço entre aulas
-
-### A ordem de preferência (decisão do Josemar, 24/08/2026)
-
-Não é ranking de nota de aplicativo, é a ordem em que ele resolve o almoço na prática:
-
-| # | Opção | Preço | Por quê |
-|---|---|---|---|
-| **1º** | **Marmita Gourmet Marianne**, entregue no CAES | **R$ 20,50** | Não precisa sair, não gasta o intervalo e é o mais barato dos três |
-| **2º** | **Terraço Aurora** — R. Vitória, 365, 1º andar | R$ 28,90 | Melhor custo entre os de sentar, 8 min a pé |
-| **3º** | **Boteco Flôr da Duque** — Av. Duque de Caxias, 892 | *não publicado* | **241 m, é o lugar de comer mais perto do CAES**, e é a **1ª opção do jantar** de terça e quarta |
 
 ### Marmitas Gourmet Marianne — a 1ª opção
 
@@ -60,14 +51,14 @@ marmita que o Josemar usa (registrado em 24/08/2026, cardápio e valores da pró
 (arroz, feijão, uma guarnição e salada). A **opção 1 é filé de frango grelhado todo dia**, e a
 opção 2 é que varia. Ela manda o menu da semana pelo zap.
 
-**Cardápio da semana 2 (24 a 27/08/2026), para você ver o padrão:**
-
+::: extra Exemplo de cardápio: semana 2
 | Dia | Opção 2 (a que varia) | Acompanhamentos |
 |---|---|---|
 | Segunda 24/08 | Carne moída refogada com alho-poró | Arroz, feijão, batata gratinada com parmesão e gorgonzola, salada |
 | Terça 25/08 | Pernil desfiado na cerveja | Arroz, feijão, purê de mandioquinha, salada |
 | Quarta 26/08 | Picadinho de carne com cenoura | Arroz, feijão, farofa, batata-doce assada, salada |
 | Quinta 27/08 | Macarrão ao molho bolonhesa com filé de frango | Batata rústica e salada |
+:::
 
 **O horário do pedido é o que pode te derrubar.** O limite é **10h30**, e às 10h00 você já
 entrou no bloco 2, que só solta **11h30** ([ROTINA.md](ROTINA.md)). Ou seja: **o pedido tem
@@ -77,9 +68,11 @@ tarde, não existe mais marmita naquele dia.
 **Na quinta a aula acaba 11h30 e você pega a estrada**, então a marmita de quinta só faz
 sentido se for comer ali antes de sair, ou se for na estrada.
 
-Ela também faz **marmita congelada e marmita fitness com menu personalizado**, e atende
-**buffet de evento** (churrasco, coffee-break, banquete, aniversário, feijoada, casamento).
-Fica registrado para quando precisar de festa de família ou confraternização de turma.
+::: extra Outros serviços da Chef Marianne
+Também faz marmita congelada, fitness e buffet de evento.
+:::
+
+::: extra Restaurantes próximos medidos
 
 ### Os mais perto, com distância medida
 
@@ -104,6 +97,7 @@ pé, todos com a distância medida. Os mais perto:
 Princesa Isabel**, a 4 minutos pela Rua Helvétia, tem cinco opções juntas: se uma estiver
 cheia ou fechada, resolve ali mesmo sem andar de novo. É o melhor lugar para ir sem decidir
 antes.
+:::
 
 ### Terraço Aurora — o melhor custo perto
 
@@ -114,7 +108,8 @@ Restaurante a quilo e à vontade, **comida caseira**, ambiente agradável, com W
 com lojista. **R$ 28,90, sirva-se uma vez**, das **11h às 15h35**. No almoço, **um suco do dia
 é grátis**.
 
-**Também faz marmitex** — pedido só até **14h15**, pelo WhatsApp **(11) 98838-8806**.
+::: extra Preços do marmitex do Terraço Aurora
+Também faz marmitex — pedido só até **14h15**, pelo WhatsApp **(11) 98838-8806**.
 Escolha uma carne + 3 acompanhamentos:
 
 | Carne | Preço |
@@ -130,6 +125,7 @@ Acompanhamentos: arroz, arroz integral, feijão, purê, ovo frito, batata frita,
 (extra R$ 4,00; mistura acebolada +R$ 2,00). Tem também salada completa + frango/peixe
 (R$ 22,00), salada completa + bife (R$ 23,90) e omelete com salada ou acompanhamentos
 (R$ 24,00). Vem com 1 suco e 1 salada do dia grátis.
+:::
 
 ![Do CAES até o Terraço Aurora: 616 m, cerca de 8 min.](mapas/terraco-aurora.svg)
 
@@ -181,6 +177,7 @@ Nesses dias a saída é **18h00**, então dá tempo de sair da bolha do quartel.
 **Av. Duque de Caxias, 892, Santa Ifigênia, CEP 01214-000** — **(11) 3331-2820** —
 **241 m, 3 min a pé** — nota 4,3 no Google — **1ª opção de jantar** (Josemar, 24/08/2026)
 
+::: extra Como o Boteco Flôr da Duque foi identificado
 É o lugar padrão da janta nos dias que sobram, e também a **3ª opção do almoço**. Funciona
 **dentro do Hotel Minho SP** (o hotel é o nº 888), no mesmo quarteirão do **Duque
 Supermercados (812)** e da **Lissandra Cabeleireiros (830)**. Fachada preta, letreiro branco
@@ -192,6 +189,7 @@ S S Self Service, que era o recordista com 265 m. Você desce a Duque e chegou.
 **É o mesmo lugar que este guia chamava de "Padaria Flor da Duque"**, que veio como [BIZU] de
 colega do CAO-I. **Não é padaria, é bar**, e o nome tem acento: **Flôr**, como o Google
 registra. Os dois verbetes viraram este aqui.
+:::
 
 **Cardápio: lanches (hambúrguer) e beirutes.** Fonte: panfleto do próprio Boteco, fotografado
 por Josemar em 31/08/2026.
@@ -213,6 +211,8 @@ que vale a pena" perto.
 Região de restaurante bom, concentrada e segura para andar à noite.
 
 ## Abastecimento: padaria, mercado e farmácia
+
+<!-- extra -->
 
 Levantamento de 17/08/2026: **102 estabelecimentos a até 20 minutos a pé** do CAES, com
 distância medida por roteador de pedestre.
@@ -392,20 +392,19 @@ eles não estão no OpenStreetMap. O que ele vê da calçada continua ganhando d
 ### Academia Gaviões 24h — Rio Branco
 
 **Av. Rio Branco, 422, Campos Elíseos, CEP 01206-000** — **730 m, 9 min a pé** —
-**aberta 24 horas, todos os dias** — 4,4 no Google (176 avaliações), 4,94 no Wellhub (1.225)
-
-É a referência do Josemar (24/08/2026). Fica **colada no Extra da Av. Rio Branco**, então
-treino e compra saem na mesma caminhada.
-
-**O 24h não é enfeite, e é o que faz ela caber na sua semana.** Segunda a aula solta 16h15,
-terça e quarta 18h00, e ainda assim sobra a madrugada e o antes da entrada das 08h15. Não
-existe horário em que ela esteja fechada. *[VERIFICAR: em feriado o próprio Wellhub avisa que
-pode mudar.]*
+**aberta 24 horas, todos os dias**.
 
 **Tem vestiário com chuveiro e armário**, que é o que decide se dá para treinar e voltar para
 o quartel. Além de musculação, cárdio e peso livre, tem aula coletiva (spinning, funcional,
 pilates solo, boxe, muay thai, jiu-jítsu, jump, fitdance) e **2 horas de estacionamento
 grátis**.
+
+**Antes de ir:** conferir no app se a unidade Rio Branco está disponível na faixa atual do
+Wellhub e se o check-in está liberado.
+
+::: extra Pesquisa de preço e alternativas da Gaviões
+4,4 no Google (176 avaliações), 4,94 no Wellhub (1.225). Fica colada no Extra da Av. Rio
+Branco, então treino e compra saem na mesma caminhada.
 
 **O preço é o buraco, e só telefonema resolve.** Nenhuma fonte publica o valor desta unidade, e
 o site oficial da rede estava fora do ar em 24/08/2026. **Não existe diária nem plano semanal
@@ -426,20 +425,12 @@ o valor muda por unidade. E cuidado com a manchete "Gaviões a partir de R$ 39":
 rede do mesmo grupo, a Fast Treino, cuja unidade é em Alphaville.]*
 
 **O caminho é o Wellhub, e você já tem.** O Josemar **tem Wellhub (ex-Gympass) pela PM**
-(confirmado por ele em 24/08/2026), e **a unidade Rio Branco é parceira**. Ou seja, o preço de
-balcão provavelmente nem entra na conta: é chegar e entrar pelo aplicativo.
-
-**A única coisa que falta conferir é a faixa do seu plano.** A Gaviões Rio Branco exige
-**Basic+ (R$ 99,99/mês) ou superior**. O **Basic, de R$ 69,99, não cobre esta academia**.
-*[VERIFICAR no app do Wellhub: qual plano a PM te dá. Se for Basic, dá para subir de faixa
-pagando a diferença, e aí compara com o preço de balcão da academia, que ninguém publica.]*
+(confirmado por ele em 24/08/2026), e **a unidade Rio Branco é parceira**. A Gaviões Rio
+Branco exige **Basic+ (R$ 99,99/mês) ou superior**; o **Basic, de R$ 69,99, não cobre esta
+academia**.
 
 A TotalPass também tem a unidade no catálogo, mas não publica a faixa. Não interessa enquanto
 o Wellhub resolver.
-
-**Antes de ir a primeira vez, confira no app** se a Gaviões Rio Branco aparece como disponível
-para o seu plano e se o check-in está liberado. Rede parceira entra e sai do catálogo, e o que
-vale é o que o aplicativo mostra no dia.
 
 **Não tem nada a ver com a torcida do Corinthians.** A rede nasceu da escola de karatê "Os
 Gaviões do Karatê", aberta em 1974 numa garagem no Tucuruvi. A quadra da Gaviões da Fiel é
@@ -455,6 +446,7 @@ A **Evoque, Av. Rio Branco, 1457**, continua registrada como alternativa: aceita
 que é como o OpenStreetMap cadastra o ponto (651 m). As fontes consultadas em 24/08/2026 dizem
 **436**. Os dois números ficam a menos de 100 m um do outro, no mesmo trecho da avenida, então
 nenhuma decisão muda: é a mesma caminhada.]*
+:::
 
 ## Como sair daqui
 
@@ -472,7 +464,7 @@ baldeação**, a Higienópolis, Paulista, Faria Lima e Pinheiros. E a **Linha 1-
 Center Norte e ao Shopping D.
 
 A **Santa Cecília** cobre o que a Luz não cobre: a **Linha 3-Vermelha**, que de um lado vai
-para Barra Funda e do outro para o Tatuapé. `#PROVA` **A Linha 3 não passa pela Luz.** Se uma
+para Barra Funda e do outro para o Tatuapé. **A Linha 3 não passa pela Luz.** Se uma
 busca qualquer (Google Maps, Moovit) apontar a Luz como "estação mais próxima" para um destino
 da Linha 3, ela está respondendo qual estação está mais perto da origem, não qual é a certa
 para embarcar na linha que serve aquele destino. Da Luz dá pra chegar na Linha 3 fazendo Linha
@@ -500,6 +492,8 @@ eixos com movimento e metrô; evite cortar caminho por rua miúda no quadriláte
 Ifigênia/Campos Elíseos.
 
 ## Os trajetos a pé, medidos
+
+<!-- extra -->
 
 Rotas traçadas sobre a malha real do OpenStreetMap, com roteador de pedestre (respeita calçada
 e travessia). **Distância e tempo são medidos, não estimados**, e o ponto de partida é o
@@ -551,218 +545,6 @@ esquerda na **Rua Mauá** e segue 392 m até a estação. É reto e simples.
 
 É onde você resolve cabo, carregador, fone e a **extensão de tomada**, porque a sala de aula
 tem poucas tomadas.
-
-### Câmera de segurança e CFTV na Santa Ifigênia [CANDIDATO]
-<!-- extra -->
-
-Levantamento de 24/08/2026, motivado pela busca de uma **câmera TP-Link Tapo** para a casa em
-Guararapes. Endereços conferidos um a um; **distâncias medidas** no roteador de pedestre a
-partir do portão da Dino Bueno.
-
-| Loja | Endereço | A pé | Contato | Horário |
-|---|---|---|---|---|
-| **RC CFTV** | R. Santa Ifigênia, 573, loja 7 | **402 m · 5 min** | não encontrado | **não publicado** |
-| **Megastore CFTV** | R. Santa Ifigênia, 485, lojas 02/04 | **492 m · 6 min** | não encontrado | **não publicado** |
-| **SAM Eletrônicos** | R. Santa Ifigênia, 485, lojas 1-3 | **492 m · 6 min** | WhatsApp (11) 98288-6349 | **não publicado** |
-| **InPower** | R. Santa Ifigênia, 348 | **630 m · 8 min** | (11) 3223-0050 | **não publicado** |
-| **Top Net** | R. Aurora, 182, loja 08 | **691 m · 8 min** | (11) 3337-7844 · zap (11) 98483-7628 | **seg-sex 9h-17h, sáb 9h-13h** |
-| **Distribuidor CFTV** | R. Santa Ifigênia, 295, loja 204 | **681 m · 8 min** | (11) 3337-3049 · zap (11) 94721-0029 | **seg-sex 8h30-17h, sáb 8h30-13h30** |
-| **Central das Câmeras** | R. Aurora, 52 | **696 m · 8 min** | (11) 3333-3183 | **seg-sex 8h30-17h30, sáb 8h-13h** |
-| **Kalunga** | R. Líbero Badaró, 309 | 1.725 m · 21 min | loja não atende telefone | **seg-sex 8h-19h, sáb 8h-16h** |
-
-**Os números 485 e 573 são galerias**, não lojas. Megastore nas lojas 02/04 e SAM nas lojas 1-3
-dentro do mesmo prédio é normal, e as numerações não se sobrepõem.
-
-**A ordem certa de bater perna é a inversa da intuitiva:** os números da Santa Ifigênia crescem
-se afastando do CAES. Saindo do portão: **RC CFTV → Megastore/SAM → InPower → Top Net**.
-
-| Circuito | Caminhada |
-|---|---|
-| **Só a Santa Ifigênia** (RC, Megastore/SAM, Top Net) | **1.392 m · 17 min** |
-| Incluindo a Kalunga | 3.525 m · 42 min |
-
-As quatro primeiras estão a menos de 300 m umas das outras: **é uma parada só**, e cabe em
-qualquer intervalo de almoço.
-
-**O horário é o gargalo.** A única loja da rua com horário publicado, a Top Net, **fecha 17h**.
-Terça e quarta a aula sai 18h00, então nesses dias a rua inteira já fechou. Sobram **segunda
-depois da aula** (16h15, chega 16h25, uns 35 min de loja) e **o almoço de qualquer dia**. A
-Kalunga, aberta até 19h, é a única que aguenta uma saída pós-aula de terça ou quarta.
-
-*[VERIFICAR: horário de RC CFTV, Megastore, SAM e InPower. Nenhuma publica, nem em site próprio,
-nem em diretório, nem nas cópias arquivadas do portal da região. O caminho é perguntar no
-WhatsApp da SAM, (11) 98288-6349, que é o único número de loja confirmado da galeria 485.]*
-
-#### O que a pesquisa de fora acertou e o que ela inventou
-
-O levantamento inicial destas lojas veio de uma IA e foi auditado em 24/08/2026. **Nenhuma loja
-era fantasma e nenhum endereço estava errado**, inclusive o da RC CFTV, que parecia duvidoso e
-se confirmou no HTML arquivado do portal (snapshot de 10/05/2026).
-
-**Mas um preço foi inventado.** A alegação era "Tapo C200C por R$200, ou R$186 no Pix, na Top
-Net". A página existe, só que é a **C200** (a C200C nem é vendida no Brasil, é variante
-asiática) e custa **R$290,00**, ou **R$269,70 no Pix**. O que denuncia: 200 × 0,93 = 186, ou
-seja, o desconto de 7% da loja é real e foi lido do site, mas o preço-base foi inventado e o
-Pix saiu de aplicar o desconto verdadeiro sobre um número falso. **Todos os preços da Kalunga,
-em contraste, estavam corretos na vírgula.** Lição: conferir preço na fonte, sempre.
-
-#### Preços de referência, consultados em 24/08/2026
-
-| Modelo | Uso | Melhor preço achado | Onde evitar |
-|---|---|---|---|
-| **C200** interna, gira 360° | interno | **R$173,79** Amazon | Top Net R$290 (60% acima) · Kalunga R$199,90 |
-| **C100** interna, fixa | interno | R$169,90 Kalunga | custa quase igual à C200 e **não gira** |
-| **C500** externa 1080p, IP65 | externo básico | **R$225,90** Magalu | Kalunga R$299,90 · Fast Shop R$379 |
-| **C320WS** externa 2K, IP66, fixa | externo | **R$308,90** Amazon | Kalunga R$380,60 (indisponível) |
-| **C510W** externa 2K, gira, IP65 | externo | **R$376,20** Magalu | |
-| **C520WS** externa 4K*, gira, IP66 | externo | ~R$474 Mercado Livre | **em ruptura nacional** |
-| **C530WS** externa 3K 5MP, gira, IP66 | externo top | **R$490,13** Amazon | **Kabum R$891,06**, 82% acima |
-
-*A C520WS é 4MP (2K QHD), não 4K.
-
-**A conclusão que economiza a viagem:** a Santa Ifigênia é forte em **Intelbras e CFTV
-profissional**, não na linha residencial Tapo. A única loja da rua com Tapo no catálogo é a
-**InPower** (C530WS), e mesmo assim marcada sem previsão. **Comprando pela Amazon sai mais
-barato que qualquer preço de balcão levantado aqui.** Só vale a perna se for para ver o produto
-na mão ou levar no mesmo dia, e aí convém ligar antes: estoque de balcão da região raramente
-aparece na internet.
-
-**Se for comprar, a escolha:** externa, a **C510W a R$376** é o ponto de equilíbrio (2K, gira,
-noturna colorida 30 m, e **disponível**, ao contrário da C520WS). Sem precisar girar, a
-**C320WS a R$308** entrega 2K com IP66 por menos. Interna, **C200 a R$173**. E na faixa alta a
-**C530WS da Amazon a R$490** custa praticamente o mesmo que a C520WS e é superior.
-
-**Três custos que não aparecem na etiqueta:** o **microSD não vem incluso** e não serve cartão
-comum (a TP-Link pede Classe 10/U1/V10 e recomenda **High Endurance**, some R$80 a R$150);
-nenhuma delas é a bateria, então **toda externa precisa de tomada no ponto**, o que costuma
-custar eletricista; a assinatura Tapo Care é **opcional**, grava tudo no cartão sem pagar nada.
-
-#### Tapo contra Intelbras, tendo a C520WS como referência
-
-Pesquisa de 24/08/2026, para a câmera da casa em **Guararapes**. Preços do Buscapé e da Amazon
-na mesma data.
-
-**A referência, ficha oficial confirmada na página da TP-Link Brasil:**
-**Tapo C520WS**, ~R$474 no Mercado Livre e **em ruptura nacional** (esgotada na Kabum, na
-Amazon e na AMZ Tech). 2K QHD 2560×1440 (4MP), sensor CMOS Starlight 1/3" F1.6, IP66, IR 850nm
-até 29,9 m, campo de 112° diagonal, detecção de pessoa, animal, **veículo**, violação de lente
-e cruzamento de linha, **porta RJ45** além do Wi-Fi, zoom digital 12x.
-
-**As rivais da Intelbras, linha Mibo iM7:**
-
-| Modelo | Resolução | Preço |
-|---|---|---|
-| **iM7 S Full Color** IP66 | Full HD (2MP) | **R$299,85** |
-| **iM7+ 3MP Full Color** | 3MP | **R$322,91** |
-| iM7 Full Color | Full HD | R$515,00 |
-| iM7+ Zoom Full Color | Full HD | R$620,91 |
-
-**O confronto direto, C520WS contra iM7+ 3MP:**
-
-| | Tapo C520WS | Intelbras iM7+ 3MP |
-|---|---|---|
-| Resolução | **4MP** | 3MP |
-| Preço | R$474 | **R$323** |
-| Disponibilidade | **em ruptura** | disponível |
-| Rede cabeada | **sim, RJ45** | não confirmado |
-| Detecção de veículo | **sim** | não confirmado |
-
-A Tapo ganha na ficha, a Intelbras ganha R$151 e o fato de existir na prateleira.
-
-**Dois fatores que a ficha não mostra:**
-
-1. **Assistência técnica, e isso pesa no interior.** A Intelbras tem rede nacional de
-   autorizadas; a TP-Link não tem nada equivalente fora das capitais. Câmera fica anos ligada
-   tomando sol e chuva: se der problema no terceiro ano, com Intelbras se resolve na região,
-   com Tapo se manda para a capital ou se compra outra.
-2. **Nuvem: empate, e nenhuma obriga.** A Mibo Cloud é pré-paga (3, 7 ou 30 dias, semestral ou
-   anual) e o Tapo Care é assinatura. **As duas gravam no cartão sem pagar nada** e as duas só
-   mostram o preço dentro do app. Não é critério de decisão.
-
-**O empate que realmente decide.** A C520WS não está à venda, então o confronto real é
-**Intelbras iM7+ 3MP a R$323 contra Tapo C320WS a R$308**, praticamente o mesmo dinheiro:
-
-- **Tapo C320WS**: 4MP e IP66, mas é **fixa, não gira**.
-- **Intelbras iM7+ 3MP**: 3MP e **gira 360°**.
-
-**É girar ou enxergar.** Para portão e entrada, câmera fixa e bem apontada costuma render mais
-que câmera girando, porque a que gira só olha para um lado por vez e é no outro que a coisa
-acontece. Para varrer um quintal grande, o giro paga. E se assistência técnica no interior for
-critério, a Intelbras ganha sozinha, independentemente da ficha.
-
-*RESPONDIDO em 24/08/2026, pela loja oficial da Intelbras:* a iM7+ 3MP tem **IP66**, tem
-**rede cabeada RJ45 fêmea** e tem **detecção de veículos ajustável**. Ou seja, ela **empata com
-a C520WS nesses três pontos**, e a tabela acima está desatualizada nas duas últimas linhas. A
-única vantagem real que sobra para a Tapo é a **resolução, 4MP contra 3MP**, por R$151 a mais.
-
-*[VERIFICAR: a Intelbras anuncia "**com o holofote ligado**, imagens coloridas 24h", e a Tapo
-anuncia "refletores integrados **e** o sensor Starlight". Isso sugere que a Tapo depende menos
-de acender o holofote à noite, o que importa porque holofote aceso denuncia a câmera. Mas é
-leitura de material de divulgação dos dois lados, ninguém mediu.]*
-
-#### Comprar na rua ou pela internet?
-
-**Pela internet, e na loja oficial da Intelbras.** Conferido em 24/08/2026.
-
-| Onde | iM7+ 3MP | Observação |
-|---|---|---|
-| **Loja oficial Intelbras** | **R$322,90 no Pix**, 6x de R$56,65, **frete grátis** | garantia direto com o fabricante |
-| Menor preço do Buscapé | R$322,91 | ou seja, **o oficial já é o piso do mercado** |
-
-**Não há o que ganhar procurando.** A fábrica vende pelo menor preço que existe, com frete
-grátis e sem intermediário na garantia.
-
-**E os preços publicados das lojas de rua são piores, não melhores:**
-
-| Produto | Loja de rua | Internet | Diferença |
-|---|---|---|---|
-| Intelbras iM7+ Zoom | R$831,37 (Distribuidor CFTV) | R$620,91 (Buscapé) | **+34%** |
-| Tapo C200 | R$290,00 (Top Net) | R$173,79 (Amazon) | **+60%** |
-
-*Ressalva justa: preço de site de loja de rua não é preço de balcão. Na Santa Ifigênia se
-negocia no dinheiro ou no Pix e o valor cai. Mas o piso é o mesmo R$323 da fábrica, e para
-bater isso o lojista teria que vender quase sem margem.*
-
-**Quando a rua compensa:** levar no mesmo dia; ver o produto na mão e comparar modelos lado a
-lado; comprar mais de uma e negociar volume. **Quando não compensa:** uma unidade, pelo preço.
-
-**O argumento que decide neste caso:** a câmera é para **Guararapes**, não para o CAES.
-Comprando pela internet com frete grátis, ela chega em casa e ninguém carrega nada. Comprando
-na Santa Ifigênia, a caixa volta na mala na quinta-feira.
-
-#### Decidido em 24/08/2026: muro externo, e a escolha é a Intelbras
-
-**Intelbras iM7+ 3MP Full Color, R$322,90 no Pix na loja oficial, frete grátis para
-Guararapes.** Ganha no preço (R$151 abaixo da Tapo C520WS, que além disso está em ruptura),
-empata na ficha (IP66, RJ45, detecção de veículo) e tem assistência técnica no interior, que a
-TP-Link não tem.
-
-*Também avaliada e descartada: a **iM5+ Full Color** tem IP67, vedação melhor, mas é só **2MP**
-e fixa. Não vale trocar resolução por um grau de vedação que um muro não exige, IP66 já aguarda
-chuva de vento.*
-
-**Quatro pontos específicos de instalação em muro:**
-
-1. **Passar cabo de rede junto com o cabo de força.** É o conselho que mais vale. O muro é o
-   ponto mais distante do roteador, e Wi-Fi 2.4 GHz atravessando alvenaria até lá é onde essas
-   instalações falham: a câmera cai, o vídeo trava, e se culpa a câmera quando o problema é o
-   sinal. A iM7+ 3MP tem **RJ45 fêmea**, e como o eletricista vai puxar energia até o muro de
-   qualquer jeito, **o cabo de rede vai no mesmo eletroduto**. Custa quase nada a mais.
-2. **O 360° vale metade em muro.** Montada em parede, metade do giro olha para o próprio muro.
-   Contar com uns 180° úteis, não 360.
-3. **Detecção de veículo ajustável importa se o muro pega a rua.** Sem filtro, o celular apita
-   a cada carro. Item que parecia detalhe de ficha e aqui é uso diário.
-4. **Não é bateria.** Precisa de tomada no muro, e **o eletricista custa mais que a diferença
-   entre qualquer um dos modelos comparados aqui**. É o custo escondido de verdade.
-
-**Orçamento total:** câmera R$322,90 + **microSD High Endurance R$80 a R$150** (não vem
-incluso, aceita até 256 GB, e cartão comum de celular queima em gravação contínua) + eletricista.
-
-**Instalação:** parte alta do muro e, se possível, fiação por dentro. Câmera de muro é a mais
-fácil de alcançar.
-
-*[VERIFICAR: autorizada Intelbras mais próxima de Guararapes. A busca não devolveu nenhuma
-específica da região; consultar em intelbras.com/pt-br/onde-encontrar/assistencia-tecnica/]*
 
 ### Estação Santa Cecília
 
@@ -937,6 +719,8 @@ a Marechal Deodoro. Nominatim confirmou o endereço como sendo da Congregação 
 **09h30** e Vila Mariana só tem terça **09h30** — os três em horário de aula. Vila Pompéia não
 tem culto em segunda, terça nem quarta.
 
+::: extra Agenda completa e fonte dos horários da CCB
+
 ### Agenda completa das mais próximas
 
 | Casa | Telefone | Todos os cultos |
@@ -970,74 +754,11 @@ que definem a terça e a quarta.
 Santa Cecília, República, Sé, Liberdade, Bela Vista, Consolação, Higienópolis, Vila Buarque,
 Paraíso, Pari, Perdizes, Mooca, Catumbi, Carandiru, Vila Romana, Sumaré e Tatuapé. O centro
 velho praticamente não tem casa da CCB, o que empurra tudo para o anel de fora.*
+:::
 
-## Shoppings pelo metrô e trem
+## Shoppings
 
-**A escolha padrão é o Complexo Tatuapé.** Não por ser o mais perto em estações, mas pela
-última perna: **você chega dentro do shopping sem sair da estação**, por passarela interna,
-sem atravessar rua. Nenhum outro perto faz isso. E é o maior alcançável: **500 lojas, 13 salas
-de cinema, supermercado e farmácia**, somando o Shopping Metrô Tatuapé e o Boulevard Tatuapé,
-que são ligados por dentro.
-
-### Como chegar ao Tatuapé: duas rotas
-
-**Rota A, a mais curta** — 807 m a pé até a **Luz**, e **CPTM Linha 11-Coral** sentido
-Estudantes. São **2 estações**: Brás e Tatuapé.
-
-**Rota B, toda de metrô** — 1.164 m a pé até **Santa Cecília**, e **Linha 3-Vermelha** direta
-até Tatuapé. São **8 estações**, sem baldeação.
-
-A **A** tem menos estação e menos caminhada. A **B** anda 5 minutos a mais, mas o metrô passa
-com mais frequência que a CPTM, principalmente à noite. **Olhe o intervalo no painel**: se o
-trem demorar mais que uns 8 minutos, vale a rota B.
-
-### A pegadinha da volta
-
-Em Tatuapé param **duas linhas da CPTM**, e uma delas **não chega à Luz**:
-
-| Letreiro do trem | Linha | Onde termina |
-|---|---|---|
-| **Luz** | 11-Coral | **É o seu.** Brás e Luz |
-| Brás | 12-Safira | Para uma estação antes |
-
-**Só embarque no que estiver escrito LUZ.** Se errar, desce no Brás e pega o próximo da Linha
-11, que é só mais uma estação. (A Linha 13-Jade **não** para em Tatuapé: ela atende só
-Engenheiro Goulart, Guarulhos-CECAP e Aeroporto-Guarulhos.)
-
-### O que tem dentro do Tatuapé
-
-- **Oba Hortifruti**, formato "Oba Way", que é supermercado e não só hortifrúti — piso
-  Tatuapé, R. Domingos Agostim, 91
-- **Cacau Show** no piso Metrô, telefone (11) 2225-7303, e outra loja no Boulevard
-- **Cinemark** no piso G2 e **Starbucks** no piso Metrô
-- Farmácia e praça de alimentação
-
-**Horário**: lojas de **segunda a sábado, 10h às 22h**; domingo e feriado, 14h às 20h. Praça
-de alimentação e restaurantes, 11h às 22h. *(Horário vindo de busca, não de fonte oficial:
-confirme antes de ir.)*
-
-*Para compra de semana não compensa carregar dali: são ~40 min de volta com sacola na mão, e
-você tem Dia e Extra a 8 minutos. O Oba vale pelo que o Dia não tem, que é fruta, verdura e
-queijo bons.*
-
-### Os outros
-
-| Shopping | Como chegar | Da estação até a porta |
-|---|---|---|
-| **Complexo Tatuapé** | Luz → CPTM 11 (2 est.) ou Sta. Cecília → Linha 3 (8 est.) | **passarela interna** |
-| **Shopping D** | Luz → **Linha 1-Azul** até Armênia, 2 estações | curto |
-| **Center Norte + Lar Center** | Luz → **Linha 1-Azul** até Portuguesa-Tietê, 3 estações | curto |
-| **Shopping Light** | Sta. Cecília → Linha 3 até Anhangabaú, 2 estações | no centro, pequeno |
-| **Pátio Higienópolis** | Luz → **Linha 4-Amarela** até Higienópolis-Mackenzie, 2 estações | **1.197 m, 18 min a pé** |
-| **West Plaza** | Sta. Cecília → Linha 3 até Palmeiras-Barra Funda, 2 estações | ~10 min *(estimado)* |
-| **Bourbon** | Sta. Cecília → Linha 3 até Palmeiras-Barra Funda, 2 estações | ~18 min *(estimado)*, passa pelo Allianz |
-| **Cidade São Paulo / Center 3 / Pátio Paulista** | Luz → **Linha 4-Amarela** até Paulista, 3 estações | curto, na Paulista |
-| **Iguatemi / Eldorado** | Luz → **Linha 4-Amarela** até Faria Lima ou Pinheiros | médio |
-
-**Cuidado com o Pátio Higienópolis.** São 2 estações da Luz pela Linha 4, mas a caminhada
-final é **1.197 m, 18 minutos**. As três estações possíveis são todas ruins:
-Higienópolis-Mackenzie 1.197 m, Santa Cecília 1.382 m, Marechal Deodoro 1.478 m. Algumas
-páginas afirmam "157 m, 3 minutos", **e isso está errado**.
+Rotas e comparação em [PASSEIOS.md](PASSEIOS.md).
 
 ## Passeio fora da bolha
 
@@ -1052,6 +773,8 @@ daqui.
 ---
 
 ## Como este guia cresce
+
+<!-- extra -->
 
 1. **Você foi?** Me diz o nome, o que pediu, quanto pagou e se voltaria. Eu passo para
    **[TESTADO]** com data.

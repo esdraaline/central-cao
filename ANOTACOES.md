@@ -1,9 +1,10 @@
 # ANOTAÇÕES — CAO 2026
 
-> Bloco de notas do curso. Recado ouvido no corredor, ideia solta, observação de aula,
-> nome de colega, coisa que ainda não sei onde guardar. É o rascunho da Central.
+> Rascunho temporário para informação que ainda não tem destino definido.
 
 ## Onde cada coisa mora
+
+<!-- extra -->
 
 Antes de escrever aqui, veja se o assunto já tem dono. Isto aqui é o que sobra.
 

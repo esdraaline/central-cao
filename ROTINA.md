@@ -7,6 +7,8 @@
 
 ## Período do curso: presencial até 17/01/2027, depois EAD
 
+<!-- extra -->
+
 **A fase presencial vai de 17/08/2026 a 17/01/2027**, com aulas de segunda a quinta. Passado o
 dia 17/01/2027, **o curso segue a distância**: acaba a viagem semanal para Campos Elíseos e
 acaba o alojamento.
@@ -86,9 +88,8 @@ fica no armário, o que desce para lavar e o que sobe na mala) estão em [MALA.m
   operacional e cinto de serviço cinza-bandeirante, meias pretas e coturnos pretos — com
   **EPI: cinto, colete e bota**. Boina e cinto são os mesmos do P-1. Sai pouco, umas 3 vezes no
   curso inteiro pelo bizu do colega.
-  **O B-1 e o EPI ficam em casa** (decisão de 20/08, ver [MALA.md](MALA.md)). Se o QTS marcar
-  atividade externa de véspera, vai de P-1, avisa o chefe de turma e o conjunto sobe na
-  viagem seguinte.
+  O B-1 e o EPI só são usados quando o QTS marcar instrução ou missão externa. A decisão vigente
+  de transporte está em [MALA.md](MALA.md).
 - **Farda social (S-1)**: não é do dia a dia, mas pode ser exigida durante o curso,
   principalmente em visitas. Fica **guardada no CAES**.
 - **Agasalho do P-1**: **jaqueta de passeio** (Art. 127), tecido panamá cinza-bandeirante,
@@ -105,6 +106,8 @@ fica no armário, o que desce para lavar e o que sobe na mala) estão em [MALA.m
 - **EF (T-1)**: camiseta de treinamento branca, calção azul-royal, meias brancas e tênis
   preto.
 
+::: extra Insígnias por peça
+
 ### Checagem das insígnias, peça por peça
 
 | Peça | Gola / platina | Manga direita | Manga esquerda | Peito direito |
@@ -116,6 +119,9 @@ fica no armário, o que desce para lavar e o que sobe na mala) estão em [MALA.m
 
 > **São dois tipos de tarjeta** (Art. 151): a **operacional** é de tecido ou PVC; a
 > **administrativa** é de **acrílico**, com pino ou ímã. Confira se você tem as duas.
+:::
+
+::: extra Montagem completa do S-1
 
 ### Como se monta o S-1, peça por peça (R-5-PM)
 
@@ -170,8 +176,11 @@ Logomarca da PMESP em alto-relevo. Gravata, calça, meias e sapatos não levam i
    (Art. 70, § 1º, item 3). A medida de altura da bandeira no paletó não está escrita; nas peças
    análogas (capote Art. 121, jaqueta de passeio Art. 127, camisa de passeio Art. 70) o padrão é
    **40 mm da costura superior da manga**, e é essa a referência para mandar costurar.
+:::
 
 ## Estrutura do prédio
+
+<!-- extra -->
 
 - **Copa e refeitório** à disposição da turma, com **geladeira e micro-ondas**, mesas e cadeiras.
 - Para guardar marmita: **1 geladeira na copa, 1 geladeira no refeitório e 2 frigobares**.
@@ -185,6 +194,8 @@ Logomarca da PMESP em alto-relevo. Gravata, calça, meias e sapatos não levam i
   vaquinha acertada entre eles.
 
 ## Alojamento e estacionamento
+
+<!-- extra -->
 
 - **Alojamento liberado a partir de sábado à tarde**, sem restrição de horário de chegada.
 - Alojamento e salas de aula **identificados com o nome de cada aluno**; não usar outras
@@ -201,10 +212,14 @@ Logomarca da PMESP em alto-relevo. Gravata, calça, meias e sapatos não levam i
 
 ## Entregas
 
+<!-- extra -->
+
 Aguardar o entregador na entrada externa do prédio. Endereçar assim: "entrega para o
 Cap PM Josemar, Oficial-Aluno do Pel A no CAES".
 
 ## Afastamentos
+
+<!-- extra -->
 
 - Integral (DS) ou Parcial (planilhas na SAE) — depende de concessão do comando; contam como
   pontos perdidos.
@@ -214,14 +229,11 @@ Cap PM Josemar, Oficial-Aluno do Pel A no CAES".
 
 ## Demandas
 
-Ordem de contato: **Chefe de Turma → Chefe da Seção responsável** (tabela por assunto em
-[CONTATOS.md](CONTATOS.md)). **Nunca** pedir favor direto a terceirizado ou auxiliar do CAES.
-
-Os Subchefes de Turma cuidam de: controle de frequência diária (SAE), QTS (Coord), controle
-PDM (Coord), coleta e divulgação de materiais dos docentes (Coord) e equipamentos de
-informática (Coord).
+Responsável e ordem de contato em [CONTATOS.md](CONTATOS.md).
 
 ## Ofício de Apresentação e Rotina 13 do SIPA
+
+<!-- extra -->
 
 - **Mesa SEI 302090130.** Quem encaminha é a OPM de origem (2º BPM/I, pela P/1, com assinatura
   do comandante). **Enviado e recebido, confirmado em 19/08/2026.**
@@ -243,6 +255,8 @@ informática (Coord).
 
 ## Auxílios (Oficiais-Alunos PMESP)
 
+<!-- extra -->
+
 - Processados via DA; todos os Oficiais-Alunos são adidos ao CAES (função: Oficial-Aluno).
 - Oficiais de outro município recebem **Ajuda de Custo** (conforme legislação).
 - Todos recebem **Auxílio Financeiro a Estudantes** direto na conta do Banco do Brasil.
@@ -252,6 +266,8 @@ informática (Coord).
 
 ## Formatura (a organizar pela turma)
 
+<!-- extra -->
+
 - [ ] Definir Comissão de Formatura (2 por Pelotão, um deles o Chefe de Turma)
 - [ ] Ratificar data, hora e local
 - [ ] Definir Patrono (nome da turma) e 3 indicações de Paraninfo / Orador / Homenagens
@@ -259,9 +275,3 @@ informática (Coord).
 - [ ] Organizar registro de atividades/aulas (fotos e vídeo)
 - [ ] Montar relação de autoridades convidadas
 - [ ] Engajamento de todos os Oficiais-Alunos
-
-## Comer e resolver a vida no entorno
-
-Não tem rancho: alimentação é por conta própria. Endereços, restaurantes testados, mercado,
-farmácia, banco e o que dá para fazer de metrô estão em [ENTORNO.md](ENTORNO.md) — é lá que
-mora a lista, para não existirem duas dizendo a mesma coisa.

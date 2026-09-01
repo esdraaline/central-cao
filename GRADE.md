@@ -4,10 +4,11 @@
 > semana; a **estrutura permanente do curso** (ciclos, matérias, carga horária de cada
 > disciplina, avaliação, eletivas) é do [CURRICULO.md](CURRICULO.md); como eu estudo está em
 > [ESTUDOS.md](ESTUDOS.md).
-> Fonte: QTS CAO-II/26, semana de 31/08 a 03/09/2026 (a sexta 04/09 está vazia para todos os
-> pelotões, apesar de o cabeçalho do QTS trazer horário cheio para ela), assinado pelo Subten PM
-> Rodrigo Desco Milani (Aux Coord) e pelo Cap PM Diego Antonio Gonçalves de Almeida (Ch Sec Coord).
-> Os PDFs estão no Drive, em `08_CAO_2026/00_CURSO/QTS/`, um arquivo por semana.
+
+::: extra Fonte do QTS da semana 3
+QTS CAO-II/26 de 31/08 a 03/09/2026, assinado pelo Aux Coord e pelo Ch Sec Coord. PDFs no Drive,
+em `08_CAO_2026/00_CURSO/QTS/`.
+:::
 
 **Sou do pelotão A.** No QTS as células só trazem a letra, e as cinco aulas que assisti na
 terça 18/08 bateram uma a uma com as células marcadas "A". Para saber o meu dia, basta ler as
@@ -74,7 +75,7 @@ horário impresso é padrão do formulário, a folha inteira está vazia nessa c
 
 ## Semana anterior — 24 a 27/08/2026 (pelotão A)
 
-Fica no ar até a semana 4 entrar. Quando entrar, a semana 3 desce para cá e esta sai.
+<!-- extra -->
 
 **Segunda-feira 24/08/2026**
 
@@ -132,6 +133,8 @@ Física gira entre os pelotões, não é toda semana.
 
 ## Como ler o QTS
 
+<!-- extra -->
+
 **Cinco blocos por dia, cada um com duas aulas de 45 minutos.** Por isso cada letra aparece
 repetida na folha ("A A"): são as duas aulas do bloco.
 
@@ -143,8 +146,9 @@ repetida na folha ("A A"): são as duas aulas do bloco.
 | 4 | 14h45 às 16h15 |
 | 5 | 16h30 às 18h00 — só terça e quarta |
 
-Segunda e sexta acabam às 16h15. Terça e quarta vão até as 18h00. **Quinta acaba às 11h30**,
-que é quando pego a estrada para casa.
+Nas semanas 2 e 3, segunda terminou às 16h15, terça e quarta às 18h00, quinta às 11h30 e sexta
+ficou vazia. *[VERIFICAR: o currículo prevê oito tempos por dia; não tratar esse desenho do QTS
+como regra permanente.]*
 
 **O pontinho no fim do nome não é erro de digitação.** O QTS é planilha e não aceita dois
 nomes iguais na mesma coluna, então quem dá aula em mais de uma disciplina aparece como
@@ -164,6 +168,8 @@ disciplinas está mais presente no curso do que o nome sugere.
   se surgir em sala, a pergunta é sobre prazo, forma do pedido e coorientação.
 
 ## As 31 disciplinas
+
+<!-- extra -->
 
 Na ordem em que aparecem no QTS, que é a ordem das pastas no Drive
 (`08_CAO_2026/01_DISCIPLINAS/D01_...` até `D31_...`). A coluna "Meu" é cumulativa: traz o
@@ -210,6 +216,8 @@ para atividade da casa (formatura, palestra, solenidade). Não é disciplina e n
 
 ## Docentes — nome completo e lotação
 
+<!-- extra -->
+
 > Só o que fica de pé em sala, quando o docente se apresenta. Cresce aula a aula; disciplina
 > sem linha aqui é porque ainda não anotei.
 
@@ -218,6 +226,8 @@ para atividade da casa (formatura, palestra, solenidade). Não é disciplina e n
 | D05 Fundamentos da Metodologia Científica | Cap PM O'Brien | Cap PM O'Brien Pineda Teixeira | DP — Seção de Pesquisa e Estudo de Pessoal | (11) 98259-1435 |
 
 ## Quem dá aula em mais de uma disciplina
+
+<!-- extra -->
 
 Sai dos nomes com pontinho. São os oficiais mais presentes no curso, e os que dá para procurar
 em mais de um corredor.
@@ -245,7 +255,12 @@ em mais de um corredor.
 "Ten Cel PM Salomão" (D03, D14), e "Cel PM Fernandes" (D04) não é "Ten Cel PM Fernandes"
 (D15).*
 
-## Quantas disciplinas já entraram
+## Cobertura acumulada até a semana 2
+
+<!-- extra -->
+
+*[VERIFICAR: atualizar a contagem com todos os pelotões da semana 3 antes de voltar a chamar o
+número de acumulado atual.]*
 
 Contando **todos os pelotões**, não só o meu:
 
@@ -274,9 +289,11 @@ D30 Criminologia e D31 Gestão de Incidentes Policiais.
 > filtros.xlsx`, e confere campo a campo com o currículo oficial: 31 disciplinas, 450
 > horas-aula e as mesmas 6 matérias.
 
-**Quase todo instrutor dá uma disciplina só.** Dos 97, apenas 12 aparecem em mais de uma, e
-**somente 7 transitam entre matérias diferentes**. Esses 7 são os nomes com visão mais larga do
-curso, e é uma informação de caça ao orientador, não de curiosidade:
+**Quase todo instrutor dá uma disciplina só.** Sete transitam entre matérias diferentes, conforme
+a tabela abaixo. *[VERIFICAR: a seção anterior lista 16 nomes com mais de uma disciplina, mas a
+consolidação de 25/08 registrou 12; recontar a planilha antes de publicar esse total.]* Esses 7
+são os nomes com visão mais larga do curso, e é uma informação de caça ao orientador, não de
+curiosidade:
 
 | Instrutor | Matérias | Disciplinas |
 |---|---|---|

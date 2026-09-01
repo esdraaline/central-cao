@@ -21,14 +21,13 @@ ver [CONTATOS.md](CONTATOS.md).
 **22h**, que foi como rodou na primeira ida. *[VERIFICAR: o horário é combinado com o amigo da
 carona a cada semana, não é fixo.]*
 
-**Chegada no alojamento:** sem restrição de horário, e o alojamento está liberado desde sábado
-à tarde. O armário não tem chave, o cadeado é seu.
+::: extra Chegada e armário no alojamento
+Sem restrição de horário; alojamento liberado desde sábado à tarde. O armário exige cadeado próprio.
+:::
 
 ## Antes de sair, no domingo
 
-- [ ] **Mala arrumada** pelo rodízio de [MALA.md](MALA.md): roupa lavada, toalhas, fronha e a
-      carga da copa (whey, creatina, energético, lanches, marmitas). **O B-1 e o EPI ficam em
-      casa**, decisão de 20/08.
+- [ ] **Mala arrumada** conforme o rodízio e a decisão vigente de fardamento em [MALA.md](MALA.md).
 - [ ] **Combinar com o amigo da carona** o horário de saída e o espaço de bagagem. O
       porta-malas é dividido, então volume é moeda: leve compacto.
 - [ ] **Janta de domingo na mala.** A chegada é perto das 22h, não tem rancho e contar com o
@@ -39,9 +38,10 @@ carona a cada semana, não é fixo.]*
 - [ ] **Dinheiro ou cartão** para a divisão do combustível da carona e para as refeições da
       semana.
 
-Na semana em que eu for dirigindo, o **cartão de estacionamento do CAO se pede à AAp antes de
-viajar** e tem que ficar visível no painel — 40 vagas sinalizadas, moto em espaço coberto
-atrás do prédio (ver [ROTINA.md](ROTINA.md)).
+::: extra Se a viagem for de carro próprio
+Pedir o cartão de estacionamento à AAp antes de viajar e deixá-lo visível no veículo. Detalhes em
+[ROTINA.md](ROTINA.md).
+:::
 
 ## Na quinta, antes de pegar a estrada
 
@@ -50,6 +50,8 @@ Não tem lavanderia no alojamento, então tudo o que sujou volta. O que fica no 
 está listado em [MALA.md](MALA.md).
 
 ## As duas últimas viagens: janeiro/2027
+
+<!-- extra -->
 
 A fase presencial acaba em **17/01/2027**, que cai num domingo. Como a semana vai de segunda a
 quinta, **a última subida é o domingo 10/01/2027 e a última descida é a quinta 14/01/2027**.
@@ -66,6 +68,8 @@ em [MALA.md](MALA.md).
 o porta-malas é dividido.
 
 ## Histórico
+
+<!-- extra -->
 
 - **16/08/2026 (domingo), primeira ida**: saída de casa às 15h00, de carona, chegada por volta
   das 22h.

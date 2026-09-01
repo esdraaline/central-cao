@@ -1,21 +1,13 @@
 # TAREFAS — CAO 2026
 
-> Lista de tarefas correntes do curso. Marcar como feito, não apagar (histórico do que já foi cumprido).
-> Editável aqui ou pelo painel (aba Tarefas). Formato: `- [ ] texto [dd/mm/aaaa] #categoria`.
-> Categorias: `#curso` `#dissertacao` `#admin` `#pessoal`.
->
-> **A data não é enfeite.** É ela que faz a tarefa aparecer no guia de abertura do painel
-> ("hoje você precisa..."). Tarefa sem data fica fora do guia e só aparece na aba Tarefas.
->
-> **Tarefa que se repete** leva `@semanal`, `@quinzenal` ou `@mensal`. A data diz o dia da
-> repetição.
->
-> **Caixinha indentada** logo abaixo de uma tarefa é item de conferência dela, não tarefa nova.
+> Tarefas correntes do curso. Marcar como feito e preservar as concluídas como histórico.
 
 ## Pendentes
 
 ### Fardamento e pendências de secretaria
 - [ ] Comprar a camisa social cinza-claro do S-1 e a boina de reposição, que faltaram na ida à ConfecBell/Confex Bel [31/08/2026] #pessoal
+  - [ ] Depois da compra, experimentar o S-1 completo e conferir o caimento
+- [ ] Registrar qual opção de desconto SIPA foi escolhida em 24/08: Alojamento ou Vestiário; depois conferir a cessação do equivalente na OPM de origem [31/08/2026] #admin
 
 ### Rodízio da mala (toda semana, ver MALA.md)
 > Quinta conta o armário na aba Mala; domingo sobe o que o inventário apontou como falta.
@@ -48,7 +40,8 @@
 
 ### Orientador da dissertação — MISSÃO URGENTE
 - [ ] Perguntar ao Cap Gobbo as REGRAS da orientação: precisa ser instrutor do curso? Quantos orientandos cada um aceita? Há prazo? O pedido é formal? Cabe coorientador? E se o Cel/Maj Carlos Henrique Lourenço Rovina orienta no programa (não é instrutor da turma) [31/08/2026] #dissertacao
-- [ ] Sondar o Cel Barreto na aula de Policiamento Comunitário, bloco 4. A abordagem está pronta no Drive, em 02_DISSERTACAO/00_orientacao/2026-08-26_abordagem-Cel-Barreto.md: o gancho é a PEC 514/1997, que ele deu em aula [31/08/2026] #dissertacao
+- [ ] Sondar o Cel Barreto na próxima aula dele em Policiamento Comunitário. A abordagem está no Drive, em `02_DISSERTACAO/00_orientacao/2026-08-26_abordagem-Cel-Barreto.md` #dissertacao
+  - [ ] [VERIFICAR: reagendar quando um novo QTS trouxer o Cel Barreto; 31/08 não corresponde à Grade]
   - [ ] Levar o PP aprovado impresso
   - [ ] Fazer a pergunta da PEC 514, sem pedir orientação de saída
   - [ ] Registrar o resultado no mesmo arquivo, no mesmo dia
@@ -62,14 +55,14 @@
 - [ ] Vencimento dos 10 dias úteis do SAE: sem resposta, cobrar pelo 0800 051 3333 ou WhatsApp, citando o assunto do e-mail. A prova é 22/09 [03/09/2026] #admin
 
 ## Concluídas
+
+<!-- extra -->
+
 - [x] Pedir ao CAES (Seç Apoio Escolar, mesa SEI 302090130) a declaração de matrícula e frequência do CAO-II/26, para ter em mãos se a Univesp exigir comprovação [25/08/2026] #admin
 - [x] Montar o rol completo de disciplinas e instrutores para ter o universo de candidatos: pronto em 25/08, 117 vínculos e 97 instrutores, consolidado na aba Grade [25/08/2026] #dissertacao
-- [x] Mandar o QTS assim que sair, para eu lançar na aba Grade e o painel montar o dia sozinho [24/08/2026] #curso
-- [x] Decidir opção de desconto SIPA: Alojamento (R$ 30,35) ou Vestiário (R$ 21,52), e cessar o equivalente na OPM de origem [24/08/2026] #admin
-- [x] Experimentar a farda social e ver os ajustes de caimento, depois de comprar a camisa social [24/08/2026] #pessoal
+- [x] Mandar e lançar o QTS da semana 3 na Grade [24/08/2026] #curso
 - [x] Procurar o Cap Gobbo (Seção de Pesquisa) sobre a transformação do PP em dissertação [24/08/2026] #dissertacao
 - [x] Decidir e comprar o energético zero: leva de casa ou compra perto do CAES na chegada (whey, creatina e coqueteleira já resolvidos) [23/08/2026] #pessoal
-- [x] Atualizar STATUS.md e PRAZOS.md com a situação real do curso: módulo não existe (são 31 disciplinas em paralelo, QTS semanal), disciplinas e pelotão A lançados nos dois arquivos, e entregas não saem do QTS, viraram pergunta para a Coordenação [22/08/2026] #curso
 - [x] Confirmar a grafia do nome do orientador pretendido: é Cel PM Eglis, com o g antes do l, como traz o QTS revisado de 20/08. A Central escrevia Elgis desde 17/08 e foi corrigida [21/08/2026] #dissertacao
 - [x] Conferir se a mesa SEI 302090130 recebeu o ofício: recebeu. A cobrança do CAES aos faltantes (19/08) não traz meu nome nem o 2º BPM/I [19/08/2026] #admin
 - [x] Comprar na ConfecBell/Confex Bel: 2 camisas de passeio, 2 camisetas de serviço, tarjeta operacional, Logomarca, 4 distintivos de OPM e tarjeta administrativa de acrílico [18/08/2026] #pessoal
@@ -94,6 +87,4 @@
 - [x] Decidir onde comprar o fardamento: tudo na ConfecBell/Confex Bel, na tarde de segunda 17/08 [12/08/2026] #pessoal
 - [x] Conferência de armário: 78 das 90 peças já estavam em casa [06/08/2026] #pessoal
 - [x] Organizar a pasta Central CAO (limpeza de duplicados, áudio/vídeo antigo, estrutura de pastas) [04/08/2026] #pessoal
-- [x] Criar o painel visual em docs/index.html, gerado a partir dos .md [04/08/2026] #pessoal
-- [x] Criar o cadastro de tarefas com data no painel [04/08/2026] #pessoal
 - [x] Ficar de olho no Recadastramento Anual + Inspeção de Saúde (IAS) próximo do aniversário #admin

@@ -12,21 +12,21 @@ Júlio Prestes, no centro. O guia da região, com trajetos a pé, está em [ENTO
 
 Correções já feitas: não é Barra Funda, é Campos Elíseos; e o número oficial é **5005**, não 142.
 
-### Dois endereços que ainda circulam e estão desatualizados
-
-Confirmado pelo Josemar em 19/08/2026: **os dois estão errados hoje.** Ficam anotados só para
-serem reconhecidos e recusados, porque saem de fonte que parece confiável.
+::: extra Endereços antigos que devem ser recusados
+Não usar:
 
 | Endereço | Onde ainda aparece |
 |---|---|
 | Av. Água Fria, 1923, Água Fria, CEP 02333-900 | Página do CAES no site da PMESP |
-| Rua Jorge Miranda, 658, Luz, CEP 01106-000 | Manual do aluno antigo, do próprio CAES |
+| Rua Jorge Miranda, 658, Luz, CEP 01106-000 | Manual antigo do aluno |
 
-São de antes da mudança para os Campos Elíseos. **Se algum cadastro, formulário ou documento
-vier com um desses, corrigir para a Praça Júlio Prestes, 5005** — inclusive quando quem
-mandou citar a fonte oficial, porque a fonte oficial é que está velha.
+Ambos são anteriores à mudança. Corrigir documentos para Praça Júlio Prestes, 5005.
+:::
 
 ## Organograma
+
+<!-- extra -->
+
 - **Comandante**: Cel PM Melo
 - **Subcomandante**: TCel Eliéverson
 - **Divisão de Administração Escolar**: Cap Casagrandi
@@ -59,9 +59,9 @@ mandou citar a fonte oficial, porque a fonte oficial é que está velha.
 | Quem | Papel | Como chegar |
 |---|---|---|
 | **Cap PM Gobbo** | **Seção de Pesquisa. Sabe as regras da orientação.** É a primeira conversa | caespesquisa@policiamilitar.sp.gov.br, e dá aula em duas matérias |
-| Cel PM Barreto | Instrutor de Policiamento Comunitário. Encaixe mais forte no tema | Em sala |
+| Cel PM Barreto | Instrutor de Policiamento Comunitário | Em sala |
 | Cel PM Lucena | Instrutor de Políticas Públicas | Em sala |
-| Maj PM Ciampone | Único instrutor que cruza três matérias, uma delas Policiamento Comunitário | Em sala |
+| Maj PM Ciampone | Divisão de Ensino e Pesquisa; instrutor | Em sala |
 | Cap PM Simões | Ponte para contatos do corpo docente | Falar direto |
 
 **Primeira conversa: Cap PM Gobbo.** Regras antes do nome.

@@ -6,19 +6,18 @@
 
 ## Missão da semana: fechar o orientador
 
-**Decisão de 25/08/2026: o Cel PM Eglis saiu da lista de alvos.** A abordagem da aula dele, no
-bloco 4 daquela terça, não seguiu adiante. A busca segue com os demais nomes do quadro abaixo.
+::: extra Alvo retirado em 25/08: Cel PM Eglis
+A abordagem não seguiu adiante. A busca continua com os nomes da lista curta.
+:::
 
-**O que o currículo mudou nesta conversa** ([CURRICULO.md](CURRICULO.md)), e é a favor:
+::: extra Regras de orientação já confirmadas pelo currículo
+**Fonte:** [CURRICULO.md](CURRICULO.md).
 
-- **O orientador é indicado pelo aluno**, e a indicação é referendada pelo Cmt CAES. Não é
-  designação de cima para baixo.
-- Ele é **preferencialmente professor do programa**, e precisa ter **titulação mínima de
-  mestre**, como os outros dois membros da banca.
-- **"A eventual orientação no projeto de pesquisa não vincula a orientação na dissertação."**
-  Ou seja, trocar é previsto na norma, e ninguém fica preso a uma conversa inicial.
-- Cada membro pode compor no máximo **3 bancas por programa**, o que é o limite real de quantos
-  orientandos cada nome absorve.
+- O orientador é indicado pelo aluno e referendado pelo Cmt CAES.
+- É preferencialmente professor do programa e precisa ter titulação mínima de mestre.
+- A orientação do PP não vincula a orientação da dissertação.
+- Cada membro pode compor no máximo 3 bancas por programa.
+:::
 
 **Continua valendo a ordem: as regras antes do nome.** A conversa com o **Cap PM Gobbo** (Seção
 de Pesquisa) responde o que a norma não diz, e ele dá aula em **duas matérias**, então dá para
@@ -35,10 +34,7 @@ encontrá-lo em sala ([GRADE.md](GRADE.md)).
 - O pedido é **formal** ou é conversa direta com o oficial?
 - Cabe **coorientador**, por exemplo um para o tema e outro para o método?
 
-Uma dessas respostas pode eliminar metade das opções, e todas são mais baratas de obter do
-que desfazer uma escolha errada. **Chegar em qualquer nome sabendo as regras vale mais do que
-chegar antes e no escuro** — a troca de alvo de 25/08 mostrou isso na prática. As conversas
-podem correr em paralelo, mas a do Gobbo é a que protege as outras.
+As conversas podem correr em paralelo, mas a do Cap Gobbo define as regras das demais.
 
 **2. Sondar com o texto na mão.** Chegar com o PP aprovado e uma pergunta objetiva vale mais
 do que "o senhor me orientaria?". O PP está em `02_DISSERTACAO/02_texto/`.
@@ -73,14 +69,14 @@ problema. As últimas são encaixe de **método**: quem garante que o trabalho p
 Metodologia, que vale peso 2 da nota ([CURRICULO.md](CURRICULO.md)). O currículo não fala em
 coorientador, então **confirmar com o Cap Gobbo se cabe**, antes de contar com essa divisão.
 
-**Uma disciplina eletiva pode valer mais que uma conversa.** Nas semanas 17 a 19 eu escolho
-eletivas, e **Avaliação de Políticas de Segurança Pública**, **Movimentos Sociais e Segurança
-Pública** e **Mediação e Resolução de Conflitos** são do meu tema. Quem der essas aulas é
+**Uma disciplina eletiva pode valer mais que uma conversa.** A escolha começa quando o rol sair,
+até 18/09; as eletivas serão cursadas nas semanas 17 a 19. **Avaliação de Políticas de Segurança
+Pública**, **Movimentos Sociais e Segurança Pública** e **Mediação e Resolução de Conflitos** são
+do meu tema. Quem der essas aulas é
 candidato natural, e ali o encontro é garantido, não casual. O rol sai até **18/09**
 ([PRAZOS.md](PRAZOS.md)).
 
-### Uma pista da dissertação de referência
-
+::: extra Orientadores que aparecem na dissertação do Cap Ferrarez
 A dissertação do **Cap PM José Fernando Ferrarez** (CAO/24, defendida em 2025), em
 `02_DISSERTACAO/01_referencias/`, nomeia quem o orientou:
 
@@ -95,6 +91,7 @@ instrutor da minha turma, mas vale perguntar ao Cap Gobbo se ele segue orientand
 Dissertações**. Se alguma não estiver disponível lá, pedir por e-mail em
 **caespesquisa@policiamilitar.sp.gov.br** (o mesmo e-mail do Cap Gobbo, Seção de Pesquisa —
 [CONTATOS.md](CONTATOS.md)).
+:::
 
 ## A dissertação começa agora, não em 2027
 
@@ -110,10 +107,16 @@ como "ano que vem".
 
 ## Onde salvo: dois lugares, sem sobreposição
 
+<!-- extra -->
+
 | Onde | O que vive lá |
 |---|---|
 | **Este repositório** (os `.md` e o painel) | Logística: prazos, tarefas, rotina, contatos, uniforme |
-| **Google Drive**, `20_JOSEMAR_PM/08_CAO_2026/` | Conteúdo: slides, minhas anotações, trabalhos, dissertação |
+| **Google Drive** | Conteúdo: slides, minhas anotações, trabalhos e dissertação |
+
+*[VERIFICAR: o caminho vigente. O AGENTS.md aponta
+`G:\Meu Drive\10_JOSEMAR\02_TRABALHO\08_CAO_2026`, enquanto esta aba ainda usa
+`20_JOSEMAR_PM/08_CAO_2026/`. Padronizar somente depois da confirmação.]*
 
 Na dúvida: **isso é dado ou é conteúdo?** Dado vem para cá, conteúdo vai para o Drive.
 Conteúdo de aula nunca entra no repositório, que é público.
@@ -121,7 +124,7 @@ Conteúdo de aula nunca entra no repositório, que é público.
 ### Estrutura no Drive
 
 ```
-20_JOSEMAR_PM/08_CAO_2026/
+08_CAO_2026/
 ├── 00_CURSO/              edital, normas, calendário
 │   └── QTS/               o quadro de trabalho de cada semana, em PDF
 ├── 01_DISCIPLINAS/        as 31 disciplinas, D01 a D31 (ver aba Grade)
@@ -181,6 +184,8 @@ volta ([Ritmo semanal](#ritmo-semanal)/[ROTINA.md](ROTINA.md)). Eu comparo a pas
 com o que já foi copiado e trago só o que mudou, para as pastas `D0X_.../aulas/` certas.
 
 ## Onde escrevo: um arquivo Markdown por disciplina
+
+<!-- extra -->
 
 **Não é Word e não é Google Docs.** Dentro do CAES, na rede WCorp, o **Google Docs não abre
 documento que já existe** (testado à exaustão em 17/08; documento novo em branco abre, o que
@@ -277,6 +282,8 @@ O domingo de 30 minutos é o que amarra o Drive com o painel do celular.
 
 ## O que não fazer
 
+<!-- extra -->
+
 - Pasta por aula ou documento por aula: vira lixo em um mês.
 - Adotar Notion ou Obsidian agora: ferramenta nova + curso novo = abandono na semana 4.
 - Anotar em três lugares "para garantir".
@@ -291,6 +298,8 @@ eletivas e dissertação. Está tudo em [CURRICULO.md](CURRICULO.md). O QTS cont
 tem aula amanhã.
 
 ## Estudar para a prova certa: são seis, não trinta e uma
+
+<!-- extra -->
 
 A descoberta mais útil do currículo para quem estuda: **não existe prova de disciplina.
 Existe uma prova por matéria**, com questões proporcionais à carga horária de cada disciplina.
@@ -336,6 +345,8 @@ concluída até 24 meses antes da matrícula. Vale conferir se algo já cursado 
 créditos que deixam de ocupar as semanas 17 a 19.
 
 ## O artigo científico não é trabalho extra
+
+<!-- extra -->
 
 A nota do 2º ciclo é um **artigo de 8 a 20 laudas sobre tema ligado ao próprio Projeto de
 Pesquisa**, sob coordenação do orientador, avaliado pela **mesma banca da dissertação**. Ou

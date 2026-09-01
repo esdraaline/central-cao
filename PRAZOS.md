@@ -1,8 +1,7 @@
 # PRAZOS — CAO 2026
 
-> Calendário do curso: o que tem data. O que vira ação também entra em
-> [TAREFAS.md](TAREFAS.md), que é de onde sai o guia de abertura do painel.
-> Disciplinas, docentes e o quadro de cada dia estão em [GRADE.md](GRADE.md).
+> Datas do curso. Ações correspondentes em [TAREFAS.md](TAREFAS.md); aulas e docentes em
+> [GRADE.md](GRADE.md).
 
 ## Semana 3 — 31/08 a 03/09/2026
 
@@ -11,7 +10,7 @@
 | **31/08** | **segunda** | Quatro blocos, saída 16h15. D06, D19, D05 e D24 |
 | **01/09** | **terça** | Dia cheio até 18h00. D30, D02, D04, D05 e D26 |
 | **02/09** | **quarta** | Dia cheio até 18h00. D03, D25, D11, D18 e D24 |
-| **03/09** | **quinta** | Blocos 1 e 2, saída 11h30. Vence o prazo do SAE da Univesp |
+| **03/09** | **quinta** | Blocos 1 e 2, saída 11h30 |
 | 04/09 | sexta | Sem nenhuma marcação no QTS, para nenhum pelotão |
 
 ## Depois disso
@@ -25,10 +24,8 @@
 
 ## Prazos do currículo (novos em 25/08/2026)
 
-Saíram do **currículo oficial do programa** ([CURRICULO.md](CURRICULO.md)), que apareceu em
-25/08. São datas de regra, calculadas pela contagem corrida de semanas a partir de 17/08/2026.
-**Nenhuma foi confirmada em calendário escolar**: recesso de fim de ano deve empurrar as do 2º
-e 3º ciclos.
+Datas calculadas pela contagem corrida do [CURRICULO.md](CURRICULO.md), ainda sem calendário
+escolar confirmado. O recesso pode empurrar o 2º e o 3º CENS.
 
 | Quando | O que | Confiança |
 |---|---|---|
@@ -62,6 +59,8 @@ uma das seis matérias**.
 
 ## Como o curso corre
 
+<!-- extra -->
+
 - **Duração**: **53 semanas**, agosto/2026 a agosto/2027, no CAES "Cel Nelson Freire Terra",
   com **1.368 horas-aula** no total ([CURRICULO.md](CURRICULO.md)).
 - **Semana padrão**: viaja domingo, aula de segunda a quinta, volta quinta depois das 11h30
@@ -83,6 +82,8 @@ uma das seis matérias**.
 
 ## Histórico — agosto de 2026
 
+<!-- extra -->
+
 | Data | O que aconteceu |
 |---|---|
 | 13/08 | P/1 acionada: Ofício de Apresentação na mesa **SEI 302090130** e Rotina 13 do SIPA. Bagagem combinada com o amigo da carona |
@@ -96,6 +97,8 @@ uma das seis matérias**.
 | 23/08 | Volta para São Paulo com a roupa lavada e a carga da copa. O B-1 e o EPI ficam em casa ([MALA.md](MALA.md)) |
 
 ## Histórico — processo seletivo (concluído)
+
+<!-- extra -->
 
 Fonte: Edital DEC-005/24/25 (CAO/26), Anexo A.
 

@@ -5,9 +5,8 @@
 ## Pendentes
 
 ### Fardamento e pendências de secretaria
-- [ ] Comprar a camisa social cinza-claro do S-1 e a boina de reposição, que faltaram na ida à ConfecBell/Confex Bel [31/08/2026] #pessoal
+- [ ] Comprar a camisa social cinza-claro do S-1 e a boina de reposição, que faltaram na ida à ConfecBell/Confex Bel [14/09/2026] #pessoal
   - [ ] Depois da compra, experimentar o S-1 completo e conferir o caimento
-- [ ] Registrar qual opção de desconto SIPA foi escolhida em 24/08: Alojamento ou Vestiário; depois conferir a cessação do equivalente na OPM de origem [31/08/2026] #admin
 
 ### Rodízio da mala (toda semana, ver MALA.md)
 > Quinta conta o armário na aba Mala; domingo sobe o que o inventário apontou como falta.
@@ -46,15 +45,14 @@
   - [ ] Fazer a pergunta da PEC 514, sem pedir orientação de saída
   - [ ] Registrar o resultado no mesmo arquivo, no mesmo dia
 
-### Avaliações e trabalhos
-- [ ] Perguntar na Coordenação (Seç Avaliação, Cap Diego) as datas das seis VCs e quais disciplinas cobram trabalho além da prova [31/08/2026] #curso
-
 ### Univesp — prova de 22/09 em conflito com o curso (pedido já protocolado)
 > Pedido enviado ao SAE em 19/08/2026, 20h02, com a Ata de Convocação anexada. Detalhes completos em `C:\projetos\mentor-univesp\STATUS.md`.
 - [ ] Ver no WhatsApp da Univesp (11 4200-2982) se veio resposta ao pedido de prova em polo da capital [31/08/2026] #admin
 - [ ] Vencimento dos 10 dias úteis do SAE: sem resposta, cobrar pelo 0800 051 3333 ou WhatsApp, citando o assunto do e-mail. A prova é 22/09 [03/09/2026] #admin
 
 ## Concluídas
+- [x] Registrar qual opção de desconto SIPA foi escolhida em 24/08: Alojamento ou Vestiário; depois conferir a cessação do equivalente na OPM de origem [31/08/2026] #admin
+- [x] Perguntar na Coordenação (Seç Avaliação, Cap Diego) as datas das seis VCs e quais disciplinas cobram trabalho além da prova [31/08/2026] #curso
 - [x] Pedir ao CAES (Seç Apoio Escolar, mesa SEI 302090130) a declaração de matrícula e frequência do CAO-II/26, para ter em mãos se a Univesp exigir comprovação [25/08/2026] #admin
 - [x] Montar o rol completo de disciplinas e instrutores para ter o universo de candidatos: pronto em 25/08, 117 vínculos e 97 instrutores, consolidado na aba Grade [25/08/2026] #dissertacao
 - [x] Mandar e lançar o QTS da semana 3 na Grade [24/08/2026] #curso

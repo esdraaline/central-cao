@@ -3525,7 +3525,7 @@ JS_GUIA = r"""
         /* ciclo atual: o ultimo cuja semana de inicio ja passou */
         var ci=null,k;
         for(k=0;k<CICLOS.length;k++){if(sem>=CICLOS[k].de)ci=CICLOS[k];}
-        ss.textContent='de '+SEMANAS+(ci?' · '+ci.rot+', '+ci.onde:'');
+        ss.textContent='faltam '+(SEMANAS-sem)+' de '+SEMANAS+(ci?' · '+ci.rot+', '+ci.onde:'');
         sb.style.width=Math.round(sem*100/SEMANAS)+'%';
       }
     }
@@ -3543,7 +3543,7 @@ JS_GUIA = r"""
           pev.textContent='Concluída';pes.textContent='fase presencial';
           peb.style.width='100%';
         }else{
-          pev.textContent=sem2;pes.textContent='de '+PRES_SEMANAS;
+          pev.textContent=sem2;pes.textContent='faltam '+(PRES_SEMANAS-sem2)+' de '+PRES_SEMANAS;
           peb.style.width=Math.round(sem2*100/PRES_SEMANAS)+'%';
         }
       }

@@ -26,6 +26,13 @@ SAIDA = os.path.join(RAIZ, "docs", "index.html")
 # Inicio e fim estimados do curso (CAO-II/26), usados no contador da home.
 CURSO_INICIO = date(2026, 8, 17)
 CURSO_FIM = date(2027, 8, 17)
+# Fim da fase presencial (viagem semanal a SP): data confirmada pela
+# Declaracao no CAES-017/130/26, de 26/08/2026 (ver ROTINA.md). Da em diante
+# o curso e a distancia, na OPM, e acaba a rotina que este painel acompanha
+# dia a dia. Contar "quanto falta do curso" so ate CURSO_FIM superestima
+# essa rotina: sobrariam ~350 dias quando na pratica a viagem semanal acaba
+# bem antes. Por isso os dois contadores da home sao separados.
+PRESENCIAL_FIM = date(2027, 1, 17)
 # Primeira ida a Sao Paulo. Dai em diante a semana se repete: viaja domingo,
 # aula de segunda a quinta, volta quinta depois das 11h30 (ver ROTINA.md).
 PRIMEIRA_VIAGEM = date(2026, 8, 16)
@@ -3404,6 +3411,7 @@ JS_GUIA = r"""
 
   var INICIO=C.inicio?dt(C.inicio):null;
   var FIM=C.fim?dt(C.fim):null;
+  var PRES_FIM=C.presencial_fim?dt(C.presencial_fim):null;
   var VIAGEM1=C.viagem?dt(C.viagem):null;
   var SEMANAS=C.semanas||0;
   var CICLOS=C.ciclos||[];
@@ -3460,22 +3468,41 @@ JS_GUIA = r"""
       ('<span style="font-size:13.5px;font-weight:700">'+
        m.rot.replace(/^./,function(c){return c.toUpperCase()})+'<br>'+
        '<span style="font-weight:400;opacity:.9">'+m.sub+'</span></span>');
-    /* KPI do curso: dias para comecar, ou quanto ja andou */
+    /* KPI da fase presencial: mede ate PRES_FIM (17/01/2027, confirmado pela
+       Declaracao CAES-017/130/26), nao ate o fim do programa inteiro. Contar
+       contra o programa inteiro (53 semanas, ate ago/2027) superestimaria
+       quanto falta da rotina de viagem semanal que este painel acompanha,
+       porque de 20/01/2027 em diante o curso e a distancia, na OPM. */
     var kr=el('#kpi-curso-rot'),kv=el('#kpi-curso-val'),ks=el('#kpi-curso-sub'),
         kb=el('#kpi-curso-barra');
-    if(kv&&INICIO&&FIM){
+    if(kv&&INICIO&&PRES_FIM){
       if(h<INICIO){
         var n=dias(h,INICIO);
         kr.textContent='Início do curso';kv.textContent=n;
         ks.textContent=(n===1?'dia para ':'dias para ')+curto(INICIO)+'/'+INICIO.getFullYear();
         kb.style.width='0%';
-      }else if(h>FIM){
-        kr.textContent='Curso';kv.textContent='Concluído';
-        ks.textContent='agosto de 2027';kb.style.width='100%';
+      }else if(h>PRES_FIM){
+        kr.textContent='Fase presencial';kv.textContent='Concluída';
+        ks.textContent='agora é a distância, na OPM';kb.style.width='100%';
       }else{
-        var pct=Math.round(dias(INICIO,h)*100/dias(INICIO,FIM));
-        kr.textContent='Curso em andamento';kv.textContent=pct+'%';
-        ks.textContent='faltam '+dias(h,FIM)+' dias';kb.style.width=pct+'%';
+        var pct=Math.round(dias(INICIO,h)*100/dias(INICIO,PRES_FIM));
+        kr.textContent='Fase presencial';kv.textContent=pct+'%';
+        ks.textContent='faltam '+dias(h,PRES_FIM)+' dias';kb.style.width=pct+'%';
+      }
+    }
+    /* KPI do programa completo (inclui a dissertacao a distancia ate
+       ago/2027). Separado do de cima de proposito: um mede a viagem semanal,
+       o outro mede o mestrado inteiro. */
+    var pv=el('#kpi-prog-val'),ps=el('#kpi-prog-sub'),pb=el('#kpi-prog-barra');
+    if(pv&&INICIO&&FIM){
+      if(h<INICIO){
+        pv.textContent='—';ps.textContent='ainda não começou';pb.style.width='0%';
+      }else if(h>FIM){
+        pv.textContent='Concluído';ps.textContent='agosto de 2027';pb.style.width='100%';
+      }else{
+        var pct2=Math.round(dias(INICIO,h)*100/dias(INICIO,FIM));
+        pv.textContent=pct2+'%';
+        ps.textContent='faltam '+dias(h,FIM)+' dias';pb.style.width=pct2+'%';
       }
     }
     /* KPI da semana do curso e do ciclo. O curriculo (CURRICULO.md) diz que
@@ -3960,6 +3987,15 @@ def build():
                 '<div class="val" id="kpi-curso-val">...</div>'
                 '<div class="sub" id="kpi-curso-sub">CAO-II/26</div>'
                 '<div class="barra"><i id="kpi-curso-barra" style="width:0%"></i></div></div>')
+    # Separado do de cima: aquele mede so a fase presencial (a viagem
+    # semanal), este mede o programa inteiro, incluindo a dissertacao a
+    # distancia ate ago/2027. Nasceu em 01/09/2026 depois de perceber que
+    # medir a viagem semanal contra o programa inteiro superestimava quanto
+    # dela ainda falta.
+    home.append('<div class="kpi"><div class="rot">Programa completo</div>'
+                '<div class="val" id="kpi-prog-val">...</div>'
+                '<div class="sub" id="kpi-prog-sub">CAO-II/26, com dissertação</div>'
+                '<div class="barra"><i id="kpi-prog-barra" style="width:0%"></i></div></div>')
     # Semana do curso e ciclo. Nasceu em 25/08/2026, quando o curriculo do
     # programa entregou o numero total de semanas e as fronteiras dos ciclos.
     # Ate entao o painel so sabia medir tempo decorrido em porcentagem, que
@@ -4096,6 +4132,7 @@ window.ARQ_MOD=%(arqmod)s;
         "js_tarefas": JS_TAREFAS,
         "curso": escapa_js({"inicio": CURSO_INICIO.isoformat(),
                             "fim": CURSO_FIM.isoformat(),
+                            "presencial_fim": PRESENCIAL_FIM.isoformat(),
                             "viagem": PRIMEIRA_VIAGEM.isoformat(),
                             "semanas": CURSO_SEMANAS,
                             "ciclos": [{"de": d, "rot": r, "onde": o}

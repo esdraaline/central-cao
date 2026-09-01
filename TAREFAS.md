@@ -39,7 +39,7 @@
 
 ### Orientador da dissertação — formalizar com o Cap Gobbo
 - [ ] Perguntar ao Cap Gobbo as REGRAS da orientação, já com o nome fechado: cabe orientador fora do elenco de instrutores (o Maj Rovina não dá aula nesta turma)? Quantos orientandos ele aceita? Há prazo para o pedido? É formal? Como corre o referendo do Cmt CAES? [01/09/2026] #dissertacao
-- [ ] Registrar o aceite do Maj Rovina em `02_DISSERTACAO/00_orientacao/`, no Drive, com a data de 01/09 #dissertacao
+- [ ] Registrar o aceite do Maj Rovina em 02_DISSERTACAO/00_orientacao/, no Drive, com a data de 01/09 #dissertacao
 
 ### Univesp — prova de 22/09 em conflito com o curso (pedido já protocolado)
 > Pedido enviado ao SAE em 19/08/2026, 20h02, com a Ata de Convocação anexada. Detalhes completos em `C:\projetos\mentor-univesp\STATUS.md`.

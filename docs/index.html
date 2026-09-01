@@ -5,57 +5,75 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="robots" content="noindex,nofollow,noarchive">
 <meta name="googlebot" content="noindex,nofollow">
-<meta name="theme-color" content="#c8102e">
+<meta name="theme-color" content="#3a4049">
 <!-- o painel e um arquivo unico que muda a cada geracao; sem isto o navegador
      serve a versao antiga do cache e correcoes nao chegam ate o usuario -->
 <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
-<meta name="gerado-em" content="82a145a41577973f">
+<meta name="gerado-em" content="fcaa9ab3be73d10a">
 <title>Central do CAO</title>
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23c8102e'/%3E%3Ctext x='16' y='22' font-size='15' font-family='Arial' font-weight='bold' fill='white' text-anchor='middle'%3ECAO%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='5' fill='%233a4049'/%3E%3Cpath d='M12 3l2.2 5.6 6 .7-4.5 3.9 1.3 5.6L12 15.9l-4.9 3-1-5.6L2 9.3l5.7-.7L12 3z' fill='%23c9a24a'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,450;9..144,550;9..144,650&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 :root{
-  --vm:#c8102e; --vm-cl:#e63950;
-  --bg:#f4f5f7; --card:#fff; --card2:#fafbfc;
-  --tx:#1a1d21; --tx2:#5b6470; --tx3:#8a929c;
-  --bd:#e2e5ea; --sh:0 1px 3px rgba(16,24,40,.06),0 1px 2px rgba(16,24,40,.04);
-  --sh2:0 4px 16px rgba(16,24,40,.08);
-  --ok:#0f9d58; --al:#e8a13a; --al-bg:#fef8ec;
+  /* vermelho institucional (oxiblood): estado de urgencia/acao, nao decoracao */
+  --vm:#a2402f; --vm-cl:#b8503b;
+  --bg:#edece5; --card:#ffffff; --card2:#f2f0e8;
+  --tx:#24262a; --tx2:#585f68; --tx3:#868d95;
+  --bd:#dbd8ce; --sh:0 1px 2px rgba(30,28,20,.05),0 1px 1px rgba(30,28,20,.04);
+  --sh2:0 3px 14px rgba(30,28,20,.09);
+  --ok:#5c7a4a; --al:#b8862f; --al-bg:#f2e6c8;
 }
 @media (prefers-color-scheme:dark){
-  :root{--bg:#0f1218;--card:#171b23;--card2:#1c212b;--tx:#e6e9ee;--tx2:#9aa4b2;
-        --tx3:#6b7480;--bd:#262c37;--vm-cl:#ff5a72;--al-bg:#2a2415;
-        --sh:0 1px 3px rgba(0,0,0,.4);--sh2:0 4px 20px rgba(0,0,0,.5)}
+  :root{--bg:#14171b;--card:#1d2126;--card2:#242830;--tx:#e9e6dd;--tx2:#a7acb3;
+        --tx3:#767c84;--bd:#2b2f36;--vm-cl:#d98a72;--al-bg:#2c2413;
+        --sh:0 1px 2px rgba(0,0,0,.45);--sh2:0 3px 18px rgba(0,0,0,.55)}
 }
-:root[data-theme=dark]{--bg:#0f1218;--card:#171b23;--card2:#1c212b;--tx:#e6e9ee;
-  --tx2:#9aa4b2;--tx3:#6b7480;--bd:#262c37;--vm-cl:#ff5a72;--al-bg:#2a2415;
-  --sh:0 1px 3px rgba(0,0,0,.4);--sh2:0 4px 20px rgba(0,0,0,.5)}
-:root[data-theme=light]{--bg:#f4f5f7;--card:#fff;--card2:#fafbfc;--tx:#1a1d21;
-  --tx2:#5b6470;--tx3:#8a929c;--bd:#e2e5ea;--vm-cl:#e63950;--al-bg:#fef8ec;
-  --sh:0 1px 3px rgba(16,24,40,.06);--sh2:0 4px 16px rgba(16,24,40,.08)}
+:root[data-theme=dark]{--bg:#14171b;--card:#1d2126;--card2:#242830;--tx:#e9e6dd;
+  --tx2:#a7acb3;--tx3:#767c84;--bd:#2b2f36;--vm-cl:#d98a72;--al-bg:#2c2413;
+  --sh:0 1px 2px rgba(0,0,0,.45);--sh2:0 3px 18px rgba(0,0,0,.55)}
+:root[data-theme=light]{--bg:#edece5;--card:#ffffff;--card2:#f2f0e8;--tx:#24262a;
+  --tx2:#585f68;--tx3:#868d95;--bd:#dbd8ce;--vm-cl:#b8503b;--al-bg:#f2e6c8;
+  --sh:0 1px 2px rgba(30,28,20,.05);--sh2:0 3px 14px rgba(30,28,20,.09)}
 
 body{background:var(--bg);color:var(--tx);
-  font:15px/1.62 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  font:15px/1.62 "Public Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
   -webkit-font-smoothing:antialiased}
 
-/* cabecalho */
-:root{--top1:#8f0a20;--top2:#c8102e;--top3:#a30d26}
-@media (prefers-color-scheme:dark){:root{--top1:#4a0511;--top2:#7d0a1d;--top3:#5c0716}}
-:root[data-theme=dark]{--top1:#4a0511;--top2:#7d0a1d;--top3:#5c0716}
-:root[data-theme=light]{--top1:#8f0a20;--top2:#c8102e;--top3:#a30d26}
+/* numeros e datas em mono: hora de aula, contagem de dias, tabela, tag [VERIFICAR] */
+.guia-conta b,.kpi .val,.qts-lista li .hr,.guia-lista li .qd,.qts-lista li .qd,
+table,code,.tf-data,.mk-topo b,.busca kbd{
+  font-family:"IBM Plex Mono",ui-monospace,SFMono-Regular,Consolas,monospace}
+
+/* cabecalho: cinza-bandeirante do uniforme, nao vermelho de aplicativo */
+:root{--top1:#2d3138;--top2:#454c56;--top3:#363c44}
+@media (prefers-color-scheme:dark){:root{--top1:#1b1e22;--top2:#2b3038;--top3:#232830}}
+:root[data-theme=dark]{--top1:#1b1e22;--top2:#2b3038;--top3:#232830}
+:root[data-theme=light]{--top1:#2d3138;--top2:#454c56;--top3:#363c44}
 .topo{background:linear-gradient(100deg,var(--top1),var(--top2) 55%,var(--top3));color:#fff;
-  padding:20px 0 0;box-shadow:var(--sh2);position:relative;overflow:hidden}
+  padding:20px 0 0;box-shadow:var(--sh2);position:relative;overflow:hidden;
+  border-bottom:2px solid #b8862f}
 .topo::after{content:"";position:absolute;right:-60px;top:-70px;width:260px;height:260px;
-  border-radius:50%;background:rgba(255,255,255,.06)}
+  border-radius:50%;background:rgba(255,255,255,.05)}
+.topo::before{content:"";position:absolute;inset:0;pointer-events:none;opacity:.05;
+  background:repeating-linear-gradient(45deg,#fff 0 1px,transparent 1px 7px)}
 .wrap{max-width:1080px;margin:0 auto;padding:0 20px;position:relative;z-index:1}
 .marca{display:flex;align-items:center;gap:13px;flex-wrap:wrap}
-.brasao{width:42px;height:42px;border-radius:9px;background:rgba(255,255,255,.16);
-  display:grid;place-items:center;font-weight:800;font-size:13px;letter-spacing:.5px;flex:none}
-.marca h1{font-size:19px;font-weight:700;letter-spacing:-.2px;line-height:1.25}
+.brasao{width:50px;height:38px;border-radius:5px;flex:none;
+  background:linear-gradient(160deg,#4c535e,#33383f);
+  border:1px solid rgba(184,134,47,.55);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.08);
+  display:grid;place-items:center}
+.brasao svg{width:30px;height:auto}
+.brasao svg path{fill:#c9a24a}
+.marca h1{font-family:"Fraunces",Georgia,serif;font-size:20px;font-weight:650;
+  letter-spacing:-.2px;line-height:1.25}
 .marca p{font-size:12.5px;opacity:.82;margin-top:1px}
 .acoes{margin-left:auto;display:flex;gap:8px;align-items:center}
 .bt{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.2);color:#fff;
-  border-radius:9px;padding:8px;cursor:pointer;display:grid;place-items:center;
+  border-radius:6px;padding:8px;cursor:pointer;display:grid;place-items:center;
   transition:background .15s}
 .bt:hover{background:rgba(255,255,255,.26)}
 /* o botao da conta leva texto ao lado do icone; o do tema continua quadrado */
@@ -72,7 +90,7 @@ body{background:var(--bg);color:var(--tx);
 .busca{position:relative;margin:16px 0 4px;max-width:420px}
 .busca svg{position:absolute;left:11px;top:50%;transform:translateY(-50%);opacity:.6;color:#fff}
 .busca input{width:100%;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.22);
-  border-radius:9px;padding:9px 12px 9px 36px;color:#fff;font-size:14px;font-family:inherit}
+  border-radius:6px;padding:9px 12px 9px 36px;color:#fff;font-size:14px;font-family:inherit}
 .busca input::placeholder{color:rgba(255,255,255,.62)}
 .busca input:focus{outline:none;background:rgba(255,255,255,.2);border-color:rgba(255,255,255,.45)}
 
@@ -96,12 +114,13 @@ main{max-width:1080px;margin:0 auto;padding:24px 20px 64px}
 .aba{display:none;animation:sobe .22s ease}
 .aba.on{display:block}
 @keyframes sobe{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
-.card{background:var(--card);border:1px solid var(--bd);border-radius:13px;
+@media (prefers-reduced-motion:reduce){.aba{animation:none}}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:5px;
   padding:22px 24px;box-shadow:var(--sh);margin-bottom:16px;overflow-wrap:break-word}
 
 /* home */
 .grade{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:13px;margin-bottom:16px}
-.kpi{background:var(--card);border:1px solid var(--bd);border-radius:13px;padding:17px 19px;box-shadow:var(--sh)}
+.kpi{background:var(--card);border:1px solid var(--bd);border-radius:5px;padding:17px 19px;box-shadow:var(--sh)}
 .kpi .rot{font-size:11.5px;text-transform:uppercase;letter-spacing:.7px;color:var(--tx3);font-weight:700}
 .kpi .val{font-size:29px;font-weight:750;letter-spacing:-1px;margin:5px 0 1px;line-height:1.1}
 .kpi .sub{font-size:12.5px;color:var(--tx2)}
@@ -109,7 +128,7 @@ main{max-width:1080px;margin:0 auto;padding:24px 20px 64px}
 .barra{height:6px;background:var(--bd);border-radius:4px;overflow:hidden;margin-top:11px}
 .barra i{display:block;height:100%;background:linear-gradient(90deg,var(--vm),var(--vm-cl));border-radius:4px}
 .aviso{background:var(--al-bg);border:1px solid var(--al);border-left-width:4px;
-  border-radius:11px;padding:15px 18px;margin-bottom:16px}
+  border-radius:5px;padding:15px 18px;margin-bottom:16px}
 .aviso h3{font-size:13px;text-transform:uppercase;letter-spacing:.6px;color:var(--al);margin-bottom:9px}
 .aviso ul{list-style:none}
 .aviso li{padding:4px 0 4px 20px;position:relative;font-size:14px}
@@ -119,16 +138,17 @@ main{max-width:1080px;margin:0 auto;padding:24px 20px 64px}
 /* ===================== guia do dia (abertura do painel) =====================
    E a primeira coisa que aparece: em que dia estamos, o que fazer hoje, o que
    vem amanha. Tudo montado no navegador, para nunca envelhecer sozinho.     */
-.guia{background:var(--card);border:1px solid var(--bd);border-radius:14px;
+.guia{background:var(--card);border:1px solid var(--bd);border-radius:6px;
   box-shadow:var(--sh);margin-bottom:16px;overflow:hidden}
 .guia-topo{display:flex;gap:16px;align-items:center;flex-wrap:wrap;
   padding:17px 22px;background:linear-gradient(100deg,var(--top1),var(--top2) 60%);color:#fff}
 .guia-ola{font-size:12.5px;text-transform:uppercase;letter-spacing:.8px;opacity:.85;font-weight:700}
-.guia-dia{font-size:20px;font-weight:750;letter-spacing:-.3px;line-height:1.2;margin-top:2px}
+.guia-dia{font-family:"Fraunces",Georgia,serif;font-size:23px;font-weight:600;
+  letter-spacing:-.2px;line-height:1.2;margin-top:2px}
 .guia-fase{font-size:13px;opacity:.9;margin-top:3px}
 .guia-conta{margin-left:auto;text-align:right;display:flex;align-items:baseline;gap:9px;
   background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.2);
-  border-radius:11px;padding:9px 14px}
+  border-radius:5px;padding:9px 14px}
 .guia-conta b{font-size:27px;font-weight:800;letter-spacing:-1px;line-height:1}
 .guia-conta span{font-size:12px;line-height:1.35;text-align:left;opacity:.92}
 .guia-corpo{padding:6px 22px 18px}
@@ -143,12 +163,12 @@ main{max-width:1080px;margin:0 auto;padding:24px 20px 64px}
 .tf-tag.rep{background:var(--bd);color:var(--tx2);cursor:pointer}
 .tf-tag.rep svg{opacity:.9}
 .tf-aviso{display:none;align-items:center;gap:8px;margin:0 0 12px;padding:10px 14px;
-  border:1px solid var(--bd);border-left:3px solid var(--vd);border-radius:10px;
+  border:1px solid var(--bd);border-left:3px solid var(--vd);border-radius:5px;
   background:var(--card);color:var(--tx2);font-size:13.5px}
 .tf-aviso.on{display:flex}
 .guia-lista{list-style:none;margin:0}
 .guia-lista li{display:flex;gap:10px;align-items:flex-start;padding:9px 12px;margin:6px 0;
-  border:1px solid var(--bd);border-left-width:3px;border-radius:9px;background:var(--card2);
+  border:1px solid var(--bd);border-left-width:3px;border-radius:5px;background:var(--card2);
   font-size:14.5px;color:var(--tx)}
 .guia-bloco.vencido .guia-lista li{border-left-color:var(--vm)}
 .guia-bloco.agora .guia-lista li{border-left-color:var(--al)}
@@ -160,12 +180,12 @@ main{max-width:1080px;margin:0 auto;padding:24px 20px 64px}
    antes de "o que eu tenho que fazer". */
 .guia-aula{padding:15px 22px 0}
 .qts-aviso{display:flex;gap:9px;align-items:flex-start;background:var(--al-bg);
-  border:1px solid var(--al);border-radius:9px;padding:9px 12px;margin-bottom:11px;
+  border:1px solid var(--al);border-radius:5px;padding:9px 12px;margin-bottom:11px;
   font-size:13.5px;color:var(--tx);line-height:1.4}
 .qts-aviso b{color:var(--al);flex:none}
 .qts-lista{list-style:none;margin:0}
 .qts-lista li{display:flex;gap:12px;align-items:center;padding:9px 12px;margin:6px 0;
-  border:1px solid var(--bd);border-left-width:3px;border-radius:9px;background:var(--card2)}
+  border:1px solid var(--bd);border-left-width:3px;border-radius:5px;background:var(--card2)}
 .qts-lista li .hr{font-size:13px;font-weight:700;color:var(--tx2);flex:none;width:46px;
   font-variant-numeric:tabular-nums;line-height:1.3}
 .qts-lista li .hr i{display:block;font-style:normal;font-size:11px;font-weight:500;color:var(--tx3)}
@@ -195,7 +215,8 @@ main{max-width:1080px;margin:0 auto;padding:24px 20px 64px}
 }
 
 /* tipografia do conteudo */
-.card h2{font-size:17px;font-weight:700;letter-spacing:-.2px;margin:26px 0 11px;
+.card h2{font-family:"Fraunces",Georgia,serif;font-size:19px;font-weight:600;
+  letter-spacing:-.2px;margin:26px 0 11px;
   padding-bottom:8px;border-bottom:2px solid var(--bd)}
 .card h2:first-child{margin-top:0}
 .card h3{font-size:14.5px;font-weight:700;color:var(--tx);margin:19px 0 8px}
@@ -210,7 +231,7 @@ main{max-width:1080px;margin:0 auto;padding:24px 20px 64px}
 .card a:hover{border-bottom-color:currentColor}
 /* secao recolhida (<details class="extra">): referencia que nao pode disputar
    espaco com a lista do que fazer hoje. Fechada por padrao. */
-.card details.extra{border:1px solid var(--bd);border-radius:11px;background:var(--card2);
+.card details.extra{border:1px solid var(--bd);border-radius:5px;background:var(--card2);
   margin:11px 0;overflow:hidden}
 .card details.extra>summary{cursor:pointer;list-style:none;padding:12px 15px;
   font-size:14px;font-weight:650;color:var(--tx2);display:flex;align-items:center;gap:9px;
@@ -228,7 +249,7 @@ main{max-width:1080px;margin:0 auto;padding:24px 20px 64px}
 .card details.extra>ul,.card details.extra>ol{margin-left:36px}
 /* a marca "extras" so aparece no primeiro <details> de uma sequencia */
 .card details.extra+details.extra{margin-top:-4px}
-.card details.local{border:1px solid var(--bd);border-radius:10px;background:var(--card2);
+.card details.local{border:1px solid var(--bd);border-radius:5px;background:var(--card2);
   margin:10px 0;overflow:hidden}
 .card details.local>summary{cursor:pointer;list-style:none;padding:12px 14px;
   display:flex;gap:9px;align-items:flex-start;color:var(--tx);font-size:14px;
@@ -248,11 +269,11 @@ main{max-width:1080px;margin:0 auto;padding:24px 20px 64px}
 .card .local-corpo .tab-wrap{margin:8px 0}
 .card .local-corpo table{font-size:13px}
 blockquote{border-left:3px solid var(--vm);background:var(--card2);padding:11px 16px;
-  border-radius:0 9px 9px 0;margin:13px 0;font-size:13.5px;color:var(--tx2)}
+  border-radius:0 5px 5px 0;margin:13px 0;font-size:13.5px;color:var(--tx2)}
 del{color:var(--tx3);text-decoration-thickness:1px}
 code{background:var(--card2);border:1px solid var(--bd);border-radius:5px;padding:1.5px 5px;
   font:.88em/1.4 ui-monospace,SFMono-Regular,Consolas,monospace;color:var(--vm-cl)}
-pre{background:var(--card2);border:1px solid var(--bd);border-radius:10px;padding:15px 17px;
+pre{background:var(--card2);border:1px solid var(--bd);border-radius:5px;padding:15px 17px;
   overflow-x:auto;margin:13px 0}
 pre code{background:none;border:0;padding:0;color:var(--tx2);font-size:12.5px;line-height:1.55}
 hr{border:0;border-top:1px solid var(--bd);margin:20px 0}
@@ -262,7 +283,7 @@ hr{border:0;border-top:1px solid var(--bd);margin:20px 0}
 
 /* mapas desenhados (svg embutido da pasta mapas/) */
 figure.mapa{margin:18px 0;padding:14px 12px 10px;border:1px solid var(--bd);
-  border-radius:12px;background:var(--card2);overflow-x:auto}
+  border-radius:6px;background:var(--card2);overflow-x:auto}
 /* min-width: sem isso o desenho encolhe junto com a tela e o texto do svg
    fica ilegivel no celular. Melhor manter o tamanho e deixar arrastar de lado. */
 figure.mapa svg{display:block;width:100%;min-width:560px;max-width:640px;
@@ -276,7 +297,7 @@ figure.mapa figcaption{margin-top:10px;text-align:center;color:var(--tx3);
 .mapa-erro{color:var(--vm-cl);font-size:13px}
 
 /* tabelas */
-.tab-wrap{overflow-x:auto;margin:13px 0;border:1px solid var(--bd);border-radius:10px}
+.tab-wrap{overflow-x:auto;margin:13px 0;border:1px solid var(--bd);border-radius:5px}
 table{border-collapse:collapse;width:100%;font-size:13.8px;min-width:400px}
 th{background:var(--card2);text-align:left;padding:10px 14px;font-weight:700;font-size:12px;
   text-transform:uppercase;letter-spacing:.5px;color:var(--tx3);border-bottom:1px solid var(--bd)}
@@ -287,7 +308,7 @@ tbody tr:hover{background:var(--card2)}
 /* tarefas */
 ul.tarefas{list-style:none;margin:11px 0}
 ul.tarefas li{display:flex;gap:10px;align-items:flex-start;padding:9px 12px;margin:5px 0;
-  border:1px solid var(--bd);border-radius:9px;background:var(--card2)}
+  border:1px solid var(--bd);border-radius:5px;background:var(--card2)}
 ul.tarefas li .box{width:17px;height:17px;border-radius:5px;border:2px solid var(--bd);
   flex:none;margin-top:2px;display:grid;place-items:center}
 ul.tarefas li.pend{border-left:3px solid var(--al)}
@@ -310,7 +331,7 @@ ul.tarefas li.parcial .box{background:var(--al);border-color:var(--al)}
 ul.tarefas li.parcial .box::after{content:"";width:9px;height:2.5px;
   border-radius:2px;background:#fff}
 .mk-qtd{margin-left:auto;display:flex;align-items:center;gap:4px;flex:none}
-.mk-qtd button{width:26px;height:26px;flex:none;border-radius:7px;
+.mk-qtd button{width:26px;height:26px;flex:none;border-radius:5px;
   border:1px solid var(--bd);background:var(--card);color:var(--tx2);
   font-size:1rem;line-height:1;cursor:pointer;display:grid;place-items:center;
   padding:0}
@@ -323,14 +344,14 @@ ul.tarefas li.parcial .mk-qtd .n{color:var(--al);font-weight:600}
 /* contador de progresso no topo das abas com lista ticavel */
 .mk-topo{display:flex;align-items:center;gap:12px;flex-wrap:wrap;
   margin:0 0 14px;padding:11px 14px;border:1px solid var(--bd);
-  border-radius:10px;background:var(--card2)}
+  border-radius:5px;background:var(--card2)}
 .mk-topo .mk-n{font-weight:700;color:var(--tx)}
 .mk-topo .mk-barra{flex:1;min-width:120px;height:7px;border-radius:99px;
   background:var(--bd);overflow:hidden}
 .mk-topo .mk-barra i{display:block;height:100%;background:var(--ok);
   border-radius:99px;transition:width .2s}
 .mk-topo button{background:none;border:1px solid var(--bd);color:var(--tx3);
-  border-radius:8px;padding:5px 11px;font-size:.82rem;cursor:pointer}
+  border-radius:5px;padding:5px 11px;font-size:.82rem;cursor:pointer}
 .mk-topo button:hover{color:var(--tx);border-color:var(--vm)}
 /* estado da sincronizacao, igual ao das Tarefas mas dentro da barra */
 .mk-topo .tf-status{margin-left:0;font-size:12px}
@@ -350,7 +371,7 @@ ul.tarefas li.parcial .mk-qtd .n{color:var(--al);font-weight:600}
 .mala-dom-li{list-style:none;margin:0 0 9px;padding:0;display:flex;
   flex-wrap:wrap;gap:7px}
 .mala-dom-li li{display:flex;align-items:center;gap:6px;background:var(--card2);
-  border:1px solid var(--bd);border-radius:9px;padding:7px 12px;font-size:14px;
+  border:1px solid var(--bd);border-radius:5px;padding:7px 12px;font-size:14px;
   font-weight:600;color:var(--tx);cursor:pointer;user-select:none;
   transition:border-color .12s,opacity .12s}
 .mala-dom-li li b{color:var(--vm);font-weight:800}
@@ -383,9 +404,9 @@ ul.tarefas li.parcial .mk-qtd .n{color:var(--al);font-weight:600}
    uma pendencia que nao era de ninguem: esta e real e so o Josemar resolve,
    clicando. Por isso pode ser vermelha e grande.                          */
 .sinc-al{display:none;width:100%;align-items:center;gap:12px;flex-wrap:wrap;
-  text-align:left;margin:0 0 16px;padding:13px 15px;border-radius:12px;
+  text-align:left;margin:0 0 16px;padding:13px 15px;border-radius:5px;
   font:inherit;cursor:pointer;background:var(--vm);border:1px solid var(--vm);
-  color:#fff;box-shadow:0 2px 12px rgba(200,16,46,.3)}
+  color:#fff;box-shadow:0 2px 12px rgba(162,64,47,.3)}
 .sinc-al.on{display:flex}
 .sinc-al:hover{background:var(--vm-cl);border-color:var(--vm-cl)}
 .sinc-al-ic{flex:none;width:26px;height:26px;border-radius:50%;
@@ -394,7 +415,7 @@ ul.tarefas li.parcial .mk-qtd .n{color:var(--al);font-weight:600}
 .sinc-al-tx{flex:1 1 200px;min-width:0}
 .sinc-al-tx b{display:block;font-size:14.5px;font-weight:700}
 .sinc-al-tx span{display:block;font-size:12.5px;opacity:.93;margin-top:2px}
-.sinc-al-bt{flex:none;border-radius:8px;padding:7px 15px;font-size:13px;
+.sinc-al-bt{flex:none;border-radius:5px;padding:7px 15px;font-size:13px;
   font-weight:700;background:#fff;color:var(--vm)}
 @media(max-width:560px){
   .sinc-al{align-items:flex-start}
@@ -402,15 +423,15 @@ ul.tarefas li.parcial .mk-qtd .n{color:var(--al);font-weight:600}
 }
 
 /* caixa de entrada */
-.tf-nova{background:var(--card);border:1px solid var(--bd);border-radius:13px;
+.tf-nova{background:var(--card);border:1px solid var(--bd);border-radius:5px;
   padding:14px 16px;box-shadow:var(--sh);margin-bottom:16px;transition:border-color .15s}
-.tf-nova:focus-within{border-color:var(--vm);box-shadow:0 0 0 3px rgba(200,16,46,.1)}
+.tf-nova:focus-within{border-color:var(--vm);box-shadow:0 0 0 3px rgba(162,64,47,.1)}
 .tf-linha{display:flex;gap:10px;align-items:center}
 .tf-linha input[type=text]{flex:1;min-width:0;background:none;border:0;color:var(--tx);
   font:16px/1.4 inherit;padding:5px 0}
 .tf-linha input[type=text]:focus{outline:none}
 .tf-linha input[type=text]::placeholder{color:var(--tx3)}
-.tf-add{background:var(--vm);border:0;color:#fff;border-radius:9px;width:38px;height:38px;
+.tf-add{background:var(--vm);border:0;color:#fff;border-radius:5px;width:38px;height:38px;
   flex:none;display:grid;place-items:center;cursor:pointer;transition:transform .12s,background .15s}
 .tf-add:hover{background:#a80d26}
 .tf-add:active{transform:scale(.93)}
@@ -426,7 +447,7 @@ ul.tarefas li.parcial .mk-qtd .n{color:var(--al);font-weight:600}
 .tf-data{background:var(--card2);border:1px solid var(--bd);border-radius:20px;padding:4px 10px;
   color:var(--tx2);font:600 12.5px/1.5 inherit;font-family:inherit}
 .tf-data:focus{outline:none;border-color:var(--vm)}
-.tf-detectada{background:rgba(15,157,88,.12);border-color:var(--ok);color:var(--ok)}
+.tf-detectada{background:rgba(92,122,74,.12);border-color:var(--ok);color:var(--ok)}
 
 /* lista */
 .tf-grupo{margin-bottom:20px}
@@ -439,7 +460,7 @@ ul.tarefas li.parcial .mk-qtd .n{color:var(--al);font-weight:600}
 .tf-cab.hoje .n{background:var(--al);color:#fff}
 
 .tf-item{display:flex;gap:11px;align-items:flex-start;padding:11px 13px;margin:6px 0;
-  background:var(--card);border:1px solid var(--bd);border-radius:11px;
+  background:var(--card);border:1px solid var(--bd);border-radius:5px;
   transition:border-color .15s,transform .12s,opacity .2s;position:relative}
 .tf-item:hover{border-color:var(--tx3)}
 .tf-item.atrasada{border-left:3px solid var(--vm)}
@@ -458,31 +479,31 @@ ul.tarefas li.parcial .mk-qtd .n{color:var(--al);font-weight:600}
 .tf-tag{font-size:11.5px;font-weight:650;padding:2px 8px;border-radius:20px;
   display:inline-flex;align-items:center;gap:5px;white-space:nowrap}
 .tf-tag.dt{background:var(--card2);border:1px solid var(--bd);color:var(--tx2)}
-.tf-tag.dt.venc{background:rgba(200,16,46,.12);border-color:var(--vm);color:var(--vm)}
-.tf-tag.dt.prox{background:rgba(232,161,58,.15);border-color:var(--al);color:var(--al)}
+.tf-tag.dt.venc{background:rgba(162,64,47,.12);border-color:var(--vm);color:var(--vm)}
+.tf-tag.dt.prox{background:rgba(184,134,47,.15);border-color:var(--al);color:var(--al)}
 .tf-tag.cat{color:#fff}
 .tf-acoes{display:flex;gap:3px;flex:none;opacity:0;transition:opacity .15s}
 .tf-item:hover .tf-acoes,.tf-item:focus-within .tf-acoes{opacity:1}
-.tf-ac{background:none;border:0;color:var(--tx3);cursor:pointer;padding:5px;border-radius:6px;
+.tf-ac{background:none;border:0;color:var(--tx3);cursor:pointer;padding:5px;border-radius:5px;
   display:grid;place-items:center;transition:all .13s}
 .tf-ac:hover{background:var(--card2);color:var(--tx)}
-.tf-ac.del:hover{background:rgba(200,16,46,.12);color:var(--vm)}
+.tf-ac.del:hover{background:rgba(162,64,47,.12);color:var(--vm)}
 /* a propria etiqueta de data e um botao: clicar nela remarca a tarefa */
 .tf-tag.dt.mud{font-family:inherit;cursor:pointer}
 .tf-tag.dt.mud:hover{border-color:var(--vm);color:var(--vm)}
 .tf-dtbox{display:flex;gap:7px;align-items:center;flex-wrap:wrap;margin-top:7px}
-.tf-dtbox input[type=date]{background:var(--card2);border:1px solid var(--vm);border-radius:8px;
+.tf-dtbox input[type=date]{background:var(--card2);border:1px solid var(--vm);border-radius:5px;
   padding:5px 9px;color:var(--tx);font:600 12.5px/1.5 inherit;font-family:inherit}
-.tf-dtbox input[type=date]:focus{outline:none;box-shadow:0 0 0 3px rgba(200,16,46,.1)}
+.tf-dtbox input[type=date]:focus{outline:none;box-shadow:0 0 0 3px rgba(162,64,47,.1)}
 .tf-dtbox .chip{padding:4px 10px;font-size:12px}
 /* lista de conferencia dentro de uma tarefa: um clique por item */
 .tf-tag.lista{background:var(--card2);border:1px solid var(--bd);color:var(--tx2);
   font-family:inherit;cursor:pointer}
 .tf-tag.lista:hover{border-color:var(--vm);color:var(--vm)}
-.tf-tag.lista.cheia{background:rgba(15,157,88,.12);border-color:var(--ok);color:var(--ok)}
+.tf-tag.lista.cheia{background:rgba(92,122,74,.12);border-color:var(--ok);color:var(--ok)}
 .tf-sub{list-style:none;margin:9px 0 1px;padding:0;display:grid;gap:5px}
 .tf-sub.fechada{display:none}
-.tf-si{display:flex;align-items:center;gap:9px;padding:7px 11px;border-radius:9px;
+.tf-si{display:flex;align-items:center;gap:9px;padding:7px 11px;border-radius:5px;
   border:1px solid var(--bd);background:var(--card2);font-size:13.5px;color:var(--tx2);
   cursor:pointer;user-select:none;transition:border-color .12s,background .12s}
 .tf-si:hover{border-color:var(--vm);background:var(--card)}
@@ -492,7 +513,7 @@ ul.tarefas li.parcial .mk-qtd .n{color:var(--al);font-weight:600}
 .tf-si.ok{opacity:.6}
 .tf-si.ok .box{background:var(--ok);border-color:var(--ok)}
 .tf-si.ok>span:nth-child(2){text-decoration:line-through}
-.tf-edit{width:100%;background:var(--card2);border:1px solid var(--vm);border-radius:7px;
+.tf-edit{width:100%;background:var(--card2);border:1px solid var(--vm);border-radius:5px;
   padding:6px 9px;color:var(--tx);font:14.5px/1.4 inherit}
 .tf-edit:focus{outline:none}
 
@@ -503,7 +524,7 @@ ul.tarefas li.parcial .mk-qtd .n{color:var(--al);font-weight:600}
 .tf-vazio small{font-size:13px}
 
 /* botoes gerais */
-.btn{background:var(--card);border:1px solid var(--bd);border-radius:9px;padding:8px 14px;
+.btn{background:var(--card);border:1px solid var(--bd);border-radius:5px;padding:8px 14px;
   font:650 13px/1 inherit;color:var(--tx2);cursor:pointer;display:inline-flex;
   align-items:center;gap:7px;transition:all .13s}
 .btn:hover{border-color:var(--tx3);color:var(--tx)}
@@ -517,7 +538,7 @@ ul.tarefas li.parcial .mk-qtd .n{color:var(--al);font-weight:600}
 .modal{position:fixed;inset:0;background:rgba(10,12,16,.62);display:none;place-items:center;
   z-index:50;padding:20px;backdrop-filter:blur(3px)}
 .modal.on{display:grid}
-.modal-cx{background:var(--card);border:1px solid var(--bd);border-radius:15px;
+.modal-cx{background:var(--card);border:1px solid var(--bd);border-radius:6px;
   box-shadow:0 20px 60px rgba(0,0,0,.35);max-width:560px;width:100%;max-height:86vh;
   display:flex;flex-direction:column;animation:sobe .2s ease}
 .modal-cab{display:flex;align-items:center;gap:11px;padding:18px 20px 14px;
@@ -526,25 +547,25 @@ ul.tarefas li.parcial .mk-qtd .n{color:var(--al);font-weight:600}
 .modal-corpo{padding:18px 20px;overflow-y:auto}
 .modal-corpo p{font-size:13.5px;color:var(--tx2);margin-bottom:12px}
 .modal-corpo textarea{width:100%;min-height:190px;background:var(--card2);border:1px solid var(--bd);
-  border-radius:9px;padding:12px;color:var(--tx);font:12.5px/1.6 ui-monospace,Consolas,monospace;
+  border-radius:5px;padding:12px;color:var(--tx);font:12.5px/1.6 ui-monospace,Consolas,monospace;
   resize:vertical}
 .modal-corpo textarea:focus{outline:none;border-color:var(--vm)}
 .modal-corpo label{display:block;font-size:12.5px;font-weight:650;color:var(--tx2);
   margin:0 0 6px}
 .modal-corpo input[type=email],.modal-corpo input[type=password]{width:100%;
-  background:var(--card2);border:1px solid var(--bd);border-radius:9px;padding:10px 12px;
+  background:var(--card2);border:1px solid var(--bd);border-radius:5px;padding:10px 12px;
   color:var(--tx);font:14.5px/1.4 inherit;margin-bottom:13px}
 .modal-corpo input:focus{outline:none;border-color:var(--vm)}
 .modal-rod{display:flex;gap:9px;justify-content:flex-end;padding:14px 20px;
   border-top:1px solid var(--bd);flex-wrap:wrap}
-.modal-erro{background:rgba(200,16,46,.1);border:1px solid var(--vm);color:var(--vm);
-  border-radius:9px;padding:10px 13px;font-size:13px;margin-bottom:13px;display:none}
+.modal-erro{background:rgba(162,64,47,.1);border:1px solid var(--vm);color:var(--vm);
+  border-radius:5px;padding:10px 13px;font-size:13px;margin-bottom:13px;display:none}
 .modal-erro.on{display:block}
-.aviso-cx{background:var(--card2);border:1px solid var(--bd);border-radius:9px;
+.aviso-cx{background:var(--card2);border:1px solid var(--bd);border-radius:5px;
   padding:11px 13px;font-size:12.5px;color:var(--tx2);margin-bottom:13px;line-height:1.55}
 
 /* busca: destaque e ocultacao */
-mark{background:rgba(232,161,58,.35);color:inherit;border-radius:3px;padding:0 2px}
+mark{background:rgba(184,134,47,.35);color:inherit;border-radius:3px;padding:0 2px}
 .sem-res{text-align:center;color:var(--tx3);padding:40px 20px;font-size:14px}
 .rodape{text-align:center;color:var(--tx3);font-size:12.5px;padding:8px 0 0}
 .rodape code{font-size:11.5px}
@@ -559,7 +580,7 @@ mark{background:rgba(232,161,58,.35);color:inherit;border-radius:3px;padding:0 2
   .marca h1{font-size:16.5px}
   .marca p{font-size:11.5px}
   .brasao{width:36px;height:36px;font-size:11px}
-  .card{padding:18px 16px;border-radius:11px}
+  .card{padding:18px 16px;border-radius:5px}
   .kpi .val{font-size:25px}
   .grade{grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px}
   nav button{padding:11px 11px 12px;font-size:12.5px}
@@ -580,7 +601,13 @@ mark{background:rgba(232,161,58,.35);color:inherit;border-radius:3px;padding:0 2
 <header class="topo">
   <div class="wrap">
     <div class="marca">
-      <div class="brasao">CAO</div>
+      <div class="brasao" aria-hidden="true" title="Insígnia de Capitão">
+        <svg viewBox="0 0 64 28" width="30" height="14">
+          <path d="M10 2l1.8 4.4L16.4 7l-3.5 3 1 4.6L10 12.2 6.1 14.6l1-4.6L3.6 7l4.6-.6L10 2z"/>
+          <path d="M32 2l1.8 4.4L38.4 7l-3.5 3 1 4.6L32 12.2l-3.9 2.4 1-4.6L25.6 7l4.6-.6L32 2z"/>
+          <path d="M54 2l1.8 4.4L60.4 7l-3.5 3 1 4.6L54 12.2l-3.9 2.4 1-4.6L47.6 7l4.6-.6L54 2z"/>
+        </svg>
+      </div>
       <div>
         <h1>Central do CAO</h1>
         <p>CAO-II / 2026, CAES "Cel Nelson Freire Terra"</p>
@@ -606,7 +633,7 @@ mark{background:rgba(232,161,58,.35);color:inherit;border-radius:3px;padding:0 2
     <span class="sinc-al-ic">!</span>
     <span class="sinc-al-tx"><b>Esta contagem só existe neste aparelho</b><span id="sinc-al-sub"></span></span>
     <span class="sinc-al-bt">Entrar</span></button>
-<section class="aba" id="ab-painel" role="tabpanel" data-mod="2026-09-01T00:14:42.000Z"><section class="guia"><div class="guia-topo"><div><p class="guia-ola" id="guia-ola">Central do CAO</p><h2 class="guia-dia" id="guia-dia">Carregando o dia...</h2><p class="guia-fase" id="guia-fase"></p></div><div class="guia-conta" id="guia-conta"></div></div><div class="guia-aula" id="guia-aula"></div><div class="guia-corpo" id="guia-corpo"></div></section><div class="grade"><div class="kpi dest"><div class="rot" id="kpi-curso-rot">Curso</div><div class="val" id="kpi-curso-val">...</div><div class="sub" id="kpi-curso-sub">CAO-II/26</div><div class="barra"><i id="kpi-curso-barra" style="width:0%"></i></div></div><div class="kpi"><div class="rot">Semana do curso</div><div class="val" id="kpi-sem-val">...</div><div class="sub" id="kpi-sem-sub">de 53</div><div class="barra"><i id="kpi-sem-barra" style="width:0%"></i></div></div><div class="kpi"><div class="rot">Tarefas pendentes</div><div class="val" id="kpi-tar-val">37</div><div class="sub" id="kpi-tar-sub">30 já concluídas</div></div><div class="kpi lista-kpi" data-aba="ab-compras" data-rot="Compras"><div class="rot">Compras</div><div class="val">...</div><div class="sub">antes de viajar</div><div class="barra"><i style="width:0%"></i></div></div><div class="kpi lista-kpi" data-aba="ab-mala" data-rot="Mala" data-sub-falta="peças na mala de domingo" data-sub-ok="armário completo"><div class="rot">Mala</div><div class="val">...</div><div class="sub">peças na mala de domingo</div><div class="barra"><i style="width:0%"></i></div></div></div><div class="card"><blockquote data-b>Semana atual, prioridades, decisões e dúvidas do curso. Atualizado em: 31/08/2026</blockquote>
+<section class="aba" id="ab-painel" role="tabpanel" data-mod="2026-09-01T01:18:20.000Z"><section class="guia"><div class="guia-topo"><div><p class="guia-ola" id="guia-ola">Central do CAO</p><h2 class="guia-dia" id="guia-dia">Carregando o dia...</h2><p class="guia-fase" id="guia-fase"></p></div><div class="guia-conta" id="guia-conta"></div></div><div class="guia-aula" id="guia-aula"></div><div class="guia-corpo" id="guia-corpo"></div></section><div class="grade"><div class="kpi dest"><div class="rot" id="kpi-curso-rot">Curso</div><div class="val" id="kpi-curso-val">...</div><div class="sub" id="kpi-curso-sub">CAO-II/26</div><div class="barra"><i id="kpi-curso-barra" style="width:0%"></i></div></div><div class="kpi"><div class="rot">Semana do curso</div><div class="val" id="kpi-sem-val">...</div><div class="sub" id="kpi-sem-sub">de 53</div><div class="barra"><i id="kpi-sem-barra" style="width:0%"></i></div></div><div class="kpi"><div class="rot">Tarefas pendentes</div><div class="val" id="kpi-tar-val">37</div><div class="sub" id="kpi-tar-sub">30 já concluídas</div></div><div class="kpi lista-kpi" data-aba="ab-compras" data-rot="Compras"><div class="rot">Compras</div><div class="val">...</div><div class="sub">antes de viajar</div><div class="barra"><i style="width:0%"></i></div></div><div class="kpi lista-kpi" data-aba="ab-mala" data-rot="Mala" data-sub-falta="peças na mala de domingo" data-sub-ok="armário completo"><div class="rot">Mala</div><div class="val">...</div><div class="sub">peças na mala de domingo</div><div class="barra"><i style="width:0%"></i></div></div></div><div class="card"><blockquote data-b>Semana atual, prioridades, decisões e dúvidas do curso. Atualizado em: 31/08/2026</blockquote>
 <h2 data-b>A semana 3 (31/08 a 03/09)</h2>
 <p data-b><strong>Blocos do dia:</strong> 1) 08h15, 2) 10h00, 3) 13h00, 4) 14h45 e 5) 16h30. Cada bloco tem 1h30.</p>
 <div class="tab-wrap" data-b><table><thead><tr><th>Dia</th><th>Como fica</th></tr></thead><tbody><tr><td>Segunda 31/08</td><td>Quatro blocos, saída 16h15. D06, D19, D05 e D24</td></tr><tr><td>Terça 01/09</td><td>Dia cheio até as 18h00. D30, D02, D04, D05 e D26</td></tr><tr><td>Quarta 02/09</td><td>Dia cheio até as 18h00. D03, D25, D11, D18 e D24</td></tr><tr><td>Quinta 03/09</td><td>Só blocos 1 e 2. <strong>Acaba 11h30</strong>, é a volta para casa</td></tr><tr><td>Sexta 04/09</td><td><strong>Vazia no QTS</strong>, para todos os pelotões</td></tr></tbody></table></div>
@@ -663,7 +690,7 @@ mark{background:rgba(232,161,58,.35);color:inherit;border-radius:3px;padding:0 2
 <li><strong>As três perguntas sobre carga horária, avaliação e as sete disciplinas fora do QTS</strong> saíram da lista de dúvidas em 25/08, respondidas pelo currículo do programa: as sete não são "do segundo semestre", as 31 são todas do 1º ciclo, que acaba na semana 16.</li>
 </ul>
 </details></div></section>
-<section class="aba" id="ab-prazos" role="tabpanel" data-mod="2026-08-31T23:55:53.000Z"><div class="card"><blockquote data-b>Datas do curso. Ações correspondentes em <a href="#tarefas" class="lnk-aba">TAREFAS.md</a>; aulas e docentes em <a href="#grade" class="lnk-aba">GRADE.md</a>.</blockquote>
+<section class="aba" id="ab-prazos" role="tabpanel" data-mod="2026-09-01T01:18:20.000Z"><div class="card"><blockquote data-b>Datas do curso. Ações correspondentes em <a href="#tarefas" class="lnk-aba">TAREFAS.md</a>; aulas e docentes em <a href="#grade" class="lnk-aba">GRADE.md</a>.</blockquote>
 <h2 data-b>Semana 3 — 31/08 a 03/09/2026</h2>
 <div class="tab-wrap" data-b><table><thead><tr><th>Data</th><th>Dia</th><th>O que</th></tr></thead><tbody><tr><td><strong>31/08</strong></td><td><strong>segunda</strong></td><td>Quatro blocos, saída 16h15. D06, D19, D05 e D24</td></tr><tr><td><strong>01/09</strong></td><td><strong>terça</strong></td><td>Dia cheio até 18h00. D30, D02, D04, D05 e D26</td></tr><tr><td><strong>02/09</strong></td><td><strong>quarta</strong></td><td>Dia cheio até 18h00. D03, D25, D11, D18 e D24</td></tr><tr><td><strong>03/09</strong></td><td><strong>quinta</strong></td><td>Blocos 1 e 2, saída 11h30</td></tr><tr><td>04/09</td><td>sexta</td><td>Sem nenhuma marcação no QTS, para nenhum pelotão</td></tr></tbody></table></div>
 <h2 data-b>Depois disso</h2>
@@ -723,7 +750,7 @@ mark{background:rgba(232,161,58,.35);color:inherit;border-radius:3px;padding:0 2
       <button class="chip" data-q="limpar">Sem data</button>
     </span>
     <span style="width:1px;height:20px;background:var(--bd)"></span>
-    <span id="tf-cats" style="display:contents"><button class="chip" data-cat="curso"><span class="pt" style="background:#3b7dd8"></span>Curso</button><button class="chip" data-cat="dissertacao"><span class="pt" style="background:#8b5cf6"></span>Dissertação</button><button class="chip" data-cat="admin"><span class="pt" style="background:#e8892b"></span>Administrativo</button><button class="chip" data-cat="pessoal"><span class="pt" style="background:#0f9d58"></span>Pessoal</button></span>
+    <span id="tf-cats" style="display:contents"><button class="chip" data-cat="curso"><span class="pt" style="background:#3e6b8c"></span>Curso</button><button class="chip" data-cat="dissertacao"><span class="pt" style="background:#6b4e71"></span>Dissertação</button><button class="chip" data-cat="admin"><span class="pt" style="background:#a15d3a"></span>Administrativo</button><button class="chip" data-cat="pessoal"><span class="pt" style="background:#5f7a56"></span>Pessoal</button></span>
   </div>
 </div>
 
@@ -748,7 +775,7 @@ mark{background:rgba(232,161,58,.35);color:inherit;border-radius:3px;padding:0 2
 </div>
 
 </section>
-<section class="aba" id="ab-estudos" role="tabpanel" data-mod="2026-08-31T23:55:53.000Z"><div class="card"><blockquote data-b>Como eu estudo, onde eu salvo e onde eu escrevo, pelos 12 meses de curso. O quê e o quando (as 31 disciplinas, docentes e o quadro da semana) estão em <a href="#grade" class="lnk-aba">GRADE.md</a>.</blockquote>
+<section class="aba" id="ab-estudos" role="tabpanel" data-mod="2026-09-01T01:18:20.000Z"><div class="card"><blockquote data-b>Como eu estudo, onde eu salvo e onde eu escrevo, pelos 12 meses de curso. O quê e o quando (as 31 disciplinas, docentes e o quadro da semana) estão em <a href="#grade" class="lnk-aba">GRADE.md</a>.</blockquote>
 <h2 data-b>Missão da semana: fechar o orientador</h2>
 <details class="extra"><summary data-b>Alvo retirado em 25/08: Cel PM Eglis</summary><p data-b>A abordagem não seguiu adiante. A busca continua com os nomes da lista curta.</p></details>
 <details class="extra"><summary data-b>Regras de orientação já confirmadas pelo currículo</summary><p data-b><strong>Fonte:</strong> <a href="#curriculo" class="lnk-aba">CURRICULO.md</a>.</p>
@@ -891,7 +918,7 @@ Ficou dúvida:           #DUVIDA</code></pre>
 <p data-b>A nota do 2º ciclo é um <strong>artigo de 8 a 20 laudas sobre tema ligado ao próprio Projeto de Pesquisa</strong>, sob coordenação do orientador, avaliado pela <strong>mesma banca da dissertação</strong>. Ou seja: <strong>é um capítulo da dissertação sendo escrito com um ano de antecedência e corrigido pela banca que vai julgar o trabalho final.</strong> Tratar como ensaio da defesa, não como tarefa avulsa.</p>
 <p data-b>E a advertência que vale para o artigo e para a dissertação: <strong>40% da nota é português e metodologia</strong> (peso 2 + peso 2, contra peso 6 do conteúdo). São os pontos mais baratos de garantir e os mais bobos de perder. Reforça a decisão de instalar o <strong>Zotero</strong> em setembro.</p>
 </details></div></section>
-<section class="aba" id="ab-grade" role="tabpanel" data-mod="2026-08-31T23:55:53.000Z"><div class="card"><blockquote data-b>A grade oficial do CAO-II/26, transcrita do QTS. Aqui é o <strong>quê</strong> e o <strong>quando</strong> desta semana; a <strong>estrutura permanente do curso</strong> (ciclos, matérias, carga horária de cada disciplina, avaliação, eletivas) é do <a href="#curriculo" class="lnk-aba">CURRICULO.md</a>; como eu estudo está em <a href="#estudos" class="lnk-aba">ESTUDOS.md</a>.</blockquote>
+<section class="aba" id="ab-grade" role="tabpanel" data-mod="2026-09-01T01:18:20.000Z"><div class="card"><blockquote data-b>A grade oficial do CAO-II/26, transcrita do QTS. Aqui é o <strong>quê</strong> e o <strong>quando</strong> desta semana; a <strong>estrutura permanente do curso</strong> (ciclos, matérias, carga horária de cada disciplina, avaliação, eletivas) é do <a href="#curriculo" class="lnk-aba">CURRICULO.md</a>; como eu estudo está em <a href="#estudos" class="lnk-aba">ESTUDOS.md</a>.</blockquote>
 <details class="extra"><summary data-b>Fonte do QTS da semana 3</summary><p data-b>QTS CAO-II/26 de 31/08 a 03/09/2026, assinado pelo Aux Coord e pelo Ch Sec Coord. PDFs no Drive, em <code>08_CAO_2026/00_CURSO/QTS/</code>.</p></details>
 <p data-b><strong>Sou do pelotão A.</strong> No QTS as células só trazem a letra, e as cinco aulas que assisti na terça 18/08 bateram uma a uma com as células marcadas "A". Para saber o meu dia, basta ler as células "A". <em>[VERIFICAR na Coordenação: ratificar de viva voz. É dedução forte, mas é dedução.]</em></p>
 <h2 data-b>Semana 3 — 31/08 a 03/09/2026 (pelotão A)</h2>
@@ -976,7 +1003,7 @@ Ficou dúvida:           #DUVIDA</code></pre>
 <li><strong>Se o bloco das 16h30 às 18h00 é permanente.</strong> O currículo prevê <strong>8 tempos por dia, terminando 16h15</strong>, o que fecha as 32 horas-aula semanais. O QTS da semana 2 traz bloco 5 na terça e na quarta, o que estoura essa conta. Ou é reposição, ou é ajuste não refletido no currículo (<a href="#curriculo" class="lnk-aba">CURRICULO.md</a>).</li>
 <li><strong>Se o docente muda de propósito ou é só escala.</strong> D02 veio com o Cel Komata na semana 1 e com o Cel Roldan na semana 2; D04 trocou o Cel Fernandes pelo Cel Enio; D15 teve três docentes diferentes em duas semanas. Só o Cel Barreto (D28) e o Cap Maurício (D26) se repetiram. Parece rodízio dentro do corpo docente da disciplina, não substituição.</li>
 </ul></div></section>
-<section class="aba" id="ab-curriculo" role="tabpanel" data-mod="2026-08-31T23:55:53.000Z"><div class="card"><blockquote data-b><strong>O mapa do CAO, do primeiro dia à defesa da dissertação.</strong> Enquanto o <a href="#grade" class="lnk-aba">GRADE.md</a> responde "o que tem esta semana", este arquivo responde "como o curso é montado, quanto dura cada coisa, como se é avaliado e o que precisa ser entregue".</blockquote>
+<section class="aba" id="ab-curriculo" role="tabpanel" data-mod="2026-09-01T01:18:20.000Z"><div class="card"><blockquote data-b><strong>O mapa do CAO, do primeiro dia à defesa da dissertação.</strong> Enquanto o <a href="#grade" class="lnk-aba">GRADE.md</a> responde "o que tem esta semana", este arquivo responde "como o curso é montado, quanto dura cada coisa, como se é avaliado e o que precisa ser entregue".</blockquote>
 <details class="extra"><summary data-b>Fonte do currículo</summary><p data-b>Currículo do PMPCPSOP, aprovado pelo Despacho nº PM3-025/03/23, com PDM atualizado em 30OUT24 e publicado no Bol G PM nº 227. PDF no Drive, em <code>00_CURSO/</code>.</p></details>
 <h2 data-b>Consulta rápida</h2>
 <p data-b>Aqui estão duração, carga horária, avaliação, eletivas e regras da dissertação. A agenda da semana está em <a href="#grade" class="lnk-aba">GRADE.md</a>.</p>
@@ -1108,7 +1135,7 @@ Ficou dúvida:           #DUVIDA</code></pre>
 </details>
 <h2 data-b>O que ficou para conferir</h2>
 <div class="tab-wrap" data-b><table><thead><tr><th>Dúvida</th><th>Onde perguntar</th></tr></thead><tbody><tr><td>O bloco das 16h30 às 18h00 é permanente ou excepcional? O currículo prevê só 8 tempos</td><td>Coordenação</td></tr><tr><td>Calendário escolar com as datas reais das 19 semanas (recesso de fim de ano)</td><td>Coordenação</td></tr><tr><td>Datas das seis VC do 1º CENS</td><td>Seç Avaliação e Concurso, Cap PM Diego Almeida</td></tr><tr><td>Data de divulgação do rol de eletivas (previsão: até 18/09/2026)</td><td>Coordenação</td></tr><tr><td>Houve alteração deste currículo para a turma CAO-II/26? O PDM é de 30OUT24</td><td>Coordenação</td></tr></tbody></table></div></div></section>
-<section class="aba" id="ab-rotina" role="tabpanel" data-mod="2026-08-31T23:55:53.000Z"><div class="card"><blockquote data-b>Como funciona a vida no CAES: horário, uniforme, prédio, alojamento, SIPA e afastamento. O que levar está em <a href="#mala" class="lnk-aba">MALA.md</a>, a grade da semana em <a href="#grade" class="lnk-aba">GRADE.md</a>, quem procurar em <a href="#contatos" class="lnk-aba">CONTATOS.md</a> e o entorno em <a href="#entorno" class="lnk-aba">ENTORNO.md</a>. Fonte: slide de Recepção aos Oficiais-Alunos (<span class="arq" title="Arquivo na pasta local: CAO 2026/Curso/SAE - Recepcao dos Discentes CAO II 26.pdf"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2h8l4 4v16H6z"/><path d="M14 2v4h4"/></svg>CAO 2026/Curso/SAE - Recepcao dos Discentes CAO II 26.pdf</span>) + bizu de colega que já fez o curso.</blockquote>
+<section class="aba" id="ab-rotina" role="tabpanel" data-mod="2026-09-01T01:18:20.000Z"><div class="card"><blockquote data-b>Como funciona a vida no CAES: horário, uniforme, prédio, alojamento, SIPA e afastamento. O que levar está em <a href="#mala" class="lnk-aba">MALA.md</a>, a grade da semana em <a href="#grade" class="lnk-aba">GRADE.md</a>, quem procurar em <a href="#contatos" class="lnk-aba">CONTATOS.md</a> e o entorno em <a href="#entorno" class="lnk-aba">ENTORNO.md</a>. Fonte: slide de Recepção aos Oficiais-Alunos (<span class="arq" title="Arquivo na pasta local: CAO 2026/Curso/SAE - Recepcao dos Discentes CAO II 26.pdf"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2h8l4 4v16H6z"/><path d="M14 2v4h4"/></svg>CAO 2026/Curso/SAE - Recepcao dos Discentes CAO II 26.pdf</span>) + bizu de colega que já fez o curso.</blockquote>
 <details class="extra"><summary data-b>Período do curso: presencial até 17/01/2027, depois EAD</summary>
 <p data-b><strong>A fase presencial vai de 17/08/2026 a 17/01/2027</strong>, com aulas de segunda a quinta. Passado o dia 17/01/2027, <strong>o curso segue a distância</strong>: acaba a viagem semanal para Campos Elíseos e acaba o alojamento.</p>
 <p data-b>Fonte: <strong>Declaração nº CAES-017/130/26</strong>, de 26/08/2026, assinada pelo Cap PM Pedro Hiran Esteves Ornelas, Chefe da Seção de Administração Escolar. O PDF está no Drive, em <code>00_CURSO/</code>. Serve para comprovar matrícula onde for preciso.</p>
@@ -1232,7 +1259,7 @@ Ficou dúvida:           #DUVIDA</code></pre>
 <li class="pend" data-mk="a4d645907c" data-md="0"><span class="box"></span><span>Engajamento de todos os Oficiais-Alunos</span></li>
 </ul>
 </details></div></section>
-<section class="aba" id="ab-contatos" role="tabpanel" data-mod="2026-08-31T23:55:53.000Z"><div class="card"><blockquote data-b>Organograma e contatos por assunto. Fonte: slide de Recepção aos Oficiais-Alunos do CAO/II-2026 (<span class="arq" title="Arquivo na pasta local: CAO 2026/Curso/SAE - Recepcao dos Discentes CAO II 26.pdf"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2h8l4 4v16H6z"/><path d="M14 2v4h4"/></svg>CAO 2026/Curso/SAE - Recepcao dos Discentes CAO II 26.pdf</span>).</blockquote>
+<section class="aba" id="ab-contatos" role="tabpanel" data-mod="2026-09-01T01:18:20.000Z"><div class="card"><blockquote data-b>Organograma e contatos por assunto. Fonte: slide de Recepção aos Oficiais-Alunos do CAO/II-2026 (<span class="arq" title="Arquivo na pasta local: CAO 2026/Curso/SAE - Recepcao dos Discentes CAO II 26.pdf"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2h8l4 4v16H6z"/><path d="M14 2v4h4"/></svg>CAO 2026/Curso/SAE - Recepcao dos Discentes CAO II 26.pdf</span>).</blockquote>
 <h2 data-b>Local</h2>
 <p data-b><strong>CAES — Centro de Altos Estudos de Segurança "Cel Nelson Freire Terra"</strong> <strong>Praça Júlio Prestes, 5005 — Campos Elíseos, São Paulo/SP, CEP 01218-020.</strong></p>
 <p data-b>É o endereço oficial para documento, cadastro e aplicativo de mapa. Fica em frente à Praça Júlio Prestes, no centro. O guia da região, com trajetos a pé, está em <a href="#entorno" class="lnk-aba">ENTORNO.md</a>.</p>
@@ -1278,7 +1305,7 @@ Ficou dúvida:           #DUVIDA</code></pre>
 <li>Chefe da Seção responsável pela demanda (ver tabela acima)</li>
 <li><strong>Nunca</strong> pedir favor direto a terceirizados ou auxiliares do CAES — inconsistências nas instalações/serviços devem ser comunicadas formalmente (com evidências) pelo canal certo.</li>
 </ol></div></section>
-<section class="aba" id="ab-duvidas" role="tabpanel" data-mod="2026-09-01T00:14:42.000Z"><div class="card"><blockquote data-b>O que eu ainda não sei, agrupado por quem responde. Quando a resposta chegar, ela vai para o arquivo dono do assunto e some daqui.</blockquote>
+<section class="aba" id="ab-duvidas" role="tabpanel" data-mod="2026-09-01T01:18:20.000Z"><div class="card"><blockquote data-b>O que eu ainda não sei, agrupado por quem responde. Quando a resposta chegar, ela vai para o arquivo dono do assunto e some daqui.</blockquote>
 <h2 data-b>Em aberto</h2>
 <h3 data-b>Coordenação e Seção de Avaliação (Cap PM Diego Almeida, <a href="mailto:caesaval@policiamilitar.sp.gov.br">caesaval@policiamilitar.sp.gov.br</a>)</h3>
 <ul data-b>
@@ -1321,14 +1348,14 @@ Ficou dúvida:           #DUVIDA</code></pre>
 <li><strong>Cartão de estacionamento</strong>: não se aplica, vou de carona. O cartão é do veículo, então quem pede à AAp é o motorista.</li>
 </ul>
 </details></div></section>
-<section class="aba" id="ab-anotacoes" role="tabpanel" data-mod="2026-08-31T19:11:56.000Z"><div class="card"><blockquote data-b>Rascunho temporário para informação que ainda não tem destino definido.</blockquote>
+<section class="aba" id="ab-anotacoes" role="tabpanel" data-mod="2026-09-01T01:18:20.000Z"><div class="card"><blockquote data-b>Rascunho temporário para informação que ainda não tem destino definido.</blockquote>
 <details class="extra"><summary data-b>Onde cada coisa mora</summary>
 <p data-b>Antes de escrever aqui, veja se o assunto já tem dono. Isto aqui é o que sobra.</p>
 <div class="tab-wrap" data-b><table><thead><tr><th>O que é</th><th>Vai para</th></tr></thead><tbody><tr><td>Data, hora, prazo</td><td><a href="#prazos" class="lnk-aba">PRAZOS.md</a></td></tr><tr><td>Coisa a fazer</td><td><a href="#tarefas" class="lnk-aba">TAREFAS.md</a></td></tr><tr><td>Pergunta em aberto</td><td><a href="#duvidas" class="lnk-aba">DUVIDAS.md</a></td></tr><tr><td>Regra do CAES: alojamento, armário, uniforme, afastamento, SIPA</td><td><a href="#rotina" class="lnk-aba">ROTINA.md</a></td></tr><tr><td>Aula, disciplina, docente, QTS da semana</td><td><a href="#grade" class="lnk-aba">GRADE.md</a></td></tr><tr><td>Estudo, dissertação, orientador</td><td><a href="#estudos" class="lnk-aba">ESTUDOS.md</a></td></tr><tr><td>Comer, comprar, metrô, CCB</td><td><a href="#entorno" class="lnk-aba">ENTORNO.md</a></td></tr><tr><td>Passeio, destino turístico, roteiro de lazer</td><td><a href="#passeios" class="lnk-aba">PASSEIOS.md</a></td></tr><tr><td>O que sobe na mala</td><td><a href="#mala" class="lnk-aba">MALA.md</a></td></tr><tr><td>Contato, e-mail, organograma</td><td><a href="#contatos" class="lnk-aba">CONTATOS.md</a></td></tr><tr><td>Viagem de domingo e volta de quinta</td><td><a href="#viagens" class="lnk-aba">VIAGENS.md</a></td></tr></tbody></table></div>
 </details>
 <h2 data-b>Notas</h2>
 <p data-b><em>(vazio hoje)</em></p></div></section>
-<section class="aba" id="ab-compras" role="tabpanel" data-mod="2026-08-31T23:55:53.000Z"><div class="card"><blockquote data-b>Lista viva do que comprar para o curso. O que já está em casa ou no armário do CAES está em <a href="#mala" class="lnk-aba">MALA.md</a>. Nada do que falta aqui trava aula.</blockquote>
+<section class="aba" id="ab-compras" role="tabpanel" data-mod="2026-09-01T01:18:20.000Z"><div class="card"><blockquote data-b>Lista viva do que comprar para o curso. O que já está em casa ou no armário do CAES está em <a href="#mala" class="lnk-aba">MALA.md</a>. Nada do que falta aqui trava aula.</blockquote>
 <h2 data-b>Fardamento — faltou na ida à ConfecBell/Confex Bel</h2>
 <p data-b>A loja fica no entorno do CAES, fora do quartel. Vá cedo por causa de tamanho e prazo de aplicação. <em>[VERIFICAR: o nome correto da loja da compra de 18/08 é ConfecBell ou Confex Bel.]</em></p>
 <ul data-b class="tarefas">
@@ -1351,7 +1378,7 @@ Ficou dúvida:           #DUVIDA</code></pre>
 <p data-b><strong>Fora da conta</strong>: gravata e segunda calça social já estavam em casa e foram para o CAES; o Ofício de Apresentação foi enviado pela P/1 à mesa <strong>SEI 302090130</strong> em 19/08, é ato eletrônico e não custa nada.</p>
 <p data-b><strong>Pendência que sobrou da compra</strong>: dos 4 distintivos de OPM, 3 foram aplicados nas camisas de passeio e <strong>o 4º ficou solto</strong>, porque é o da gandola, que está em casa. Detalhe em <a href="#mala" class="lnk-aba">MALA.md</a>.</p>
 </details></div></section>
-<section class="aba" id="ab-mala" role="tabpanel" data-mod="2026-08-31T23:55:53.000Z"><div class="card"><blockquote data-b><strong>Esta aba é só o giro da semana</strong>: quinta de manhã você conta o armário, quinta desce o que vai lavar, domingo sobe o que faltou. Tudo o mais é consulta e está recolhido no fim.</blockquote>
+<section class="aba" id="ab-mala" role="tabpanel" data-mod="2026-09-01T01:18:20.000Z"><div class="card"><blockquote data-b><strong>Esta aba é só o giro da semana</strong>: quinta de manhã você conta o armário, quinta desce o que vai lavar, domingo sobe o que faltou. Tudo o mais é consulta e está recolhido no fim.</blockquote>
 <h2 data-b>1. Quinta de manhã — o inventário do armário</h2>
 <p data-b>Abra o armário e lance em cada linha <strong>quantas peças LIMPAS ficaram lá</strong>, no <code>−</code> e no <code>+</code>. O que a tela mostrar como <strong>"faltam N"</strong> é a mala de domingo, peça por peça.</p>
 <ul data-b class="tarefas inv">
@@ -1461,7 +1488,7 @@ Ficou dúvida:           #DUVIDA</code></pre>
 </ul>
 <p data-b>Onde comer, mercado, farmácia e o resto do entorno: <a href="#entorno" class="lnk-aba">ENTORNO.md</a>.</p>
 </details></div></section>
-<section class="aba" id="ab-viagens" role="tabpanel" data-mod="2026-08-31T23:55:53.000Z"><div class="card"><blockquote data-b>Como é o deslocamento da semana de curso, e o que precisa estar resolvido antes de sair de casa. O que vai na mala está em <a href="#mala" class="lnk-aba">MALA.md</a>; o horário das aulas, em <a href="#rotina" class="lnk-aba">ROTINA.md</a>.</blockquote>
+<section class="aba" id="ab-viagens" role="tabpanel" data-mod="2026-09-01T01:18:20.000Z"><div class="card"><blockquote data-b>Como é o deslocamento da semana de curso, e o que precisa estar resolvido antes de sair de casa. O que vai na mala está em <a href="#mala" class="lnk-aba">MALA.md</a>; o horário das aulas, em <a href="#rotina" class="lnk-aba">ROTINA.md</a>.</blockquote>
 <h2 data-b>A semana, de ponta a ponta</h2>
 <div class="tab-wrap" data-b><table><thead><tr><th>Dia</th><th>Movimento</th></tr></thead><tbody><tr><td><strong>Domingo</strong></td><td>Guararapes → São Paulo, de carona. Chegada de noite e instalação no alojamento</td></tr><tr><td><strong>Segunda a quinta</strong></td><td>Aula, entrada 08h15 todo dia</td></tr><tr><td><strong>Quinta</strong></td><td>Aula até 11h30, e aí São Paulo → Guararapes</td></tr></tbody></table></div>
 <p data-b><strong>Destino, para jogar no GPS:</strong> CAES "Cel Nelson Freire Terra" — <strong>Praça Júlio Prestes, 5005, Campos Elíseos, São Paulo/SP, CEP 01218-020</strong>. Fica em frente à Praça Júlio Prestes, no centro. Dois endereços velhos ainda circulam e devem ser recusados (Água Fria e Rua Jorge Miranda): ver <a href="#contatos" class="lnk-aba">CONTATOS.md</a>.</p>
@@ -1489,7 +1516,7 @@ Ficou dúvida:           #DUVIDA</code></pre>
 <li><strong>20/08/2026 (quinta), primeira volta</strong>: saída depois das 11h30, com a roupa da semana suja.</li>
 </ul>
 </details></div></section>
-<section class="aba" id="ab-entorno" role="tabpanel" data-mod="2026-08-31T23:55:53.000Z"><div class="card"><blockquote data-b>Guia da região do CAES — <strong>Praça Júlio Prestes, 5005, Campos Elíseos, São Paulo/SP, CEP 01218-020</strong> (endereço oficial, ver <a href="#contatos" class="lnk-aba">CONTATOS.md</a>). O Google resolve horário e "está aberto agora". Aqui está o que o Google não sabe: qual presta, quanto custou e se vale voltar.</blockquote>
+<section class="aba" id="ab-entorno" role="tabpanel" data-mod="2026-09-01T01:18:20.000Z"><div class="card"><blockquote data-b>Guia da região do CAES — <strong>Praça Júlio Prestes, 5005, Campos Elíseos, São Paulo/SP, CEP 01218-020</strong> (endereço oficial, ver <a href="#contatos" class="lnk-aba">CONTATOS.md</a>). O Google resolve horário e "está aberto agora". Aqui está o que o Google não sabe: qual presta, quanto custou e se vale voltar.</blockquote>
 <details class="extra"><summary data-b>O que significam TESTADO, BIZU e CANDIDATO</summary><ul data-b>
 <li><strong>[TESTADO]</strong>: alguém foi e aprovou, com data, pedido e preço.</li>
 <li><strong>[BIZU]</strong>: indicação de colega, ainda não conferida.</li>
@@ -6092,7 +6119,7 @@ Ficou dúvida:           #DUVIDA</code></pre>
 <li><strong>Lugar ruim não é apagado</strong>, é marcado como reprovado. Serve para não tentar de novo daqui a seis meses.</li>
 </ol>
 </details></div></section>
-<section class="aba" id="ab-passeios" role="tabpanel" data-mod="2026-08-31T23:55:53.000Z"><div class="card"><blockquote data-b>Roteiro para a janela livre durante a semana no CAES: <strong>segundas das 17h00 às 21h00</strong> e <strong>terças/quartas das 18h15 às 21h00</strong> (<a href="#grade" class="lnk-aba">GRADE.md</a>/<a href="#entorno" class="lnk-aba">ENTORNO.md</a>). Só a pé ou metrô/CPTM, saindo do CAES "Cel Nelson Freire Terra", Praça Júlio Prestes, 5005.  <strong>Marcas:</strong> <strong>[TESTADO]</strong> alguém foi e aprovou · <strong>[BIZU]</strong> indicação confiável, mas ainda não conferida · <strong>[CANDIDATO]</strong> veio de pesquisa e precisa virar experiência real. Consulta revisada em <strong>31/08/2026</strong>. Horário muda por feriado, montagem de exposição e evento fechado: confira o link oficial antes de sair.</blockquote>
+<section class="aba" id="ab-passeios" role="tabpanel" data-mod="2026-09-01T01:18:20.000Z"><div class="card"><blockquote data-b>Roteiro para a janela livre durante a semana no CAES: <strong>segundas das 17h00 às 21h00</strong> e <strong>terças/quartas das 18h15 às 21h00</strong> (<a href="#grade" class="lnk-aba">GRADE.md</a>/<a href="#entorno" class="lnk-aba">ENTORNO.md</a>). Só a pé ou metrô/CPTM, saindo do CAES "Cel Nelson Freire Terra", Praça Júlio Prestes, 5005.  <strong>Marcas:</strong> <strong>[TESTADO]</strong> alguém foi e aprovou · <strong>[BIZU]</strong> indicação confiável, mas ainda não conferida · <strong>[CANDIDATO]</strong> veio de pesquisa e precisa virar experiência real. Consulta revisada em <strong>31/08/2026</strong>. Horário muda por feriado, montagem de exposição e evento fechado: confira o link oficial antes de sair.</blockquote>
 <h2 data-b>Diretrizes gerais de deslocamento e segurança</h2>
 <p data-b>Rotas até Luz e Santa Cecília em <a href="#entorno" class="lnk-aba">ENTORNO.md</a>.</p>
 <ol data-b>
@@ -6535,7 +6562,7 @@ Ficou dúvida:           #DUVIDA</code></pre>
 
 <script>
 var SOL='<svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4"/></svg>',LUA='<svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z"/></svg>';
-var CATEGORIAS=[["curso", "Curso", "#3b7dd8"], ["dissertacao", "Dissertação", "#8b5cf6"], ["admin", "Administrativo", "#e8892b"], ["pessoal", "Pessoal", "#0f9d58"]];
+var CATEGORIAS=[["curso", "Curso", "#3e6b8c"], ["dissertacao", "Dissertação", "#6b4e71"], ["admin", "Administrativo", "#a15d3a"], ["pessoal", "Pessoal", "#5f7a56"]];
 var BASE=[{"t": "Comprar a camisa social cinza-claro do S-1 e a boina de reposição, que faltaram na ida à ConfecBell/Confex Bel", "d": "2026-08-31", "c": "pessoal", "f": false, "s": "Fardamento e pendências de secretaria", "sub": [{"t": "Depois da compra, experimentar o S-1 completo e conferir o caimento", "k": "a96eb16a5f"}]}, {"t": "Registrar qual opção de desconto SIPA foi escolhida em 24/08: Alojamento ou Vestiário; depois conferir a cessação do equivalente na OPM de origem", "d": "2026-08-31", "c": "admin", "f": false, "s": "Fardamento e pendências de secretaria"}, {"t": "Quinta de manhã, antes de descer: inventário do armário e roupa suja na mala @semanal", "d": "2026-09-03", "c": "pessoal", "f": false, "s": "Rodízio da mala (toda semana, ver MALA.md)", "sub": [{"t": "Contar o que ficou limpo: cuecas, meias sociais, meias brancas, camisetas de serviço, camisetas de sair, camisetas de treino, calça tectel, calça jeans, cinto social, camisa e calça de passeio e o S-1", "k": "19f8723b02"}, {"t": "Lançar os números nos contadores da aba Mala (o \"faltam N\" vira a carga de domingo)", "k": "e2ea0e1183"}, {"t": "Toalha de banho e fronha usadas na mala", "k": "fa4a937436"}, {"t": "Roupa suja da semana na mala", "k": "fcad9d6621"}]}, {"t": "Domingo, arrumar a mala da semana antes de viajar. B-1 e EPI ficam em casa (decisão de 20/08) @semanal", "d": "2026-09-06", "c": "pessoal", "f": false, "s": "Rodízio da mala (toda semana, ver MALA.md)", "sub": [{"t": "Cuecas, na quantidade que o inventário de quinta apontou", "k": "a405afaa0b"}, {"t": "Meias sociais pretas, na quantidade do inventário", "k": "a6c962d92f"}, {"t": "Meias brancas, na quantidade do inventário", "k": "7dcf6cea59"}, {"t": "Camisetas de serviço, na quantidade do inventário", "k": "1a1d93ad63"}, {"t": "Camisetas de sair, se o inventário apontou falta", "k": "41f1420d32"}, {"t": "Camisetas de treino, na quantidade do inventário", "k": "ffe188607a"}, {"t": "Camisas e calça de passeio, na quantidade do inventário", "k": "c093a5b18a"}, {"t": "Paletó e calça do S-1, se o inventário apontou falta", "k": "3475e0521a"}, {"t": "Calça tectel, calça jeans e cinto social, se o inventário apontou falta", "k": "b292108a76"}, {"t": "Pijamas lavados", "k": "e183b163e1"}, {"t": "Toalhas de banho e fronha limpa", "k": "5dc5698cf6"}, {"t": "whey", "k": "f31d885438"}, {"t": "creatina", "k": "00ed9c608d"}, {"t": "energético zero", "k": "b8e88affa7"}, {"t": "Pepsi Black", "k": "9f17b7fc84"}, {"t": "lanches", "k": "1757811f2c"}, {"t": "marmitas prontas", "k": "9b13da61c2"}, {"t": "shampoo", "k": "186764a607"}, {"t": "porta-sabonete", "k": "137efd4e4e"}]}, {"t": "Perguntar ao Cap Gobbo as REGRAS da orientação: precisa ser instrutor do curso? Quantos orientandos cada um aceita? Há prazo? O pedido é formal? Cabe coorientador? E se o Cel/Maj Carlos Henrique Lourenço Rovina orienta no programa (não é instrutor da turma)", "d": "2026-08-31", "c": "dissertacao", "f": false, "s": "Orientador da dissertação — MISSÃO URGENTE"}, {"t": "Sondar o Cel Barreto na próxima aula dele em Policiamento Comunitário. A abordagem está no Drive, em 02_DISSERTACAO/00_orientacao/2026-08-26_abordagem-Cel-Barreto.md", "d": null, "c": "dissertacao", "f": false, "s": "Orientador da dissertação — MISSÃO URGENTE", "sub": [{"t": "[VERIFICAR: reagendar quando um novo QTS trouxer o Cel Barreto; 31/08 não corresponde à Grade]", "k": "4c48f90029"}, {"t": "Levar o PP aprovado impresso", "k": "f25ff52940"}, {"t": "Fazer a pergunta da PEC 514, sem pedir orientação de saída", "k": "0866c255f8"}, {"t": "Registrar o resultado no mesmo arquivo, no mesmo dia", "k": "bb08e6f118"}]}, {"t": "Perguntar na Coordenação (Seç Avaliação, Cap Diego) as datas das seis VCs e quais disciplinas cobram trabalho além da prova", "d": "2026-08-31", "c": "curso", "f": false, "s": "Avaliações e trabalhos"}, {"t": "Ver no WhatsApp da Univesp (11 4200-2982) se veio resposta ao pedido de prova em polo da capital", "d": "2026-08-31", "c": "admin", "f": false, "s": "Univesp — prova de 22/09 em conflito com o curso (pedido já protocolado)"}, {"t": "Vencimento dos 10 dias úteis do SAE: sem resposta, cobrar pelo 0800 051 3333 ou WhatsApp, citando o assunto do e-mail. A prova é 22/09", "d": "2026-09-03", "c": "admin", "f": false, "s": "Univesp — prova de 22/09 em conflito com o curso (pedido já protocolado)"}, {"t": "Pedir ao CAES (Seç Apoio Escolar, mesa SEI 302090130) a declaração de matrícula e frequência do CAO-II/26, para ter em mãos se a Univesp exigir comprovação", "d": "2026-08-25", "c": "admin", "f": true, "s": ""}, {"t": "Montar o rol completo de disciplinas e instrutores para ter o universo de candidatos: pronto em 25/08, 117 vínculos e 97 instrutores, consolidado na aba Grade", "d": "2026-08-25", "c": "dissertacao", "f": true, "s": ""}, {"t": "Mandar e lançar o QTS da semana 3 na Grade", "d": "2026-08-24", "c": "curso", "f": true, "s": ""}, {"t": "Procurar o Cap Gobbo (Seção de Pesquisa) sobre a transformação do PP em dissertação", "d": "2026-08-24", "c": "dissertacao", "f": true, "s": ""}, {"t": "Decidir e comprar o energético zero: leva de casa ou compra perto do CAES na chegada (whey, creatina e coqueteleira já resolvidos)", "d": "2026-08-23", "c": "pessoal", "f": true, "s": ""}, {"t": "Confirmar a grafia do nome do orientador pretendido: é Cel PM Eglis, com o g antes do l, como traz o QTS revisado de 20/08. A Central escrevia Elgis desde 17/08 e foi corrigida", "d": "2026-08-21", "c": "dissertacao", "f": true, "s": ""}, {"t": "Conferir se a mesa SEI 302090130 recebeu o ofício: recebeu. A cobrança do CAES aos faltantes (19/08) não traz meu nome nem o 2º BPM/I", "d": "2026-08-19", "c": "admin", "f": true, "s": ""}, {"t": "Comprar na ConfecBell/Confex Bel: 2 camisas de passeio, 2 camisetas de serviço, tarjeta operacional, Logomarca, 4 distintivos de OPM e tarjeta administrativa de acrílico", "d": "2026-08-18", "c": "pessoal", "f": true, "s": ""}, {"t": "Conferir whey, creatina e coqueteleira — os três já em casa", "d": "2026-08-18", "c": "pessoal", "f": true, "s": ""}, {"t": "Pegar o QTS e lançar as disciplinas: sai dia a dia, 7 disciplinas até 18/08", "d": "2026-08-18", "c": "curso", "f": true, "s": ""}, {"t": "Perguntar ao pessoal do CAO-I/26 onde eles almoçam e jantam, e lançar em ENTORNO.md", "d": "2026-08-18", "c": "pessoal", "f": true, "s": ""}, {"t": "Chegar ao CAES até 07h30: café da manhã, assinar a lista de presença do pelotão e palestra", "d": "2026-08-17", "c": "curso", "f": true, "s": ""}, {"t": "Combinar o destino do 4º distintivo de OPM, o da gandola: trazer solto ou deixar na loja, porque a gandola só sobe em 23/08", "d": "2026-08-17", "c": "pessoal", "f": true, "s": ""}, {"t": "Se aplicável: pedir Ajuda de Custo (oficial de outro município)", "d": "2026-08-17", "c": "admin", "f": true, "s": ""}, {"t": "Sair de casa às 15h00 para São Paulo, de carona, chegada por volta das 22h", "d": "2026-08-16", "c": "pessoal", "f": true, "s": ""}, {"t": "Deixar separado em casa o que só sobe em 23/08: B-1 (gandola, calça operacional, coturno) e EPI (cinto, colete, bota)", "d": "2026-08-15", "c": "pessoal", "f": true, "s": ""}, {"t": "Separar o que já tenho do S-1 para deixar guardado no CAES: paletó, a segunda calça social, gravata, quepe e tarjeta administrativa (da compra de segunda falta só a camisa social)", "d": "2026-08-15", "c": "pessoal", "f": true, "s": ""}, {"t": "Arrumar a mala seguindo a aba Mala, compacta (é carona), sem esquecer a boina reserva, o lençol de solteiro e a janta de domingo", "d": "2026-08-15", "c": "pessoal", "f": true, "s": ""}, {"t": "Separar os documentos de mão: identidade funcional e o número do processo SEI", "d": "2026-08-15", "c": "admin", "f": true, "s": ""}, {"t": "Comprar o cadeado do armário (o do CAES não tem chave) e etiqueta + caneta permanente para as marmitas", "d": "2026-08-14", "c": "pessoal", "f": true, "s": ""}, {"t": "Engomar a camisa de passeio que já tenho: é a única garantida para segunda, porque as outras 2 só serão compradas à tarde", "d": "2026-08-14", "c": "pessoal", "f": true, "s": ""}, {"t": "Conferir se a conta do Banco do Brasil não é \"Conta Salário\" e se o nome não está no CADIN", "d": "2026-08-14", "c": "admin", "f": true, "s": ""}, {"t": "Combinar com o amigo quanto espaço de bagagem eu tenho (o horário já está fechado: saída 15h)", "d": "2026-08-13", "c": "pessoal", "f": true, "s": ""}, {"t": "Acionar a P/1 do 2º BPM/I para o Ofício de Apresentação (mesa SEI 302090130) e a liberação da Rotina 13 do SIPA (código 302090000)", "d": "2026-08-13", "c": "admin", "f": true, "s": ""}, {"t": "Fechar as dúvidas que iriam para o SAE: chegada às 22h sem restrição, passeio completo é P-1, EPI é cinto/colete/bota com B-1, ofício não precisa de via impressa", "d": "2026-08-12", "c": "curso", "f": true, "s": ""}, {"t": "Decidir como viajar: domingo 16/08 à tarde, de carona com um amigo, chegando à noite", "d": "2026-08-12", "c": "pessoal", "f": true, "s": ""}, {"t": "Decidir onde comprar o fardamento: tudo na ConfecBell/Confex Bel, na tarde de segunda 17/08", "d": "2026-08-12", "c": "pessoal", "f": true, "s": ""}, {"t": "Conferência de armário: 78 das 90 peças já estavam em casa", "d": "2026-08-06", "c": "pessoal", "f": true, "s": ""}, {"t": "Organizar a pasta Central CAO (limpeza de duplicados, áudio/vídeo antigo, estrutura de pastas)", "d": "2026-08-04", "c": "pessoal", "f": true, "s": ""}, {"t": "Ficar de olho no Recadastramento Anual + Inspeção de Saúde (IAS) próximo do aniversário", "d": null, "c": "admin", "f": true, "s": ""}];
 var TAR_CAB="# TAREFAS — CAO 2026\n\n> Tarefas correntes do curso. Marcar como feito e preservar as concluídas como histórico.";
 var TAR_NOTAS={"Rodízio da mala (toda semana, ver MALA.md)": ["> Quinta conta o armário na aba Mala; domingo sobe o que o inventário apontou como falta.", "> As tarefas se repetem toda semana e a lista indentada é só molde de conferência."], "Univesp — prova de 22/09 em conflito com o curso (pedido já protocolado)": ["> Pedido enviado ao SAE em 19/08/2026, 20h02, com a Ata de Convocação anexada. Detalhes completos em `C:\\projetos\\mentor-univesp\\STATUS.md`."]};
@@ -6543,7 +6570,7 @@ var ICO={"check": "<svg viewBox=\"0 0 24 24\" width=\"13\" height=\"13\" fill=\"
 window.CURSO={"inicio": "2026-08-17", "fim": "2027-08-17", "viagem": "2026-08-16", "semanas": 53, "ciclos": [{"de": 1, "rot": "1º ciclo", "onde": "presencial"}, {"de": 17, "rot": "2º ciclo", "onde": "eletivas"}, {"de": 20, "rot": "3º ciclo", "onde": "dissertação"}]};
 window.QTS={"pelotao": "A", "dias": {"2026-08-31": {"blocos": [{"n": 1, "ini": "08:15", "fim": "09:45", "disc": "D06 Métodos Qualitativos de Pesquisa", "doc": "Cap PM Fernando"}, {"n": 2, "ini": "10:00", "fim": "11:30", "disc": "D19 Comportamento Organizacional", "doc": "Cap PM Diego"}, {"n": 3, "ini": "13:00", "fim": "14:30", "disc": "D05 Fundamentos da Metodologia Científica", "doc": "Cap PM O'Brien"}, {"n": 4, "ini": "14:45", "fim": "16:15", "disc": "D24 Direitos Humanos e Grupos Vulneráveis", "doc": "Cel PM Salomão"}], "aviso": ""}, "2026-09-01": {"blocos": [{"n": 1, "ini": "08:15", "fim": "09:45", "disc": "D30 Criminologia e Fenomenologia do Crime", "doc": "Ten Cel PM Giovani"}, {"n": 2, "ini": "10:00", "fim": "11:30", "disc": "D02 Geopolítica", "doc": "Cel PM Komata"}, {"n": 3, "ini": "13:00", "fim": "14:30", "disc": "D04 Relações Sociais e Institucionais no Brasil", "doc": "Cel PM Enio"}, {"n": 4, "ini": "14:45", "fim": "16:15", "disc": "D05 Fundamentos da Metodologia Científica", "doc": "Maj PM Zampronio"}, {"n": 5, "ini": "16:30", "fim": "18:00", "disc": "D26 Inteligência", "doc": "Cap PM Kroll"}], "aviso": ""}, "2026-09-02": {"blocos": [{"n": 1, "ini": "08:15", "fim": "09:45", "disc": "D03 Ética e Cidadania", "doc": "Ten Cel PM Elieverson"}, {"n": 2, "ini": "10:00", "fim": "11:30", "disc": "D25 Atualização Jurídica", "doc": "Maj PM Soares"}, {"n": 3, "ini": "13:00", "fim": "14:30", "disc": "D11 Planejamento Financeiro e Orçamentário", "doc": "Cel PM Bastos"}, {"n": 4, "ini": "14:45", "fim": "16:15", "disc": "D18 Excelência da Gestão", "doc": "Maj PM André Nogueira"}, {"n": 5, "ini": "16:30", "fim": "18:00", "disc": "D24 Direitos Humanos e Grupos Vulneráveis", "doc": "Cel PM Maurício"}], "aviso": ""}, "2026-09-03": {"blocos": [{"n": 1, "ini": "08:15", "fim": "09:45", "disc": "D07 Métodos Quantitativos de Pesquisa", "doc": "Cel PM Boggi"}, {"n": 2, "ini": "10:00", "fim": "11:30", "disc": "D04 Relações Sociais e Institucionais no Brasil", "doc": "Cel PM Fernandes"}], "aviso": ""}, "2026-09-04": {"blocos": [], "aviso": ""}, "2026-08-24": {"blocos": [{"n": 1, "ini": "08:15", "fim": "09:45", "disc": "D12 Gestão de Pessoas", "doc": "Cel PM Pereira Lima"}, {"n": 2, "ini": "10:00", "fim": "11:30", "disc": "D20 Liderança Organizacional", "doc": "Ten Cel PM Elieverson"}, {"n": 3, "ini": "13:00", "fim": "14:30", "disc": "D30 Criminologia e Fenomenologia do Crime", "doc": "Cap PM Fiuza"}, {"n": 4, "ini": "14:45", "fim": "16:15", "disc": "D15 Gestão de Projetos", "doc": "Ten Cel PM Fernandes"}], "aviso": ""}, "2026-08-25": {"blocos": [{"n": 1, "ini": "08:15", "fim": "09:45", "disc": "D30 Criminologia e Fenomenologia do Crime", "doc": "Ten Cel PM Giovani"}, {"n": 2, "ini": "10:00", "fim": "11:30", "disc": "D17 Gestão do Conhecimento e Aprendizagem Organizacional", "doc": "Cap PM Fernanda Nossa"}, {"n": 3, "ini": "13:00", "fim": "14:30", "disc": "D04 Relações Sociais e Institucionais no Brasil", "doc": "Cel PM Enio"}, {"n": 4, "ini": "14:45", "fim": "16:15", "disc": "D14 Planejamento Estratégico", "doc": "Cel PM Eglis"}, {"n": 5, "ini": "16:30", "fim": "18:00", "disc": "D15 Gestão de Projetos", "doc": "Cel PM Massera"}], "aviso": ""}, "2026-08-26": {"blocos": [{"n": 1, "ini": "08:15", "fim": "09:45", "disc": "D31 Gestão de Incidentes Policiais", "doc": "Cel PM Paulo Aguilar"}, {"n": 2, "ini": "10:00", "fim": "11:30", "disc": "D18 Excelência da Gestão", "doc": "Maj PM André Nogueira"}, {"n": 3, "ini": "13:00", "fim": "14:30", "disc": "D14 Planejamento Estratégico", "doc": "Cel PM Terra"}, {"n": 4, "ini": "14:45", "fim": "16:15", "disc": "D28 Policiamento Comunitário", "doc": "Cel PM Barreto"}, {"n": 5, "ini": "16:30", "fim": "18:00", "disc": "D26 Inteligência", "doc": "Cap PM Maurício"}], "aviso": "o bloco 4 é a aula do Cel PM Barreto, em Policiamento Comunitário. É a janela da semana para falar de orientação. Levar o PP aprovado."}, "2026-08-27": {"blocos": [{"n": 1, "ini": "08:15", "fim": "09:45", "disc": "D02 Geopolítica", "doc": "Cel PM Roldan"}, {"n": 2, "ini": "10:00", "fim": "11:30", "disc": "D14 Planejamento Estratégico", "doc": "Cel PM Terra"}], "aviso": ""}, "2026-08-28": {"blocos": [], "aviso": ""}}};
 window.SUPA_CFG={"url": "https://lmmxaaoqygarwxbwwhlp.supabase.co", "key": "sb_publishable_8_rZ9ygJvrEoSSlgEJ0IMQ_Qi8mvMT-"};
-window.ARQ_MOD={"ab-painel": "2026-09-01T00:14:42.000Z", "ab-prazos": "2026-08-31T23:55:53.000Z", "ab-tarefas": "2026-09-01T00:03:40.000Z", "ab-estudos": "2026-08-31T23:55:53.000Z", "ab-grade": "2026-08-31T23:55:53.000Z", "ab-curriculo": "2026-08-31T23:55:53.000Z", "ab-rotina": "2026-08-31T23:55:53.000Z", "ab-contatos": "2026-08-31T23:55:53.000Z", "ab-duvidas": "2026-09-01T00:14:42.000Z", "ab-anotacoes": "2026-08-31T19:11:56.000Z", "ab-compras": "2026-08-31T23:55:53.000Z", "ab-mala": "2026-08-31T23:55:53.000Z", "ab-viagens": "2026-08-31T23:55:53.000Z", "ab-entorno": "2026-08-31T23:55:53.000Z", "ab-passeios": "2026-08-31T23:55:53.000Z"};
+window.ARQ_MOD={"ab-painel": "2026-09-01T01:18:20.000Z", "ab-prazos": "2026-09-01T01:18:20.000Z", "ab-tarefas": "2026-09-01T01:18:20.000Z", "ab-estudos": "2026-09-01T01:18:20.000Z", "ab-grade": "2026-09-01T01:18:20.000Z", "ab-curriculo": "2026-09-01T01:18:20.000Z", "ab-rotina": "2026-09-01T01:18:20.000Z", "ab-contatos": "2026-09-01T01:18:20.000Z", "ab-duvidas": "2026-09-01T01:18:20.000Z", "ab-anotacoes": "2026-09-01T01:18:20.000Z", "ab-compras": "2026-09-01T01:18:20.000Z", "ab-mala": "2026-09-01T01:18:20.000Z", "ab-viagens": "2026-09-01T01:18:20.000Z", "ab-entorno": "2026-09-01T01:18:20.000Z", "ab-passeios": "2026-09-01T01:18:20.000Z"};
 
 /* ===================== tarefa que se repete =====================
    A marca de recorrencia vive no PROPRIO TEXTO da tarefa ("@semanal",

@@ -106,10 +106,10 @@ ICONES = {
 
 # Categorias das tarefas: (chave, rotulo, cor)
 CATEGORIAS = [
-    ("curso",       "Curso",          "#3b7dd8"),
-    ("dissertacao", "Dissertação",    "#8b5cf6"),
-    ("admin",       "Administrativo", "#e8892b"),
-    ("pessoal",     "Pessoal",        "#0f9d58"),
+    ("curso",       "Curso",          "#3e6b8c"),
+    ("dissertacao", "Dissertação",    "#6b4e71"),
+    ("admin",       "Administrativo", "#a15d3a"),
+    ("pessoal",     "Pessoal",        "#5f7a56"),
 ]
 
 
@@ -804,47 +804,62 @@ def escapa_js(obj):
 CSS = r"""
 *{box-sizing:border-box;margin:0;padding:0}
 :root{
-  --vm:#c8102e; --vm-cl:#e63950;
-  --bg:#f4f5f7; --card:#fff; --card2:#fafbfc;
-  --tx:#1a1d21; --tx2:#5b6470; --tx3:#8a929c;
-  --bd:#e2e5ea; --sh:0 1px 3px rgba(16,24,40,.06),0 1px 2px rgba(16,24,40,.04);
-  --sh2:0 4px 16px rgba(16,24,40,.08);
-  --ok:#0f9d58; --al:#e8a13a; --al-bg:#fef8ec;
+  /* vermelho institucional (oxiblood): estado de urgencia/acao, nao decoracao */
+  --vm:#a2402f; --vm-cl:#b8503b;
+  --bg:#edece5; --card:#ffffff; --card2:#f2f0e8;
+  --tx:#24262a; --tx2:#585f68; --tx3:#868d95;
+  --bd:#dbd8ce; --sh:0 1px 2px rgba(30,28,20,.05),0 1px 1px rgba(30,28,20,.04);
+  --sh2:0 3px 14px rgba(30,28,20,.09);
+  --ok:#5c7a4a; --al:#b8862f; --al-bg:#f2e6c8;
 }
 @media (prefers-color-scheme:dark){
-  :root{--bg:#0f1218;--card:#171b23;--card2:#1c212b;--tx:#e6e9ee;--tx2:#9aa4b2;
-        --tx3:#6b7480;--bd:#262c37;--vm-cl:#ff5a72;--al-bg:#2a2415;
-        --sh:0 1px 3px rgba(0,0,0,.4);--sh2:0 4px 20px rgba(0,0,0,.5)}
+  :root{--bg:#14171b;--card:#1d2126;--card2:#242830;--tx:#e9e6dd;--tx2:#a7acb3;
+        --tx3:#767c84;--bd:#2b2f36;--vm-cl:#d98a72;--al-bg:#2c2413;
+        --sh:0 1px 2px rgba(0,0,0,.45);--sh2:0 3px 18px rgba(0,0,0,.55)}
 }
-:root[data-theme=dark]{--bg:#0f1218;--card:#171b23;--card2:#1c212b;--tx:#e6e9ee;
-  --tx2:#9aa4b2;--tx3:#6b7480;--bd:#262c37;--vm-cl:#ff5a72;--al-bg:#2a2415;
-  --sh:0 1px 3px rgba(0,0,0,.4);--sh2:0 4px 20px rgba(0,0,0,.5)}
-:root[data-theme=light]{--bg:#f4f5f7;--card:#fff;--card2:#fafbfc;--tx:#1a1d21;
-  --tx2:#5b6470;--tx3:#8a929c;--bd:#e2e5ea;--vm-cl:#e63950;--al-bg:#fef8ec;
-  --sh:0 1px 3px rgba(16,24,40,.06);--sh2:0 4px 16px rgba(16,24,40,.08)}
+:root[data-theme=dark]{--bg:#14171b;--card:#1d2126;--card2:#242830;--tx:#e9e6dd;
+  --tx2:#a7acb3;--tx3:#767c84;--bd:#2b2f36;--vm-cl:#d98a72;--al-bg:#2c2413;
+  --sh:0 1px 2px rgba(0,0,0,.45);--sh2:0 3px 18px rgba(0,0,0,.55)}
+:root[data-theme=light]{--bg:#edece5;--card:#ffffff;--card2:#f2f0e8;--tx:#24262a;
+  --tx2:#585f68;--tx3:#868d95;--bd:#dbd8ce;--vm-cl:#b8503b;--al-bg:#f2e6c8;
+  --sh:0 1px 2px rgba(30,28,20,.05);--sh2:0 3px 14px rgba(30,28,20,.09)}
 
 body{background:var(--bg);color:var(--tx);
-  font:15px/1.62 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  font:15px/1.62 "Public Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
   -webkit-font-smoothing:antialiased}
 
-/* cabecalho */
-:root{--top1:#8f0a20;--top2:#c8102e;--top3:#a30d26}
-@media (prefers-color-scheme:dark){:root{--top1:#4a0511;--top2:#7d0a1d;--top3:#5c0716}}
-:root[data-theme=dark]{--top1:#4a0511;--top2:#7d0a1d;--top3:#5c0716}
-:root[data-theme=light]{--top1:#8f0a20;--top2:#c8102e;--top3:#a30d26}
+/* numeros e datas em mono: hora de aula, contagem de dias, tabela, tag [VERIFICAR] */
+.guia-conta b,.kpi .val,.qts-lista li .hr,.guia-lista li .qd,.qts-lista li .qd,
+table,code,.tf-data,.mk-topo b,.busca kbd{
+  font-family:"IBM Plex Mono",ui-monospace,SFMono-Regular,Consolas,monospace}
+
+/* cabecalho: cinza-bandeirante do uniforme, nao vermelho de aplicativo */
+:root{--top1:#2d3138;--top2:#454c56;--top3:#363c44}
+@media (prefers-color-scheme:dark){:root{--top1:#1b1e22;--top2:#2b3038;--top3:#232830}}
+:root[data-theme=dark]{--top1:#1b1e22;--top2:#2b3038;--top3:#232830}
+:root[data-theme=light]{--top1:#2d3138;--top2:#454c56;--top3:#363c44}
 .topo{background:linear-gradient(100deg,var(--top1),var(--top2) 55%,var(--top3));color:#fff;
-  padding:20px 0 0;box-shadow:var(--sh2);position:relative;overflow:hidden}
+  padding:20px 0 0;box-shadow:var(--sh2);position:relative;overflow:hidden;
+  border-bottom:2px solid #b8862f}
 .topo::after{content:"";position:absolute;right:-60px;top:-70px;width:260px;height:260px;
-  border-radius:50%;background:rgba(255,255,255,.06)}
+  border-radius:50%;background:rgba(255,255,255,.05)}
+.topo::before{content:"";position:absolute;inset:0;pointer-events:none;opacity:.05;
+  background:repeating-linear-gradient(45deg,#fff 0 1px,transparent 1px 7px)}
 .wrap{max-width:1080px;margin:0 auto;padding:0 20px;position:relative;z-index:1}
 .marca{display:flex;align-items:center;gap:13px;flex-wrap:wrap}
-.brasao{width:42px;height:42px;border-radius:9px;background:rgba(255,255,255,.16);
-  display:grid;place-items:center;font-weight:800;font-size:13px;letter-spacing:.5px;flex:none}
-.marca h1{font-size:19px;font-weight:700;letter-spacing:-.2px;line-height:1.25}
+.brasao{width:50px;height:38px;border-radius:5px;flex:none;
+  background:linear-gradient(160deg,#4c535e,#33383f);
+  border:1px solid rgba(184,134,47,.55);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.08);
+  display:grid;place-items:center}
+.brasao svg{width:30px;height:auto}
+.brasao svg path{fill:#c9a24a}
+.marca h1{font-family:"Fraunces",Georgia,serif;font-size:20px;font-weight:650;
+  letter-spacing:-.2px;line-height:1.25}
 .marca p{font-size:12.5px;opacity:.82;margin-top:1px}
 .acoes{margin-left:auto;display:flex;gap:8px;align-items:center}
 .bt{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.2);color:#fff;
-  border-radius:9px;padding:8px;cursor:pointer;display:grid;place-items:center;
+  border-radius:6px;padding:8px;cursor:pointer;display:grid;place-items:center;
   transition:background .15s}
 .bt:hover{background:rgba(255,255,255,.26)}
 /* o botao da conta leva texto ao lado do icone; o do tema continua quadrado */
@@ -861,7 +876,7 @@ body{background:var(--bg);color:var(--tx);
 .busca{position:relative;margin:16px 0 4px;max-width:420px}
 .busca svg{position:absolute;left:11px;top:50%;transform:translateY(-50%);opacity:.6;color:#fff}
 .busca input{width:100%;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.22);
-  border-radius:9px;padding:9px 12px 9px 36px;color:#fff;font-size:14px;font-family:inherit}
+  border-radius:6px;padding:9px 12px 9px 36px;color:#fff;font-size:14px;font-family:inherit}
 .busca input::placeholder{color:rgba(255,255,255,.62)}
 .busca input:focus{outline:none;background:rgba(255,255,255,.2);border-color:rgba(255,255,255,.45)}
 
@@ -885,12 +900,13 @@ main{max-width:1080px;margin:0 auto;padding:24px 20px 64px}
 .aba{display:none;animation:sobe .22s ease}
 .aba.on{display:block}
 @keyframes sobe{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
-.card{background:var(--card);border:1px solid var(--bd);border-radius:13px;
+@media (prefers-reduced-motion:reduce){.aba{animation:none}}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:5px;
   padding:22px 24px;box-shadow:var(--sh);margin-bottom:16px;overflow-wrap:break-word}
 
 /* home */
 .grade{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:13px;margin-bottom:16px}
-.kpi{background:var(--card);border:1px solid var(--bd);border-radius:13px;padding:17px 19px;box-shadow:var(--sh)}
+.kpi{background:var(--card);border:1px solid var(--bd);border-radius:5px;padding:17px 19px;box-shadow:var(--sh)}
 .kpi .rot{font-size:11.5px;text-transform:uppercase;letter-spacing:.7px;color:var(--tx3);font-weight:700}
 .kpi .val{font-size:29px;font-weight:750;letter-spacing:-1px;margin:5px 0 1px;line-height:1.1}
 .kpi .sub{font-size:12.5px;color:var(--tx2)}
@@ -898,7 +914,7 @@ main{max-width:1080px;margin:0 auto;padding:24px 20px 64px}
 .barra{height:6px;background:var(--bd);border-radius:4px;overflow:hidden;margin-top:11px}
 .barra i{display:block;height:100%;background:linear-gradient(90deg,var(--vm),var(--vm-cl));border-radius:4px}
 .aviso{background:var(--al-bg);border:1px solid var(--al);border-left-width:4px;
-  border-radius:11px;padding:15px 18px;margin-bottom:16px}
+  border-radius:5px;padding:15px 18px;margin-bottom:16px}
 .aviso h3{font-size:13px;text-transform:uppercase;letter-spacing:.6px;color:var(--al);margin-bottom:9px}
 .aviso ul{list-style:none}
 .aviso li{padding:4px 0 4px 20px;position:relative;font-size:14px}
@@ -908,16 +924,17 @@ main{max-width:1080px;margin:0 auto;padding:24px 20px 64px}
 /* ===================== guia do dia (abertura do painel) =====================
    E a primeira coisa que aparece: em que dia estamos, o que fazer hoje, o que
    vem amanha. Tudo montado no navegador, para nunca envelhecer sozinho.     */
-.guia{background:var(--card);border:1px solid var(--bd);border-radius:14px;
+.guia{background:var(--card);border:1px solid var(--bd);border-radius:6px;
   box-shadow:var(--sh);margin-bottom:16px;overflow:hidden}
 .guia-topo{display:flex;gap:16px;align-items:center;flex-wrap:wrap;
   padding:17px 22px;background:linear-gradient(100deg,var(--top1),var(--top2) 60%);color:#fff}
 .guia-ola{font-size:12.5px;text-transform:uppercase;letter-spacing:.8px;opacity:.85;font-weight:700}
-.guia-dia{font-size:20px;font-weight:750;letter-spacing:-.3px;line-height:1.2;margin-top:2px}
+.guia-dia{font-family:"Fraunces",Georgia,serif;font-size:23px;font-weight:600;
+  letter-spacing:-.2px;line-height:1.2;margin-top:2px}
 .guia-fase{font-size:13px;opacity:.9;margin-top:3px}
 .guia-conta{margin-left:auto;text-align:right;display:flex;align-items:baseline;gap:9px;
   background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.2);
-  border-radius:11px;padding:9px 14px}
+  border-radius:5px;padding:9px 14px}
 .guia-conta b{font-size:27px;font-weight:800;letter-spacing:-1px;line-height:1}
 .guia-conta span{font-size:12px;line-height:1.35;text-align:left;opacity:.92}
 .guia-corpo{padding:6px 22px 18px}
@@ -932,12 +949,12 @@ main{max-width:1080px;margin:0 auto;padding:24px 20px 64px}
 .tf-tag.rep{background:var(--bd);color:var(--tx2);cursor:pointer}
 .tf-tag.rep svg{opacity:.9}
 .tf-aviso{display:none;align-items:center;gap:8px;margin:0 0 12px;padding:10px 14px;
-  border:1px solid var(--bd);border-left:3px solid var(--vd);border-radius:10px;
+  border:1px solid var(--bd);border-left:3px solid var(--vd);border-radius:5px;
   background:var(--card);color:var(--tx2);font-size:13.5px}
 .tf-aviso.on{display:flex}
 .guia-lista{list-style:none;margin:0}
 .guia-lista li{display:flex;gap:10px;align-items:flex-start;padding:9px 12px;margin:6px 0;
-  border:1px solid var(--bd);border-left-width:3px;border-radius:9px;background:var(--card2);
+  border:1px solid var(--bd);border-left-width:3px;border-radius:5px;background:var(--card2);
   font-size:14.5px;color:var(--tx)}
 .guia-bloco.vencido .guia-lista li{border-left-color:var(--vm)}
 .guia-bloco.agora .guia-lista li{border-left-color:var(--al)}
@@ -949,12 +966,12 @@ main{max-width:1080px;margin:0 auto;padding:24px 20px 64px}
    antes de "o que eu tenho que fazer". */
 .guia-aula{padding:15px 22px 0}
 .qts-aviso{display:flex;gap:9px;align-items:flex-start;background:var(--al-bg);
-  border:1px solid var(--al);border-radius:9px;padding:9px 12px;margin-bottom:11px;
+  border:1px solid var(--al);border-radius:5px;padding:9px 12px;margin-bottom:11px;
   font-size:13.5px;color:var(--tx);line-height:1.4}
 .qts-aviso b{color:var(--al);flex:none}
 .qts-lista{list-style:none;margin:0}
 .qts-lista li{display:flex;gap:12px;align-items:center;padding:9px 12px;margin:6px 0;
-  border:1px solid var(--bd);border-left-width:3px;border-radius:9px;background:var(--card2)}
+  border:1px solid var(--bd);border-left-width:3px;border-radius:5px;background:var(--card2)}
 .qts-lista li .hr{font-size:13px;font-weight:700;color:var(--tx2);flex:none;width:46px;
   font-variant-numeric:tabular-nums;line-height:1.3}
 .qts-lista li .hr i{display:block;font-style:normal;font-size:11px;font-weight:500;color:var(--tx3)}
@@ -984,7 +1001,8 @@ main{max-width:1080px;margin:0 auto;padding:24px 20px 64px}
 }
 
 /* tipografia do conteudo */
-.card h2{font-size:17px;font-weight:700;letter-spacing:-.2px;margin:26px 0 11px;
+.card h2{font-family:"Fraunces",Georgia,serif;font-size:19px;font-weight:600;
+  letter-spacing:-.2px;margin:26px 0 11px;
   padding-bottom:8px;border-bottom:2px solid var(--bd)}
 .card h2:first-child{margin-top:0}
 .card h3{font-size:14.5px;font-weight:700;color:var(--tx);margin:19px 0 8px}
@@ -999,7 +1017,7 @@ main{max-width:1080px;margin:0 auto;padding:24px 20px 64px}
 .card a:hover{border-bottom-color:currentColor}
 /* secao recolhida (<details class="extra">): referencia que nao pode disputar
    espaco com a lista do que fazer hoje. Fechada por padrao. */
-.card details.extra{border:1px solid var(--bd);border-radius:11px;background:var(--card2);
+.card details.extra{border:1px solid var(--bd);border-radius:5px;background:var(--card2);
   margin:11px 0;overflow:hidden}
 .card details.extra>summary{cursor:pointer;list-style:none;padding:12px 15px;
   font-size:14px;font-weight:650;color:var(--tx2);display:flex;align-items:center;gap:9px;
@@ -1017,7 +1035,7 @@ main{max-width:1080px;margin:0 auto;padding:24px 20px 64px}
 .card details.extra>ul,.card details.extra>ol{margin-left:36px}
 /* a marca "extras" so aparece no primeiro <details> de uma sequencia */
 .card details.extra+details.extra{margin-top:-4px}
-.card details.local{border:1px solid var(--bd);border-radius:10px;background:var(--card2);
+.card details.local{border:1px solid var(--bd);border-radius:5px;background:var(--card2);
   margin:10px 0;overflow:hidden}
 .card details.local>summary{cursor:pointer;list-style:none;padding:12px 14px;
   display:flex;gap:9px;align-items:flex-start;color:var(--tx);font-size:14px;
@@ -1037,11 +1055,11 @@ main{max-width:1080px;margin:0 auto;padding:24px 20px 64px}
 .card .local-corpo .tab-wrap{margin:8px 0}
 .card .local-corpo table{font-size:13px}
 blockquote{border-left:3px solid var(--vm);background:var(--card2);padding:11px 16px;
-  border-radius:0 9px 9px 0;margin:13px 0;font-size:13.5px;color:var(--tx2)}
+  border-radius:0 5px 5px 0;margin:13px 0;font-size:13.5px;color:var(--tx2)}
 del{color:var(--tx3);text-decoration-thickness:1px}
 code{background:var(--card2);border:1px solid var(--bd);border-radius:5px;padding:1.5px 5px;
   font:.88em/1.4 ui-monospace,SFMono-Regular,Consolas,monospace;color:var(--vm-cl)}
-pre{background:var(--card2);border:1px solid var(--bd);border-radius:10px;padding:15px 17px;
+pre{background:var(--card2);border:1px solid var(--bd);border-radius:5px;padding:15px 17px;
   overflow-x:auto;margin:13px 0}
 pre code{background:none;border:0;padding:0;color:var(--tx2);font-size:12.5px;line-height:1.55}
 hr{border:0;border-top:1px solid var(--bd);margin:20px 0}
@@ -1051,7 +1069,7 @@ hr{border:0;border-top:1px solid var(--bd);margin:20px 0}
 
 /* mapas desenhados (svg embutido da pasta mapas/) */
 figure.mapa{margin:18px 0;padding:14px 12px 10px;border:1px solid var(--bd);
-  border-radius:12px;background:var(--card2);overflow-x:auto}
+  border-radius:6px;background:var(--card2);overflow-x:auto}
 /* min-width: sem isso o desenho encolhe junto com a tela e o texto do svg
    fica ilegivel no celular. Melhor manter o tamanho e deixar arrastar de lado. */
 figure.mapa svg{display:block;width:100%;min-width:560px;max-width:640px;
@@ -1065,7 +1083,7 @@ figure.mapa figcaption{margin-top:10px;text-align:center;color:var(--tx3);
 .mapa-erro{color:var(--vm-cl);font-size:13px}
 
 /* tabelas */
-.tab-wrap{overflow-x:auto;margin:13px 0;border:1px solid var(--bd);border-radius:10px}
+.tab-wrap{overflow-x:auto;margin:13px 0;border:1px solid var(--bd);border-radius:5px}
 table{border-collapse:collapse;width:100%;font-size:13.8px;min-width:400px}
 th{background:var(--card2);text-align:left;padding:10px 14px;font-weight:700;font-size:12px;
   text-transform:uppercase;letter-spacing:.5px;color:var(--tx3);border-bottom:1px solid var(--bd)}
@@ -1076,7 +1094,7 @@ tbody tr:hover{background:var(--card2)}
 /* tarefas */
 ul.tarefas{list-style:none;margin:11px 0}
 ul.tarefas li{display:flex;gap:10px;align-items:flex-start;padding:9px 12px;margin:5px 0;
-  border:1px solid var(--bd);border-radius:9px;background:var(--card2)}
+  border:1px solid var(--bd);border-radius:5px;background:var(--card2)}
 ul.tarefas li .box{width:17px;height:17px;border-radius:5px;border:2px solid var(--bd);
   flex:none;margin-top:2px;display:grid;place-items:center}
 ul.tarefas li.pend{border-left:3px solid var(--al)}
@@ -1099,7 +1117,7 @@ ul.tarefas li.parcial .box{background:var(--al);border-color:var(--al)}
 ul.tarefas li.parcial .box::after{content:"";width:9px;height:2.5px;
   border-radius:2px;background:#fff}
 .mk-qtd{margin-left:auto;display:flex;align-items:center;gap:4px;flex:none}
-.mk-qtd button{width:26px;height:26px;flex:none;border-radius:7px;
+.mk-qtd button{width:26px;height:26px;flex:none;border-radius:5px;
   border:1px solid var(--bd);background:var(--card);color:var(--tx2);
   font-size:1rem;line-height:1;cursor:pointer;display:grid;place-items:center;
   padding:0}
@@ -1112,14 +1130,14 @@ ul.tarefas li.parcial .mk-qtd .n{color:var(--al);font-weight:600}
 /* contador de progresso no topo das abas com lista ticavel */
 .mk-topo{display:flex;align-items:center;gap:12px;flex-wrap:wrap;
   margin:0 0 14px;padding:11px 14px;border:1px solid var(--bd);
-  border-radius:10px;background:var(--card2)}
+  border-radius:5px;background:var(--card2)}
 .mk-topo .mk-n{font-weight:700;color:var(--tx)}
 .mk-topo .mk-barra{flex:1;min-width:120px;height:7px;border-radius:99px;
   background:var(--bd);overflow:hidden}
 .mk-topo .mk-barra i{display:block;height:100%;background:var(--ok);
   border-radius:99px;transition:width .2s}
 .mk-topo button{background:none;border:1px solid var(--bd);color:var(--tx3);
-  border-radius:8px;padding:5px 11px;font-size:.82rem;cursor:pointer}
+  border-radius:5px;padding:5px 11px;font-size:.82rem;cursor:pointer}
 .mk-topo button:hover{color:var(--tx);border-color:var(--vm)}
 /* estado da sincronizacao, igual ao das Tarefas mas dentro da barra */
 .mk-topo .tf-status{margin-left:0;font-size:12px}
@@ -1139,7 +1157,7 @@ ul.tarefas li.parcial .mk-qtd .n{color:var(--al);font-weight:600}
 .mala-dom-li{list-style:none;margin:0 0 9px;padding:0;display:flex;
   flex-wrap:wrap;gap:7px}
 .mala-dom-li li{display:flex;align-items:center;gap:6px;background:var(--card2);
-  border:1px solid var(--bd);border-radius:9px;padding:7px 12px;font-size:14px;
+  border:1px solid var(--bd);border-radius:5px;padding:7px 12px;font-size:14px;
   font-weight:600;color:var(--tx);cursor:pointer;user-select:none;
   transition:border-color .12s,opacity .12s}
 .mala-dom-li li b{color:var(--vm);font-weight:800}
@@ -1172,9 +1190,9 @@ ul.tarefas li.parcial .mk-qtd .n{color:var(--al);font-weight:600}
    uma pendencia que nao era de ninguem: esta e real e so o Josemar resolve,
    clicando. Por isso pode ser vermelha e grande.                          */
 .sinc-al{display:none;width:100%;align-items:center;gap:12px;flex-wrap:wrap;
-  text-align:left;margin:0 0 16px;padding:13px 15px;border-radius:12px;
+  text-align:left;margin:0 0 16px;padding:13px 15px;border-radius:5px;
   font:inherit;cursor:pointer;background:var(--vm);border:1px solid var(--vm);
-  color:#fff;box-shadow:0 2px 12px rgba(200,16,46,.3)}
+  color:#fff;box-shadow:0 2px 12px rgba(162,64,47,.3)}
 .sinc-al.on{display:flex}
 .sinc-al:hover{background:var(--vm-cl);border-color:var(--vm-cl)}
 .sinc-al-ic{flex:none;width:26px;height:26px;border-radius:50%;
@@ -1183,7 +1201,7 @@ ul.tarefas li.parcial .mk-qtd .n{color:var(--al);font-weight:600}
 .sinc-al-tx{flex:1 1 200px;min-width:0}
 .sinc-al-tx b{display:block;font-size:14.5px;font-weight:700}
 .sinc-al-tx span{display:block;font-size:12.5px;opacity:.93;margin-top:2px}
-.sinc-al-bt{flex:none;border-radius:8px;padding:7px 15px;font-size:13px;
+.sinc-al-bt{flex:none;border-radius:5px;padding:7px 15px;font-size:13px;
   font-weight:700;background:#fff;color:var(--vm)}
 @media(max-width:560px){
   .sinc-al{align-items:flex-start}
@@ -1191,15 +1209,15 @@ ul.tarefas li.parcial .mk-qtd .n{color:var(--al);font-weight:600}
 }
 
 /* caixa de entrada */
-.tf-nova{background:var(--card);border:1px solid var(--bd);border-radius:13px;
+.tf-nova{background:var(--card);border:1px solid var(--bd);border-radius:5px;
   padding:14px 16px;box-shadow:var(--sh);margin-bottom:16px;transition:border-color .15s}
-.tf-nova:focus-within{border-color:var(--vm);box-shadow:0 0 0 3px rgba(200,16,46,.1)}
+.tf-nova:focus-within{border-color:var(--vm);box-shadow:0 0 0 3px rgba(162,64,47,.1)}
 .tf-linha{display:flex;gap:10px;align-items:center}
 .tf-linha input[type=text]{flex:1;min-width:0;background:none;border:0;color:var(--tx);
   font:16px/1.4 inherit;padding:5px 0}
 .tf-linha input[type=text]:focus{outline:none}
 .tf-linha input[type=text]::placeholder{color:var(--tx3)}
-.tf-add{background:var(--vm);border:0;color:#fff;border-radius:9px;width:38px;height:38px;
+.tf-add{background:var(--vm);border:0;color:#fff;border-radius:5px;width:38px;height:38px;
   flex:none;display:grid;place-items:center;cursor:pointer;transition:transform .12s,background .15s}
 .tf-add:hover{background:#a80d26}
 .tf-add:active{transform:scale(.93)}
@@ -1215,7 +1233,7 @@ ul.tarefas li.parcial .mk-qtd .n{color:var(--al);font-weight:600}
 .tf-data{background:var(--card2);border:1px solid var(--bd);border-radius:20px;padding:4px 10px;
   color:var(--tx2);font:600 12.5px/1.5 inherit;font-family:inherit}
 .tf-data:focus{outline:none;border-color:var(--vm)}
-.tf-detectada{background:rgba(15,157,88,.12);border-color:var(--ok);color:var(--ok)}
+.tf-detectada{background:rgba(92,122,74,.12);border-color:var(--ok);color:var(--ok)}
 
 /* lista */
 .tf-grupo{margin-bottom:20px}
@@ -1228,7 +1246,7 @@ ul.tarefas li.parcial .mk-qtd .n{color:var(--al);font-weight:600}
 .tf-cab.hoje .n{background:var(--al);color:#fff}
 
 .tf-item{display:flex;gap:11px;align-items:flex-start;padding:11px 13px;margin:6px 0;
-  background:var(--card);border:1px solid var(--bd);border-radius:11px;
+  background:var(--card);border:1px solid var(--bd);border-radius:5px;
   transition:border-color .15s,transform .12s,opacity .2s;position:relative}
 .tf-item:hover{border-color:var(--tx3)}
 .tf-item.atrasada{border-left:3px solid var(--vm)}
@@ -1247,31 +1265,31 @@ ul.tarefas li.parcial .mk-qtd .n{color:var(--al);font-weight:600}
 .tf-tag{font-size:11.5px;font-weight:650;padding:2px 8px;border-radius:20px;
   display:inline-flex;align-items:center;gap:5px;white-space:nowrap}
 .tf-tag.dt{background:var(--card2);border:1px solid var(--bd);color:var(--tx2)}
-.tf-tag.dt.venc{background:rgba(200,16,46,.12);border-color:var(--vm);color:var(--vm)}
-.tf-tag.dt.prox{background:rgba(232,161,58,.15);border-color:var(--al);color:var(--al)}
+.tf-tag.dt.venc{background:rgba(162,64,47,.12);border-color:var(--vm);color:var(--vm)}
+.tf-tag.dt.prox{background:rgba(184,134,47,.15);border-color:var(--al);color:var(--al)}
 .tf-tag.cat{color:#fff}
 .tf-acoes{display:flex;gap:3px;flex:none;opacity:0;transition:opacity .15s}
 .tf-item:hover .tf-acoes,.tf-item:focus-within .tf-acoes{opacity:1}
-.tf-ac{background:none;border:0;color:var(--tx3);cursor:pointer;padding:5px;border-radius:6px;
+.tf-ac{background:none;border:0;color:var(--tx3);cursor:pointer;padding:5px;border-radius:5px;
   display:grid;place-items:center;transition:all .13s}
 .tf-ac:hover{background:var(--card2);color:var(--tx)}
-.tf-ac.del:hover{background:rgba(200,16,46,.12);color:var(--vm)}
+.tf-ac.del:hover{background:rgba(162,64,47,.12);color:var(--vm)}
 /* a propria etiqueta de data e um botao: clicar nela remarca a tarefa */
 .tf-tag.dt.mud{font-family:inherit;cursor:pointer}
 .tf-tag.dt.mud:hover{border-color:var(--vm);color:var(--vm)}
 .tf-dtbox{display:flex;gap:7px;align-items:center;flex-wrap:wrap;margin-top:7px}
-.tf-dtbox input[type=date]{background:var(--card2);border:1px solid var(--vm);border-radius:8px;
+.tf-dtbox input[type=date]{background:var(--card2);border:1px solid var(--vm);border-radius:5px;
   padding:5px 9px;color:var(--tx);font:600 12.5px/1.5 inherit;font-family:inherit}
-.tf-dtbox input[type=date]:focus{outline:none;box-shadow:0 0 0 3px rgba(200,16,46,.1)}
+.tf-dtbox input[type=date]:focus{outline:none;box-shadow:0 0 0 3px rgba(162,64,47,.1)}
 .tf-dtbox .chip{padding:4px 10px;font-size:12px}
 /* lista de conferencia dentro de uma tarefa: um clique por item */
 .tf-tag.lista{background:var(--card2);border:1px solid var(--bd);color:var(--tx2);
   font-family:inherit;cursor:pointer}
 .tf-tag.lista:hover{border-color:var(--vm);color:var(--vm)}
-.tf-tag.lista.cheia{background:rgba(15,157,88,.12);border-color:var(--ok);color:var(--ok)}
+.tf-tag.lista.cheia{background:rgba(92,122,74,.12);border-color:var(--ok);color:var(--ok)}
 .tf-sub{list-style:none;margin:9px 0 1px;padding:0;display:grid;gap:5px}
 .tf-sub.fechada{display:none}
-.tf-si{display:flex;align-items:center;gap:9px;padding:7px 11px;border-radius:9px;
+.tf-si{display:flex;align-items:center;gap:9px;padding:7px 11px;border-radius:5px;
   border:1px solid var(--bd);background:var(--card2);font-size:13.5px;color:var(--tx2);
   cursor:pointer;user-select:none;transition:border-color .12s,background .12s}
 .tf-si:hover{border-color:var(--vm);background:var(--card)}
@@ -1281,7 +1299,7 @@ ul.tarefas li.parcial .mk-qtd .n{color:var(--al);font-weight:600}
 .tf-si.ok{opacity:.6}
 .tf-si.ok .box{background:var(--ok);border-color:var(--ok)}
 .tf-si.ok>span:nth-child(2){text-decoration:line-through}
-.tf-edit{width:100%;background:var(--card2);border:1px solid var(--vm);border-radius:7px;
+.tf-edit{width:100%;background:var(--card2);border:1px solid var(--vm);border-radius:5px;
   padding:6px 9px;color:var(--tx);font:14.5px/1.4 inherit}
 .tf-edit:focus{outline:none}
 
@@ -1292,7 +1310,7 @@ ul.tarefas li.parcial .mk-qtd .n{color:var(--al);font-weight:600}
 .tf-vazio small{font-size:13px}
 
 /* botoes gerais */
-.btn{background:var(--card);border:1px solid var(--bd);border-radius:9px;padding:8px 14px;
+.btn{background:var(--card);border:1px solid var(--bd);border-radius:5px;padding:8px 14px;
   font:650 13px/1 inherit;color:var(--tx2);cursor:pointer;display:inline-flex;
   align-items:center;gap:7px;transition:all .13s}
 .btn:hover{border-color:var(--tx3);color:var(--tx)}
@@ -1306,7 +1324,7 @@ ul.tarefas li.parcial .mk-qtd .n{color:var(--al);font-weight:600}
 .modal{position:fixed;inset:0;background:rgba(10,12,16,.62);display:none;place-items:center;
   z-index:50;padding:20px;backdrop-filter:blur(3px)}
 .modal.on{display:grid}
-.modal-cx{background:var(--card);border:1px solid var(--bd);border-radius:15px;
+.modal-cx{background:var(--card);border:1px solid var(--bd);border-radius:6px;
   box-shadow:0 20px 60px rgba(0,0,0,.35);max-width:560px;width:100%;max-height:86vh;
   display:flex;flex-direction:column;animation:sobe .2s ease}
 .modal-cab{display:flex;align-items:center;gap:11px;padding:18px 20px 14px;
@@ -1315,25 +1333,25 @@ ul.tarefas li.parcial .mk-qtd .n{color:var(--al);font-weight:600}
 .modal-corpo{padding:18px 20px;overflow-y:auto}
 .modal-corpo p{font-size:13.5px;color:var(--tx2);margin-bottom:12px}
 .modal-corpo textarea{width:100%;min-height:190px;background:var(--card2);border:1px solid var(--bd);
-  border-radius:9px;padding:12px;color:var(--tx);font:12.5px/1.6 ui-monospace,Consolas,monospace;
+  border-radius:5px;padding:12px;color:var(--tx);font:12.5px/1.6 ui-monospace,Consolas,monospace;
   resize:vertical}
 .modal-corpo textarea:focus{outline:none;border-color:var(--vm)}
 .modal-corpo label{display:block;font-size:12.5px;font-weight:650;color:var(--tx2);
   margin:0 0 6px}
 .modal-corpo input[type=email],.modal-corpo input[type=password]{width:100%;
-  background:var(--card2);border:1px solid var(--bd);border-radius:9px;padding:10px 12px;
+  background:var(--card2);border:1px solid var(--bd);border-radius:5px;padding:10px 12px;
   color:var(--tx);font:14.5px/1.4 inherit;margin-bottom:13px}
 .modal-corpo input:focus{outline:none;border-color:var(--vm)}
 .modal-rod{display:flex;gap:9px;justify-content:flex-end;padding:14px 20px;
   border-top:1px solid var(--bd);flex-wrap:wrap}
-.modal-erro{background:rgba(200,16,46,.1);border:1px solid var(--vm);color:var(--vm);
-  border-radius:9px;padding:10px 13px;font-size:13px;margin-bottom:13px;display:none}
+.modal-erro{background:rgba(162,64,47,.1);border:1px solid var(--vm);color:var(--vm);
+  border-radius:5px;padding:10px 13px;font-size:13px;margin-bottom:13px;display:none}
 .modal-erro.on{display:block}
-.aviso-cx{background:var(--card2);border:1px solid var(--bd);border-radius:9px;
+.aviso-cx{background:var(--card2);border:1px solid var(--bd);border-radius:5px;
   padding:11px 13px;font-size:12.5px;color:var(--tx2);margin-bottom:13px;line-height:1.55}
 
 /* busca: destaque e ocultacao */
-mark{background:rgba(232,161,58,.35);color:inherit;border-radius:3px;padding:0 2px}
+mark{background:rgba(184,134,47,.35);color:inherit;border-radius:3px;padding:0 2px}
 .sem-res{text-align:center;color:var(--tx3);padding:40px 20px;font-size:14px}
 .rodape{text-align:center;color:var(--tx3);font-size:12.5px;padding:8px 0 0}
 .rodape code{font-size:11.5px}
@@ -1348,7 +1366,7 @@ mark{background:rgba(232,161,58,.35);color:inherit;border-radius:3px;padding:0 2
   .marca h1{font-size:16.5px}
   .marca p{font-size:11.5px}
   .brasao{width:36px;height:36px;font-size:11px}
-  .card{padding:18px 16px;border-radius:11px}
+  .card{padding:18px 16px;border-radius:5px}
   .kpi .val{font-size:25px}
   .grade{grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px}
   nav button{padding:11px 11px 12px;font-size:12.5px}
@@ -4001,20 +4019,29 @@ def build():
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="robots" content="noindex,nofollow,noarchive">
 <meta name="googlebot" content="noindex,nofollow">
-<meta name="theme-color" content="#c8102e">
+<meta name="theme-color" content="#3a4049">
 <!-- o painel e um arquivo unico que muda a cada geracao; sem isto o navegador
      serve a versao antiga do cache e correcoes nao chegam ate o usuario -->
 <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
 <meta name="gerado-em" content="%(carimbo)s">
 <title>Central do CAO</title>
-<link rel="icon" href="data:image/svg+xml,%%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%%3E%%3Crect width='32' height='32' rx='7' fill='%%23c8102e'/%%3E%%3Ctext x='16' y='22' font-size='15' font-family='Arial' font-weight='bold' fill='white' text-anchor='middle'%%3ECAO%%3C/text%%3E%%3C/svg%%3E">
+<link rel="icon" href="data:image/svg+xml,%%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%%3E%%3Crect width='24' height='24' rx='5' fill='%%233a4049'/%%3E%%3Cpath d='M12 3l2.2 5.6 6 .7-4.5 3.9 1.3 5.6L12 15.9l-4.9 3-1-5.6L2 9.3l5.7-.7L12 3z' fill='%%23c9a24a'/%%3E%%3C/svg%%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,450;9..144,550;9..144,650&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <style>%(css)s</style>
 </head>
 <body>
 <header class="topo">
   <div class="wrap">
     <div class="marca">
-      <div class="brasao">CAO</div>
+      <div class="brasao" aria-hidden="true" title="Insígnia de Capitão">
+        <svg viewBox="0 0 64 28" width="30" height="14">
+          <path d="M10 2l1.8 4.4L16.4 7l-3.5 3 1 4.6L10 12.2 6.1 14.6l1-4.6L3.6 7l4.6-.6L10 2z"/>
+          <path d="M32 2l1.8 4.4L38.4 7l-3.5 3 1 4.6L32 12.2l-3.9 2.4 1-4.6L25.6 7l4.6-.6L32 2z"/>
+          <path d="M54 2l1.8 4.4L60.4 7l-3.5 3 1 4.6L54 12.2l-3.9 2.4 1-4.6L47.6 7l4.6-.6L54 2z"/>
+        </svg>
+      </div>
       <div>
         <h1>Central do CAO</h1>
         <p>CAO-II / 2026, CAES "Cel Nelson Freire Terra"</p>

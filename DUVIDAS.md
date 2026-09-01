@@ -27,9 +27,11 @@
 - **O Google Drive do computador sincroniza dentro da WCorp?** Se não sincronizar, os arquivos sobem sozinhos quando eu saio do quartel, o que não atrapalha, mas é bom saber. *[VERIFICAR]*
 - **Qual o limite de fontes por caderno no NotebookLM?** Muda conforme o plano. *[VERIFICAR]*
 - **Horário da Confex Bel (a "ConfecBell").** O endereço saiu: **Rua Prates, 704, Bom Retiro**, 1.372 m e 16 min a pé do CAES, já em [ENTORNO.md](ENTORNO.md). Falta o **horário de funcionamento**, que o site não publica: só tem WhatsApp (11) 98149-7812. *[VERIFICAR]*
-- **O nome da loja é Confex Bel, não ConfecBell?** A razão social encontrada é **Confex Bel**, com x e separado, Rua Prates 704, casa de 1959 da família Totaro, que faz fardamento militar com aplicação de distintivo. Bate o ramo e bate o entorno, mas confirmar com quem esteve lá em 18/08 antes de corrigir o nome em [COMPRAS.md](COMPRAS.md), [MALA.md](MALA.md), [PRAZOS.md](PRAZOS.md), [STATUS.md](STATUS.md) e [PAINEL.md](PAINEL.md). *[VERIFICAR]*
+- **O nome da loja é Confex Bel, não ConfecBell?** A razão social encontrada é **Confex Bel**, com x e separado, Rua Prates 704, casa de 1959 da família Totaro, que faz fardamento militar com aplicação de distintivo. Bate o ramo e bate o entorno, mas confirmar com quem esteve lá em 18/08 antes de corrigir o nome em [COMPRAS.md](COMPRAS.md), [MALA.md](MALA.md), [PRAZOS.md](PRAZOS.md) e [STATUS.md](STATUS.md). *[VERIFICAR]*
 
 ## Já respondidas
+
+<!-- extra -->
 
 > Fonte: Cap Hiran (SAE) e o próprio Josemar, em 12/08/2026. As que o Josemar respondeu não
 > passaram pela Seção: se alguma tiver consequência cara, vale confirmar antes de agir.

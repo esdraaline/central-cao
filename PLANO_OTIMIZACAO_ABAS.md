@@ -104,7 +104,7 @@ push na main.
 ## Progresso
 
 ### Fase 1 — Auditoria
-- [ ] 1. Painel (retrabalho: auditar STATUS.md de verdade)
+- [x] 1. Painel (retrabalho: STATUS.md auditado de verdade)
 - [x] 2. Prazos
 - [x] 3. Tarefas
 - [x] 4. Estudos
@@ -121,7 +121,7 @@ push na main.
 - [x] 15. Passeios
 
 ### Fase 2 — Correção
-- [ ] 16. Painel (retrabalho: corrigir STATUS.md de verdade)
+- [x] 16. Painel (retrabalho: STATUS.md corrigido de verdade)
 - [x] 17. Prazos
 - [x] 18. Tarefas
 - [x] 19. Estudos
@@ -147,11 +147,12 @@ push na main.
 **RETRABALHO (31/08 à noite).** O mapa desta versão do plano dizia "Painel -> PAINEL.md", errado:
 o gerador usa `STATUS.md` para a aba Painel, e `PAINEL.md` nunca foi lido por ele. Os achados
 abaixo, marcados como concluídos, foram feitos contra `PAINEL.md` e não valeram para o site. O
-`PAINEL.md` (órfão) foi apagado. A correção de emergência feita à parte: tirou a caixa "Notas de
-manutenção do painel" que tinha sido colada no fim do `STATUS.md` (achado que não existia neste
-plano) e moveu o que era regra permanente para o `AGENTS.md`. Falta ainda a auditoria de verdade
-do `STATUS.md` como um todo, inclusive o achado óbvio: a seção "A semana 2 (24 a 27/08)" ficou
-desatualizada, o resto do painel já foi corrigido para a semana 3.
+`PAINEL.md` (órfão) foi apagado. Achados do `STATUS.md` de verdade: "A semana 2" tinha ficado uma
+semana atrasada (o resto do painel já estava na semana 3); a tarefa nº1 ("O que está de pé")
+ainda citava o alvo de orientação antigo; a caixa "Notas de manutenção do painel" tinha sido
+colada no fim do arquivo por um retrabalho anterior; e o texto tinha vários blocos de referência
+(estrutura do curso, regras de orientação, decisões em vigor, histórico) competindo por espaço
+com o que é ação de hoje. Tudo corrigido — ver "Correção - Painel".
 
 Achados antigos (contra o arquivo errado, mantidos só de registro):
 - Linhas 3-575 do antigo PAINEL.md: manual técnico do painel gerado, histórico de bugs, Supabase, Actions, chaves e gerador.
@@ -243,11 +244,21 @@ Achados antigos (contra o arquivo errado, mantidos só de registro):
 ## Correção - Painel
 
 **RETRABALHO (31/08 à noite).** As três linhas abaixo mexeram no `PAINEL.md`, arquivo que o
-gerador não lê: não mudaram nada no site. Correção de emergência aplicada direto no `STATUS.md`
-(arquivo real da aba): tirada a caixa "Notas de manutenção do painel" do fim do arquivo; o que
-era regra permanente (janela de duas semanas na GRADE.md) foi para o AGENTS.md; `PAINEL.md`
-apagado por ser órfão. **Falta ainda:** auditar e corrigir o conteúdo de verdade do STATUS.md
-(a seção "A semana 2" está uma semana atrasada em relação ao resto do painel).
+gerador não lê: não mudaram nada no site. Correção de verdade aplicada no `STATUS.md` (arquivo
+real da aba):
+- Tirada a caixa "Notas de manutenção do painel" do fim do arquivo; o que era regra permanente
+  (janela de duas semanas na GRADE.md) foi para o AGENTS.md. `PAINEL.md` apagado por ser órfão.
+- "A semana 2" virou "A semana 3 (31/08 a 03/09)", com dados de verdade tirados do GRADE.md e do
+  PRAZOS.md. "O que está de pé" trocou o alvo de orientação vencido pelo atual (Cap Gobbo +
+  sondagem ao Cel Barreto), lido do TAREFAS.md.
+- Novo recurso no gerador (`gerar_painel.py`): a marca `::: extra Título` ... `:::` recolhe
+  qualquer trecho (não só uma seção `##` inteira) numa caixinha fechada por padrão, clicável.
+  Usada para tirar da vista direta o detalhe de "onde estou no curso", o método do domingo de
+  viagem e a lista de candidatos a orientador, mantendo só o essencial de cada seção aberto.
+- "Decisões em vigor" e "Histórico, em quatro linhas" viraram seções inteiras recolhidas (com
+  `<!-- extra -->`, o marcador que já existia): são referência, não ação do dia.
+- Nada foi apagado, só reorganizado por trás de um clique. Testado no navegador: abre e fecha
+  certo, conteúdo continua completo.
 
 Achados antigos (contra o arquivo errado, mantidos só de registro):
 - `PAINEL.md` tinha sido refeito como abertura de uso: mapa das abas, regras de bolso, estado atual e próximos focos.
@@ -298,6 +309,11 @@ Achados antigos (contra o arquivo errado, mantidos só de registro):
 
 - Dúvidas já respondidas pelo currículo foram retiradas.
 - Ficaram em aberto datas das VCs, trabalhos além da prova, pelotão A, lacunas reais da Grade e orientação.
+
+**Complemento (31/08 à noite, junto do retrabalho da aba Painel).** A seção inteira "Já
+respondidas" virou caixinha recolhida (`<!-- extra -->`): é arquivo morto, não precisa competir
+com "Em aberto". E saiu a referência ao `PAINEL.md` na última linha de "Em aberto" (o arquivo foi
+apagado por ser órfão do gerador).
 
 ## Correção - Anotações
 

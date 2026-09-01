@@ -291,6 +291,31 @@ def md_para_html(texto):
                          % (_inline(titulo), corpo))
             continue
 
+        # bloco recolhivel avulso, do tamanho de um paragrafo ou item de lista:
+        #
+        # ::: extra Titulo curto
+        # markdown comum aqui dentro
+        # :::
+        #
+        # Mesma caixinha fechada do "<!-- extra -->" (classe .extra), mas sem
+        # precisar virar uma secao "##" inteira: serve para recolher um unico
+        # paragrafo denso ou uma pergunta ja respondida no meio de uma lista.
+        m_extra = re.match(r"^:::\s+extra\s+(.+)$", strip)
+        if m_extra:
+            fecha_lista()
+            titulo = m_extra.group(1).strip()
+            i += 1
+            buf = []
+            while i < len(linhas) and linhas[i].strip() != ":::":
+                buf.append(linhas[i])
+                i += 1
+            if i < len(linhas) and linhas[i].strip() == ":::":
+                i += 1
+            corpo = md_para_html("\n".join(buf).strip())
+            saida.append('<details class="extra"><summary data-b>%s</summary>%s</details>'
+                         % (_inline(titulo), corpo))
+            continue
+
         # bloco de codigo
         if strip.startswith("```"):
             fecha_lista()

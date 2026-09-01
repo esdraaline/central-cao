@@ -15,6 +15,8 @@
 
 ## O essencial, numa tabela
 
+<!-- extra -->
+
 | Preciso de | Onde | A pé |
 |---|---|---|
 | **Almoço, 1ª opção** | **Marmita da Chef Marianne**, entregue no CAES · **R$ 20,50** · pedir até **10h30**, zap (11) 95393-7489 | **zero** |
@@ -34,6 +36,8 @@ quarta **18h00**, quinta **11h30** e você pega a estrada. Terça e quarta são 
 que sobram de verdade.
 
 ## Almoço entre aulas
+
+<!-- extra -->
 
 ### Marmitas Gourmet Marianne — a 1ª opção
 
@@ -129,12 +133,16 @@ Acompanhamentos: arroz, arroz integral, feijão, purê, ovo frito, batata frita,
 
 ![Do CAES até o Terraço Aurora: 616 m, cerca de 8 min.](mapas/terraco-aurora.svg)
 
+::: extra Como chegar ao Terraço Aurora a pé
 **616 m, cerca de 8 min a pé.** Sai da praça pela **Av. Duque de Caxias** (57 m), entra na
 **Rua Santa Ifigênia** (330 m) e vira na **Rua Vitória** (79 m) até o 365. É o caminho de quem
 vai comprar eletrônico, virando um pouco antes.
+:::
 
 **Falta só ir e comer para virar [TESTADO].** Quando for, diz o que pediu, o que achou e se
 voltaria.
+
+::: extra Para ocasião especial ou visita
 
 ### Restaurante da Sala São Paulo — na sua praça
 
@@ -152,6 +160,7 @@ Está na lista do SAE por proximidade. Não aparece no OpenStreetMap com esse no
 
 *Distâncias por rota a pé (OpenStreetMap + Valhalla). O horário de funcionamento da maioria
 não consta em lugar nenhum.*
+:::
 
 ## Café
 
@@ -161,12 +170,14 @@ Era o que este guia chamava de "Padaria Flor da Duque", indicação de colega do
 não padaria**, e o nome leva acento: **Flôr da Duque**. Abrindo às 06h todo dia, resolve o
 café antes da formatura sem sair da avenida.
 
+::: extra Outros cafés, ainda não testados
 **Corada** — Al. Ribeiro da Silva, 932, Campos Elíseos — **[CANDIDATO]**
 Mesas na calçada, lanches e cafés. Citam o pão de queijo recheado com chutney de cenoura com
 laranja e queijo meia cura.
 
 **Por um Punhado de Dólares + A Yerba** — R. Pirineus, 86, Campos Elíseos — **[CANDIDATO]**
 Cafeteria junto com loja de chás. Café, drinks, salgados e pratos.
+:::
 
 ## Jantar de terça e quarta
 
@@ -203,12 +214,14 @@ que este guia carregava desde 24/08: não é só segunda, é todo dia. Fonte: me
 *[VERIFICAR: preço. O panfleto não traz valores. Quando você for, anota o que pediu e quanto
 pagou que eu ponho aqui e ele vira [TESTADO].]*
 
+::: extra Outras opções de jantar, ainda não testadas
 **Ama.Zo** — peruano, matriz nos Campos Elíseos — **[CANDIDATO]**
 Cresceu por boca a boca e já abriu segunda casa em Higienópolis. É a melhor aposta de "jantar
 que vale a pena" perto.
 
 **Higienópolis** (Luz → Linha 4-Amarela) — **[CANDIDATO]**
 Região de restaurante bom, concentrada e segura para andar à noite.
+:::
 
 ## Abastecimento: padaria, mercado e farmácia
 
@@ -378,6 +391,7 @@ eles não estão no OpenStreetMap. O que ele vê da calçada continua ganhando d
 
 ## Emergência e utilidade
 
+::: extra Telefones e endereços de emergência
 | O que | Onde |
 |---|---|
 | Farmácia | Drogaria Nova Duque — Av. Duque de Caxias, 788 |
@@ -388,6 +402,7 @@ eles não estão no OpenStreetMap. O que ele vê da calçada continua ganhando d
 | **Academia** | **Gaviões 24h** — Av. Rio Branco, 422, entra pelo Wellhub · Evoque — Av. Rio Branco, 1457 |
 | Pronto-socorro | PS Barra Funda — R. Vitorino Carmilo, 717 |
 | Ônibus | Terminal Princesa Isabel — Av. Rio Branco |
+:::
 
 ### Academia Gaviões 24h — Rio Branco
 
@@ -464,24 +479,29 @@ baldeação**, a Higienópolis, Paulista, Faria Lima e Pinheiros. E a **Linha 1-
 Center Norte e ao Shopping D.
 
 A **Santa Cecília** cobre o que a Luz não cobre: a **Linha 3-Vermelha**, que de um lado vai
-para Barra Funda e do outro para o Tatuapé. **A Linha 3 não passa pela Luz.** Se uma
-busca qualquer (Google Maps, Moovit) apontar a Luz como "estação mais próxima" para um destino
-da Linha 3, ela está respondendo qual estação está mais perto da origem, não qual é a certa
-para embarcar na linha que serve aquele destino. Da Luz dá pra chegar na Linha 3 fazendo Linha
-4-Amarela até a **República** (1 estação) e baldeando lá dentro, mas isso é mais baldeação e
-mais tempo do que simplesmente caminhar os 15 min até a Santa Cecília e embarcar direto.
-*(Confirmado por pesquisa em 26/08/2026: fonte oficial do Metrô de SP, a Estação Luz não consta
-na lista de estações da Linha 3-Vermelha.)*
+para Barra Funda e do outro para o Tatuapé.
 
-*Nota sobre a composição da CPTM na Luz: a Linha 7-Rubi deixou de ter ponta final na Luz em
-2026, substituída pela 10-Turquesa nesse papel. `[VERIFICAR: confirmar a data exata da mudança e
-se a 7-Rubi ainda passa por lá em outro trecho ou saiu de vez.]`*
+::: extra Detalhes das estações (Linha 3, CPTM, Júlio Prestes)
+**A Linha 3 não passa pela Luz.** Se uma busca qualquer (Google Maps, Moovit) apontar a Luz
+como "estação mais próxima" para um destino da Linha 3, ela está respondendo qual estação está
+mais perto da origem, não qual é a certa para embarcar na linha que serve aquele destino. Da
+Luz dá pra chegar na Linha 3 fazendo Linha 4-Amarela até a **República** (1 estação) e
+baldeando lá dentro, mas isso é mais baldeação e mais tempo do que simplesmente caminhar os
+15 min até a Santa Cecília e embarcar direto. *(Confirmado por pesquisa em 26/08/2026: fonte
+oficial do Metrô de SP, a Estação Luz não consta na lista de estações da Linha 3-Vermelha.)*
+
+Nota sobre a composição da CPTM na Luz: a Linha 7-Rubi deixou de ter ponta final na Luz em
+2026, substituída pela 10-Turquesa nesse papel. *[VERIFICAR: confirmar a data exata da mudança
+e se a 7-Rubi ainda passa por lá em outro trecho ou saiu de vez.]*
 
 **Ressalva sobre a Júlio Prestes**: é terminal da **Linha 8-Diamante e só dela** (a 11-Coral
 não passa lá, apesar do projeto futuro no Bom Retiro). **Houve descarrilamento na Linha 8 em
 13/08/2026 e a estação chegou a ficar fechada**, e existe plano estadual, anunciado em 2024,
 de desativá-la na revitalização do centro. *[VERIFICAR se está operando antes de contar com
-ela.]* Na prática, **conte com a Luz e a Santa Cecília**, que são metrô.
+ela.]*
+:::
+
+Na prática, **conte com a Luz e a Santa Cecília**, que são metrô.
 
 **Passeio depois da aula tem dono próprio:** [PASSEIOS.md](PASSEIOS.md). Aqui ficam os
 trajetos de base, estação certa e serviços do entorno; roteiro cultural, horário de museu,
@@ -656,6 +676,7 @@ mais cedo.
 
 ### Segunda-feira
 
+::: extra Comparação de horários de segunda
 | Casa | Endereço | Culto | Como chegar | A pé no fim |
 |---|---|---|---|---|
 | **Santana** | R. Daniel Rossi, 194 | 19h30 | 807 m até a **Luz** → **Linha 1-Azul** até Santana (5 est.) | **939 m, 14 min** |
@@ -663,6 +684,7 @@ mais cedo.
 | ~~Canindé~~ | R. Silva Teles, 1611 | 19h30 | — | 2.871 m, 36 min. **Descartada** |
 | ~~Cambuci~~ | R. José Bento, 311 | 19h30 | — | 2.648 m, 32 min. **Descartada** |
 | ~~Bairro do Limão~~ | R. Carolina Soares, 444 | 19h30 | — | 5.757 m, 72 min. **Descartada** |
+:::
 
 ![Da Estação Santana até a CCB de Santana: 939 m, cerca de 14 min.](mapas/ccb-santana.svg)
 
@@ -675,6 +697,7 @@ Santana caiu no meio da rua. A distância pode variar uns 100 metros.*
 
 ### Terça-feira
 
+::: extra Comparação de horários de terça
 | Casa | Endereço | Culto | Como chegar | A pé |
 |---|---|---|---|---|
 | **Bom Retiro** | R. Anhaia, 613 | 19h30 | **A pé direto, sem metrô** | **1.282 m, 15 min** |
@@ -684,6 +707,7 @@ Santana caiu no meio da rua. A distância pode variar uns 100 metros.*
 | Lapa | R. João Pereira, 319 | 19h30 | CPTM Linha 8 ⚠ | a medir |
 | Pinheiros | R. Marcos Azevedo, 52 | 19h30 | Luz → **Linha 4-Amarela** até Pinheiros | a medir |
 | Penha | R. Capitão João Cesário, 160 | 19h30 | Sta. Cecília → Linha 3 até Penha | a medir |
+:::
 
 ![Do CAES até a CCB do Bom Retiro: 1.282 m, cerca de 15 min.](mapas/ccb-bom-retiro.svg)
 
@@ -693,12 +717,14 @@ volta.
 
 ### Quarta-feira
 
+::: extra Comparação de horários de quarta
 | Casa | Endereço | Culto | Como chegar | A pé no fim |
 |---|---|---|---|---|
 | **Barra Funda** | R. Brigadeiro Galvão, 683 | 19h30 | 1.164 m até **Santa Cecília** → **Linha 3** até Marechal Deodoro (1 est.) | **680 m, 8 min** |
 | Brás | R. Visconde de Parnaíba, 1616 | 19h30 | 1.164 m até **Santa Cecília** → **Linha 3** até Bresser-Mooca | **463 m, 6 min** |
 | Santana | R. Daniel Rossi, 194 | **20h00** | Luz → Linha 1-Azul até Santana | 939 m, 14 min |
 | Vila Maria | R. Filipe Bandeira, 571 | 19h30 | Luz → Linha 1 até Portuguesa-Tietê + ônibus | a medir |
+:::
 
 ![Da Estação Marechal Deodoro até a CCB da Barra Funda: 680 m, cerca de 8 min.](mapas/ccb-barra-funda.svg)
 

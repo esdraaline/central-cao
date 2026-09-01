@@ -59,20 +59,6 @@ próprio dentro de D26.]*
 | 1 — 08h15 às 09h45 | D07 Métodos Quantitativos de Pesquisa | Cel PM Boggi |
 | 2 — 10h00 às 11h30 | D04 Relações Sociais e Institucionais no Brasil | Cel PM Fernandes |
 
-Quinta acaba de novo às 11h30 na prática: o cabeçalho do QTS desta semana imprime horário até
-16h15 para quinta (igual ao de segunda), mas não há **nenhuma marcação de bloco 3, 4 ou 5 para
-nenhum dos cinco pelotões**, não só o A. É bloco de horário padrão do formulário, não indicação
-de aula à tarde. *[VERIFICAR se isso muda nas próximas semanas: o cabeçalho cheio pode ser sinal
-de que a coordenação vai começar a usar a tarde de quinta.]*
-
-**Sexta-feira 04/09/2026**: sem nenhuma marcação no QTS, para nenhum pelotão, apesar de o
-cabeçalho também trazer "08:15 às 11:30 e 13:00 às 16:15" para ela. Mesmo caso da quinta: o
-horário impresso é padrão do formulário, a folha inteira está vazia nessa coluna.
-
-**Semana de 16 blocos**, igual à semana 2: segunda com 4, terça e quarta com 5 cada, quinta com
-2 de fato (mesmo o cabeçalho sugerindo 4). 32 aulas de 45 minutos, terça e quarta cheias até as
-18h00.
-
 ## Semana anterior — 24 a 27/08/2026 (pelotão A)
 
 <!-- extra -->
@@ -331,10 +317,6 @@ dissertação. Para a Grade, ficam só estes reflexos:
 
 - **As datas das seis provas**, e quais disciplinas cobram trabalho além da prova. Perguntar na
   Coordenação (Seç Avaliação, Cap PM Diego Almeida, `caesaval@policiamilitar.sp.gov.br`).
-- **Se o bloco das 16h30 às 18h00 é permanente.** O currículo prevê **8 tempos por dia,
-  terminando 16h15**, o que fecha as 32 horas-aula semanais. O QTS da semana 2 traz bloco 5 na
-  terça e na quarta, o que estoura essa conta. Ou é reposição, ou é ajuste não refletido no
-  currículo ([CURRICULO.md](CURRICULO.md)).
 - **Se o docente muda de propósito ou é só escala.** D02 veio com o Cel Komata na semana 1 e
   com o Cel Roldan na semana 2; D04 trocou o Cel Fernandes pelo Cel Enio; D15 teve três
   docentes diferentes em duas semanas. Só o Cel Barreto (D28) e o Cap Maurício (D26) se

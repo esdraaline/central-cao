@@ -168,9 +168,6 @@ de Jurídicas.
 O currículo prevê 8 tempos de 45 minutos, de segunda a quinta, totalizando 32 horas-aula por
 semana. Horários de uso e blocos do QTS em [ROTINA.md](ROTINA.md).
 
-*[VERIFICAR: o QTS das semanas 2 e 3 trouxe bloco das 16h30 às 18h00 na terça e na quarta;
-confirmar se é reposição, ajuste permanente ou exceção.]*
-
 ## Avaliação: como se é aprovado
 
 <!-- extra -->
@@ -408,7 +405,6 @@ maternidade (art. 96, § 2º da DGE), com aproveitamento dos ciclos já concluí
 
 | Dúvida | Onde perguntar |
 |---|---|
-| O bloco das 16h30 às 18h00 é permanente ou excepcional? O currículo prevê só 8 tempos | Coordenação |
 | Calendário escolar com as datas reais das 19 semanas (recesso de fim de ano) | Coordenação |
 | Datas das seis VC do 1º CENS | Seç Avaliação e Concurso, Cap PM Diego Almeida |
 | Data de divulgação do rol de eletivas (previsão: até 18/09/2026) | Coordenação |

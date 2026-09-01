@@ -409,14 +409,6 @@ eles não estão no OpenStreetMap. O que ele vê da calçada continua ganhando d
 **Av. Rio Branco, 422, Campos Elíseos, CEP 01206-000** — **730 m, 9 min a pé** —
 **aberta 24 horas, todos os dias**.
 
-**Tem vestiário com chuveiro e armário**, que é o que decide se dá para treinar e voltar para
-o quartel. Além de musculação, cárdio e peso livre, tem aula coletiva (spinning, funcional,
-pilates solo, boxe, muay thai, jiu-jítsu, jump, fitdance) e **2 horas de estacionamento
-grátis**.
-
-**Antes de ir:** conferir no app se a unidade Rio Branco está disponível na faixa atual do
-Wellhub e se o check-in está liberado.
-
 ::: extra Pesquisa de preço e alternativas da Gaviões
 4,4 no Google (176 avaliações), 4,94 no Wellhub (1.225). Fica colada no Extra da Av. Rio
 Branco, então treino e compra saem na mesma caminhada.

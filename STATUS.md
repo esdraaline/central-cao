@@ -87,8 +87,6 @@ final em [CAO 2026/PP/Projeto Pesquisa Cap Josemar Final.doc](CAO%202026/PP/Proj
 - **O calendário escolar com as datas reais das 19 semanas presenciais.** As semanas 17 a 19 e
   tudo que vem depois estão calculados por contagem corrida, e o recesso de fim de ano deve
   empurrar as datas ([CURRICULO.md](CURRICULO.md)).
-- **Se o bloco das 16h30 às 18h00 é permanente.** O currículo prevê 8 tempos por dia, até as
-  16h15, mas o QTS já trouxe aula até as 18h00 em mais de uma semana.
 - Data, hora e local da formatura, a ratificar pela turma ([ROTINA.md](ROTINA.md)).
 - Se sou mesmo do pelotão A, de viva voz.
 

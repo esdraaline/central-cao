@@ -21,6 +21,13 @@ O mapa completo, com a tabela de "qual pergunta se responde em qual arquivo", es
 `08_CAO_2026/CLAUDE.md`, do lado do Drive. Skills: **`cao`** (situar no curso, logística) e
 **`aula-cao`** (anotar aula, no Drive).
 
+**Manutenção do painel.** Depois de editar qualquer `.md` de aba, rodar `python gerar_painel.py`
+para regenerar o `docs/index.html`. A aba "Painel" vem do **`STATUS.md`**, não de um arquivo
+chamado `PAINEL.md` (esse não existe/não é lido pelo gerador — ver a lista `ABAS` no topo do
+script para o mapa real aba → arquivo). Ao lançar QTS novo, manter duas semanas na `GRADE.md`:
+a nova no topo, a anterior logo abaixo. A coluna "Meu" das 31 disciplinas é cumulativa, com
+marcas S1, S2, S3.
+
 **Fonte única por assunto.** Quando a mesma informação existir dos dois lados, um é dono e o
 outro é ponteiro de uma linha. Duplicar não confunde só a IA, apaga decisão: em 17/08/2026 uma
 cópia órfã ficou dois dias afirmando que as casas de oração tinham saído do repositório

@@ -20,8 +20,9 @@ central-cao. Antes de começar, leia o AGENTS.md deste repositório: lá está c
 o painel funciona e o que pode e não pode ser mudado. Siga essas regras nas 30
 etapas abaixo.
 
-Mapa aba -> arquivo fonte:
-1. Painel      -> PAINEL.md
+Mapa aba -> arquivo fonte (confira sempre contra a lista ABAS no topo de
+gerar_painel.py antes de editar; é a fonte da verdade, não este mapa):
+1. Painel      -> STATUS.md
 2. Prazos      -> PRAZOS.md
 3. Tarefas     -> TAREFAS.md
 4. Estudos     -> ESTUDOS.md
@@ -68,8 +69,8 @@ Fase 1, etapas 1 a 15 (auditoria, uma por aba, nesta ordem). Para cada aba:
      gerado, como o script funciona, decisão técnica de implementação ou
      qualquer "nota de dev" dentro do conteúdo da aba. Quem lê a aba quer a
      informação (prazo, tarefa, contato, endereço), não como o painel foi
-     construído. Esse tipo de explicação é para o AGENTS.md ou o STATUS.md,
-     nunca para dentro do .md de uma aba.
+     construído. Esse tipo de explicação é só para o AGENTS.md, nunca para
+     dentro do .md de uma aba (STATUS.md incluso: ele É a aba Painel).
 3. Anexe em PLANO_OTIMIZACAO_ABAS.md, na seção "## Auditoria - <Aba>", uma
    lista curta dos achados. "Nenhum achado" é resposta válida. Cada achado:
    onde fica (trecho ou linha aproximada), qual o problema, sugestão de
@@ -84,8 +85,10 @@ cruzado de outra aba. Para cada aba:
 2. Edite o .md fonte: corte prolixidade, remova redundância (decida qual aba
    é dona da informação e deixe link/menção curta nas demais), resolva
    inconsistência ou marque "[VERIFICAR: ...]". Explicação de funcionamento
-   do site sai da aba: se a informação for útil para manutenção, mova para
-   AGENTS.md ou STATUS.md; se não for, apague.
+   do site sai da aba: se a informação for útil para manutenção, mova para o
+   AGENTS.md (NUNCA para STATUS.md nem para qualquer outro arquivo que esteja
+   na lista ABAS de gerar_painel.py, porque esses viram aba e voltam a
+   aparecer no site); se não for útil, apague.
 3. Rode "python gerar_painel.py" e confirme que a aba renderiza sem quebrar
    (o script deve terminar sem erro).
 4. Anexe em PLANO_OTIMIZACAO_ABAS.md, na seção "## Correção - <Aba>", um
@@ -101,7 +104,7 @@ push na main.
 ## Progresso
 
 ### Fase 1 — Auditoria
-- [x] 1. Painel
+- [ ] 1. Painel (retrabalho: auditar STATUS.md de verdade)
 - [x] 2. Prazos
 - [x] 3. Tarefas
 - [x] 4. Estudos
@@ -118,7 +121,7 @@ push na main.
 - [x] 15. Passeios
 
 ### Fase 2 — Correção
-- [x] 16. Painel
+- [ ] 16. Painel (retrabalho: corrigir STATUS.md de verdade)
 - [x] 17. Prazos
 - [x] 18. Tarefas
 - [x] 19. Estudos
@@ -141,9 +144,19 @@ push na main.
 
 ## Auditoria - Painel
 
-- Linhas 3-575: a aba inteira é manual técnico do painel gerado, com histórico de bugs, Supabase, Actions, chaves e gerador. Correção: trocar por uma abertura útil ao leitor e mover ou apagar o que for manutenção.
-- Linhas 558-575: estrutura da pasta repete o `AGENTS.md` e ainda cita `STATUS.md` como painel principal. Correção: manter no `AGENTS.md` e tirar da aba.
-- Linha 494: cita ConfecBell como se o nome estivesse resolvido, mas `DUVIDAS.md` mantém Confex Bel/ConfecBell em verificação. Correção: remover do painel ou marcar como nome a confirmar onde o assunto vive.
+**RETRABALHO (31/08 à noite).** O mapa desta versão do plano dizia "Painel -> PAINEL.md", errado:
+o gerador usa `STATUS.md` para a aba Painel, e `PAINEL.md` nunca foi lido por ele. Os achados
+abaixo, marcados como concluídos, foram feitos contra `PAINEL.md` e não valeram para o site. O
+`PAINEL.md` (órfão) foi apagado. A correção de emergência feita à parte: tirou a caixa "Notas de
+manutenção do painel" que tinha sido colada no fim do `STATUS.md` (achado que não existia neste
+plano) e moveu o que era regra permanente para o `AGENTS.md`. Falta ainda a auditoria de verdade
+do `STATUS.md` como um todo, inclusive o achado óbvio: a seção "A semana 2 (24 a 27/08)" ficou
+desatualizada, o resto do painel já foi corrigido para a semana 3.
+
+Achados antigos (contra o arquivo errado, mantidos só de registro):
+- Linhas 3-575 do antigo PAINEL.md: manual técnico do painel gerado, histórico de bugs, Supabase, Actions, chaves e gerador.
+- Linhas 558-575: estrutura da pasta repetia o AGENTS.md.
+- Linha 494: citava ConfecBell como nome resolvido, indo contra o DUVIDAS.md.
 
 ## Auditoria - Prazos
 
@@ -229,9 +242,16 @@ push na main.
 
 ## Correção - Painel
 
-- `PAINEL.md` foi refeito como abertura de uso: mapa das abas, regras de bolso, estado atual e próximos focos.
+**RETRABALHO (31/08 à noite).** As três linhas abaixo mexeram no `PAINEL.md`, arquivo que o
+gerador não lê: não mudaram nada no site. Correção de emergência aplicada direto no `STATUS.md`
+(arquivo real da aba): tirada a caixa "Notas de manutenção do painel" do fim do arquivo; o que
+era regra permanente (janela de duas semanas na GRADE.md) foi para o AGENTS.md; `PAINEL.md`
+apagado por ser órfão. **Falta ainda:** auditar e corrigir o conteúdo de verdade do STATUS.md
+(a seção "A semana 2" está uma semana atrasada em relação ao resto do painel).
+
+Achados antigos (contra o arquivo errado, mantidos só de registro):
+- `PAINEL.md` tinha sido refeito como abertura de uso: mapa das abas, regras de bolso, estado atual e próximos focos.
 - Saiu o manual técnico do painel gerado, histórico de bugs, Supabase, Actions e estrutura da pasta.
-- Nota de manutenção útil ficou no `STATUS.md`.
 
 ## Correção - Prazos
 

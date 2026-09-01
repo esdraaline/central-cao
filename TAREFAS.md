@@ -40,7 +40,7 @@
 
 ### Orientador da dissertação — MISSÃO URGENTE
 - [ ] Perguntar ao Cap Gobbo as REGRAS da orientação: precisa ser instrutor do curso? Quantos orientandos cada um aceita? Há prazo? O pedido é formal? Cabe coorientador? E se o Cel/Maj Carlos Henrique Lourenço Rovina orienta no programa (não é instrutor da turma) [31/08/2026] #dissertacao
-- [ ] Sondar o Cel Barreto na próxima aula dele em Policiamento Comunitário. A abordagem está no Drive, em `02_DISSERTACAO/00_orientacao/2026-08-26_abordagem-Cel-Barreto.md` #dissertacao
+- [ ] Sondar o Cel Barreto na próxima aula dele em Policiamento Comunitário. A abordagem está no Drive, em 02_DISSERTACAO/00_orientacao/2026-08-26_abordagem-Cel-Barreto.md #dissertacao
   - [ ] [VERIFICAR: reagendar quando um novo QTS trouxer o Cel Barreto; 31/08 não corresponde à Grade]
   - [ ] Levar o PP aprovado impresso
   - [ ] Fazer a pergunta da PEC 514, sem pedir orientação de saída
@@ -55,9 +55,6 @@
 - [ ] Vencimento dos 10 dias úteis do SAE: sem resposta, cobrar pelo 0800 051 3333 ou WhatsApp, citando o assunto do e-mail. A prova é 22/09 [03/09/2026] #admin
 
 ## Concluídas
-
-<!-- extra -->
-
 - [x] Pedir ao CAES (Seç Apoio Escolar, mesa SEI 302090130) a declaração de matrícula e frequência do CAO-II/26, para ter em mãos se a Univesp exigir comprovação [25/08/2026] #admin
 - [x] Montar o rol completo de disciplinas e instrutores para ter o universo de candidatos: pronto em 25/08, 117 vínculos e 97 instrutores, consolidado na aba Grade [25/08/2026] #dissertacao
 - [x] Mandar e lançar o QTS da semana 3 na Grade [24/08/2026] #curso

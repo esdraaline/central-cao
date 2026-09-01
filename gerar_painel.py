@@ -48,6 +48,9 @@ PRIMEIRA_VIAGEM = date(2026, 8, 16)
 # saiu, entao 17/19/53 sao o previsto, nao o confirmado. Quando sair, e aqui
 # que se corrige, num lugar so.
 CURSO_SEMANAS = 53
+# 1º + 2º ciclo (semanas 1 a 19): sao as semanas presenciais, no CAES. A
+# 3ª comeca na semana 20, a distancia. Mesma fronteira do PRESENCIAL_FIM.
+PRESENCIAL_SEMANAS = 19
 # O rotulo tem que caber em duas linhas de KPI: manter curto.
 CICLOS = [
     # (semana em que comeca, rotulo curto, onde)
@@ -3414,6 +3417,7 @@ JS_GUIA = r"""
   var PRES_FIM=C.presencial_fim?dt(C.presencial_fim):null;
   var VIAGEM1=C.viagem?dt(C.viagem):null;
   var SEMANAS=C.semanas||0;
+  var PRES_SEMANAS=C.presencial_semanas||0;
   var CICLOS=C.ciclos||[];
 
   /* ---- onde estou na semana do curso ----
@@ -3523,6 +3527,25 @@ JS_GUIA = r"""
         for(k=0;k<CICLOS.length;k++){if(sem>=CICLOS[k].de)ci=CICLOS[k];}
         ss.textContent='de '+SEMANAS+(ci?' · '+ci.rot+', '+ci.onde:'');
         sb.style.width=Math.round(sem*100/SEMANAS)+'%';
+      }
+    }
+    /* KPI da semana dentro da fase presencial (1º + 2º ciclo, semanas 1 a
+       19). Par do "Semana do curso" de cima, so que contra as semanas que
+       tem viagem, nao contra as 53 do programa inteiro. */
+    var pev=el('#kpi-presem-val'),pes=el('#kpi-presem-sub'),peb=el('#kpi-presem-barra');
+    if(pev&&INICIO&&PRES_SEMANAS){
+      if(h<INICIO){
+        pev.textContent='—';pes.textContent='ainda não começou';
+        peb.style.width='0%';
+      }else{
+        var sem2=Math.floor(dias(INICIO,h)/7)+1;
+        if(sem2>PRES_SEMANAS){
+          pev.textContent='Concluída';pes.textContent='fase presencial';
+          peb.style.width='100%';
+        }else{
+          pev.textContent=sem2;pes.textContent='de '+PRES_SEMANAS;
+          peb.style.width=Math.round(sem2*100/PRES_SEMANAS)+'%';
+        }
       }
     }
   }
@@ -3987,6 +4010,13 @@ def build():
                 '<div class="val" id="kpi-curso-val">...</div>'
                 '<div class="sub" id="kpi-curso-sub">CAO-II/26</div>'
                 '<div class="barra"><i id="kpi-curso-barra" style="width:0%"></i></div></div>')
+    # Par do "Semana do curso" mais abaixo, so que contra as semanas com
+    # viagem, nao contra as 53 do programa inteiro.
+    home.append('<div class="kpi"><div class="rot">Semana presencial</div>'
+                '<div class="val" id="kpi-presem-val">...</div>'
+                '<div class="sub" id="kpi-presem-sub">de %d</div>'
+                '<div class="barra"><i id="kpi-presem-barra" style="width:0%%"></i></div></div>'
+                % PRESENCIAL_SEMANAS)
     # Separado do de cima: aquele mede so a fase presencial (a viagem
     # semanal), este mede o programa inteiro, incluindo a dissertacao a
     # distancia ate ago/2027. Nasceu em 01/09/2026 depois de perceber que
@@ -4135,6 +4165,7 @@ window.ARQ_MOD=%(arqmod)s;
                             "presencial_fim": PRESENCIAL_FIM.isoformat(),
                             "viagem": PRIMEIRA_VIAGEM.isoformat(),
                             "semanas": CURSO_SEMANAS,
+                            "presencial_semanas": PRESENCIAL_SEMANAS,
                             "ciclos": [{"de": d, "rot": r, "onde": o}
                                        for d, r, o in CICLOS]}),
         "qts": escapa_js(qts),

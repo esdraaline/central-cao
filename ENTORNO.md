@@ -467,14 +467,14 @@ Apesar do nome "Bom Retiro", ele fica fisicamente em Campos Elíseos, quase cola
 - **Domingo e feriados:** 10h às 18h
 - **Segunda-feira:** FECHADO
 
-::: extra Por que o Sesc é útil para o CAO
-Mesmo que você não tenha a *Credencial Plena* (que dá desconto e acesso à piscina/academia e refeições completas), o Sesc tem entrada livre para o público geral e oferece:
+::: extra O básico que salva (Acesso Livre)
+Mesmo sem a *Credencial Plena* (que dá acesso à piscina/academia e almoço), o Sesc tem entrada livre para o público e oferece o básico com excelência para quem está no CAO:
 
-1. **Comedoria (Cafeteria):** Café, salgados, doces e lanches com qualidade garantida e preço justo, num ambiente limpo e seguro. Ótimo refúgio para intervalo ou fim de tarde.
-2. **Espaços de Leitura e Convivência:** Mesas, tomadas e Wi-Fi (geralmente disponível). É o melhor lugar fora do CAES para ler um texto, adiantar um trabalho da dissertação ou só sentar em paz sem o barulho da rua.
-3. **Banheiros limpos e bebedouros.**
+- **Café e Lanche:** A Comedoria (cafeteria) atende o público geral com café, salgados (pão de queijo, tortas), doces e bebidas a um excelente custo-benefício. Ambiente seguro e confortável para matar o tempo ou fazer um lanche rápido.
+- **Biblioteca:** Espaço silencioso com acervo para leitura, mesas e tomadas. É o melhor refúgio fora do CAES para sentar em paz, ler a doutrina ou adiantar o texto da dissertação (há Wi-Fi na unidade).
+- **Infraestrutura:** Banheiros sempre limpos, bebedouros e áreas de convivência.
 
-**O trajeto:** A caminhada de 8 minutos é reta pela própria Praça Júlio Prestes / Alameda Nothmann. De dia é bastante tranquilo, pois você não precisa entrar nas ruas comerciais pesadas do miolo.
+**O trajeto:** A caminhada de 8 minutos é reta, descendo a Alameda Nothmann a partir da Praça Júlio Prestes. Evita o fluxo pesado das ruas comerciais.
 :::
 
 ## Como sair daqui

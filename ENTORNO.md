@@ -455,6 +455,28 @@ que é como o OpenStreetMap cadastra o ponto (651 m). As fontes consultadas em 2
 nenhuma decisão muda: é a mesma caminhada.]*
 :::
 
+### Sesc Bom Retiro — oásis de estrutura a 8 minutos
+
+**Alameda Nothmann, 185, Campos Elíseos** — **~600 m, 8 min a pé** da Praça Júlio Prestes.
+
+Apesar do nome "Bom Retiro", ele fica fisicamente em Campos Elíseos, quase colado no CAES. É a melhor e mais segura estrutura de apoio da região imediata.
+
+**Horário de funcionamento:**
+- **Terça a sexta:** 9h às 20h
+- **Sábado:** 10h às 20h
+- **Domingo e feriados:** 10h às 18h
+- **Segunda-feira:** FECHADO
+
+::: extra Por que o Sesc é útil para o CAO
+Mesmo que você não tenha a *Credencial Plena* (que dá desconto e acesso à piscina/academia e refeições completas), o Sesc tem entrada livre para o público geral e oferece:
+
+1. **Comedoria (Cafeteria):** Café, salgados, doces e lanches com qualidade garantida e preço justo, num ambiente limpo e seguro. Ótimo refúgio para intervalo ou fim de tarde.
+2. **Espaços de Leitura e Convivência:** Mesas, tomadas e Wi-Fi (geralmente disponível). É o melhor lugar fora do CAES para ler um texto, adiantar um trabalho da dissertação ou só sentar em paz sem o barulho da rua.
+3. **Banheiros limpos e bebedouros.**
+
+**O trajeto:** A caminhada de 8 minutos é reta pela própria Praça Júlio Prestes / Alameda Nothmann. De dia é bastante tranquilo, pois você não precisa entrar nas ruas comerciais pesadas do miolo.
+:::
+
 ## Como sair daqui
 
 ![Do CAES até a Luz e até a Santa Cecília: 807 m/10 min contra 1.164 m/15 min.](mapas/saida-caes.svg)

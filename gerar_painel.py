@@ -77,6 +77,7 @@ ABAS = [
     ("ENTORNO.md",   "entorno",   "Entorno",    "garfo"),
     ("PASSEIOS.md",  "passeios",  "Passeios",   "pin"),
     ("SHOPPING.md",  "shopping",  "Shopping",   "sacola"),
+    ("BIBLIOTECA.md","biblioteca","Biblioteca", "livro"),
     ("CCB.md",       "ccb",       "CCB",        "igreja"),
 ]
 

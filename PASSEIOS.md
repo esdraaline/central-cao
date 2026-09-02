@@ -392,75 +392,9 @@ dos restaurantes.
 
 ## Shopping
 
-::: passeio Complexo Tatuapé — shopping ligado à estação
-
-**A escolha padrão é o Complexo Tatuapé.** Não por ser o mais perto em estações, mas pela
-última perna: **você chega dentro do shopping sem sair da estação**, por passarela interna,
-sem atravessar rua. Nenhum outro perto faz isso. E é o maior alcançável: **500 lojas, 13 salas
-de cinema, supermercado e farmácia**, somando o Shopping Metrô Tatuapé e o Boulevard Tatuapé,
-que são ligados por dentro.
-
-### Como chegar ao Tatuapé: duas rotas
-
-**Rota A, a mais curta** — 807 m a pé até a **Luz**, e **CPTM Linha 11-Coral** sentido
-Estudantes. São **2 estações**: Brás e Tatuapé.
-
-**Rota B, toda de metrô** — 1.164 m a pé até **Santa Cecília**, e **Linha 3-Vermelha** direta
-até Tatuapé. São **8 estações**, sem baldeação.
-
-A **A** tem menos estação e menos caminhada. A **B** anda 5 minutos a mais, mas o metrô passa
-com mais frequência que a CPTM, principalmente à noite. **Olhe o intervalo no painel**: se o
-trem demorar mais que uns 8 minutos, vale a rota B.
-
-### A pegadinha da volta
-
-Em Tatuapé param **duas linhas da CPTM**, e uma delas **não chega à Luz**:
-
-| Letreiro do trem | Linha | Onde termina |
-|---|---|---|
-| **Luz** | 11-Coral | **É o seu.** Brás e Luz |
-| Brás | 12-Safira | Para uma estação antes |
-
-**Só embarque no que estiver escrito LUZ.** Se errar, desce no Brás e pega o próximo da Linha
-11, que é só mais uma estação. (A Linha 13-Jade **não** para em Tatuapé: ela atende só
-Engenheiro Goulart, Guarulhos-CECAP e Aeroporto-Guarulhos.)
-
-### O que tem dentro do Tatuapé
-
-- **Oba Hortifruti**, formato "Oba Way", que é supermercado e não só hortifrúti — piso
-  Tatuapé, R. Domingos Agostim, 91
-- **Cacau Show** no piso Metrô, telefone (11) 2225-7303, e outra loja no Boulevard
-- **Cinemark** no piso G2 e **Starbucks** no piso Metrô
-- Farmácia e praça de alimentação
-
-**Horário**: lojas de **segunda a sábado, 10h às 22h**; domingo e feriado, 14h às 20h. Praça
-de alimentação e restaurantes, 11h às 22h. *(Horário vindo de busca, não de fonte oficial:
-confirme antes de ir.)*
-
-*Para compra de semana não compensa carregar dali: são ~40 min de volta com sacola na mão, e
-você tem Dia e Extra a 8 minutos. O Oba vale pelo que o Dia não tem, que é fruta, verdura e
-queijo bons.*
-:::
-
-::: extra Outros shoppings pelo metrô
-
-| Shopping | Como chegar | Da estação até a porta |
-|---|---|---|
-| **Complexo Tatuapé** | Luz → CPTM 11 (2 est.) ou Sta. Cecília → Linha 3 (8 est.) | **passarela interna** |
-| **Shopping D** | Luz → **Linha 1-Azul** até Armênia, 2 estações | curto |
-| **Center Norte + Lar Center** | Luz → **Linha 1-Azul** até Portuguesa-Tietê, 3 estações | curto |
-| **Shopping Light** | Sta. Cecília → Linha 3 até Anhangabaú, 2 estações | no centro, pequeno |
-| **Pátio Higienópolis** | Luz → **Linha 4-Amarela** até Higienópolis-Mackenzie, 2 estações | **1.197 m, 18 min a pé** |
-| **West Plaza** | Sta. Cecília → Linha 3 até Palmeiras-Barra Funda, 2 estações | ~10 min *(estimado)* |
-| **Bourbon** | Sta. Cecília → Linha 3 até Palmeiras-Barra Funda, 2 estações | ~18 min *(estimado)*, passa pelo Allianz |
-| **Cidade São Paulo / Center 3 / Pátio Paulista** | Luz → **Linha 4-Amarela** até Paulista, 3 estações | curto, na Paulista |
-| **Iguatemi / Eldorado** | Luz → **Linha 4-Amarela** até Faria Lima ou Pinheiros | médio |
-
-**Cuidado com o Pátio Higienópolis.** São 2 estações da Luz pela Linha 4, mas a caminhada
-final é **1.197 m, 18 minutos**. As três estações possíveis são todas ruins:
-Higienópolis-Mackenzie 1.197 m, Santa Cecília 1.382 m, Marechal Deodoro 1.478 m. Algumas
-páginas afirmam "157 m, 3 minutos", **e isso está errado**.
-:::
+Assunto mudou de aba. Ranking de porte, trajeto via metrô, integração com
+estação e tempo de deslocamento agora ficam em [SHOPPING.md](SHOPPING.md),
+que é a fonte única do assunto.
 
 ## Alertas de horário
 

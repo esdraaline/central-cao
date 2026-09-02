@@ -76,6 +76,8 @@ ABAS = [
     ("VIAGENS.md",   "viagens",   "Viagens",    "map"),
     ("ENTORNO.md",   "entorno",   "Entorno",    "garfo"),
     ("PASSEIOS.md",  "passeios",  "Passeios",   "pin"),
+    ("SHOPPING.md",  "shopping",  "Shopping",   "sacola"),
+    ("CCB.md",       "ccb",       "CCB",        "igreja"),
 ]
 
 MD_PARA_ABA = {arq: aba_id for arq, aba_id, _, _ in ABAS}
@@ -95,6 +97,7 @@ ICONES = {
     "mala":     '<rect x="3" y="7" width="18" height="14" rx="2"/><path d="M9 7V4h6v3"/><path d="M3 12h18"/>',
     "carrinho": '<path d="M3 4h2l2.4 11.2a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.5L21 8H6"/><circle cx="10" cy="20" r="1.2"/><circle cx="18" cy="20" r="1.2"/>',
     "prancheta": '<rect x="4" y="4" width="16" height="17" rx="2"/><path d="M9 3h6v3H9z"/><path d="m8.5 13 2 2 4-4"/>',
+    "igreja":   '<path d="M12 2v5"/><path d="M9.5 4h5"/><path d="M12 7 5 12v9h14v-9z"/><path d="M10 21v-4a2 2 0 0 1 4 0v4"/>',
     "search":   '<circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/>',
     "sun":      '<circle cx="12" cy="12" r="4.5"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4"/>',
     "moon":     '<path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z"/>',
@@ -112,6 +115,7 @@ ICONES = {
                 '<path d="m3 18 1.5 1.5L7 17"/><path d="M11 6h10M11 12h10M11 18h10"/>',
     "repete":   '<path d="m17 2 3.5 3.5L17 9"/><path d="M3.5 12v-1.5a4 4 0 0 1 4-4h13"/><path d="M7 22l-3.5-3.5L7 15"/><path d="M20.5 12v1.5a4 4 0 0 1-4 4h-13"/>',
     "pin":      '<path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/>',
+    "sacola":   '<path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/>',
 }
 
 # Categorias das tarefas: (chave, rotulo, cor)

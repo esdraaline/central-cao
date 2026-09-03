@@ -72,6 +72,7 @@ ABAS = [
     ("DUVIDAS.md",   "duvidas",   "Dúvidas",    "help"),
     ("ANOTACOES.md", "anotacoes", "Anotações",  "note"),
     ("COMPRAS.md",   "compras",   "Compras",    "carrinho"),
+    ("MERCEARIA.md", "mercearia", "Mercearia",  "caixa"),
     ("MALA.md",      "mala",      "Mala",       "mala"),
     ("VIAGENS.md",   "viagens",   "Viagens",    "map"),
     ("ENTORNO.md",   "entorno",   "Entorno",    "garfo"),
@@ -97,6 +98,7 @@ ICONES = {
     "map":      '<path d="M9 4 3 6.5v14L9 18l6 2.5 6-2.5v-14L15 6.5 9 4z"/><path d="M9 4v14M15 6.5v14"/>',
     "mala":     '<rect x="3" y="7" width="18" height="14" rx="2"/><path d="M9 7V4h6v3"/><path d="M3 12h18"/>',
     "carrinho": '<path d="M3 4h2l2.4 11.2a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.5L21 8H6"/><circle cx="10" cy="20" r="1.2"/><circle cx="18" cy="20" r="1.2"/>',
+    "caixa":    '<path d="m4 8 8-4 8 4v9l-8 4-8-4z"/><path d="m4 8 8 4 8-4M12 12v9"/>',
     "prancheta": '<rect x="4" y="4" width="16" height="17" rx="2"/><path d="M9 3h6v3H9z"/><path d="m8.5 13 2 2 4-4"/>',
     "igreja":   '<path d="M12 2v5"/><path d="M9.5 4h5"/><path d="M12 7 5 12v9h14v-9z"/><path d="M10 21v-4a2 2 0 0 1 4 0v4"/>',
     "search":   '<circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/>',
@@ -1161,6 +1163,23 @@ ul.tarefas li.parcial .mk-qtd .n{color:var(--al);font-weight:600}
 .oculto{display:none!important}
 .mk-topo .mk-ver{color:var(--vm);border-color:transparent}
 .mk-topo .mk-ver:hover{border-color:var(--vm)}
+
+/* estoque da mercearia: quantidade real, sem meta nem ocultacao */
+.mer-topo{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:0 0 14px;
+  padding:11px 14px;border:1px solid var(--bd);border-radius:5px;background:var(--card2)}
+.mer-topo p{margin:0;flex:1;min-width:190px;font-size:13px;color:var(--tx2)}
+.mer-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:10px;
+  margin:11px 0 20px}
+.mer-item{display:flex;align-items:center;gap:10px;min-height:76px;padding:12px 13px;
+  border:1px solid var(--bd);border-radius:6px;background:var(--card2)}
+.mer-item.zerado{border-style:dashed;opacity:.72}
+.mer-nome{flex:1;min-width:0;font-weight:700;color:var(--tx)}
+.mer-qtd{display:flex;align-items:center;gap:5px;font-variant-numeric:tabular-nums}
+.mer-qtd button{width:32px;height:32px;border:1px solid var(--bd);border-radius:5px;
+  background:var(--card);color:var(--tx);font-size:20px;line-height:1;cursor:pointer}
+.mer-qtd button:hover:not(:disabled){border-color:var(--vm);color:var(--vm)}
+.mer-qtd button:disabled{opacity:.35;cursor:default}
+.mer-qtd output{display:grid;place-items:center;min-width:30px;font-size:19px;font-weight:800;color:var(--vm)}
 
 /* ------- a mala de domingo -------
    Nao e uma segunda lista para manter: e a leitura do inventario da secao 1,
@@ -2376,7 +2395,7 @@ JS_SUPABASE = r"""
     Object.keys(m).forEach(function(k){
       var v=m[k];
       if(typeof v==='number'){if(v>0)n++;return}
-      if(v&&v.n>0&&v.s!==true)n++;
+      if(v&&v.s!==true)n++;
     });
     return n;
   }
@@ -2386,9 +2405,8 @@ JS_SUPABASE = r"""
     var n=(configurado()&&!ativo())?presasAqui():0;
     b.classList.toggle('on',n>0);
     var s=el('#sinc-al-sub');
-    if(n>0&&s)s.textContent=(n===1?'1 marcação vai ficar':n+' marcações vão ficar')+
-      ' só aqui. No seu outro aparelho, a lista de domingo aparece zerada.'+
-      ' Toque para entrar, e daí em diante sincroniza sozinho.';
+    if(n>0&&s)s.textContent=(n===1?'1 alteração está':n+' alterações estão')+
+      ' somente neste aparelho. Entre para manter listas e estoque iguais em todos os aparelhos.';
   }
 
   function pintaConta(){
@@ -3249,6 +3267,7 @@ window.REP=(function(){
        depois de recarregar a pagina. */
     if(window.TAREFAS&&TAREFAS.redesenhar)TAREFAS.redesenhar();
     malaDom();
+    if(window.MERCEARIA&&MERCEARIA.repintar)MERCEARIA.repintar();
   }
   /* estado da sincronizacao mostrado na barra de cada aba de lista.
      Quem chama e o bloco do Supabase; sem ele fica no texto inicial.       */
@@ -3797,6 +3816,58 @@ def _papel_da_chave(key):
         return None
 
 
+JS_MERCEARIA = r"""
+/* ============ mercearia: estoque real no armario ========================
+   Usa a mesma colecao cao-ticados das marcacoes. A diferenca e semantica:
+   aqui `n` e o saldo existente, sem teto e sem esconder produto zerado. */
+(function(){
+  var sec=document.getElementById('ab-mercearia');
+  if(!sec||!window.TICADOS)return;
+  var itens=[].slice.call(sec.querySelectorAll('.mer-item[data-mer-chave]'));
+  var agora=function(){return new Date().toISOString()};
+  var chave=function(item){return sec.id+'/'+item.getAttribute('data-mer-chave')};
+  var inicial=function(item){return parseInt(item.getAttribute('data-mer-inicial')||'0',10)||0};
+  var horaArquivo=function(){
+    var ms=Date.parse(sec.getAttribute('data-mod')||'');
+    return new Date(ms||0).toISOString();
+  };
+  function saldo(item){
+    var v=window.TICADOS.todos()[chave(item)];
+    return Math.max(0,(v&&v.n)||0);
+  }
+  function pinta(item){
+    var n=saldo(item);
+    item.classList.toggle('zerado',n===0);
+    item.querySelector('output').textContent=n;
+    item.querySelector('.menos').disabled=n===0;
+  }
+  function repintar(){itens.forEach(pinta)}
+  /* O arquivo entrega o primeiro saldo. Ele entra na fila de sincronizacao
+     com a data do proprio arquivo: um saldo ja atualizado em outro aparelho
+     sempre vence essa carga inicial em um aparelho novo. */
+  var estado=window.TICADOS.todos(), mudou=false;
+  itens.forEach(function(item){
+    var k=chave(item);
+    if(!Object.prototype.hasOwnProperty.call(estado,k)){
+      estado[k]={n:inicial(item),m:horaArquivo(),s:false};mudou=true;
+    }
+  });
+  if(mudou)window.TICADOS.salvar();
+  repintar();
+  sec.addEventListener('click',function(e){
+    var bt=e.target.closest('.mer-qtd button');
+    if(!bt)return;
+    var item=bt.closest('.mer-item[data-mer-chave]');
+    var n=saldo(item)+(bt.classList.contains('mais')?1:-1);
+    estado[chave(item)]={n:Math.max(0,n),m:agora(),s:false};
+    window.TICADOS.salvar();pinta(item);
+    if(window.TICADOS_SYNC)window.TICADOS_SYNC();
+  });
+  window.MERCEARIA={repintar:repintar};
+})();
+"""
+
+
 def le_config_supabase():
     """Le supabase.json, se existir. Sem ele, o painel roda so no navegador.
 
@@ -3847,6 +3918,51 @@ def le_config_supabase():
     except Exception as e:
         print("Aviso: não consegui ler supabase.json (%s). Seguindo sem sincronização." % e)
         return {}
+
+
+def extrai_mercearia(texto):
+    """Le os itens `- Produto | quantidade` de MERCEARIA.md."""
+    grupos = []
+    atual = None
+    for linha in texto.splitlines():
+        titulo = re.match(r"^##\s+(.+)$", linha.strip())
+        if titulo:
+            atual = {"titulo": titulo.group(1).strip(), "itens": []}
+            grupos.append(atual)
+            continue
+        item = re.match(r"^-\s+(.+?)\s*\|\s*(\d+)\s*$", linha.strip())
+        if item:
+            if atual is None:
+                atual = {"titulo": "Estoque", "itens": []}
+                grupos.append(atual)
+            atual["itens"].append((item.group(1).strip(), int(item.group(2))))
+    return [grupo for grupo in grupos if grupo["itens"]]
+
+
+def app_mercearia(texto):
+    grupos = extrai_mercearia(texto)
+    partes = ['<div class="mer-topo">'
+              '<p>Estoque atual no armário. Ajuste ao consumir ou repor; o saldo '
+              'fica salvo e sincroniza após entrar na conta.</p>'
+              '<span class="tf-status mk-sinc" title="Estado da sincronização">'
+              '<span class="bola"></span><span class="txt">Somente neste aparelho</span></span>'
+              '</div>']
+    for grupo in grupos:
+        partes.append('<h2>%s</h2><div class="mer-grid">' % _inline(grupo["titulo"]))
+        for nome, inicial in grupo["itens"]:
+            chave = chave_item(grupo["titulo"] + " / " + nome)
+            partes.append('<article class="mer-item" data-mer-chave="%s" '
+                          'data-mer-inicial="%d"><span class="mer-nome">%s</span>'
+                          '<span class="mer-qtd"><button class="menos" type="button" '
+                          'aria-label="Tirar um de %s">−</button><output>0</output>'
+                          '<button class="mais" type="button" aria-label="Somar um em %s">+</button>'
+                          '</span></article>' % (chave, inicial, _inline(nome),
+                                                 html.escape(nome, quote=True),
+                                                 html.escape(nome, quote=True)))
+        partes.append('</div>')
+    if not grupos:
+        partes.append('<p>Nenhum produto cadastrado.</p>')
+    return "".join(partes)
 
 
 def app_tarefas():
@@ -4069,6 +4185,12 @@ def build():
             paineis.append('<section class="aba" id="ab-tarefas" role="tabpanel">%s</section>'
                            % app_tarefas())
             continue
+        if aba_id == "mercearia":
+            paineis.append('<section class="aba" id="ab-mercearia" role="tabpanel" data-mod="%s">'
+                           '<div class="card">%s</div></section>'
+                           % (arq_mod.get("ab-mercearia", ""),
+                              app_mercearia(docs.get(arq, ""))))
+            continue
         corpo = md_para_html(docs.get(arq, ""))
         # marca cada bloco de primeiro nivel para a busca.
         # o (?=[\s>]) evita casar dentro de <path> dos icones SVG.
@@ -4156,6 +4278,7 @@ window.ARQ_MOD=%(arqmod)s;
 %(js)s
 %(js_guia)s
 %(js_tarefas)s
+%(js_mercearia)s
 %(js_supabase)s
 </script>
 </body>
@@ -4165,6 +4288,7 @@ window.ARQ_MOD=%(arqmod)s;
         "js": JS,
         "js_guia": JS_GUIA,
         "js_tarefas": JS_TAREFAS,
+        "js_mercearia": JS_MERCEARIA,
         "curso": escapa_js({"inicio": CURSO_INICIO.isoformat(),
                             "fim": CURSO_FIM.isoformat(),
                             "presencial_fim": PRESENCIAL_FIM.isoformat(),

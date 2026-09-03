@@ -4,9 +4,13 @@
 > (Praça Júlio Prestes, 5005), com foco no trajeto noturno, segurança de retorno e combo
 > com shopping para jantar.
 >
-> **Marcas:** **[TESTADO]** alguém foi e aprovou · **[BIZU]** indicação confiável ·
+> **Marcas:** **[TESTADO]** alguém foi e aprovou, com data · **[BIZU]** indicação confiável ·
 > **[CANDIDATO]** veio de pesquisa. Horários revisados em **02/09/2026** em fontes oficiais;
 > confira o link antes de sair, porque feriado, evento fechado e manutenção mudam a escala.
+>
+> **Antes de escolher, veja de quem é a noite.** Quatro abas disputam segunda, terça e quarta:
+> esta, o [Culto na CCB](CCB.md), o [Shopping](SHOPPING.md) e os [Passeios](PASSEIOS.md). O
+> quadro de prioridade está no [Painel](STATUS.md).
 
 ## Escolha rápida
 
@@ -27,7 +31,7 @@ saindo às 18h00, priorize local que feche depois das 20h e já deixe decidido c
 | # | Local | Fecha útil | Segunda | Da Luz | Melhor uso |
 |---|---|---|---|---|---|
 | 1 | **Sesc Avenida Paulista** [BIZU] | **21h30** | fechado | L1-Azul -> Paraíso -> L2-Verde -> Brigadeiro | estudo noturno + jantar seguro |
-| 2 | **Biblioteca Mário de Andrade** [TESTADO] | **21h00** | abre | L4-Amarela -> República | silêncio e pesquisa |
+| 2 | **Biblioteca Mário de Andrade** [CANDIDATO] | **21h00** | abre | L4-Amarela -> República | silêncio e pesquisa |
 | 3 | **CCSP** [CANDIDATO] | **20h00** | fechado | L1-Azul -> Vergueiro | campus seguro, estudo curto |
 | 4 | **Biblioteca de São Paulo** [CANDIDATO] | **18h30** | fechado | L1-Azul -> Carandiru | fim de semana |
 | 5 | **Sesc Bom Retiro** [BIZU] | **19h30** | fechado | a pé | refúgio local |
@@ -68,7 +72,7 @@ o próprio material.
 O **Shopping Pátio Paulista** fica a cerca de 3 min a pé. Saindo do estudo por volta das 21h,
 a opção segura é jantar ali e pedir carro da porta do shopping para o CAES.
 
-## 2. Biblioteca Mário de Andrade — silêncio e pesquisa [TESTADO]
+## 2. Biblioteca Mário de Andrade — silêncio e pesquisa [CANDIDATO]
 
 A maior biblioteca pública da cidade e a segunda maior biblioteca pública do país. É a escolha
 quando o objetivo for pesquisa, silêncio e mesa de estudo de verdade. Tem menos conforto
@@ -168,7 +172,7 @@ sair do alojamento sem atravessar a cidade.
 |---|---|
 | Endereço | Alameda Nothmann, 185 |
 | Horário | Terça a sexta, **9h às 19h30**; sábado, 10h às 19h; domingos e feriados, 10h às 17h30 |
-| Trajeto | Cerca de 600 m / 8 min a pé pela Alameda Nothmann |
+| Trajeto | Cerca de 600 m / 8 min a pé pela Alameda Nothmann, reta e descendo |
 | Acervo | Cerca de **6.500 livros** |
 | Fonte | [Sesc Bom Retiro - serviços](https://www.sescsp.org.br/unidades/bom-retiro/servicos/) |
 
@@ -185,5 +189,15 @@ noite e andar os 800 m até o portão expõe o oficial à dinâmica da área cen
 21h, a volta é parte da missão, não detalhe.
 
 **Tática sugerida:** peça carro de aplicativo da porta do shopping ou da biblioteca diretamente
-para a **Praça Júlio Prestes, 5005**. Em horário fora de pico, o custo tende a compensar a
-redução de risco no trecho final.
+para a **Praça Júlio Prestes, 5005**.
+
+**Quanto custa, sem chutar.** Não existe fonte pública de preço de aplicativo: a Uber trava em
+login, a 99 só mostra no app e a Prefeitura credencia mas não fixa tarifa. A aba
+[CCB](CCB.md) resolveu isso ancorando na única tabela oficial e datada que existe, a do táxi:
+
+> **Táxi, bandeira 1** = R$ 6,55 + R$ 4,80 × km (Portaria SMT.SETRAM nº 41, desde 11/08/2025).
+> **Estimativa de UberX** = 55% do táxi, com piso de R$ 10. Na volta à noite, fator 0,95 a 1,20.
+> Depois das 20h o táxi entra na bandeira 2, com 30% a mais no quilômetro.
+
+*[VERIFICAR] As distâncias de carro destes destinos até o CAES ainda não foram medidas. Com o km
+na mão, a conta acima fecha em um passo.*

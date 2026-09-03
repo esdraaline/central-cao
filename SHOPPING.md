@@ -4,8 +4,14 @@
 > ou CPTM. Ranqueados por porte real (ABL), separados por tipo de acesso e com
 > trajeto completo.
 >
-> **Ponto de partida:** Estação da **Luz** (807 m, 10 min a pé) ou **Santa Cecília**
-> (1.164 m, 15 min a pé). Ver trajetos em [ENTORNO.md](ENTORNO.md).
+> **Ponto de partida.** Três estações servem o CAES, e a ordem importa:
+> **Júlio Prestes** (319 m, **4 min**, Linha 8-Diamante), **Luz** (779 m, 9 min, Linhas 1-Azul e
+> 4-Amarela e CPTM 11-Coral) e **Santa Cecília** (1.235 m, 15 min, Linha 3-Vermelha). A Júlio
+> Prestes é a mais perto de todas e costuma ganhar mesmo quando exige baldeação, porque poupa
+> 11 minutos de caminhada em relação à Santa Cecília. Ver [ENTORNO.md](ENTORNO.md).
+>
+> **Antes de escolher, veja de quem é a noite.** Quatro abas disputam segunda, terça e quarta.
+> O quadro está no [Painel](STATUS.md).
 >
 > **Marcas:** **[TESTADO]** alguém foi · **[BIZU]** indicação confiável ·
 > **[CANDIDATO]** veio de pesquisa. ABL = Área Bruta Locável, o tamanho real da
@@ -20,24 +26,36 @@
 | 1 | **Eldorado** | ~75.500 | ~300 | Pinheiros | L4-Amarela | 6 | a pé ~15 min | ~33 min |
 | 2 | **Center Norte** | ~72.500 | ~380 | Portuguesa-Tietê | L1-Azul | 3 | a pé 5-10 min | ~25 min |
 | 3 | **Metrô Itaquera** | ~68.500 | ~300 | Corinthians-Itaquera | L3/L11 | 5 | **integrado** | ~30 min |
-| 4 | **Bourbon** | ~57.400 | ~210 | Palmeiras-B.Funda | L3-Vermelha | 2 | a pé ~15 min | ~32 min |
+| 4 | **Bourbon** | ~57.400 | ~210 | Palmeiras-B.Funda | **L8-Diamante** | **1** | a pé ~15 min | *a medir* |
 | 5 | **Complexo Tatuapé** | ~55.400 | ~500 | Tatuapé | L3/L11 | 2 | **integrado** | ~16 min |
 | 6 | **Lar Center** | ~51.000 | ~100 | Portuguesa-Tietê | L1-Azul | 3 | a pé 5-10 min | ~25 min |
 | 7 | **Iguatemi SP** | ~49.800 | ~350 | Faria Lima | L4-Amarela | 5 | a pé ~15 min | ~30 min |
 | 8 | **Pátio Paulista** | ~42.000 | ~276 | Brigadeiro | L2-Verde | — | a pé ~5 min | ~28 min |
-| 9 | **West Plaza** | ~38.000 | ~200 | Palmeiras-B.Funda | L3-Vermelha | 2 | a pé ~10 min | ~27 min |
+| 9 | **West Plaza** | ~38.000 | ~200 | Palmeiras-B.Funda | **L8-Diamante** | **1** | a pé ~10 min | *a medir* |
 | 10 | **Pátio Higienópolis** | ~34.100 | ~230 | Higienópolis-Mack. | L4-Amarela | 2 | a pé ~18 min | ~32 min |
 | 11 | **Metrô Tucuruvi** | ~32.000 | ~200 | Tucuruvi | L1-Azul | 8 | **integrado** | ~26 min |
 | 12 | **Shopping D** | ~30.000 | ~150 | Armênia | L1-Azul | 2 | a pé ~10 min | ~24 min |
 | 13 | **Metrô Santa Cruz** | ~19.300 | ~130 | Santa Cruz | L1-Azul/L5-Lilás | 7 | **integrado** | ~24 min |
-| 14 | **Shopping Light** | ~18.800 | ~130 | Anhangabaú | L3-Vermelha | 2 | a pé ~5 min | ~22 min |
+| 14 | **Shopping Light** | ~18.800 | ~130 | **São Bento** | **L1-Azul** | **1** | a pé ~5 min | *a medir* |
 | 15 | **Cidade São Paulo** | ~17.000 | ~130 | Paulista | L4-Amarela | 3 | a pé ~5 min | ~21 min |
 | 16 | **Center 3** | ~12.000 | ~138 | Paulista | L4-Amarela | 3 | a pé ~5 min | ~21 min |
 
 **Como ler a tabela.** O "tempo total" soma a caminhada do CAES até a estação
-de embarque (Luz ~10 min ou Santa Cecília ~15 min), o tempo de rodagem da
-composição e a caminhada da estação de desembarque até a porta do shopping.
-Não inclui tempo de espera na plataforma.
+de embarque, o tempo de rodagem da composição e a caminhada da estação de
+desembarque até a porta do shopping. Não inclui espera na plataforma.
+
+⚠ **Toda a coluna de tempo é estimativa de mesa, não medição.** E há indício
+forte de que ela está otimista: a conferência da aba [CCB](CCB.md), feita em
+roteador com horário de partida travado no pico, mediu **Belém em 33 min** e
+**Brás Central em 34 min**. O Complexo Tatuapé fica além dos dois no mesmo
+eixo, e esta tabela o dá em 16 min. **Não confie nos minutos até serem
+medidos**; a ordem de grandeza relativa entre os shoppings continua útil.
+
+**Ressalva do ranking.** O critério não é uniforme: o **Complexo Tatuapé**
+entra em 5º com a ABL **somada** de dois shoppings ligados por dentro, enquanto
+**Center Norte e Lar Center**, que formam polo equivalente, entram **separados**
+em 2º e 6º. Lendo como polo, o conjunto da zona norte soma ~123.500 m² e é o
+maior de todos com folga.
 
 **Regra de bolso.** Se a prioridade é **não andar na rua à noite**, escolha um
 dos quatro shoppings com acesso integrado. Se a prioridade é **porte e
@@ -162,10 +180,12 @@ alimentação + farmácia sem pisar na rua.
 
 ### Como chegar
 
-A pé até **Santa Cecília** (15 min) e **Linha 3-Vermelha** até **Anhangabaú**
-(2 estações). Caminhada de ~5 min pelo Viaduto do Chá. **~22 min no total.**
+**Ordem corrigida em 02/09/2026.** A rota boa é a pé até a **Luz** (9 min) e
+**Linha 1-Azul** até **São Bento**, uma estação, mais ~5 min a pé.
 
-Alternativa: Luz → L1-Azul → São Bento (1 estação) + 5 min a pé.
+*A rota que estava em primeiro lugar aqui mandava andar 15 min até a Santa
+Cecília para pegar a Linha 3 e descer duas estações depois no Anhangabaú. Mais
+caminhada e mais estações para chegar no mesmo quarteirão.*
 
 ### Pegadinha
 
@@ -287,9 +307,14 @@ tranquilo; à noite é melhor ir de aplicativo da estação até a porta.
 
 ### Como chegar
 
-A pé até **Santa Cecília** (15 min) e **Linha 3-Vermelha** até
-**Palmeiras-Barra Funda** (2 estações). Caminhada de ~10 min. **~27 min
-no total.**
+**Rota corrigida em 02/09/2026.** A pé até a **Júlio Prestes** (319 m, **4 min**)
+e **Linha 8-Diamante**, sentido Itapevi: **Palmeiras-Barra Funda é a estação
+seguinte**, uma parada. Caminhada final de ~10 min. **Cerca de 11 min a menos**
+que pela Santa Cecília.
+
+*A rota antiga mandava andar 15 min até a Santa Cecília para pegar a Linha 3 e
+descer duas estações depois no mesmo lugar. Trocar 15 min de caminhada por 4 é
+o ganho.*
 
 :::
 
@@ -307,9 +332,13 @@ no total.**
 
 ### Como chegar
 
-A pé até **Santa Cecília** (15 min) e **Linha 3-Vermelha** até
-**Palmeiras-Barra Funda** (2 estações). Caminhada de ~15 min passando pelo
-Allianz Parque. **~32 min no total.**
+**Rota corrigida em 02/09/2026.** A pé até a **Júlio Prestes** (319 m, **4 min**)
+e **Linha 8-Diamante**: **Palmeiras-Barra Funda é a estação seguinte**, uma
+parada. Caminhada final de ~15 min passando pelo Allianz Parque. **Cerca de
+11 min a menos** que pela Santa Cecília.
+
+*Mesmo desembarque do West Plaza. A diferença entre os dois está só na
+caminhada final, e ela é em direção oposta.*
 
 ### Pegadinha
 
@@ -395,6 +424,20 @@ Higienópolis-Mackenzie 1.197 m, Santa Cecília 1.382 m, Marechal Deodoro
 **Segurança noturna.** Depois das 19h, prefira shoppings com integração direta
 ou na Av. Paulista (movimento e iluminação constantes). Para os que exigem
 caminhada, avalie usar aplicativo no trecho estação → shopping.
+
+**Quanto custa o aplicativo, sem chutar.** Não existe fonte pública de preço:
+a Uber trava em login, a 99 só mostra dentro do app, a inDrive não tem tabela
+por construção e a Prefeitura credencia mas não fixa tarifa. A aba
+[CCB](CCB.md) resolveu ancorando na única tabela oficial e datada que existe,
+a do táxi:
+
+> **Táxi, bandeira 1** = R$ 6,55 + R$ 4,80 × km (Portaria SMT.SETRAM nº 41,
+> em vigor desde 11/08/2025). **Estimativa de UberX** = 55% do táxi, piso de
+> R$ 10, fator 1,00 a 1,35 na ida em pico e 0,95 a 1,20 na volta à noite.
+> Depois das 20h o táxi entra na bandeira 2, com 30% a mais no quilômetro.
+
+*[VERIFICAR] As distâncias de carro do CAES até estes shoppings ainda não foram
+medidas. Com o km na mão, a conta acima fecha em um passo.*
 
 **Fonte dos dados.** ABL e número de lojas foram levantados em set/2026 em
 fontes públicas: ABRASCE (Associação Brasileira de Shopping Centers), relatórios

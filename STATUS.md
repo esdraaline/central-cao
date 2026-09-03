@@ -28,6 +28,36 @@ ser remarcada para a própria segunda à noite. Pergunta a fazer na Coordenaçã
 Docentes de cada bloco e o rol completo das 31 disciplinas: [Grade](GRADE.md). Calendário do mês
 inteiro: [Prazos](PRAZOS.md).
 
+## A prioridade das três noites
+
+Sobram **três noites livres por semana**: segunda, terça e quarta. E existem **quatro abas
+propondo o que fazer nelas**, cada uma como se fosse a única. Escolher uma cancela as outras, e
+até 02/09/2026 nenhuma delas avisava disso.
+
+| Noite | Saída da aula | Janela | Destino desta noite |
+|---|---|---|---|
+| **Segunda** | 16h15 | ~5 h, a maior | **[a confirmar]** |
+| **Terça** | 18h00 | ~3 h | **[a confirmar]** |
+| **Quarta** | 18h00 | ~3 h | **[a confirmar]** |
+
+**O que cada aba oferece, para decidir com o quadro na mão:**
+
+- **[Culto na CCB](CCB.md):** a terça é a melhor das três, Bom Retiro a **17 min a pé**, sem
+  depender de transporte. A quarta é Barra Funda, **18 min de ônibus**. A segunda é a mais cara
+  em tempo, Belém ou Santana a **33 a 35 min**, mas é o dia de janela maior.
+- **[Biblioteca](BIBLIOTECA.md):** a segunda é a noite **mais escassa**, porque só a Mário de
+  Andrade abre. Terça e quarta têm o Sesc Avenida Paulista até 21h30.
+- **[Shopping](SHOPPING.md)** e **[Passeios](PASSEIOS.md):** funcionam em qualquer das três, e
+  são os que cedem lugar quando as outras duas conflitam.
+
+**A leitura que os dados sugerem**, e que vale até você decidir outra coisa: **terça é a noite de
+culto**, porque é onde a CCB é imbatível e a biblioteca tem substituto; e a **segunda é a noite
+de biblioteca**, porque a janela é maior e a Mário de Andrade só abre nesse dia entre as opções
+fechadas. A quarta fica livre para o que a semana pedir.
+
+*[VERIFICAR] Isto é proposta, não decisão. Uma palavra sua fecha o quadro, e aí cada aba passa a
+declarar qual noite é dela.*
+
 ## O que está de pé
 
 As prioridades detalhadas, com data, estão em [TAREFAS.md](TAREFAS.md). Aqui fica a vista de cima.

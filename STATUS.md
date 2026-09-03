@@ -1,7 +1,17 @@
 # STATUS — Central do CAO
 
 > Semana atual, prioridades, decisões e dúvidas do curso.
-> Atualizado em: 31/08/2026
+> Atualizado em: 02/09/2026
+
+## Amanhã fecha a semana 3, e a 4 tem um problema
+
+**Quinta 03/09 acaba 11h30 e é a volta para casa.** Antes de descer, o inventário do armário
+([Mala](MALA.md)) e a cobrança do SAE da Univesp, que vence justamente amanhã.
+
+⚠ **A segunda da semana 4, 07/09, é feriado de Independência.** O QTS da semana 4 ainda não saiu,
+e é ele que vai dizer se há aula nesse dia. **Enquanto não sair, não dá para saber se a subida de
+domingo 06/09 se justifica.** Se a segunda cair, a semana vira de terça a quinta e a viagem pode
+ser remarcada para a própria segunda à noite. Pergunta a fazer na Coordenação antes de descer.
 
 ## A semana 3 (31/08 a 03/09)
 
@@ -22,8 +32,8 @@ inteiro: [Prazos](PRAZOS.md).
 
 As prioridades detalhadas, com data, estão em [TAREFAS.md](TAREFAS.md). Aqui fica a vista de cima.
 
-1. **Formalizar a orientação da dissertação.** Nome fechado: **Maj PM Carlos Henrique Lourenço
-   Rovina aceitou em 01/09**. Falta a parte de secretaria: perguntar ao Cap Gobbo (Seção de
+1. **Formalizar a orientação da dissertação. ⚠ Vencida desde 01/09.** Nome fechado: **Maj PM
+   Carlos Henrique Lourenço Rovina aceitou em 01/09**. Falta a parte de secretaria: perguntar ao Cap Gobbo (Seção de
    Pesquisa) se cabe orientador fora do elenco de instrutores da turma (ele não dá aula nesta
    turma), quantos orientandos aceita, há prazo, e como corre o referendo do Cmt CAES. Detalhe em
    [ESTUDOS.md](ESTUDOS.md).
@@ -34,7 +44,8 @@ As prioridades detalhadas, com data, estão em [TAREFAS.md](TAREFAS.md). Aqui fi
 4. **Univesp:** conferir no WhatsApp **(11) 4200-2982** se veio resposta ao pedido de prova em
    polo da capital. Sem resposta até **03/09** (vencimento dos 10 dias úteis), cobrar pelo
    **0800 051 3333**. A prova é **22/09**, em conflito com dia de curso.
-5. **Mandar o QTS da semana 4 assim que ele sair.**
+5. **Mandar o QTS da semana 4 assim que ele sair**, e nele conferir o que acontece com a segunda
+   **07/09**, que é feriado de Independência.
 
 ::: extra Onde estou no curso, em detalhe
 - Oficial-Aluno do **CAO-II/2026** (2ª Turma), do **Mestrado Profissional em Ciências Policiais de

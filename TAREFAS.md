@@ -4,6 +4,10 @@
 
 ## Pendentes
 
+### Semana 4: a segunda 07/09 é feriado de Independência
+- [ ] Antes de descer na quinta, perguntar na Coordenação se há aula na segunda **07/09**, que é feriado de Independência. Disso depende a subida de domingo 06/09 [03/09/2026] #curso
+  - [ ] Se não houver aula na segunda, remarcar a carona de domingo para segunda à noite e avisar em casa
+
 ### Fardamento e pendências de secretaria
 - [ ] Comprar a camisa social cinza-claro do S-1 e a boina de reposição, que faltaram na ida à ConfecBell/Confex Bel [14/09/2026] #pessoal
   - [ ] Depois da compra, experimentar o S-1 completo e conferir o caimento

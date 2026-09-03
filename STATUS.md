@@ -124,6 +124,36 @@ final em [CAO 2026/PP/Projeto Pesquisa Cap Josemar Final.doc](CAO%202026/PP/Proj
 **Orientador definido em 01/09: Maj PM Carlos Henrique Lourenço Rovina.** Sondado por WhatsApp,
 aceitou. Falta só a formalização (regras e referendo do Cmt CAES), em [ESTUDOS.md](ESTUDOS.md).
 
+## Onde a auditoria das abas parou
+
+> Handoff de 02 e 03/09/2026. Qualquer máquina retoma daqui.
+
+**Auditadas e corrigidas:** CCB (16 casas conferidas por 24 agentes), Biblioteca, Shopping,
+Passeios, Mala e a seção de estações do Entorno.
+
+**Próximo passo: continuar a auditoria pelas abas ainda não revisadas.** As candidatas, em ordem
+de uso: **Rotina**, **Grade**, **Viagens**, **Compras** e **Contatos**. O método que funcionou nas
+seis primeiras: ler a aba inteira, checar os números contra o que já foi medido em outra aba,
+procurar duplicação de assunto entre abas, e conferir se o que a aba promete bate com a janela
+real de horário.
+
+**Três decisões pendentes, que são suas e travam o resto:**
+
+1. **A prioridade das três noites**, no quadro acima. A coluna de destino está em branco de
+   propósito. Uma palavra fecha, e aí cada aba declara qual noite é dela.
+2. **A meia branca do inventário** ([Mala](MALA.md)): as 5 do inventário são as civis de treino ou
+   as do uniforme T-1, que já moram no alojamento? Contar errado faz a mala de domingo sair errada.
+3. **O `mapas/abastecimento.svg`** está modificado e sem commit desde o início da sessão. Não é
+   corrupção, é regeneração com dados novos do OpenStreetMap, mas não sei se está terminado.
+
+**Três coisas travadas por fatores externos:**
+
+- **Os mapas da Santana, da Barra Funda e da saída do CAES** precisam ser redesenhados e o
+  roteador **Valhalla está com conexão recusada**, confirmado por dois caminhos.
+- **Oito casas da CCB e as rotas do Shopping** seguem com tempo estimado, não medido.
+- **Oito [VERIFICAR] no Entorno** são todos de campo: preço, telefone de letreiro, endereço a
+  conferir na rua. Não se resolvem da mesa.
+
 ## O que ainda não sei
 
 - **As datas das seis provas** e quais disciplinas cobram trabalho além da prova. Sai da

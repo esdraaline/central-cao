@@ -465,11 +465,15 @@ acervo, trajeto de 600 m pela Alameda Nothmann e quando ele compensa) está em
 
 ![Do CAES até a Luz e até a Santa Cecília: 807 m/10 min contra 1.164 m/15 min.](mapas/saida-caes.svg)
 
+*O desenho mostra só as duas estações de metrô. Falta nele a **Júlio Prestes, a 319 m e 4 min**,
+que é a mais perto das três e a que o roteador escolhe quando o trilho ganha. Será redesenhado
+quando o roteador Valhalla, hoje fora do ar, voltar.*
+
 | Estação | Linha | A pé | Serve para |
 |---|---|---|---|
 | **Luz** | Metrô **1-Azul** + **4-Amarela** + CPTM **10-Turquesa** e **11-Coral** (+ 13-Jade, só Expresso Aeroporto) | **807 m, 10 min** | **A mais útil de todas** |
 | **Santa Cecília** | Metrô 3-Vermelha | **1.164 m, 15 min** | A Linha 3, pros dois lados |
-| **Júlio Prestes** | CPTM **8-Diamante** apenas | **na praça, em frente** | É trem, não metrô. Ver ressalva |
+| **Júlio Prestes** | CPTM **8-Diamante** apenas | **319 m, 4 min** | **A mais perto de todas.** Ver ressalva |
 | República | Metrô 3 + 4 | mais longe | Só se for conveniente no trajeto |
 
 **A Luz é a estação-chave.** Dali sai a **Linha 4-Amarela**, que leva **direto, sem
@@ -488,9 +492,13 @@ baldeando lá dentro, mas isso é mais baldeação e mais tempo do que simplesme
 15 min até a Santa Cecília e embarcar direto. *(Confirmado por pesquisa em 26/08/2026: fonte
 oficial do Metrô de SP, a Estação Luz não consta na lista de estações da Linha 3-Vermelha.)*
 
-Nota sobre a composição da CPTM na Luz: a Linha 7-Rubi deixou de ter ponta final na Luz em
-2026, substituída pela 10-Turquesa nesse papel. *[VERIFICAR: confirmar a data exata da mudança
-e se a 7-Rubi ainda passa por lá em outro trecho ou saiu de vez.]*
+Nota sobre a composição da CPTM na Luz: a Linha 7-Rubi deixou de ter ponta final na Luz,
+substituída pela 10-Turquesa nesse papel. **A data saiu na conferência de 02/09/2026: foi em
+28/08/2025**, quando a 7-Rubi foi truncada e passou a ter **Palmeiras-Barra Funda** como
+terminal. Quem sai do CAES rumo à Luz para pegar a Linha 7 não embarca; é preciso baldear em
+Barra Funda. *[VERIFICAR: a matéria que datou a mudança fala em **7-Rubi e 10-Turquesa** passando
+as duas a terminar na Barra Funda, o que não fecha com a 10-Turquesa ter assumido a ponta na Luz.
+Uma das duas afirmações está errada.]*
 
 **Ressalva sobre a Júlio Prestes**: é terminal da **Linha 8-Diamante e só dela** (a 11-Coral
 não passa lá, apesar do projeto futuro no Bom Retiro). **Houve descarrilamento na Linha 8 em
@@ -499,7 +507,36 @@ de desativá-la na revitalização do centro. *[VERIFICAR se está operando ante
 ela.]*
 :::
 
-Na prática, **conte com a Luz e a Santa Cecília**, que são metrô.
+Na prática, **conte com a Luz e a Santa Cecília**, que são metrô. Mas veja a ressalva abaixo,
+porque a medição de setembro contraria parte disso.
+
+::: extra O que a medição de 02/09/2026 mostrou, e que contraria esta seção
+
+A conferência da aba [CCB](CCB.md) mediu onze trajetos no roteador do Google, em modo transporte
+público, com horário de partida travado no pico. O resultado bate de frente com a regra de "conte
+com a Luz e a Santa Cecília":
+
+- **O roteador nunca escolheu a Santa Cecília. Em rota nenhuma.** Os 15 minutos de caminhada
+  matam a vantagem de a Linha 3 ser direta. Para o Brás, por exemplo, ele preferiu sair da Júlio
+  Prestes, pegar a Linha 8 e baldear em Palmeiras-Barra Funda: **uma baldeação a 4 min de
+  caminhada bate uma linha direta a 15 min.**
+- **Quando o trilho ganha, ele sai da Júlio Prestes.** Foi assim para Água Branca (20 a 22 min),
+  Lapa (26 min) e Brás Central (34 min).
+- **Em três das quatro noites úteis, nenhum trilho ganha.** Ônibus resolveu Ponte Pequena em
+  14 min, Barra Funda em 18 e Belém em 33. A Linha 1 até Tiradentes era pior que esperar o ônibus.
+
+**Como conciliar as duas coisas.** A ressalva desta aba contra a Júlio Prestes é sobre
+**confiabilidade**, não sobre distância: descarrilamento em 13/08/2026, estação já fechada uma
+vez, e plano estadual de desativação. Isso continua valendo. A leitura conjunta é:
+
+> **A Júlio Prestes é a mais rápida quando está operando, e vale conferir se está.** A Luz é a
+> mais versátil e o padrão seguro. A Santa Cecília perdeu a função de estação de embarque: os
+> 15 minutos de caminhada custam mais do que ela economiza.
+
+*As distâncias desta aba (Luz 807 m, Santa Cecília 1.164 m) vieram do roteador Valhalla; a
+conferência da CCB, com outro roteador, deu 779 m e 1.235 m. A diferença não muda decisão
+nenhuma.*
+:::
 
 **Passeio depois da aula tem dono próprio:** [PASSEIOS.md](PASSEIOS.md). Aqui ficam os
 trajetos de base, estação certa e serviços do entorno; roteiro cultural, horário de museu,

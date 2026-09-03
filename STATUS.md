@@ -95,8 +95,11 @@ As prioridades detalhadas, com data, estão em [TAREFAS.md](TAREFAS.md). Aqui fi
   marcadas "A" no QTS, cinco de cinco. *[VERIFICAR: falta ratificar de viva voz na Coordenação.]*
 - **Rotina 13 do SIPA liberada de 17/ago/26 a 22/jan/27** (1º bloco financeiro/administrativo).
   Uniforme, formatura e o resto do dia a dia estão em [ROTINA.md](ROTINA.md).
-- Estações a pé do CAES: **Luz** (Linhas 1-Azul e 4-Amarela), **Santa Cecília** (3-Vermelha) e
-  **Júlio Prestes** (CPTM, na praça). Comida, farmácia e serviços do entorno: [ENTORNO.md](ENTORNO.md).
+- Estações a pé do CAES, em ordem de distância: **Júlio Prestes** (319 m, 4 min, CPTM
+  8-Diamante), **Luz** (807 m, 10 min, Linhas 1-Azul e 4-Amarela e CPTM) e **Santa Cecília**
+  (1.164 m, 15 min, 3-Vermelha). A medição de 02/09 mostrou que **o roteador nunca escolhe a
+  Santa Cecília**: os 15 min de caminhada custam mais do que ela economiza. Detalhe e ressalva
+  sobre a confiabilidade da Júlio Prestes em [ENTORNO.md](ENTORNO.md). Comida, farmácia e serviços do entorno: [ENTORNO.md](ENTORNO.md).
 - Contatos e organograma do CAES: [CONTATOS.md](CONTATOS.md). Documentos da fase de seleção, já
   concluída, em [CAO 2026/Inscrição](CAO%202026/Inscrição/).
 :::

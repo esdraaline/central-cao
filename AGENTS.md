@@ -10,7 +10,7 @@ O CAO vive em dois lugares, com papel fixo:
 | Onde | O que guarda |
 |---|---|
 | **Este repositório** (`c:\projetos\central-cao`) | **Logística**: grade, prazo, tarefa, rotina, entorno, compras, contatos, mala |
-| **Google Drive** (`G:\Meu Drive\10_JOSEMAR\02_TRABALHO\08_CAO_2026`) | **Conteúdo**: anotação de aula, slide, trabalho, avaliação, dissertação |
+| **Google Drive** (`G:\Meu Drive\20_JOSEMAR_PM\08_CAO_2026`) | **Conteúdo**: anotação de aula, slide, trabalho, avaliação, dissertação |
 
 **Este repositório é PÚBLICO.** Conteúdo de aula, slide, PDF de material e documento
 institucional nunca entram aqui. Na prática: a pasta `CAO 2026/` inteira está no `.gitignore` e
@@ -20,6 +20,34 @@ não sobe para o GitHub. O que vira repositório são os `.md`, o `gerar_painel.
 O mapa completo, com a tabela de "qual pergunta se responde em qual arquivo", está em
 `08_CAO_2026/CLAUDE.md`, do lado do Drive. Skills: **`cao`** (situar no curso, logística) e
 **`aula-cao`** (anotar aula, no Drive).
+
+**Padrão ativo das anotações de aula.** Quando Josemar disser "vamos às anotações", "vamos às
+notas", "vamos anotar aula", "anota aí", "novo comentário", "o instrutor falou que..." ou
+equivalente, a IA deve usar a `aula-cao` e agir ativamente: ler a anotação crua, entender o que
+foi dito, situar no contexto da disciplina e do CAO, organizar com as palavras dele, completar o
+que for cabível, pesquisar na web ou em fonte oficial quando houver sigla, conceito, data,
+autor, norma ou lacuna relevante, marcar `#PROVA`, `#DISSERTA`, `#DUVIDA` e `[VERIFICAR]`, e
+salvar no `NOTAS-DNN-*.md` correto no Drive. Não basta corrigir ortografia ou formatar. Separar
+fala de aula, inferência da IA e complemento pesquisado; nunca inventar fala do instrutor.
+
+**Fluxo com temporário de aula.** Ao começar anotações, primeiro descobrir onde estamos pela
+hora e pela `GRADE.md`, depois abrir o `NOTAS-DNN-*.md` da disciplina no Drive e ler o que já
+existe. Antes de criar nota nova, verificar se há pendências em `.aula-temp/`. Se houver
+temporário pendente, sincronizar no Drive antes de seguir, ou preservar e avisar se o Drive não
+estiver acessível. Durante a aula, escrever em `.aula-temp/AAAA-MM-DD_DNN_assunto.md`, dentro
+deste repo, mas ignorado pelo git. Ao comando **"aula encerrada"**, anexar o conteúdo consolidado
+ao `NOTAS-DNN-*.md` correto no Drive, conferir se salvou, e só então apagar o temporário. Se
+Josemar esquecer de encerrar ou o Drive falhar, o temporário fica como pendente de sincronização
+para a próxima sessão. Nunca apagar temporário pendente sem antes salvar no Drive ou receber
+ordem expressa.
+
+**A `.aula-temp/` só guarda rascunho de aula.** Arquivo lá dentro é anotação pendente de
+sincronização no Drive, e por isso não se apaga sem antes salvar. Download, HTML bruto, `venv`,
+PDF extraído e qualquer scratch de pesquisa vão para a **`.pesquisa-temp/`**, que também é
+ignorada pelo git mas pode ser apagada à vontade. Em 02/09/2026 as duas coisas estavam
+misturadas: treze itens de pesquisa de orçamento ocupavam a `.aula-temp/`, nenhum deles no
+padrão `AAAA-MM-DD_DNN_assunto.md`. Uma IA que lesse aquilo como anotação pendente tentaria
+sincronizar lixo no Drive.
 
 **Manutenção do painel.** Depois de editar qualquer `.md` de aba, rodar `python gerar_painel.py`
 para regenerar o `docs/index.html`. A aba "Painel" vem do **`STATUS.md`**, não de um arquivo
@@ -44,7 +72,7 @@ Donos atuais:
 
 | Assunto | Dono | Ponteiro |
 |---|---|---|
-| Casas de oração da CCB, mapas SVG | Este repositório | `00_CURSO/` no Drive |
+| Casas de oração da CCB, mapas SVG | **`CCB.md`**, neste repositório | `00_CURSO/` no Drive |
 | **Grade da semana** (que aula, que dia, que docente) | **`GRADE.md`**, transcrição de trabalho | Fonte primária é o **PDF do QTS**, em `00_CURSO/QTS/` no Drive |
 | **Estrutura permanente do curso** (ciclos, matérias, carga horária, avaliação, eletivas, regras da dissertação) | **`CURRICULO.md`**, transcrição de trabalho | Fonte primária é o **PDF do currículo/PDM** (Bol G PM nº 227), em `00_CURSO/` no Drive |
 | Conteúdo programático e bibliografia de cada disciplina | As notas `NOTAS-DNN-*.md`, no Drive | — |

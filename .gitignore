@@ -14,6 +14,15 @@ __pycache__/
 *.pyc
 ~$*
 *.tmp
+
+# Rascunhos de aula em andamento. Conteudo de aula nao entra no repo publico;
+# ao comando "aula encerrada", sincronizar no Drive e apagar o temporario.
+.aula-temp/
+
+# Scratch de pesquisa: download, HTML bruto, venv, PDF extraido. Nao confundir
+# com .aula-temp/, que so guarda rascunho de anotacao de aula pendente de
+# sincronizacao no Drive.
+.pesquisa-temp/
 .DS_Store
 Thumbs.db
 desktop.ini

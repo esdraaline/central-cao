@@ -207,6 +207,39 @@ que existe para a minha dissertação: o que sair dali vai direto para o texto.
 Não transcrever aula. Anotação boa é a ideia com as minhas palavras. O slide eu já tenho salvo
 em `aulas/`.
 
+### Padrão ativo com IA
+
+Quando eu disser **"vamos às anotações"**, **"vamos às notas"**, **"vamos anotar aula"**,
+**"anota aí"**, **"novo comentário"**, **"o instrutor falou que..."** ou equivalente, a IA deve
+agir como assistente ativa de aula, não como revisora passiva.
+
+O trabalho dela é ler a anotação crua, entender o que foi dito, situar no contexto da disciplina
+e do CAO, organizar com as minhas palavras, completar o que for cabível, pesquisar na web ou em
+fonte oficial quando houver sigla, conceito, data, autor, norma ou lacuna relevante, e salvar no
+`NOTAS-DNN-*.md` correto no Drive.
+
+O complemento tem que ser útil e proporcional. Se eu mandar uma frase curta, a IA acrescenta
+contexto enxuto. Se eu mandar muita coisa, ela organiza, filtra repetição e complementa só onde
+melhorar a compreensão. Deve marcar `#PROVA`, `#DISSERTA`, `#DUVIDA` e `[VERIFICAR]`; separar
+fala de aula, inferência e complemento pesquisado; e nunca inventar fala do instrutor.
+
+### Fluxo com arquivo temporário
+
+Ao começar uma aula, a IA deve primeiro entender onde estamos: ler a hora, cruzar com
+`GRADE.md`, identificar a disciplina, abrir o `NOTAS-DNN-*.md` dela no Drive e ler as anotações
+anteriores. Antes de anotar coisa nova, deve procurar pendências em `.aula-temp/`.
+
+Durante a aula, a IA escreve em arquivo temporário no repo, em `.aula-temp/`, com nome do tipo
+`AAAA-MM-DD_DNN_assunto.md`. Essa pasta é ignorada pelo git porque conteúdo de aula não entra no
+repositório público.
+
+Quando eu disser **"aula encerrada"**, a IA deve consolidar o temporário, anexar no
+`NOTAS-DNN-*.md` correto no Drive, conferir se salvou, e só então apagar o temporário. Se eu
+esquecer de encerrar a aula, ou se o Drive estiver inacessível, o temporário fica como
+**pendente de sincronização** para a próxima sessão. Na próxima vez que qualquer IA começar
+anotações, ela deve verificar `.aula-temp/` e sincronizar o que estiver pendente antes de abrir
+nova frente.
+
 ## NotebookLM: três tipos de caderno
 
 Não um caderno gigante, porque misturar assunto piora a resposta e há limite de fontes.

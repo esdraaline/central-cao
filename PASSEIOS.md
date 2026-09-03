@@ -18,8 +18,9 @@
 Rotas até as estações em [ENTORNO.md](ENTORNO.md). **A mais perto do CAES é a Júlio Prestes**
 (319 m, 4 min, Linha 8-Diamante), depois a Luz (807 m, 10 min) e por último a Santa Cecília
 (1.164 m, 15 min). A medição de 02/09/2026 mostrou que **os 15 minutos até a Santa Cecília
-raramente compensam**. A antiga ressalva contra a Júlio Prestes caiu: a estação foi reformada e
-reinaugurada em 30/01/2026 e opera normalmente.
+raramente compensam**. A Júlio Prestes opera normalmente e foi reinaugurada em 30/01/2026
+depois de R$ 42 milhões de reforma; o plano de desativação que já se falou está recuado e em
+estudo, sem prazo ([Entorno](ENTORNO.md)).
 
 1. **Depois das 19h, a volta manda no roteiro.** Vá direto para a estação ou o CAES e use eixos
    com movimento.

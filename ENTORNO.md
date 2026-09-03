@@ -505,19 +505,38 @@ O que isso muda na prática, e as duas coisas importam:
   Palmeiras-Barra Funda → **Luz** → Brás. Ou seja, a tabela acima está certa ao listar a
   10-Turquesa entre as linhas que servem a Luz; o que ela não tem é terminal ali.
 
-**Júlio Prestes: a ressalva antiga caiu, verificada em 02/09/2026.** Ela é terminal da
-**Linha 8-Diamante e só dela** (a 11-Coral não passa lá, apesar do projeto futuro no Bom Retiro).
-O resto da ressalva não se sustenta mais:
+**Júlio Prestes: apurado em fontes oficiais em 03/09/2026.** Ela é terminal da **Linha
+8-Diamante e só dela** (a 11-Coral não passa lá, apesar do projeto futuro no Bom Retiro).
+Endereço oficial do acesso A: **Praça Júlio Prestes, 148**. A página da concessionária lista
+banheiro adaptado, piso tátil, rampas, apoio de embarque e telefone adaptado.
 
-- **O plano de desativação de 2024 foi superado pelo oposto.** A estação passou por **reforma de
-  14 meses e R$ 42 milhões** e foi **reinaugurada em 30/01/2026** pelo Governo do Estado, com
-  resgate da arquitetura de 1939, acessibilidade, câmeras e um café na antiga sala de espera. O
-  projeto reafirma o papel dela como ponto de partida da Linha 8.
-- **O descarrilamento de 13/08/2026 durou um dia.** A Linha 8 voltou a operar normalmente já na
-  sexta 14/08.
+**O que houve com o "plano de desativação", em ordem:**
 
-**Conclusão: dá para contar com ela.** É a estação mais perto do CAES, a 319 m, e a porta de
-entrada da rede quando o trilho ganha.
+- **20/09/2024.** O Governo do Estado anuncia a requalificação do centro e o texto diz que a
+  Linha 8 **será desativada no trecho Barra Funda–Júlio Prestes**, com a estação virando espaço
+  cultural e memorial ferroviário.
+- **No dia seguinte, o próprio governo edita o texto e retira a parte da desativação.** A CDHU
+  esclarece que era **uma possibilidade dentro de um anteprojeto**, dependente de estudos de
+  viabilidade. O que ficou como intenção firme foi o **Parque do Moinho** e a futura **Estação
+  Bom Retiro** da Linha 11-Coral.
+- **30/01/2026.** A estação é **reinaugurada** depois de **14 meses de obra e R$ 42 milhões** da
+  concessionária, com a arquitetura de 1939 restaurada. Ninguém investe isso numa estação que vai
+  fechar em seguida, mas **isso é indício, não decisão revogada**.
+- **13/08/2026.** Descarrilamento na Linha 8. A operação voltou ao normal **já no dia seguinte**.
+
+**A leitura honesta.** A desativação **nunca foi confirmada e nunca foi formalmente descartada**:
+é possibilidade em estudo, sem prazo, amarrada a obras que ainda nem começaram. A imprensa
+especializada segue cética e acha a desativação provável no longo prazo.
+
+**O que isso significa para o CAO.** A fase presencial acaba em **janeiro de 2027**. Nada disso
+acontece nesse intervalo: obra de parque, remoção de favela e construção de estação nova não
+saem em quatro meses. **Dá para contar com a Júlio Prestes durante o curso inteiro.** É a estação
+mais perto do CAES, a 319 m, e a porta de entrada da rede quando o trilho ganha.
+
+⚠ *A ressalva antiga desta aba dizia que existia "plano estadual de desativá-la", sem mencionar
+que o anúncio foi desmentido em 24 horas. E a correção que eu havia escrito em 02/09 dizia que o
+plano "foi superado pelo oposto", o que também não é verdade. O certo é o que está acima: recuado,
+em estudo, sem prazo.*
 
 ⚠ **Manutenção programada em 27 e 28/09/2026** na Linha 8: no dia 27 o intervalo entre trens vai
 a 10 min das 12h às 20h e a 19 min das 20h à meia-noite; no dia 28 fica em torno de 19 min o dia

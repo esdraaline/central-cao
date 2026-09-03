@@ -492,23 +492,40 @@ baldeando lá dentro, mas isso é mais baldeação e mais tempo do que simplesme
 15 min até a Santa Cecília e embarcar direto. *(Confirmado por pesquisa em 26/08/2026: fonte
 oficial do Metrô de SP, a Estação Luz não consta na lista de estações da Linha 3-Vermelha.)*
 
-Nota sobre a composição da CPTM na Luz: a Linha 7-Rubi deixou de ter ponta final na Luz,
-substituída pela 10-Turquesa nesse papel. **A data saiu na conferência de 02/09/2026: foi em
-28/08/2025**, quando a 7-Rubi foi truncada e passou a ter **Palmeiras-Barra Funda** como
-terminal. Quem sai do CAES rumo à Luz para pegar a Linha 7 não embarca; é preciso baldear em
-Barra Funda. *[VERIFICAR: a matéria que datou a mudança fala em **7-Rubi e 10-Turquesa** passando
-as duas a terminar na Barra Funda, o que não fecha com a 10-Turquesa ter assumido a ponta na Luz.
-Uma das duas afirmações está errada.]*
+**Composição da CPTM na Luz, resolvido em 02/09/2026.** A nota antiga dizia que a Linha 7-Rubi
+perdeu a ponta na Luz e que a 10-Turquesa assumiu esse papel. **Estava errada em um ponto:
+ninguém assumiu.** Desde **agosto de 2025**, as Linhas **7-Rubi e 10-Turquesa passaram as duas a
+terminar em Palmeiras-Barra Funda**, e **nenhuma linha da CPTM tem mais ponta final na Luz**.
 
-**Ressalva sobre a Júlio Prestes**: é terminal da **Linha 8-Diamante e só dela** (a 11-Coral
-não passa lá, apesar do projeto futuro no Bom Retiro). **Houve descarrilamento na Linha 8 em
-13/08/2026 e a estação chegou a ficar fechada**, e existe plano estadual, anunciado em 2024,
-de desativá-la na revitalização do centro. *[VERIFICAR se está operando antes de contar com
-ela.]*
+O que isso muda na prática, e as duas coisas importam:
+
+- **A Linha 7-Rubi não passa mais pela Luz.** De Barra Funda ela segue para o noroeste. Quem
+  descer o CAES rumo à Luz para pegar a 7 não embarca: é preciso baldear em Barra Funda.
+- **A Linha 10-Turquesa continua parando na Luz**, como estação intermediária. O trecho é
+  Palmeiras-Barra Funda → **Luz** → Brás. Ou seja, a tabela acima está certa ao listar a
+  10-Turquesa entre as linhas que servem a Luz; o que ela não tem é terminal ali.
+
+**Júlio Prestes: a ressalva antiga caiu, verificada em 02/09/2026.** Ela é terminal da
+**Linha 8-Diamante e só dela** (a 11-Coral não passa lá, apesar do projeto futuro no Bom Retiro).
+O resto da ressalva não se sustenta mais:
+
+- **O plano de desativação de 2024 foi superado pelo oposto.** A estação passou por **reforma de
+  14 meses e R$ 42 milhões** e foi **reinaugurada em 30/01/2026** pelo Governo do Estado, com
+  resgate da arquitetura de 1939, acessibilidade, câmeras e um café na antiga sala de espera. O
+  projeto reafirma o papel dela como ponto de partida da Linha 8.
+- **O descarrilamento de 13/08/2026 durou um dia.** A Linha 8 voltou a operar normalmente já na
+  sexta 14/08.
+
+**Conclusão: dá para contar com ela.** É a estação mais perto do CAES, a 319 m, e a porta de
+entrada da rede quando o trilho ganha.
+
+⚠ **Manutenção programada em 27 e 28/09/2026** na Linha 8: no dia 27 o intervalo entre trens vai
+a 10 min das 12h às 20h e a 19 min das 20h à meia-noite; no dia 28 fica em torno de 19 min o dia
+todo, no trecho Júlio Prestes-Itapevi.
 :::
 
-Na prática, **conte com a Luz e a Santa Cecília**, que são metrô. Mas veja a ressalva abaixo,
-porque a medição de setembro contraria parte disso.
+Na prática, **conte com a Júlio Prestes e com a Luz**. Veja abaixo por que a Santa Cecília saiu
+da conta e por que a antiga ressalva contra a Júlio Prestes não vale mais.
 
 ::: extra O que a medição de 02/09/2026 mostrou, e que contraria esta seção
 

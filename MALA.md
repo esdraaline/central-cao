@@ -11,8 +11,8 @@ a tela mostrar como **"faltam N"** é a mala de domingo, peça por peça.
 <!-- inventario -->
 
 - [ ] 8 cuecas
-- [ ] 5 pares de meia social preta
-- [ ] 5 pares de meia branca
+- [x] 5 pares de meia social preta
+- [x] 5 pares de meia branca
 - [ ] 6 camisetas de serviço
 - [x] 2 camisas de passeio
 - [x] 1 calça de passeio
@@ -20,7 +20,7 @@ a tela mostrar como **"faltam N"** é a mala de domingo, peça por peça.
 - [x] 1 calça do S-1
 - [ ] 3 camisetas de sair
 - [ ] 4 camisetas de treino
-- [ ] 1 calça tectel
+- [x] 1 calça tectel
 - [x] 1 calça jeans
 - [x] 1 cinto social
 - [ ] 2 pijamas
@@ -36,8 +36,8 @@ ocorrência é a **semana 4: 07/09/2026 é feriado de Independência** e ainda n
 ## 2. Quinta, antes de pegar a estrada — o que desce para lavar
 
 - [ ] Toalha de banho usada
-- [ ] Fronha usada
-- [ ] Roupa suja da semana
+- [x] Fronha usada
+- [x] Roupa suja da semana
 
 ## 3. Domingo — o que sobe
 

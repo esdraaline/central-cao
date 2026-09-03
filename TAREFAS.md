@@ -8,6 +8,12 @@
 - [ ] Antes de descer na quinta, perguntar na Coordenação se há aula na segunda 07/09, que é feriado de Independência. Disso depende a subida de domingo 06/09 [03/09/2026] #curso
   - [ ] Se não houver aula na segunda, remarcar a carona de domingo para segunda à noite e avisar em casa
 
+### Desmobilização do armário — duas descidas em janeiro/2027
+> O armário não cabe numa viagem só, ainda mais de carona. Plano completo em [MALA.md](MALA.md).
+- [ ] **Viagem de alívio:** descer o S-1 inteiro, copa, limpeza, excedente de higiene e material de estudo encerrado [07/01/2027] #pessoal
+- [ ] **Última descida:** cama, toalhas, resto da farda, notebook, extensão, identidade funcional e **o cadeado** [14/01/2027] #pessoal
+  - [ ] Conferir o armário vazio e o alojamento limpo antes de sair
+
 ### Fardamento e pendências de secretaria
 - [ ] Comprar a camisa social cinza-claro do S-1 e a boina de reposição, que faltaram na ida à ConfecBell/Confex Bel [14/09/2026] #pessoal
   - [ ] Depois da compra, experimentar o S-1 completo e conferir o caimento

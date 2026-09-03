@@ -1,8 +1,12 @@
 # PASSEIOS — guia turístico e gastronômico do aluno CAO
 
-> Roteiro para a janela livre durante a semana no CAES: **segundas das 17h00 às 21h00** e
-> **terças/quartas das 18h15 às 21h00** ([GRADE.md](GRADE.md)/[ENTORNO.md](ENTORNO.md)).
+> Roteiro para a janela livre durante a semana no CAES: **segundas das 16h15 às 21h00** e
+> **terças/quartas das 18h00 às 21h00** ([GRADE.md](GRADE.md)/[ENTORNO.md](ENTORNO.md)).
 > Só a pé ou metrô/CPTM, saindo do CAES "Cel Nelson Freire Terra", Praça Júlio Prestes, 5005.
+>
+> **Antes de escolher, veja de quem é a noite.** Quatro abas disputam segunda, terça e quarta:
+> esta, o [Culto na CCB](CCB.md), a [Biblioteca](BIBLIOTECA.md) e o [Shopping](SHOPPING.md). O
+> quadro de prioridade está no [Painel](STATUS.md).
 >
 > **Marcas:** **[TESTADO]** alguém foi e aprovou · **[BIZU]** indicação confiável, mas ainda
 > não conferida · **[CANDIDATO]** veio de pesquisa e precisa virar experiência real. Consulta
@@ -11,7 +15,11 @@
 
 ## Diretrizes gerais de deslocamento e segurança
 
-Rotas até Luz e Santa Cecília em [ENTORNO.md](ENTORNO.md).
+Rotas até as estações em [ENTORNO.md](ENTORNO.md). **A mais perto do CAES é a Júlio Prestes**
+(319 m, 4 min, Linha 8-Diamante), depois a Luz (807 m, 10 min) e por último a Santa Cecília
+(1.164 m, 15 min). A medição de 02/09/2026 mostrou que **os 15 minutos até a Santa Cecília
+raramente compensam**; confira a ressalva sobre a confiabilidade da Júlio Prestes antes de
+contar com ela.
 
 1. **Depois das 19h, a volta manda no roteiro.** Vá direto para a estação ou o CAES e use eixos
    com movimento.
@@ -65,7 +73,7 @@ eventos; antes de contar com isso para jantar, confira o dia no site da Sala.
 |---|---|
 | Endereço | Rua 24 de Maio, 109 |
 | Deslocamento | 1,2 km/15 min a pé, ou Luz -> República e caminhada curta |
-| Janela | Terça e quarta, 18h15-21h |
+| Janela | Terça e quarta, 18h00-21h |
 | Fonte | [Sesc 24 de Maio](https://www.sescsp.org.br/unidades/24-de-maio/) e [serviços da unidade](https://www.sescsp.org.br/editorial/servicos-o-que-voce-encontra-no-sesc-24-de-maio/) |
 
 ### O que tem de fato
@@ -326,7 +334,7 @@ do vão livre e volta.
 
 ### Pegadinha
 
-Quarta a domingo fecha às 18h, então para a saída de 18h15 não serve. Na terça, não deixe para
+Quarta a domingo fecha às 18h, então para a saída de 18h00 não serve. Na terça, não deixe para
 comprar/agendar em cima da hora.
 
 :::
@@ -336,11 +344,15 @@ comprar/agendar em cima da hora.
 | Item | Decisão prática |
 |---|---|
 | Endereço | Avenida Paulista, 119 |
-| Deslocamento | Luz -> Paulista + Linha 2 até Brigadeiro |
+| Deslocamento e horário | **Ficha operacional em [BIBLIOTECA.md](BIBLIOTECA.md)**, que é a dona |
 | Janela | Terça e quarta, até 21h30 |
 | Fonte | [Sesc Avenida Paulista](https://www.sescsp.org.br/unidades/avenida-paulista/) e [serviços](https://www.sescsp.org.br/unidades/avenida-paulista/servicos/) |
 
 ### O que tem de fato
+
+*Esta casa tem dois usos e um dono só para os dados. Como **espaço de estudo**, com horário
+completo, trajeto e combo de jantar, ela é a melhor opção tática de terça e quarta e a ficha está
+na [Biblioteca](BIBLIOTECA.md). Aqui fica só o lado cultural.*
 
 É uma unidade vertical do Sesc voltada a arte, corpo e tecnologia, com exposições, teatro,
 atividades culturais, convivência e café. O mirante de vidro já foi a atração principal, mas está
@@ -462,7 +474,7 @@ de grande porte e vida litúrgica própria; a padaria do mosteiro é atração �
 ### Por que fica como alerta
 
 As missas úteis para visita comum são 7h e 13h; há vésperas às 17h30. Saindo do CAES às 17h na
-segunda, até dá para chegar, mas é programa apertado e termina cedo. Terça/quarta às 18h15 já não
+segunda, até dá para chegar, mas é programa apertado e termina cedo. Terça/quarta às 18h00 já não
 serve.
 
 :::
@@ -515,17 +527,21 @@ a Praça da Sé não é rota boa para passeio noturno solo. Guarde para manhã o
 
 :::
 
-## Roteiro sugerido — segunda-feira (17h00-21h00)
+## Roteiro sugerido — segunda-feira (16h15-21h00)
 
 ```text
-17h00  Saída do CAES -> Estação Luz pela Rua Mauá
-17h15  Linha 1-Azul: Luz -> São Bento
-17h25  CCBB São Paulo: exposição curta e café
-18h45  Caminhada pelo Centro Velho: Quitanda -> Direita -> Viaduto do Chá
-19h15  Copan: jantar no Bar da Dona Onça ou café/livraria na galeria
-20h25  República -> Luz pela Linha 4-Amarela
-20h45  CAES
+16h15  Saída do CAES -> Estação Luz pela Rua Mauá
+16h30  Linha 1-Azul: Luz -> São Bento
+16h40  CCBB São Paulo: exposição com calma e café (fecha às 20h)
+18h00  Caminhada pelo Centro Velho: Quitanda -> Direita -> Viaduto do Chá
+18h30  Copan: jantar no Bar da Dona Onça ou café/livraria na galeria
+20h00  República -> Luz pela Linha 4-Amarela
+20h20  CAES
 ```
+
+*Corrigido em 02/09/2026. O roteiro antigo começava 17h00 e a aula de segunda acaba **16h15**,
+depois do 4º bloco. Eram **45 minutos perdidos** no dia de janela maior. Com a correção, sobra
+tempo no CCBB e a volta acontece mais cedo.*
 
 ## Como esta aba cresce
 

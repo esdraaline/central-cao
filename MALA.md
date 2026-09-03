@@ -27,6 +27,12 @@ a tela mostrar como **"faltam N"** é a mala de domingo, peça por peça.
 - [ ] 2 toalhas de banho
 - [ ] 1 fronha limpa
 
+**Semana curta muda a conta.** Os alvos abaixo foram dimensionados para **quatro dias de aula**,
+de segunda a quinta. Quando o QTS derrubar um dia, por feriado ou por dia vazio, **desconte uma
+peça de cada linha que roda por dia**: cueca, meia social, camiseta de serviço. A primeira
+ocorrência é a **semana 4: 07/09/2026 é feriado de Independência** e ainda não se sabe se há aula
+([Painel](STATUS.md)).
+
 ## 2. Quinta, antes de pegar a estrada — o que desce para lavar
 
 - [ ] Toalha de banho usada
@@ -68,7 +74,7 @@ volume no porta-malas. A creatina é o oposto, o pote já é pequeno.
 | Peça | Alvo | Por quê |
 |---|---|---|
 | Meia social preta | 5 pares | **a mais crítica.** O P-1 pede meia social fina os quatro dias, e a meia grossa que fica no armário é de coturno, não substitui. Esquecer em casa não tem improviso |
-| Meia branca | 5 pares | entraram no inventário em 27/08/2026 |
+| Meia branca | 5 pares | entraram no inventário em 27/08/2026. **[VERIFICAR]** a aba não diz se estas são as meias brancas **civis**, de treino à paisana, ou as **do uniforme T-1**. As do T-1 estão no kit que já mora no alojamento e "não sobe nem desce", então contar as duas coisas na mesma linha faz a mala de domingo sair errada |
 | Camiseta de serviço | 6 | **não tem folga**: uma por dia de aula, por baixo do P-1 e do B-1, mais reserva |
 | Camisa de passeio | 2 | **farda parada**: fica no armário e quase não sai. Não roda, o inventário só confirma que as duas estão lá |
 | Calça de passeio | 1 | idem. É a calça social cinza-bandeirante do P-1. A segunda calça não entra aqui: ela é do S-1 e é contada na linha dele |
@@ -193,6 +199,10 @@ Sai o que restou. **Conferir o armário vazio e o alojamento limpo antes de sair
 *[VERIFICAR mais perto da data: se a semana de 11 a 14/01/2027 tem aula normal, se há
 solenidade de encerramento presencial depois do dia 14 (que exigiria manter o S-1 no CAES até
 lá), e se o alojamento e o armário passam por vistoria ou entrega formal.]*
+
+**As duas descidas agora têm tarefa e prazo.** Até 02/09/2026 este plano existia só aqui, e o
+painel só avisa pelo que tem data em [TAREFAS.md](TAREFAS.md): a operação mais complexa do curso
+inteiro era invisível para o alerta.
 
 ## Detalhes que mudam a mala
 <!-- extra -->

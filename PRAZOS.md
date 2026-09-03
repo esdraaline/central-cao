@@ -19,6 +19,8 @@
 |---|---|
 | **03/09/2026** (quinta) | **Vence o prazo de 10 dias úteis do SAE da Univesp**, do pedido protocolado em 19/08/2026 às 20h02. Sem resposta, cobrar pelo **0800 051 3333** ou pelo WhatsApp **(11) 4200-2982** |
 | **22/09/2026** (terça) | **Prova da Univesp**, em conflito com dia de curso. É isso que o pedido ao SAE tenta resolver. Detalhes em `C:\projetos\mentor-univesp\STATUS.md` |
+| **07/01/2027** (quinta) | **Viagem de alívio**: primeira das duas descidas para esvaziar o armário ([MALA.md](MALA.md)) |
+| **14/01/2027** (quinta) | **Última descida** e último dia útil no CAES. Armário vazio e alojamento limpo ([MALA.md](MALA.md)) |
 | **22/01/2027** | Fim do 1º bloco da Rotina 13 do SIPA. Precisa ser renovada para o 2º ([ROTINA.md](ROTINA.md)) |
 | **ago/2027** | Fim do curso e formatura. Data, hora e local ainda a ratificar pela turma ([ROTINA.md](ROTINA.md)) |
 

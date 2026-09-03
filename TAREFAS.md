@@ -10,8 +10,8 @@
 
 ### Desmobilização do armário — duas descidas em janeiro/2027
 > O armário não cabe numa viagem só, ainda mais de carona. Plano completo em [MALA.md](MALA.md).
-- [ ] **Viagem de alívio:** descer o S-1 inteiro, copa, limpeza, excedente de higiene e material de estudo encerrado [07/01/2027] #pessoal
-- [ ] **Última descida:** cama, toalhas, resto da farda, notebook, extensão, identidade funcional e **o cadeado** [14/01/2027] #pessoal
+- [ ] Viagem de alívio: descer o S-1 inteiro, copa, limpeza, excedente de higiene e material de estudo encerrado [07/01/2027] #pessoal
+- [ ] Última descida: cama, toalhas, resto da farda, notebook, extensão, identidade funcional e o cadeado [14/01/2027] #pessoal
   - [ ] Conferir o armário vazio e o alojamento limpo antes de sair
 
 ### Fardamento e pendências de secretaria

@@ -16,7 +16,8 @@ Antes de escrever aqui, veja se o assunto já tem dono. Isto aqui é o que sobra
 | Regra do CAES: alojamento, armário, uniforme, afastamento, SIPA | [ROTINA.md](ROTINA.md) |
 | Aula, disciplina, docente, QTS da semana | [GRADE.md](GRADE.md) |
 | Estudo, dissertação, orientador | [ESTUDOS.md](ESTUDOS.md) |
-| Comer, comprar, metrô, CCB | [ENTORNO.md](ENTORNO.md) |
+| Comer, comprar, metrô | [ENTORNO.md](ENTORNO.md) |
+| Casa de oração, culto, trajeto até a CCB | [CCB.md](CCB.md) |
 | Passeio, destino turístico, roteiro de lazer | [PASSEIOS.md](PASSEIOS.md) |
 | O que sobe na mala | [MALA.md](MALA.md) |
 | Contato, e-mail, organograma | [CONTATOS.md](CONTATOS.md) |

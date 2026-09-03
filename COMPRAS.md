@@ -10,6 +10,7 @@ aplicação. *[VERIFICAR: o nome correto da loja da compra de 18/08 é ConfecBel
 
 - [ ] **1 camisa social cinza-claro** — manga longa, gola social, sem bolsos. É a última peça do S-1 (Art. 49): o resto já está guardado no CAES
 - [ ] **Boina cinza-bandeirante** com distintivo de cobertura — reposição, a que está em uso não corre risco. É a cobertura do dia a dia do curso, o quepe só em cerimônia
+- [ ] **Sunga** — para a aula de Educação Física no GB Mar, em 14/10
 
 Depois que a camisa social chegar, dá para experimentar o social inteiro e ver o ajuste de
 caimento na própria loja.

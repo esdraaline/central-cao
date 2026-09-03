@@ -10,6 +10,15 @@ QTS CAO-II/26 de 31/08 a 03/09/2026, assinado pelo Aux Coord e pelo Ch Sec Coord
 em `08_CAO_2026/00_CURSO/QTS/`.
 :::
 
+## Lançamentos pendentes para QTS futuro
+
+- **14/10/2026 — GB Mar — D23 Educação Física e Qualidade de Vida no Trabalho**
+  Levar **uniforme completo de educação física** e **sunga**. Docente informado para esse dia:
+  **Ten Cel PM Ciampone**.
+  *Observação: a planilha-base e as notas antigas da D23 ainda registram o oficial como
+  **Maj PM Ciampone**; este lançamento futuro já fica com o posto atualizado informado por
+  Josemar.*
+
 **Sou do pelotão A.** No QTS as células só trazem a letra, e as cinco aulas que assisti na
 terça 18/08 bateram uma a uma com as células marcadas "A". Para saber o meu dia, basta ler as
 células "A".

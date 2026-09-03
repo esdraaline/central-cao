@@ -17,6 +17,7 @@
 ### Fardamento e pendências de secretaria
 - [ ] Comprar a camisa social cinza-claro do S-1 e a boina de reposição, que faltaram na ida à ConfecBell/Confex Bel [14/09/2026] #pessoal
   - [ ] Depois da compra, experimentar o S-1 completo e conferir o caimento
+- [ ] Comprar sunga para a aula de Educação Física no GB Mar de 14/10 [13/10/2026] #pessoal
 
 ### Rodízio da mala (toda semana, ver MALA.md)
 > Quinta conta o armário na aba Mala; domingo sobe o que o inventário apontou como falta.

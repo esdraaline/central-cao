@@ -1168,6 +1168,13 @@ ul.tarefas li.parcial .mk-qtd .n{color:var(--al);font-weight:600}
 .mer-topo{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:0 0 14px;
   padding:11px 14px;border:1px solid var(--bd);border-radius:5px;background:var(--card2)}
 .mer-topo p{margin:0;flex:1;min-width:190px;font-size:13px;color:var(--tx2)}
+.mer-novo{display:flex;gap:8px;align-items:center;margin:0 0 18px}
+.mer-novo input{flex:1;min-width:0;padding:10px 12px;border:1px solid var(--bd);
+  border-radius:5px;background:var(--card);color:var(--tx);font:inherit}
+.mer-novo input:focus{outline:2px solid var(--vm);outline-offset:1px;border-color:var(--vm)}
+.mer-novo button{padding:10px 14px;border:1px solid var(--vm);border-radius:5px;background:var(--vm);
+  color:#fff;font:inherit;font-weight:700;cursor:pointer}
+.mer-novo button:hover{background:var(--vm-cl);border-color:var(--vm-cl)}
 .mer-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:10px;
   margin:11px 0 20px}
 .mer-item{display:flex;align-items:center;gap:10px;min-height:76px;padding:12px 13px;
@@ -3824,6 +3831,7 @@ JS_MERCEARIA = r"""
   var sec=document.getElementById('ab-mercearia');
   if(!sec||!window.TICADOS)return;
   var itens=[].slice.call(sec.querySelectorAll('.mer-item[data-mer-chave]'));
+  var outros=sec.querySelector('[data-mer-dinamicos]');
   var agora=function(){return new Date().toISOString()};
   var chave=function(item){return sec.id+'/'+item.getAttribute('data-mer-chave')};
   var inicial=function(item){return parseInt(item.getAttribute('data-mer-inicial')||'0',10)||0};
@@ -3835,13 +3843,45 @@ JS_MERCEARIA = r"""
     var v=window.TICADOS.todos()[chave(item)];
     return Math.max(0,(v&&v.n)||0);
   }
+  function nome(item){return item.querySelector('.mer-nome').textContent.trim()}
+  function temNome(valor){
+    valor=valor.toLocaleLowerCase('pt-BR');
+    return itens.some(function(item){return nome(item).toLocaleLowerCase('pt-BR')===valor});
+  }
+  function cria(nomeProduto){
+    var chaveDinamica='item/'+encodeURIComponent(nomeProduto);
+    var item=document.createElement('article');
+    item.className='mer-item';
+    item.setAttribute('data-mer-chave',chaveDinamica);
+    item.setAttribute('data-mer-inicial','0');
+    var rotulo=document.createElement('span');rotulo.className='mer-nome';rotulo.textContent=nomeProduto;
+    var controles=document.createElement('span');controles.className='mer-qtd';
+    var menos=document.createElement('button');menos.className='menos';menos.type='button';
+    menos.setAttribute('aria-label','Tirar um de '+nomeProduto);menos.textContent='−';
+    var total=document.createElement('output');total.textContent='0';
+    var mais=document.createElement('button');mais.className='mais';mais.type='button';
+    mais.setAttribute('aria-label','Somar um em '+nomeProduto);mais.textContent='+';
+    controles.appendChild(menos);controles.appendChild(total);controles.appendChild(mais);
+    item.appendChild(rotulo);item.appendChild(controles);
+    outros.appendChild(item);outros.closest('.mer-outros').hidden=false;
+    itens.push(item);return item;
+  }
+  function descobreDinamicos(){
+    var pre=sec.id+'/item/';
+    Object.keys(window.TICADOS.todos()).forEach(function(k){
+      if(k.indexOf(pre)!==0)return;
+      var id=k.slice(sec.id.length+1);
+      if(itens.some(function(item){return item.getAttribute('data-mer-chave')===id}))return;
+      try{cria(decodeURIComponent(k.slice(pre.length)))}catch(e){}
+    });
+  }
   function pinta(item){
     var n=saldo(item);
     item.classList.toggle('zerado',n===0);
     item.querySelector('output').textContent=n;
     item.querySelector('.menos').disabled=n===0;
   }
-  function repintar(){itens.forEach(pinta)}
+  function repintar(){descobreDinamicos();itens.forEach(pinta)}
   /* O arquivo entrega o primeiro saldo. Ele entra na fila de sincronizacao
      com a data do proprio arquivo: um saldo ja atualizado em outro aparelho
      sempre vence essa carga inicial em um aparelho novo. */
@@ -3859,8 +3899,19 @@ JS_MERCEARIA = r"""
     if(!bt)return;
     var item=bt.closest('.mer-item[data-mer-chave]');
     var n=saldo(item)+(bt.classList.contains('mais')?1:-1);
-    estado[chave(item)]={n:Math.max(0,n),m:agora(),s:false};
+    window.TICADOS.todos()[chave(item)]={n:Math.max(0,n),m:agora(),s:false};
     window.TICADOS.salvar();pinta(item);
+    if(window.TICADOS_SYNC)window.TICADOS_SYNC();
+  });
+  var formulario=sec.querySelector('.mer-novo');
+  formulario.addEventListener('submit',function(e){
+    e.preventDefault();
+    var campo=formulario.querySelector('input');
+    var novo=campo.value.trim().replace(/\s+/g,' ');
+    if(!novo||temNome(novo)){campo.focus();return}
+    var item=cria(novo);
+    window.TICADOS.todos()[chave(item)]={n:0,m:agora(),s:false};
+    window.TICADOS.salvar();pinta(item);campo.value='';campo.focus();
     if(window.TICADOS_SYNC)window.TICADOS_SYNC();
   });
   window.MERCEARIA={repintar:repintar};
@@ -3946,7 +3997,10 @@ def app_mercearia(texto):
               'fica salvo e sincroniza após entrar na conta.</p>'
               '<span class="tf-status mk-sinc" title="Estado da sincronização">'
               '<span class="bola"></span><span class="txt">Somente neste aparelho</span></span>'
-              '</div>']
+              '</div>'
+              '<form class="mer-novo"><input type="text" maxlength="80" '
+              'placeholder="Cadastrar novo produto" aria-label="Novo produto">'
+              '<button type="submit">Adicionar</button></form>']
     for grupo in grupos:
         partes.append('<h2>%s</h2><div class="mer-grid">' % _inline(grupo["titulo"]))
         for nome, inicial in grupo["itens"]:
@@ -3960,6 +4014,8 @@ def app_mercearia(texto):
                                                  html.escape(nome, quote=True),
                                                  html.escape(nome, quote=True)))
         partes.append('</div>')
+    partes.append('<section class="mer-outros" hidden><h2>Outros produtos</h2>'
+                  '<div class="mer-grid" data-mer-dinamicos></div></section>')
     if not grupos:
         partes.append('<p>Nenhum produto cadastrado.</p>')
     return "".join(partes)

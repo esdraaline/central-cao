@@ -18,11 +18,6 @@
 ### Rodízio da mala (toda semana, ver MALA.md)
 > Quinta conta o armário na aba Mala; domingo sobe o que o inventário apontou como falta.
 > As tarefas se repetem toda semana e a lista indentada é só molde de conferência.
-- [ ] Quinta de manhã, antes de descer: inventário do armário e roupa suja na mala @semanal [03/09/2026] #pessoal
-  - [ ] Contar o que ficou limpo: cuecas, meias sociais, meias brancas, camisetas de serviço, camisetas de sair, camisetas de treino, calça tectel, calça jeans, cinto social, camisa e calça de passeio e o S-1
-  - [ ] Lançar os números nos contadores da aba Mala (o "faltam N" vira a carga de domingo)
-  - [ ] Toalha de banho e fronha usadas na mala
-  - [ ] Roupa suja da semana na mala
 - [ ] Domingo, arrumar a mala da semana antes de viajar. B-1 e EPI ficam em casa (decisão de 20/08) @semanal [06/09/2026] #pessoal
   - [ ] Cuecas, na quantidade que o inventário de quinta apontou
   - [ ] Meias sociais pretas, na quantidade do inventário
@@ -43,6 +38,11 @@
   - [ ] marmitas prontas
   - [ ] shampoo
   - [ ] porta-sabonete
+- [ ] Quinta de manhã, antes de descer: inventário do armário e roupa suja na mala @semanal [10/09/2026] #pessoal
+  - [ ] Contar o que ficou limpo: cuecas, meias sociais, meias brancas, camisetas de serviço, camisetas de sair, camisetas de treino, calça tectel, calça jeans, cinto social, camisa e calça de passeio e o S-1
+  - [ ] Lançar os números nos contadores da aba Mala (o "faltam N" vira a carga de domingo)
+  - [ ] Toalha de banho e fronha usadas na mala
+  - [ ] Roupa suja da semana na mala
 
 ### Univesp — prova de 22/09 será feita em Valparaíso (mudou de plano)
 > O pedido de prova em polo da capital, protocolado em 19/08, não teve resposta do SAE dentro do prazo. Decisão de 04/09: fazer a prova em Valparaíso mesmo, sem mais cobrança ao SAE. Viagem: 21/09 à noite de São Paulo para Valparaíso, 22/09 à noite volta de Valparaíso para São Paulo.

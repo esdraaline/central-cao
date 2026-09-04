@@ -35,7 +35,7 @@ ocorrência é a **semana 4: 07/09/2026 é feriado de Independência** e ainda n
 
 ## 2. Quinta, antes de pegar a estrada — o que desce para lavar
 
-- [ ] Toalha de banho usada
+- [x] Toalha de banho usada
 - [x] Fronha usada
 - [x] Roupa suja da semana
 

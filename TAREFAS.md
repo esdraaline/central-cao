@@ -44,9 +44,6 @@
   - [ ] shampoo
   - [ ] porta-sabonete
 
-### Orientador da dissertação — formalizar com o Cap Gobbo
-- [ ] Perguntar ao Cap Gobbo as REGRAS da orientação, já com o nome fechado: cabe orientador fora do elenco de instrutores (o Maj Rovina não dá aula nesta turma)? Quantos orientandos ele aceita? Há prazo para o pedido? É formal? Como corre o referendo do Cmt CAES? [01/09/2026] #dissertacao
-
 ### Univesp — prova de 22/09 será feita em Valparaíso (mudou de plano)
 > O pedido de prova em polo da capital, protocolado em 19/08, não teve resposta do SAE dentro do prazo. Decisão de 04/09: fazer a prova em Valparaíso mesmo, sem mais cobrança ao SAE. Viagem: 21/09 à noite de São Paulo para Valparaíso, 22/09 à noite volta de Valparaíso para São Paulo.
 - [ ] Pedir DS (dispensa de serviço) da aula do dia 22/09, por causa da viagem para a prova da Univesp em Valparaíso [15/09/2026] #admin

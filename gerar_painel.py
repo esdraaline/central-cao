@@ -1164,6 +1164,19 @@ ul.tarefas li.parcial .mk-qtd .n{color:var(--al);font-weight:600}
 .mk-topo .mk-ver{color:var(--vm);border-color:transparent}
 .mk-topo .mk-ver:hover{border-color:var(--vm)}
 
+/* encerrar/reabrir o inventario da semana (Mala): recolhe a lista depois de
+   lancada; reabre sozinho quando vira segunda-feira (ver JS). */
+.inv-barra{display:flex;align-items:center;gap:10px;flex-wrap:wrap;
+  margin:0 0 14px;padding:11px 14px;border:1px solid var(--bd);
+  border-radius:5px;background:var(--card2)}
+.inv-barra .inv-msg{flex:1;min-width:180px;font-size:13px;color:var(--tx2)}
+.inv-bt{background:none;border:1px solid var(--bd);color:var(--tx3);
+  border-radius:5px;padding:6px 13px;font:600 .82rem inherit;cursor:pointer}
+.inv-bt:hover{color:var(--tx);border-color:var(--vm)}
+.inv-bt.inv-encerrar{color:var(--vm);border-color:var(--vm)}
+.inv-bt.inv-encerrar:hover{background:var(--vm);color:#fff}
+ul.tarefas.inv.recolhido{display:none}
+
 /* estoque da mercearia: quantidade real, sem meta nem ocultacao */
 .mer-topo{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:0 0 14px;
   padding:11px 14px;border:1px solid var(--bd);border-radius:5px;background:var(--card2)}
@@ -3058,6 +3071,43 @@ window.REP=(function(){
     try{localStorage.setItem(K_ESPMK,JSON.stringify(foto))}catch(e){}
     if(mudou)mkSalva();
   }
+
+  /* ------------- encerrar o inventario da semana (reseta na segunda) -------------
+     O inventario de MALA.md (lista 1) e contado uma vez por semana, na quinta de
+     manha. Depois de lancado ele fica exposto sem necessidade a semana toda, e a
+     contagem de uma semana nao pode contaminar a proxima. O botao Encerrar (mais
+     abaixo, junto da lista) so recolhe a lista da tela; quem zera de fato e este
+     bloco, comparando a segunda-feira da ultima visita com a de hoje - se uma
+     segunda passou, zera os itens do inventario e reabre a lista sozinho, pronta
+     para a quinta seguinte. Roda antes do mkReconcilia() para o zero jah nascer
+     no primeiro desenho da tela, sem piscar o estado antigo.                    */
+  var K_INV_SEM='cao-inv-semana';
+  (function(){
+    var ul=document.querySelector('#ab-mala ul.tarefas.inv');
+    if(!ul)return;
+    function segunda(d){
+      d=new Date(d);d.setHours(0,0,0,0);
+      d.setDate(d.getDate()+(d.getDay()===0?-6:1-d.getDay()));
+      return d.toISOString().slice(0,10);
+    }
+    var atual=segunda(new Date()), salva=null;
+    try{salva=localStorage.getItem(K_INV_SEM)}catch(e){}
+    if(salva===null){
+      /* primeira vez com este recurso: so ancora a semana, nao mexe em nada
+         que ja estava lancado */
+      try{localStorage.setItem(K_INV_SEM,atual)}catch(e){}
+    }else if(salva!==atual){
+      var agora=mkAgora();
+      [].forEach.call(ul.querySelectorAll('li[data-mk]'),function(li){
+        mkEstado[mkChave(li)]={n:0,m:agora,s:false};
+      });
+      mkSalva();
+      try{
+        localStorage.removeItem('cao-inv-fechado');
+        localStorage.setItem(K_INV_SEM,atual);
+      }catch(e){}
+    }
+  })();
   mkReconcilia();
 
   /* monta o contador no topo e os steppers dos itens com quantidade */
@@ -3102,6 +3152,45 @@ window.REP=(function(){
     mkConta(sec);mkArruma(sec);
   });
   malaDom();
+
+  /* barra "Encerrar inventário" / "Reabrir": so existe na aba Mala, junto da
+     lista marcada <!-- inventario -->. O reset por segunda-feira e o bloco
+     acima, antes do mkReconcilia(); aqui e so a caixinha de guardar a lista
+     fora da vista quando ja foi lancada.                                  */
+  (function(){
+    var ul=document.querySelector('#ab-mala ul.tarefas.inv');
+    if(!ul)return;
+    var K_FEC='cao-inv-fechado';
+    var estado={};
+    try{estado=JSON.parse(localStorage.getItem(K_FEC)||'null')||{}}catch(e){}
+    var barra=document.createElement('div');
+    barra.className='inv-barra';
+    ul.parentNode.insertBefore(barra,ul.nextSibling);
+    function quando(iso){
+      var d=iso&&new Date(iso);
+      if(!d||isNaN(d))return '';
+      return ' em '+d.toLocaleDateString('pt-BR')+' às '+
+        d.toLocaleTimeString('pt-BR',{hour:'2-digit',minute:'2-digit'});
+    }
+    function pinta(){
+      ul.classList.toggle('recolhido',!!estado.f);
+      barra.innerHTML=estado.f
+        ? '<span class="inv-msg">Inventário encerrado'+quando(estado.q)+
+          '. Reabre sozinho na segunda-feira.</span>'+
+          '<button type="button" class="inv-bt inv-reabrir">Reabrir</button>'
+        : '<button type="button" class="inv-bt inv-encerrar">Encerrar inventário</button>';
+    }
+    pinta();
+    barra.onclick=function(e){
+      if(e.target.closest('.inv-encerrar')){
+        estado={f:true,q:new Date().toISOString()};
+      }else if(e.target.closest('.inv-reabrir')){
+        estado={f:false};
+      }else return;
+      try{localStorage.setItem(K_FEC,JSON.stringify(estado))}catch(err){}
+      pinta();
+    };
+  })();
 
   document.addEventListener('click',function(e){
     var bt=e.target.closest('.mk-qtd button');

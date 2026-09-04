@@ -2961,6 +2961,18 @@ window.REP=(function(){
         else if(tit)bloco.push(e);
       });
       fecha();
+      /* titulo que virou <details class="extra"> (secao recolhivel, ver
+         "<!-- extra -->"): o h2/h3 dele nao e mais filho direto do card, e o
+         varredura acima nao o alcanca. Sem isto, uma lista 100% pronta dentro
+         de uma secao recolhivel ficava com o titulo sempre visivel e o corpo
+         vazio ao abrir - parecia quebrado, so nao tinha o que mostrar. Mesma
+         regra: some a secao inteira quando toda lista dela ja estiver pronta. */
+      [].forEach.call(card.querySelectorAll(':scope>details.extra'),function(det){
+        var listas=det.querySelectorAll('ul.tarefas');
+        if(!listas.length)return;
+        var some=[].every.call(listas,function(u){return u.classList.contains('oculto')});
+        det.classList.toggle('oculto',some);
+      });
     }
     var bt=sec.querySelector('.mk-ver');
     if(bt){

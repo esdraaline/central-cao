@@ -25,7 +25,7 @@ a tela mostrar como **"faltam N"** é a mala de domingo, peça por peça.
 - [x] 1 cinto social
 - [ ] 2 pijamas
 - [ ] 2 toalhas de banho
-- [ ] 1 fronha limpa
+- [ ] 2 fronhas limpas
 
 **Semana curta muda a conta.** Os alvos abaixo foram dimensionados para **quatro dias de aula**,
 de segunda a quinta. Quando o QTS derrubar um dia, por feriado ou por dia vazio, **desconte uma
@@ -87,7 +87,7 @@ volume no porta-malas. A creatina é o oposto, o pote já é pequeno.
 | Cinto social | 1 | serve o P-1 e o S-1. Peça única, conferência de presença |
 | Pijama | 2 | para revezar |
 | Toalha de banho | 2 | para revezar |
-| Fronha | 1 | a de casa fica com a roupa de cama |
+| Fronha | 2 | para revezar, como o pijama e a toalha |
 
 **Fora da conta**: os 2 pares de meia preta grossa ficam no armário e só servem com o B-1.
 

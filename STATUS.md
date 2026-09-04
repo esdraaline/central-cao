@@ -1,29 +1,27 @@
 # STATUS — Central do CAO
 
 > Semana atual, prioridades, decisões e dúvidas do curso.
-> Atualizado em: 02/09/2026
+> Atualizado em: 04/09/2026
 
-## Amanhã fecha a semana 3, e a 4 tem um problema
+## O feriado de 07/09 estava certo: semana 4 é terça a quinta
 
-**Quinta 03/09 acaba 11h30 e é a volta para casa.** Antes de descer, o inventário do armário
-([Mala](MALA.md)) e a cobrança do SAE da Univesp, que vence justamente amanhã.
+O QTS da semana 4 chegou e resolveu a dúvida que ficou em aberto no fim da semana 3: **segunda-
+feira 07/09 não tem aula para nenhum pelotão** — nenhuma célula pintada nesse dia em toda a
+folha. O próprio cabeçalho já avisa, ao dizer "De 7/9 a 10/9" (nem inclui a sexta). É o feriado
+de Independência. **A viagem não sobe no domingo 06/09: sobe na própria segunda à noite, 07/09**,
+para a aula começar terça de manhã.
 
-⚠ **A segunda da semana 4, 07/09, é feriado de Independência.** O QTS da semana 4 ainda não saiu,
-e é ele que vai dizer se há aula nesse dia. **Enquanto não sair, não dá para saber se a subida de
-domingo 06/09 se justifica.** Se a segunda cair, a semana vira de terça a quinta e a viagem pode
-ser remarcada para a própria segunda à noite. Pergunta a fazer na Coordenação antes de descer.
-
-## A semana 3 (31/08 a 03/09)
+## A semana 4 (07 a 10/09)
 
 **Blocos do dia:** 1) 08h15, 2) 10h00, 3) 13h00, 4) 14h45 e 5) 16h30. Cada bloco tem 1h30.
 
 | Dia | Como fica |
 |---|---|
-| Segunda 31/08 | Quatro blocos, saída 16h15. D06, D19, D05 e D24 |
-| Terça 01/09 | Dia cheio até as 18h00. D30, D02, D04, D05 e D26 |
-| Quarta 02/09 | Dia cheio até as 18h00. D03, D25, D11, D18 e D24 |
-| Quinta 03/09 | Só blocos 1 e 2. **Acaba 11h30**, é a volta para casa |
-| Sexta 04/09 | **Vazia no QTS**, para todos os pelotões |
+| Segunda 07/09 | **Feriado de Independência, sem aula.** Fica em casa, sobe à noite |
+| Terça 08/09 | Dia cheio até as 18h00. D25, D07, D13, D15 e D08 |
+| Quarta 09/09 | Dia cheio até as 18h00. D09, D28, D10, D22 e D21 |
+| Quinta 10/09 | Só blocos 1 e 2. **Acaba 11h30**, é a volta para casa |
+| Sexta 11/09 | **Vazia no QTS**, para todos os pelotões |
 
 Docentes de cada bloco e o rol completo das 31 disciplinas: [Grade](GRADE.md). Calendário do mês
 inteiro: [Prazos](PRAZOS.md).
@@ -74,14 +72,12 @@ As prioridades detalhadas, com data, estão em [TAREFAS.md](TAREFAS.md). Aqui fi
 4. **Univesp:** conferir no WhatsApp **(11) 4200-2982** se veio resposta ao pedido de prova em
    polo da capital. Sem resposta até **03/09** (vencimento dos 10 dias úteis), cobrar pelo
    **0800 051 3333**. A prova é **22/09**, em conflito com dia de curso.
-5. **Mandar o QTS da semana 4 assim que ele sair**, e nele conferir o que acontece com a segunda
-   **07/09**, que é feriado de Independência.
 
 ::: extra Onde estou no curso, em detalhe
 - Oficial-Aluno do **CAO-II/2026** (2ª Turma), do **Mestrado Profissional em Ciências Policiais de
   Segurança e Ordem Pública**, no CAES, em frente à Praça Júlio Prestes, centro de São Paulo
   (Campos Elíseos / Santa Ifigênia). Curso de **ago/2026 a ago/2027**.
-- **Semana 3 de 53.** As semanas 1 e 2 (17 a 27/08) estão cumpridas.
+- **Semana 4 de 53.** As semanas 1 a 3 (17/08 a 03/09) estão cumpridas.
 - **Semana padrão:** viaja domingo, aula de segunda a quinta, volta quinta depois das 11h30.
   São **32 horas-aula por semana**, e a **sexta é do currículo, para pesquisa acadêmica**.
 - **O curso tem três ciclos, e eu estou no primeiro.** Semanas 1 a 16: as 31 disciplinas
@@ -105,6 +101,9 @@ As prioridades detalhadas, com data, estão em [TAREFAS.md](TAREFAS.md). Aqui fi
 :::
 
 ::: extra O domingo de viagem
+**Exceção da semana 4:** como 07/09 é feriado, a subida deste ciclo é segunda à noite, não
+domingo. Semanas seguintes voltam ao padrão abaixo.
+
 Todo domingo sobem a roupa lavada e a carga da copa (whey, creatina, energético zero, Pepsi Black,
 lanches e marmitas). **A quantidade de roupa não é fixa: sai do inventário do armário, feito na
 quinta de manhã** antes de descer. O que a aba [Mala](MALA.md) mostrar como "faltam N" é a carga do
@@ -193,3 +192,7 @@ real de horário.
 - **As três perguntas sobre carga horária, avaliação e as sete disciplinas fora do QTS** saíram da
   lista de dúvidas em 25/08, respondidas pelo currículo do programa: as sete não são "do segundo
   semestre", as 31 são todas do 1º ciclo, que acaba na semana 16.
+- **04/09:** QTS da semana 4 chegou e confirmou o feriado de 07/09 (nenhum pelotão tem aula
+  nesse dia). Viagem remarcada de domingo 06/09 para segunda à noite 07/09. Grade da semana
+  decodificada célula a célula: terça cheia (D25, D07, D13, D15, D08), quarta cheia (D09, D28,
+  D10, D22, D21), quinta só de manhã (D26, D15 de novo, com o Cel Massera repetindo).

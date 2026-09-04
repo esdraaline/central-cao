@@ -5,9 +5,9 @@
 > disciplina, avaliação, eletivas) é do [CURRICULO.md](CURRICULO.md); como eu estudo está em
 > [ESTUDOS.md](ESTUDOS.md).
 
-::: extra Fonte do QTS da semana 3
-QTS CAO-II/26 de 31/08 a 03/09/2026, assinado pelo Aux Coord e pelo Ch Sec Coord. PDFs no Drive,
-em `08_CAO_2026/00_CURSO/QTS/`.
+::: extra Fonte do QTS da semana 4
+QTS CAO-II/26 "De 7/9 a 10/9" (arquivo `QTS_CAO-II-26-SEMANA-4 alterado1.pdf`), assinado pelo
+Aux Coord e pelo Ch Sec Coord. PDFs no Drive, em `08_CAO_2026/00_CURSO/QTS/`.
 :::
 
 ## Lançamentos pendentes para QTS futuro
@@ -24,7 +24,58 @@ terça 18/08 bateram uma a uma com as células marcadas "A". Para saber o meu di
 células "A".
 *[VERIFICAR na Coordenação: ratificar de viva voz. É dedução forte, mas é dedução.]*
 
-## Semana 3 — 31/08 a 03/09/2026 (pelotão A)
+## Semana 4 — 07 a 10/09/2026 (pelotão A)
+
+::: extra Segunda-feira 07/09 não tem aula
+O cabeçalho da folha já avisa, ao dizer "De 7/9 a 10/9" — nem inclui a sexta. E o quadro
+confirma: **nenhuma célula pintada em segunda, para nenhum pelotão.** É o feriado de
+Independência. A semana roda só terça a quinta, e a viagem que normalmente sobe no domingo
+passa para a própria segunda à noite ([STATUS.md](STATUS.md)).
+:::
+
+**Terça-feira 08/09/2026**
+
+| Bloco | Disciplina | Docente |
+|---|---|---|
+| 1 — 08h15 às 09h45 | D25 Atualização Jurídica | Des. Adriano |
+| 2 — 10h00 às 11h30 | D07 Métodos Quantitativos de Pesquisa | Cap PM Franco |
+| 3 — 13h00 às 14h30 | D13 Gestão de Processos e Estrutura Organizacional | Cel PM Beatriz |
+| 4 — 14h45 às 16h15 | D15 Gestão de Projetos | Cel PM Massera |
+| 5 — 16h30 às 18h00 | D08 Análise de Dados | Cap PM Jefferson |
+
+**Quarta-feira 09/09/2026**
+
+| Bloco | Disciplina | Docente |
+|---|---|---|
+| 1 — 08h15 às 09h45 | D09 Teoria das Ciências Policiais | Cap PM Alvarenga |
+| 2 — 10h00 às 11h30 | D28 Policiamento Comunitário | Ten Cel PM Ciampone |
+| 3 — 13h00 às 14h30 | D10 Gestão de Logística | Maj PM Demarzo |
+| 4 — 14h45 às 16h15 | D22 Mídia Training | Cel PM Cibele |
+| 5 — 16h30 às 18h00 | D21 Gestão de Crises de Imagem | Cap PM Anderson |
+
+**Quinta-feira 10/09/2026**
+
+| Bloco | Disciplina | Docente |
+|---|---|---|
+| 1 — 08h15 às 09h45 | D26 Inteligência | Ten Cel PM Souza |
+| 2 — 10h00 às 11h30 | D15 Gestão de Projetos | Cel PM Carlos Eduardo |
+
+Quinta acaba às 11h30, como nas semanas 2 e 3: só os blocos 1 e 2 estão marcados, os blocos 3 a
+5 ficam vazios para os cinco pelotões. É o dia de voltar para Guararapes ([ROTINA.md](ROTINA.md)).
+
+**Sexta-feira 11/09/2026**: sem nenhuma marcação no QTS, para nenhum pelotão — mesmo padrão de
+todas as semanas anteriores.
+
+**Semana mais curta nos blocos: 12 blocos** (contra 14 da semana 1 e 16 da semana 3), porque
+perdeu a segunda inteira para o feriado. Terça e quarta seguem cheias até as 18h00, cinco
+disciplinas diferentes em cada uma.
+
+**Nenhuma Ed. Física nem atividade externa aparece na grade do pelotão A** (D23 está em branco
+para todos os pelotões nesta folha). B-1 e EPI continuam em casa ([MALA.md](MALA.md)).
+
+## Semana anterior — 31/08 a 03/09/2026 (pelotão A)
+
+<!-- extra -->
 
 **Segunda-feira 31/08/2026**
 
@@ -68,64 +119,6 @@ próprio dentro de D26.]*
 | 1 — 08h15 às 09h45 | D07 Métodos Quantitativos de Pesquisa | Cel PM Boggi |
 | 2 — 10h00 às 11h30 | D04 Relações Sociais e Institucionais no Brasil | Cel PM Fernandes |
 
-## Semana anterior — 24 a 27/08/2026 (pelotão A)
-
-<!-- extra -->
-
-**Segunda-feira 24/08/2026**
-
-| Bloco | Disciplina | Docente |
-|---|---|---|
-| 1 — 08h15 às 09h45 | D12 Gestão de Pessoas | Cel PM Pereira Lima |
-| 2 — 10h00 às 11h30 | D20 Liderança Organizacional | Ten Cel PM Elieverson |
-| 3 — 13h00 às 14h30 | D30 Criminologia e Fenomenologia do Crime | Cap PM Fiuza |
-| 4 — 14h45 às 16h15 | D15 Gestão de Projetos | Ten Cel PM Fernandes |
-
-**Terça-feira 25/08/2026**
-
-| Bloco | Disciplina | Docente |
-|---|---|---|
-| 1 — 08h15 às 09h45 | D30 Criminologia e Fenomenologia do Crime | Ten Cel PM Giovani |
-| 2 — 10h00 às 11h30 | D17 Gestão do Conhecimento e Aprendizagem Organizacional | Cap PM Fernanda Nossa |
-| 3 — 13h00 às 14h30 | D04 Relações Sociais e Institucionais no Brasil | Cel PM Enio |
-| 4 — 14h45 às 16h15 | D14 Planejamento Estratégico | Cel PM Eglis |
-| 5 — 16h30 às 18h00 | D15 Gestão de Projetos | Cel PM Massera |
-
-**Quarta-feira 26/08/2026**
-
-| Bloco | Disciplina | Docente |
-|---|---|---|
-| 1 — 08h15 às 09h45 | D31 Gestão de Incidentes Policiais | Cel PM Paulo Aguilar |
-| 2 — 10h00 às 11h30 | D18 Excelência da Gestão | Maj PM André Nogueira |
-| 3 — 13h00 às 14h30 | D14 Planejamento Estratégico | Cel PM Terra |
-| 4 — 14h45 às 16h15 | D28 Policiamento Comunitário | Cel PM Barreto |
-| 5 — 16h30 às 18h00 | D26 Inteligência | Cap PM Maurício |
-
-**Aviso 26/08/2026:** o bloco 4 é a aula do Cel PM Barreto, em Policiamento Comunitário. É a
-janela da semana para falar de orientação. Levar o PP aprovado.
-
-**Quinta-feira 27/08/2026**
-
-| Bloco | Disciplina | Docente |
-|---|---|---|
-| 1 — 08h15 às 09h45 | D02 Geopolítica | Cel PM Roldan |
-| 2 — 10h00 às 11h30 | D14 Planejamento Estratégico | Cel PM Terra |
-
-Quinta acaba às 11h30 e é o dia de voltar para Guararapes ([ROTINA.md](ROTINA.md)). Os blocos
-3, 4 e 5 de quinta estão vazios para os cinco pelotões.
-
-**Sexta-feira 28/08/2026**: sem nenhuma marcação no QTS, para nenhum pelotão. O cabeçalho da
-folha confirma, ao dizer "De 24/8 a 27/8".
-
-**Sem Ed. Física e sem embarque antecipado para mim nesta semana.** O rodapé em vermelho do
-QTS traz dois embarques às 07h50: *"Em 240750AGO26 ... pelotões C"* e
-*"Em 260750AGO26 ... pelotões E"*. Nenhum dos dois é o meu, e nenhuma atividade externa
-aparece na grade do A. É por isso que o B-1 e o EPI não sobem ([MALA.md](MALA.md)). A Ed.
-Física gira entre os pelotões, não é toda semana.
-
-**Semana pesada nos blocos:** 16 blocos, contra 14 da semana 1, o que dá 32 aulas de 45 minutos. Terça e quarta cheias até as
-18h00, cinco disciplinas diferentes em cada uma delas, e segunda cheia de manhã.
-
 ## Como ler o QTS
 
 <!-- extra -->
@@ -167,8 +160,9 @@ resta é formalização, não mais caça a candidato.
 Na ordem em que aparecem no QTS, que é a ordem das pastas no Drive
 (`08_CAO_2026/01_DISCIPLINAS/D01_...` até `D31_...`). A coluna "Meu" é cumulativa: traz o
 docente que pegou o pelotão A em cada semana, com **S1** = semana 1 (17 a 20/08), **S2** =
-semana 2 (24 a 27/08) e **S3** = semana 3 (31/08 a 03/09). Linha em branco quer dizer que a
-disciplina ainda não entrou para mim.
+semana 2 (24 a 27/08), **S3** = semana 3 (31/08 a 03/09) e **S4** = semana 4 (07 a 10/09,
+terça a quinta só, por causa do feriado). Linha em branco quer dizer que a disciplina ainda
+não entrou para mim.
 
 | # | Disciplina | Corpo docente no QTS | Meu |
 |---|---|---|---|
@@ -178,28 +172,28 @@ disciplina ainda não entrou para mim.
 | D04 | Relações Sociais e Institucionais no Brasil | Cel Arruda, Cel Fernandes, Cel Enio, Maj Paiva, Cap Casagrandi | **Cel Fernandes** (S1 e S3), **Cel Enio** (S2 e S3) |
 | D05 | Fundamentos da Metodologia Científica | Maj Zampronio, Cap O'Brien, Cap Gobbo | **Maj Zampronio** (S1 e S3), **Cap O'Brien** (S3) |
 | D06 | Métodos Qualitativos de Pesquisa | Maj Daniela, Cap Fernando, Profª Andrea | **Cap Fernando** (S3) |
-| D07 | Métodos Quantitativos de Pesquisa | Cel Boggi, Cap Franco | **Cap Franco** (S1), **Cel Boggi** (S3) |
-| D08 | Análise de Dados | Maj Hudson, Maj Caparroz, Cap Jefferson, Cap Paula Lima | **Maj Hudson** (S1) |
-| D09 | Teoria das Ciências Policiais | TC Nakaharada, Cap Alvarenga | |
-| D10 | Gestão de Logística | Maj Demarzo, Cap Castilho | |
+| D07 | Métodos Quantitativos de Pesquisa | Cel Boggi, Cap Franco | **Cap Franco** (S1 e S4), **Cel Boggi** (S3) |
+| D08 | Análise de Dados | Maj Hudson, Maj Caparroz, Cap Jefferson, Cap Paula Lima | **Maj Hudson** (S1), **Cap Jefferson** (S4) |
+| D09 | Teoria das Ciências Policiais | TC Nakaharada, Cap Alvarenga | **Cap Alvarenga** (S4) |
+| D10 | Gestão de Logística | Maj Demarzo, Cap Castilho | **Maj Demarzo** (S4) |
 | D11 | Planejamento Financeiro e Orçamentário | Cel Bastos, Cel Assis, TC Fabrício, Maj Gustavo | **Cel Bastos** (S3) |
 | D12 | Gestão de Pessoas | Cel Pereira Lima, Cel Tim, TC Cícero, Maj Isis, Maj Pane, Maj Isabela, Cap Camila | **Cel Pereira Lima** (S2) |
-| D13 | Gestão de Processos e Estrutura Organizacional | Cel Beatriz, Cel Possato | |
+| D13 | Gestão de Processos e Estrutura Organizacional | Cel Beatriz, Cel Possato | **Cel Beatriz** (S4) |
 | D14 | Planejamento Estratégico | Cel Eglis, Cel Ferraz, Cel Terra, TC Salomão, TC Junqueira, Cap Hiran | **Cel Eglis** (S1 e S2), **Cel Terra** (S2) |
-| D15 | Gestão de Projetos | Cel Massera, Cel Carlos Eduardo, TC Fernandes | **Cel Carlos Eduardo** (S1), **TC Fernandes** e **Cel Massera** (S2) |
+| D15 | Gestão de Projetos | Cel Massera, Cel Carlos Eduardo, TC Fernandes | **Cel Carlos Eduardo** (S1 e S4), **TC Fernandes** e **Cel Massera** (S2), **Cel Massera** (S4) |
 | D16 | Gestão da Informação para Tomada de Decisão | TC Tamanaha, Maj Goulart | |
 | D17 | Gestão do Conhecimento e Aprendizagem Organizacional | Cel Renato Lopes, Cap Fernanda Nossa | **Cap Fernanda Nossa** (S2) |
 | D18 | Excelência da Gestão | Maj André Nogueira, Cap Hiran | **Maj André Nogueira** (S2 e S3) |
 | D19 | Comportamento Organizacional | TC Elieverson, Cap Diego | **Cap Diego** (S3) |
 | D20 | Liderança Organizacional | TC Elieverson, TC Cafalchio, Cap Casagrandi, Cap Gobbo | **TC Elieverson** (S2) |
-| D21 | Gestão de Crises de Imagem | Cel Massera, Cel Paulo Aguilar, Maj Ana Lúcia, Cap Anderson | **Cel Massera** (S1) |
-| D22 | Mídia Training | Cel Cibele, TC Luciene, Maj Felipe, Cap Anderson | **Cap Anderson** (S1) |
+| D21 | Gestão de Crises de Imagem | Cel Massera, Cel Paulo Aguilar, Maj Ana Lúcia, Cap Anderson | **Cel Massera** (S1), **Cap Anderson** (S4) |
+| D22 | Mídia Training | Cel Cibele, TC Luciene, Maj Felipe, Cap Anderson | **Cap Anderson** (S1), **Cel Cibele** (S4) |
 | D23 | Educação Física e Qualidade de Vida | Cel Pollete, Cel Asaka, Maj Ciampone, Maj Hérika, Cap Fernanda Nossa | **Cel Pollete** (S1) |
 | D24 | Direitos Humanos e Grupos Vulneráveis | Cel Salomão, Cel Maurício, Cel Fernanda, Des. Adriano, TC Margato, Maj Ciampone, Cap Vieira, Prom. Edson | **Cel Salomão** e **Cel Maurício** (S3) |
-| D25 | Atualização Jurídica | Cel Salomão, Des. Adriano, TC Tatiana, Maj Soares | **Maj Soares** (S3) |
-| D26 | Inteligência | TC Souza, Cap Nakano, Cap Kroll, Cap Maurício | **Cap Maurício** (S1 e S2), **Cap Kroll** (S3) |
+| D25 | Atualização Jurídica | Cel Salomão, Des. Adriano, TC Tatiana, Maj Soares | **Maj Soares** (S3), **Des. Adriano** (S4) |
+| D26 | Inteligência | TC Souza, Cap Nakano, Cap Kroll, Cap Maurício | **Cap Maurício** (S1 e S2), **Cap Kroll** (S3), **TC Souza** (S4) |
 | D27 | Sistemas Comparados de Segurança | Cel Komata, TC Souza, Cap Kroll, Cap Santiago, Cap Maurício | |
-| D28 | Policiamento Comunitário | Cel Barreto, Maj Ciampone, Maj Fabiane, Maj Cabello | **Cel Barreto** (S1 e S2) |
+| D28 | Policiamento Comunitário | Cel Barreto, Maj Ciampone, Maj Fabiane, Maj Cabello | **Cel Barreto** (S1 e S2), **TC Ciampone** (S4) |
 | D29 | Planejamento Operacional | Cel Alves, Cel Theodoro, Cel Hélio, Cel Luodenir | |
 | D30 | Criminologia e Fenomenologia do Crime | Cap Fiuza, TC Giovani, Maj Zampronio | **Cap Fiuza** e **TC Giovani** (S2), **TC Giovani** (S3) |
 | D31 | Gestão de Incidentes Policiais | Cel Hugo, Cel Theodoro, Cel Paulo Aguilar, TC Arcanjo, TC Mercadante | **Cel Paulo Aguilar** (S2) |

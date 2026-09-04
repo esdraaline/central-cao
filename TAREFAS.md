@@ -4,10 +4,6 @@
 
 ## Pendentes
 
-### Semana 4: a segunda 07/09 é feriado de Independência
-- [ ] Antes de descer na quinta, perguntar na Coordenação se há aula na segunda 07/09, que é feriado de Independência. Disso depende a subida de domingo 06/09 [03/09/2026] #curso
-  - [ ] Se não houver aula na segunda, remarcar a carona de domingo para segunda à noite e avisar em casa
-
 ### Desmobilização do armário — duas descidas em janeiro/2027
 > O armário não cabe numa viagem só, ainda mais de carona. Plano completo em [MALA.md](MALA.md).
 - [ ] Viagem de alívio: descer o S-1 inteiro, copa, limpeza, excedente de higiene e material de estudo encerrado [07/01/2027] #pessoal
@@ -50,14 +46,15 @@
 
 ### Orientador da dissertação — formalizar com o Cap Gobbo
 - [ ] Perguntar ao Cap Gobbo as REGRAS da orientação, já com o nome fechado: cabe orientador fora do elenco de instrutores (o Maj Rovina não dá aula nesta turma)? Quantos orientandos ele aceita? Há prazo para o pedido? É formal? Como corre o referendo do Cmt CAES? [01/09/2026] #dissertacao
-- [ ] Registrar o aceite do Maj Rovina em 02_DISSERTACAO/00_orientacao/, no Drive, com a data de 01/09 #dissertacao
 
-### Univesp — prova de 22/09 em conflito com o curso (pedido já protocolado)
-> Pedido enviado ao SAE em 19/08/2026, 20h02, com a Ata de Convocação anexada. Detalhes completos em `C:\projetos\mentor-univesp\STATUS.md`.
-- [ ] Ver no WhatsApp da Univesp (11 4200-2982) se veio resposta ao pedido de prova em polo da capital [31/08/2026] #admin
-- [ ] Vencimento dos 10 dias úteis do SAE: sem resposta, cobrar pelo 0800 051 3333 ou WhatsApp, citando o assunto do e-mail. A prova é 22/09 [03/09/2026] #admin
+### Univesp — prova de 22/09 será feita em Valparaíso (mudou de plano)
+> O pedido de prova em polo da capital, protocolado em 19/08, não teve resposta do SAE dentro do prazo. Decisão de 04/09: fazer a prova em Valparaíso mesmo, sem mais cobrança ao SAE. Viagem: 21/09 à noite de São Paulo para Valparaíso, 22/09 à noite volta de Valparaíso para São Paulo.
+- [ ] Pedir DS (dispensa de serviço) da aula do dia 22/09, por causa da viagem para a prova da Univesp em Valparaíso [15/09/2026] #admin
 
 ## Concluídas
+- [x] Perguntar na Coordenação se há aula na segunda 07/09 (feriado de Independência): não tem aula. Viagem remarcada para segunda, saindo de casa às 17h15 [04/09/2026] #curso
+- [x] Registrar o aceite do Maj Rovina em 02_DISSERTACAO/00_orientacao/, no Drive: já estava registrado, com a transcrição completa da conversa de WhatsApp de 01 e 02/09 [01/09/2026] #dissertacao
+- [x] Ver no WhatsApp da Univesp se veio resposta ao pedido de prova em polo da capital: não veio. Decisão: fazer a prova em Valparaíso mesmo, sem mais cobrança ao SAE [04/09/2026] #admin
 - [x] Escolher orientador da dissertação: sondado por WhatsApp, o Maj PM Carlos Henrique Lourenço Rovina aceitou. Ele não é instrutor da turma, falta formalizar com o Cap Gobbo [01/09/2026] #dissertacao
 - [x] Registrar qual opção de desconto SIPA foi escolhida em 24/08: Alojamento ou Vestiário; depois conferir a cessação do equivalente na OPM de origem [31/08/2026] #admin
 - [x] Perguntar na Coordenação (Seç Avaliação, Cap Diego) as datas das seis VCs e quais disciplinas cobram trabalho além da prova [31/08/2026] #curso

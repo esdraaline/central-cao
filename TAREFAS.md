@@ -50,8 +50,8 @@
 
 ## Concluídas
 - [x] Perguntar na Coordenação se há aula na segunda 07/09 (feriado de Independência): não tem aula. Viagem remarcada para segunda, saindo de casa às 17h15 [04/09/2026] #curso
-- [x] Registrar o aceite do Maj Rovina em 02_DISSERTACAO/00_orientacao/, no Drive: já estava registrado, com a transcrição completa da conversa de WhatsApp de 01 e 02/09 [01/09/2026] #dissertacao
 - [x] Ver no WhatsApp da Univesp se veio resposta ao pedido de prova em polo da capital: não veio. Decisão: fazer a prova em Valparaíso mesmo, sem mais cobrança ao SAE [04/09/2026] #admin
+- [x] Registrar o aceite do Maj Rovina em 02_DISSERTACAO/00_orientacao/, no Drive: já estava registrado, com a transcrição completa da conversa de WhatsApp de 01 e 02/09 [01/09/2026] #dissertacao
 - [x] Escolher orientador da dissertação: sondado por WhatsApp, o Maj PM Carlos Henrique Lourenço Rovina aceitou. Ele não é instrutor da turma, falta formalizar com o Cap Gobbo [01/09/2026] #dissertacao
 - [x] Registrar qual opção de desconto SIPA foi escolhida em 24/08: Alojamento ou Vestiário; depois conferir a cessação do equivalente na OPM de origem [31/08/2026] #admin
 - [x] Perguntar na Coordenação (Seç Avaliação, Cap Diego) as datas das seis VCs e quais disciplinas cobram trabalho além da prova [31/08/2026] #curso

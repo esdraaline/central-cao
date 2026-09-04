@@ -4,6 +4,7 @@
 > vai lavar, domingo sobe o que faltou. Tudo o mais é consulta e está recolhido no fim.
 
 ## 1. Quinta de manhã — o inventário do armário
+<!-- extra -->
 
 Abra o armário e lance em cada linha **quantas peças LIMPAS ficaram lá**, no `−` e no `+`. O que
 a tela mostrar como **"faltam N"** é a mala de domingo, peça por peça.
@@ -34,12 +35,14 @@ ocorrência é a **semana 4: 07/09/2026 é feriado de Independência** e ainda n
 ([Painel](STATUS.md)).
 
 ## 2. Quinta, antes de pegar a estrada — o que desce para lavar
+<!-- extra -->
 
 - [x] Toalha de banho usada
 - [x] Fronha usada
 - [x] Roupa suja da semana
 
 ## 3. Domingo — o que sobe
+<!-- extra -->
 
 <!-- mala-domingo -->
 
